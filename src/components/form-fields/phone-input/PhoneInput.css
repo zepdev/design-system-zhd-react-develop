@@ -1,0 +1,7 @@
+.PhoneInput {
+  @apply zep-typography-bodyText zep-text-typography-dark-100;
+}
+
+.PhoneInputInput {
+  @apply zep-h-full zep-rounded-r-4 zep-border-transparent zep-bg-transparent zep-px-1 zep-outline-none zep-ring-focus focus-visible:zep-ring focus-visible:zep-ring-offset-1;
+}

@@ -1,0 +1,10 @@
+{
+  "extends": [
+    "react-app",
+    "plugin:storybook/recommended"
+  ],
+  "rules": {
+    "react-hooks/exhaustive-deps": "off",
+    "jsx-a11y/role-has-required-aria-props": "off"
+  }
+}
