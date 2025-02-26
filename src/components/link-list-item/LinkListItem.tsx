@@ -38,10 +38,11 @@ const Links = ({ links }: LinkListItemProps) => {
   return (
     <div
       data-testid="link-list-links"
-      className={clsx()
-      // 'zep-flex',
-      // 'zep-flex-col',
-      // 'zep-gap-1',
+      className={
+        clsx()
+        // 'zep-flex',
+        // 'zep-flex-col',
+        // 'zep-gap-1',
       }
     >
       {links.map((link, index) => (
