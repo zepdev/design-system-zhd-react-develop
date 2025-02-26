@@ -1,0 +1,131 @@
+/*
+Add roboto flex font face
+*/
+
+@font-face {
+  font-family: 'Roboto Flex';
+  font-display: swap;
+  src: url(https://cdn.jsdelivr.net/fontsource/fonts/roboto-flex:vf@latest/latin-full-normal.woff2)
+    format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329,
+    U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.theme_holding .zep-typography-headline2XL,
+.theme_holding .zep-typography-headlineXL,
+.theme_holding .zep-typography-headlineLG,
+.theme_holding .zep-typography-headlineMD,
+.theme_holding .zep-typography-headlineSM,
+.theme_holding .zep-typography-headlineXS,
+.theme_holding .zep-typography-headlineXS-fluid-cqi,
+.theme_holding .zep-typography-headlineSM-fluid-cqi,
+.theme_holding .zep-typography-headlineMD-fluid-cqi,
+.theme_holding .zep-typography-headlineLG-fluid-cqi,
+.theme_holding .zep-typography-headlineXL-fluid-cqi,
+.theme_holding .zep-typography-headline2XL-fluid-cqi,
+.theme_systems .zep-typography-headline2XL,
+.theme_systems .zep-typography-headlineXL,
+.theme_systems .zep-typography-headlineLG,
+.theme_systems .zep-typography-headlineMD,
+.theme_systems .zep-typography-headlineSM,
+.theme_systems .zep-typography-headlineXS-fluid-cqi,
+.theme_systems .zep-typography-headlineSM-fluid-cqi,
+.theme_systems .zep-typography-headlineMD-fluid-cqi,
+.theme_systems .zep-typography-headlineLG-fluid-cqi,
+.theme_systems .zep-typography-headlineXL-fluid-cqi,
+.theme_systems .zep-typography-headline2XL-fluid-cqi {
+  font-variation-settings:
+    'wght' 900,
+    'wdth' 89,
+    'opsz' 17,
+    'XOPQ' 69,
+    'XTRA' 444,
+    'YOPQ' 68,
+    'YTLC' 514,
+    'GRAD' 68,
+    'YTAS' 750,
+    'YTUC' 726,
+    'slnt' 0;
+}
+
+.theme_rental .zep-typography-headline2XL,
+.theme_rental .zep-typography-headlineXL,
+.theme_rental .zep-typography-headlineLG,
+.theme_rental .zep-typography-headlineMD,
+.theme_rental .zep-typography-headlineSM,
+.theme_rental .zep-typography-headlineXS {
+  font-variation-settings:
+    'wght' 1000,
+    'wdth' 100,
+    'opsz' 35,
+    'XOPQ' 79,
+    'XTRA' 507,
+    'YOPQ' 79,
+    'YTLC' 514,
+    'GRAD' 150,
+    'YTAS' 750,
+    'YTUC' 712,
+    'slnt' -10;
+}
+
+@layer base {
+  body {
+    @apply zep-font-robotoFlex;
+  }
+  .zep-link-inline {
+    font-variation-settings:
+      'wght' 400,
+      'wdth' 100,
+      'slnt' 0,
+      'GRAD' 50;
+  }
+  .zep-link-standalone {
+    font-variation-settings:
+      'wght' 400,
+      'wdth' 100,
+      'slnt' 0,
+      'GRAD' 105;
+  }
+  .zep-link-inline:hover:not([disabled]),
+  .zep-link-standalone:hover:not([disabled]) {
+    font-variation-settings:
+      'wght' 400,
+      'wdth' 100,
+      'slnt' 0,
+      'GRAD' 150;
+  }
+}
+
+@layer utilities {
+  @variants responsive {
+    .zep-text-unset {
+      text-align: unset;
+    }
+  }
+}
+
+.zep-scrollable-content {
+  -ms-overflow-style: none;
+  overflow: auto;
+  scrollbar-width: none;
+}
+
+::-webkit-scrollbar,
+.zep-scrollable-content::-webkit-scrollbar {
+  display: none;
+}
+
+@media (hover: none) and (pointer: coarse) {
+  .zep-vertical-scrollbar,
+  .zep-horizontal-scrollbar {
+    display: none;
+  }
+
+  .zep-scrollable-content {
+    margin-bottom: 0!important;
+  }
+}

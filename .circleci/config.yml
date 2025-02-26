@@ -1,0 +1,185 @@
+version: 2.1
+
+orbs:
+  node: circleci/node@5.1.0
+  # sonarcloud: sonarsource/sonarcloud@2.0.0
+
+executors:
+  node:
+    docker:
+      - image: cimg/node:20.9
+jobs:
+  test:
+    executor: node
+    environment:
+      NODE_ENV: development
+    working_directory: ~/project
+    steps:
+      - checkout # check out the code in the project directory
+      - run:
+          name: Adds .npmrc file
+          command: |
+            echo "@zepdev:registry=https://npm.pkg.github.com/" > ~/.npmrc
+            echo "//npm.pkg.github.com/:_authToken=\"$GITHUB_TOKEN\"" >> ~/.npmrc
+            npm set @zepdev:registry https://npm.pkg.github.com
+      - node/install-packages:
+          pkg-manager: yarn
+      - run:
+          name: 'Lint code'
+          command: yarn lint
+      - run:
+          name: 'Runs unit tests'
+          command: yarn test
+      - run:
+          name: 'Runs visual tests'
+          # command: CHROMATIC_PROJECT_TOKEN=$CHROMATIC_PROJECT_TOKEN_ZSD yarn chromatic
+      - store_test_results:
+          path: ./test-results/
+          when: always
+
+  # sonarcloud:
+  #   executor: node
+  #   working_directory: ~/project
+  #   steps:
+  #     - checkout # check out the code in the project directory
+  #     - run:
+  #         name: 'Append token in sonar-project.properties'
+  #         command: echo "sonar.login=$SONAR_LOGIN" >> sonar-project.properties
+  #     - sonarcloud/scan:
+  #         sonar_token_variable_name: SONAR_LOGIN
+
+  release:
+    executor: node
+    working_directory: ~/project
+    steps:
+      - checkout # check out the code in the project directory
+      - run:
+          name: Add NPMRC
+          command: |
+            echo "@zepdev:registry=https://npm.pkg.github.com/" > ~/.npmrc
+            echo "//npm.pkg.github.com/:_authToken=\"$GITHUB_TOKEN\"" >> ~/.npmrc
+            npm set @zepdev:registry https://npm.pkg.github.com
+      - node/install-packages:
+          pkg-manager: yarn
+          cache-version: v2
+      - run:
+          name: Build code library
+          command: yarn build
+      - run:
+          name: Build styles css
+          command: yarn build:css 
+      - run:
+          name: Release and merge generated changes back into develop
+          command: |
+            export NEW_VERSION="true"
+            yarn semantic-release || export NEW_VERSION="false"
+            if [[ $NEW_VERSION == "true" ]]; then
+                git fetch origin
+                git checkout develop
+                git merge origin/main --ff --message "chore: merge changes in main back into develop [skip ci]"
+                git push -q https://${GITHUB_TOKEN}@github.com/zepdev/design-system-zhd-react-develop.git develop
+            fi
+
+  deploy_storybook_develop:
+    executor: node
+    working_directory: ~/project
+    steps:
+      - checkout # check out the code in the project directory
+      - run:
+          name: Add NPMRC
+          command: |
+            echo "@zepdev:registry=https://npm.pkg.github.com/" > ~/.npmrc
+            echo "//npm.pkg.github.com/:_authToken=\"$GITHUB_TOKEN\"" >> ~/.npmrc
+            npm set @zepdev:registry https://npm.pkg.github.com
+      - node/install-packages:
+          pkg-manager: yarn
+      - run:
+          name: deploy storybook develop
+          command: |
+            git config --global user.email "design-team@zeppelin.com"
+            git config --global user.name "zeppelin-design-team-bot"
+            yarn build-storybook:develop
+            cd ~
+            git clone git@github.com:zepdev/design-system-zhd-react-develop.git
+            cd design-system-zhd-react-develop
+            cp -R ../project/storybook-static/* .
+            git add .
+            if [[ `git status --porcelain` ]]; then
+                git commit -m 'Publish latest acceptance preview'
+                git push -u origin main
+            fi
+
+  deploy_storybook_production:
+    executor: node
+    working_directory: ~/project
+    steps:
+      - checkout # check out the code in the project directory
+      - run:
+          name: Add NPMRC
+          command: |
+            echo "@zepdev:registry=https://npm.pkg.github.com/" > ~/.npmrc
+            echo "//npm.pkg.github.com/:_authToken=\"$GITHUB_TOKEN\"" >> ~/.npmrc
+            npm set @zepdev:registry https://npm.pkg.github.com
+      - node/install-packages:
+          pkg-manager: yarn
+          cache-version: v2
+      - run:
+          name: deploy storybook production
+          command: |
+            git config --global user.email "design-team@zeppelin.com"
+            git config --global user.name "zeppelin-design-team-bot"
+            yarn build-storybook
+            cd ~
+            git clone git@github.com:zepdev/design-system-zhd-react-prod.git
+            cd design-system-zhd-react-prod
+            cp -R ../project/storybook-static/* .
+            git add .
+            if [[ `git status --porcelain` ]]; then
+                git commit -m 'Publish latest acceptance preview'
+                git push -u origin main
+            fi
+
+workflows:
+  test_release:
+    jobs:
+      - test:
+          context: design-team
+
+      # - sonarcloud:
+      #     context: design-team
+      #     requires:
+      #       - test
+      #     filters:
+      #       branches:
+      #         only:
+      #           - develop
+      #           - main
+
+      - release:
+          context: design-team
+          requires:
+            - test
+          filters:
+            branches:
+              only:
+                - main
+
+      - deploy_storybook_develop:
+          context: design-team
+          requires:
+            - test
+          filters:
+            branches:
+              only:
+                - develop
+
+      
+  deploy_storybook:
+    jobs:
+      - deploy_storybook_production:
+          context: design-team
+          filters:
+            tags:
+              only: /^v\d+\.\d+.\d+$/
+            branches:
+              ignore: /.*/

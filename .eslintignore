@@ -1,0 +1,7 @@
+node_modules/
+.storybook/
+.storybook-static/
+dist/
+.prettierrc.js
+.eslintrc.js
+node_modules
