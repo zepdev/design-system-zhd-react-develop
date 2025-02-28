@@ -1,8 +1,8 @@
+import { Accordion, LinkMode, LinkTarget } from '@zepdev/design-system-component-library-react';
 import clsx from 'clsx';
 import React from 'react';
-import { Accordion, LinkMode, LinkTarget } from '@zepdev/design-system-component-library-react';
-import { LinkListItemProps } from './LinkListItem.interface';
 import { Link } from '../zsd-link';
+import { LinkListItemProps } from './LinkListItem.interface';
 
 const Headline = ({ headline }: Partial<LinkListItemProps>) => {
   if (headline) {
@@ -13,11 +13,11 @@ const Headline = ({ headline }: Partial<LinkListItemProps>) => {
       >
         {headline}
       </h4>
-    )
+    );
   }
 
   return null;
-}
+};
 
 const Description = ({ description }: Partial<LinkListItemProps>) => {
   if (description) {
@@ -28,21 +28,21 @@ const Description = ({ description }: Partial<LinkListItemProps>) => {
       >
         {description}
       </p>
-    )
+    );
   }
 
   return null;
-}
+};
 
 const Links = ({ links }: LinkListItemProps) => {
   return (
     <div
       data-testid="link-list-links"
-      className={clsx(
-        'zep-flex',
-        'zep-flex-col',
-        'zep-gap-1',
-      )}
+      className={clsx()
+      // 'zep-flex',
+      // 'zep-flex-col',
+      // 'zep-gap-1',
+      }
     >
       {links.map((link, index) => (
         <Link
@@ -50,14 +50,14 @@ const Links = ({ links }: LinkListItemProps) => {
           label={link.label}
           icon={link.icon}
           href={link.href}
-          iconPlacement="before"          
+          iconPlacement="before"
           target={LinkTarget.Blank}
           mode={LinkMode.Inline}
         />
       ))}
     </div>
   );
-}
+};
 
 export const LinkListItem: React.FC<LinkListItemProps> = ({
   headline,
@@ -102,15 +102,17 @@ export const LinkListItem: React.FC<LinkListItemProps> = ({
           'zep-text-typography-dark-100',
           className,
         )}
-        items={[{
-          title: headline || '',
-          content: (
-            <div className="zep-flex zep-flex-col zep-gap-1">
-              <Description description={description} />
-              <Links links={linkList} />
-            </div>
-          )
-        }]}
+        items={[
+          {
+            title: headline || '',
+            content: (
+              <div className="zep-flex zep-flex-col zep-gap-1">
+                <Description description={description} />
+                <Links links={linkList} />
+              </div>
+            ),
+          },
+        ]}
       />
     </>
   );
