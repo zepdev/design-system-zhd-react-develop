@@ -32,7 +32,7 @@ jobs:
           command: yarn test
       - run:
           name: 'Runs visual tests'
-          # command: CHROMATIC_PROJECT_TOKEN=$CHROMATIC_PROJECT_TOKEN_ZSD yarn chromatic
+          command: CHROMATIC_PROJECT_TOKEN=$CHROMATIC_PROJECT_TOKEN_ZHD yarn chromatic
       - store_test_results:
           path: ./test-results/
           when: always
