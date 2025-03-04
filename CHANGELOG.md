@@ -1,3 +1,10 @@
+# 1.0.0 (2025-03-04)
+
+
+### Bug Fixes
+
+* trying to run the prod deployment ([b2e2b3f](https://github.com/zepdev/design-system-zhd-react/commit/b2e2b3f57960d55db53b7de5ed4dc73f674c5d61))
+
 ## [1.3.6](https://github.com/zepdev/design-system-zps-react/compare/v1.3.5...v1.3.6) (2024-11-12)
 
 
