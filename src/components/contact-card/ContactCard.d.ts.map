@@ -1,0 +1,1 @@
+{"version":3,"file":"ContactCard.d.ts","sourceRoot":"","sources":["../../../../src/components/contact-card/ContactCard.tsx"],"names":[],"mappings":"AAAA,OAAO,EAAE,EAAE,EAAE,MAAM,OAAO,CAAC;AAC3B,OAAO,EAAE,gBAAgB,EAAE,MAAM,0BAA0B,CAAC;AAE5D,QAAA,MAAM,WAAW,EAAE,EAAE,CAAC,gBAAgB,CAwErC,CAAC;AACF,OAAO,EAAE,WAAW,EAAE,CAAC"}

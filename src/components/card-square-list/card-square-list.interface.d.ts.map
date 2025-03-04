@@ -1,0 +1,1 @@
+{"version":3,"file":"card-square-list.interface.d.ts","sourceRoot":"","sources":["../../../../src/components/card-square-list/card-square-list.interface.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,eAAe,EAAE,MAAM,eAAe,CAAC;AAChD,OAAO,EAAE,eAAe,EAAE,MAAM,gBAAgB,CAAC;AAEjD,MAAM,WAAW,mBAAoB,SAAQ,OAAO,CAAC,eAAe,CAAC;IACnE,KAAK,EAAE,eAAe,EAAE,CAAC;CAC1B"}

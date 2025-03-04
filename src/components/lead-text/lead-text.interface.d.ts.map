@@ -1,0 +1,1 @@
+{"version":3,"file":"lead-text.interface.d.ts","sourceRoot":"","sources":["../../../../src/components/lead-text/lead-text.interface.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,aAAa,EAAE,MAAM,+BAA+B,CAAC;AAE9D,MAAM,WAAW,aAAa;IAC5B,QAAQ,CAAC,EAAE,MAAM,CAAC;IAClB,OAAO,EAAE,aAAa,CAAC;IACvB,KAAK,CAAC,EAAE,KAAK,GAAG,eAAe,CAAA;CAChC"}

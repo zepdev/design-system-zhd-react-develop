@@ -1,0 +1,1 @@
+{"version":3,"file":"SingleLinkList.interface.d.ts","sourceRoot":"","sources":["../../../../src/components/single-link-list/SingleLinkList.interface.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,cAAc,EAAE,MAAM,OAAO,CAAC;AACvC,OAAO,EAAE,iBAAiB,EAAE,MAAM,6BAA6B,CAAC;AAEhE,MAAM,WAAW,mBAAoB,SAAQ,cAAc,CAAC,cAAc,CAAC,EAAE,iBAAiB;IAC5F,KAAK,EAAE,MAAM,CAAC;CACf"}
