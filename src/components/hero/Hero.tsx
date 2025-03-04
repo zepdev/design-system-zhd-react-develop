@@ -40,11 +40,11 @@ export const Hero: FC<HeroProps> = ({ title, image, primaryButtonText, secondary
       >
         <div
           className={clsx(
-            'zep-max-w-[1920px]',
-            'zep-w-full',
-            'zep-px-4',
-            'lg:zep-px-7.5',
-            'zep-py-5',
+            // 'zep-max-w-[1920px]',
+            // 'zep-w-full',
+            // 'zep-px-4',
+            // 'lg:zep-px-7.5',
+            // 'zep-py-5',
             'zep-hidden md:zep-flex md:zep-items-center zep-h-full',
           )}
         >
