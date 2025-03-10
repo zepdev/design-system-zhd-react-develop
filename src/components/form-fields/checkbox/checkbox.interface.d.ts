@@ -1,4 +1,3 @@
-/// <reference types="react" />
 export interface CheckboxProps extends React.HTMLProps<HTMLInputElement> {
     disabled?: boolean;
     label?: string;

@@ -1,0 +1,1 @@
+{"version":3,"file":"Tab.d.ts","sourceRoot":"","sources":["../../../src/tabs/Tab.tsx"],"names":[],"mappings":"AAGA,OAAO,EAAE,aAAa,EAAE,YAAY,EAAE,aAAa,EAAE,cAAc,EAAE,QAAQ,EAAE,MAAM,iBAAiB,CAAC;AAYvG,QAAA,MAAM,GAAG;6BAA4B,QAAQ;0BARb,aAAa;yBAyCd,YAAY;0BAYX,aAAa;2BAQZ,cAAc;CAtB9C,CAAC;AAmCF,OAAO,EAAE,GAAG,EAAE,CAAC"}
