@@ -3,7 +3,7 @@ import { SHCorp } from './SHCorp';
 import { SHCorpProps } from './SHCorp-interface';
 
 const meta = {
-  title: 'Components/SmallHeroCorporate',
+  title: 'Components/SmallHeroHolding',
   component: SHCorp,
   argTypes: {},
 } satisfies Meta<typeof SHCorp>;

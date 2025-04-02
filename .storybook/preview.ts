@@ -27,6 +27,6 @@ export default preview;
 export const decorators = [
   withThemeByClassName({
     themes,
-    defaultTheme: 'corporate',
+    defaultTheme: 'holding',
   }),
 ];
