@@ -1,6 +1,6 @@
 {
   "name": "@zepdev/design-system-zhd-react",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "type": "module",
   "license": "MIT",
   "publishConfig": {
@@ -50,7 +50,7 @@
     "@hookform/resolvers": "^3.3.2",
     "@strapi/blocks-react-renderer": "^1.0.1",
     "@zepdev/design-system-component-library-react": "1.15.5",
-    "@zepdev/figma-design-tokens": "7.2.5",
+    "@zepdev/figma-design-tokens": "^7.2.5",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.0.0",
     "react-hook-form": "^7.47.0",
