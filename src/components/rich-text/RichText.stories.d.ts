@@ -8,7 +8,7 @@ declare const meta: {
         BlocksRichText: import('react').FC<import('./RichText.interface').BlocksRichTextProps>;
         Images: import('react').FC<import('./RichText.interface').ImagesProps>;
         Accordion: import('react').FC<import('./RichText.interface').AccordionProps>;
-        Table: ({ children, className, variant, maxWidth, maxHeight, fullWidth, textTop, buttonLabel, descriptionBottom, descriptionTop, dataSource, columns, align, tableButtonOnClick, ...props }: import('@zepdev/design-system-component-library-react').TableProps<{}>) => import("react/jsx-dev-runtime").JSX.Element;
+        Table: ({ children, className, variant, maxWidth, maxHeight, fullWidth, buttonLabel, descriptionBottom, descriptionTop, dataSource, columns, align, tableButtonOnClick, ...props }: import('@zepdev/design-system-component-library-react').TableProps<{}>) => import("react/jsx-dev-runtime").JSX.Element;
         Certificates: import('react').FC<import('./RichText.interface').CertificatesProps>;
     };
     tags: string[];

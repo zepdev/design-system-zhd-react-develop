@@ -1,1 +1,1 @@
-{"version":3,"file":"MediaTextComponent.d.ts","sourceRoot":"","sources":["../../../../src/components/media-text-component/MediaTextComponent.tsx"],"names":[],"mappings":"AAIA,OAAO,EAAE,uBAAuB,EAAE,MAAM,kCAAkC,CAAC;AAE3E,eAAO,MAAM,kBAAkB,kIAW5B,uBAAuB,gDAyDzB,CAAC"}
+{"version":3,"file":"MediaTextComponent.d.ts","sourceRoot":"","sources":["../../../../src/components/media-text-component/MediaTextComponent.tsx"],"names":[],"mappings":"AAIA,OAAO,EAAE,uBAAuB,EAAE,MAAM,kCAAkC,CAAC;AAE3E,eAAO,MAAM,kBAAkB,kIAW5B,uBAAuB,gDAuDzB,CAAC"}
