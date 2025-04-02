@@ -1,9 +1,9 @@
 export type Themes = {
-  corporate: 'theme_corporate';
+  holding: 'theme_holding';
 };
 
 export type ThemeKey = keyof Themes;
 
 export const themes: Themes = {
-  corporate: 'theme_corporate',
+  holding: 'theme_holding',
 };

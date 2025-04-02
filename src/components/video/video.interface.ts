@@ -7,10 +7,14 @@ export interface SingleVideo {
   thumbnail: string;
   linkHref?: string;
   linkText?: string;
+  thumbnailAlt: string;
   videoDetails?: string;
+  cookiesResetLabel?: string;
+  cookiesLayerDescription?: string;
 }
 
 export interface VideoProps {
   video: SingleVideo;
   className?: string;
+  id?: string;
 }
