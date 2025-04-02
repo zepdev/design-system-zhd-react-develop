@@ -49,8 +49,8 @@
     "@headlessui/react": "^1.7.17",
     "@hookform/resolvers": "^3.3.2",
     "@strapi/blocks-react-renderer": "^1.0.1",
-    "@zepdev/design-system-component-library-react": "1.13.1",
-    "@zepdev/figma-design-tokens": "^7.1.0",
+    "@zepdev/design-system-component-library-react": "1.15.5",
+    "@zepdev/figma-design-tokens": "7.2.5",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.0.0",
     "react-hook-form": "^7.47.0",
@@ -62,7 +62,7 @@
     "zod": "^3.22.4"
   },
   "peerDependencies": {
-    "@zepdev/figma-design-tokens": "^7.1.0",
+    "@zepdev/figma-design-tokens": "^7.2.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
@@ -90,7 +90,7 @@
     "@types/react": "^18.2.29",
     "@types/react-dom": "^18.2.14",
     "@vitejs/plugin-react": "^4.1.0",
-    "@zepdev/figma-design-tokens": "^7.1.0",
+    "@zepdev/figma-design-tokens": "^7.2.5",
     "autoprefixer": "^10.4.16",
     "axe-playwright": "^1.2.3",
     "chromatic": "^11.26.1",

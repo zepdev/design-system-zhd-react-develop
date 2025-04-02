@@ -30,7 +30,7 @@ export const MediaTextComponent = ({
             {mediaType === 'image' ? (
               <img src={mediaUrl} alt={imageAlt} className={`zep-w-full zep-h-full zep-object-cover`} />
             ) : (
-              <ResponsivePlayer url={mediaUrl} thumbnail={videoThumbnail} />
+              <ResponsivePlayer url={mediaUrl} thumbnail={videoThumbnail} thumbnailAlt="alt" />
             )}
           </div>
         </div>
@@ -50,9 +50,7 @@ export const MediaTextComponent = ({
         >
           <h2 className="zep-typography-headlineMD-fluid-cqi zep-mb-1 zep-break-all">{headline}</h2>
           {description && (
-            <p className="zep-text-typography-dark-100 zep-typography-body zep-break-all">
-              {description}
-            </p>
+            <p className="zep-text-typography-dark-100 zep-typography-body zep-break-all">{description}</p>
           )}
 
           <div className={clsx('zep-flex', 'zep-flex-col', 'zep-mb-1.5', 'zep-gap-1')}>
