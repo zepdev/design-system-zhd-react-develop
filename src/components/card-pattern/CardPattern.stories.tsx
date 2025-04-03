@@ -1,5 +1,4 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { GlobalVariants } from '../../interfaces/global-variants';
 import { CardPatternProps } from './CardPattern.interface';
 import { CardPattern } from './CardPattern';
 
