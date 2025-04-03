@@ -3,7 +3,7 @@ import { Link, LinkMode, LinkTarget, List } from '@zepdev/design-system-componen
 import { clsx } from 'clsx';
 import React from 'react';
 import { getUrlWithTrailingSlash } from '../../utils/getUrlWithTrailingSlash';
-import { HeaderProps, ImageProps, ListProps, RichTextBaseProps, RichTextProps } from './richText.interface';
+import { HeaderProps, ImageProps, ListProps, RichTextBaseProps, RichTextProps } from './RichText.interface';
 
 const Header: React.FC<HeaderProps> = ({ level, children, className }) => {
   switch (level) {

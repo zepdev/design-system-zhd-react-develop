@@ -20,7 +20,7 @@ export const Hero: FC<HeroProps> = ({
   buttonSecondaryUrl,
 }) => {
   return (
-    <div>
+    <div data-testid="zep-newhero">
       <div className="zep-block md:zep-hidden">
         <img src={image} alt={imageAlt || headline} className="zep-h-[202px] sm:zep-h-[432px] zep-object-cover" />
         <div className="zep-px-1 sm:zep-px-1.5 zep-py-1.5 sm:zep-py-3">
@@ -71,7 +71,10 @@ export const Hero: FC<HeroProps> = ({
           )}
         >
           <div className="zep-z-10">
-            <h1 className="zep-typography-headlineXL-fluid-cqi lg:zep-typography-headline2XL-fluid-cqi zep-text-typography-light-100 zep-mb-1">
+            <h1
+              data-testid="new-hero-headline"
+              className="zep-typography-headlineXL-fluid-cqi lg:zep-typography-headline2XL-fluid-cqi zep-text-typography-light-100 zep-mb-1"
+            >
               {headline}
             </h1>
             <p className="zep-typography-bodyText zep-text-typography-light-100 md:zep-max-w-[374px] lg:zep-max-w-[710px] zep-mb-1.5">
@@ -79,7 +82,7 @@ export const Hero: FC<HeroProps> = ({
             </p>
             {buttonPrimary && (
               <div className="zep-flex zep-gap-1">
-                <a href={buttonPrimaryUrl}>
+                <a href={buttonPrimaryUrl} data-testid="zep-hero-primary-button">
                   <Button
                     label={buttonPrimary}
                     title={buttonPrimary}
@@ -90,7 +93,7 @@ export const Hero: FC<HeroProps> = ({
                   />
                 </a>
                 {buttonSecondary && (
-                  <a href={buttonSecondaryUrl}>
+                  <a href={buttonSecondaryUrl} data-testid="zep-hero-secondary-button">
                     <Button
                       label={buttonSecondary}
                       title={buttonSecondary}

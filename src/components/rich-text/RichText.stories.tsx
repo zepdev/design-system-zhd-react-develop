@@ -1,7 +1,7 @@
 import { Meta, StoryObj } from '@storybook/react';
 import { BlocksContent } from '@strapi/blocks-react-renderer';
 import { RichText } from './RichText';
-import { RichTextProps } from './richText.interface';
+import { RichTextProps } from './RichText.interface';
 
 const meta = {
   title: 'Components/RichText',
