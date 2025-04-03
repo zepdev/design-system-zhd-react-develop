@@ -1,24 +1,21 @@
 import clsx from 'clsx';
 import { LayoutProps } from './layout.interface';
 
-export const Layout = ({ wrapperClassname, children, className, testId = 'zep-layout' }: LayoutProps) => {
+const Layout = ({ id, wrapperClassname, children, className, testId = 'zep-layout' }: LayoutProps) => {
   return (
     <div
-      className={clsx(wrapperClassname, 'zep-w-full', 'zep-flex', 'zep-justify-center')}
+      id={id}
+      className={clsx(wrapperClassname, 'zep-w-full', 'zep-flex zep-justify-center')}
       data-testid={`${testId}-wrapper`}
     >
       <div
         className={clsx(
-          'zep-max-w-[1920px]',
+          'zep-max-w-[1728px]',
           'zep-w-full',
           'zep-px-1',
-          'zep-py-3',
-          'sm:zep-px-2.5',
-          'sm:zep-py-4',
-          'md:zep-px-[65px]',
-          'md:zep-py-5',
-          'xl:zep-py-7.5',
-          'xl:zep-px-[121px]',
+          'sm:zep-px-1.5',
+          'md:zep-px-[66px]',
+          'lg:zep-px-[120px]',
           className,
         )}
         data-testid={testId}
@@ -28,3 +25,5 @@ export const Layout = ({ wrapperClassname, children, className, testId = 'zep-la
     </div>
   );
 };
+
+export { Layout };

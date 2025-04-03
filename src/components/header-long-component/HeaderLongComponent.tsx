@@ -8,7 +8,12 @@ import { HeaderLongComponentProps, LinkComponentProps } from './HeaderLongCompon
 const LinkComponent = ({ type, linkHref, linkText, onClick }: LinkComponentProps) => {
   switch (type) {
     case 'link':
-      return <Link label={linkText || ''} href={linkHref} mode={LinkMode.Standalone} />;
+      return <Link 
+      label={linkText || ''} 
+      href={linkHref} 
+      iconPlacement='after'
+      mode={LinkMode.Standalone}
+      icon="arrow-long-right" />;
     case 'primary-button':
       return (
         <Button

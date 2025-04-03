@@ -5,4 +5,5 @@ export interface LayoutProps {
   className?: string;
   testId?: string;
   wrapperClassname?: string;
+  id?: string;
 }
