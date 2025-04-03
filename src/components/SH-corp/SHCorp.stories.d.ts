@@ -1,5 +1,5 @@
 import { StoryObj } from '@storybook/react';
-import { SHCorpProps } from './SHCorp-interface';
+import { SHCorpProps } from './SHCorp.interface';
 
 declare const meta: {
     title: string;

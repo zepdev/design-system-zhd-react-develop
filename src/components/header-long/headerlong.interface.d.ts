@@ -1,5 +1,4 @@
 import { HeaderLongComponentProps } from '../header-long-component';
 
-export interface HeaderLongProps extends HeaderLongComponentProps {
-}
+export type HeaderLongProps = HeaderLongComponentProps;
 //# sourceMappingURL=headerlong.interface.d.ts.map

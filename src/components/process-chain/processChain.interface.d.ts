@@ -1,17 +1,13 @@
-import { FunctionalIconNames } from '../../../node_modules/@zepdev/design-system-component-library-react/dist/lib';
 import { HeaderLongProps } from '../header-long';
+import { GlobalVariants } from '../../interfaces/global-variants';
 
-export interface LinkItem {
-    icon: FunctionalIconNames;
-    link: string;
-}
 export interface ProcessChainItem {
     headline: string;
-    listItems?: string[];
-    linkItems?: LinkItem[];
+    listItems: string[];
 }
-export interface ProcessChainProps extends Partial<HeaderLongProps> {
+export interface ProcessChainProps extends Partial<Omit<HeaderLongProps, 'variant'>> {
     contentItems: ProcessChainItem[];
-    linkChain: boolean;
+    variant?: GlobalVariants;
+    id?: string;
 }
 //# sourceMappingURL=processChain.interface.d.ts.map

@@ -1,5 +1,5 @@
 import { StoryObj } from '@storybook/react';
-import { HeaderLongComponentProps } from '.';
+import { HeaderLongComponentProps } from '../header-long-component';
 
 declare const meta: {
     title: string;

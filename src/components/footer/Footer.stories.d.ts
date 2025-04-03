@@ -10,5 +10,4 @@ declare const meta: {
 export default meta;
 type Story = StoryObj<typeof meta>;
 export declare const Default: Story;
-export declare const WithHeadline: Story;
 //# sourceMappingURL=Footer.stories.d.ts.map

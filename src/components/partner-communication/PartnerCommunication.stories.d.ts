@@ -3,7 +3,7 @@ import { PartnerCommunicationProps } from './partner-communication.interface';
 
 declare const meta: {
     title: string;
-    component: ({ headline, children, variant }: PartnerCommunicationProps) => import("react/jsx-dev-runtime").JSX.Element;
+    component: ({ id, headline, partners, variant }: PartnerCommunicationProps) => import("react/jsx-dev-runtime").JSX.Element;
     tags: string[];
     argTypes: {
         variant: {

@@ -1,1 +1,1 @@
-{"version":3,"file":"headershort.interface.d.ts","sourceRoot":"","sources":["../../../../src/components/header-short/headershort.interface.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,yBAAyB,EAAE,MAAM,2BAA2B,CAAC;AAEtE,MAAM,WAAW,gBAAiB,SAAQ,yBAAyB;CAAG"}
+{"version":3,"file":"headershort.interface.d.ts","sourceRoot":"","sources":["../../../../src/components/header-short/headershort.interface.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,yBAAyB,EAAE,MAAM,qCAAqC,CAAC;AAEhF,MAAM,WAAW,gBAAiB,SAAQ,IAAI,CAAC,yBAAyB,EAAE,WAAW,CAAC;IACpF,SAAS,CAAC,EAAE,MAAM,CAAC;CACpB"}

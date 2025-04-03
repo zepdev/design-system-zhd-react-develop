@@ -14,4 +14,5 @@ export declare const With3Items: Story;
 export declare const With4Items: Story;
 export declare const With5Items: Story;
 export declare const With6Items: Story;
+export declare const With10Items: Story;
 //# sourceMappingURL=UspList.stories.d.ts.map

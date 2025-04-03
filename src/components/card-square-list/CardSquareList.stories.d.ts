@@ -11,6 +11,12 @@ declare const meta: {
                 type: string;
             };
         };
+        variant: {
+            control: {
+                type: string;
+                options: string[];
+            };
+        };
     };
 };
 export default meta;

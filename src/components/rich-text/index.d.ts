@@ -1,3 +1,3 @@
-export * from './RichText';
-export { type RichTextProps } from './RichText.interface';
+export { RichText } from './RichText';
+export type { RichTextProps } from './RichText.interface';
 //# sourceMappingURL=index.d.ts.map

@@ -1,1 +1,1 @@
-{"version":3,"file":"PartnerCommunication.d.ts","sourceRoot":"","sources":["../../../../src/components/partner-communication/PartnerCommunication.tsx"],"names":[],"mappings":"AAIA,OAAO,EAAE,yBAAyB,EAAE,MAAM,mCAAmC,CAAC;AAE9E,eAAO,MAAM,oBAAoB,oCAAqC,yBAAyB,gDAgD9F,CAAC"}
+{"version":3,"file":"PartnerCommunication.d.ts","sourceRoot":"","sources":["../../../../src/components/partner-communication/PartnerCommunication.tsx"],"names":[],"mappings":"AAKA,OAAO,EAAE,yBAAyB,EAAE,MAAM,mCAAmC,CAAC;AAE9E,eAAO,MAAM,oBAAoB,wCAAyC,yBAAyB,gDA0DlG,CAAC"}

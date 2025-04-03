@@ -8,6 +8,5 @@ declare const meta: {
 };
 export default meta;
 type Story = StoryObj<typeof meta>;
-export declare const ListChain: Story;
-export declare const LinkChain: Story;
+export declare const Default: Story;
 //# sourceMappingURL=procesChain.stories.d.ts.map

@@ -5,14 +5,7 @@ declare const meta: {
     title: string;
     component: import('react').FC<LeadTextProps>;
     tags: string[];
-    argTypes: {
-        theme: {
-            control: {
-                type: string;
-                options: string[];
-            };
-        };
-    };
+    argTypes: {};
 };
 export default meta;
 type Story = StoryObj<typeof meta>;

@@ -1,11 +1,18 @@
 import { StoryObj } from '@storybook/react';
-import { ContactFormProps } from './contact-form.interface';
+import { ContactFormProps } from './contact-form-interface';
 
 declare const meta: {
     title: string;
     component: import('react').FC<ContactFormProps>;
     tags: string[];
-    argTypes: {};
+    argTypes: {
+        locale: {
+            control: {
+                type: string;
+                options: string[];
+            };
+        };
+    };
 };
 export default meta;
 type Story = StoryObj<typeof meta>;

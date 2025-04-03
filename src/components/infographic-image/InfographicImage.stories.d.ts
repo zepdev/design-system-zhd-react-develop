@@ -5,7 +5,14 @@ declare const meta: {
     title: string;
     component: import('react').FC<InfographicImageProps>;
     tags: string[];
-    argTypes: {};
+    argTypes: {
+        variant: {
+            control: {
+                type: string;
+                options: string[];
+            };
+        };
+    };
 };
 export default meta;
 type Story = StoryObj<typeof meta>;

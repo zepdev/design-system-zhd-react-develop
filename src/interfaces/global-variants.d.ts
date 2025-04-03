@@ -9,6 +9,6 @@ export declare enum GlobalVariantExtended {
 export declare enum LocaleVariants {
     EN = "en",
     DE = "de",
-    DE_AU = "de_au"
+    DE_AT = "de-AT"
 }
 //# sourceMappingURL=global-variants.d.ts.map
