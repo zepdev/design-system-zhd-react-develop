@@ -61,14 +61,14 @@ export const Input: React.FC<InputProps> = forwardRef<HTMLInputElement, InputPro
     return (
       <div
         className={clsx(
-          'zep-inline-flex zep-flex-col zep-flex-wrap zep-items-stretch zep-justify-start zep-relative zep-mb-1',
+          'zep-inline-flex zep-flex-col zep-flex-wrap zep-items-stretch zep-justify-start zep-relative zep-mb-2',
           disabled ? 'zep-cursor-not-allowed zep-opacity-disabled' : 'zep-cursor-pointer',
           props.className,
         )}
         data-testid="zep-input"
       >
         {label && (
-          <label htmlFor={id} className="zep-mb-0.5 zep-text-typography-dark-100">
+          <label htmlFor={id} className="zep-mb-0.5 zep-text-primary-default">
             {label}
             {!required && (
               <span data-testid="zep-input-label-hint" className="zep-ml-0.25">
@@ -94,16 +94,16 @@ export const Input: React.FC<InputProps> = forwardRef<HTMLInputElement, InputPro
               className={clsx(
                 focusRing,
                 'zep-border-solid',
-                'zep-text-typography-dark-100',
+                'zep-text-primary-default',
                 'zep-border-1',
                 'zep-w-full',
                 'zep-h-3',
                 'zep-px-1',
                 'zep-leading-3',
                 'zep-leading-[22px]',
-                'placeholder:zep-text-typography-dark-100',
+                'placeholder:zep-text-primary-default',
                 'focus-visible:zep-ring-offset-1',
-                { 'zep-border-typography-dark-100': !error },
+                { 'zep-border-primary-default': !error },
                 { 'zep-border-2 zep-border-error': error },
                 {
                   'zep-cursor-not-allowed zep-bg-background-medium': readOnly, // does not work at the moment

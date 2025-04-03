@@ -1,20 +1,21 @@
+import { GlobalVariants } from '../../interfaces/global-variants';
+
 export interface SingleVideo {
   title: string;
-  tagline?: string;
-  type?: 'primary-button' | 'secondary-button' | 'link' | 'none';
-  description?: string;
+  tagline: string;
+  thumbnailAlt: string;
+  description: string;
   url: string;
   thumbnail: string;
   linkHref?: string;
   linkText?: string;
-  thumbnailAlt: string;
-  videoDetails?: string;
   cookiesResetLabel?: string;
   cookiesLayerDescription?: string;
 }
 
 export interface VideoProps {
-  video: SingleVideo;
+  videos: SingleVideo[];
+  variant?: GlobalVariants;
   className?: string;
   id?: string;
 }

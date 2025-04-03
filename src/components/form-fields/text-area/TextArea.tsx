@@ -30,7 +30,7 @@ export const TextArea: React.FC<TextAreaProps> = forwardRef<HTMLTextAreaElement,
     const disabledOrReadonly = disabled || readOnly;
     const iconColor = hasError ? 'zep-text-error' : state === 'info' ? 'zep-text-info' : '';
 
-    const color = disabled ? 'zep-text-opacity-disabled' : 'zep-text-typography-dark-100';
+    const color = disabled ? 'zep-text-opacity-disabled' : 'zep-text-primary-default';
 
     const inputClasses = clsx(
       'zep-block',
@@ -42,12 +42,12 @@ export const TextArea: React.FC<TextAreaProps> = forwardRef<HTMLTextAreaElement,
       'zep-w-full',
       'zep-outline-none',
       'placeholder:zep-text-typography-dark-100/70',
-      'zep-text-typography-dark-100',
+      'zep-text-primary-default',
       hasError ? 'zep-border-2' : 'zep-border-1',
       'zep-pr-0.75',
       color,
       { 'zep-bg-background-medium': readOnly },
-      { 'zep-border-typography-dark-100': !disabled && !hasError },
+      { 'zep-border-primary-default': !disabled && !hasError },
       { 'zep-border-opacity-disabled': disabled },
       { 'zep-border-error': hasError },
       { 'zep-active:ring': !disabledOrReadonly },
@@ -65,7 +65,7 @@ export const TextArea: React.FC<TextAreaProps> = forwardRef<HTMLTextAreaElement,
         data-testid="zep-text-area"
       >
         {label && (
-          <div className="zep-block zep-mb-0.5 zep-text-typography-dark-100">
+          <div className="zep-block zep-mb-0.5 zep-text-primary-default">
             {label}
             {!props.required && <span className="zep-ml-0.25">(optional)</span>}
           </div>
@@ -86,7 +86,7 @@ export const TextArea: React.FC<TextAreaProps> = forwardRef<HTMLTextAreaElement,
         <div
           className={clsx(
             'zep-mt-0.25',
-            'zep-text-typography-dark-100',
+            'zep-text-primary-default',
             'zep-text-0.875',
             'zep-flex zep-h-[40px]',
             iconColor,
@@ -106,7 +106,7 @@ export const TextArea: React.FC<TextAreaProps> = forwardRef<HTMLTextAreaElement,
             </div>
           )}
           <div
-            className="zep-ml-auto zep-mt-0.125 zep-pl-0.5 zep-flex-shrink-0 zep-text-typography-dark-100 zep-mb-4"
+            className="zep-ml-auto zep-mt-0.125 zep-pl-0.5 zep-flex-shrink-0 zep-text-primary-default zep-mb-4"
             data-testid="zep-text-area-length-indicator"
           >
             {query.length} / {totalCharacters}

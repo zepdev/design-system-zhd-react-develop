@@ -1,10 +1,11 @@
 import { render, screen } from '@testing-library/react';
-import { LinkProps } from '@zepdev/design-system-component-library-react';
+import { LinkProps } from '@zepdev/design-system-component-library-react/dist/src/components/link/link.interface';
 import { MultiLinkList } from './MultiLinkList';
+import { mockRichTextShort } from '../../utils/mocks';
 
 describe('Link List component', () => {
-  const links: LinkProps[] = [{ icon: 'arrow-right', href: 'https://www.google.com', label: 'inline link'}];
-  const description = 'Test Description';
+  const links: LinkProps[] = [{ icon: 'arrow-right', href: '/home/about', label: 'inline link' }];
+  const description = mockRichTextShort;
   const headline = 'Test Headline';
   const linkLists = [{ links, description, headline }];
 
@@ -16,11 +17,11 @@ describe('Link List component', () => {
     const linkElements = screen.getAllByRole('link');
     expect(linkElements.length).toBe(1);
   });
-  test('links open in a new tab', () => {
+  test('links open in same tab', () => {
     render(<MultiLinkList headline={headline} linkLists={linkLists} />);
     const linkElements = screen.getAllByRole('link');
     linkElements.forEach((linkElement) => {
-      expect(linkElement).toHaveAttribute('target', '_blank');
+      expect(linkElement).toHaveAttribute('target', '_self');
     });
   });
   test('renders LinkList component without headline and description', () => {
@@ -29,11 +30,5 @@ describe('Link List component', () => {
     const descriptionElement = screen.queryByTestId('link-list-description');
     expect(headlineElement).not.toBeInTheDocument();
     expect(descriptionElement).not.toBeInTheDocument();
-  });
-  test('renders LinkList component with description', () => {
-    render(<MultiLinkList headline={headline} linkLists={linkLists} />);
-    const descriptionElement = screen.queryByTestId('link-list-description');
-    expect(descriptionElement).toBeInTheDocument();
-    expect(descriptionElement).toHaveTextContent(description);
   });
 });

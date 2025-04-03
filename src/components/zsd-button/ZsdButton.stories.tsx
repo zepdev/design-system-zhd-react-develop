@@ -1,13 +1,13 @@
 import { expect } from '@storybook/jest';
 import type { Meta, StoryObj } from '@storybook/react';
 import { userEvent, within } from '@storybook/testing-library';
-import { Button, zpsButtonVariants } from './ZsdButton';
+import { Button, zsdButtonVariants } from './ZsdButton';
 import { ZpsButtonProps, ZsdButtonVariant } from './zsd-button.interface';
 
-const buttonVariantKeys = Object.keys(zpsButtonVariants) as ZsdButtonVariant[];
+const buttonVariantKeys = Object.keys(zsdButtonVariants) as ZsdButtonVariant[];
 
 const meta = {
-  title: 'Components/Button',
+  title: 'Components/ZsdButton',
   component: Button,
   tags: ['autodocs'],
   argTypes: {

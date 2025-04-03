@@ -5,29 +5,51 @@ import { FC } from 'react';
 import { Button, ZsdButtonVariant } from '../zsd-button';
 import { HeroProps } from './hero.interface';
 
-export const Hero: FC<HeroProps> = ({ title, image, primaryButtonText, secondaryButtonText, description }) => {
+export const Hero: FC<HeroProps> = ({
+  headline,
+  image,
+  imageAlt,
+  buttonPrimary,
+  buttonPrimaryIcon,
+  buttonPrimaryIconPosition,
+  buttonPrimaryUrl,
+  buttonSecondary,
+  buttonSecondaryIcon,
+  buttonSecondaryIconPosition,
+  description,
+  buttonSecondaryUrl,
+}) => {
   return (
     <div>
       <div className="zep-block md:zep-hidden">
-        <img src={image} alt={title} className="zep-h-[202px] sm:zep-h-[432px] zep-object-cover" />
+        <img src={image} alt={imageAlt || headline} className="zep-h-[202px] sm:zep-h-[432px] zep-object-cover" />
         <div className="zep-px-1 sm:zep-px-1.5 zep-py-1.5 sm:zep-py-3">
-          <h1 className="zep-typography-headlineXL-fluid-cqi zep-text-typography-dark-100 zep-mb-1">{title}</h1>
+          <h1 className="zep-typography-headlineXL-fluid-cqi zep-text-typography-dark-100 zep-mb-1">{headline}</h1>
           <p className="zep-typography-bodyText zep-text-typography-dark-100 zep-mb-1.5">{description}</p>
-          {primaryButtonText && (
+          {buttonPrimary && (
             <div className="zep-flex zep-flex-col sm:zep-flex-row zep-gap-1">
-              <Button
-                label={primaryButtonText}
-                title={primaryButtonText}
-                variant={ZsdButtonVariant.PrimaryDark}
-                className="zep-w-full sm:zep-max-w-max"
-              />
-              {secondaryButtonText && (
+              <a href={buttonPrimaryUrl}>
                 <Button
-                  label={secondaryButtonText}
-                  title={secondaryButtonText}
-                  variant={ZsdButtonVariant.SecondaryDark}
+                  label={buttonPrimary}
+                  title={buttonPrimary}
+                  variant={ZsdButtonVariant.PrimaryDark}
                   className="zep-w-full sm:zep-max-w-max"
+                  icon={buttonPrimaryIcon}
+                  iconPosition={buttonPrimaryIconPosition}
                 />
+              </a>
+
+              {buttonSecondary && (
+                <a href={buttonSecondaryUrl}>
+                  <Button
+                    label={buttonSecondary}
+                    title={buttonSecondary}
+                    icon={buttonSecondaryIcon}
+                    iconPosition={buttonSecondaryIconPosition}
+                    variant={ZsdButtonVariant.SecondaryDark}
+                    className="zep-w-full sm:zep-max-w-max"
+                  />
+                </a>
               )}
             </div>
           )}
@@ -50,26 +72,34 @@ export const Hero: FC<HeroProps> = ({ title, image, primaryButtonText, secondary
         >
           <div className="zep-z-10">
             <h1 className="zep-typography-headlineXL-fluid-cqi lg:zep-typography-headline2XL-fluid-cqi zep-text-typography-light-100 zep-mb-1">
-              {title}
+              {headline}
             </h1>
             <p className="zep-typography-bodyText zep-text-typography-light-100 md:zep-max-w-[374px] lg:zep-max-w-[710px] zep-mb-1.5">
               {description}
             </p>
-            {primaryButtonText && (
+            {buttonPrimary && (
               <div className="zep-flex zep-gap-1">
-                <Button
-                  label={primaryButtonText}
-                  title={primaryButtonText}
-                  variant={ZsdButtonVariant.PrimaryLight}
-                  className="sm:zep-max-w-max"
-                />
-                {secondaryButtonText && (
+                <a href={buttonPrimaryUrl}>
                   <Button
-                    label={secondaryButtonText}
-                    title={secondaryButtonText}
-                    variant={ZsdButtonVariant.SecondaryLight}
+                    label={buttonPrimary}
+                    title={buttonPrimary}
+                    variant={ZsdButtonVariant.PrimaryLight}
                     className="sm:zep-max-w-max"
+                    icon={buttonPrimaryIcon}
+                    iconPosition={buttonPrimaryIconPosition}
                   />
+                </a>
+                {buttonSecondary && (
+                  <a href={buttonSecondaryUrl}>
+                    <Button
+                      label={buttonSecondary}
+                      title={buttonSecondary}
+                      icon={buttonSecondaryIcon}
+                      iconPosition={buttonSecondaryIconPosition}
+                      variant={ZsdButtonVariant.SecondaryLight}
+                      className="sm:zep-max-w-max"
+                    />
+                  </a>
                 )}
               </div>
             )}

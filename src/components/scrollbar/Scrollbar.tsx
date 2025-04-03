@@ -1,4 +1,4 @@
-import React, { FC, useEffect, useMemo, useRef, useState } from 'react';
+import React, { FC, useEffect, useRef, useState } from 'react';
 import clsx from 'clsx';
 import { ScrollbarProps } from './Scrollbar.interface';
 
@@ -27,9 +27,6 @@ export const Scrollbar: FC<ScrollbarProps> = ({
   const [initialContentScrollY, setInitialContentScrollY] = useState<number>(0);
   const [isXHovering, setIsXHovering] = useState(false);
   const [isYHovering, setIsYHovering] = useState(false);
-
-  const horizontalScrollbarVisible = useMemo(() => scrollOrientation !== 'vertical' && thumbWidth !== 0, [thumbWidth, scrollOrientation]);
-  const verticalScrollbarVisible = useMemo(() => scrollOrientation !== 'horizontal' && thumbHeight !== 0, [thumbHeight, scrollOrientation]);
 
   const scrollbarTheme = {
     light: {
@@ -250,7 +247,7 @@ export const Scrollbar: FC<ScrollbarProps> = ({
     <div className={clsx('zep-relative', 'zep-w-full')} data-testid={dataTestId}>
       <div className="zep-flex">
         <div
-          className={clsx('zep-scrollable-content', 'zep-w-full', className, { 'zep-mb-2': horizontalScrollbarVisible, 'zep-mr-2': verticalScrollbarVisible })}
+          className={clsx('zep-scrollable-content', 'zep-w-full', className, { 'zep-mb-2': scrollOrientation !== 'vertical' })}
           id={controlId}
           ref={contentRef}
         >

@@ -35,7 +35,7 @@ export const PhoneInput = ({
       data-testid="zep-phone-input"
     >
       {label && (
-        <label htmlFor={id} className="zep-typography-bodyText zep-mb-0.5 zep-text-typography-dark-100">
+        <label htmlFor={id} className="zep-typography-bodyText zep-mb-0.5 zep-text-primary-default">
           {label}
           {!required && <span className="zep-ml-0.25">{notRequiredHint}</span>}
         </label>
@@ -53,7 +53,7 @@ export const PhoneInput = ({
         countrySelectComponent={CountrySelect}
         data-testid="zep-phone-input-field"
         className={clsx(
-          'zep-relative zep-w-full zep-box-border zep-h-3 zep-border-1 zep-border-solid zep-bg-greyscale-0 zep-border-typography-dark-100',
+          'zep-relative zep-w-full zep-box-border zep-h-3 zep-border-1 zep-border-solid zep-bg-greyscale-0 zep-border-primary-default',
           {
             'zep-border-2 !zep-border-error': error,
             '!zep-bg-greyscale-200': readOnly,

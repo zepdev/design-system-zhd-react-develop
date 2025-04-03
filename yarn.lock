@@ -4549,7 +4549,7 @@
     tailwind-merge "^1.14.0"
     zod "^3.22.4"
 
-"@zepdev/figma-design-tokens@7.2.5":
+"@zepdev/figma-design-tokens@^7.2.5":
   version "7.2.5"
   resolved "https://npm.pkg.github.com/download/@zepdev/figma-design-tokens/7.2.5/bcbb88a23de61188db4028d370a46bd16641f0d7#bcbb88a23de61188db4028d370a46bd16641f0d7"
   integrity sha512-BMS46kKbJuuLLaU1yCMcxIFdiQkbT3cve9Ptxl2sTGPo365c5oq2clKTB/LAfDH+8hAezrJrL9FNc9xvUax7rQ==
@@ -13622,6 +13622,11 @@ react-fast-compare@^3.0.1:
   version "3.2.2"
   resolved "https://registry.npmjs.org/react-fast-compare/-/react-fast-compare-3.2.2.tgz"
   integrity sha512-nsO+KSNgo1SbJqJEYRE9ERzo7YtYbou/OqjSQKxV7jcKox7+usiUVZOAC+XnDOABXggQTno0Y1CpVnuWEc1boQ==
+
+react-gallery-carousel@^0.4.0:
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/react-gallery-carousel/-/react-gallery-carousel-0.4.0.tgz#c1cb415b7b40e22de9cfd5d4ec5a9c944f21f4d1"
+  integrity sha512-ptlQdSg13Fu2UlmJiN9RMWNLH1U/lSBu/Gjz4xDouNjFpITi42AijPyu7F/KLbzVSTNlN7SqKaLC4//UPnBepg==
 
 react-hook-form@^7.47.0:
   version "7.54.2"

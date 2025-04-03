@@ -1,5 +1,6 @@
 import { render, screen } from '@testing-library/react';
 import { BlocksContent } from '@strapi/blocks-react-renderer';
+import { GlobalVariants } from '../../interfaces/global-variants';
 import { AccordionPattern } from './AccordionPattern';
 
 const mockTopDescription: BlocksContent = [
@@ -38,7 +39,7 @@ const mockTopDescription: BlocksContent = [
     },
   ];
 
-const mockContentData =
+const mockContentData = 
     [
         {
           title: 'Title one',
@@ -57,6 +58,7 @@ describe('Accordion Pattern Component', () => {
         topDescription={mockTopDescription}
         bottomDescription={mockBottomDescription}
         contents={mockContentData}
+        variant={GlobalVariants.Zps}
       />
     );
 

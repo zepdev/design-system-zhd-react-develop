@@ -1,37 +1,68 @@
 import { clsx } from 'clsx';
 import { FC } from 'react';
-import { HeaderShortComponent } from '../header-short-component';
+import { GlobalVariants } from '../../interfaces/global-variants';
+import { HeaderLongComponent } from '@/components/header-long-component';
+import { Layout } from '../layout';
 import { LinkListItem } from '../link-list-item';
 import { MultiLinkListProps } from './MultiLinkList.interface';
 
-export const MultiLinkList: FC<MultiLinkListProps> = ({
+const MultiLinkListComponent: FC<MultiLinkListProps> = ({
   headline,
-  className,
   linkLists,
+  variant = GlobalVariants.Zps,
+  linkListItemClassname,
+  isFooterList,
+  ...headerLongProps
 }) => {
-  const linkListCards = linkLists.length > 15 ? linkLists.slice(0, 15) : linkLists;
-
   return (
-    <div className={clsx('zep-flex-col', 'zep-flex', 'zep-gap-2', 'sm:zep-gap-3', 'xl:zep-gap-4', className)}>
-      {headline ? <HeaderShortComponent className="md:zep-w-[35%] zep-w-full" headline={headline} /> : null}
+    <>
+      {headline ? <HeaderLongComponent headline={headline} variant={variant} {...headerLongProps} /> : null}
       <div
-        className={clsx('zep-grid', 'zep-gap-1', 'md:zep-gap-1.5', 'xl:zep-gap-2', {
-          'xl:zep-grid-cols-2': linkLists.length === 2,
+        className={clsx('zep-grid', 'zep-gap-1', {
           'xl:zep-grid-cols-4': [4, 7, 8, 11, 12].includes(linkLists.length),
-          'xl:zep-grid-cols-5': [5, 9, 10, 13, 14, 15].includes(linkLists.length),
+          'xl:zep-grid-cols-5': [5, 9, 10].includes(linkLists.length) || linkLists.length >= 13,
+          'lg:zep-grid-cols-2': linkLists.length === 2,
+          'lg:zep-grid-cols-3': [3, 5, 6].includes(linkLists.length),
+          'lg:zep-grid-cols-4': linkLists.length === 4 || linkLists.length >= 7,
+          'lg:zep-gap-2 md:zep-gap-1.5': !isFooterList,
+          'lg:zep-gap-x-2 md:zep-gap-x-1.5 md:zep-gap-y-3 xl:zep-gap-y-3.5': isFooterList,
           'md:zep-grid-cols-2': [2, 4].includes(linkLists.length),
-          'md:zep-grid-cols-3': [3, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15].includes(linkLists.length),
+          'md:zep-grid-cols-3': linkLists.length === 3 || linkLists.length >= 5,
         })}
       >
-        {linkListCards.map((linkListProps) => (
+        {linkLists.map((linkListProps) => (
           <LinkListItem
             key={linkListProps.headline}
-            className="zep-w-full"
+            className={clsx('zep-w-full', linkListItemClassname, { '!zep-py-[0]': isFooterList })}
             {...linkListProps}
+            variant={variant}
             isMultiListItem
+            isFooterList={isFooterList}
           />
         ))}
       </div>
-    </div>
+    </>
+  );
+};
+
+export const MultiLinkList: FC<MultiLinkListProps> = ({
+  isFooterList = false,
+  isPatternPart = false,
+  className,
+  id,
+  ...rest
+}) => {
+  if (isPatternPart) {
+    return (
+      <div className={clsx('zep-flex-col', 'zep-flex', 'zep-gap-2', 'sm:zep-gap-3', 'xl:zep-gap-4', className)}>
+        <MultiLinkListComponent {...rest} isPatternPart={isPatternPart} isFooterList={isFooterList} />
+      </div>
+    );
+  }
+
+  return (
+    <Layout id={id} className={clsx('zep-flex-col', 'zep-flex', 'zep-gap-2', 'sm:zep-gap-3', 'xl:zep-gap-4', className)}>
+      <MultiLinkListComponent {...rest} isPatternPart={isPatternPart} isFooterList={isFooterList} />
+    </Layout>
   );
 };

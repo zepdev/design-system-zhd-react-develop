@@ -1,47 +1,27 @@
-import { MouseEvent, PropsWithChildren, ReactElement, ReactNode } from 'react';
 import { BlocksContent } from '@strapi/blocks-react-renderer';
-import { HeaderShortComponentProps } from '../header-short-component';
-import { TableProps } from '@zepdev/design-system-component-library-react';
+import React from 'react';
 
-export interface AccordionContent {
-  title: string;
-  accordionContent: BlocksContent;
-}
-
-export interface AccordionProps {
-  contents: AccordionContent[]
-}
-
-export interface Image {
-  src: string;
-  alt: string;
-}
-
-export interface ImagesProps {
-  images: Array<Image>,
-}
-
-export type HeaderProps = PropsWithChildren<{
-  level: 1 | 2 | 3 | 4 | 5 | 6;
-}>
-
-export interface ListProps {
-  items: ReactNode[];
-  ordered: boolean;
-}
-
-export interface BlocksRichTextProps {
+export interface RichTextProps extends Partial<RichTextBaseProps> {
   content: BlocksContent;
+  className?: string;
 }
 
-export interface CertificatesProps {
-  certificateImages: Image[],
-  title: string,
+export interface ImageProps {
+  url: string;
+  alt: string;
+  description: string;
 }
 
-export interface RichTextProps extends HeaderShortComponentProps {
-  children: ReactElement<TableProps> | ReactElement<AccordionProps> | ReactElement<ImagesProps> | ReactElement<BlocksRichTextProps> | ReactElement<CertificatesProps>
-  onDownload: (ev: MouseEvent<HTMLElement>) => void,
-  description: string,
-  buttonText: string,
+export interface RichTextBaseProps {
+  children: React.ReactNode;
+  className?: string;
+}
+
+export interface HeaderProps extends RichTextBaseProps {
+  level: 1 | 2 | 3 | 4 | 5 | 6;
+}
+
+export interface ListProps extends Omit<RichTextBaseProps, 'children'> {
+  items: React.ReactNode[];
+  ordered: boolean;
 }

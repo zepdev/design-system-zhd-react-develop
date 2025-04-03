@@ -1,13 +1,15 @@
-import React from 'react';
-import { HeaderLongProps } from './headerlong.interface';
+import { clsx } from 'clsx';
+import { GlobalVariants } from '../../interfaces/global-variants';
+import { backgroundColor } from '../../utils/commonCSS';
 import { HeaderLongComponent } from '../header-long-component';
 import { Layout } from '../layout';
+import { HeaderLongProps } from './headerlong.interface';
 
 // Header Long Pattern
-export const HeaderLong = (props: HeaderLongProps) => {
+export const HeaderLong = ({ variant = GlobalVariants.Zps, ...rest }: HeaderLongProps) => {
   return (
-    <Layout testId="zep-header-long">
-      <HeaderLongComponent {...props} />
+    <Layout className={clsx(backgroundColor[variant])} testId="zep-header-long">
+      <HeaderLongComponent {...rest} variant={variant} />
     </Layout>
   );
 };
