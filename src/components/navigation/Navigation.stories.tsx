@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import zepCatLogo from '../../assets/zep-logo.svg';
+import zepCatLogo from '../../assets/zep-cat-logo.svg';
 import { Navigation } from './Navigation';
 import { NavigationProps } from './navigation.interface';
 
@@ -14,9 +14,9 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 const locales = [
-  { label: 'Deutsch (DE)', value: 'de', country: 'Germany (Deutschland)' },
-  { label: 'English (EN)', value: 'en', country: 'Germany (Deutschland)' },
-  { label: 'Deutsch (AT)', value: 'de-AT', country: 'Austria (Österreich)' },
+  { label: 'Deutsch', value: 'de', country: 'Deutsch', langAbbrev: 'DE' },
+  { label: 'English', value: 'en', country: 'Germany', langAbbrev: 'EN' },
+  { label: 'Deutsch', value: 'de-AT', country: 'Österreich', langAbbrev: 'DE' },
 ];
 
 export const Default: Story = {
@@ -25,37 +25,65 @@ export const Default: Story = {
     navigationItems: [
       {
         navId: '1',
-        label: 'Industrien',
-        link: '/home',
+        label: 'Marine',
+        link: '/Marine',
         children: [
           {
             navId: '1',
-            label: 'Industrien 1',
+            label: 'Loesungen',
+            link: '/Loesungen',
+            children: [
+              {
+                navId: '1',
+                label: 'Bratwurst',
+                link: '/Bratwurst',
+                children: [{ navId: '1', label: 'Bratwurst 1', link: 'https://www.google.co.uk/' }],
+              },
+              { navId: '2', label: 'Marine 1-2' },
+            ],
+          },
+          {
+            navId: '2',
+            label: 'Power and heat',
+            link: '/Ppower-and-heat',
+            children: [
+              {
+                navId: '1',
+                label: 'Bratwurst',
+                children: [{ navId: '1', label: 'Bratwurst 1', link: 'https://www.google.co.uk/' }],
+              },
+              { navId: '2', label: 'Marine 1-2' },
+            ],
+          },
+          {
+            navId: '3',
+            label: 'LILA',
             link: '',
             children: [
               {
-                id: '1',
-                label: 'Industrien 1-1',
-                children: [{ label: 'Industrien 1-1-1', link: 'https://www.google.co.uk/' }],
+                navId: '1',
+                label: 'Bratwurst',
+                children: [{ navId: '1', label: 'Bratwurst 1', link: 'https://www.google.co.uk/' }],
               },
-              { label: 'Industrien 1-2' },
+              { navId: '2', label: 'Marine 1-2' },
             ],
           },
         ],
       },
-      { id: '2', label: 'Kompetenzen', children: [{ label: 'Kompetenzen 1' }] },
-      { id: '3', label: 'Produkte', children: [{ label: 'Produkte 1' }] },
-      { id: '4', label: 'Service' },
-      { id: '5', label: 'Über UNs' },
+      { navId: '2', label: 'Strom & Wärme', children: [{ navId: '1', label: 'Strom 1' }] },
+      {
+        navId: '3',
+        label: 'Industrie',
+        children: [{ label: 'Industrie 1' }],
+      },
+      { navId: '4', label: 'Öl & Gas' },
+      { navId: '5', label: 'Schiene' },
+      { navId: '6', label: 'Gebrauchtmaschinen' },
     ],
     locales: locales,
+    header: ' Select preferred country and language',
+    labelBack: 'Back',
     selectedLocale: locales[0],
-    navigationUtilityItems: [
-      { label: 'Nachhaltige Lösungen' },
-      { label: 'News & Media' },
-      { label: 'Messen & Events' },
-      { label: 'Karriere' },
-      { label: 'Kontakt' },
-    ],
+    navigationUtilityItems: [{ label: 'Services' }, { label: 'Unternehmen' }, { label: 'Kontakt & Standorte' }],
   } as NavigationProps,
 };

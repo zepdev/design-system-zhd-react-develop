@@ -1,42 +1,44 @@
-import { render } from '@testing-library/react';
-import { LinkProps } from '@zepdev/design-system-component-library-react';
-import { LinkListItem } from './LinkListItem';
+import { LinkListItem } from '@/components/link-list-item/LinkListItem';
+import { render, screen } from '@testing-library/react';
+import { LinkProps } from '@zepdev/design-system-component-library-react/dist/src/components/link/link.interface';
+import { GlobalVariants } from '../../interfaces/global-variants';
 
 describe('Link List Item component', () => {
   const links: LinkProps[] = [
-    { icon: 'arrow-right', href: 'https://www.google.com', label: 'inline link'},
+    { icon: 'arrow-right', href: '/home/about', label: 'inline link' },
   ];
-  const description = 'Test Description';
   const headline = 'Test Headline';
 
   test('renders LinkListItem component with headline and links and power-systems theme', () => {
-    const { getByTestId, queryByTestId, getAllByRole } = render(<LinkListItem headline={headline} links={links} />);
-    const headlineElement = getByTestId('link-list-headline');
-    const descriptionElement = queryByTestId('link-list-description');
+    render(<LinkListItem headline={headline} links={links} />);
+    const headlineElement = screen.getByTestId('link-list-headline');
+    const descriptionElement = screen.queryByTestId('link-list-description');
     expect(headlineElement).toBeInTheDocument();
     expect(headlineElement).toHaveTextContent(headline);
-    const linkElements = getAllByRole('link');
+    const linkElements = screen.getAllByRole('link');
     expect(linkElements.length).toBe(1);
+    expect(headlineElement).toHaveClass('zep-text-primary-default');
     expect(descriptionElement).not.toBeInTheDocument();
   });
-  test('links open in a new tab', () => {
-    const { getAllByRole } = render(<LinkListItem headline={headline} links={links} />);
-    const linkElements = getAllByRole('link');
+  test('links open in same tab', () => {
+    render(<LinkListItem headline={headline} links={links} />);
+    const linkElements = screen.getAllByRole('link');
     linkElements.forEach((linkElement) => {
-      expect(linkElement).toHaveAttribute('target', '_blank');
+      expect(linkElement).toHaveAttribute('target', '_self');
     });
   });
   test('renders LinkListItem component without headline and description', () => {
-    const { queryByTestId } = render(<LinkListItem links={links} />);
-    const headlineElement = queryByTestId('link-list-headline');
-    const descriptionElement = queryByTestId('link-list-description');
+    render(<LinkListItem links={links} />);
+    const headlineElement = screen.queryByTestId('link-list-headline');
+    const descriptionElement = screen.queryByTestId('link-list-description');
     expect(headlineElement).not.toBeInTheDocument();
     expect(descriptionElement).not.toBeInTheDocument();
   });
-  test('renders LinkListItem component with description', () => {
-    const { queryByTestId } = render(<LinkListItem links={links} description={description} />);
-    const descriptionElement = queryByTestId('link-list-description');
-    expect(descriptionElement).toBeInTheDocument();
-    expect(descriptionElement).toHaveTextContent(description);
+  test('renders LinkListItem component with cat theme', () => {
+    render(<LinkListItem links={links} headline={headline} variant={GlobalVariants.Cat} />);
+    const headlineElement = screen.getByTestId('link-list-headline');
+    const linksElement = screen.getByTestId('link-list-links');
+    expect(headlineElement).toHaveClass('zep-text-typography-dark-100');
+    expect(linksElement).toHaveClass('zep-text-typography-dark-100');
   });
 });

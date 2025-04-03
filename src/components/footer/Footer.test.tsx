@@ -1,16 +1,16 @@
 import { render } from '@testing-library/react';
 import { Footer } from '@/components/footer/Footer';
 import { LinkListItemProps } from '@/components/link-list-item';
-import { LinkTarget } from '~/@zepdev/design-system-component-library-react';
+import { LinkTarget } from '@zepdev/design-system-component-library-react';
 import { LinkProps } from '@zepdev/design-system-component-library-react';
 
 describe('Footer component', () => {
   const mockLinkList: LinkListItemProps = {
     links: [
-      { icon: 'arrow-right', href: 'https://www.google.com', label: 'link inline'},
-      { icon: 'arrow-right', href: 'https://www.google.com', label: 'link inline'},
-      { icon: 'arrow-right', href: 'https://www.google.com', label: 'link inline'},
-      { icon: 'arrow-right', href: 'https://www.google.com', label: 'link inline'},
+      { icon: 'arrow-right', href: 'https://www.google.com', label: 'link inline' },
+      { icon: 'arrow-right', href: 'https://www.google.com', label: 'link inline' },
+      { icon: 'arrow-right', href: 'https://www.google.com', label: 'link inline' },
+      { icon: 'arrow-right', href: 'https://www.google.com', label: 'link inline' },
     ],
     headline: 'Headline optional',
   }
@@ -36,6 +36,8 @@ describe('Footer component', () => {
   test('renders correctly', () => {
     const { getByTestId } = render(<Footer socialMediaLinks={socialMediaLinks} socialMediaTitle={socialMediaTitle} footerLinks={footerLinks} linkLists={linkLists} />);
     const footerElement = getByTestId('zep-footer');
+    const layoutElement = getByTestId('zep-layout');
     expect(footerElement).toBeInTheDocument();
+    expect(layoutElement).toBeInTheDocument();
   });
 })

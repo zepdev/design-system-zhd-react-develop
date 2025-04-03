@@ -1,5 +1,7 @@
 import { Meta, StoryObj } from '@storybook/react';
-import { LinkListItem } from './LinkListItem';
+import { LinkListItem } from '@/components/link-list-item/LinkListItem';
+import { GlobalVariants } from '../../interfaces/global-variants';
+import { mockRichTextShort } from '../../utils/mocks';
 
 const meta = {
   title: 'Components/LinkListItem',
@@ -13,12 +15,13 @@ type Story = StoryObj<typeof meta>;
 export const Default: Story = {
   args: {
     links: [
-      { icon: 'arrow-right', href: 'https://www.google.com', label: 'link inline'},
-      { icon: 'arrow-right', href: 'https://www.google.com', label: 'link inline'},
-      { icon: 'arrow-right', href: 'https://www.google.com', label: 'link inline'},
-      { icon: 'arrow-right', href: 'https://www.google.com', label: 'link inline'},
+      { icon: 'arrow-right', href: 'https://www.google.com', label: 'link inline' },
+      { icon: 'arrow-right', href: 'https://www.google.com', label: 'link inline' },
+      { icon: 'arrow-right', href: 'https://www.google.com', label: 'link inline' },
+      { icon: 'arrow-right', href: 'https://www.google.com', label: 'link inline' },
     ],
     headline: 'Headline optional',
-    description: 'Description optional',
+    description: mockRichTextShort,
+    variant: GlobalVariants.Zps,
   },
 };

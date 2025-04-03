@@ -5,7 +5,7 @@ import { LinkProps } from '@zepdev/design-system-component-library-react';
 describe('Single Link List Pattern', () => {
   const title = 'Test Header Title';
   const links: LinkProps[] = [
-    { icon: 'arrow-right', href: 'https://www.google.com', label: 'inline link'},
+    { icon: 'arrow-right', href: 'https://www.google.com', label: 'inline link' },
   ];
 
   it('should render a link list item with short header section', () => {

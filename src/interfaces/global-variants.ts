@@ -11,5 +11,5 @@ export enum GlobalVariantExtended {
 export enum LocaleVariants {
   EN = 'en',
   DE = 'de',
-  DE_AU = 'de_au',
+  DE_AT = 'de-AT',
 }

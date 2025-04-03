@@ -15,8 +15,6 @@ describe('TeaserSimple Component', () => {
     const buttonText = getByText('dummy button text');
     expect(teaserHeadlineText).toBeInTheDocument();
     expect(buttonText).toBeInTheDocument();
-    expect(teaserHeadlineText).toHaveClass(
-      ' zep-text-typography-light-100 zep-typography-headlineMD-fluid-cqi zep-w-auto',
-    );
+    expect(teaserHeadlineText).toHaveClass('zep-text-typography-light-100 zep-typography-headlineMD-fluid-cqi');
   });
 });

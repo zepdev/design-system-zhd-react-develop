@@ -1,10 +1,12 @@
 import { render } from '@testing-library/react';
 import { RichText } from './RichText';
+import { mockRichText } from '../../utils/mocks';
 
-describe('RichText', () => {
+describe('RichText component', () => {
   it('should render', () => {
-    const { getByTestId } = render(<RichText onDownload={() => null} description="" buttonText=""><RichText.BlocksRichText content={[]} /></RichText>)
-    const richText = getByTestId('zep-rich-text');
-    expect(richText).toBeInTheDocument();
+    const { getByTestId } = render(<RichText content={mockRichText} />);
+    const richTextElement = getByTestId('zep-richtext');
+    expect(richTextElement).toBeInTheDocument();
+    expect(richTextElement).toHaveClass('zep-max-w-[944px]');
   });
-})
+});
