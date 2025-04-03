@@ -32,6 +32,16 @@ const LinkComponent = ({
     case 'link':
       return (
         <Link
+          label={linkText || ''}
+          href={linkHref}
+          iconPlacement="after"
+          mode={LinkMode.Standalone}
+          icon="arrow-long-right"
+        />
+      );
+    case 'primary-button':
+      return (
+        <Link
           target={linkHref?.startsWith('http') ? LinkTarget.Blank : LinkTarget.Self}
           className={clsx(
             linkClass,
