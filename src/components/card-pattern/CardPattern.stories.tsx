@@ -1,6 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { CardPatternProps } from './CardPattern.interface';
 import { CardPattern } from './CardPattern';
+import { mockRichText } from '../../utils/mocks';
 
 const meta = {
   title: 'Patterns/CardPattern',
@@ -40,6 +41,7 @@ export const WithHeadline: Story = {
         linkLabel: 'Click me',
     }),
     headline: 'Zukunftsweisende Antriebslösungen und mehr für die moderne Schifffahrt',
+    description: mockRichText,
     tagline: 'Zeppelin Power Systems Lösungen für Marine',
     linkText: 'Alle Lösungen für Marine anzeigen',
     type: 'link',

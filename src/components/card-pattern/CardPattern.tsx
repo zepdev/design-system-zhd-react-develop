@@ -8,8 +8,12 @@ import { CardPatternProps } from './CardPattern.interface';
 export const CardPattern: React.FC<CardPatternProps> = ({ items, headline, id, ...headerProps }: CardPatternProps) => {
   const cardLists = items.length > 12 ? items.slice(0, 12) : items;
   return (
-    <Layout id={id} className={clsx('zep-flex-col', 'md:zep-gap-4', 'sm:zep-gap-3', 'zep-gap-2.5')}>
-      {headline && <HeaderLongComponent headline={headline} {...headerProps} />}
+    <Layout id={id}>
+      {headline && (
+        <div className="zep-mb-2.5 sm:zep-mb-3 md:zep-mb-4 xl:zep-mb-5">
+          <HeaderLongComponent headline={headline} {...headerProps} />
+        </div>
+      )}
       <div
         data-testid="card-pattern-items"
         className={clsx('zep-grid', 'zep-gap-1', {
