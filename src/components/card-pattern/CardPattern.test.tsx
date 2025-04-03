@@ -4,7 +4,6 @@ import { CardPattern } from './CardPattern';
 describe('CardPattern', () => {
   const headline = 'Headline';
   const tagline = 'Tagline';
-  const description = 'Description';
   const items = [
     {
       imageSrc:
@@ -25,11 +24,8 @@ describe('CardPattern', () => {
   ];
 
   it('renders without crashing headline and cards', () => {
-    const { getByTestId } = render(
-      <CardPattern items={items} headline={headline} tagline={tagline} description={description} />,
-    );
-    const HeaderLongComponentElement = getByTestId('header-long');
-    expect(HeaderLongComponentElement).toBeInTheDocument();
+    const { getByTestId } = render(<CardPattern items={items} headline={headline} tagline={tagline} />);
+
     const CardsElement = getByTestId('card-pattern-items');
     console.log(CardsElement);
     expect(CardsElement).toBeInTheDocument();
