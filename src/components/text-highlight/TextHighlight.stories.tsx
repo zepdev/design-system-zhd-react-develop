@@ -86,7 +86,7 @@ export const TextHighlightRichText: Story = {
   },
 };
 
-export const imageAlignmentRight: Story = {
+export const ImageAlignmentRight: Story = {
   args: {
     buttonText: 'Kontaktieren Sie unsere Experten',
     imageSrc: 'https://images-cdn-live.zepdev.net/2b180439-8f0c-4481-afa9-76d216a96dda.jpg',

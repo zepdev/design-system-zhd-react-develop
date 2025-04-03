@@ -60,6 +60,7 @@ const LinkComponent = ({
           icon="arrow-long-right"
         />
       );
+    // eslint-disable-next-line no-duplicate-case
     case 'primary-button':
     case 'secondary-button':
       return (
