@@ -7,12 +7,14 @@ export declare enum ZsdButtonVariant {
     SecondaryLight = "secondary-light",
     PrimaryLight = "primary-light"
 }
-export interface ZpsButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+export interface ZsdButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
     className?: string;
     label?: string;
     variant?: ZsdButtonVariant;
+    href?: string;
     icon?: FunctionalIconNames;
     iconPosition?: 'left' | 'right';
+    buttonType?: 'default' | 'download';
     isLoading?: boolean;
     children?: ReactNode;
     onClick?: (ev: MouseEvent<HTMLElement>) => void;

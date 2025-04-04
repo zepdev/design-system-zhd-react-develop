@@ -1,10 +1,10 @@
+import { ZsdButtonVariant } from '../zsd-button';
 import { BlocksContent } from '@strapi/blocks-react-renderer';
 import { FunctionalIconNames, TableColumn } from '@zepdev/design-system-component-library-react';
 import { MouseEvent, ReactElement } from 'react';
 import { GlobalVariants } from '../../interfaces/global-variants';
 import { AccordionContent } from '../accrodion-pattern';
 import { HeaderLongProps } from '../header-long';
-import { ZpsButtonVariant } from '../zps-button';
 
 export interface AccordionProps {
     contents: AccordionContent[];
@@ -23,7 +23,7 @@ export interface THContext {
     message: string;
     variant: GlobalVariants;
     buttonUrl?: string;
-    buttonVariant?: ZpsButtonVariant | 'link';
+    buttonVariant?: ZsdButtonVariant | 'link';
     buttonType?: 'download' | 'default';
     buttonIcon?: FunctionalIconNames;
     buttonIconPosition?: 'left' | 'right';
