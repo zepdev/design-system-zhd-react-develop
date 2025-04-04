@@ -1,5 +1,8 @@
 
 export * from '../interfaces/global-variants';
+export * from './SH-Corp-temp';
+export * from './Teaser-simple';
+export * from './USP';
 export * from './accrodion-pattern';
 export * from './anchor-navigation-card';
 export * from './anchor-navigation-list';
@@ -36,12 +39,9 @@ export * from './product-highlight';
 export * from './rich-text';
 export * from './rich-text-pattern';
 export * from './scrollbar';
-export * from './SH-corp';
 export * from './single-link-list';
 export * from './table-pattern';
-export * from './Teaser-simple';
 export * from './text-highlight';
-export * from './USP';
 export * from './usp-list';
 export * from './video';
 export * from './zsd-button';
