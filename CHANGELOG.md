@@ -1,3 +1,25 @@
+# [1.2.0](https://github.com/zepdev/design-system-zhd-react/compare/v1.1.0...v1.2.0) (2025-04-04)
+
+
+### Bug Fixes
+
+* add missing asset for hero ([b9c0092](https://github.com/zepdev/design-system-zhd-react/commit/b9c00927cb3d9cf5bdda09dd73397bbefa828d05))
+* headline align left ([d320648](https://github.com/zepdev/design-system-zhd-react/commit/d32064889fa8b980d6929dbc3d964583ff2174ad))
+* padding issue between two components ([b583999](https://github.com/zepdev/design-system-zhd-react/commit/b583999ddb4877e54e179cd8f52faaa1d65b6ee9))
+* Pipeline ([e31297c](https://github.com/zepdev/design-system-zhd-react/commit/e31297c46400bd3f5a3ead44e6f700ed829fbea9))
+* removed typos ([0c59b49](https://github.com/zepdev/design-system-zhd-react/commit/0c59b490830d722b34c9b79d64ba253d69f36956))
+* try to fix test error ([0f2e0d2](https://github.com/zepdev/design-system-zhd-react/commit/0f2e0d27151a0d6b9510b2e0fbdbb4aef148f66e))
+* Yarn lock ([ec58cdf](https://github.com/zepdev/design-system-zhd-react/commit/ec58cdf248dc69de96c40c270608532921e5bd30))
+
+
+### Features
+
+* add and zsd components and remove unnecessary ones and adjust components accordingly ([963c3f0](https://github.com/zepdev/design-system-zhd-react/commit/963c3f0c2422887f37deaf5d7b8ec7f60c3cc924))
+* created new card component & pattern ([1287f4c](https://github.com/zepdev/design-system-zhd-react/commit/1287f4c7aaa6ee73072f0316bcce191e95134947))
+* Refactor ([4f7ab2c](https://github.com/zepdev/design-system-zhd-react/commit/4f7ab2caacd3f2302bb1860fe4dc293bba3e158c))
+* Rich text adjustments ([3fa7801](https://github.com/zepdev/design-system-zhd-react/commit/3fa7801804aa30df6997e7c6d71f6e8c8ed946ab))
+* ZPS Refactor ([fd8612d](https://github.com/zepdev/design-system-zhd-react/commit/fd8612d879e407ac37c3849082dbfc03286ec58a))
+
 # [1.1.0](https://github.com/zepdev/design-system-zhd-react/compare/v1.0.0...v1.1.0) (2025-04-02)
 
 
