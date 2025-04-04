@@ -1,2 +1,2 @@
 export { MediaTextComponent } from './MediaTextComponent';
-export type { MediaTextComponentProps } from './media-text-component.interface';
+export type { MediaTextComponentContentProps } from './media-text-component.interface';

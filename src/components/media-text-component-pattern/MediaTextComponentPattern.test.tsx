@@ -1,25 +1,22 @@
 import { render } from '@testing-library/react';
+import { mockImage, mockRichText } from '../../utils/mocks';
+import { MediaTextComponentContentProps } from '../media-text-component/media-text-component.interface';
 import { MediaTextComponentPattern } from './MediaTextComponentPattern';
 
-describe('MediaTextComponentPattern', () => {
-  const mockItems = [
-    {
-      mediaUrl: './assets/hero_image.png',
-      imageOrientation: 'horizontal',
-      mediaType: 'image',
-      mediaPosition: 'right',
-      headline: 'Headline Test',
-      description: 'description here',
-      buttonText: 'Read More',
-    },
-  ];
-  it('renders the component with the provided items', () => {
-    const { getByText } = render(<MediaTextComponentPattern items={mockItems} />);
-    const headlineElement = getByText('Headline Test');
-    const descriptionElement = getByText('description here');
-    const buttonElement = getByText('Read More');
-    expect(headlineElement).toBeInTheDocument();
-    expect(descriptionElement).toBeInTheDocument();
-    expect(buttonElement).toBeInTheDocument();
+describe('Media Text Pattern', () => {
+  const card: MediaTextComponentContentProps = {
+    headline: 'Headline',
+    tagline: 'TAGLINE',
+    content: mockRichText,
+    mediaUrl: mockImage.src,
+    alt: mockImage.alt,
+    labelPrimary: 'Primary',
+  };
+
+  it('should render', async () => {
+    const { getByTestId, findAllByTestId } = render(<MediaTextComponentPattern cards={[card, card]} />);
+    expect(getByTestId('zep-media-text')).toBeInTheDocument();
+    const cards = await findAllByTestId('zep-mediaText');
+    expect(cards).toHaveLength(2);
   });
 });
