@@ -4,21 +4,15 @@ import clsx from 'clsx';
 import { FC } from 'react';
 import { getFirst150Characters } from '../../hooks/useMaxChar150';
 import { Button, ZsdButtonVariant } from '../zsd-button';
-import { SHCorpProps } from './SHCorp.interface';
+import { ShCorpProps } from './sh-corp-interface';
 
-export const SHCorp: FC<SHCorpProps> = ({
+export const SHCorp: FC<ShCorpProps> = ({
   headline,
   subline,
   imageSrc,
   imageAlt,
-  buttonPrimary,
-  buttonPrimaryIcon,
-  buttonPrimaryIconPosition,
-  buttonPrimaryUrl,
-  buttonSecondary,
-  buttonSecondaryIcon,
-  buttonSecondaryIconPosition,
-  buttonSecondaryUrl,
+  primaryButtonText,
+  secondaryButtonText,
   description,
 }) => {
   return (
@@ -36,29 +30,21 @@ export const SHCorp: FC<SHCorpProps> = ({
             {subline}
           </h3>
           {description && <p className="zep-mb-1.5">{getFirst150Characters(description)}</p>}
-          {buttonPrimary && (
+          {primaryButtonText && (
             <div className="zep-flex zep-flex-col sm:zep-flex-row zep-gap-1">
-              <a href={buttonPrimaryUrl}>
+              <Button
+                label={primaryButtonText}
+                title={primaryButtonText}
+                variant={ZsdButtonVariant.PrimaryDark}
+                className="zep-w-full sm:zep-max-w-max"
+              />
+              {secondaryButtonText && (
                 <Button
-                  label={buttonPrimary}
-                  title={buttonPrimary}
-                  variant={ZsdButtonVariant.PrimaryDark}
+                  label={secondaryButtonText}
+                  title={secondaryButtonText}
+                  variant={ZsdButtonVariant.SecondaryDark}
                   className="zep-w-full sm:zep-max-w-max"
-                  icon={buttonPrimaryIcon}
-                  iconPosition={buttonPrimaryIconPosition}
                 />
-              </a>
-              {buttonSecondary && (
-                <a href={buttonSecondaryUrl}>
-                  <Button
-                    label={buttonSecondary}
-                    title={buttonSecondary}
-                    icon={buttonSecondaryIcon}
-                    iconPosition={buttonSecondaryIconPosition}
-                    variant={ZsdButtonVariant.SecondaryDark}
-                    className="zep-w-full sm:zep-max-w-max"
-                  />
-                </a>
               )}
             </div>
           )}
@@ -88,29 +74,21 @@ export const SHCorp: FC<SHCorpProps> = ({
                 {getFirst150Characters(description)}
               </p>
             )}
-            {buttonPrimary && (
+            {primaryButtonText && (
               <div className="zep-flex zep-gap-1">
-                <a href={buttonPrimaryUrl}>
+                <Button
+                  label={primaryButtonText}
+                  title={primaryButtonText}
+                  variant={ZsdButtonVariant.PrimaryLight}
+                  className="sm:zep-max-w-max"
+                />
+                {secondaryButtonText && (
                   <Button
-                    label={buttonPrimary}
-                    title={buttonPrimary}
-                    variant={ZsdButtonVariant.PrimaryLight}
+                    label={secondaryButtonText}
+                    title={secondaryButtonText}
+                    variant={ZsdButtonVariant.SecondaryLight}
                     className="sm:zep-max-w-max"
-                    icon={buttonPrimaryIcon}
-                    iconPosition={buttonPrimaryIconPosition}
                   />
-                </a>
-                {buttonSecondary && (
-                  <a href={buttonSecondaryUrl}>
-                    <Button
-                      label={buttonSecondary}
-                      title={buttonSecondary}
-                      icon={buttonSecondaryIcon}
-                      iconPosition={buttonSecondaryIconPosition}
-                      variant={ZsdButtonVariant.SecondaryLight}
-                      className="sm:zep-max-w-max"
-                    />
-                  </a>
                 )}
               </div>
             )}

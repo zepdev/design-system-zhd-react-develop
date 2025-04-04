@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { mockRichTextShort } from '../../utils/mocks';
-import { ZpsButtonVariant } from '../zps-button';
+import { ZsdButtonVariant } from '../zsd-button';
 import { ProductHighLight } from './Product-highlight';
 import { ProductHighLightProps } from './product-highlight.interface';
 
@@ -12,7 +12,7 @@ const meta = {
     buttonVariant: {
       control: {
         type: 'radio',
-        options: Object.keys(ZpsButtonVariant),
+        options: Object.keys(ZsdButtonVariant),
       },
     },
   },
@@ -30,7 +30,7 @@ export const Default: Story = {
     imageAlt: 'alt text',
     buttonText: 'Button',
     buttonTitle: 'button title',
-    buttonVariant: ZpsButtonVariant.Primary,
+    buttonVariant: ZsdButtonVariant.PrimaryDark,
     imageAlignment: 'left',
   } as ProductHighLightProps,
 };
@@ -44,7 +44,7 @@ export const RightImageAlignment: Story = {
     buttonText: 'Button',
     buttonTitle: 'button title',
     imageAlignment: 'right',
-    buttonVariant: ZpsButtonVariant.Primary,
+    buttonVariant: ZsdButtonVariant.PrimaryDark,
     buttonUrl: 'url button',
   } as ProductHighLightProps,
 };

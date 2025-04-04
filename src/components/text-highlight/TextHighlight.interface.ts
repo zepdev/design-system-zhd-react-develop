@@ -1,10 +1,10 @@
+import { ZsdButtonVariant } from '@/components/zsd-button';
 import { BlocksContent } from '@strapi/blocks-react-renderer';
 import { FunctionalIconNames, TableColumn } from '@zepdev/design-system-component-library-react';
 import { MouseEvent, ReactElement } from 'react';
 import { GlobalVariants } from '../../interfaces/global-variants';
 import { AccordionContent } from '../accrodion-pattern';
 import { HeaderLongProps } from '../header-long';
-import { ZpsButtonVariant } from '@/components/zps-button';
 
 export interface AccordionProps {
   contents: AccordionContent[];
@@ -26,10 +26,10 @@ export interface THContext {
   message: string;
   variant: GlobalVariants;
   buttonUrl?: string;
-  buttonVariant?: ZpsButtonVariant | 'link';
-  buttonType?: 'download' | 'default'
-  buttonIcon?: FunctionalIconNames,
-  buttonIconPosition?: 'left' | 'right',
+  buttonVariant?: ZsdButtonVariant | 'link';
+  buttonType?: 'download' | 'default';
+  buttonIcon?: FunctionalIconNames;
+  buttonIconPosition?: 'left' | 'right';
 }
 
 export interface TextHighlightProps extends Partial<Omit<HeaderLongProps, 'variant'>>, Omit<THContext, 'variant'> {

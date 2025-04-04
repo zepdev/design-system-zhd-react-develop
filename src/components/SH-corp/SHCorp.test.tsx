@@ -1,5 +1,5 @@
 import { render } from '@testing-library/react';
-import { SHCorp } from './SHCorp';
+import { SHCorp } from './ShCorp';
 
 describe('SHCorp Component', () => {
   test('renders the component with correct props', () => {

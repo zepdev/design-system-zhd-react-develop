@@ -1,9 +1,9 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { SHCorp } from './SHCorp';
-import { SHCorpProps } from './SHCorp.interface';
+import { SHCorp } from './ShCorp';
+import { ShCorpProps } from './sh-corp-interface';
 
 const meta = {
-  title: 'Components/SHCorp',
+  title: 'Components/SmallHeroCorporate',
   component: SHCorp,
   argTypes: {},
 } satisfies Meta<typeof SHCorp>;
@@ -19,7 +19,7 @@ export const Default: Story = {
       'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo  ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis  dis parturient montes, nascetur ridiculus mus.',
     imageSrc: './public/assets/hero-small.png',
     imageAlt: 'image alt',
-    buttonPrimary: 'aaa',
-    buttonSecondary: 'bbb',
-  } as SHCorpProps,
+    primaryButtonText: 'Primary',
+    secondaryButtonText: 'Secondary',
+  } as ShCorpProps,
 };
