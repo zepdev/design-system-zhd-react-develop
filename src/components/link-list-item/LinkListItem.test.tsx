@@ -4,9 +4,7 @@ import { LinkProps } from '@zepdev/design-system-component-library-react/dist/sr
 import { GlobalVariants } from '../../interfaces/global-variants';
 
 describe('Link List Item component', () => {
-  const links: LinkProps[] = [
-    { icon: 'arrow-right', href: '/home/about', label: 'inline link' },
-  ];
+  const links: LinkProps[] = [{ icon: 'arrow-right', href: '/home/about', label: 'inline link' }];
   const headline = 'Test Headline';
 
   test('renders LinkListItem component with headline and links and power-systems theme', () => {
@@ -17,7 +15,7 @@ describe('Link List Item component', () => {
     expect(headlineElement).toHaveTextContent(headline);
     const linkElements = screen.getAllByRole('link');
     expect(linkElements.length).toBe(1);
-    expect(headlineElement).toHaveClass('zep-text-primary-default');
+    expect(headlineElement).toHaveClass('zep-text-darkgrey-500');
     expect(descriptionElement).not.toBeInTheDocument();
   });
   test('links open in same tab', () => {
@@ -38,7 +36,7 @@ describe('Link List Item component', () => {
     render(<LinkListItem links={links} headline={headline} variant={GlobalVariants.Cat} />);
     const headlineElement = screen.getByTestId('link-list-headline');
     const linksElement = screen.getByTestId('link-list-links');
-    expect(headlineElement).toHaveClass('zep-text-typography-dark-100');
-    expect(linksElement).toHaveClass('zep-text-typography-dark-100');
+    expect(headlineElement).toHaveClass('zep-text-darkgrey-500');
+    expect(linksElement).toHaveClass('zep-text-typography-primary-default');
   });
 });

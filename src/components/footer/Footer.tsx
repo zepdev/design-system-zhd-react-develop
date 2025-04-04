@@ -24,7 +24,7 @@ export const Footer: React.FC<FooterProps> = ({
           <span className="zep-typography-supportText zep-text-typography-dark-70 zep-opacity-70">{footerText}</span>
         </Layout>
       )}
-      <Layout wrapperClassname="!zep-mb-[0] zep-bg-background-dark zep-pt-1 md:zep-pt-1.5 lg:zep-pt-2.5">
+      <Layout wrapperClassname="!zep-mb-[0] zep-bg-greyscale-200 zep-pt-1 md:zep-pt-1.5 lg:zep-pt-2.5">
         <MultiLinkList
           linkListItemClassname="zep-px-[0] sm:zep-px-[0] md:zep-px-[0]"
           isPatternPart
@@ -35,7 +35,7 @@ export const Footer: React.FC<FooterProps> = ({
         <div data-testid="zep-footer">
           <div className="zep-flex zep-flex-col zep-w-full">
             <div className="lg:zep-pt-5 md:zep-py-3 zep-py-1.5 sm:zep-py-2.5 md:zep-px-[0px] zep-flex zep-items-center zep-gap-2.5">
-              <p className="zep-text-typography-light-100 zep-typography-headlineXS-fluid-cqi">{socialMediaTitle}</p>
+              <p className="zep-text-darkgrey-500 zep-typography-headlineXS-fluid-cqi">{socialMediaTitle}</p>
               <div className="zep-flex zep-gap-1">
                 {socialMediaLinks.map((link) => (
                   <div
@@ -54,12 +54,12 @@ export const Footer: React.FC<FooterProps> = ({
               </div>
             </div>
             <div className="zep-flex lg:zep-flex-row zep-flex-col lg:zep-items-center lg:zep-gap-5 zep-gap-1 zep-py-1.5 zep-border-t-1 zep-border-t-greyscale-700 zep-w-full">
-              <p className="zep-text-greyscale-0 zep-typography-bodyText">{`© ${currentYear} Zeppelin Power Systems GmbH`}</p>
+              <p className="zep-text-greyscale-900 zep-typography-bodyText">{`© ${currentYear} Zeppelin Power Systems GmbH`}</p>
               <div className="zep-flex sm:zep-gap-3 zep-gap-1 sm:zep-items-center sm:zep-flex-row sm:zep-flex-wrap zep-flex-col">
                 {footerLinks.map((link) => (
                   <Link
                     key={link.label}
-                    className="zep-text-greyscale-0"
+                    className="zep-text-primary-default"
                     target={link.href?.startsWith('http') ? LinkTarget.Blank : LinkTarget.Self}
                     label={link.label}
                     mode={LinkMode.Inline}
