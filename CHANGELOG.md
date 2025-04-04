@@ -1,3 +1,19 @@
+# [1.3.0](https://github.com/zepdev/design-system-zhd-react/compare/v1.2.0...v1.3.0) (2025-04-04)
+
+
+### Bug Fixes
+
+* breadcrums colors ([df5932a](https://github.com/zepdev/design-system-zhd-react/commit/df5932aa39853049c7c5d46a97c861bbe061c300))
+* Hero adjustment ([5867177](https://github.com/zepdev/design-system-zhd-react/commit/586717779c2c2802fbea69eab4ec855fa103285b))
+* image aspect ratio and added new breakpoint to the storybook ([e688291](https://github.com/zepdev/design-system-zhd-react/commit/e688291c5875c6a742ade9d8ac3fbc465dff28ac))
+* Media text adjustments ([da3e5dc](https://github.com/zepdev/design-system-zhd-react/commit/da3e5dc5a351271600505d70aceb1016c7dcde1b))
+* Tests ([09817f1](https://github.com/zepdev/design-system-zhd-react/commit/09817f1aba15d066a706e8686d4526ba60131047))
+
+
+### Features
+
+* Navigation+Footer ([4c0be4b](https://github.com/zepdev/design-system-zhd-react/commit/4c0be4b7f9c81120f3f1ae3bb78df9a582ac595a))
+
 # [1.2.0](https://github.com/zepdev/design-system-zhd-react/compare/v1.1.0...v1.2.0) (2025-04-04)
 
 
