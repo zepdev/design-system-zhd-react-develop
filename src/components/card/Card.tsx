@@ -26,14 +26,20 @@ export const Card: FC<CardProps> = ({ imageSrc, imageAlt, tagline, title, descri
       />
       <div className={clsx('zep-flex', 'zep-flex-col', 'zep-p-1.5', 'md:zep-p-2.5', 'md:zep-p-2.5', 'zep-items-start')}>
         <p
-          className={clsx('zep-typography-tagline', 'zep-mb-0.25', 'zep-break-all', 'zep-text-typography-dark-70/70')}
+          className={clsx(
+            'zep-typography-tagline',
+            'zep-text-left',
+            'zep-mb-0.25',
+            'zep-break-all',
+            'zep-text-typography-dark-70/70',
+          )}
           data-testid="card-component-tagline"
         >
           {tagline}
         </p>
         <h4
           data-testid="card-component-title"
-          className="zep-typography-headlineXS-fluid-cqi zep-hyphens-auto zep-mb-0.5 zep-text-typography-dark-100 group-hover:zep-underline zep-break-normal "
+          className="zep-typography-headlineXS-fluid-cqi zep-hyphens-auto zep-text-left zep-mb-0.5 zep-text-typography-dark-100 group-hover:zep-underline zep-break-normal "
         >
           {title}
         </h4>
