@@ -1,3 +1,10 @@
+## [1.4.1](https://github.com/zepdev/design-system-zhd-react/compare/v1.4.0...v1.4.1) (2025-04-04)
+
+
+### Bug Fixes
+
+* Export small hero ([4db3ed1](https://github.com/zepdev/design-system-zhd-react/commit/4db3ed12143fc411f5fe0e813645d190391f1186))
+
 # [1.4.0](https://github.com/zepdev/design-system-zhd-react/compare/v1.3.0...v1.4.0) (2025-04-04)
 
 
