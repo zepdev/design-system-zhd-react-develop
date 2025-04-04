@@ -1,3 +1,24 @@
+# [1.1.0](https://github.com/zepdev/design-system-zhd-react/compare/v1.0.0...v1.1.0) (2025-04-02)
+
+
+### Bug Fixes
+
+* Added Media-text-component ([06a4359](https://github.com/zepdev/design-system-zhd-react/commit/06a4359ac93f7e74f890bb44ea94d6bde6d3cb3d))
+* fix download component error ([228b8f1](https://github.com/zepdev/design-system-zhd-react/commit/228b8f1064023ed112e43ec51308646e06e1d78e))
+
+
+### Features
+
+* add cookies component and fix font ([5a6fd0e](https://github.com/zepdev/design-system-zhd-react/commit/5a6fd0e2ada78449863d29bbd9611df589f12a29))
+* cleanup library with the needed components ([41832ce](https://github.com/zepdev/design-system-zhd-react/commit/41832ce9dacec51f48067db9e4b490a21de3ce04))
+
+# 1.0.0 (2025-03-04)
+
+
+### Bug Fixes
+
+* trying to run the prod deployment ([b2e2b3f](https://github.com/zepdev/design-system-zhd-react/commit/b2e2b3f57960d55db53b7de5ed4dc73f674c5d61))
+
 ## [1.3.6](https://github.com/zepdev/design-system-zps-react/compare/v1.3.5...v1.3.6) (2024-11-12)
 
 

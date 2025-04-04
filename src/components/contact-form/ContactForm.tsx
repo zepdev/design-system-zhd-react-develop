@@ -11,7 +11,7 @@ import { Radio } from '../form-fields/radio';
 import { TextArea } from '../form-fields/text-area';
 import { HeaderLongComponent } from '../header-long-component';
 import { MultiLinkList } from '../multi-link-list';
-import { Button, ZpsButtonVariant } from '../zps-button';
+import { Button, ZsdButtonVariant } from '../zsd-button';
 import { ContactFormProps } from './contact-form-interface';
 import { contactFormLocales } from './contact-form-locales';
 
@@ -127,7 +127,7 @@ const ContactForm: FC<ContactFormProps> = ({
 
         <Button
           disabled={loading}
-          variant={ZpsButtonVariant.Primary}
+          variant={ZsdButtonVariant.PrimaryDark}
           className="!zep-w-full zep-mt-1.5 md:zep-mt-2"
           type="submit"
         >

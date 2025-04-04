@@ -13,7 +13,7 @@ import { PhoneInput } from '../form-fields/phone-input';
 import { Radio } from '../form-fields/radio';
 import { HeaderShortComponent } from '../header-short-component';
 import { Layout } from '../layout';
-import { Button, ZpsButtonVariant } from '../zps-button';
+import { Button, ZsdButtonVariant } from '../zsd-button';
 import { ContactFormLargeProps } from './contact-form-large-interface';
 
 const ContactFormLarge: FC<ContactFormLargeProps> = ({
@@ -186,10 +186,10 @@ const ContactFormLarge: FC<ContactFormLargeProps> = ({
                 </div>
               </div>
 
-              <Button disabled={loading} variant={ZpsButtonVariant.Primary} className="!zep-w-full" type="submit">
+              <Button disabled={loading} variant={ZsdButtonVariant.PrimaryDark} className="!zep-w-full" type="submit">
                 {loading ? contactFormLocales[locale]['Einreichung'] : contactFormLocales[locale]['Anfrage Senden']}
               </Button>
-              {/* <Button variant={ZpsButtonVariant.SecondaryZps} className="!zep-w-full zep-mb-2" type="submit">
+              {/* <Button variant={ZsdButtonVariant.SecondaryZps} className="!zep-w-full zep-mb-2" type="submit">
                 {contactFormLocales[locale]['Anfrage ausdrucken']}
               </Button> */}
             </form>

@@ -1,4 +1,4 @@
-import { Button } from '@/components/zps-button';
+import { Button } from '@/components/zsd-button';
 import { Accordion, Table, TableThemes } from '@zepdev/design-system-component-library-react';
 import clsx from 'clsx';
 import React from 'react';
