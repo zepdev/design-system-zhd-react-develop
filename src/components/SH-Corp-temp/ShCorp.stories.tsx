@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { SHCorp } from './ShCorp-temp';
-import { ShCorpProps } from './sh-corp-interface-temp';
+import { SHCorp } from './ShCorp';
+import { ShCorpProps } from './sh-corp-interface';
 
 const meta = {
   title: 'Components/SmallHeroCorporate',

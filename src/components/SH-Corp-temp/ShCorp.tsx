@@ -4,7 +4,7 @@ import clsx from 'clsx';
 import { FC } from 'react';
 import { getFirst150Characters } from '../../hooks/useMaxChar150';
 import { Button, ZsdButtonVariant } from '../zsd-button';
-import { ShCorpProps } from './sh-corp-interface-temp';
+import { ShCorpProps } from './sh-corp-interface';
 
 export const SHCorp: FC<ShCorpProps> = ({
   headline,

@@ -1,2 +1,2 @@
-export { SHCorp } from './ShCorp-temp';
-export type { ShCorpProps } from './sh-corp-interface-temp';
+export { SHCorp } from './ShCorp';
+export type { ShCorpProps } from './sh-corp-interface';
