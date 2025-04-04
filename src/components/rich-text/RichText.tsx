@@ -3,6 +3,7 @@ import { Link, LinkMode, LinkTarget, List } from '@zepdev/design-system-componen
 import { clsx } from 'clsx';
 import React from 'react';
 import { getUrlWithTrailingSlash } from '../../utils/getUrlWithTrailingSlash';
+import { Button, ZsdButtonVariant } from '../zsd-button';
 import { HeaderProps, ImageProps, ListProps, RichTextBaseProps, RichTextProps } from './RichText.interface';
 
 const Header: React.FC<HeaderProps> = ({ level, children, className }) => {
@@ -46,7 +47,15 @@ const Image: React.FC<ImageProps> = ({ url, description, alt }) => (
   </div>
 );
 
-const RichText = ({ content, children, className }: RichTextProps) => {
+const RichText = ({
+  content,
+  children,
+  className,
+  button,
+  buttonIcon,
+  buttonIconPosition,
+  buttonUrl,
+}: RichTextProps) => {
   if (content.length === 1 && content[0].children[0]?.type === 'text' && content[0].children[0]?.text === '') {
     return null;
   }
@@ -102,6 +111,18 @@ const RichText = ({ content, children, className }: RichTextProps) => {
         }}
       />
       {children && <div className="zep-w-full">{children}</div>}
+      {button && (
+        <a className="zep-max-w-max" href={buttonUrl}>
+          <Button
+            label={button}
+            title={button}
+            variant={ZsdButtonVariant.SecondaryDark}
+            className="zep-w-full sm:zep-max-w-max"
+            icon={buttonIcon}
+            iconPosition={buttonIconPosition}
+          />
+        </a>
+      )}
     </div>
   );
 };
