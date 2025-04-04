@@ -1,6 +1,7 @@
 import '@zepdev/figma-design-tokens/tailwind/design-tokens.preset';
 export * from '../interfaces/global-variants';
 export * from './SH-Corp';
+export * from './SmallHero';
 export * from './Teaser-simple';
 export * from './USP';
 export * from './accrodion-pattern';
