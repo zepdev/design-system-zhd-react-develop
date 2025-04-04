@@ -1,4 +1,7 @@
 import { Meta, StoryObj } from '@storybook/react';
+import horizontal from '../../assets/horz.png';
+import vertical from '../../assets/verti.png';
+import { mockRichText } from '../../utils/mocks';
 import { MediaTextComponent } from './MediaTextComponent';
 
 const meta = {
@@ -13,25 +16,30 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   args: {
-    mediaUrl: './assets/hero_image.png',
+    mediaUrl: horizontal,
     mediaType: 'image',
     imageOrientation: 'horizontal',
-    mediaPosition: 'left',
+    mediaAlignment: 'left',
     headline: 'Example Headline',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    content: mockRichText,
+    alt: '',
     buttonText: 'Read More',
+    contentAlignment: 'center',
+    labelPrimary: 'aaaa',
   },
 };
 
 export const WithVerticalImageLeft: Story = {
   args: {
-    mediaUrl: './assets/vertical-image.png',
+    mediaUrl: vertical,
     mediaType: 'image',
     imageOrientation: 'vertical',
-    mediaPosition: 'left',
+    mediaAlignment: 'left',
     headline: 'Example Headline',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    content: mockRichText,
+    alt: '',
     buttonText: 'Read More',
+    contentAlignment: 'center',
   },
 };
 
@@ -40,9 +48,10 @@ export const WithVerticalImageRight: Story = {
     mediaUrl: './assets/vertical-image.png',
     mediaType: 'image',
     imageOrientation: 'vertical',
-    mediaPosition: 'right',
+    mediaAlignment: 'right',
     headline: 'Example Headline',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    content: mockRichText,
+    alt: '',
     buttonText: 'Read More',
   },
 };
@@ -51,11 +60,13 @@ export const WithVideo: Story = {
   args: {
     mediaUrl: 'https://videos.pexels.com/video-files/20422317/20422317-hd_1920_1080_25fps.mp4',
     mediaType: 'video',
-    mediaPosition: 'left',
+    mediaAlignment: 'left',
     headline: 'Example Headline',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    content: mockRichText,
+    alt: '',
     buttonText: 'Read More',
-    videoThumbnail: 'https://media.istockphoto.com/id/2065674519/photo/rolling-says-macro.jpg?s=2048x2048&w=is&k=20&c=FO-u3p_njEoIh7GusFYgrOo1RxF0EXobx0BXH6vMB4Q=',
+    videoThumbnail:
+      'https://media.istockphoto.com/id/2065674519/photo/rolling-says-macro.jpg?s=2048x2048&w=is&k=20&c=FO-u3p_njEoIh7GusFYgrOo1RxF0EXobx0BXH6vMB4Q=',
   },
 };
 
@@ -63,32 +74,23 @@ export const WithLinks: Story = {
   args: {
     mediaUrl: './assets/hero_image.png',
     mediaType: 'image',
-    mediaPosition: 'left',
+    mediaAlignment: 'left',
     headline: 'Example Headline',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    content: mockRichText,
+    alt: '',
     buttonText: 'Read More',
-    links: [
-      { icon: 'arrow-right', href: 'https://www.google.com', label: 'link inline' },
-      { icon: 'arrow-right', href: 'https://www.google.com', label: 'link inline' },
-      { icon: 'arrow-right', href: 'https://www.google.com', label: 'link inline' },
-      { icon: 'arrow-right', href: 'https://www.google.com', label: 'link inline' },
-      { icon: 'arrow-right', href: 'https://www.google.com', label: 'link inline' },
-      { icon: 'arrow-right', href: 'https://www.google.com', label: 'link inline' },
-      { icon: 'arrow-right', href: 'https://www.google.com', label: 'link inline' },
-      { icon: 'arrow-right', href: 'https://www.google.com', label: 'link inline' },
-    ],
   },
 };
-
 
 export const WithMediaAlignmentRight: Story = {
   args: {
     mediaUrl: './assets/hero_image.png',
     imageOrientation: 'horizontal',
     mediaType: 'image',
-    mediaPosition: 'right',
+    mediaAlignment: 'right',
     headline: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.',
+    content: mockRichText,
+    alt: '',
     buttonText: 'Read More',
   },
 };

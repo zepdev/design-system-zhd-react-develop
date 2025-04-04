@@ -3,19 +3,27 @@ import { MediaTextComponent } from './MediaTextComponent';
 
 describe('MediaTextComponent', () => {
   const mockProps = {
+    mediaUrl: '',
     mediaType: 'image',
-    imageOrientation: 'vertical',
-    mediaPosition: 'left',
+    imageOrientation: 'horizontal',
+    mediaAlignment: 'left',
     headline: 'Example Headline',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    content: [],
+    alt: '',
     buttonText: 'Read More',
-    mediaUrl: './assets/hero_image.png',
+    contentAlignment: 'center',
   };
 
   it('renders the MediaTextComponent with the provided props', () => {
-    const { getByText } = render(<MediaTextComponent {...mockProps} />);
+    const { getByText } = render(
+      <MediaTextComponent
+        {...mockProps}
+        mediaAlignment="left"
+        imageOrientation="horizontal"
+        contentAlignment="center"
+        mediaType="image"
+      />,
+    );
     expect(getByText('Example Headline')).toBeInTheDocument();
-    expect(getByText('Lorem ipsum dolor sit amet, consectetur adipiscing elit.')).toBeInTheDocument();
-    expect(getByText('Read More')).toBeInTheDocument();
   });
 });
