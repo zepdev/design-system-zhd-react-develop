@@ -4,7 +4,7 @@ import { clsx } from 'clsx';
 import React from 'react';
 import { GlobalVariantExtended, GlobalVariants } from '../../interfaces/global-variants';
 import { getUrlWithTrailingSlash } from '../../utils/getUrlWithTrailingSlash';
-import { Button, ZpsButtonVariant } from '../zps-button';
+import { Button, ZsdButtonVariant } from '../zsd-button';
 import { HeaderLongComponentProps, LinkComponentProps } from './HeaderLongComponent.interface';
 
 const LinkComponent = ({
@@ -22,10 +22,10 @@ const LinkComponent = ({
     'zep-text-indigo-500': GlobalVariants.Zps,
   };
   const buttonVariant = {
-    [GlobalVariants.Cat]: ZpsButtonVariant.SecondaryCat,
-    [GlobalVariants.Zps]: ZpsButtonVariant.SecondaryZps,
-    [GlobalVariantExtended.ZpsBg]: ZpsButtonVariant.Secondary,
-    [GlobalVariantExtended.CatBg]: ZpsButtonVariant.Secondary,
+    [GlobalVariants.Cat]: ZsdButtonVariant.SecondaryDark,
+    [GlobalVariants.Zps]: ZsdButtonVariant.SecondaryLight,
+    [GlobalVariantExtended.ZpsBg]: ZsdButtonVariant.SecondaryLight,
+    [GlobalVariantExtended.CatBg]: ZsdButtonVariant.SecondaryLight,
   };
 
   switch (type) {
@@ -68,7 +68,7 @@ const LinkComponent = ({
           href={linkHref}
           className="zep-whitespace-nowrap sm:zep-w-fit zep-h-fit"
           label={linkText}
-          variant={type === 'primary-button' ? ZpsButtonVariant.Primary : buttonVariant[variant]}
+          variant={type === 'primary-button' ? ZsdButtonVariant.PrimaryDark : buttonVariant[variant]}
           icon={headerButtonIcon}
           onClick={onClick}
           iconPosition={headerButtonIconPosition}

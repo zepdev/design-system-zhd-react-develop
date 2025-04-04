@@ -1,9 +1,8 @@
-
 import { useState } from 'react';
-import { CardEvent } from './card-event';
 import { HeaderLongComponent } from '../header-long-component';
 import { Layout } from '../layout';
-import { Button, ZpsButtonVariant } from '../zps-button';
+import { Button, ZsdButtonVariant } from '../zsd-button';
+import { CardEvent } from './card-event';
 import { CardEventPatternProps } from './card-event-pattern.interface';
 
 export const CardEventPattern: React.FC<CardEventPatternProps> = ({
@@ -23,17 +22,10 @@ export const CardEventPattern: React.FC<CardEventPatternProps> = ({
 
   return (
     <Layout className="zep-inline-grid zep-gap-2.5 sm:zep-gap-3 md:zep-gap-4 zep-justify-center zep-bg-greyscale-100">
-      <HeaderLongComponent
-        headline={headline}
-        variant={variant}
-        {...headerLongComponentProps}
-      />
+      <HeaderLongComponent headline={headline} variant={variant} {...headerLongComponentProps} />
       <div data-testid="zep-card-event">
         {cardEventItems.map((item, index) => (
-          <div
-            key={index}
-            className="zep-mb-1 sm:zep-mb-1.5 xl:zep-mb-2  zep-bg-greyscale-0"
-          >
+          <div key={index} className="zep-mb-1 sm:zep-mb-1.5 xl:zep-mb-2  zep-bg-greyscale-0">
             <CardEvent
               key={index}
               headline={item.headline}
@@ -53,7 +45,7 @@ export const CardEventPattern: React.FC<CardEventPatternProps> = ({
       {/* Show button only if items exceed 10 */}
       {visibleItems < items.length && (
         <div className="zep-justify-center zep-items-center zep-flex">
-          <Button label={buttonLabel} onClick={handleShowMore} variant={ZpsButtonVariant.SecondaryZps} />
+          <Button label={buttonLabel} onClick={handleShowMore} variant={ZsdButtonVariant.SecondaryLight} />
         </div>
       )}
     </Layout>

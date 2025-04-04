@@ -1,6 +1,6 @@
 // import { Link, LinkMode, LinkSize } from '@zepdev/design-system-component-library-react';
 import { FC, MouseEvent } from 'react';
-import { Button, ZpsButtonVariant } from '../zps-button';
+import { Button, ZsdButtonVariant } from '../zsd-button';
 import { ModalProps } from './modal-component.interface';
 
 export const ModalComponent: FC<ModalProps> = ({ isOpen, onClose, label, children }: ModalProps) => {
@@ -27,16 +27,18 @@ export const ModalComponent: FC<ModalProps> = ({ isOpen, onClose, label, childre
               label=""
               onClick={onClose}
               title="Button title"
-              variant={ZpsButtonVariant.SecondaryZps}
+              variant={ZsdButtonVariant.SecondaryLight}
             />
           </div>
           <div>{children}</div>
 
           <span className="zep-float-right zep-mt-1">
-                 <button
+            <button
               className="zep-float-right zep-underline zep-cursor-pointer zep-decoration-[1px] zep-font-500 zep-text-0.875 zep-underline-offset-2 zep-mt-1"
               onClick={onClose}
-            >{label as string}</button>
+            >
+              {label as string}
+            </button>
           </span>
         </div>
       </div>

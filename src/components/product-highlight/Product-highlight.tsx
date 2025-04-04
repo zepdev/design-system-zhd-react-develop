@@ -6,7 +6,7 @@ import { getUrlWithTrailingSlash } from '../../utils/getUrlWithTrailingSlash';
 import { HeaderLongComponent } from '../header-long-component';
 import { Layout } from '../layout';
 import { RichText } from '../rich-text';
-import { Button } from '../zps-button';
+import { Button } from '../zsd-button';
 import { ProductHighLightProps } from './product-highlight.interface';
 
 export const ProductHighLight: React.FC<ProductHighLightProps> = ({

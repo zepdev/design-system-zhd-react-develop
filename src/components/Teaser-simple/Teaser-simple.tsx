@@ -1,10 +1,10 @@
-import React from 'react';
-import clsx from 'clsx';
-import { Button, ZpsButtonVariant } from '../zps-button';
-import { TeaserSimpleProps } from './teaser-simple.interface';
-import { backgroundColor } from '../../utils/commonCSS';
-import { GlobalVariantExtended } from '../../interfaces/global-variants';
 import { Layout } from '@/components/layout';
+import clsx from 'clsx';
+import React from 'react';
+import { GlobalVariantExtended } from '../../interfaces/global-variants';
+import { backgroundColor } from '../../utils/commonCSS';
+import { Button, ZsdButtonVariant } from '../zsd-button';
+import { TeaserSimpleProps } from './teaser-simple.interface';
 
 export const TeaserSimple: React.FC<TeaserSimpleProps> = ({ teaserText, buttonText, onClick }) => {
   return (
@@ -43,7 +43,7 @@ export const TeaserSimple: React.FC<TeaserSimpleProps> = ({ teaserText, buttonTe
         )}
         label={buttonText}
         title={buttonText}
-        variant={ZpsButtonVariant.Primary}
+        variant={ZsdButtonVariant.PrimaryDark}
         onClick={onClick}
       />
     </Layout>

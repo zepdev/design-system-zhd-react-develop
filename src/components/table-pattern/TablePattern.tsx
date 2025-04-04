@@ -1,7 +1,7 @@
 import { HeaderLongComponent } from '@/components/header-long-component';
 import { Layout } from '@/components/layout';
 import { RichText } from '@/components/rich-text';
-import { Button } from '@/components/zps-button';
+import { Button } from '@/components/zsd-button';
 import { TableThemes, Table as ZepTable } from '@zepdev/design-system-component-library-react';
 import { FC } from 'react';
 import { GlobalVariants } from '../../interfaces/global-variants';

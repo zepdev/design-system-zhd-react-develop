@@ -14,7 +14,7 @@ import { getUrlWithTrailingSlash } from '../../utils/getUrlWithTrailingSlash';
 import { HeaderLongComponent } from '../header-long-component';
 import { Layout } from '../layout';
 import { RichText as ZepRichText } from '../rich-text';
-import { Button, ZpsButtonVariant } from '../zps-button';
+import { Button, ZsdButtonVariant } from '../zsd-button';
 import { AccordionProps, RichTextProps, THContext, TableProps, TextHighlightProps } from './TextHighlight.interface';
 
 const TextHighlightContext = createContext<THContext>({
@@ -23,7 +23,7 @@ const TextHighlightContext = createContext<THContext>({
   buttonText: '',
   buttonOnClick: () => {},
   buttonUrl: '',
-  buttonVariant: ZpsButtonVariant.Primary,
+  buttonVariant: ZsdButtonVariant.PrimaryDark,
   buttonType: 'default',
   buttonIconPosition: 'left',
 });
