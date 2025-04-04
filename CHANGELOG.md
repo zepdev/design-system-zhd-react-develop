@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/zepdev/design-system-zhd-react/compare/v1.3.0...v1.4.0) (2025-04-04)
+
+
+### Features
+
+* Small hero ([5fe0b1a](https://github.com/zepdev/design-system-zhd-react/commit/5fe0b1a4ee45ce2693094fce89810d0bb1162de6))
+
 # [1.3.0](https://github.com/zepdev/design-system-zhd-react/compare/v1.2.0...v1.3.0) (2025-04-04)
 
 
