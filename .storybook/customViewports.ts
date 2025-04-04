@@ -4,7 +4,8 @@ type ViewportStyles = {
 };
 
 export enum ViewportType {
-  Desktop = 'desktop',
+  LargeDesktop = 'largeDesktop',
+  Desktop="desktop",
   Laptop = 'laptop',
   Tablet = 'tablet',
   Mobile = 'mobile',
@@ -21,26 +22,34 @@ type CustomViewports = {
 };
 
 export const customViewports: CustomViewports = {
-  desktop: {
-    name: 'Desktop (1920)',
+  largeDesktop: {
+    name: 'LargeDesktop (1728)',
     styles: {
-      width: '1920px',
+      width: '1728px',
       height: '1080px',
     },
     type: ViewportType.Desktop,
   },
-  laptop: {
-    name: 'Laptop (1024)',
+  desktop: {
+    name: 'Desktop (1440)',
     styles: {
-      width: '1024px',
+      width: '1440px',
+      height: '768px',
+    },
+    type: ViewportType.Laptop,
+  },
+  laptop: {
+    name: 'Laptop (1025)',
+    styles: {
+      width: '1025px',
       height: '768px',
     },
     type: ViewportType.Laptop,
   },
   tablet: {
-    name: 'Tablet (768)',
+    name: 'Tablet (769)',
     styles: {
-      width: '768px',
+      width: '769px',
       height: '1024px',
     },
     type: ViewportType.Tablet,
