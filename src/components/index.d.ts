@@ -1,6 +1,6 @@
 
 export * from '../interfaces/global-variants';
-export * from './SH-Corp-temp';
+export * from './SH-Corp';
 export * from './Teaser-simple';
 export * from './USP';
 export * from './accrodion-pattern';
