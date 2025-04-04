@@ -11,7 +11,7 @@ export const Breadcrumb: FC<BreadcrumbProps> = ({ items }) => {
   }
 
   return (
-    <div className="zep-px-1 sm:zep-px-1.5 md:zep-px-[66px] lg:zep-px-[120px] zep-py-0.5 md:zep-py-0.5 zep-flex zep-justify-between md:zep-justify-start zep-items-center zep-bg-background-dark">
+    <div className="zep-px-1 sm:zep-px-1.5 md:zep-px-[66px] lg:zep-px-[120px] zep-py-0.5 md:zep-py-0.5 zep-flex zep-justify-between md:zep-justify-start zep-items-center">
       <div className="zep-block md:zep-hidden">
         {expanded ? (
           <div className="zep-flex zep-flex-wrap zep-gap-0.25 zep-items-center">
@@ -24,7 +24,7 @@ export const Breadcrumb: FC<BreadcrumbProps> = ({ items }) => {
                     label={item?.title}
                     href={item.path}
                     mode={LinkMode.Standalone}
-                    className={clsx('zep-typography-supportText zep-text-typography-light-70/70')}
+                    className={clsx('zep-typography-supportText zep-text-typography-dark-100')}
                   />
                 )}
 
@@ -39,14 +39,14 @@ export const Breadcrumb: FC<BreadcrumbProps> = ({ items }) => {
                 label={items[0]?.title}
                 href={items[0].path}
                 mode={LinkMode.Standalone}
-                className={clsx('zep-typography-supportText zep-text-typography-light-70/70')}
+                className={clsx('zep-typography-supportText zep-text-typography-dark-100')}
               />
-              <FunctionalIcon color="#FBFBFBB2" name="chevron-mini-right" />
+              <FunctionalIcon color="#36454F" name="chevron-mini-right" />
             </div>
 
             <div onClick={() => setExpanded(true)} className="zep-flex zep-items-center zep-gap-0.25">
               <div className="zep-bg-[#484848] zep-px-[10px] zep-text-typography-light-100 zep-rounded-4">...</div>
-              <FunctionalIcon color="#FBFBFBB2" name="chevron-mini-right" />
+              <FunctionalIcon color="#36454F" name="chevron-mini-right" />
             </div>
 
             <p className="zep-typography-supportText zep-text-typography-light-70">{items[items.length - 1]?.title}</p>
@@ -58,16 +58,16 @@ export const Breadcrumb: FC<BreadcrumbProps> = ({ items }) => {
           {items.map((item, index) => (
             <div key={item?.title} className="zep-flex zep-items-center zep-gap-0.25">
               {index + 1 === items.length ? (
-                <span className="zep-typography-supportText zep-text-typography-light-70">{item.title}</span>
+                <span className="zep-typography-supportText zep-text-typography-dark-100">{item.title}</span>
               ) : (
                 <Link
                   label={item?.title}
                   href={item.path}
                   mode={LinkMode.Standalone}
-                  className={clsx('zep-typography-supportText zep-text-typography-light-70/70')}
+                  className={clsx('zep-typography-supportText zep-text-typography-dark-100')}
                 />
               )}
-              {index + 1 !== items.length && <FunctionalIcon color="#FBFBFBB2" name="chevron-mini-right" />}
+              {index + 1 !== items.length && <FunctionalIcon color="#36454F" name="chevron-mini-right" />}
             </div>
           ))}
         </div>

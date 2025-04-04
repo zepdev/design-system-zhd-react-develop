@@ -15,11 +15,9 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   args: {
-    title: 'WE CREATE SOLUTIONS',
+    headline: 'WE CREATE SOLUTIONS',
     description:
       'Lorem ipsum dolor sit amet consectetur. Sed amet feugiat egestas elementum convallis pretium pellentesque. Rutrum porta massa mauris et fames pulvinar posuere suspendisse et. In sapien lectus sit in turpis.',
-    primaryButtonText: 'Primary',
-    secondaryButtonText: 'Secondary',
     image: image,
   } as HeroProps,
 };

@@ -26,16 +26,14 @@ export const Navigation: FC<NavigationProps> = ({
     switch (selectedLocale?.value) {
       case LocaleVariants.EN:
         return '/de/en/';
-      case LocaleVariants.DE_AT:
-        return '/at/de/';
       default:
         return '/de/de/';
     }
   };
   const datalayer = getDataLayer();
   return (
-    <div className="zep-bg-background-dark">
-      <div className="zep-hidden md:zep-flex zep-justify-end zep-px-1 sm:zep-px-1.5 md:zep-px-[66px] lg:zep-px-[122px] md:zep-py-0.75 zep-border-b-1 zep-border-greyscale-700">
+    <div className="zep-bg-[#fff]">
+      <div className="zep-hidden md:zep-flex zep-justify-end zep-px-1 sm:zep-px-1.5 md:zep-px-[66px] lg:zep-px-[122px] md:zep-py-0.75 zep-border-b-1 zep-border-greyscale-400">
         <div className="zep-flex zep-gap-2 zep-mr-3">
           {navigationUtilityItems?.map((item, index) => (
             <Link
@@ -50,7 +48,7 @@ export const Navigation: FC<NavigationProps> = ({
                   link_type: 'top_nav', // main_nav, logo, sub_nav, search, language_switcher, etc.
                 });
               }}
-              className={'zep-text-typography-light-100 zep-text-0.875'}
+              className={'zep-text-typography-dark-100 zep-text-0.875'}
             />
           ))}
         </div>
@@ -59,12 +57,12 @@ export const Navigation: FC<NavigationProps> = ({
           onClick={() => setLocaleSwitcherMenu(true)}
         >
           <img className="zep-size-[18px]" alt="Language switch icon" src={languageIcon} />
-          <p className="zep-text-typography-light-100 zep-font-500 zep-text-0.875 group-hover:zep-underline">
+          <p className="zep-text-typography-dark-100 zep-font-500 zep-text-0.875 group-hover:zep-underline">
             {`${selectedLocale?.country} | ${selectedLocale?.langAbbrev?.toUpperCase()}`}
           </p>
         </div>
       </div>
-      <div className="zep-p-1 sm:zep-px-1.5 md:zep-px-[66px] lg:zep-px-[122px] md:zep-py-1.5 zep-flex zep-justify-between md:zep-justify-start zep-items-center zep-border-b-1 zep-border-greyscale-700">
+      <div className="zep-p-1 sm:zep-px-1.5 md:zep-px-[66px] lg:zep-px-[122px] md:zep-py-1.5 zep-flex zep-justify-between md:zep-justify-start zep-items-center zep-border-b-1 zep-border-greyscale-400">
         <a href={getHome()}>
           <img alt="logo" src={logo} className="md:zep-mr-3 xl:zep-mr-4" />
         </a>
@@ -79,7 +77,7 @@ export const Navigation: FC<NavigationProps> = ({
               }}
               className="zep-group zep-relative zep-cursor-pointer"
             >
-              <p className="zep-typography-navigation zep-text-typography-light-100 zep-uppercase zep-py-0.25">
+              <p className="zep-typography-navigation zep-text-typography-dark-100 zep-uppercase zep-py-0.25">
                 {item.label}
               </p>
               <div className="zep-hidden group-hover:zep-block group-hover:zep-absolute zep-w-full">

@@ -27,7 +27,7 @@ const Headline = ({ variant, headline }: Partial<LinkListItemProps>) => {
           'zep-typography-headlineSM-fluid-cqi',
           'zep-hyphens-auto',
           'zep-break-normal',
-          textColorClass({ variant }),
+          'zep-text-darkgrey-500',
         )}
       >
         {headline}
@@ -51,7 +51,13 @@ const Links = ({ links, variant, type, headline, isFooterList }: LinkListItemPro
   return (
     <div
       data-testid="link-list-links"
-      className={clsx('zep-flex', 'zep-flex-col', 'zep-items-start', 'zep-gap-1', textColorClass({ variant }))}
+      className={clsx(
+        'zep-flex',
+        'zep-flex-col',
+        'zep-items-start',
+        'zep-gap-1',
+        'zep-text-typography-primary-default',
+      )}
     >
       {links.map((link, index) => (
         <Link

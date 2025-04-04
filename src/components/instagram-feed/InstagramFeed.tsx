@@ -1,15 +1,15 @@
-import { FC } from 'react';
 import clsx from 'clsx';
-import { InstagramFeedProps } from './InstagramFeed.interface';
-import { Layout } from '../layout';
+import { FC } from 'react';
 import { HeaderLongComponent } from '../header-long-component';
+import { Layout } from '../layout';
 import { Scrollbar } from '../scrollbar';
+import { InstagramFeedProps } from './InstagramFeed.interface';
 
 const Images: FC<Pick<InstagramFeedProps, 'feed'>> = ({ feed }) => {
   return feed.map(({ src, alt }, index) => (
     <div
       className={clsx(
-        'zep-aspect-[1/1]',
+        'zep-aspect-[4/5]',
         'md:zep-flex-[30%]',
         'md:zep-grow',
         'md:zep-w-auto',
@@ -18,19 +18,17 @@ const Images: FC<Pick<InstagramFeedProps, 'feed'>> = ({ feed }) => {
         'zep-shrink-0',
       )}
     >
-      <img
-        key={`instagram-image-${index}`}
-        className="zep-w-full zep-h-full zep-object-cover"
-        src={src}
-        alt={alt}
-      />
+      <img key={`instagram-image-${index}`} className="zep-w-full zep-h-full zep-object-cover" src={src} alt={alt} />
     </div>
   ));
-}
+};
 
 export const InstagramFeed: FC<InstagramFeedProps> = ({ feed, ...headerProps }) => {
   return (
-    <Layout testId="zep-instagram-feed" className="zep-flex zep-flex-col xl:zep-gap-5 md:zep-gap-4 sm:zep-gap-3 zep-gap-2.5">
+    <Layout
+      testId="zep-instagram-feed"
+      className="zep-flex zep-flex-col xl:zep-gap-5 md:zep-gap-4 sm:zep-gap-3 zep-gap-2.5"
+    >
       <HeaderLongComponent {...headerProps} />
       <div className="md:zep-flex zep-flex-row zep-flex-wrap zep-gap-1 zep-hidden">
         <Images feed={feed} />
@@ -42,4 +40,4 @@ export const InstagramFeed: FC<InstagramFeedProps> = ({ feed, ...headerProps }) 
       </Scrollbar>
     </Layout>
   );
-}
+};
