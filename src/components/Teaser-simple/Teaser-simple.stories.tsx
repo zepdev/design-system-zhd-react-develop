@@ -14,8 +14,8 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   args: {
-    teaserText: 'Dürfen wir Sie bei der Lösungsfindung unterstützen?',
-    buttonText: 'Kontaktanfrage stellen',
+    teaserText: 'Sie brauchen unterstützung? Wir helfen ihnen gerne!',
+    buttonText: 'Kontakieren Sie unsere Experten',
     buttonTitle: 'button title',
   } as TeaserSimpleProps,
 };

@@ -1,23 +1,34 @@
 import { Meta, StoryObj } from '@storybook/react';
 import { MultiLinkList } from './MultiLinkList';
-import { LinkListItemProps } from '../link-list-item';
+import { LinkListItemProps } from '@/components/link-list-item';
+import { GlobalVariants } from '../../interfaces/global-variants';
+import { mockRichTextShort } from '../../utils/mocks';
 
 const mockLinkList: LinkListItemProps = {
   links: [
-    { icon: 'arrow-right', href: 'https://www.google.com', label: 'link inline'},
-    { icon: 'arrow-right', href: 'https://www.google.com', label: 'link inline'},
-    { icon: 'arrow-right', href: 'https://www.google.com', label: 'link inline'},
-    { icon: 'arrow-right', href: 'https://www.google.com', label: 'link inline'},
+    { icon: 'arrow-right', href: 'https://www.google.com', label: 'link inline' },
+    { icon: 'arrow-right', href: 'https://www.google.com', label: 'link inline' },
+    { icon: 'arrow-right', href: 'https://www.google.com', label: 'link inline' },
+    { icon: 'arrow-right', href: 'https://www.google.com', label: 'link inline' },
   ],
   headline: 'Headline optional',
-  description: 'Description optional',
+  description: mockRichTextShort,
 }
 
 const meta = {
   title: 'Patterns/MultiLinkList',
   component: MultiLinkList,
   tags: ['autodocs'],
-  argTypes: {},
+  argTypes: {
+    variant: {
+      children: {
+        control: {
+          type: 'select',
+          options: [GlobalVariants.Zps, GlobalVariants.Cat],
+        }
+      }
+    }
+  },
 } satisfies Meta<typeof MultiLinkList>;
 
 export default meta;
@@ -26,6 +37,7 @@ export const Default: Story = {
   args: {
     headline: 'Two Link Lists',
     linkLists: Array.from({ length: 2 }).map(() => mockLinkList),
+    variant: GlobalVariants.Zps,
   },
 };
 
@@ -82,5 +94,40 @@ export const TenItems: Story = {
   args: {
     headline: 'Ten Link Lists',
     linkLists: Array.from({ length: 10 }).map(() => mockLinkList),
+  },
+};
+
+export const ElevenItems: Story = {
+  args: {
+    headline: '11 Link Lists',
+    linkLists: Array.from({ length: 11 }).map(() => mockLinkList),
+  },
+};
+
+export const TwelveItems: Story = {
+  args: {
+    headline: '12 Link Lists',
+    linkLists: Array.from({ length: 12 }).map(() => mockLinkList),
+  },
+};
+
+export const ThirteenItems: Story = {
+  args: {
+    headline: '13 Link Lists',
+    linkLists: Array.from({ length: 13 }).map(() => mockLinkList),
+  },
+};
+
+export const FourteenItems: Story = {
+  args: {
+    headline: '14 Link Lists',
+    linkLists: Array.from({ length: 14 }).map(() => mockLinkList),
+  },
+};
+
+export const FifteenItems: Story = {
+  args: {
+    headline: '15 Link Lists',
+    linkLists: Array.from({ length: 15 }).map(() => mockLinkList),
   },
 };

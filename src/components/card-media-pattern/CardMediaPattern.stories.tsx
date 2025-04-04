@@ -1,35 +1,21 @@
+import clsx from 'clsx';
 import type { Meta, StoryObj } from '@storybook/react';
 import { CardMediaPattern } from './CardMediaPattern';
-import { CardMediaPatternProps, CardsSectionProps } from './CardMediaPattern.interface';
-import { CardMediaProps } from './card-media-component';
-import clsx from 'clsx';
 import { focusRing } from '../../tailwind/styles/focus';
+import { CardMediaPatternProps } from './CardMediaPattern.interface';
+import { mockRichTextShort } from '../../utils/mocks';
 
-const mockCard: CardMediaProps = {
-  imageSrc:
-    'https://images.unsplash.com/photo-1615842974426-55c372fd8d8b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80',
+const mockCard = {
+  imageSrc: 'https://www.khplant.co.za/wp-content/uploads/2015/08/cat-logo.jpg',
   imageAlt: 'construction site',
   headline: 'Testing',
-  description: 'Testing Testing Testing Testing v v Testing Testing Testing Testing v Testing v Testing Testing v v v Testing v Testing Testing Testing Testing Testing Testing Testing Testing',
-  onDownload: () => null,
+  description: 'Testing',
+  linkSrc: 'https://www.zeppelin.com',
   linkText: 'Click me',
 }
 
-const tabWithTwo = (index: number): CardsSectionProps => ({
-  linkLabel: 'Tab Label',
-  scrollToIdLink: `tab-${index}`,
-  cards: Array.from({ length: 2 }).map(() => mockCard),
-});
-const tabWithThree = (index: number): CardsSectionProps => ({
-  linkLabel: 'Tab Label',
-  scrollToIdLink: `tab-${index}`,
-  cards: Array.from({ length: 3 }).map(() => mockCard),
-});
-const tabWithMoreThanThree = (index: number): CardsSectionProps => ({
-  linkLabel: 'Tab Label',
-  scrollToIdLink: `tab-${index}`,
-  cards: Array.from({ length: 5 }).map(() => mockCard),
-});
+const mockCardVertical = {...mockCard, imageSrc: 'https://www.zeppelin-cat.at/content/dam/zeppelin/baumaschinen/at/sonderangebote/Brosch%C3%BCre.JPG.imagethumb.original.jpg'}
+
 const meta = {
   title: 'Patterns/CardMediaPattern',
   component: CardMediaPattern,
@@ -41,16 +27,24 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
+  decorators: [
+    (Story) => (
+      <button className={clsx(focusRing, 'zep-focus-visible:zep-outline-none', 'zep-rounded-8', 'zep-w-full')}>
+        <Story />
+      </button>
+    ),
+  ],
   args: {
-    tabs: Array.from({ length: 3 }).map((_, index) => tabWithTwo(index)),
+    cards: [mockCard, mockCard],
     headline: 'Card Media with 2 cards',
     tagline: 'Tagline',
     linkSrc: 'https://www.zeppelin.com',
     linkText: 'Standalone link',
-    description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo  ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis  dis parturient montes, nascetur ridiculus mus.',
+    theme: 'power-systems',
+    description: mockRichTextShort,
   } as CardMediaPatternProps,
 };
-//
+
 export const CardMediaVertical: Story = {
   decorators: [
     (Story) => (
@@ -60,13 +54,14 @@ export const CardMediaVertical: Story = {
     ),
   ],
   args: {
-    tabs: Array.from({ length: 2 }).map((_, index) => tabWithTwo(index)),
+    cards: [mockCardVertical, mockCardVertical],
     headline: 'Card Media with 2 cards with vertical images',
     tagline: 'Tagline',
     linkSrc: 'https://www.zeppelin.com',
     linkText: 'Standalone link',
+    theme: 'power-systems',
     imageOrientation: 'vertical',
-    description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo  ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis  dis parturient montes, nascetur ridiculus mus.',
+    description: mockRichTextShort,
   } as CardMediaPatternProps,
 };
 
@@ -79,12 +74,13 @@ export const CardMedia3Cards: Story = {
     ),
   ],
   args: {
-    tabs: Array.from({ length: 3 }).map((_, index) => tabWithThree(index)),
+    cards: [mockCard, mockCard, mockCard],
     headline: 'Card Media with 3 cards',
     tagline: 'Tagline',
     linkSrc: 'https://www.zeppelin.com',
     linkText: 'Standalone link',
-    description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo  ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis  dis parturient montes, nascetur ridiculus mus.',
+    theme: 'power-systems',
+    description: mockRichTextShort,
   } as CardMediaPatternProps,
 };
 
@@ -97,12 +93,12 @@ export const CardMedia3PlusCards: Story = {
     ),
   ],
   args: {
-    tabs: Array.from({ length: 3 }).map((_, index) => tabWithMoreThanThree(index)),
+    cards: [mockCard, mockCard, mockCard, mockCard, mockCard],
     headline: 'Card Media with 3+ cards',
     tagline: 'Tagline',
     linkSrc: 'https://www.zeppelin.com',
     linkText: 'Standalone link',
-    description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo  ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis  dis parturient montes, nascetur ridiculus mus.',
+    theme: 'power-systems',
+    description: mockRichTextShort,
   } as CardMediaPatternProps,
 };
-

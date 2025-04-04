@@ -57,7 +57,7 @@ export const Radio: React.FC<RadioProps> = forwardRef<HTMLInputElement, RadioPro
             'zep-w-1.5',
             'zep-h-1.5',
             'zep-rounded-full',
-            { 'zep-border-typography-dark-100': !error },
+            { 'zep-border-primary-default': !error },
             { 'zep-border-2': error },
             { 'checked:zep-error zep-border-error': error },
             { 'zep-border-error': error },
@@ -68,7 +68,7 @@ export const Radio: React.FC<RadioProps> = forwardRef<HTMLInputElement, RadioPro
         />
         <label
           htmlFor={id}
-          className={clsx('zep-relative zep-z-20 zep-pl-[36px] zep-text-typography-dark-100', [
+          className={clsx('zep-relative zep-z-20 zep-pl-[36px] zep-text-primary-default', [
             { 'zep-cursor-pointer': !disabled },
           ])}
         >
@@ -83,7 +83,7 @@ export const Radio: React.FC<RadioProps> = forwardRef<HTMLInputElement, RadioPro
             'zep-border-greyscale-0',
             { 'zep-left-[1px] zep-top-[1px] zep-h-[22px] zep-w-[22px] zep-border-[6px]': !error },
             { 'zep-left-0.125 zep-top-0.125 zep-h-[20px] zep-w-[20px] zep-border-[5px]': error },
-            [error ? 'zep-bg-error' : 'zep-bg-typography-dark-100'],
+            [error ? 'zep-bg-error' : 'zep-bg-primary-default'],
           )}
           data-testid="zep-radio-checked"
         ></span>

@@ -1,2 +1,2 @@
-export * from './RichText';
-export { type RichTextProps } from './RichText.interface';
+export { RichText } from './RichText';
+export type { RichTextProps } from './RichText.interface';

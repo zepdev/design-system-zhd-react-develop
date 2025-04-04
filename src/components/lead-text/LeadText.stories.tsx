@@ -1,32 +1,13 @@
 import { Meta, StoryObj } from '@storybook/react';
-import { LeadText } from '@/components/lead-text/LeadText';
-import { LeadTextProps } from '@/components/lead-text/lead-text.interface';
-import { BlocksContent } from '@strapi/blocks-react-renderer';
-
-const mockContent: BlocksContent = [
-  {
-    type: 'paragraph',
-    children: [
-      {
-        text: 'Unsere Produktkomponenten von Optimarin umfassen leistungsstarke UV-Systeme, effiziente Filter, robuste Rückspülpumpen, präzise Druckregelventile und bedienfreundliche Control Panel. Innovative Technologien gewährleisten eine effektive Entfernung von Organismen und Partikeln, hohe Durchflussraten und eine zuverlässige Leistung bei minimalem Wartungsaufwand. Damit sorgen unsere Ballastwasserbehandlungssysteme für eine nachhaltige und effiziente Ballastwasserbehandlung, die den höchsten Umweltstandards entspricht.',
-        type: 'text'
-      }
-    ]
-  },
-]
+import { LeadText } from './LeadText';
+import { LeadTextProps } from './lead-text.interface';
+import { mockRichText } from '../../utils/mocks';
 
 const meta = {
   title: 'Components/LeadText',
   component: LeadText,
   tags: ['autodocs'],
-  argTypes: {
-    theme: {
-      control: {
-        type: 'select',
-        options: ['cat', 'power-systems'],
-      }
-    }
-  },
+  argTypes: {},
 } satisfies Meta<typeof LeadText>;
 
 export default meta;
@@ -36,8 +17,7 @@ type Story = StoryObj<typeof meta>;
 export const Default: Story = {
   args: {
     headline: 'Headline',
-    // content: 'Unsere Produktkomponenten von Optimarin umfassen leistungsstarke UV-Systeme, effiziente Filter, robuste Rückspülpumpen, präzise Druckregelventile und bedienfreundliche Control Panel. Innovative Technologien gewährleisten eine effektive Entfernung von Organismen und Partikeln, hohe Durchflussraten und eine zuverlässige Leistung bei minimalem Wartungsaufwand. Damit sorgen unsere Ballastwasserbehandlungssysteme für eine nachhaltige und effiziente Ballastwasserbehandlung, die den höchsten Umweltstandards entspricht.',
-    content: mockContent,
+    content: mockRichText,
     theme: 'power-systems',
   } as LeadTextProps
 }

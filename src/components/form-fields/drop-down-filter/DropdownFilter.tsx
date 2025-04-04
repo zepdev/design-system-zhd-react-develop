@@ -39,13 +39,13 @@ export const DropdownFilter = forwardRef<HTMLInputElement, DropdownFilterProps>(
         setSearch('');
         setIsDropdownOpen(!isDropdownOpen);
       },
-      [isDropdownOpen, name, onChange],
+      [name, onChange, value],
     );
 
     return (
       <div className="zep-relative zep-flex zep-flex-col zep-mb-2 zep-z-30" ref={ref}>
         {label && (
-          <label htmlFor={name} className="zep-mb-0.5 zep-text-typography-dark-100">
+          <label htmlFor={name} className="zep-mb-0.5 zep-text-primary-default">
             {label}
             {!required && (
               <span data-testid="zep-input-label-hint" className="zep-ml-0.25">
@@ -60,7 +60,7 @@ export const DropdownFilter = forwardRef<HTMLInputElement, DropdownFilterProps>(
           data-dropdown-toggle={`dropdownSearch-${name}`}
           data-dropdown-placement="top"
           className={classNames(
-            `zep-relative zep-max-h-[48px] zep-border zep-border-typography-dark-100 zep-text-typography-dark-100 zep-w-full zep-options-center zep-flex zep-justify-between zep-transition-all zep-cursor-pointer zep-overflow-auto ${className}`,
+            `zep-relative zep-max-h-[48px] zep-border zep-border-primary-default zep-text-primary-default zep-w-full zep-options-center zep-flex zep-justify-between zep-transition-all zep-cursor-pointer zep-overflow-auto ${className}`,
             {
               'zep-pointer-events-none zep-cursor-not-allowed': disabled,
             },
@@ -71,7 +71,7 @@ export const DropdownFilter = forwardRef<HTMLInputElement, DropdownFilterProps>(
             className={clsx(
               'zep-w-full zep-text-typography-dark-70 zep-border-1 zep-border-solid zep-px-1 zep-py-0.75',
               { 'zep-border-2 zep-border-error': error },
-              { 'zep-border-typography-dark-100': !error },
+              { 'zep-border-primary-default': !error },
             )}
           >
             <div className="zep-relative">
@@ -86,7 +86,7 @@ export const DropdownFilter = forwardRef<HTMLInputElement, DropdownFilterProps>(
             </div>
           </div>
           <FunctionalIcon
-            color="zep-bg-typography-dark-100"
+            color="zep-bg-primary-default"
             name={isDropdownOpen ? 'chevron-up' : 'chevron-down'}
             className={'zep-absolute zep-right-1 zep-top-[15px]'}
           />

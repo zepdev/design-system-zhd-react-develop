@@ -1,10 +1,10 @@
 import { expect } from '@storybook/jest';
 import type { Meta, StoryObj } from '@storybook/react';
 import { userEvent, within } from '@storybook/testing-library';
-import { Button, zpsButtonVariants } from './ZsdButton';
-import { ZpsButtonProps, ZsdButtonVariant } from './zsd-button.interface';
+import { Button, zsdButtonVariants } from './ZsdButton';
+import { ZsdButtonProps, ZsdButtonVariant } from './zsd-button.interface';
 
-const buttonVariantKeys = Object.keys(zpsButtonVariants) as ZsdButtonVariant[];
+const buttonVariantKeys = Object.keys(zsdButtonVariants) as ZsdButtonVariant[];
 
 const meta = {
   title: 'Components/Button',
@@ -40,7 +40,7 @@ export const Default: Story = {
     title: 'Button title',
     isLoading: false,
     disabled: false,
-  } as ZpsButtonProps,
+  } as ZsdButtonProps,
   play: async ({ canvasElement, step }) => {
     const canvas = within(canvasElement);
 
@@ -85,7 +85,7 @@ export const IconButton: Story = {
     icon: 'alert',
     isLoading: false,
     disabled: false,
-  } as ZpsButtonProps,
+  } as ZsdButtonProps,
   play: async ({ canvasElement, step }) => {
     const canvas = within(canvasElement);
 

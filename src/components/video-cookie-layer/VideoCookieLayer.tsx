@@ -26,7 +26,7 @@ export const VideoCookieLayer = ({ description, label, onClickCookies, className
           className="zep-w-full sm:zep-w-[258px]"
           onClick={onClickCookies}
           label={label}
-          variant={ZsdButtonVariant.SecondaryDark}
+          variant={ZsdButtonVariant.SecondaryLight}
         />
       </div>
     </div>

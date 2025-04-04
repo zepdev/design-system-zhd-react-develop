@@ -4,7 +4,7 @@ import { forwardRef } from 'react';
 import { focusRing } from '../../../tailwind/styles/focus';
 import { CheckboxProps } from './checkbox.interface';
 
-export const Checkbox = forwardRef(({ ...props }: CheckboxProps, ref: React.LegacyRef<HTMLInputElement>) => {
+export const Checkbox = forwardRef(({ className, ...props }: CheckboxProps, ref: React.LegacyRef<HTMLInputElement>) => {
   const { disabled, error, checked, labelhtml } = props;
   return (
     <div
@@ -16,11 +16,12 @@ export const Checkbox = forwardRef(({ ...props }: CheckboxProps, ref: React.Lega
         'zep-flex-wrap',
         'zep-items-center',
         'zep-justify-start',
-        'zep-mb-1.5',
+        'zep-mb-2',
         {
           '[&>svg]:hover:zep-bg-primary-hover': !disabled && !error,
         },
         { 'zep-cursor-not-allowed': disabled },
+        className,
       )}
     >
       <input
@@ -54,7 +55,7 @@ export const Checkbox = forwardRef(({ ...props }: CheckboxProps, ref: React.Lega
       <label
         dangerouslySetInnerHTML={{ __html: labelhtml ? `${labelhtml}` : '' }}
         htmlFor={props.name}
-        className={clsx('zep-text-typography-dark-100 zep-relative zep-pl-[36px]', [
+        className={clsx('zep-text-primary-default zep-relative zep-pl-[36px]', [
           disabled ? 'zep-cursor-not-allowed zep-text-opacity-disabled' : 'zep-cursor-pointer',
         ])}
       />

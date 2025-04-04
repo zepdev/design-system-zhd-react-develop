@@ -4,9 +4,9 @@ import { cva } from 'class-variance-authority';
 import React from 'react';
 import { twMerge } from 'tailwind-merge';
 import { ClassGroup, ClassGroupId } from 'tailwind-merge/src/lib/types';
-import { ZpsButtonProps, ZsdButtonVariant } from './zsd-button.interface';
+import { ZsdButtonProps, ZsdButtonVariant } from './zsd-button.interface';
 
-export const zpsButtonVariants: Record<ClassGroupId, ClassGroup> = {
+export const zsdButtonVariants: Record<ClassGroupId, ClassGroup> = {
   [ZsdButtonVariant.PrimaryDark]: [
     'zep-bg-primary-default',
     'zep-text-typography-light-100',
@@ -70,7 +70,7 @@ export const zsdButton = cva(
   ],
   {
     variants: {
-      variant: zpsButtonVariants,
+      variant: zsdButtonVariants,
     },
     defaultVariants: {
       variant: ZsdButtonVariant.PrimaryDark,
@@ -78,7 +78,7 @@ export const zsdButton = cva(
   },
 );
 
-export const Button: React.FC<ZpsButtonProps> = ({
+export const Button: React.FC<ZsdButtonProps> = ({
   className,
   variant,
   isLoading = false,
@@ -87,7 +87,7 @@ export const Button: React.FC<ZpsButtonProps> = ({
   icon,
   iconPosition = 'left',
   ...props
-}: ZpsButtonProps) => {
+}: ZsdButtonProps) => {
   const isIconButton = !label || label === '';
   const buttonClass = isIconButton ? zsdButton({ variant }).replace('zep-px-1', 'zep-px-0.75') : zsdButton({ variant });
   return (

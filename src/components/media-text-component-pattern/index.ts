@@ -1,2 +1,2 @@
-export type { MediaTextComponentPatternProps } from './media-textcomponent-pattern.interfce';
+export type { MediaTextComponentPatternProps } from './media-text-component-pattern.interface';
 export { MediaTextComponentPattern } from './MediaTextComponentPattern';

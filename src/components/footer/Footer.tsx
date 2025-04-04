@@ -1,6 +1,9 @@
-import { Link, LinkMode } from '@zepdev/design-system-component-library-react';
+import { Link, LinkMode, LinkTarget } from '@zepdev/design-system-component-library-react';
 import React from 'react';
-import { HeaderLongComponent } from '../header-long-component';
+import { GlobalVariantExtended } from '../../interfaces/global-variants';
+import { getDataLayer } from '../../utils/getDataLayer';
+import { getUrlWithTrailingSlash } from '../../utils/getUrlWithTrailingSlash';
+import { Layout } from '../layout';
 import { MultiLinkList } from '../multi-link-list';
 import { FooterProps } from './Footer.interface';
 
@@ -8,52 +11,74 @@ export const Footer: React.FC<FooterProps> = ({
   socialMediaLinks,
   socialMediaTitle,
   footerLinks,
-  headline,
-  description,
-  tagline,
+  footerText,
   ...multiLinkListProps
 }) => {
   const currentYear = new Date().getFullYear();
+  const datalayer = getDataLayer();
 
   return (
-    <div className="zep-bg-greyscale-200" data-testid={'zep-footer'}>
-      {headline && (
-        <div className="zep-px-0.5 sm:zep-px-1 md:zep-px-2.5 xl:zep-pt-4 md:zep-py-3 zep-py-1.5 sm:zep-py-2.5">
-          <HeaderLongComponent headline={headline} description={description} tagline={tagline} />
-        </div>
+    <div className="zep-flex zep-flex-col zep-items-center zep-gap-1 sm:zep-gap-1.5 md:zep-gap-2.5">
+      {footerText && (
+        <Layout>
+          <span className="zep-typography-supportText zep-text-typography-dark-70 zep-opacity-70">{footerText}</span>
+        </Layout>
       )}
-
-      <MultiLinkList {...multiLinkListProps} />
-      <div className="zep-flex zep-flex-col zep-w-full">
-        <div className="zep-px-0.5 sm:zep-px-1 md:zep-px-2.5 xl:zep-pt-4 md:zep-py-3 zep-py-1.5 sm:zep-py-2.5  zep-flex zep-items-center zep-gap-2.5">
-          <p className="zep-text-typography-dark-100 zep-typography-headlineXS-fluid-cqi">{socialMediaTitle}</p>
-          <div className="zep-flex zep-gap-1">
-            {socialMediaLinks.map((link, index) => (
-              <div
-                key={`${link.href}-${index}`}
-                className="zep-rounded-full zep-bg-darkgrey-500 zep-h-1.5 zep-w-1.5 zep-flex zep-items-center zep-justify-center"
-              >
-                <Link label="" icon={link.icon} href={link.href} target={link.target} />
+      <Layout wrapperClassname="!zep-mb-[0] zep-bg-background-dark zep-pt-1 md:zep-pt-1.5 lg:zep-pt-2.5">
+        <MultiLinkList
+          linkListItemClassname="zep-px-[0] sm:zep-px-[0] md:zep-px-[0]"
+          isPatternPart
+          isFooterList
+          {...multiLinkListProps}
+          variant={GlobalVariantExtended.CatBg}
+        />
+        <div data-testid="zep-footer">
+          <div className="zep-flex zep-flex-col zep-w-full">
+            <div className="lg:zep-pt-5 md:zep-py-3 zep-py-1.5 sm:zep-py-2.5 md:zep-px-[0px] zep-flex zep-items-center zep-gap-2.5">
+              <p className="zep-text-typography-light-100 zep-typography-headlineXS-fluid-cqi">{socialMediaTitle}</p>
+              <div className="zep-flex zep-gap-1">
+                {socialMediaLinks.map((link) => (
+                  <div
+                    key={link.socialIcon || link.icon}
+                    className="zep-rounded-full zep-bg-background-light zep-h-1.5 zep-w-1.5 zep-flex zep-items-center zep-justify-center [&>a]:zep-w-[16px] [&>a]:zep-h-[16px]"
+                  >
+                    <Link
+                      label=""
+                      target={link.href?.startsWith('http') ? LinkTarget.Blank : LinkTarget.Self}
+                      socialIcon={link.socialIcon}
+                      icon={link.icon}
+                      href={getUrlWithTrailingSlash(link.href)}
+                    />
+                  </div>
+                ))}
               </div>
-            ))}
+            </div>
+            <div className="zep-flex lg:zep-flex-row zep-flex-col lg:zep-items-center lg:zep-gap-5 zep-gap-1 zep-py-1.5 zep-border-t-1 zep-border-t-greyscale-700 zep-w-full">
+              <p className="zep-text-greyscale-0 zep-typography-bodyText">{`© ${currentYear} Zeppelin Power Systems GmbH`}</p>
+              <div className="zep-flex sm:zep-gap-3 zep-gap-1 sm:zep-items-center sm:zep-flex-row sm:zep-flex-wrap zep-flex-col">
+                {footerLinks.map((link) => (
+                  <Link
+                    key={link.label}
+                    className="zep-text-greyscale-0"
+                    target={link.href?.startsWith('http') ? LinkTarget.Blank : LinkTarget.Self}
+                    label={link.label}
+                    mode={LinkMode.Inline}
+                    onClickCapture={() => {
+                      datalayer.push({
+                        event: 'interaction_footer',
+                        link_text: link.label,
+                        link_context: 'Under Footer links',
+                        link_section: 'Under Footer Links',
+                      });
+                    }}
+                    href={getUrlWithTrailingSlash(link.href)}
+                  />
+                ))}
+              </div>
+            </div>
           </div>
         </div>
-        <div className="zep-px-0.5 sm:zep-px-1 md:zep-px-2.5 zep-flex md:zep-gap-4 md:zep-flex-row zep-flex-col xl:zep-items-center xl:zep-gap-5 zep-gap-1 zep-py-1.5 zep-border-t-1 zep-border-t-greyscale-400 zep-w-full">
-          <p className="zep-text-typography-dark-100 zep-typography-bodyText">{`© ${currentYear} Zeppelin Power Systems GmbH`}</p>
-          <div className="zep-flex sm:zep-gap-3 zep-gap-1 sm:zep-items-center sm:zep-flex-row sm:zep-flex-wrap zep-flex-col">
-            {footerLinks.map((link, index) => (
-              <Link
-                key={`${link.label}-${index}`}
-                className="zep-text-typography-dark-100"
-                label={link.label}
-                mode={LinkMode.Inline}
-                target={link.target}
-                href={link.href}
-              />
-            ))}
-          </div>
-        </div>
-      </div>
+      </Layout>
     </div>
   );
 };

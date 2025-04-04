@@ -1,6 +1,7 @@
 /*
 Add roboto flex font face
 */
+
 @font-face {
   font-family: 'Roboto Flex';
   font-display: swap;
@@ -18,8 +19,8 @@ Add roboto flex font face
 .theme_holding .zep-typography-headlineXL,
 .theme_holding .zep-typography-headlineLG,
 .theme_holding .zep-typography-headlineMD,
-/* .theme_holding .zep-typography-headlineSM, */
-/* .theme_holding .zep-typography-headlineXS, */
+.theme_holding .zep-typography-headlineSM,
+.theme_holding .zep-typography-headlineXS,
 .theme_holding .zep-typography-headlineXS-fluid-cqi,
 .theme_holding .zep-typography-headlineSM-fluid-cqi,
 .theme_holding .zep-typography-headlineMD-fluid-cqi,
@@ -27,8 +28,8 @@ Add roboto flex font face
 .theme_holding .zep-typography-headlineXL-fluid-cqi,
 .theme_holding .zep-typography-headline2XL-fluid-cqi {
   font-variation-settings:
-    'wght' 800,
-    'wdth' 55,
+    'wght' 900,
+    'wdth' 89,
     'opsz' 17,
     'XOPQ' 69,
     'XTRA' 444,
@@ -38,28 +39,6 @@ Add roboto flex font face
     'YTAS' 750,
     'YTUC' 726,
     'slnt' 0;
-}
-
-.zep-typography-bodyStrong {
-  font-variation-settings: 'wght' 600;
-}
-
-.zep-typography-tagline,
-.zep-typography-taglineMD {
-  font-variation-settings:
-    'wght' 500,
-    'wdth' 80,
-    'XTRA' 430,
-    'opsz' 17;
-}
-
-.theme_holding .zep-typography-link:hover,
-.theme_holding .zep-typography-linkSM:hover {
-  font-variation-settings:
-    'wght' 400,
-    'wdth' 100,
-    'slnt' 0,
-    'GRAD' 150;
 }
 
 @layer base {
@@ -118,49 +97,4 @@ Add roboto flex font face
   .zep-scrollable-content {
     margin-bottom: 0 !important;
   }
-}
-
-.zep-thumb {
-  -webkit-appearance: none;
-  -webkit-tap-highlight-color: transparent;
-}
-
-.zep-thumb::-webkit-slider-thumb {
-  height: 20px;
-  width: 20px;
-  border-radius: 50%;
-  background: #27166f;
-  pointer-events: auto;
-  appearance: none;
-  -moz-appearance: none;
-  cursor: pointer;
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.24);
-}
-
-.zep-thumb::-moz-range-thumb {
-  height: 20px;
-  width: 20px;
-  border-radius: 50%;
-  background: #27166f;
-  pointer-events: auto;
-  appearance: none;
-  -moz-appearance: none;
-  cursor: pointer;
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.24);
-}
-
-.zep-link-filter-active {
-  font-variation-settings:
-    'wght' 400,
-    'wdth' 100,
-    'slnt' 0,
-    'GRAD' 150;
-}
-
-.zep-typography-navigation {
-  font-variation-settings:
-    'wght' 600,
-    'wdth' 90,
-    'XTRA' 450,
-    'opsz' 16;
 }

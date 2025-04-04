@@ -1,3 +1,5 @@
-import { HeaderShortComponentProps } from '../header-short-component';
+import { HeaderShortComponentProps } from '@/components/header-short-component';
 
-export interface HeaderShortProps extends HeaderShortComponentProps {}
+export interface HeaderShortProps extends Omit<HeaderShortComponentProps, 'className'> {
+  className?: string,
+}

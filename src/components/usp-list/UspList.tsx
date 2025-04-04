@@ -1,28 +1,78 @@
-import { FC } from 'react';
-import { UspCard } from './usp-card';
-import { USPListProps } from './usp-list.interface';
-import { HeaderLongComponent } from '../header-long-component';
+import { cva } from 'class-variance-authority';
+import React from 'react';
+import { GlobalVariantExtended, GlobalVariants } from '../../interfaces/global-variants';
+import { backgroundColor } from '../../utils/commonCSS';
+import { USP } from '../USP/Usp';
+import { HeaderShortComponent } from '../header-short-component';
 import { Layout } from '../layout';
+import { Scrollbar } from '../scrollbar';
+import { USPListProps } from './usp-list.interface';
 
-export const USPList: FC<USPListProps> = ({
+export const USPList: React.FC<USPListProps> = ({
   uspCards,
-  ...props
+  variant = GlobalVariants.Cat,
+  headerTitle,
+  tagline,
+  id,
 }: USPListProps) => {
+  const uspListVariants = {
+    [GlobalVariants.Zps]: '',
+    [GlobalVariants.Cat]: '',
+  };
+
+  const uspListCva = cva(
+    [`zep-flex zep-flex-col zep-gap-2.5 sm:zep-gap-3 md:zep-gap-4 zep-py-3 sm:zep-py-4 md:zep-py-5`],
+    {
+      variants: {
+        variant: uspListVariants,
+      },
+      defaultVariants: {
+        variant: GlobalVariants.Zps,
+      },
+    },
+  );
+
+  const uspListWrapperVariants = {
+    [GlobalVariants.Zps]: backgroundColor[GlobalVariantExtended.ZpsBg],
+    [GlobalVariants.Cat]: backgroundColor[GlobalVariantExtended.CatBg],
+  };
+
+  const uspListWrapperCva = cva([``], {
+    variants: {
+      variant: uspListWrapperVariants,
+    },
+    defaultVariants: {
+      variant: GlobalVariants.Zps,
+    },
+  });
 
   return (
-    <Layout className="zep-bg-greyscale-200 zep-py-3 sm:zep-py-4 md:zep-py-5 xl:zep-py-7.5 zep-flex zep-flex-col zep-gap-2.5 sm:zep-gap-3 md:zep-gap-4 xl:zep-gap-5" testId="zep-usp-list">
-      <HeaderLongComponent {...props} />
-      <div className="zep-flex zep-flex-col sm:zep-flex-row sm:zep-flex-wrap zep-w-full zep-gap-2.5 sm:zep-gap-y-3 sm:zep-gap-x-2.5 md:zep-gap-y-4 xl:zep-gap-y-5">
+    <Layout id={id} wrapperClassname={uspListWrapperCva({ variant })} className={uspListCva({ variant })}>
+      <HeaderShortComponent
+        className="zep-p-[0px] zep-w-[40%]"
+        variant={variant === GlobalVariants.Zps ? GlobalVariantExtended.ZpsBg : GlobalVariantExtended.CatBg}
+        headline={headerTitle}
+        showArrow
+        tagline={tagline}
+      />
+      <Scrollbar
+        scrollOrientation="horizontal"
+        theme="light"
+        controlId="USP-list-scrollbar"
+        dataTestId="zep-usp-list"
+        className="zep-flex zep-w-full zep-gap-1 md:zep-gap-1.5 lg:zep-gap-3.5"
+      >
         {uspCards?.map((card, index) => (
-          <UspCard
-            count={card?.count || `${ index + 1}.`}
+          <USP
+            key={card.headline}
+            count={card?.count || `${index + 1}.`}
             headline={card.headline}
             description={card.description}
             iconName={card.iconName}
-            className={[1, 2, 3, 5, 6].includes(uspCards?.length) ? 'md:zep-max-w-[calc((100%-80px)/3)]' : 'md:zep-max-w-[calc(25%-30px)]'}
+            variant={variant}
           />
         ))}
-      </div>
+      </Scrollbar>
     </Layout>
   );
 };

@@ -1,7 +1,7 @@
-import { HeaderLongComponent } from "../header-long-component";
-import { Layout } from "../layout";
-import { MediaTextComponent } from "../media-text-component/MediaTextComponent";
-import { MediaTextComponentPatternProps } from "./media-textcomponent-pattern.interfce";
+import { HeaderLongComponent } from '../header-long-component';
+import { Layout } from '../layout';
+import { MediaTextComponent } from '../media-text-component/MediaTextComponent';
+import { MediaTextComponentPatternProps } from './media-text-component-pattern.interface';
 
 export const MediaTextComponentPattern: React.FC<MediaTextComponentPatternProps> = ({ items, ...props }) => {
   return (
@@ -16,4 +16,4 @@ export const MediaTextComponentPattern: React.FC<MediaTextComponentPatternProps>
       </div>
     </Layout>
   );
-}
+};

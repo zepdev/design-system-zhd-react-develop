@@ -1,8 +1,9 @@
 import { FunctionalIcon, Link, LinkMode } from '@zepdev/design-system-component-library-react';
 import { useEffect, useState } from 'react';
 import languageIcon from '../../assets/language-icon.svg';
+import { getDataLayer } from '../../utils/getDataLayer';
 import { LanguageSwitcher } from './LanguageSwitcher';
-import { NavigationItem, SidebarProps } from './navigation.interface';
+import { NavigationItem, NavigationMenuProps, SidebarProps } from './navigation.interface';
 
 export const Sidebar: React.FC<SidebarProps> = ({
   navItems,
@@ -11,27 +12,46 @@ export const Sidebar: React.FC<SidebarProps> = ({
   setInitialPath,
   selectedLocale,
   locales,
+  header = '',
+  labelBack,
   setSelectedLocale,
   navigationUtilityItems,
 }: SidebarProps) => {
   const [expanded, setExpanded] = useState(false);
   const [languageSwitcher, setLanguageSwitcher] = useState(false);
+  const [animateMobileLanguage, setAnimateMobileLanguage] = useState(false);
 
   useEffect(() => {
     setExpanded(true);
   }, []);
 
+  /* Handle body scroll */
+  useEffect(() => {
+    if (expanded) {
+      document.body.classList.add('zep-overflow-hidden');
+    } else {
+      document.body.classList.remove('zep-overflow-hidden');
+    }
+    return () => {
+      document.body.classList.remove('zep-overflow-hidden');
+    };
+  }, [expanded]);
+
   const closeSidebar = () => {
-    setInitialPath([]);
     setTimeout(() => {
+      setInitialPath([]);
       setOpen(false);
     }, 500);
     setExpanded(false);
   };
 
-  const NavigationMenu: React.FC<{ items: NavigationItem[] }> = ({ items }) => {
+  const datalayer = getDataLayer();
+
+  const NavigationMenu: React.FC<NavigationMenuProps> = ({ items, children }) => {
     const [activePath, setActivePath] = useState<string[]>(initialPath || []);
     const [parent, setParent] = useState<string>(initialPath ? initialPath[0] : '1');
+    const [animate, setAnimate] = useState(false);
+    const [backAnimation, setBackAnimation] = useState(false);
 
     useEffect(() => {
       if (initialPath && initialPath?.length > 0) {
@@ -47,7 +67,11 @@ export const Sidebar: React.FC<SidebarProps> = ({
     };
 
     const handleBack = () => {
-      setActivePath((prevPath) => prevPath.slice(0, -1));
+      setActivePath((prevPath) => {
+        const newPath = prevPath.slice(0, -1);
+        setParent(newPath.length > 0 ? newPath[newPath.length - 1] : '1'); // Update parent
+        return newPath;
+      });
     };
 
     const getCurrentLevelItems = (items: NavigationItem[], path: string[]): NavigationItem[] => {
@@ -67,56 +91,81 @@ export const Sidebar: React.FC<SidebarProps> = ({
     const homeItems = getCurrentLevelItems(items, activePath.slice(0, -1));
 
     return (
-      <div>
+      <div className={animate ? 'zep-animate-slide-in' : backAnimation ? 'zep-animate-slide-out' : ''}>
         {activePath.length > 0 && (
-          <div className="zep-text-typography-dark-100 zep-mb-1.5 zep-flex zep-gap-0.5 zep-items-center">
-            <FunctionalIcon name="arrow-long-left" size={20} />
-            <Link mode={LinkMode.Standalone} label="Züruck" onClick={handleBack} />
+          <div className={`zep-text-typography-light-100 zep-mb-2.5 zep-flex zep-gap-0.5 zep-items-center`}>
+            <Link
+              mode={LinkMode.Standalone}
+              label={labelBack}
+              iconPlacement="before"
+              icon="arrow-long-left"
+              onClick={(e) => {
+                e.preventDefault();
+                setBackAnimation(true);
+                setTimeout(() => {
+                  setBackAnimation(false);
+                  handleBack();
+                }, 300);
+              }}
+            />
           </div>
         )}
-        <ul className="zep-flex zep-flex-col zep-items-start">
+        <ul>
           {activePath.length > 0 && (
             <li className="zep-flex zep-gap-0.5">
-              <FunctionalIcon name="home" color="#262626" />
+              {/* plese do not use handleBack() this has to navigate to the particular homepage not for back */}
               <Link
                 label={homeItems[Number(parent) - 1]?.label}
-                className="zep-mb-1.5 zep-text-typography-dark-100"
+                href={homeItems[Number(parent) - 1]?.link}
+                className="zep-mb-1.5 zep-text-typography-light-100"
+                icon="home"
+                iconPlacement="before"
                 mode={LinkMode.Standalone}
-                onClick={(e) => {
-                  e.preventDefault();
-                  handleBack();
-                }}
-              ></Link>
+              />
             </li>
           )}
           {currentItems.map((item) => (
             <li key={`${item.navId}-${item.label}`} className={`${activePath.length > 0 ? 'zep-pl-2' : ''}`}>
-              {item.children ? (
-                <Link
-                  label={item.label}
-                  className="zep-mb-1.5 zep-text-typography-dark-100"
-                  iconPlacement="before"
-                  mode={LinkMode.Standalone}
-                  onClick={(e) => {
-                    e.preventDefault();
-                    if (item.children) {
+              {item.children && item.children.length > 0 ? (
+                <div className="zep-flex zep-gap-0.5 zep-items-center zep-mb-1.5 ">
+                  <Link
+                    label={item.label}
+                    className="zep-text-typography-light-100"
+                    mode={LinkMode.Standalone}
+                    href={item.link} // Navigates to the level 1 page
+                    iconPlacement="before"
+                    icon="arrow-long-right"
+                    onClick={(e) => {
+                      e.preventDefault();
                       setParent(item.navId);
-                      handleClick(item.navId, activePath.length);
-                    }
-                  }}
-                ></Link>
+                      setAnimate(true);
+                      handleClick(item.navId, activePath.length); // Update activePath here
+                      setTimeout(() => setAnimate(false), 300);
+                    }}
+                  />
+                </div>
               ) : (
                 <Link
                   label={item.label}
-                  className="zep-mb-1.5 zep-text-typography-dark-100"
+                  className="zep-mb-1.5 zep-text-typography-light-100  zep-justify-end"
                   iconPlacement="before"
                   mode={LinkMode.Standalone}
+                  onClickCapture={() => {
+                    datalayer.push({
+                      event: 'interaction_nav',
+                      link_text: item.label,
+                      link_type: 'main_nav', // main_nav, logo, sub_nav, search, language_switcher, etc.
+                      link_section: homeItems[Number(parent) - 1]?.label, // ID of 1st level section in the html body
+                    });
+                  }}
                   href={item.link}
-                ></Link>
+                />
               )}
             </li>
           ))}
         </ul>
+        {/* Render children content here */}
+        {children && <div>{children}</div>}
       </div>
     );
   };
@@ -124,51 +173,72 @@ export const Sidebar: React.FC<SidebarProps> = ({
   return (
     <>
       {/* Mobile sidebar */}
-      <div className="md:zep-hidden">
+      <div className={`md:zep-hidden`}>
         <div
-          className={`zep-fixed zep-top-[0px] zep-left-[0px] zep-bg-typography-light-100 zep-w-screen zep-duration-500 ${
-            expanded ? 'zep-h-screen' : 'zep-h-[0px]'
+          className={`zep-fixed zep-top-[0px] zep-left-[0px] zep-py-1 sm:zep-py-2 zep-bg-background-dark zep-z-[1000] zep-ease-in-out zep-h-screen zep-duration-500 ${
+            expanded
+              ? 'zep-w-full md:zep-transform zep-translate-x-0 lg:zep-transform zep-translate-x-0'
+              : '-zep-translate-x-full'
           }`}
         >
-          <div className={`${expanded ? 'zep-block zep-overflow-hidden' : 'zep-hidden'}`}>
-            <div className="zep-flex zep-justify-end zep-mb-1 zep-pt-1 zep-pr-1 sm:zep-pt-2 sm:zep-pr-2">
-              <FunctionalIcon name="close" color="#262626" size={24} onClick={closeSidebar} />
+          <div className={`${expanded ? 'zep-block' : ''} zep-h-[calc(100svh-40px)] zep-overflow-auto`}>
+            <div className="zep-flex zep-justify-end zep-mb-1 zep-mr-1 sm:zep-mr-2">
+              <FunctionalIcon name="close" color="#fff" size={24} onClick={closeSidebar} />
             </div>
-            {languageSwitcher ? (
-              <div className="zep-pl-2 zep-pt-1 zep-pr-1  sm:zep-pt-2 sm:zep-pr-2">
-                <LanguageSwitcher
-                  locales={locales}
-                  selectedLocale={selectedLocale}
-                  setLanguageSwitcher={setLanguageSwitcher}
-                  setSelectedLocale={setSelectedLocale}
-                />
-              </div>
-            ) : (
-              <>
-                <div className="zep-pl-2 zep-pt-1 zep-pr-1  sm:zep-pt-2 sm:zep-pr-2">
-                  <NavigationMenu items={navItems} />
+            <div className={`${animateMobileLanguage ? 'zep-animate-slide-in' : ''}`}>
+              {languageSwitcher ? (
+                <div className="zep-px-1.5 sm:zep-px-3">
+                  <LanguageSwitcher
+                    locales={locales}
+                    header={header}
+                    labelBack={labelBack}
+                    selectedLocale={selectedLocale}
+                    setLanguageSwitcher={setLanguageSwitcher}
+                    setSelectedLocale={setSelectedLocale}
+                  />
                 </div>
-                <div className="zep-w-full zep-h-[1px] zep-bg-greyscale-700 zep-mt-3.5"></div>
-                <div
-                  className="zep-flex zep-gap-0.5 zep-items-center zep-pl-2 zep-pt-1.5 sm:zep-pt-2 zep-pr-1 sm:zep-pr-2 zep-mb-3"
-                  onClick={() => setLanguageSwitcher(true)}
-                >
-                  <img alt="Language switch icon" src={languageIcon} className="zep-w-1" />
-                  <p className="zep-text-typography-dark-100 zep-font-500">{selectedLocale?.label}</p>
+              ) : (
+                <div>
+                  <div className="zep-px-1.5 sm:zep-px-3">
+                    <NavigationMenu items={navItems}>
+                      <div className="zep-w-full zep-h-[1px] zep-bg-greyscale-700 zep-mt-2.5 zep-mb-2.5" />
+                      <div className="">
+                        {navigationUtilityItems?.map((item, index) => (
+                          <Link
+                            key={`${item.label}${index}`}
+                            label={item.label}
+                            href={item.link || ''}
+                            mode={LinkMode.Standalone}
+                            onClickCapture={() => {
+                              datalayer.push({
+                                event: 'interaction_nav',
+                                link_text: item.label,
+                                link_type: 'top_nav', // main_nav, logo, sub_nav, search, language_switcher, etc.
+                              });
+                            }}
+                            className={'zep-text-typography-light-100 zep-mb-1.5'}
+                          />
+                        ))}
+                      </div>
+                      <div
+                        className="zep-flex zep-gap-0.5 zep-items-center zep-mb-3"
+                        onClick={(e) => {
+                          e.preventDefault();
+                          setLanguageSwitcher(true);
+                          setAnimateMobileLanguage(true);
+                          setTimeout(() => setAnimateMobileLanguage(false), 300);
+                        }}
+                      >
+                        <img alt="Language switch icon" src={languageIcon} className="zep-w-1" />
+                        <p className="zep-text-typography-light-100 zep-font-500">
+                          {`${selectedLocale?.country} | ${selectedLocale?.langAbbrev?.toUpperCase()}`}
+                        </p>
+                      </div>
+                    </NavigationMenu>
+                  </div>
                 </div>
-                <div className="zep-pl-2 zep-pr-1">
-                  {navigationUtilityItems?.map((item) => (
-                    <Link
-                      key={item.label}
-                      label={item.label}
-                      href={''}
-                      mode={LinkMode.Standalone}
-                      className={'zep-text-typography-dark-100 zep-mb-1.5'}
-                    />
-                  ))}
-                </div>
-              </>
-            )}
+              )}
+            </div>
           </div>
         </div>
       </div>
@@ -176,26 +246,28 @@ export const Sidebar: React.FC<SidebarProps> = ({
       {/* Desktop sidebar */}
       <div className="zep-hidden md:zep-block">
         <div
-          className={`zep-fixed zep-top-[0px] zep-left-[0px] zep-bg-typography-light-100 zep-ease-out zep-w-[0px] zep-duration-500 zep-h-screen zep-z-10 ${
-            expanded ? 'md:zep-w-[440px] lg:zep-w-[578px] zep-pl-3 zep-pt-2 zep-pr-2' : 'zep-w-[0px]'
+          className={`zep-fixed zep-top-[0px] zep-left-[0px] md:zep-w-[440px] lg:zep-w-[500px] zep-pt-2 zep-bg-background-dark zep-ease-in-out zep-w-[0px] zep-duration-500 zep-h-screen zep-z-[1000] ${
+            expanded ? 'md:zep-transform zep-translate-x-0 lg:zep-transform zep-translate-x-0' : '-zep-translate-x-full'
           }`}
         >
-          <div className={`${expanded ? 'zep-block zep-overflow-hidden' : 'zep-hidden'}`}>
-            <div className="zep-flex zep-justify-end zep-mb-6">
+          <div className={`${expanded ? 'zep-block' : ''} zep-h-[calc(100svh-40px)] zep-overflow-auto`}>
+            <div className="zep-flex zep-justify-end zep-pr-2 zep-mb-2">
               <FunctionalIcon
                 name="close"
-                color="000"
+                color="#fff"
                 size={24}
                 onClick={closeSidebar}
                 className="zep-cursor-pointer"
               />
             </div>
-            <NavigationMenu items={navItems} />
+            <div className="zep-px-3">
+              <NavigationMenu items={navItems} />
+            </div>
           </div>
         </div>
         <div
           onClick={closeSidebar}
-          className={`zep-fixed zep-top-[0px] zep-left-[0px] zep-bg-[#000] transition-all zep-duration-500  zep-w-screen zep-h-screen ${
+          className={`zep-fixed zep-top-[0px] zep-left-[0px] zep-bg-[#000] transition-all zep-duration-500  zep-w-screen zep-h-screen zep-z-[500] ${
             expanded ? 'zep-opacity-70' : 'zep-opacity-[0]'
           }`}
         ></div>

@@ -1,12 +1,19 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { ContactForm } from './ContactForm';
-import { ContactFormProps } from './contact-form.interface';
+import { ContactFormProps } from './contact-form-interface';
 
 const meta = {
   title: 'Patterns/ContactForm',
   component: ContactForm,
   tags: ['autodocs'],
-  argTypes: {},
+  argTypes: {
+    locale: {
+      control: {
+        type: 'radio',
+        options: ['de', 'en'],
+      },
+    },
+  },
 } satisfies Meta<typeof ContactForm>;
 
 export default meta;
@@ -14,19 +21,17 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   args: {
-    title: 'Mehr Details? Sprechen Sie uns an',
-    subtitle: 'Unsere Experten für alle Fragen rund um Intensivmischer stehen Ihnen gerne persönlich zur Verfügung.',
-    contact: {
-      fullName: 'Michael Pfrieger',
-      image:
-        'https://www.creativefabrica.com/wp-content/uploads/2022/11/21/Beautiful-African-American-Brown-Skin-Woman-Avatar-47788434-1.png',
-      role: 'Business Unit Leiter Polyolefin Plants',
-      phone: '+49 7541 202 1861',
-      fax: '+49 7541 202 1861',
-      email: 'michaell.pfrieger@zeppelin.com',
-      address: 'Zeppelin Systems GmbH Musteradresse Rödermark',
-      languages: ['Deutsch', 'English'],
-    },
-    onSubmit: () => null,
+    locale: 'de',
+    onSubmit: () => console.log('Cons'),
+    headline: 'Ich interessiere mich für Caterpillar Aggregate',
+    tagline: 'Kontakt',
+    linkLists: [
+      { headline: 'Deutschland', links: [{ label: '0800 - 5892787', icon: 'phone', href: 'tel:0800-5892787' }] },
+      {
+        headline: 'International',
+        links: [{ label: '+49 40 853 151-222', icon: 'phone', href: 'tel:+49 40 853 151-222' }],
+      },
+    ],
+    privacyPolicyUrl: 'https://www.google.com',
   } as ContactFormProps,
 };
