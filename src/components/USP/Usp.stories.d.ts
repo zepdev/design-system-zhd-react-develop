@@ -6,12 +6,6 @@ declare const meta: {
     component: import('react').FC<USPProps>;
     tags: string[];
     argTypes: {
-        variant: {
-            control: {
-                type: string;
-                options: string[];
-            };
-        };
         iconName: {
             control: {
                 type: string;

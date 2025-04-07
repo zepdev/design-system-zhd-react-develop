@@ -9,5 +9,6 @@ export interface CardProps {
     linkType?: 'internal-link' | 'external-link' | 'download';
     gtmHeadline?: string;
     gtmid?: string;
+    url: string;
 }
 //# sourceMappingURL=card.interface.d.ts.map

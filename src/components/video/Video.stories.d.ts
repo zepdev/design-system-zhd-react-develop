@@ -2,16 +2,9 @@ import { StoryObj } from '@storybook/react';
 
 declare const meta: {
     title: string;
-    component: ({ id, videos, variant }: import('./video.interface').VideoProps) => import("react/jsx-dev-runtime").JSX.Element;
+    component: ({ id, videos }: import('./video.interface').VideoProps) => import("react/jsx-dev-runtime").JSX.Element;
     tags: string[];
-    argTypes: {
-        variant: {
-            control: {
-                type: string;
-                options: string[];
-            };
-        };
-    };
+    argTypes: {};
 };
 export default meta;
 type Story = StoryObj<typeof meta>;

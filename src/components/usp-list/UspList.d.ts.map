@@ -1,1 +1,1 @@
-{"version":3,"file":"UspList.d.ts","sourceRoot":"","sources":["../../../../src/components/usp-list/UspList.tsx"],"names":[],"mappings":"AACA,OAAO,KAAK,MAAM,OAAO,CAAC;AAO1B,OAAO,EAAE,YAAY,EAAE,MAAM,sBAAsB,CAAC;AAEpD,eAAO,MAAM,OAAO,EAAE,KAAK,CAAC,EAAE,CAAC,YAAY,CAmE1C,CAAC"}
+{"version":3,"file":"UspList.d.ts","sourceRoot":"","sources":["../../../../src/components/usp-list/UspList.tsx"],"names":[],"mappings":"AAAA,OAAO,KAAK,MAAM,OAAO,CAAC;AAK1B,OAAO,EAAE,YAAY,EAAE,MAAM,sBAAsB,CAAC;AAEpD,eAAO,MAAM,OAAO,EAAE,KAAK,CAAC,EAAE,CAAC,YAAY,CA2B1C,CAAC"}
