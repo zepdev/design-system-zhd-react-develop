@@ -1,3 +1,10 @@
+## [1.4.2](https://github.com/zepdev/design-system-zhd-react/compare/v1.4.1...v1.4.2) (2025-04-07)
+
+
+### Bug Fixes
+
+* trigger release ([c9ea473](https://github.com/zepdev/design-system-zhd-react/commit/c9ea473300c195d5516c6cce0ed5b47480922a30))
+
 ## [1.4.1](https://github.com/zepdev/design-system-zhd-react/compare/v1.4.0...v1.4.1) (2025-04-04)
 
 
