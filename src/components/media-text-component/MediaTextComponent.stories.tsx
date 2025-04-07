@@ -45,7 +45,7 @@ export const WithVerticalImageLeft: Story = {
 
 export const WithVerticalImageRight: Story = {
   args: {
-    mediaUrl: './assets/vertical-image.png',
+    mediaUrl: vertical,
     mediaType: 'image',
     imageOrientation: 'vertical',
     mediaAlignment: 'right',
@@ -61,6 +61,7 @@ export const WithVideo: Story = {
     mediaUrl: 'https://videos.pexels.com/video-files/20422317/20422317-hd_1920_1080_25fps.mp4',
     mediaType: 'video',
     mediaAlignment: 'left',
+    contentAlignment: 'center',
     headline: 'Example Headline',
     content: mockRichText,
     alt: '',
