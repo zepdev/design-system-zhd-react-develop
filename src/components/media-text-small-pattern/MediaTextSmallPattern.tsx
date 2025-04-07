@@ -1,12 +1,13 @@
 import { clsx } from 'clsx';
 import { HeaderLongComponent } from '../header-long-component';
+import { Layout } from '../layout';
 import { MediaTextSmall } from '../media-text-small/mediaTextSmall';
 import { MediaTextSmallPatternProps } from './media-text-small-pattern.interfce';
 
 export const MediaTextSmallPattern: React.FC<MediaTextSmallPatternProps> = ({ items, headline, ...headerProps }) => {
   const mediaTextLists = items.length > 12 ? items.slice(0, 12) : items;
   return (
-    <div
+    <Layout
       data-testid="media-text-pattern"
       className={clsx('zep-flex', 'zep-flex-col', 'md:zep-gap-4', 'sm:zep-gap-3', 'zep-gap-2.5')}
     >
@@ -32,6 +33,6 @@ export const MediaTextSmallPattern: React.FC<MediaTextSmallPatternProps> = ({ it
           ))}
         </div>
       </div>
-    </div>
+    </Layout>
   );
 };
