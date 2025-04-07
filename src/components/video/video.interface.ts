@@ -1,12 +1,10 @@
-import { GlobalVariants } from '../../interfaces/global-variants';
-
 export interface SingleVideo {
-  title: string;
-  tagline: string;
-  thumbnailAlt: string;
-  description: string;
-  url: string;
-  thumbnail: string;
+  title?: string;
+  tagline?: string;
+  thumbnailAlt?: string;
+  description?: string;
+  url?: string;
+  thumbnail?: string;
   linkHref?: string;
   linkText?: string;
   cookiesResetLabel?: string;
@@ -15,7 +13,6 @@ export interface SingleVideo {
 
 export interface VideoProps {
   videos: SingleVideo[];
-  variant?: GlobalVariants;
   className?: string;
   id?: string;
 }

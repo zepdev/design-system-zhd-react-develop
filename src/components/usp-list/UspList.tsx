@@ -1,60 +1,18 @@
-import { cva } from 'class-variance-authority';
 import React from 'react';
-import { GlobalVariantExtended, GlobalVariants } from '../../interfaces/global-variants';
-import { backgroundColor } from '../../utils/commonCSS';
 import { USP } from '../USP/Usp';
 import { HeaderShortComponent } from '../header-short-component';
 import { Layout } from '../layout';
 import { Scrollbar } from '../scrollbar';
 import { USPListProps } from './usp-list.interface';
 
-export const USPList: React.FC<USPListProps> = ({
-  uspCards,
-  variant = GlobalVariants.Cat,
-  headerTitle,
-  tagline,
-  id,
-}: USPListProps) => {
-  const uspListVariants = {
-    [GlobalVariants.Zps]: '',
-    [GlobalVariants.Cat]: '',
-  };
-
-  const uspListCva = cva(
-    [`zep-flex zep-flex-col zep-gap-2.5 sm:zep-gap-3 md:zep-gap-4 zep-py-3 sm:zep-py-4 md:zep-py-5`],
-    {
-      variants: {
-        variant: uspListVariants,
-      },
-      defaultVariants: {
-        variant: GlobalVariants.Zps,
-      },
-    },
-  );
-
-  const uspListWrapperVariants = {
-    [GlobalVariants.Zps]: backgroundColor[GlobalVariantExtended.ZpsBg],
-    [GlobalVariants.Cat]: backgroundColor[GlobalVariantExtended.CatBg],
-  };
-
-  const uspListWrapperCva = cva([``], {
-    variants: {
-      variant: uspListWrapperVariants,
-    },
-    defaultVariants: {
-      variant: GlobalVariants.Zps,
-    },
-  });
-
+export const USPList: React.FC<USPListProps> = ({ uspCards, headerTitle, tagline, id }: USPListProps) => {
   return (
-    <Layout id={id} wrapperClassname={uspListWrapperCva({ variant })} className={uspListCva({ variant })}>
-      <HeaderShortComponent
-        className="zep-p-[0px] zep-w-[40%]"
-        variant={variant === GlobalVariants.Zps ? GlobalVariantExtended.ZpsBg : GlobalVariantExtended.CatBg}
-        headline={headerTitle}
-        showArrow
-        tagline={tagline}
-      />
+    <Layout
+      id={id}
+      wrapperClassname={'zep-bg-greyscale-200'}
+      className={'zep-flex zep-flex-col zep-gap-2.5 sm:zep-gap-3 md:zep-gap-4 zep-py-3 sm:zep-py-4 md:zep-py-5'}
+    >
+      <HeaderShortComponent className="zep-p-[0px] zep-w-[40%]" headline={headerTitle} tagline={tagline} />
       <Scrollbar
         scrollOrientation="horizontal"
         theme="light"
@@ -69,7 +27,6 @@ export const USPList: React.FC<USPListProps> = ({
             headline={card.headline}
             description={card.description}
             iconName={card.iconName}
-            variant={variant}
           />
         ))}
       </Scrollbar>

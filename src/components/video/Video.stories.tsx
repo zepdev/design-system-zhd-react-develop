@@ -1,19 +1,11 @@
 import { Meta, StoryObj } from '@storybook/react';
-import { GlobalVariants } from '../../interfaces/global-variants';
 import { Video } from './Video';
 
 const meta = {
   title: 'Components/Video',
   component: Video,
   tags: ['autodocs'],
-  argTypes: {
-    variant: {
-      control: {
-        type: 'radio',
-        options: Object.keys(GlobalVariants),
-      },
-    },
-  },
+  argTypes: {},
 } satisfies Meta<typeof Video>;
 
 export default meta;
@@ -34,7 +26,6 @@ export const Default: Story = {
         cookiesLayerDescription: 'This video requires cookies to be enabled. Please accept cookies to proceed.',
       },
     ],
-    variant: GlobalVariants.Cat,
   },
 };
 
@@ -52,6 +43,5 @@ export const MultiVideo: Story = {
       cookiesResetLabel: 'Reset Cookies',
       cookiesLayerDescription: 'This video requires cookies to be enabled. Please accept cookies to proceed.',
     })),
-    variant: GlobalVariants.Cat,
   },
 };
