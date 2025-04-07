@@ -11,7 +11,7 @@ export const MediaTextSmall: FC<MediaTextSmallProps> = ({ headline, content = []
           {headline}
         </h2>
         <p data-testid="media-text-small-description" className="zep-mb-1">
-        <RichText content={content} />
+          <RichText content={content} />
         </p>
       </div>
     </div>

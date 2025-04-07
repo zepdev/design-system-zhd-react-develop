@@ -4,14 +4,14 @@ import { Layout } from '../layout';
 import { MediaTextSmall } from '../media-text-small/mediaTextSmall';
 import { MediaTextSmallPatternProps } from './media-text-small-pattern.interfce';
 
-export const MediaTextSmallPattern: React.FC<MediaTextSmallPatternProps> = ({ items, headline, ...headerProps }) => {
+export const MediaTextSmallPattern: React.FC<MediaTextSmallPatternProps> = ({ items, id, headline, ...headerProps }) => {
   const mediaTextLists = items.length > 12 ? items.slice(0, 12) : items;
   return (
     <Layout
-      data-testid="media-text-pattern"
+      id={id}
       className={clsx('zep-flex', 'zep-flex-col', 'md:zep-gap-4', 'sm:zep-gap-3', 'zep-gap-2.5')}
     >
-      <div className="">
+      <div  data-testid="media-text-pattern">
         <div
           data-testid="media-text-small-pattern-headline"
           className="zep-mb-2.5 sm:zep-mb-3 md:zep-mb-4 xl:zep-mb-5 zep-max-w-[952px]"
