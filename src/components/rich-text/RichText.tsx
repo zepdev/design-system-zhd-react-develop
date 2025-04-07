@@ -21,12 +21,12 @@ const Header: React.FC<HeaderProps> = ({ level, children, className }) => {
   }
 };
 
-// Paragraph Component
+//Paragraph Component
 const Paragraph: React.FC<RichTextBaseProps> = ({ children, className }) => (
   <p className={clsx('zep-typography-bodyText', 'zep-text-start', className)}>{children}</p>
 );
 
-// List Component
+//List Component
 const ListComponent: React.FC<ListProps> = ({ ordered, items }) => (
   <List
     className="zep-w-full zep-flex zep-flex-col zep-gap-0.25 zep-justify-start"
