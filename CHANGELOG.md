@@ -1,3 +1,13 @@
+## [1.4.4](https://github.com/zepdev/design-system-zhd-react/compare/v1.4.3...v1.4.4) (2025-04-07)
+
+
+### Bug Fixes
+
+* added the heights for image ([59b4a40](https://github.com/zepdev/design-system-zhd-react/commit/59b4a405f4193e250c20abf3f2bc8e544129b364))
+* added the object top ([5877639](https://github.com/zepdev/design-system-zhd-react/commit/5877639154b39941bb1b8a648575de720e79b02c))
+* Minor improvements ([4450120](https://github.com/zepdev/design-system-zhd-react/commit/4450120485bba042c26a6a86527820696fa59c71))
+* Tests ([3eda37a](https://github.com/zepdev/design-system-zhd-react/commit/3eda37adcc3629d5cccaaf45026cdeb257838566))
+
 ## [1.4.3](https://github.com/zepdev/design-system-zhd-react/compare/v1.4.2...v1.4.3) (2025-04-07)
 
 
