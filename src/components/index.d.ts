@@ -8,6 +8,7 @@ export * from './accrodion-pattern';
 export * from './anchor-navigation-card';
 export * from './anchor-navigation-list';
 export * from './breadcrumb';
+export * from './card';
 export * from './card-event-pattern';
 export * from './card-media-component';
 export * from './card-media-pattern';
