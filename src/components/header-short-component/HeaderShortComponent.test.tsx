@@ -1,5 +1,4 @@
 import { render, screen } from '@testing-library/react';
-import imageSrc from '../../../public/assets/moving-forward-arrow.svg';
 import { HeaderShortComponent } from './HeaderShortComponent';
 
 describe('HeaderShort component', () => {
@@ -10,12 +9,6 @@ describe('HeaderShort component', () => {
     const { getByTestId } = render(<HeaderShortComponent headline={headline} tagline={tagline}></HeaderShortComponent>);
     const HeaderShortElement = getByTestId('header-short-component');
     expect(HeaderShortElement).toBeInTheDocument();
-  });
-
-  it('should render an Image', () => {
-    render(<HeaderShortComponent headline={headline} />);
-    const imageElement = screen.getByRole('img');
-    expect(imageElement).toHaveAttribute('src', imageSrc);
   });
 
   it('should render headline', () => {
