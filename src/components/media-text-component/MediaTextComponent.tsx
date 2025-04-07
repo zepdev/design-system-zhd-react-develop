@@ -39,6 +39,10 @@ const MediaTextComponent = ({
           'zep-relative',
           'zep-flex',
           'zep-flex-col',
+          'md:zep-flex-row',
+          'zep-gap-1.5',
+          'md:zep-gap-2.5',
+          'xl:zep-gap-5',
           mediaAlignment === 'left' ? 'md:zep-flex-row' : 'md:zep-flex-row-reverse',
           contentAlignment === 'center' ? 'zep-items-center' : 'zep-items-start',
         )}
@@ -89,13 +93,15 @@ const MediaTextImage = ({
   imageOrientation,
 }: MediaTextComponentImageProps) => {
   const imageHeightClass =
-    mediaType === 'image' && imageOrientation === 'vertical' ? ' zep-aspect-[4/5]' : 'zep-aspect-[16/9]';
+    mediaType === 'image' && imageOrientation === 'vertical'
+      ? 'zep-w-full sm:zep-max-h-[500] sm:zep-max-w-[364px]  md:zep-w-[348px] lg:zep-max-h-[595px] lg:zep-w-auto lg:zep-max-w-[740px] xl:zep-max-h-[881px] xl:zep-max-w-[740px] zep-aspect-[4/5]'
+      : 'zep-aspect-[16/9]';
 
   return (
     <div data-testid="zep-mediaText-image" className={clsx('zep-w-full')}>
-      <div className={`${imageHeightClass} zep-h-auto zep-mx-auto`}>
+      <div className={`${imageHeightClass} zep-h-full zep-mx-auto`}>
         {mediaType === 'image' ? (
-          <img src={mediaUrl} alt={alt} className={`zep-w-full zep-h-full zep-object-cover`} />
+          <img src={mediaUrl} alt={alt} className={`zep-w-full zep-h-full zep-object-cover sm:zep-object-contain`} />
         ) : (
           <ResponsivePlayer url={mediaUrl || ''} thumbnail={videoThumbnail || ''} thumbnailAlt="alt" />
         )}
@@ -112,10 +118,6 @@ const MediaTextBody = ({ children }: MediaTextComponentBodyProps) => {
         zep-relative
         zep-h-[max-content]
         zep-z-10
-        zep-p-1
-        sm:zep-p-2.5
-        md:zep-p-2
-        lg:zep-p-4
         md:zep-w-full
         md:zep-min-w-[499px]
         xl:zep-min-w-[700px]
