@@ -1,3 +1,10 @@
+## [1.4.3](https://github.com/zepdev/design-system-zhd-react/compare/v1.4.2...v1.4.3) (2025-04-07)
+
+
+### Bug Fixes
+
+* Export card ([92e72b4](https://github.com/zepdev/design-system-zhd-react/commit/92e72b4d4be085de5d5b1f32d6905ec615bb27c2))
+
 ## [1.4.2](https://github.com/zepdev/design-system-zhd-react/compare/v1.4.1...v1.4.2) (2025-04-07)
 
 
