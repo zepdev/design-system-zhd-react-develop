@@ -1,5 +1,4 @@
 import { ProductIcons } from '@zepdev/design-system-component-library-react';
-import { GlobalVariants } from '../../interfaces/global-variants';
 
 export type ProductIconNames = keyof typeof ProductIcons;
 
@@ -12,6 +11,5 @@ export interface USPProps {
   count?: string;
   headline: string;
   description: string;
-  variant?: GlobalVariants | HeaderShortDefault;
   className?: string;
 }

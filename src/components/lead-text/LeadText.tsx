@@ -22,9 +22,7 @@ export const LeadText: React.FC<LeadTextProps> = ({ headline, tagline, content, 
       )}
       data-testid="lead-text"
     >
-      {headline && (
-        <HeaderShortComponent variant={variant} tagline={tagline} headline={headline} className="!zep-max-w-full" />
-      )}
+      {headline && <HeaderShortComponent tagline={tagline} headline={headline} className="!zep-max-w-full" />}
       <RichText content={content} />
     </div>
   </Layout>

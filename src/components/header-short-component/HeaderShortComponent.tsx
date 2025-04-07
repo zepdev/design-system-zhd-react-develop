@@ -1,15 +1,7 @@
 import { clsx } from 'clsx';
-import arrowImg from '../../../public/assets/moving-forward-arrow.svg';
-import { GlobalVariants } from '../../interfaces/global-variants';
 import { HeaderShortComponentProps } from './HeaderShortComponent.interface';
 
-export const HeaderShortComponent = ({
-  tagline,
-  headline,
-  showArrow,
-  className,
-  variant = GlobalVariants.Zps,
-}: HeaderShortComponentProps) => {
+export const HeaderShortComponent = ({ tagline, headline, className }: HeaderShortComponentProps) => {
   return (
     <div
       className={clsx(
@@ -21,18 +13,10 @@ export const HeaderShortComponent = ({
         'md:zep-gap-1.5',
         'sm:zep-gap-2.5',
         'zep-gap-1.5',
-        { 'md:zep-max-w-[701px]': showArrow },
         className,
       )}
       data-testid="header-short-component"
     >
-      {showArrow ? (
-        <img
-          className={clsx('zep-h-4', 'sm:zep-h-5', 'md:zep-h-4', 'xl:zep-h-[100px]', 'zep-w-auto')}
-          alt="forward arrow"
-          src={arrowImg}
-        />
-      ) : null}
       <div className="zep-w-full zep-flex zep-flex-col zep-gap-0.5 zep-items-start zep-justify-start">
         {tagline ? (
           <p
