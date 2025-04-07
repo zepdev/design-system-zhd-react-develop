@@ -3,5 +3,6 @@ import { MediaTextSmallProps } from '../media-text-small/media-text-small.interf
 
 export interface MediaTextSmallPatternProps extends Partial<HeaderLongProps> {
     items: MediaTextSmallProps[];
+    id?: string;
 }
 //# sourceMappingURL=media-text-small-pattern.interfce.d.ts.map

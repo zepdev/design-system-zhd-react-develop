@@ -4,13 +4,7 @@ declare const meta: {
     title: string;
     component: import('react').FC<import('./media-text-small.interface').MediaTextSmallProps>;
     tags: string[];
-    argTypes: {
-        content: {
-            control: {
-                type: string;
-            };
-        };
-    };
+    argTypes: {};
 };
 export default meta;
 type Story = StoryObj<typeof meta>;
