@@ -30,12 +30,11 @@ describe('MediaTextSmallPattern', () => {
     const mediaTextSmallPattern = getByTestId('media-text-pattern');
     expect(mediaTextSmallPattern).toBeInTheDocument();
 
-    /*
     const headlineElement = getByTestId('media-text-small-pattern-headline');
     expect(headlineElement).toBeInTheDocument();
     expect(headlineElement).toHaveTextContent(headline);
 
-    const mediaTextSmallItems = getAllByTestId('media-text-small-pattern-item');
-    expect(mediaTextSmallItems).toHaveLength(items.length); */
+    const itemsElement = getByTestId('media-text-small-pattern-items');
+    expect(itemsElement).toBeInTheDocument();
   });
 });
