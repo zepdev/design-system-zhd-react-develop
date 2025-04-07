@@ -101,7 +101,7 @@ const MediaTextImage = ({
     <div data-testid="zep-mediaText-image" className={clsx('zep-w-full')}>
       <div className={`${imageHeightClass} zep-h-full zep-mx-auto`}>
         {mediaType === 'image' ? (
-          <img src={mediaUrl} alt={alt} className={`zep-w-full zep-h-full zep-object-cover sm:zep-object-contain`} />
+          <img src={mediaUrl} alt={alt} className={`zep-w-full zep-h-full zep-object-cover zep-object-top sm:zep-object-contain`} />
         ) : (
           <ResponsivePlayer url={mediaUrl || ''} thumbnail={videoThumbnail || ''} thumbnailAlt="alt" />
         )}
