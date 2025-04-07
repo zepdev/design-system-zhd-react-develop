@@ -81,8 +81,17 @@ export const SmallHero: FC<SmallHeroProps> = ({
         >
           <div className="zep-z-10">
             <h1 className="zep-typography-headlineXL-fluid-cqi lg:zep-typography-headline2XL-fluid-cqi zep-text-typography-light-100 zep-mb-1">
-              {headline}
+              {headline}{' '}
+              {subline && (
+                <>
+                  <br></br>
+                  <span className="zep-typography-headlineXL-fluid-cqi lg:zep-typography-headline2XL-fluid-cqi zep-text-typography-light-100 zep-mb-1">
+                    {subline}
+                  </span>
+                </>
+              )}
             </h1>
+
             {description && (
               <p className="zep-typography-bodyText zep-text-typography-light-100 md:zep-max-w-[374px] lg:zep-max-w-[710px] zep-mb-1.5">
                 {getFirst150Characters(description)}

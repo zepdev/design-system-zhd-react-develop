@@ -38,7 +38,7 @@ export const AccordionPattern: React.FC<AccordionPatternProps> = ({
         <HeaderLongComponent variant={variant} headline={headline} {...headerProps} />
       )}
       {headline && headerPosition === 'left' && (
-        <HeaderShortComponent variant={variant} headline={headline} {...headerProps} className="zep-w-full" />
+        <HeaderShortComponent headline={headline} {...headerProps} className="zep-w-full" />
       )}
       <div className="zep-relative zep-w-full" data-testid="zep-accordion-pattern">
         {/* Top Description */}

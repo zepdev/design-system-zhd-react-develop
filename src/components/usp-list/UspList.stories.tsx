@@ -1,5 +1,4 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { GlobalVariants } from '../../interfaces/global-variants';
 import { USPList } from './UspList';
 import { USPListProps } from './usp-list.interface';
 
@@ -15,7 +14,6 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   args: {
-    variant: GlobalVariants.Zps,
     headerTitle: 'Vorteile für Ihr Unternehmen',
     uspCards: [
       {
@@ -36,7 +34,6 @@ export const Default: Story = {
 
 export const With3Items: Story = {
   args: {
-    variant: GlobalVariants.Zps,
     headerTitle: 'Vorteile für Ihr Unternehmen',
     uspCards: [
       {
@@ -63,7 +60,6 @@ export const With3Items: Story = {
 
 export const With4Items: Story = {
   args: {
-    variant: GlobalVariants.Zps,
     headerTitle: 'Vorteile für Ihr Unternehmen',
     uspCards: [
       {
@@ -96,7 +92,6 @@ export const With4Items: Story = {
 
 export const With5Items: Story = {
   args: {
-    variant: GlobalVariants.Zps,
     headerTitle: 'Vorteile für Ihr Unternehmen',
     uspCards: [
       {
@@ -135,7 +130,6 @@ export const With5Items: Story = {
 
 export const With6Items: Story = {
   args: {
-    variant: GlobalVariants.Zps,
     headerTitle: 'Vorteile für Ihr Unternehmen',
     uspCards: [
       {
@@ -180,7 +174,6 @@ export const With6Items: Story = {
 
 export const With10Items: Story = {
   args: {
-    variant: GlobalVariants.Zps,
     headerTitle: 'Vorteile für Ihr Unternehmen',
     uspCards: [
       {

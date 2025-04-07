@@ -24,8 +24,6 @@ export const SingleLinkList: FC<SingleLinkListProps> = ({
         className="md:zep-w-[40%] zep-w-full zep-flex-grow zep-flex-shrink-0"
         headline={title}
         tagline={tagline}
-        variant={variant}
-        showArrow={false}
       />
       <div className="zep-w-full md:zep-flex-grow">
         <LinkListItem

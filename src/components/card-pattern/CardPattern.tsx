@@ -17,8 +17,8 @@ export const CardPattern: React.FC<CardPatternProps> = ({ items, headline, id, .
       <div
         data-testid="card-pattern-items"
         className={clsx('zep-grid', 'zep-gap-1', {
-          'xl:zep-grid-cols-3': [2, 3, 6, 9].includes(cardLists.length),
-          'xl:zep-grid-cols-4': [4, 5, 7, 8, 10, 11, 12].includes(cardLists.length),
+          'xl:zep-grid-cols-3': [2, 3, 6, 9, 5].includes(cardLists.length),
+          'xl:zep-grid-cols-4': [4, 7, 8, 10, 11, 12].includes(cardLists.length),
           'md:zep-grid-cols-2': [0, 1, 2, 4].includes(cardLists.length),
           'md:zep-grid-cols-3': [3, 5, 6, 7, 8, 9, 10, 11, 12].includes(cardLists.length),
           'sm:zep-grid-cols-2': true,

@@ -1,5 +1,6 @@
 import { Meta, StoryObj } from '@storybook/react';
 import { mockImage, mockRichText } from '../../utils/mocks';
+import vertical from '../../assets/verti.png';
 import { MediaTextComponentContentProps } from '../media-text-component/media-text-component.interface';
 import { MediaTextComponentPattern } from './MediaTextComponentPattern';
 
@@ -16,9 +17,11 @@ type Story = StoryObj<typeof meta>;
 
 const card: MediaTextComponentContentProps = {
   headline: 'Headline',
+  mediaType: 'image',
+  imageOrientation: 'vertical',
   tagline: 'TAGLINE',
   content: mockRichText,
-  mediaUrl: mockImage.src,
+  mediaUrl: vertical,
   alt: mockImage.alt,
   labelPrimary: 'Primary',
 };
