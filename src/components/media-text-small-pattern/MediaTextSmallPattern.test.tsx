@@ -26,7 +26,7 @@ describe('MediaTextSmallPattern', () => {
   const headline = 'Test Headline';
 
   it('renders the component with correct items and headline', () => {
-    const { getByTestId, getAllByTestId } = render(<MediaTextSmallPattern items={items} headline={headline} />);
+    const { getByTestId } = render(<MediaTextSmallPattern items={items} headline={headline} />);
     const mediaTextSmallPattern = getByTestId('media-text-pattern');
     expect(mediaTextSmallPattern).toBeInTheDocument();
 
