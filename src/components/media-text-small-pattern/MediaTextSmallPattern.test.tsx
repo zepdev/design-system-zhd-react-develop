@@ -1,26 +1,24 @@
 import { render } from '@testing-library/react';
+import { mockRichText } from '../../utils/mocks';
 import { MediaTextSmallPattern } from './MediaTextSmallPattern';
 
 describe('MediaTextSmallPattern', () => {
   const items = [
     {
       headline: 'Item 1',
-      description: 'Description 1',
-      orderedLists: ['Lorem Ipsum dolor sit amet', 'Lorem Ipsum dolor sit amet'],
+      content: mockRichText,
       imageAlt: 'image alt',
       imageSrc: './assets/image-4_3.png',
     },
     {
       headline: 'Item 2',
-      description: 'Description 2',
-      orderedLists: ['Lorem Ipsum dolor sit amet', 'Lorem Ipsum dolor sit amet'],
+      content: mockRichText,
       imageAlt: 'image alt',
       imageSrc: './assets/image-4_3.png',
     },
     {
       headline: 'Item 3',
-      description: 'Description 3',
-      orderedLists: ['Lorem Ipsum dolor sit amet', 'Lorem Ipsum dolor sit amet'],
+      content: mockRichText,
       imageAlt: 'image alt',
       imageSrc: './assets/image-4_3.png',
     },
@@ -36,7 +34,7 @@ describe('MediaTextSmallPattern', () => {
     expect(headlineElement).toBeInTheDocument();
     expect(headlineElement).toHaveTextContent(headline);
 
-    const mediaTextSmallItems = getByTestId('media-text-small-pattern-items');
-    expect(mediaTextSmallItems).toBeInTheDocument();
+    const itemsElement = getByTestId('media-text-small-pattern-items');
+    expect(itemsElement).toBeInTheDocument();
   });
 });
