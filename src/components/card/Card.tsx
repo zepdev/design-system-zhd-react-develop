@@ -31,7 +31,7 @@ export const Card: FC<CardProps> = ({
       <img
         src={imageSrc}
         alt={imageAlt}
-        className={clsx('zep-aspect-16.9', 'zep-w-full', 'zep-object-cover', 'zep-h-full')}
+        className={clsx('zep-aspect-16.9', 'zep-w-full', 'zep-object-cover', 'zep-h-full', 'zep-max-h-[272px]')}
         data-testid="card-component-image"
       />
       <div className={clsx('zep-flex', 'zep-flex-col', 'zep-p-1.5', 'md:zep-p-2.5', 'md:zep-p-2.5', 'zep-items-start')}>
