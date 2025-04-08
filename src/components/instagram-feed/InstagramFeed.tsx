@@ -6,7 +6,7 @@ import { Scrollbar } from '../scrollbar';
 import { InstagramFeedProps } from './InstagramFeed.interface';
 
 const Images: FC<Pick<InstagramFeedProps, 'feed'>> = ({ feed }) => {
-  return feed.map(({ src, alt }, index) => (
+  return feed.map(({ src, alt, url }, index) => (
     <div
       className={clsx(
         'zep-aspect-[4/5]',
@@ -18,7 +18,18 @@ const Images: FC<Pick<InstagramFeedProps, 'feed'>> = ({ feed }) => {
         'zep-shrink-0',
       )}
     >
-      <img key={`instagram-image-${index}`} className="zep-w-full zep-h-full zep-object-cover" src={src} alt={alt} />
+      {url ? (
+        <a href={url} target="_blank" rel="noreferrer">
+          <img
+            key={`instagram-image-${index}`}
+            className="zep-w-full zep-h-full zep-object-cover"
+            src={src}
+            alt={alt}
+          />
+        </a>
+      ) : (
+        <img key={`instagram-image-${index}`} className="zep-w-full zep-h-full zep-object-cover" src={src} alt={alt} />
+      )}
     </div>
   ));
 };

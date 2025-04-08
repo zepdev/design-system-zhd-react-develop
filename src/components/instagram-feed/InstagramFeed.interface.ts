@@ -1,5 +1,5 @@
 import { HeaderLongProps } from '../header-long';
 
 export interface InstagramFeedProps extends HeaderLongProps {
-  feed: { src: string, alt: string }[],
+  feed: { src: string; alt: string; url?: string }[];
 }
