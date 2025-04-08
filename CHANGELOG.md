@@ -1,3 +1,10 @@
+## [1.4.9](https://github.com/zepdev/design-system-zhd-react/compare/v1.4.8...v1.4.9) (2025-04-08)
+
+
+### Bug Fixes
+
+* Card height ([c43d9e1](https://github.com/zepdev/design-system-zhd-react/commit/c43d9e1774be9eae439285249d40c53c13114b38))
+
 ## [1.4.8](https://github.com/zepdev/design-system-zhd-react/compare/v1.4.7...v1.4.8) (2025-04-08)
 
 
