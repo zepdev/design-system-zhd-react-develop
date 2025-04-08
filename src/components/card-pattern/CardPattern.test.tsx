@@ -12,6 +12,7 @@ describe('CardPattern', () => {
       title: 'Title',
       description: 'Here is a description',
       linkLabel: 'Click me',
+      url: '',
     },
     {
       imageSrc:
@@ -20,6 +21,7 @@ describe('CardPattern', () => {
       title: 'Titlev1',
       description: 'Here is a description',
       linkLabel: 'Click me',
+      url: '',
     },
   ];
 

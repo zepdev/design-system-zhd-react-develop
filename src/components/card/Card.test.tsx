@@ -11,6 +11,7 @@ describe('Card component', () => {
         imageAlt="Test Image"
         gtmHeadline="Test Headline"
         gtmid="test-id"
+        url={''}
       />,
     );
 
