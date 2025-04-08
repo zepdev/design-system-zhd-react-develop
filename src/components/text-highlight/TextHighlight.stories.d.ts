@@ -3,7 +3,7 @@ import { StoryObj } from '@storybook/react';
 declare const meta: {
     title: string;
     component: {
-        ({ buttonText, children, imageAlt, imageSrc, message, buttonOnClick, variant, imageAlignment, headline, bottomDescription, topDescription, id, buttonType, buttonVariant, buttonUrl, buttonIcon, buttonIconPosition, ...headerLongProps }: import('./TextHighlight.interface').TextHighlightProps): import("react/jsx-dev-runtime").JSX.Element;
+        ({ buttonText, children, imageAlt, imageSrc, message, buttonOnClick, imageAlignment, headline, bottomDescription, topDescription, id, buttonType, buttonVariant, buttonUrl, buttonIcon, buttonIconPosition, ...headerLongProps }: import('./TextHighlight.interface').TextHighlightProps): import("react/jsx-dev-runtime").JSX.Element;
         Accordion: import('react').FC<import('./TextHighlight.interface').AccordionProps>;
         Table: import('react').FC<import('./TextHighlight.interface').TableProps>;
         RichText: import('react').FC<import('./TextHighlight.interface').RichTextProps>;

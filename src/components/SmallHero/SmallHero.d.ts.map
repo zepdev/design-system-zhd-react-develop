@@ -1,1 +1,1 @@
-{"version":3,"file":"SmallHero.d.ts","sourceRoot":"","sources":["../../../../src/components/SmallHero/SmallHero.tsx"],"names":[],"mappings":"AAGA,OAAO,EAAE,EAAE,EAAE,MAAM,OAAO,CAAC;AAG3B,OAAO,EAAE,cAAc,EAAE,MAAM,wBAAwB,CAAC;AAExD,eAAO,MAAM,SAAS,EAAE,EAAE,CAAC,cAAc,CAwIxC,CAAC"}
+{"version":3,"file":"SmallHero.d.ts","sourceRoot":"","sources":["../../../../src/components/SmallHero/SmallHero.tsx"],"names":[],"mappings":"AAGA,OAAO,EAAE,EAAE,EAAE,MAAM,OAAO,CAAC;AAG3B,OAAO,EAAE,cAAc,EAAE,MAAM,wBAAwB,CAAC;AAExD,eAAO,MAAM,SAAS,EAAE,EAAE,CAAC,cAAc,CA+IxC,CAAC"}
