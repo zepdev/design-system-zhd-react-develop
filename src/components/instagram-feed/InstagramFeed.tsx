@@ -26,6 +26,7 @@ const Images: FC<Pick<InstagramFeedProps, 'feed'>> = ({ feed }) => {
 export const InstagramFeed: FC<InstagramFeedProps> = ({ feed, ...headerProps }) => {
   return (
     <Layout
+      wrapperClassname="zep-bg-greyscale-200 zep-pt-1 md:zep-pt-1.5 lg:zep-pt-2.5"
       testId="zep-instagram-feed"
       className="zep-flex zep-flex-col xl:zep-gap-5 md:zep-gap-4 sm:zep-gap-3 zep-gap-2.5"
     >
