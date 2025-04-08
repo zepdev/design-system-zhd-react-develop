@@ -1,15 +1,13 @@
 import { Layout } from '@/components/layout';
 import clsx from 'clsx';
 import React from 'react';
-import { GlobalVariantExtended } from '../../interfaces/global-variants';
-import { backgroundColor } from '../../utils/commonCSS';
 import { Button, ZsdButtonVariant } from '../zsd-button';
 import { TeaserSimpleProps } from './teaser-simple.interface';
 
 export const TeaserSimple: React.FC<TeaserSimpleProps> = ({ teaserText, buttonText, onClick }) => {
   return (
     <Layout
-      wrapperClassname={clsx(backgroundColor[GlobalVariantExtended.ZpsBg])}
+      wrapperClassname={'zep-bg-primary-default'}
       className={clsx(
         'zep-flex',
         'zep-flex-col',
@@ -40,10 +38,11 @@ export const TeaserSimple: React.FC<TeaserSimpleProps> = ({ teaserText, buttonTe
           'md:zep-mt-[0]',
           'xl:zep-ml-[120px]',
           'md:zep-whitespace-nowrap',
+          'zep-max-w-max',
         )}
         label={buttonText}
         title={buttonText}
-        variant={ZsdButtonVariant.PrimaryDark}
+        variant={ZsdButtonVariant.PrimaryLight}
         onClick={onClick}
       />
     </Layout>

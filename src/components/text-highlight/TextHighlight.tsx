@@ -2,14 +2,11 @@ import {
   Link,
   LinkMode,
   LinkTarget,
-  TableThemes,
   Accordion as ZepAccordion,
   Table as ZepTable,
 } from '@zepdev/design-system-component-library-react';
 import clsx from 'clsx';
 import { FC, createContext, useContext } from 'react';
-import { GlobalVariants } from '../../interfaces/global-variants';
-import { textColor } from '../../utils/commonCSS';
 import { getUrlWithTrailingSlash } from '../../utils/getUrlWithTrailingSlash';
 import { HeaderLongComponent } from '../header-long-component';
 import { Layout } from '../layout';
@@ -18,7 +15,6 @@ import { Button, ZsdButtonVariant } from '../zsd-button';
 import { AccordionProps, RichTextProps, THContext, TableProps, TextHighlightProps } from './TextHighlight.interface';
 
 const TextHighlightContext = createContext<THContext>({
-  variant: GlobalVariants.Zps,
   message: '',
   buttonText: '',
   buttonOnClick: () => {},
@@ -30,17 +26,8 @@ const TextHighlightContext = createContext<THContext>({
 export const useTextHighlightContext = () => useContext(TextHighlightContext);
 
 const RichText: FC<RichTextProps> = ({ content }) => {
-  const {
-    variant,
-    message,
-    buttonText,
-    buttonVariant,
-    buttonIconPosition,
-    buttonType,
-    buttonOnClick,
-    buttonUrl,
-    buttonIcon,
-  } = useTextHighlightContext();
+  const { message, buttonText, buttonVariant, buttonIconPosition, buttonType, buttonOnClick, buttonUrl, buttonIcon } =
+    useTextHighlightContext();
 
   return (
     <div className={clsx('zep-flex', 'zep-flex-col', 'zep-gap-1.5', 'md:zep-px-[0px]', 'sm:zep-px-1.5', 'zep-px-1')}>
@@ -55,11 +42,11 @@ const RichText: FC<RichTextProps> = ({ content }) => {
           'zep-border-t-greyscale-400',
         )}
       >
-        <p className={clsx(textColor[variant], 'zep-typography-bodyText')}>{message}</p>
+        <p className={'zep-text-typography-dark-100 zep-typography-bodyText'}>{message}</p>
         {buttonText && buttonVariant === 'link' && (
           <Link
             target={buttonUrl?.startsWith('http') ? LinkTarget.Blank : LinkTarget.Self}
-            className={variant === GlobalVariants.Zps ? 'zep-text-indigo-500' : 'zep-text-typography-dark-100'}
+            className={'zep-text-typography-dark-100'}
             label={buttonText}
             mode={LinkMode.Inline}
             icon={buttonIcon}
@@ -85,23 +72,14 @@ const RichText: FC<RichTextProps> = ({ content }) => {
 };
 
 const Accordion: FC<AccordionProps> = ({ contents }) => {
-  const {
-    variant,
-    message,
-    buttonText,
-    buttonVariant,
-    buttonIconPosition,
-    buttonType,
-    buttonOnClick,
-    buttonUrl,
-    buttonIcon,
-  } = useTextHighlightContext();
+  const { message, buttonText, buttonVariant, buttonIconPosition, buttonType, buttonOnClick, buttonUrl, buttonIcon } =
+    useTextHighlightContext();
 
   return (
     <div className={clsx('zep-flex', 'zep-flex-col', 'zep-gap-1.5', 'md:zep-px-[0px]', 'sm:zep-px-1.5', 'zep-px-1')}>
       <div>
         <ZepAccordion
-          className={textColor[variant]}
+          className={'zep-text-typography-dark-100'}
           items={contents.map((item) => ({
             title: item.title,
             content: (
@@ -113,11 +91,11 @@ const Accordion: FC<AccordionProps> = ({ contents }) => {
         />
       </div>
       <div className={clsx('zep-flex', 'zep-flex-col', 'zep-gap-1.5')}>
-        <p className={clsx(textColor[variant], 'zep-typography-bodyText')}>{message}</p>
+        <p className={'zep-typography-bodyText zep-text-typography-dark-100'}>{message}</p>
         {buttonText && buttonVariant === 'link' && (
           <Link
             target={buttonUrl?.startsWith('http') ? LinkTarget.Blank : LinkTarget.Self}
-            className={variant === GlobalVariants.Zps ? 'zep-text-indigo-500' : 'zep-text-typography-dark-100'}
+            className={'zep-text-typography-dark-100'}
             label={buttonText}
             mode={LinkMode.Inline}
             icon={buttonIcon}
@@ -133,8 +111,9 @@ const Accordion: FC<AccordionProps> = ({ contents }) => {
             label={buttonText}
             buttonType={buttonType}
             onClick={buttonOnClick}
-            variant={buttonVariant}
+            variant={ZsdButtonVariant.SecondaryDark}
             href={buttonUrl}
+            className="zep-max-w-max"
           />
         )}
       </div>
@@ -143,33 +122,18 @@ const Accordion: FC<AccordionProps> = ({ contents }) => {
 };
 
 const Table: FC<TableProps> = ({ columns, dataSource, tableMessage }) => {
-  const {
-    variant,
-    message,
-    buttonText,
-    buttonVariant,
-    buttonIconPosition,
-    buttonType,
-    buttonOnClick,
-    buttonUrl,
-    buttonIcon,
-  } = useTextHighlightContext();
+  const { message, buttonText, buttonVariant, buttonIconPosition, buttonType, buttonOnClick, buttonUrl, buttonIcon } =
+    useTextHighlightContext();
 
   return (
     <div className={clsx('md:zep-px-[0px]', 'sm:zep-px-1.5', 'zep-px-1', 'zep-flex', 'zep-flex-col', 'zep-gap-1.5')}>
-      <ZepTable
-        variant={variant as unknown as TableThemes}
-        columns={columns}
-        dataSource={dataSource}
-        descriptionBottom={tableMessage}
-        fullWidth
-      />
+      <ZepTable columns={columns} dataSource={dataSource} descriptionBottom={tableMessage} fullWidth />
       <div className={clsx('zep-flex', 'zep-flex-col', 'zep-gap-1.5')}>
-        <p className={clsx(textColor[variant], 'zep-typography-bodyText')}>{message}</p>
+        <p className={'zep-typography-bodyText zep-text-typography-dark-100'}>{message}</p>
         {buttonText && buttonVariant === 'link' && (
           <Link
             target={buttonUrl?.startsWith('http') ? LinkTarget.Blank : LinkTarget.Self}
-            className={variant === GlobalVariants.Zps ? 'zep-text-indigo-500' : 'zep-text-typography-dark-100'}
+            className={'zep-text-typography-dark-100'}
             label={buttonText}
             mode={LinkMode.Inline}
             icon={buttonIcon}
@@ -201,7 +165,6 @@ const TextHighlight = ({
   imageSrc,
   message,
   buttonOnClick,
-  variant = GlobalVariants.Zps,
   imageAlignment = 'left',
   headline,
   bottomDescription,
@@ -247,7 +210,7 @@ const TextHighlight = ({
               'lg:zep-px-[122px]',
             )}
           >
-            <HeaderLongComponent headline={headline} variant={variant} {...headerLongProps} />
+            <HeaderLongComponent headline={headline} {...headerLongProps} />
           </div>
         )}
         <div
@@ -262,7 +225,7 @@ const TextHighlight = ({
             'zep-gap-1.5',
           )}
         >
-          <div className="zep-max-w-[2042px] md:zep-w-[30%] zep-w-full xl:zep-overflow-x-visible md:zep-h-[645px] xl:zep-h-[1074px] zep-aspect-[4/3] zep-overscroll-none xl:zep-relative">
+          <div className="zep-max-w-[2042px] md:zep-w-[50%] zep-w-full xl:zep-overflow-x-visible md:zep-h-[499px] xl:zep-h-[499px] zep-aspect-[16/9] zep-overscroll-none xl:zep-relative">
             <div
               className={clsx(
                 'xl:zep-absolute',
@@ -270,14 +233,14 @@ const TextHighlight = ({
                 'zep-h-full',
                 'xl:zep-w-fit',
                 'zep-w-full',
-                'xl:zep-aspect-[4/3]',
+                'xl:zep-aspect-[16/9]',
               )}
             >
               <img
                 className={clsx(
                   'zep-w-full',
                   'zep-h-full',
-                  'zep-aspect-[4/3]',
+                  'zep-aspect-[16/9]',
                   'zep-object-cover',
                   imageAlignment === 'left' ? 'md:zep-object-right' : 'md:zep-object-left',
                 )}
@@ -288,7 +251,6 @@ const TextHighlight = ({
           </div>
           <TextHighlightContext.Provider
             value={{
-              variant,
               buttonText,
               message,
               buttonOnClick,

@@ -67,7 +67,14 @@ export const SmallHero: FC<SmallHeroProps> = ({
 
       <div
         style={{ backgroundImage: `url(${imageSrc})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
-        className={clsx('zep-w-full', 'zep-relative', 'zep-hidden', 'md:zep-block')}
+        className={clsx(
+          'zep-w-full',
+          'zep-relative',
+          'zep-hidden',
+          'md:zep-flex',
+          'md:zep-items-center',
+          'md:zep-min-h-[466px]',
+        )}
       >
         <div
           className={clsx(
