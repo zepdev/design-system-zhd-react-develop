@@ -6,13 +6,7 @@ describe('Media Text Small component', () => {
     const Child = (
       <MediaTextSmall
         headline="Headline"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed amet feugiat egestas          
-        element
-        um convallis pretium pellentesque."
-        orderedLists={[
-          'Lorem Ipsum dolor sit amet',
-          'Lorem Ipsum dolor sit amet',
-        ]}
+        content={[]}
         imageAlt="image alt"
         imageSrc="./assets/image-4_3.png"
       />
