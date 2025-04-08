@@ -10,6 +10,7 @@ const Header: React.FC<HeaderProps> = ({ level, children, className }) => {
   switch (level) {
     case 1:
     case 2:
+      return <h2 className={clsx('zep-typography-headlineMD-fluid-cqi', 'zep-text-start', className)}>{children}</h2>;
     case 3:
       return <h3 className={clsx('zep-typography-headlineSM-fluid-cqi', 'zep-text-start', className)}>{children}</h3>;
     case 4:
