@@ -1,3 +1,10 @@
+## [1.4.6](https://github.com/zepdev/design-system-zhd-react/compare/v1.4.5...v1.4.6) (2025-04-08)
+
+
+### Bug Fixes
+
+* Update bg instagram ([6cf3f64](https://github.com/zepdev/design-system-zhd-react/commit/6cf3f64085355479fb765e0032cb7ddabd3d31fa))
+
 ## [1.4.5](https://github.com/zepdev/design-system-zhd-react/compare/v1.4.4...v1.4.5) (2025-04-08)
 
 
