@@ -81,7 +81,7 @@ export const Navigation: FC<NavigationProps> = ({
                 {item.label}
               </p>
               <div className="zep-hidden group-hover:zep-block group-hover:zep-absolute zep-w-full">
-                <div className="zep-w-[24px] zep-h-[2px] zep-bg-yellow-500 zep-mx-auto" />
+                <div className="zep-w-[24px] zep-h-[2px] zep-bg-primary-default zep-mx-auto" />
               </div>
             </div>
           ))}

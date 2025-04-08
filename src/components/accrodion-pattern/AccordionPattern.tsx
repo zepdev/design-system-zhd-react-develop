@@ -3,7 +3,6 @@ import { Accordion, Table, TableThemes } from '@zepdev/design-system-component-l
 import clsx from 'clsx';
 import React from 'react';
 import { GlobalVariants } from '../../interfaces/global-variants';
-import { textColor } from '../../utils/commonCSS';
 import { HeaderLongComponent } from '../header-long-component';
 import { HeaderShortComponent } from '../header-short-component';
 import { Layout } from '../layout';
@@ -50,7 +49,7 @@ export const AccordionPattern: React.FC<AccordionPatternProps> = ({
         {/* Accordion */}
         <div data-testid="accordion-pattern-titleContent">
           <Accordion
-            className={textColor[variant]}
+            className={'zep-text-typography-dark-100'}
             items={contents?.map((item) => ({
               title: item?.title,
               content: (
