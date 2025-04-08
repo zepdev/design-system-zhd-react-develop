@@ -683,10 +683,10 @@
           "moduleName": "./src/components/card-event-pattern/card-event/CardEvent.tsx"
         },
         {
-          "moduleName": "./src/components/card-media-component/CardMedia.tsx"
+          "moduleName": "./src/components/card-media-pattern/CardMediaPattern.tsx"
         },
         {
-          "moduleName": "./src/components/card-media-pattern/CardMediaPattern.tsx"
+          "moduleName": "./src/components/card-media-component/CardMedia.tsx"
         },
         {
           "moduleName": "./src/components/card-square/CardSquare.tsx"
@@ -722,10 +722,10 @@
           "moduleName": "./src/components/navigation/Navigation.tsx"
         },
         {
-          "moduleName": "./src/components/partner-communication/PartnerCommunication.tsx"
+          "moduleName": "./src/components/process-chain/ProcessChain.tsx"
         },
         {
-          "moduleName": "./src/components/process-chain/ProcessChain.tsx"
+          "moduleName": "./src/components/partner-communication/PartnerCommunication.tsx"
         },
         {
           "moduleName": "./src/components/product-highlight/Product-highlight.tsx"
@@ -796,6 +796,15 @@
       ]
     },
     {
+      "id": "./src/components/card-event-pattern/CardEventPattern.tsx",
+      "name": "./src/components/card-event-pattern/CardEventPattern.tsx",
+      "reasons": [
+        {
+          "moduleName": "./src/components/card-event-pattern/CardEventPattern.stories.tsx"
+        }
+      ]
+    },
+    {
       "id": "./src/components/card-event-pattern/card-event/CardEvent.tsx",
       "name": "./src/components/card-event-pattern/card-event/CardEvent.tsx",
       "reasons": [
@@ -804,15 +813,6 @@
         },
         {
           "moduleName": "./src/components/card-event-pattern/card-event/index.ts"
-        }
-      ]
-    },
-    {
-      "id": "./src/components/card-event-pattern/CardEventPattern.tsx",
-      "name": "./src/components/card-event-pattern/CardEventPattern.tsx",
-      "reasons": [
-        {
-          "moduleName": "./src/components/card-event-pattern/CardEventPattern.stories.tsx"
         }
       ]
     },
@@ -916,15 +916,6 @@
       ]
     },
     {
-      "id": "./src/components/contact-section/ContactSection.tsx",
-      "name": "./src/components/contact-section/ContactSection.tsx",
-      "reasons": [
-        {
-          "moduleName": "./src/components/contact-section/ContactSection.stories.tsx"
-        }
-      ]
-    },
-    {
       "id": "./src/components/contact-form/ContactForm.tsx",
       "name": "./src/components/contact-form/ContactForm.tsx",
       "reasons": [
@@ -933,6 +924,15 @@
         },
         {
           "moduleName": "./src/components/contact-form/index.ts"
+        }
+      ]
+    },
+    {
+      "id": "./src/components/contact-section/ContactSection.tsx",
+      "name": "./src/components/contact-section/ContactSection.tsx",
+      "reasons": [
+        {
+          "moduleName": "./src/components/contact-section/ContactSection.stories.tsx"
         }
       ]
     },
@@ -1171,6 +1171,15 @@
       ]
     },
     {
+      "id": "./src/components/news-details/NewsDetails.tsx",
+      "name": "./src/components/news-details/NewsDetails.tsx",
+      "reasons": [
+        {
+          "moduleName": "./src/components/news-details/NewsDetails.stories.tsx"
+        }
+      ]
+    },
+    {
       "id": "./src/assets/zep-cat-logo.svg",
       "name": "./src/assets/zep-cat-logo.svg",
       "reasons": [
@@ -1185,15 +1194,6 @@
       "reasons": [
         {
           "moduleName": "./src/components/navigation/Navigation.stories.tsx"
-        }
-      ]
-    },
-    {
-      "id": "./src/components/news-details/NewsDetails.tsx",
-      "name": "./src/components/news-details/NewsDetails.tsx",
-      "reasons": [
-        {
-          "moduleName": "./src/components/news-details/NewsDetails.stories.tsx"
         }
       ]
     },
@@ -1226,10 +1226,10 @@
           "moduleName": "./src/components/SH-Corp/ShCorp.tsx"
         },
         {
-          "moduleName": "./src/components/Teaser-simple/Teaser-simple.tsx"
+          "moduleName": "./src/components/SmallHero/SmallHero.tsx"
         },
         {
-          "moduleName": "./src/components/SmallHero/SmallHero.tsx"
+          "moduleName": "./src/components/Teaser-simple/Teaser-simple.tsx"
         },
         {
           "moduleName": "./src/components/accrodion-pattern/AccordionPattern.tsx"
@@ -1312,15 +1312,6 @@
       ]
     },
     {
-      "id": "./src/components/usp-list/UspList.tsx",
-      "name": "./src/components/usp-list/UspList.tsx",
-      "reasons": [
-        {
-          "moduleName": "./src/components/usp-list/UspList.stories.tsx"
-        }
-      ]
-    },
-    {
       "id": "./src/components/video-cookie-layer/VideoCookieLayer.tsx",
       "name": "./src/components/video-cookie-layer/VideoCookieLayer.tsx",
       "reasons": [
@@ -1329,6 +1320,15 @@
         },
         {
           "moduleName": "./src/components/video/ResponsivePlayer.tsx"
+        }
+      ]
+    },
+    {
+      "id": "./src/components/usp-list/UspList.tsx",
+      "name": "./src/components/usp-list/UspList.tsx",
+      "reasons": [
+        {
+          "moduleName": "./src/components/usp-list/UspList.stories.tsx"
         }
       ]
     },
@@ -1504,18 +1504,6 @@
       ]
     },
     {
-      "id": "./src/components/rich-text/RichText.tsx",
-      "name": "./src/components/rich-text/RichText.tsx",
-      "reasons": [
-        {
-          "moduleName": "./src/components/rich-text/RichText.stories.tsx"
-        },
-        {
-          "moduleName": "./src/components/rich-text/index.ts"
-        }
-      ]
-    },
-    {
       "id": "./src/components/scrollbar/Scrollbar.tsx",
       "name": "./src/components/scrollbar/Scrollbar.tsx",
       "reasons": [
@@ -1524,6 +1512,18 @@
         },
         {
           "moduleName": "./src/components/scrollbar/index.ts"
+        }
+      ]
+    },
+    {
+      "id": "./src/components/rich-text/RichText.tsx",
+      "name": "./src/components/rich-text/RichText.tsx",
+      "reasons": [
+        {
+          "moduleName": "./src/components/rich-text/RichText.stories.tsx"
+        },
+        {
+          "moduleName": "./src/components/rich-text/index.ts"
         }
       ]
     },
@@ -1607,16 +1607,16 @@
           "moduleName": "./src/components/news-details/NewsDetails.tsx"
         },
         {
-          "moduleName": "./src/components/partner-communication/PartnerCommunication.tsx"
-        },
-        {
           "moduleName": "./src/components/process-chain/ProcessChain.tsx"
         },
         {
-          "moduleName": "./src/components/rich-text-pattern/RichTextPattern.tsx"
+          "moduleName": "./src/components/partner-communication/PartnerCommunication.tsx"
         },
         {
           "moduleName": "./src/components/product-highlight/Product-highlight.tsx"
+        },
+        {
+          "moduleName": "./src/components/rich-text-pattern/RichTextPattern.tsx"
         },
         {
           "moduleName": "./src/components/single-link-list/SingleLinkList.tsx"
@@ -1721,10 +1721,10 @@
           "moduleName": "./src/components/news-details/NewsDetails.tsx"
         },
         {
-          "moduleName": "./src/components/rich-text-pattern/RichTextPattern.tsx"
+          "moduleName": "./src/components/product-highlight/Product-highlight.tsx"
         },
         {
-          "moduleName": "./src/components/product-highlight/Product-highlight.tsx"
+          "moduleName": "./src/components/rich-text-pattern/RichTextPattern.tsx"
         },
         {
           "moduleName": "./src/components/table-pattern/TablePattern.tsx"
@@ -1771,6 +1771,15 @@
       ]
     },
     {
+      "id": "./src/components/card-event-pattern/card-event/index.ts",
+      "name": "./src/components/card-event-pattern/card-event/index.ts",
+      "reasons": [
+        {
+          "moduleName": "./src/components/card-event-pattern/CardEventPattern.tsx"
+        }
+      ]
+    },
+    {
       "id": "./src/utils/getUrlWithTrailingSlash.ts",
       "name": "./src/utils/getUrlWithTrailingSlash.ts",
       "reasons": [
@@ -1800,15 +1809,6 @@
         },
         {
           "moduleName": "./src/components/rich-text/RichText.tsx"
-        }
-      ]
-    },
-    {
-      "id": "./src/components/card-event-pattern/card-event/index.ts",
-      "name": "./src/components/card-event-pattern/card-event/index.ts",
-      "reasons": [
-        {
-          "moduleName": "./src/components/card-event-pattern/CardEventPattern.tsx"
         }
       ]
     },
@@ -1875,30 +1875,6 @@
         },
         {
           "moduleName": "./src/components/navigation/Sidebar.tsx"
-        }
-      ]
-    },
-    {
-      "id": "./src/components/multi-link-list/index.ts",
-      "name": "./src/components/multi-link-list/index.ts",
-      "reasons": [
-        {
-          "moduleName": "./src/components/contact-section/ContactSection.tsx"
-        },
-        {
-          "moduleName": "./src/components/contact-form/ContactForm.tsx"
-        },
-        {
-          "moduleName": "./src/components/footer/Footer.tsx"
-        }
-      ]
-    },
-    {
-      "id": "./src/components/single-link-list/index.ts",
-      "name": "./src/components/single-link-list/index.ts",
-      "reasons": [
-        {
-          "moduleName": "./src/components/contact-section/ContactSection.tsx"
         }
       ]
     },
@@ -1989,6 +1965,30 @@
       "reasons": [
         {
           "moduleName": "./src/components/contact-form/ContactForm.tsx"
+        }
+      ]
+    },
+    {
+      "id": "./src/components/multi-link-list/index.ts",
+      "name": "./src/components/multi-link-list/index.ts",
+      "reasons": [
+        {
+          "moduleName": "./src/components/contact-form/ContactForm.tsx"
+        },
+        {
+          "moduleName": "./src/components/contact-section/ContactSection.tsx"
+        },
+        {
+          "moduleName": "./src/components/footer/Footer.tsx"
+        }
+      ]
+    },
+    {
+      "id": "./src/components/single-link-list/index.ts",
+      "name": "./src/components/single-link-list/index.ts",
+      "reasons": [
+        {
+          "moduleName": "./src/components/contact-section/ContactSection.tsx"
         }
       ]
     },
