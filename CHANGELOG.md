@@ -1,3 +1,15 @@
+## [1.4.5](https://github.com/zepdev/design-system-zhd-react/compare/v1.4.4...v1.4.5) (2025-04-08)
+
+
+### Bug Fixes
+
+* add test ([d0ec7fc](https://github.com/zepdev/design-system-zhd-react/commit/d0ec7fc459b516498a16b9b6ec5e7b26669a7744))
+* fix unit test ([532d903](https://github.com/zepdev/design-system-zhd-react/commit/532d9037ea7d9e8671176836728eb1fbd9ba754c))
+* media text small blockcontent ([3589779](https://github.com/zepdev/design-system-zhd-react/commit/3589779851ff83a0333b149610daddb2749f645b))
+* Richtext ([b4a9553](https://github.com/zepdev/design-system-zhd-react/commit/b4a95535780d70f1f8abb131ef327c444bfc54f9))
+* unit test ([f2fef53](https://github.com/zepdev/design-system-zhd-react/commit/f2fef5320f2aca7334dde650f4db10c18b40129a))
+* unit test ([b64a1b4](https://github.com/zepdev/design-system-zhd-react/commit/b64a1b4b45a3544f2bd60f0e58c59e90cf506ca5))
+
 ## [1.4.4](https://github.com/zepdev/design-system-zhd-react/compare/v1.4.3...v1.4.4) (2025-04-07)
 
 
