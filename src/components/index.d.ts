@@ -1,9 +1,5 @@
 
 export * from '../interfaces/global-variants';
-export * from './SH-Corp';
-export * from './SmallHero';
-export * from './Teaser-simple';
-export * from './USP';
 export * from './accrodion-pattern';
 export * from './anchor-navigation-card';
 export * from './anchor-navigation-list';
@@ -43,8 +39,11 @@ export * from './rich-text';
 export * from './rich-text-pattern';
 export * from './scrollbar';
 export * from './single-link-list';
+export * from './SmallHero';
 export * from './table-pattern';
+export * from './Teaser-simple';
 export * from './text-highlight';
+export * from './USP';
 export * from './usp-list';
 export * from './video';
 export * from './zsd-button';
