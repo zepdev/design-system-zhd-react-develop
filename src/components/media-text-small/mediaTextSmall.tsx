@@ -2,7 +2,7 @@ import { clsx } from 'clsx';
 import { FC } from 'react';
 import { RichText } from '../rich-text';
 import { MediaTextSmallProps } from './media-text-small.interface';
-export const MediaTextSmall: FC<MediaTextSmallProps> = ({ headline, content = [], imageSrc, imageAlt }) => {
+export const MediaTextSmall: FC<MediaTextSmallProps> = ({ headline, description = [], imageSrc, imageAlt }) => {
   return (
     <div className={clsx('zep-min-w-[280px]')}>
       <img data-testid="media-text-small-image" src={imageSrc} alt={imageAlt} />
@@ -11,7 +11,7 @@ export const MediaTextSmall: FC<MediaTextSmallProps> = ({ headline, content = []
           {headline}
         </h2>
         <p data-testid="media-text-small-description" className="zep-mb-1">
-          <RichText content={content} />
+          <RichText content={description} />
         </p>
       </div>
     </div>
