@@ -2,9 +2,7 @@ import { BlocksContent } from '@strapi/blocks-react-renderer';
 
 export interface MediaTextSmallProps {
     headline: string;
-    description?: string;
-    orderedLists?: string[];
-    content?: BlocksContent;
+    description?: BlocksContent;
     imageSrc: string;
     imageAlt?: string;
 }
