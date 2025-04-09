@@ -1,3 +1,18 @@
+# [1.5.0](https://github.com/zepdev/design-system-zhd-react/compare/v1.4.9...v1.5.0) (2025-04-09)
+
+
+### Bug Fixes
+
+* change content to descrption ([73e4373](https://github.com/zepdev/design-system-zhd-react/commit/73e4373243ab084ad389ce760014007fcff3e9aa))
+* remove small hero corp and add process chain styles as zsd ([f0a35a2](https://github.com/zepdev/design-system-zhd-react/commit/f0a35a212f0946ae0aadccce833950ca8cf336be))
+* removed unused description ([e6d7046](https://github.com/zepdev/design-system-zhd-react/commit/e6d704672e5b15a69620be7d08bec4526c01a41d))
+* removed unused variables ([18f2d45](https://github.com/zepdev/design-system-zhd-react/commit/18f2d45e695ab19308bc0afebb02f1e0f45b5a79))
+
+
+### Features
+
+* add LinkChain in process chain ([52384cb](https://github.com/zepdev/design-system-zhd-react/commit/52384cb9497787e4139369d1c6f0797738c0adef))
+
 ## [1.4.9](https://github.com/zepdev/design-system-zhd-react/compare/v1.4.8...v1.4.9) (2025-04-08)
 
 
