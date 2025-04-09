@@ -41,6 +41,14 @@ Add roboto flex font face
     'slnt' 0;
 }
 
+.zep-typography-tagline, .zep-typography-taglineMD {
+  font-variation-settings:
+    'wght' 500,
+    'wdth' 80,
+    'XTRA' 430,
+    'opsz' 17;
+}
+
 @layer base {
   body {
     @apply zep-font-robotoFlex;

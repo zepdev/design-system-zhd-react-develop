@@ -34,7 +34,7 @@ export const Card: FC<CardProps> = ({
         className={clsx('zep-aspect-16.9', 'zep-w-full', 'zep-object-cover', 'zep-h-full', 'zep-max-h-[272px]')}
         data-testid="card-component-image"
       />
-      <div className={clsx('zep-flex', 'zep-flex-col', 'zep-p-1.5', 'md:zep-p-2.5', 'md:zep-p-2.5', 'zep-items-start')}>
+      <div className={clsx('zep-flex', 'zep-flex-col', 'zep-p-1', 'sm:zep-p-1.5', 'md:zep-p-2.5', 'zep-items-start')}>
         {tagline && (
           <p
             className={clsx(
@@ -66,7 +66,6 @@ export const Card: FC<CardProps> = ({
             className={clsx(
               'zep-typography-bodyText',
               'zep-break-words',
-              'zep-mb-1.5',
               'zep-text-typography-dark-100, zep-text-left',
             )}
           >
