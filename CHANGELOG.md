@@ -1,3 +1,10 @@
+## [1.5.1](https://github.com/zepdev/design-system-zhd-react/compare/v1.5.0...v1.5.1) (2025-04-09)
+
+
+### Bug Fixes
+
+* Hydration on media text small ([512bf6c](https://github.com/zepdev/design-system-zhd-react/commit/512bf6c7272abdbe4e915b482bf53fc11c30d576))
+
 # [1.5.0](https://github.com/zepdev/design-system-zhd-react/compare/v1.4.9...v1.5.0) (2025-04-09)
 
 
