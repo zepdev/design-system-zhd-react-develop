@@ -3,7 +3,7 @@ import { SmallHero } from './SmallHero';
 import { SmallHeroProps } from './small-hero.interface';
 
 const meta = {
-  title: 'Components/SmallHeroHolding',
+  title: 'Components/SmallHero',
   component: SmallHero,
   argTypes: {},
 } satisfies Meta<typeof SmallHero>;
