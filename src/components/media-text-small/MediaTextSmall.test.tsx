@@ -6,7 +6,7 @@ describe('Media Text Small component', () => {
     const Child = (
       <MediaTextSmall
         headline="Headline"
-        content={[]}
+        description={[]}
         imageAlt="image alt"
         imageSrc="./assets/image-4_3.png"
       />

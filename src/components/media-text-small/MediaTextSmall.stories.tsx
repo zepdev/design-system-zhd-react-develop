@@ -16,7 +16,7 @@ type Story = StoryObj<typeof meta>;
 export const Default: Story = {
     args: {
         headline: 'Headline',
-        content: mockRichText,
+        description: mockRichText,
         imageAlt: 'image alt',
         imageSrc: './assets/image-4_3.png',
     },
