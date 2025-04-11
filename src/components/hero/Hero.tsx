@@ -62,7 +62,7 @@ export const Hero: FC<HeroProps> = ({
       >
         <div
           className={clsx(
-            'zep-max-w-[1920px]',
+            'zep-max-w-[1728px]',
             'zep-w-full',
             'zep-px-4',
             'lg:zep-px-7.5',
