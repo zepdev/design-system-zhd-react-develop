@@ -6,9 +6,8 @@ import { getDataLayer } from '../../utils/getDataLayer';
 import { getUrlWithTrailingSlash } from '../../utils/getUrlWithTrailingSlash';
 import { CardSquareProps } from './card-square.interface';
 
-export const cardSquareCardCva = cva(
-  [
-    `zep-flex
+export const cardSquareCardCva = cva([
+  `zep-flex
      zep-bg-indigo-500
      zep-justify-between
      zep-items-center
@@ -18,10 +17,8 @@ export const cardSquareCardCva = cva(
      zep-right-1
      zep-p-1.5
      zep-gap-1
-     md:zep-gap-1.5
-     group-hover:zep-bg-indigo-700`,
-  ],
-);
+     md:zep-gap-1.5`,
+]);
 
 const CardSquare: FC<CardSquareProps> = ({
   imageSrc,
@@ -58,6 +55,9 @@ const CardSquare: FC<CardSquareProps> = ({
         'zep-aspect-[1/1]',
         'zep-@container',
         'xl:zep-@container-normal',
+        'hover:zep-transition-opacity', 
+        'zep-duration-1000', 
+        'hover:zep-brightness-90',
       )}
       onClickCapture={() => {
         datalayer.push({
@@ -71,12 +71,12 @@ const CardSquare: FC<CardSquareProps> = ({
     >
       <div tabIndex={0} ref={componentRef}>
         <img
-          className="zep-object-cover zep-aspect-[1/1] zep-w-full zep-h-auto group-hover:zep-transition-opacity zep-duration-1000 group-hover:zep-brightness-90"
+          className="zep-object-cover zep-aspect-[1/1] zep-w-full zep-h-auto "
           src={imageSrc}
           alt={imageAlt}
           title="construction site"
         />
-        <div className={clsx(cardSquareCardCva({  }), paddingDescription)}>
+        <div className={clsx(cardSquareCardCva({}), paddingDescription)}>
           <div className="zep-flex zep-flex-col zep-items-start zep-w-full zep-gap-0.5">
             <h3
               data-testid="card-square-headline"
