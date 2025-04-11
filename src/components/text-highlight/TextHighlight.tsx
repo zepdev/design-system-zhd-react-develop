@@ -202,7 +202,7 @@ const TextHighlight = ({
         {headline && (
           <div
             className={clsx(
-              'zep-max-w-[1920px]',
+              'zep-max-w-[1728px]',
               'zep-w-full',
               'zep-px-1',
               'sm:zep-px-1.5',
