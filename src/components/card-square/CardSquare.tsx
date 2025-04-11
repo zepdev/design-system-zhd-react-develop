@@ -18,8 +18,7 @@ export const cardSquareCardCva = cva(
      zep-right-1
      zep-p-1.5
      zep-gap-1
-     md:zep-gap-1.5
-     group-hover:zep-bg-indigo-700`,
+     md:zep-gap-1.5`,
   ],
 );
 
