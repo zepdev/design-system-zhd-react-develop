@@ -29,6 +29,7 @@ const MediaTextComponent = ({
   mediaType,
   imageOrientation,
   contentAlignment,
+  onClickPrimary,
 }: MediaTextComponentContentProps) => {
   return (
     <MediaTextContext.Provider value={{ imageAlignment: mediaAlignment }}>
@@ -73,7 +74,7 @@ const MediaTextComponent = ({
               <Button
                 icon={iconPrimary}
                 iconPosition={iconPrimaryPosition}
-                // onClick={onClickPrimary}
+                onClick={onClickPrimary}
                 label={labelPrimary}
                 variant={ZsdButtonVariant.SecondaryDark}
               />

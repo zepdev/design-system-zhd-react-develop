@@ -17,7 +17,8 @@ export const cardSquareCardCva = cva([
      zep-right-1
      zep-p-1.5
      zep-gap-1
-     md:zep-gap-1.5`,
+     md:zep-gap-1.5
+     group-hover:zep-bg-indigo-700`,
 ]);
 
 const CardSquare: FC<CardSquareProps> = ({
@@ -55,9 +56,6 @@ const CardSquare: FC<CardSquareProps> = ({
         'zep-aspect-[1/1]',
         'zep-@container',
         'xl:zep-@container-normal',
-        'hover:zep-transition-opacity', 
-        'zep-duration-1000', 
-        'hover:zep-brightness-90',
       )}
       onClickCapture={() => {
         datalayer.push({
@@ -71,7 +69,7 @@ const CardSquare: FC<CardSquareProps> = ({
     >
       <div tabIndex={0} ref={componentRef}>
         <img
-          className="zep-object-cover zep-aspect-[1/1] zep-w-full zep-h-auto "
+          className="zep-object-cover zep-aspect-[1/1] zep-w-full zep-h-auto hover:zep-transition-opacity zep-duration-1000 hover:zep-brightness-90"
           src={imageSrc}
           alt={imageAlt}
           title="construction site"
