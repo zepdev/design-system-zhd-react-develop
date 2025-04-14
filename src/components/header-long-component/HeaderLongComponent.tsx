@@ -41,9 +41,9 @@ const LinkComponent = ({
           )}
           label={linkText || ''}
           href={getUrlWithTrailingSlash(linkHref)}
-          iconPlacement="after"
+          iconPlacement={headerButtonIconPosition === 'left' ? 'before' : 'after'}
           mode={LinkMode.Standalone}
-          icon="arrow-long-right"
+          icon={headerButtonIcon || 'arrow-long-right'}
         />
       );
     // eslint-disable-next-line no-duplicate-case
