@@ -1,3 +1,17 @@
+## [1.5.2](https://github.com/zepdev/design-system-zhd-react/compare/v1.5.1...v1.5.2) (2025-04-14)
+
+
+### Bug Fixes
+
+* added new breakpoint ([da5fac6](https://github.com/zepdev/design-system-zhd-react/commit/da5fac67237357201f461070df222de2f075946a))
+* breadcrumbs color ([8910873](https://github.com/zepdev/design-system-zhd-react/commit/891087366787c77e0f9fedaa960ce33ed18f89e7))
+* Contact section, multilink list ([c72908d](https://github.com/zepdev/design-system-zhd-react/commit/c72908ddb8636651ec8d6c79cf471f7838263283))
+* design change for cardSquare ([a5fc10e](https://github.com/zepdev/design-system-zhd-react/commit/a5fc10ea6d01ad64e5e933379b9130037276e968))
+* fix color or breadcrumbs icons ([66baf6f](https://github.com/zepdev/design-system-zhd-react/commit/66baf6ff9fe1dde9f373a6f14b48e9a4fb3a40a6))
+* hover effect on card square whole ([397ac98](https://github.com/zepdev/design-system-zhd-react/commit/397ac982fc2e9ab484d7645c41e8f07d326bac50))
+* remove hover effect 700 ([9235346](https://github.com/zepdev/design-system-zhd-react/commit/9235346c3834916743f11aadab4106aca45e59c9))
+* rework on fonts and spacing ([7ddf185](https://github.com/zepdev/design-system-zhd-react/commit/7ddf185cf8ef029c60e8b309f33c6854a9c16101))
+
 ## [1.5.1](https://github.com/zepdev/design-system-zhd-react/compare/v1.5.0...v1.5.1) (2025-04-09)
 
 
