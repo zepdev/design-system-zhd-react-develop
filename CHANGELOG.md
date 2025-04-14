@@ -1,3 +1,10 @@
+## [1.5.4](https://github.com/zepdev/design-system-zhd-react/compare/v1.5.3...v1.5.4) (2025-04-14)
+
+
+### Bug Fixes
+
+* Header long icon ([ea28ab2](https://github.com/zepdev/design-system-zhd-react/commit/ea28ab227e45e4ee033f64dc0ed40d0b7e151049))
+
 ## [1.5.3](https://github.com/zepdev/design-system-zhd-react/compare/v1.5.2...v1.5.3) (2025-04-14)
 
 
