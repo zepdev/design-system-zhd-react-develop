@@ -1,20 +1,10 @@
 import { StoryObj } from '@storybook/react';
-import { GlobalVariants } from '../../interfaces/global-variants';
 
 declare const meta: {
     title: string;
     component: import('react').FC<import('./MultiLinkList.interface').MultiLinkListProps>;
     tags: string[];
-    argTypes: {
-        variant: {
-            children: {
-                control: {
-                    type: string;
-                    options: GlobalVariants[];
-                };
-            };
-        };
-    };
+    argTypes: {};
 };
 export default meta;
 type Story = StoryObj<typeof meta>;
