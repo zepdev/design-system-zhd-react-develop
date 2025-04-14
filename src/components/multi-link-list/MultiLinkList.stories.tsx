@@ -1,8 +1,7 @@
-import { Meta, StoryObj } from '@storybook/react';
-import { MultiLinkList } from './MultiLinkList';
 import { LinkListItemProps } from '@/components/link-list-item';
-import { GlobalVariants } from '../../interfaces/global-variants';
+import { Meta, StoryObj } from '@storybook/react';
 import { mockRichTextShort } from '../../utils/mocks';
+import { MultiLinkList } from './MultiLinkList';
 
 const mockLinkList: LinkListItemProps = {
   links: [
@@ -13,22 +12,13 @@ const mockLinkList: LinkListItemProps = {
   ],
   headline: 'Headline optional',
   description: mockRichTextShort,
-}
+};
 
 const meta = {
   title: 'Patterns/MultiLinkList',
   component: MultiLinkList,
   tags: ['autodocs'],
-  argTypes: {
-    variant: {
-      children: {
-        control: {
-          type: 'select',
-          options: [GlobalVariants.Zps, GlobalVariants.Cat],
-        }
-      }
-    }
-  },
+  argTypes: {},
 } satisfies Meta<typeof MultiLinkList>;
 
 export default meta;
@@ -37,7 +27,6 @@ export const Default: Story = {
   args: {
     headline: 'Two Link Lists',
     linkLists: Array.from({ length: 2 }).map(() => mockLinkList),
-    variant: GlobalVariants.Zps,
   },
 };
 

@@ -1,7 +1,7 @@
 import { Meta, StoryObj } from '@storybook/react';
-import { SingleLinkList } from './SingleLinkList';
 import { GlobalVariants } from '../../interfaces/global-variants';
 import { mockRichTextShort } from '../../utils/mocks';
+import { SingleLinkList } from './SingleLinkList';
 
 const meta = {
   title: 'Patterns/SingleLinkList',
@@ -13,9 +13,9 @@ const meta = {
         control: {
           type: 'select',
           options: [GlobalVariants.Zps, GlobalVariants.Cat],
-        }
-      }
-    }
+        },
+      },
+    },
   },
 } satisfies Meta<typeof SingleLinkList>;
 
@@ -32,6 +32,5 @@ export const Default: Story = {
     ],
     headline: 'Headline optional',
     description: mockRichTextShort,
-    variant: GlobalVariants.Zps,
   },
 };

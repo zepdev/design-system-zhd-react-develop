@@ -1,7 +1,6 @@
+import { HeaderLongComponent } from '@/components/header-long-component';
 import { clsx } from 'clsx';
 import { FC } from 'react';
-import { GlobalVariants } from '../../interfaces/global-variants';
-import { HeaderLongComponent } from '@/components/header-long-component';
 import { Layout } from '../layout';
 import { LinkListItem } from '../link-list-item';
 import { MultiLinkListProps } from './MultiLinkList.interface';
@@ -9,14 +8,13 @@ import { MultiLinkListProps } from './MultiLinkList.interface';
 const MultiLinkListComponent: FC<MultiLinkListProps> = ({
   headline,
   linkLists,
-  variant = GlobalVariants.Zps,
   linkListItemClassname,
   isFooterList,
   ...headerLongProps
 }) => {
   return (
     <>
-      {headline ? <HeaderLongComponent headline={headline} variant={variant} {...headerLongProps} /> : null}
+      {headline ? <HeaderLongComponent headline={headline} {...headerLongProps} /> : null}
       <div
         className={clsx('zep-grid', 'zep-gap-1', {
           'xl:zep-grid-cols-4': [4, 7, 8, 11, 12].includes(linkLists.length),
@@ -35,7 +33,6 @@ const MultiLinkListComponent: FC<MultiLinkListProps> = ({
             key={linkListProps.headline}
             className={clsx('zep-w-full', linkListItemClassname, { '!zep-py-[0]': isFooterList })}
             {...linkListProps}
-            variant={variant}
             isMultiListItem
             isFooterList={isFooterList}
           />
@@ -61,7 +58,10 @@ export const MultiLinkList: FC<MultiLinkListProps> = ({
   }
 
   return (
-    <Layout id={id} className={clsx('zep-flex-col', 'zep-flex', 'zep-gap-2', 'sm:zep-gap-3', 'xl:zep-gap-4', className)}>
+    <Layout
+      id={id}
+      className={clsx('zep-flex-col', 'zep-flex', 'zep-gap-2', 'sm:zep-gap-3', 'xl:zep-gap-4', className)}
+    >
       <MultiLinkListComponent {...rest} isPatternPart={isPatternPart} isFooterList={isFooterList} />
     </Layout>
   );
