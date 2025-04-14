@@ -26,3 +26,18 @@ export const Default: Story = {
     description: mockRichTextShort,
   } as HeaderLongComponentProps,
 };
+
+export const WithPrimaryButton: Story = {
+  args: {
+    type: 'primary-button',
+    tagline: 'Tagline',
+    headline:
+      'Headline Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus',
+    linkText: 'Click me',
+    linkHref: 'https://www.google.com',
+    onClick: () => {},
+    description: mockRichTextShort,
+    headerButtonIcon: 'download',
+    headerButtonIconPosition: 'right',
+  } as HeaderLongComponentProps,
+};
