@@ -28,7 +28,9 @@ export const Breadcrumb: FC<BreadcrumbProps> = ({ items }) => {
                   />
                 )}
 
-                {index + 1 !== items.length && <FunctionalIcon color="#FBFBFBB2" className='zep-h-[18px] zep-w-[18px]' name="chevron-mini-right" />}
+                {index + 1 !== items.length && (
+                  <FunctionalIcon color="#262626" className="zep-h-[18px] zep-w-[18px]" name="chevron-mini-right" />
+                )}
               </div>
             ))}
           </div>
@@ -41,12 +43,12 @@ export const Breadcrumb: FC<BreadcrumbProps> = ({ items }) => {
                 mode={LinkMode.Standalone}
                 className={clsx('zep-typography-supportText zep-text-typography-dark-100')}
               />
-              <FunctionalIcon color="#36454F" className='zep-h-[18px] zep-w-[18px]' name="chevron-mini-right" />
+              <FunctionalIcon color="#262626" className="zep-h-[18px] zep-w-[18px]" name="chevron-mini-right" />
             </div>
 
             <div onClick={() => setExpanded(true)} className="zep-flex zep-items-center zep-gap-0.25">
               <div className="zep-bg-[#484848] zep-px-[10px] zep-text-typography-light-100 zep-rounded-4">...</div>
-              <FunctionalIcon color="#36454F" className='zep-h-[18px] zep-w-[18px]' name="chevron-mini-right" />
+              <FunctionalIcon color="#262626" className="zep-h-[18px] zep-w-[18px]" name="chevron-mini-right" />
             </div>
 
             <p className="zep-typography-supportText zep-text-typography-dark-100">{items[items.length - 1]?.title}</p>
@@ -67,7 +69,9 @@ export const Breadcrumb: FC<BreadcrumbProps> = ({ items }) => {
                   className={clsx('zep-typography-supportText zep-text-typography-dark-100')}
                 />
               )}
-              {index + 1 !== items.length && <FunctionalIcon color="#36454F" className='zep-h-[18px] zep-w-[18px]' name="chevron-mini-right" />}
+              {index + 1 !== items.length && (
+                <FunctionalIcon color="#262626" className="zep-h-[18px] zep-w-[18px]" name="chevron-mini-right" />
+              )}
             </div>
           ))}
         </div>

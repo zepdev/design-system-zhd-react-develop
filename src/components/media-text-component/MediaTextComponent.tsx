@@ -35,7 +35,7 @@ const MediaTextComponent = ({
       <div
         className={clsx(
           'zep-container',
-          'zep-max-w-[1920px]',
+          'zep-max-w-[1728px]',
           'zep-relative',
           'zep-flex',
           'zep-flex-col',

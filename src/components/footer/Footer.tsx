@@ -1,6 +1,5 @@
 import { Link, LinkMode, LinkTarget } from '@zepdev/design-system-component-library-react';
 import React from 'react';
-import { GlobalVariantExtended } from '../../interfaces/global-variants';
 import { getDataLayer } from '../../utils/getDataLayer';
 import { getUrlWithTrailingSlash } from '../../utils/getUrlWithTrailingSlash';
 import { Layout } from '../layout';
@@ -30,7 +29,6 @@ export const Footer: React.FC<FooterProps> = ({
           isPatternPart
           isFooterList
           {...multiLinkListProps}
-          variant={GlobalVariantExtended.CatBg}
         />
         <div data-testid="zep-footer">
           <div className="zep-flex zep-flex-col zep-w-full">

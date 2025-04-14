@@ -1,19 +1,10 @@
 import { FC } from 'react';
-import { GlobalVariants } from '../../interfaces/global-variants';
 import { HeaderShortComponent } from '../header-short-component';
 import { Layout } from '../layout';
 import { LinkListItem } from '../link-list-item';
 import { SingleLinkListProps } from './SingleLinkList.interface';
 
-export const SingleLinkList: FC<SingleLinkListProps> = ({
-  headline,
-  tagline,
-  links,
-  description,
-  variant = GlobalVariants.Zps,
-  id,
-  title,
-}) => {
+export const SingleLinkList: FC<SingleLinkListProps> = ({ headline, tagline, links, description, id, title }) => {
   return (
     <Layout
       id={id}
@@ -31,7 +22,6 @@ export const SingleLinkList: FC<SingleLinkListProps> = ({
           links={links}
           headline={headline}
           description={description}
-          variant={variant}
         />
       </div>
     </Layout>

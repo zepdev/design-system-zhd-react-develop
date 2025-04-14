@@ -1,24 +1,12 @@
 import { RichText } from '@/components/rich-text';
 import { Accordion, Link, LinkMode, LinkTarget } from '@zepdev/design-system-component-library-react';
-import { cva } from 'class-variance-authority';
 import clsx from 'clsx';
 import React from 'react';
-import { GlobalVariants } from '../../interfaces/global-variants';
-import { textColor } from '../../utils/commonCSS';
 import { getDataLayer } from '../../utils/getDataLayer';
 import { getUrlWithTrailingSlash } from '../../utils/getUrlWithTrailingSlash';
 import { LinkListItemProps } from '../link-list-item';
 
-const textColorClass = cva([], {
-  variants: {
-    variant: textColor,
-  },
-  defaultVariants: {
-    variant: GlobalVariants.Zps,
-  },
-});
-
-const Headline = ({ variant, headline }: Partial<LinkListItemProps>) => {
+const Headline = ({ headline }: Partial<LinkListItemProps>) => {
   if (headline) {
     return (
       <h4
@@ -38,7 +26,7 @@ const Headline = ({ variant, headline }: Partial<LinkListItemProps>) => {
   return null;
 };
 
-const Description = ({ variant, description }: Partial<LinkListItemProps>) => {
+const Description = ({ description }: Partial<LinkListItemProps>) => {
   if (description) {
     return <RichText content={description} />;
   }
@@ -46,7 +34,7 @@ const Description = ({ variant, description }: Partial<LinkListItemProps>) => {
   return null;
 };
 
-const Links = ({ links, variant, type, headline, isFooterList }: LinkListItemProps) => {
+const Links = ({ links, type, headline, isFooterList }: LinkListItemProps) => {
   const datalayer = getDataLayer();
   return (
     <div
@@ -86,7 +74,6 @@ const Links = ({ links, variant, type, headline, isFooterList }: LinkListItemPro
 export const LinkListItem: React.FC<LinkListItemProps> = ({
   headline,
   description,
-  variant = GlobalVariants.Zps,
   links,
   isMultiListItem = false,
   className,
@@ -95,8 +82,6 @@ export const LinkListItem: React.FC<LinkListItemProps> = ({
   const widthClass = isMultiListItem
     ? 'md:zep-flex zep-hidden zep-min-w-[210px]'
     : 'zep-flex md:zep-max-w-[774px] zep-min-w-[290px]';
-  const linkListItemBg =
-    variant === GlobalVariants.Cat || variant === GlobalVariants.Zps ? 'zep-bg-background-medium' : '';
 
   return (
     <>
@@ -108,17 +93,17 @@ export const LinkListItem: React.FC<LinkListItemProps> = ({
           'zep-p-1.5',
           'sm:zep-p-2',
           'md:zep-p-2.5',
-          textColorClass({ variant }),
-          linkListItemBg,
+          'zep-text-typography-dark-100',
+          'zep-bg-background-medium',
           widthClass,
           { 'md:zep-min-w-[280px]': !isFooterList },
           className,
         )}
         data-testid="zep-link-list"
       >
-        <Headline headline={headline} variant={variant} />
-        <Description description={description} variant={variant} />
-        <Links links={links} variant={variant} headline={headline} isFooterList={isFooterList} />
+        <Headline headline={headline} />
+        <Description description={description} />
+        <Links links={links} headline={headline} isFooterList={isFooterList} />
       </div>
       <Accordion
         className={clsx(
@@ -127,8 +112,8 @@ export const LinkListItem: React.FC<LinkListItemProps> = ({
             'zep-hidden': !isMultiListItem,
             'md:zep-hidden zep-min-w-[280px] zep-border-none': isMultiListItem,
           },
-          textColorClass({ variant }),
-          linkListItemBg,
+          'zep-text-typography-dark-100',
+          'zep-bg-background-medium',
           className,
           {
             '!zep-px-[0] [&>button]:!zep-px-[0] [&>div]:!zep-px-[0]': isFooterList,
@@ -139,8 +124,8 @@ export const LinkListItem: React.FC<LinkListItemProps> = ({
             title: headline || '',
             content: (
               <div className="zep-flex zep-flex-col zep-gap-1">
-                <Description description={description} variant={variant} />
-                <Links links={links} variant={variant} headline={headline} isFooterList={isFooterList} />
+                <Description description={description} />
+                <Links links={links} headline={headline} isFooterList={isFooterList} />
               </div>
             ),
           },

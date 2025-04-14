@@ -1,22 +1,14 @@
 import { cva } from 'class-variance-authority';
 import clsx from 'clsx';
 import { FC, useRef } from 'react';
-import arrowImg from '../../../public/assets/yellow-right-arrow.svg';
 import { useContainerDimensions } from '../../hooks/useContainerDimensions';
-import { GlobalVariantExtended, GlobalVariants } from '../../interfaces/global-variants';
-import { backgroundColor } from '../../utils/commonCSS';
 import { getDataLayer } from '../../utils/getDataLayer';
 import { getUrlWithTrailingSlash } from '../../utils/getUrlWithTrailingSlash';
 import { CardSquareProps } from './card-square.interface';
 
-export const cardSquareVariants = {
-  [GlobalVariants.Zps]: [backgroundColor[GlobalVariantExtended.ZpsBg], 'group-hover:zep-bg-primary-hover'],
-  [GlobalVariants.Cat]: [backgroundColor[GlobalVariantExtended.CatBg], 'group-hover:zep-bg-neutral-dark-hover'],
-};
-
-export const cardSquareCardCva = cva(
-  [
-    `zep-flex
+export const cardSquareCardCva = cva([
+  `zep-flex
+     zep-bg-indigo-500
      zep-justify-between
      zep-items-center
      zep-absolute
@@ -25,18 +17,8 @@ export const cardSquareCardCva = cva(
      zep-right-1
      zep-p-1.5
      zep-gap-1
-     md:zep-gap-1.5
-     group-hover:zep-bg-none`,
-  ],
-  {
-    variants: {
-      variant: cardSquareVariants,
-    },
-    defaultVariants: {
-      variant: GlobalVariants.Zps,
-    },
-  },
-);
+     md:zep-gap-1.5`,
+]);
 
 const CardSquare: FC<CardSquareProps> = ({
   imageSrc,
@@ -73,6 +55,9 @@ const CardSquare: FC<CardSquareProps> = ({
         'zep-aspect-[1/1]',
         'zep-@container',
         'xl:zep-@container-normal',
+        'hover:zep-transition-opacity', 
+        'zep-duration-1000', 
+        'hover:zep-brightness-90',
       )}
       onClickCapture={() => {
         datalayer.push({
@@ -86,12 +71,12 @@ const CardSquare: FC<CardSquareProps> = ({
     >
       <div tabIndex={0} ref={componentRef}>
         <img
-          className="zep-object-cover zep-aspect-[1/1] zep-w-full zep-h-auto group-hover:zep-transition-opacity zep-duration-1000 group-hover:zep-brightness-90"
+          className="zep-object-cover zep-aspect-[1/1] zep-w-full zep-h-auto "
           src={imageSrc}
           alt={imageAlt}
           title="construction site"
         />
-        <div className={clsx(cardSquareCardCva({ variant }), paddingDescription)}>
+        <div className={clsx(cardSquareCardCva({}), paddingDescription)}>
           <div className="zep-flex zep-flex-col zep-items-start zep-w-full zep-gap-0.5">
             <h3
               data-testid="card-square-headline"
@@ -114,9 +99,6 @@ const CardSquare: FC<CardSquareProps> = ({
                 {description}
               </p>
             )}
-          </div>
-          <div className="zep-transition group-hover:zep-translate-x-0.75">
-            <img src={arrowImg} alt="yellow left arrow" data-testid="zep-her-arrowIcon" />
           </div>
         </div>
       </div>
