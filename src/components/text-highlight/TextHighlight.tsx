@@ -225,7 +225,7 @@ const TextHighlight = ({
             'zep-gap-1.5',
           )}
         >
-          <div className="zep-max-w-[2042px] md:zep-w-[50%] zep-w-full xl:zep-overflow-x-visible md:zep-h-[499px] xl:zep-h-[499px] zep-aspect-[16/9] zep-overscroll-none xl:zep-relative">
+          <div className="zep-max-w-[2042px] md:zep-w-[30%] zep-w-full xl:zep-overflow-x-visible md:zep-h-[645px] xl:zep-h-[1074px] zep-aspect-[4/3] zep-overscroll-none xl:zep-relative">
             <div
               className={clsx(
                 'xl:zep-absolute',
@@ -233,14 +233,14 @@ const TextHighlight = ({
                 'zep-h-full',
                 'xl:zep-w-fit',
                 'zep-w-full',
-                'xl:zep-aspect-[16/9]',
+                'xl:zep-aspect-[4/3]',
               )}
             >
               <img
                 className={clsx(
                   'zep-w-full',
                   'zep-h-full',
-                  'zep-aspect-[16/9]',
+                  'zep-aspect-[4/3]',
                   'zep-object-cover',
                   imageAlignment === 'left' ? 'md:zep-object-right' : 'md:zep-object-left',
                 )}
