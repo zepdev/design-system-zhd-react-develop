@@ -7,7 +7,7 @@ global.ResizeObserver = class {
   observe() {}
   unobserve() {}
   disconnect() {}
-}
+};
 
 describe('ProcessChain component', () => {
   const contentItems: ProcessChainItem[] = [
@@ -22,7 +22,7 @@ describe('ProcessChain component', () => {
   ];
 
   test('renders list items', () => {
-    render(<ProcessChain contentItems={contentItems} />);
+    render(<ProcessChain contentItems={contentItems} linkChain={false} />);
 
     const listItemElements = screen.getAllByRole('listitem');
     expect(listItemElements.length).toBe(2);
