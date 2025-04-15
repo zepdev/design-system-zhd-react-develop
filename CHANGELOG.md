@@ -1,3 +1,11 @@
+## [1.5.5](https://github.com/zepdev/design-system-zhd-react/compare/v1.5.4...v1.5.5) (2025-04-15)
+
+
+### Bug Fixes
+
+* Build ([dd9a372](https://github.com/zepdev/design-system-zhd-react/commit/dd9a37214e8f591f210bcfab94b63e18f0ad0bda))
+* Media text link ([e035353](https://github.com/zepdev/design-system-zhd-react/commit/e0353535536f4e7e6fd124b4eb092335f044008c))
+
 ## [1.5.4](https://github.com/zepdev/design-system-zhd-react/compare/v1.5.3...v1.5.4) (2025-04-14)
 
 
