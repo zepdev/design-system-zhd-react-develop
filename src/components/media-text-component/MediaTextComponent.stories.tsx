@@ -26,7 +26,6 @@ export const Default: Story = {
     buttonText: 'Read More',
     contentAlignment: 'center',
     labelPrimary: 'aaaa',
-    urlPrimary: 'https://zhd-cdn.stage.dx.zndbx.cloud/5_Zeppelin_Geschaeftsbericht_2023_46a77d6df2.pdf',
   },
 };
 
