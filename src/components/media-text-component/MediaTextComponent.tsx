@@ -22,14 +22,14 @@ const MediaTextComponent = ({
   content,
   labelPrimary,
   alt,
-  urlPrimary,
   iconPrimaryPosition,
+  buttonAction,
+  buttonUrl,
   iconPrimary,
   mediaUrl,
   mediaType,
   imageOrientation,
   contentAlignment,
-  onClickPrimary,
 }: MediaTextComponentContentProps) => {
   return (
     <MediaTextContext.Provider value={{ imageAlignment: mediaAlignment }}>
@@ -69,12 +69,17 @@ const MediaTextComponent = ({
             </h3>
           </div>
           <RichText content={content} />
-          {labelPrimary && (
-            <a className="zep-max-w-max" href={urlPrimary}>
+          {labelPrimary && buttonUrl && (
+            <a
+              className="zep-max-w-max"
+              href={buttonUrl}
+              target={buttonAction === 'open-internal-link' ? '_self' : '_blank'}
+              download={buttonAction === 'download-file'}
+              rel="noreferrer"
+            >
               <Button
                 icon={iconPrimary}
                 iconPosition={iconPrimaryPosition}
-                onClick={onClickPrimary}
                 label={labelPrimary}
                 variant={ZsdButtonVariant.SecondaryDark}
               />

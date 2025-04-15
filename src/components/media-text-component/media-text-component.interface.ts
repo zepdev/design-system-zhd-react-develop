@@ -29,8 +29,8 @@ export interface MediaTextComponentImageProps {
 
 export interface MediaTextComponentButtonProps {
   labelPrimary?: string;
-  onClickPrimary?: () => void;
-  urlPrimary?: string;
   iconPrimary?: FunctionalIconNames;
   iconPrimaryPosition?: 'left' | 'right';
+  buttonUrl?: string;
+  buttonAction?: 'open-internal-link' | 'open-external-link' | 'download-file';
 }
