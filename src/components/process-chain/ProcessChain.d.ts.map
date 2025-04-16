@@ -1,1 +1,1 @@
-{"version":3,"file":"ProcessChain.d.ts","sourceRoot":"","sources":["../../../../src/components/process-chain/ProcessChain.tsx"],"names":[],"mappings":"AAEA,OAAO,EAAE,EAAE,EAAE,MAAM,OAAO,CAAC;AAI3B,OAAO,EAAE,iBAAiB,EAAE,MAAM,0BAA0B,CAAC;AAE7D,eAAO,MAAM,YAAY,EAAE,EAAE,CAAC,iBAAiB,CAwD9C,CAAC"}
+{"version":3,"file":"ProcessChain.d.ts","sourceRoot":"","sources":["../../../../src/components/process-chain/ProcessChain.tsx"],"names":[],"mappings":"AAMA,eAAO,MAAM,YAAY;;;;;;iDAiDxB,CAAC"}
