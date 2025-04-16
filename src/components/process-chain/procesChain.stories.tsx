@@ -73,13 +73,6 @@ export const LinkChain: Story = {
           { icon: 'arrow-long-right', link: 'https://www.linkedin.com' },
           { icon: 'arrow-long-right', link: 'https://www.twitter.com' },
           { icon: 'arrow-long-right', link: 'https://www.gitlab.com' },
-        ],
-      },
-      {
-        headline: 'Link Chain  5',
-        linkItems: [
-          { icon: 'arrow-long-right', link: 'https://www.linkedin.com' },
-          { icon: 'arrow-long-right', link: 'https://www.twitter.com' },
           { icon: 'arrow-long-right', link: 'https://www.gitlab.com' },
         ],
       },
