@@ -1,3 +1,10 @@
+## [1.5.7](https://github.com/zepdev/design-system-zhd-react/compare/v1.5.6...v1.5.7) (2025-04-17)
+
+
+### Bug Fixes
+
+* Anchor nav ([dc00a2f](https://github.com/zepdev/design-system-zhd-react/commit/dc00a2f34a52c33f97802c340e32de186c292514))
+
 ## [1.5.6](https://github.com/zepdev/design-system-zhd-react/compare/v1.5.5...v1.5.6) (2025-04-17)
 
 
