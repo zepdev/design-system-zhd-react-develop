@@ -6,7 +6,7 @@ export interface CardProps {
   description?: string;
   linkLabel?: string;
   linkSrc?: string;
-  linkType?: 'internal-link' | 'external-link' | 'download';
+  linkType?: 'internal-link' | 'external-link' | 'download' | 'none';
   gtmHeadline?: string;
   gtmid?: string;
   url: string;
