@@ -15,7 +15,7 @@ module.exports = {
         'zsd-gradient': 'linear-gradient(173.238deg, #F2F8FD 0%, #D9E4ED 52%, #CBD8E3 73%, #A2BDCE 96%)',
       },
       fontFamily: {
-        robotoFlex: ['Roboto Flex', 'Arial', 'sans-serif'],
+        robotoFlex: ['Roboto Flex', 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'],
       },
     },
   },
