@@ -1,3 +1,13 @@
+## [1.5.6](https://github.com/zepdev/design-system-zhd-react/compare/v1.5.5...v1.5.6) (2025-04-17)
+
+
+### Bug Fixes
+
+* added extra fallback fonts ([98b9d9f](https://github.com/zepdev/design-system-zhd-react/commit/98b9d9fbc4e7f2398b372a4b1c7eb4bfa17e9369))
+* added fallback font arial ([0114099](https://github.com/zepdev/design-system-zhd-react/commit/0114099085c16be06cf7d6a894d422e74246dc9c))
+* edit process chain to be like zps but with link chain ([25119f9](https://github.com/zepdev/design-system-zhd-react/commit/25119f964b6ce186906e04252ab471101a2871ea))
+* remove icons in links ([785b99e](https://github.com/zepdev/design-system-zhd-react/commit/785b99e38a013430b73763c834048a77e90e1b86))
+
 ## [1.5.5](https://github.com/zepdev/design-system-zhd-react/compare/v1.5.4...v1.5.5) (2025-04-15)
 
 
