@@ -1,60 +1,51 @@
-import { Link, LinkMode, LinkTarget } from '@zepdev/design-system-component-library-react';
+import { Link, LinkMode, LinkTarget, List } from '@zepdev/design-system-component-library-react';
 import clsx from 'clsx';
-import { FC } from 'react';
 import { HeaderLongComponent } from '../header-long-component';
 import { Layout } from '../layout';
 import { Scrollbar } from '../scrollbar';
-import { ProcessChainProps } from './processChain.interface';
 
-export const ProcessChain: FC<ProcessChainProps> = ({ contentItems, headline, linkChain, ...headerProps }) => {
+export const ProcessChain = ({ linkChain, contentItems, id, headline, ...headerProps }) => {
   return (
-    <Layout className="zep-flex zep-flex-col md:zep-gap-4 sm:zep-gap-3 zep-gap-2.5 zep-w-full sm:zep-px-1">
+    <Layout id={id} className="zep-flex zep-flex-col md:zep-gap-4 sm:zep-gap-3 zep-gap-2.5 zep-w-full">
       {headline && <HeaderLongComponent headline={headline} {...headerProps} />}
       <Scrollbar scrollOrientation="horizontal" controlId="process-chain-scrollbar" className="zep-w-full">
-        <div className="xl:zep-w-full zep-w-fit zep-flex zep-gap-2 md:zep-gap-2.5">
+        <div className="zep-w-fit lg:zep-w-full zep-flex zep-items-stretch zep-gap-2 lg:zep-gap-1.5">
           {contentItems.map((obj, idx) => (
-            <div key={idx} className={clsx('xl:zep-grow xl:zep-w-auto zep-min-w-[286px]')}>
+            <div key={idx} className="zep-w-[300px] lg:zep-w-auto lg:zep-basis-1/5 lg:zep-flex-shrink lg:zep-flex-grow">
               <div
-                className={clsx(
-                  'zep-relative zep-bg-primary-default zep-text-greyscale-0 xl:zep-max-w-full zep-max-w-[300px] zep-p-1.5 zep-h-full',
-                )}
+                className={clsx('zep-relative zep-bg-indigo-500 zep-text-greyscale-0 zep-w-full zep-p-1.5 zep-h-full')}
               >
-                <div className={clsx('zep-flex', 'zep-flex-col', 'zep-items-start')}>
+                <div className={clsx('zep-flex', 'zep-flex-col', 'zep-items-start', 'zep-gap-1')}>
                   <h4
                     data-testid="process-chain-headline"
-                    className="zep-typography-headlineSM-fluid-cqi  zep-break-all zep-mb-1"
+                    className="zep-typography-headlineSM-fluid-cqi  zep-hyphens-auto zep-break-normal"
                   >
                     {obj.headline}
                   </h4>
-
                   {linkChain ? (
-                    obj.linkItems &&
-                    obj.linkItems.map((item, index) => (
-                      <div key={index} className={clsx({ 'zep-mt-1.5': index !== 0 })}>
+                    <div className="zep-flex-col zep-flex zep-gap-0.5">
+                      {obj.linkItems.map((item, index) => (
                         <Link
                           label="inline link"
                           iconPlacement="before"
+                          key={index}
                           icon={item.icon}
                           href={item.link}
                           target={LinkTarget.Blank}
                           mode={LinkMode.Inline}
                         ></Link>
-                      </div>
-                    ))
+                      ))}
+                    </div>
                   ) : (
-                    <ul className="zep-pl-1.5">
-                      {obj.listItems &&
-                        obj.listItems.map((item, index) => (
-                          <li key={index} className="zep-list-disc">
-                            {item}
-                          </li>
-                        ))}
-                    </ul>
+                    <List className="zep-flex-col zep-flex zep-gap-0.5" type="bullet">
+                      {obj.listItems.map((item, index) => (
+                        <List.Item className="zep-py-[0] zep-h-auto" key={`${item}-${index}`}>
+                          {item}
+                        </List.Item>
+                      ))}
+                    </List>
                   )}
                 </div>
-                {idx < contentItems.length - 1 && (
-                  <div className="zep-absolute zep-left-auto -zep-right-1 zep-border-t-transparent zep-border-b-transparent zep-border-t-[18px] zep-border-b-[18px] zep-top-1/3 zep-border-l-[16px] zep-border-l-primary-default zep-translate-y-1/2" />
-                )}
               </div>
             </div>
           ))}

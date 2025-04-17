@@ -42,45 +42,39 @@ export const ListChain: Story = {
 export const LinkChain: Story = {
   args: {
     linkChain: true,
+    hasIcon: false,
     contentItems: [
       {
         headline: 'Link Chain 1',
         linkItems: [
-          { icon: 'arrow-long-right', link: 'https://www.google.com' },
-          { icon: 'arrow-long-right', link: 'https://www.example.com' },
-          { icon: 'arrow-long-right', link: 'https://www.stackoverflow.com' },
+          { link: 'https://www.google.com' },
+          { link: 'https://www.example.com' },
+          { link: 'https://www.stackoverflow.com' },
         ],
       },
       {
         headline: 'Link Chain  2',
         linkItems: [
-          { icon: 'arrow-long-right', link: 'https://www.github.com' },
-          { icon: 'arrow-long-right', link: 'https://www.gitlab.com' },
-          { icon: 'arrow-long-right', link: 'https://www.gitlab.com' },
+          { link: 'https://www.github.com' },
+          { link: 'https://www.gitlab.com' },
+          { link: 'https://www.gitlab.com' },
         ],
       },
       {
         headline: 'Link Chain  3',
         linkItems: [
-          { icon: 'arrow-long-right', link: 'https://www.stackoverflow.com' },
-          { icon: 'arrow-long-right', link: 'https://www.stackoverflow.com' },
-          { icon: 'arrow-long-right', link: 'https://www.stackoverflow.com' },
+          { link: 'https://www.stackoverflow.com' },
+          { link: 'https://www.stackoverflow.com' },
+          { link: 'https://www.stackoverflow.com' },
         ],
       },
       {
         headline: 'Link Chain  4',
         linkItems: [
-          { icon: 'arrow-long-right', link: 'https://www.linkedin.com' },
-          { icon: 'arrow-long-right', link: 'https://www.twitter.com' },
-          { icon: 'arrow-long-right', link: 'https://www.gitlab.com' },
-        ],
-      },
-      {
-        headline: 'Link Chain  5',
-        linkItems: [
-          { icon: 'arrow-long-right', link: 'https://www.linkedin.com' },
-          { icon: 'arrow-long-right', link: 'https://www.twitter.com' },
-          { icon: 'arrow-long-right', link: 'https://www.gitlab.com' },
+          { link: 'https://www.linkedin.com' },
+          { link: 'https://www.twitter.com' },
+          { link: 'https://www.gitlab.com' },
+          { link: 'https://www.gitlab.com' },
         ],
       },
     ],
