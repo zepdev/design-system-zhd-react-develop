@@ -97,7 +97,7 @@ const ContactForm: FC<ContactFormProps> = ({
           {...register('phone')}
           label={contactFormLocales[locale]['Telefonnummer']}
           error={errors['phone']?.message && contactFormLocales[locale]['Dieses Feld ist erforderlich']}
-          defaultCountry={locale === 'de-AT' ? 'AT' : 'DE'}
+          defaultCountry={'DE'}
         />
         <Input
           className="zep-w-full"
