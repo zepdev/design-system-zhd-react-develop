@@ -1,0 +1,1 @@
+import{a as t,G as a}from"./global-variants-3afa6a98.js";const p={[t.ZpsBg]:"zep-bg-gradient-to-r zep-from-[rgb(32,27,52)] zep-to-[rgb(32,23,94)]",[t.CatBg]:"zep-bg-background-dark"},o={[a.Zps]:"zep-text-primary-default",[a.Cat]:"zep-text-typography-dark-100",[t.CatBg]:"zep-text-typography-light-100",[t.ZpsBg]:"zep-text-typography-light-100"};export{p as b,o as t};
