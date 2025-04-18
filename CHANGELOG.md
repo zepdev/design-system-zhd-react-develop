@@ -1,3 +1,12 @@
+## [1.5.8](https://github.com/zepdev/design-system-zhd-react/compare/v1.5.7...v1.5.8) (2025-04-18)
+
+
+### Bug Fixes
+
+* added extra linktype none ([1472718](https://github.com/zepdev/design-system-zhd-react/commit/14727182a6287e59e0b83ee764856ba64b986f3e))
+* added the link type none ([aa59745](https://github.com/zepdev/design-system-zhd-react/commit/aa597456640d0451f05f9dccd9789e8ea38fd2db))
+* Contact form added ([6385ca9](https://github.com/zepdev/design-system-zhd-react/commit/6385ca947ae0e359ac0f3ec634a600e173607d05))
+
 ## [1.5.7](https://github.com/zepdev/design-system-zhd-react/compare/v1.5.6...v1.5.7) (2025-04-17)
 
 
