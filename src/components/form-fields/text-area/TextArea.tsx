@@ -30,7 +30,7 @@ export const TextArea: React.FC<TextAreaProps> = forwardRef<HTMLTextAreaElement,
     const disabledOrReadonly = disabled || readOnly;
     const iconColor = hasError ? 'zep-text-error' : state === 'info' ? 'zep-text-info' : '';
 
-    const color = disabled ? 'zep-text-opacity-disabled' : 'zep-text-primary-default';
+    const color = disabled ? 'zep-text-opacity-disabled' : 'zep-text-typography-dark-100';
 
     const inputClasses = clsx(
       'zep-block',
@@ -65,7 +65,7 @@ export const TextArea: React.FC<TextAreaProps> = forwardRef<HTMLTextAreaElement,
         data-testid="zep-text-area"
       >
         {label && (
-          <div className="zep-block zep-mb-0.5 zep-text-primary-default">
+          <div className="zep-block zep-mb-0.5 zep-text-typography-dark-100">
             {label}
             {!props.required && <span className="zep-ml-0.25">(optional)</span>}
           </div>

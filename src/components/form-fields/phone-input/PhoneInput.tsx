@@ -18,7 +18,7 @@ export const PhoneInput = ({
   readOnly,
   notRequiredHint = '(optional)',
   required = false,
-  defaultCountry = 'DE',
+  defaultCountry,
   ...props
 }: PhoneInputProps) => {
   const changeHandler = (value?: string) => {
@@ -28,14 +28,14 @@ export const PhoneInput = ({
   return (
     <div
       className={clsx(
-        'zep-inline-flex zep-flex-col zep-flex-wrap zep-items-stretch zep-justify-start zep-relative zep-group zep-w-full zep-mb-1',
+        'zep-inline-flex zep-flex-col zep-flex-wrap zep-items-stretch zep-justify-start zep-relative zep-group zep-w-full zep-mb-2',
         [disabled ? 'zep-cursor-not-allowed zep-opacity-disabled' : 'zep-cursor-pointer'],
         className,
       )}
       data-testid="zep-phone-input"
     >
       {label && (
-        <label htmlFor={id} className="zep-typography-bodyText zep-mb-0.5 zep-text-primary-default">
+        <label htmlFor={id} className="zep-typography-bodyText zep-mb-0.5 zep-text-typography-dark-100">
           {label}
           {!required && <span className="zep-ml-0.25">{notRequiredHint}</span>}
         </label>

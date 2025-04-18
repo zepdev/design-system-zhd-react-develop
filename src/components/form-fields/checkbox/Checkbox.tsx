@@ -55,7 +55,7 @@ export const Checkbox = forwardRef(({ className, ...props }: CheckboxProps, ref:
       <label
         dangerouslySetInnerHTML={{ __html: labelhtml ? `${labelhtml}` : '' }}
         htmlFor={props.name}
-        className={clsx('zep-text-primary-default zep-relative zep-pl-[36px]', [
+        className={clsx('zep-text-typography-dark-100 zep-relative zep-pl-[36px]', [
           disabled ? 'zep-cursor-not-allowed zep-text-opacity-disabled' : 'zep-cursor-pointer',
         ])}
       />
