@@ -68,7 +68,7 @@ export const Input: React.FC<InputProps> = forwardRef<HTMLInputElement, InputPro
         data-testid="zep-input"
       >
         {label && (
-          <label htmlFor={id} className="zep-mb-0.5 zep-text-primary-default">
+          <label htmlFor={id} className="zep-mb-0.5 zep-text-typography-dark-100">
             {label}
             {!required && (
               <span data-testid="zep-input-label-hint" className="zep-ml-0.25">
@@ -94,7 +94,7 @@ export const Input: React.FC<InputProps> = forwardRef<HTMLInputElement, InputPro
               className={clsx(
                 focusRing,
                 'zep-border-solid',
-                'zep-text-primary-default',
+                'zep-text-typography-dark-100',
                 'zep-border-1',
                 'zep-w-full',
                 'zep-h-3',
