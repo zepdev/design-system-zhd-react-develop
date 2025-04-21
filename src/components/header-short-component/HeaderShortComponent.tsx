@@ -13,6 +13,7 @@ export const HeaderShortComponent = ({ tagline, headline, className }: HeaderSho
         'md:zep-gap-1.5',
         'sm:zep-gap-2.5',
         'zep-gap-1.5',
+        'md:zep-max-w-[701px]',
         className,
       )}
       data-testid="header-short-component"
