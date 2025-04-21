@@ -1,3 +1,10 @@
+## [1.5.9](https://github.com/zepdev/design-system-zhd-react/compare/v1.5.8...v1.5.9) (2025-04-21)
+
+
+### Bug Fixes
+
+* header short ([51e0530](https://github.com/zepdev/design-system-zhd-react/commit/51e053050de89366428a05004569affc247b4146))
+
 ## [1.5.8](https://github.com/zepdev/design-system-zhd-react/compare/v1.5.7...v1.5.8) (2025-04-18)
 
 
