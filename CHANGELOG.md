@@ -1,3 +1,10 @@
+## [1.5.10](https://github.com/zepdev/design-system-zhd-react/compare/v1.5.9...v1.5.10) (2025-04-22)
+
+
+### Bug Fixes
+
+* optanon consent ([9344fea](https://github.com/zepdev/design-system-zhd-react/commit/9344fea0401b3838c7f742f957342435249fbfb3))
+
 ## [1.5.9](https://github.com/zepdev/design-system-zhd-react/compare/v1.5.8...v1.5.9) (2025-04-21)
 
 
