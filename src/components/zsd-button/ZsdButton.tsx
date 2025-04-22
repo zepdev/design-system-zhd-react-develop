@@ -1,9 +1,12 @@
 'use client';
 import { FunctionalIcon, Spacing } from '@zepdev/design-system-component-library-react';
 import { cva } from 'class-variance-authority';
-import React from 'react';
+import { FC } from 'react';
 import { twMerge } from 'tailwind-merge';
 import { ClassGroup, ClassGroupId } from 'tailwind-merge/src/lib/types';
+import { LinkTarget } from '~/@zepdev/design-system-component-library-react';
+import { getDataLayer } from '../../utils/getDataLayer';
+import { getUrlWithTrailingSlash } from '../../utils/getUrlWithTrailingSlash';
 import { ZsdButtonProps, ZsdButtonVariant } from './zsd-button.interface';
 
 export const zsdButtonVariants: Record<ClassGroupId, ClassGroup> = {
@@ -61,6 +64,7 @@ export const zsdButton = cva(
     'zep-px-1',
     'zep-py-0.75',
     'zep-flex',
+    'zep-font-500',
     'zep-gap-0.5',
     'zep-justify-center',
     'focus-visible:zep-outline',
@@ -78,7 +82,7 @@ export const zsdButton = cva(
   },
 );
 
-export const Button: React.FC<ZsdButtonProps> = ({
+const Btn: FC<Omit<ZsdButtonProps, 'href' | 'buttonType'>> = ({
   className,
   variant,
   isLoading = false,
@@ -87,11 +91,12 @@ export const Button: React.FC<ZsdButtonProps> = ({
   icon,
   iconPosition = 'left',
   ...props
-}: ZsdButtonProps) => {
-  const isIconButton = !label || label === '';
+}) => {
+  const isIconButton = (!label || label === '') && !children;
   const buttonClass = isIconButton ? zsdButton({ variant }).replace('zep-px-1', 'zep-px-0.75') : zsdButton({ variant });
+
   return (
-    <button className={twMerge(buttonClass, className, 'zep-w-full sm:zep-w-inherit')} {...props}>
+    <button className={twMerge(buttonClass, 'zep-w-full sm:zep-w-auto', className)} {...props}>
       {isLoading && (
         <i className="mr-zep-0_5" data-testid="loading-icon">
           loading icon
@@ -102,5 +107,60 @@ export const Button: React.FC<ZsdButtonProps> = ({
         {icon && <FunctionalIcon name={icon} />}
       </Spacing>
     </button>
+  );
+};
+
+export const Button: FC<ZsdButtonProps> = ({
+  variant,
+  label,
+  children,
+  icon,
+  iconPosition = 'left',
+  href,
+  buttonType = 'default',
+  onClick,
+  ...props
+}: ZsdButtonProps) => {
+  const datalayer = getDataLayer();
+  if (href) {
+    return (
+      <a
+        download={buttonType === 'download'}
+        className="zep-w-full sm:zep-w-fit"
+        target={href.startsWith('http') ? LinkTarget.Blank : LinkTarget.Self}
+        href={getUrlWithTrailingSlash(href)}
+        onClick={() => {
+          datalayer.push({
+            event: 'interaction_cta',
+            link_text: label ?? 'Complex Element',
+            link_context: getUrlWithTrailingSlash(href),
+          });
+        }}
+      >
+        <Btn
+          label={label}
+          iconPosition={iconPosition}
+          icon={icon}
+          className="zep-w-full sm:zep-w-fit"
+          variant={variant}
+          {...props}
+        >
+          {children}
+        </Btn>
+      </a>
+    );
+  }
+  return (
+    <Btn
+      label={label}
+      iconPosition={iconPosition}
+      icon={icon}
+      className="zep-w-full sm:zep-w-fit"
+      variant={variant}
+      onClick={onClick}
+      {...props}
+    >
+      {children}
+    </Btn>
   );
 };

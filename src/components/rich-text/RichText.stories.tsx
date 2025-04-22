@@ -193,7 +193,7 @@ export const Default: Story = {
   args: {
     content: content,
     children: <p className="zep-mb-1">This is Custom</p>,
-    appStoreUrl: 'ddd',
-    googlePlayUrl: 'aaaa',
+    button: 'Herunterladen (PDF, 2MB)',
+    type: 'primary-dark',
   } as RichTextProps,
 };

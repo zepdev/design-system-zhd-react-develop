@@ -22,6 +22,7 @@ export const Default: Story = {
     mediaAlignment: 'left',
     headline: 'Example Headline',
     content: mockRichText,
+    type: 'primary-dark',
     alt: '',
     buttonText: 'Read More',
     contentAlignment: 'center',

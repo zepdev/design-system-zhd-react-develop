@@ -15,17 +15,17 @@ const LinkComponent = ({
   headerButtonIcon,
 }: LinkComponentProps) => {
   switch (type) {
+    // case 'link':
+    //   return (
+    //     <Link
+    //       label={linkText || ''}
+    //       href={linkHref}
+    //       iconPlacement="after"
+    //       mode={LinkMode.Standalone}
+    //       icon="arrow-long-right"
+    //     />
+    //   );
     case 'link':
-      return (
-        <Link
-          label={linkText || ''}
-          href={linkHref}
-          iconPlacement="after"
-          mode={LinkMode.Standalone}
-          icon="arrow-long-right"
-        />
-      );
-    case 'primary-button':
       return (
         <Link
           target={linkHref?.startsWith('http') ? LinkTarget.Blank : LinkTarget.Self}
@@ -47,14 +47,26 @@ const LinkComponent = ({
         />
       );
     // eslint-disable-next-line no-duplicate-case
-    case 'primary-button':
-    case 'secondary-button':
+    case 'primary-dark':
       return (
         <Button
           href={linkHref}
           className="zep-whitespace-nowrap sm:zep-w-fit zep-h-fit"
           label={linkText}
           variant={ZsdButtonVariant.PrimaryDark}
+          icon={headerButtonIcon}
+          onClick={onClick}
+          iconPosition={headerButtonIconPosition}
+        />
+      );
+
+    case 'secondary-dark':
+      return (
+        <Button
+          href={linkHref}
+          className="zep-whitespace-nowrap sm:zep-w-fit zep-h-fit"
+          label={linkText}
+          variant={ZsdButtonVariant.SecondaryDark}
           icon={headerButtonIcon}
           onClick={onClick}
           iconPosition={headerButtonIconPosition}

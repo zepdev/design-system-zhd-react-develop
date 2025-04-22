@@ -54,6 +54,7 @@ const RichText = ({
   className,
   button,
   buttonIcon,
+  type,
   buttonIconPosition,
   buttonUrl,
 }: RichTextProps) => {
@@ -117,7 +118,7 @@ const RichText = ({
           <Button
             label={button}
             title={button}
-            variant={ZsdButtonVariant.SecondaryDark}
+            variant={type === 'primary-dark' ? ZsdButtonVariant.PrimaryDark : ZsdButtonVariant.SecondaryDark}
             className="zep-w-full sm:zep-max-w-max"
             icon={buttonIcon}
             iconPosition={buttonIconPosition}

@@ -1,4 +1,4 @@
-import { Button } from '@/components/zsd-button';
+import { Button, ZsdButtonVariant } from '@/components/zsd-button';
 import { Accordion, Table, TableThemes } from '@zepdev/design-system-component-library-react';
 import clsx from 'clsx';
 import React from 'react';
@@ -110,7 +110,7 @@ export const AccordionPattern: React.FC<AccordionPatternProps> = ({
             href={buttonUrl}
             className="md:zep-mt-2.5 sm:zep-mt-2 zep-mt-1.5"
             onClick={buttonOnClick}
-            variant={buttonVariant}
+            variant={buttonVariant === 'primary-dark' ? ZsdButtonVariant.PrimaryDark : ZsdButtonVariant.SecondaryDark}
             icon={buttonIcon}
           >
             {buttonText}

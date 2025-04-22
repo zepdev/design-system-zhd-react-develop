@@ -1,17 +1,17 @@
-import { MouseEvent } from 'react';
-import { GlobalVariantExtended, GlobalVariants } from '../../interfaces/global-variants';
 import { BlocksContent } from '@strapi/blocks-react-renderer';
 import { FunctionalIconNames } from '@zepdev/design-system-component-library-react';
+import { MouseEvent } from 'react';
+import { GlobalVariantExtended, GlobalVariants } from '../../interfaces/global-variants';
 
 export interface LinkComponentProps {
   linkText?: string;
   linkHref?: string;
-  type?: 'primary-button' | 'secondary-button' | 'link' | 'none';
+  type?: 'primary-dark' | 'secondary-dark' | 'link' | 'none';
   onClick?: (ev: MouseEvent<HTMLElement>) => void;
   variant?: GlobalVariants | GlobalVariantExtended;
   className?: string;
   headerButtonIcon?: FunctionalIconNames;
-  headerButtonIconPosition?: 'left' |'right';
+  headerButtonIconPosition?: 'left' | 'right';
 }
 
 export interface HeaderLongComponentProps extends LinkComponentProps {
