@@ -35,6 +35,7 @@ const useVideoCookieCheck = () => {
 
   const params2 = new URLSearchParams(updatedCookie);
 
+  // Maybe add 1:1, 3:1
   const canPlay = !!params2.get('groups')?.includes('2:1') || !!params2.get('groups')?.includes('4:1');
 
   return { canPlay };
