@@ -1,3 +1,10 @@
+## [1.5.11](https://github.com/zepdev/design-system-zhd-react/compare/v1.5.10...v1.5.11) (2025-04-23)
+
+
+### Bug Fixes
+
+* font bold ([e0bc66d](https://github.com/zepdev/design-system-zhd-react/commit/e0bc66d7e2f88ad74a0f27e7955d6117a2d2ae0f))
+
 ## [1.5.10](https://github.com/zepdev/design-system-zhd-react/compare/v1.5.9...v1.5.10) (2025-04-22)
 
 
