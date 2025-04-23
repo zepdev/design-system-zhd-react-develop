@@ -107,7 +107,7 @@ const RichText = ({
           ),
         }}
         modifiers={{
-          bold: ({ children }) => <span className="zep-typography-bodyStrong">{children}</span>,
+          bold: ({ children }) => <span className="zep-typography-bodyStrong zep-font-600">{children}</span>,
           italic: ({ children }) => <span className="zep-italic">{children}</span>,
         }}
       />
