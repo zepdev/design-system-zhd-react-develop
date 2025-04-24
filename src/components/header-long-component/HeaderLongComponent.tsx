@@ -23,7 +23,7 @@ const LinkComponent = ({
           href={linkHref}
           iconPlacement="after"
           mode={LinkMode.Standalone}
-          icon="arrow-long-right"
+          icon={headerButtonIcon || 'arrow-long-right'}
           target={target}
         />
       );
