@@ -6,5 +6,7 @@ export interface InstagramFeedProps extends HeaderLongProps {
         alt: string;
         url?: string;
     }[];
+    cookiesResetLabel: string;
+    cookiesLayerDescription: string;
 }
 //# sourceMappingURL=InstagramFeed.interface.d.ts.map
