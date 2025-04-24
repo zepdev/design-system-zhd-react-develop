@@ -1,3 +1,10 @@
+## [1.5.14](https://github.com/zepdev/design-system-zhd-react/compare/v1.5.13...v1.5.14) (2025-04-24)
+
+
+### Bug Fixes
+
+* added cookie layer in the instagram feed ([15d33ce](https://github.com/zepdev/design-system-zhd-react/commit/15d33ce105fa1aae3471d9d2d6f80377bc9fe5bb))
+
 ## [1.5.13](https://github.com/zepdev/design-system-zhd-react/compare/v1.5.12...v1.5.13) (2025-04-24)
 
 
