@@ -16,7 +16,7 @@ type Story = StoryObj<typeof meta>;
 export const Default: Story = {
   args: {
     variant: GlobalVariants.Zps,
-    type: 'secondary-button',
+    type: 'secondary-dark',
     tagline: 'Tagline',
     headline:
       'Headline Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus',
@@ -29,7 +29,7 @@ export const Default: Story = {
 
 export const WithPrimaryButton: Story = {
   args: {
-    type: 'primary-button',
+    type: 'primary-dark',
     tagline: 'Tagline',
     headline:
       'Headline Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus',
