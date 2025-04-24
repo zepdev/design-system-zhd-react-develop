@@ -6,7 +6,7 @@ import { HeaderLongProps } from '../header-long';
 import { ZsdButtonVariant } from '../zsd-button';
 
 export interface ProductHighLightProps extends Partial<Omit<HeaderLongProps, 'variant'>> {
-    imageAlignment?: 'left' | 'right';
+    imageAlignment?: 'left' | 'right' | 'none';
     imageSrc: string;
     imageAlt: string;
     productDetails: BlocksContent[];
@@ -16,8 +16,8 @@ export interface ProductHighLightProps extends Partial<Omit<HeaderLongProps, 'va
     variant?: GlobalVariants;
     id?: string;
     buttonUrl?: string;
-    buttonType?: 'download' | 'default';
+    buttonType?: 'download' | 'default' | 'none';
     buttonIcon?: FunctionalIconNames;
-    buttonIconPosition?: 'left' | 'right';
+    buttonIconPosition?: 'left' | 'right' | 'none';
 }
 //# sourceMappingURL=product-highlight.interface.d.ts.map

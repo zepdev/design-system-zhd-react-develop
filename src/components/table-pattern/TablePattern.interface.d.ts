@@ -14,7 +14,7 @@ export interface TablePatternProps extends Omit<HeaderLongComponentProps, 'varia
     tableButtonOnClick?: (ev: MouseEvent<HTMLElement>) => void;
     tableButtonVariant?: ZsdButtonVariant;
     tableButtonIcon?: FunctionalIconNames;
-    tableButtonIconPosition?: 'left' | 'right';
+    tableButtonIconPosition?: 'left' | 'right' | 'none';
     tableButtonUrl?: string;
     variant?: GlobalVariants;
     id?: string;

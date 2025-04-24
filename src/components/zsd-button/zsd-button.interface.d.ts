@@ -14,7 +14,7 @@ export interface ZsdButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> 
     href?: string;
     icon?: FunctionalIconNames;
     iconPosition?: 'left' | 'right' | 'none';
-    buttonType?: 'default' | 'download';
+    buttonType?: 'default' | 'download' | 'none';
     isLoading?: boolean;
     children?: ReactNode;
     onClick?: (ev: MouseEvent<HTMLElement>) => void;

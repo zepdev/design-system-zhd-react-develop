@@ -8,7 +8,7 @@ export interface RichTextProps extends Partial<RichTextBaseProps> {
     button?: string;
     buttonUrl?: string;
     buttonIcon?: FunctionalIconNames;
-    buttonIconPosition?: 'left' | 'right';
+    buttonIconPosition?: 'left' | 'right' | 'none';
 }
 export interface ImageProps {
     url: string;

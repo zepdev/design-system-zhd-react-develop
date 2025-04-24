@@ -22,15 +22,15 @@ export interface THContext {
     message: string;
     buttonUrl?: string;
     buttonVariant?: ZsdButtonVariant | 'link';
-    buttonType?: 'download' | 'default';
+    buttonType?: 'download' | 'default' | 'none';
     buttonIcon?: FunctionalIconNames;
-    buttonIconPosition?: 'left' | 'right';
+    buttonIconPosition?: 'left' | 'right' | 'none';
 }
 export interface TextHighlightProps extends Partial<Omit<HeaderLongProps, 'variant'>>, Omit<THContext, 'variant'> {
     children: ReactElement<AccordionProps> | ReactElement<TableProps> | ReactElement<RichTextProps>;
     imageSrc: string;
     imageAlt: string;
-    imageAlignment?: 'left' | 'right';
+    imageAlignment?: 'left' | 'right' | 'none';
     topDescription?: BlocksContent;
     bottomDescription?: BlocksContent;
     id?: string;
