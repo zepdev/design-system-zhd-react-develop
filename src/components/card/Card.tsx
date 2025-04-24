@@ -1,4 +1,4 @@
-import { Link, LinkMode, LinkTarget } from '@zepdev/design-system-component-library-react';
+import { FunctionalIconNames, Link, LinkMode, LinkTarget } from '@zepdev/design-system-component-library-react';
 import clsx from 'clsx';
 import { FC } from 'react';
 import { getUrlWithTrailingSlash } from '../../utils/getUrlWithTrailingSlash';
@@ -87,7 +87,7 @@ export const Card: FC<CardProps> = ({
             className="zep-text-primary-default zep-mt-1.5"
             data-testid="card-component-link"
             type={linkType}
-            icon={icon}
+            icon={icon !== 'none' ? (icon as FunctionalIconNames) : undefined}
             iconPlacement={iconPosition}
             label={linkLabel}
             mode={LinkMode.Standalone}
