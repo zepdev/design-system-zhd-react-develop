@@ -26,7 +26,7 @@ export interface AccordionPatternProps extends Partial<Omit<HeaderLongProps, 'va
     bottomDescription?: BlocksContent;
     contents: AccordionContent[];
     variant?: GlobalVariants;
-    headerPosition?: 'top' | 'left';
+    headerPosition?: 'top' | 'left' | 'none';
     buttonText?: string;
     buttonOnClick?: (ev: MouseEvent<HTMLElement>) => void;
     buttonUrl?: string;

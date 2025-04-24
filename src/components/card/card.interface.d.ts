@@ -10,7 +10,7 @@ export interface CardProps {
     linkLabel?: string;
     linkType?: 'internal-link' | 'external-link' | 'download' | 'none';
     icon?: FunctionalIconNames;
-    iconPosition?: 'before' | 'after';
+    iconPosition?: 'before' | 'after' | 'none';
     gtmHeadline?: string;
     gtmid?: string;
 }
