@@ -11,7 +11,7 @@ export interface HeroProps {
   buttonSecondaryUrl?: string;
   buttonPrimaryIcon?: FunctionalIconNames;
   buttonSecondaryIcon?: FunctionalIconNames;
-  buttonPrimaryIconPosition?: 'left' | 'right';
-  buttonSecondaryIconPosition?: 'left' | 'right';
+  buttonPrimaryIconPosition?: 'left' | 'right' | 'none';
+  buttonSecondaryIconPosition?: 'left' | 'right' | 'none';
   isErrorPage?: boolean;
 }
