@@ -1,5 +1,5 @@
 import { RichText } from '@/components/rich-text';
-import { Link, LinkMode, LinkTarget } from '@zepdev/design-system-component-library-react';
+import { Link, LinkMode } from '@zepdev/design-system-component-library-react';
 import { clsx } from 'clsx';
 import React from 'react';
 import { getUrlWithTrailingSlash } from '../../utils/getUrlWithTrailingSlash';
@@ -20,11 +20,11 @@ const LinkComponent = ({
     //   return (
     //     <Link
     //     label={linkText || ''}
-      //    href={linkHref}
-        //  iconPlacement="after"
-        //  mode={LinkMode.Standalone}
-         // icon="arrow-long-right"
-        //  target={target}
+    //    href={linkHref}
+    //  iconPlacement="after"
+    //  mode={LinkMode.Standalone}
+    // icon="arrow-long-right"
+    //  target={target}
     //     />
     //   );
     case 'link':
