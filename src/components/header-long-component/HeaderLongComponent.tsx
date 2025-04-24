@@ -1,5 +1,5 @@
 import { RichText } from '@/components/rich-text';
-import { Link, LinkMode, LinkTarget } from '@zepdev/design-system-component-library-react';
+import { Link, LinkMode } from '@zepdev/design-system-component-library-react';
 import { clsx } from 'clsx';
 import React from 'react';
 import { getUrlWithTrailingSlash } from '../../utils/getUrlWithTrailingSlash';
@@ -16,21 +16,21 @@ const LinkComponent = ({
   target,
 }: LinkComponentProps) => {
   switch (type) {
+    // case 'link':
+    //   return (
+    //     <Link
+    //     label={linkText || ''}
+    //    href={linkHref}
+    //  iconPlacement="after"
+    //  mode={LinkMode.Standalone}
+    // icon="arrow-long-right"
+    //  target={target}
+    //     />
+    //   );
     case 'link':
       return (
         <Link
-          label={linkText || ''}
-          href={linkHref}
-          iconPlacement="after"
-          mode={LinkMode.Standalone}
-          icon="arrow-long-right"
           target={target}
-        />
-      );
-    case 'primary-button':
-      return (
-        <Link
-          target={linkHref?.startsWith('http') ? LinkTarget.Blank : LinkTarget.Self}
           className={clsx(
             'zep-text-indigo-500',
             'zep-h-fit',
@@ -49,14 +49,26 @@ const LinkComponent = ({
         />
       );
     // eslint-disable-next-line no-duplicate-case
-    case 'primary-button':
-    case 'secondary-button':
+    case 'primary-dark':
       return (
         <Button
           href={linkHref}
           className="zep-whitespace-nowrap sm:zep-w-fit zep-h-fit"
           label={linkText}
           variant={ZsdButtonVariant.PrimaryDark}
+          icon={headerButtonIcon}
+          onClick={onClick}
+          iconPosition={headerButtonIconPosition}
+        />
+      );
+
+    case 'secondary-dark':
+      return (
+        <Button
+          href={linkHref}
+          className="zep-whitespace-nowrap sm:zep-w-fit zep-h-fit"
+          label={linkText}
+          variant={ZsdButtonVariant.SecondaryDark}
           icon={headerButtonIcon}
           onClick={onClick}
           iconPosition={headerButtonIconPosition}

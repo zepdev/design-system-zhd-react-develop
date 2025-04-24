@@ -22,6 +22,7 @@ const MediaTextComponent = ({
   content,
   labelPrimary,
   alt,
+  type,
   iconPrimaryPosition,
   buttonAction,
   buttonUrl,
@@ -81,7 +82,7 @@ const MediaTextComponent = ({
                 icon={iconPrimary}
                 iconPosition={iconPrimaryPosition}
                 label={labelPrimary}
-                variant={ZsdButtonVariant.SecondaryDark}
+                variant={type === 'primary-dark' ? ZsdButtonVariant.PrimaryDark : ZsdButtonVariant.SecondaryDark}
               />
             </a>
           )}
