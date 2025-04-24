@@ -1,10 +1,8 @@
 import { Link, LinkMode, LinkTarget } from '@zepdev/design-system-component-library-react';
 import { clsx } from 'clsx';
 import React from 'react';
-import { GlobalVariants } from '../../interfaces/global-variants';
-import { textColor } from '../../utils/commonCSS';
-import { CardMediaProps } from './cardmedia.interface';
 import { getUrlWithTrailingSlash } from '../../utils/getUrlWithTrailingSlash';
+import { CardMediaProps } from './cardmedia.interface';
 
 export const CardMedia: React.FC<CardMediaProps> = ({
   imageSrc,
@@ -16,7 +14,6 @@ export const CardMedia: React.FC<CardMediaProps> = ({
   linkText,
   description,
   linkType = 'internal-link',
-  variant = GlobalVariants.Zps,
 }: CardMediaProps) => {
   const imageHeightClass =
     imageOrientation === 'horizontal' ? 'zep-h-[116px] md:zep-h-[132px] lg:zep-h-[148px]' : 'zep-aspect-[100/141]';
@@ -51,13 +48,23 @@ export const CardMedia: React.FC<CardMediaProps> = ({
       />
       <div className={clsx('zep-flex', 'zep-flex-col', 'zep-gap-1', 'zep-items-start')}>
         <h4
-          className={clsx('zep-typography-headlineXS-fluid-cqi', 'zep-hyphens-auto' ,'zep-break-normal', textColor[variant])}
+          className={clsx(
+            'zep-typography-headlineXS-fluid-cqi',
+            'zep-hyphens-auto',
+            'zep-break-normal',
+            'zep-text-typography-dark-100',
+          )}
           data-testid="card-media-headline"
         >
           {headline}
         </h4>
         <p
-          className={clsx('zep-typography-bodyText', 'zep-hyphens-auto' ,'zep-break-normal', textColor[variant])}
+          className={clsx(
+            'zep-typography-bodyText',
+            'zep-hyphens-auto',
+            'zep-break-normal',
+            'zep-text-typography-dark-100',
+          )}
           data-testid="card-media-description"
         >
           {description}
@@ -69,7 +76,7 @@ export const CardMedia: React.FC<CardMediaProps> = ({
         label={linkText}
         href={getUrlWithTrailingSlash(linkSrc)}
         mode={LinkMode.Standalone}
-        className={clsx(textColor[variant])}
+        className={'zep-text-typography-dark-100'}
         download={linkType === 'download'}
       />
     </div>

@@ -1,6 +1,5 @@
 import clsx from 'clsx';
 import React from 'react';
-import { GlobalVariants } from '../../interfaces/global-variants';
 import { CardMedia } from '../card-media-component';
 import { HeaderLongComponent } from '../header-long-component';
 import { Layout } from '../layout';
@@ -9,7 +8,6 @@ import { CardMediaPatternProps } from './CardMediaPattern.interface';
 
 export const CardMediaPattern: React.FC<CardMediaPatternProps> = ({
   cards,
-  variant = GlobalVariants.Zps,
   imageOrientation = 'horizontal',
   id,
   ...headerLongComponentProps
@@ -31,7 +29,7 @@ export const CardMediaPattern: React.FC<CardMediaPatternProps> = ({
         'zep-items-start',
       )}
     >
-      <HeaderLongComponent {...headerLongComponentProps} variant={variant} />
+      <HeaderLongComponent {...headerLongComponentProps} />
       <Scrollbar
         scrollOrientation="horizontal"
         dataTestId="cards-container"
@@ -39,7 +37,7 @@ export const CardMediaPattern: React.FC<CardMediaPatternProps> = ({
         className={clsx('zep-flex', 'zep-gap-1', 'sm:zep-gap-1.5', 'lg:zep-gap-2')}
       >
         {cards.map((card) => (
-          <CardMedia key={card.headline} {...card} variant={variant} imageOrientation={imageOrientation} />
+          <CardMedia key={card.headline} {...card} imageOrientation={imageOrientation} />
         ))}
       </Scrollbar>
     </Layout>
