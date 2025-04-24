@@ -4525,10 +4525,10 @@
     "@types/emscripten" "^1.39.6"
     tslib "^1.13.0"
 
-"@zepdev/design-system-component-library-react@^1.15.6":
-  version "1.15.6"
-  resolved "https://npm.pkg.github.com/download/@zepdev/design-system-component-library-react/1.15.6/0a1ff937ff9d55039f74ba6f8240b7b1b1548674#0a1ff937ff9d55039f74ba6f8240b7b1b1548674"
-  integrity sha512-SVoVtRoRgOYhmBNnCsiPl7y+Gk6Uog4XiK6uCg7cd+fdrquFFypV88LfbatwQwnEaZRgUk3kEK1czWhScuBTaQ==
+"@zepdev/design-system-component-library-react@^1.15.7":
+  version "1.15.7"
+  resolved "https://npm.pkg.github.com/download/@zepdev/design-system-component-library-react/1.15.7/0aefe5dcb0ea5ed71377c55efb40ddc3d77cedcc#0aefe5dcb0ea5ed71377c55efb40ddc3d77cedcc"
+  integrity sha512-qQwu0YeBZnh3O9qEjdXPx1E8Rf493usGozLHIV2+eox+yI0IPZ7G2vjFAlruxLT6gvXuyn80LbJoLYDEXzcRHw==
   dependencies:
     "@headlessui/react" "^1.7.17"
     "@hookform/resolvers" "^3.3.2"
