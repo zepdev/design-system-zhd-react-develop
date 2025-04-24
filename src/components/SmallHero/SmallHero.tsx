@@ -20,6 +20,8 @@ export const SmallHero: FC<SmallHeroProps> = ({
   buttonSecondaryIconPosition,
   buttonSecondaryUrl,
   description,
+  buttonPrimaryAction,
+  buttonSecondaryAction,
 }) => {
   return (
     <div data-testid="zep-SHCorporate">
@@ -38,7 +40,12 @@ export const SmallHero: FC<SmallHeroProps> = ({
           {description && <p className="zep-mb-1.5">{getFirst150Characters(description)}</p>}
           {buttonPrimary && (
             <div className="zep-flex zep-flex-col sm:zep-flex-row zep-gap-1">
-              <a href={buttonPrimaryUrl}>
+              <a
+                href={buttonPrimaryUrl}
+                rel="noreferrer"
+                target={buttonPrimaryAction === 'open-external-link' ? '_blank' : '_self'}
+                download={buttonPrimaryAction === 'download-file'}
+              >
                 <Button
                   label={buttonPrimary}
                   title={buttonPrimary}
@@ -49,7 +56,12 @@ export const SmallHero: FC<SmallHeroProps> = ({
                 />
               </a>
               {buttonSecondary && (
-                <a href={buttonSecondaryUrl}>
+                <a
+                  href={buttonSecondaryUrl}
+                  target={buttonSecondaryAction === 'open-external-link' ? '_blank' : '_self'}
+                  download={buttonSecondaryAction === 'download-file'}
+                  rel="noreferrer"
+                >
                   <Button
                     label={buttonSecondary}
                     title={buttonSecondary}
@@ -106,7 +118,12 @@ export const SmallHero: FC<SmallHeroProps> = ({
             )}
             {buttonPrimary && (
               <div className="zep-flex zep-gap-1">
-                <a href={buttonPrimaryUrl}>
+                <a
+                  href={buttonPrimaryUrl}
+                  target={buttonPrimaryAction === 'open-external-link' ? '_blank' : '_self'}
+                  download={buttonPrimaryAction === 'download-file'}
+                  rel="noreferrer"
+                >
                   <Button
                     label={buttonPrimary}
                     title={buttonPrimary}
@@ -117,7 +134,12 @@ export const SmallHero: FC<SmallHeroProps> = ({
                   />
                 </a>
                 {buttonSecondary && (
-                  <a href={buttonSecondaryUrl}>
+                  <a
+                    href={buttonSecondaryUrl}
+                    target={buttonSecondaryAction === 'open-external-link' ? '_blank' : '_self'}
+                    download={buttonSecondaryAction === 'download-file'}
+                    rel="noreferrer"
+                  >
                     <Button
                       label={buttonSecondary}
                       title={buttonSecondary}

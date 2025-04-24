@@ -4,7 +4,7 @@ import React from 'react';
 import { Button, ZsdButtonVariant } from '../zsd-button';
 import { TeaserSimpleProps } from './teaser-simple.interface';
 
-export const TeaserSimple: React.FC<TeaserSimpleProps> = ({ teaserText, buttonText, onClick }) => {
+export const TeaserSimple: React.FC<TeaserSimpleProps> = ({ teaserText, buttonText, buttonAction, buttonUrl }) => {
   return (
     <Layout
       wrapperClassname={'zep-bg-primary-default'}
@@ -31,20 +31,26 @@ export const TeaserSimple: React.FC<TeaserSimpleProps> = ({ teaserText, buttonTe
       >
         {teaserText}
       </h3>
-      <Button
-        className={clsx(
-          'zep-mt-1.5',
-          'md:zep-ml-[80px]',
-          'md:zep-mt-[0]',
-          'xl:zep-ml-[120px]',
-          'md:zep-whitespace-nowrap',
-          'zep-max-w-max',
-        )}
-        label={buttonText}
-        title={buttonText}
-        variant={ZsdButtonVariant.PrimaryLight}
-        onClick={onClick}
-      />
+      <a
+        href={buttonUrl}
+        target={buttonAction === 'open-external-link' ? '_blank' : '_self'}
+        rel="noreferrer"
+        download={buttonAction === 'download-file'}
+      >
+        <Button
+          className={clsx(
+            'zep-mt-1.5',
+            'md:zep-ml-[80px]',
+            'md:zep-mt-[0]',
+            'xl:zep-ml-[120px]',
+            'md:zep-whitespace-nowrap',
+            'zep-max-w-max',
+          )}
+          label={buttonText}
+          title={buttonText}
+          variant={ZsdButtonVariant.PrimaryLight}
+        />
+      </a>
     </Layout>
   );
 };

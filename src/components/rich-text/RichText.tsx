@@ -55,6 +55,7 @@ const RichText = ({
   button,
   buttonIcon,
   buttonIconPosition,
+  buttonAction,
   buttonUrl,
 }: RichTextProps) => {
   if (content.length === 1 && content[0].children[0]?.type === 'text' && content[0].children[0]?.text === '') {
@@ -113,7 +114,13 @@ const RichText = ({
       />
       {children && <div className="zep-w-full">{children}</div>}
       {button && (
-        <a className="zep-max-w-max" href={buttonUrl}>
+        <a
+          className="zep-max-w-max"
+          href={buttonUrl}
+          target={buttonAction === 'open-external-link' ? '_blank' : '_self'}
+          rel="noreferrer"
+          download={buttonAction === 'download-file'}
+        >
           <Button
             label={button}
             title={button}

@@ -8,6 +8,7 @@ export const MediaTextSmallPattern: React.FC<MediaTextSmallPatternProps> = ({
   items,
   id,
   headline,
+  target,
   ...headerProps
 }) => {
   const mediaTextLists = items.length > 12 ? items.slice(0, 12) : items;
@@ -18,7 +19,7 @@ export const MediaTextSmallPattern: React.FC<MediaTextSmallPatternProps> = ({
           data-testid="media-text-small-pattern-headline"
           className="zep-mb-2.5 sm:zep-mb-3 md:zep-mb-4 xl:zep-mb-5 zep-max-w-[952px]"
         >
-          {headline && <HeaderLongComponent headline={headline} {...headerProps} />}
+          {headline && <HeaderLongComponent headline={headline} target={target} {...headerProps} />}
         </div>
 
         <div data-testid="media-text-small-pattern-items">

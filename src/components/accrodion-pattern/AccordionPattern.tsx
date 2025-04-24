@@ -20,10 +20,13 @@ export const AccordionPattern: React.FC<AccordionPatternProps> = ({
   buttonOnClick,
   buttonIcon,
   buttonText,
+  target,
+  type,
   id,
   buttonUrl,
   ...headerProps
 }) => {
+  console.log('hhhhhhh', headline, headerPosition, type);
   return (
     <Layout
       id={id}
@@ -34,7 +37,7 @@ export const AccordionPattern: React.FC<AccordionPatternProps> = ({
       })}
     >
       {headline && headerPosition === 'top' && (
-        <HeaderLongComponent variant={variant} headline={headline} {...headerProps} />
+        <HeaderLongComponent variant={variant} headline={headline} target={target} {...headerProps} type={type} />
       )}
       {headline && headerPosition === 'left' && (
         <HeaderShortComponent headline={headline} {...headerProps} className="zep-w-full" />
