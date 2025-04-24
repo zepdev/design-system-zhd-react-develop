@@ -571,15 +571,6 @@
       ]
     },
     {
-      "id": "./src/components/SmallHero/SmallHero.tsx",
-      "name": "./src/components/SmallHero/SmallHero.tsx",
-      "reasons": [
-        {
-          "moduleName": "./src/components/SmallHero/SmallHero.stories.tsx"
-        }
-      ]
-    },
-    {
       "id": "./src/components/Teaser-simple/Teaser-simple.tsx",
       "name": "./src/components/Teaser-simple/Teaser-simple.tsx",
       "reasons": [
@@ -589,14 +580,11 @@
       ]
     },
     {
-      "id": "./src/components/anchor-navigation-card/AnchorNavigationCard.tsx",
-      "name": "./src/components/anchor-navigation-card/AnchorNavigationCard.tsx",
+      "id": "./src/components/SmallHero/SmallHero.tsx",
+      "name": "./src/components/SmallHero/SmallHero.tsx",
       "reasons": [
         {
-          "moduleName": "./src/components/anchor-navigation-card/AnchorNavigationCard.stories.tsx"
-        },
-        {
-          "moduleName": "./src/components/anchor-navigation-card/index.ts"
+          "moduleName": "./src/components/SmallHero/SmallHero.stories.tsx"
         }
       ]
     },
@@ -668,10 +656,10 @@
           "moduleName": "./src/components/lead-text/LeadText.tsx"
         },
         {
-          "moduleName": "./src/components/news-details/NewsDetails.tsx"
+          "moduleName": "./src/components/navigation/Navigation.tsx"
         },
         {
-          "moduleName": "./src/components/navigation/Navigation.tsx"
+          "moduleName": "./src/components/news-details/NewsDetails.tsx"
         },
         {
           "moduleName": "./src/components/partner-communication/PartnerCommunication.tsx"
@@ -705,6 +693,18 @@
       "reasons": [
         {
           "moduleName": "./src/components/accrodion-pattern/AccordionPattern.stories.tsx"
+        }
+      ]
+    },
+    {
+      "id": "./src/components/anchor-navigation-card/AnchorNavigationCard.tsx",
+      "name": "./src/components/anchor-navigation-card/AnchorNavigationCard.tsx",
+      "reasons": [
+        {
+          "moduleName": "./src/components/anchor-navigation-card/AnchorNavigationCard.stories.tsx"
+        },
+        {
+          "moduleName": "./src/components/anchor-navigation-card/index.ts"
         }
       ]
     },
@@ -782,10 +782,10 @@
           "moduleName": "./src/components/media-text-small/MediaTextSmall.stories.tsx"
         },
         {
-          "moduleName": "./src/components/news-details/NewsDetails.stories.tsx"
+          "moduleName": "./src/components/multi-link-list/MultiLinkList.stories.tsx"
         },
         {
-          "moduleName": "./src/components/multi-link-list/MultiLinkList.stories.tsx"
+          "moduleName": "./src/components/news-details/NewsDetails.stories.tsx"
         },
         {
           "moduleName": "./src/components/product-highlight/Product-highlight.stories.tsx"
@@ -847,6 +847,15 @@
       ]
     },
     {
+      "id": "./src/components/contact-section/ContactSection.tsx",
+      "name": "./src/components/contact-section/ContactSection.tsx",
+      "reasons": [
+        {
+          "moduleName": "./src/components/contact-section/ContactSection.stories.tsx"
+        }
+      ]
+    },
+    {
       "id": "./src/components/contact-form/ContactForm.tsx",
       "name": "./src/components/contact-form/ContactForm.tsx",
       "reasons": [
@@ -864,15 +873,6 @@
       "reasons": [
         {
           "moduleName": "./src/components/gallery/Gallery.stories.tsx"
-        }
-      ]
-    },
-    {
-      "id": "./src/components/contact-section/ContactSection.tsx",
-      "name": "./src/components/contact-section/ContactSection.tsx",
-      "reasons": [
-        {
-          "moduleName": "./src/components/contact-section/ContactSection.stories.tsx"
         }
       ]
     },
@@ -917,10 +917,10 @@
           "moduleName": "./src/components/media-text-small-pattern/MediaTextSmallPattern.tsx"
         },
         {
-          "moduleName": "./src/components/news-details/NewsDetails.tsx"
+          "moduleName": "./src/components/multi-link-list/MultiLinkList.tsx"
         },
         {
-          "moduleName": "./src/components/multi-link-list/MultiLinkList.tsx"
+          "moduleName": "./src/components/news-details/NewsDetails.tsx"
         },
         {
           "moduleName": "./src/components/process-chain/ProcessChain.tsx"
@@ -945,6 +945,18 @@
       "reasons": [
         {
           "moduleName": "./src/components/header-long/HeaderLong.stories.tsx"
+        }
+      ]
+    },
+    {
+      "id": "./src/components/header-short-component/HeaderShortComponent.tsx",
+      "name": "./src/components/header-short-component/HeaderShortComponent.tsx",
+      "reasons": [
+        {
+          "moduleName": "./src/components/header-short-component/HeaderShortComponent.stories.tsx"
+        },
+        {
+          "moduleName": "./src/components/header-short-component/index.ts"
         }
       ]
     },
@@ -981,18 +993,6 @@
       "reasons": [
         {
           "moduleName": "./src/components/infographic-image-pattern/InfographicImagePattern.stories.tsx"
-        }
-      ]
-    },
-    {
-      "id": "./src/components/header-short-component/HeaderShortComponent.tsx",
-      "name": "./src/components/header-short-component/HeaderShortComponent.tsx",
-      "reasons": [
-        {
-          "moduleName": "./src/components/header-short-component/HeaderShortComponent.stories.tsx"
-        },
-        {
-          "moduleName": "./src/components/header-short-component/index.ts"
         }
       ]
     },
@@ -1090,11 +1090,20 @@
       ]
     },
     {
-      "id": "./src/components/news-details/NewsDetails.tsx",
-      "name": "./src/components/news-details/NewsDetails.tsx",
+      "id": "./src/assets/zep-cat-logo.svg",
+      "name": "./src/assets/zep-cat-logo.svg",
       "reasons": [
         {
-          "moduleName": "./src/components/news-details/NewsDetails.stories.tsx"
+          "moduleName": "./src/components/navigation/Navigation.stories.tsx"
+        }
+      ]
+    },
+    {
+      "id": "./src/components/navigation/Navigation.tsx",
+      "name": "./src/components/navigation/Navigation.tsx",
+      "reasons": [
+        {
+          "moduleName": "./src/components/navigation/Navigation.stories.tsx"
         }
       ]
     },
@@ -1111,20 +1120,11 @@
       ]
     },
     {
-      "id": "./src/assets/zep-cat-logo.svg",
-      "name": "./src/assets/zep-cat-logo.svg",
+      "id": "./src/components/news-details/NewsDetails.tsx",
+      "name": "./src/components/news-details/NewsDetails.tsx",
       "reasons": [
         {
-          "moduleName": "./src/components/navigation/Navigation.stories.tsx"
-        }
-      ]
-    },
-    {
-      "id": "./src/components/navigation/Navigation.tsx",
-      "name": "./src/components/navigation/Navigation.tsx",
-      "reasons": [
-        {
-          "moduleName": "./src/components/navigation/Navigation.stories.tsx"
+          "moduleName": "./src/components/news-details/NewsDetails.stories.tsx"
         }
       ]
     },
@@ -1240,15 +1240,6 @@
       ]
     },
     {
-      "id": "./src/components/usp-list/UspList.tsx",
-      "name": "./src/components/usp-list/UspList.tsx",
-      "reasons": [
-        {
-          "moduleName": "./src/components/usp-list/UspList.stories.tsx"
-        }
-      ]
-    },
-    {
       "id": "./src/components/video-cookie-layer/VideoCookieLayer.tsx",
       "name": "./src/components/video-cookie-layer/VideoCookieLayer.tsx",
       "reasons": [
@@ -1260,6 +1251,24 @@
         },
         {
           "moduleName": "./src/components/video/ResponsivePlayer.tsx"
+        }
+      ]
+    },
+    {
+      "id": "./src/components/usp-list/UspList.tsx",
+      "name": "./src/components/usp-list/UspList.tsx",
+      "reasons": [
+        {
+          "moduleName": "./src/components/usp-list/UspList.stories.tsx"
+        }
+      ]
+    },
+    {
+      "id": "./src/components/video/Video.tsx",
+      "name": "./src/components/video/Video.tsx",
+      "reasons": [
+        {
+          "moduleName": "./src/components/video/Video.stories.tsx"
         }
       ]
     },
@@ -1287,15 +1296,6 @@
         },
         {
           "moduleName": "./src/components/zsd-button/ZsdButton.tsx"
-        }
-      ]
-    },
-    {
-      "id": "./src/components/video/Video.tsx",
-      "name": "./src/components/video/Video.tsx",
-      "reasons": [
-        {
-          "moduleName": "./src/components/video/Video.stories.tsx"
         }
       ]
     },
@@ -1435,18 +1435,6 @@
       ]
     },
     {
-      "id": "./src/components/scrollbar/Scrollbar.tsx",
-      "name": "./src/components/scrollbar/Scrollbar.tsx",
-      "reasons": [
-        {
-          "moduleName": "./src/components/scrollbar/Scrollbar.stories.tsx"
-        },
-        {
-          "moduleName": "./src/components/scrollbar/index.ts"
-        }
-      ]
-    },
-    {
       "id": "./src/components/rich-text/RichText.tsx",
       "name": "./src/components/rich-text/RichText.tsx",
       "reasons": [
@@ -1455,6 +1443,18 @@
         },
         {
           "moduleName": "./src/components/rich-text/index.ts"
+        }
+      ]
+    },
+    {
+      "id": "./src/components/scrollbar/Scrollbar.tsx",
+      "name": "./src/components/scrollbar/Scrollbar.tsx",
+      "reasons": [
+        {
+          "moduleName": "./src/components/scrollbar/Scrollbar.stories.tsx"
+        },
+        {
+          "moduleName": "./src/components/scrollbar/index.ts"
         }
       ]
     },
@@ -1493,10 +1493,10 @@
           "moduleName": "./src/components/card-square-list/CardSquareList.tsx"
         },
         {
-          "moduleName": "./src/components/footer/Footer.tsx"
+          "moduleName": "./src/components/contact-form-large/ContactFormLarge.tsx"
         },
         {
-          "moduleName": "./src/components/contact-form-large/ContactFormLarge.tsx"
+          "moduleName": "./src/components/footer/Footer.tsx"
         },
         {
           "moduleName": "./src/components/header-long/HeaderLong.tsx"
@@ -1520,10 +1520,10 @@
           "moduleName": "./src/components/media-text-small-pattern/MediaTextSmallPattern.tsx"
         },
         {
-          "moduleName": "./src/components/news-details/NewsDetails.tsx"
+          "moduleName": "./src/components/multi-link-list/MultiLinkList.tsx"
         },
         {
-          "moduleName": "./src/components/multi-link-list/MultiLinkList.tsx"
+          "moduleName": "./src/components/news-details/NewsDetails.tsx"
         },
         {
           "moduleName": "./src/components/partner-communication/PartnerCommunication.tsx"
@@ -1763,13 +1763,13 @@
           "moduleName": "./src/components/card-square/CardSquare.tsx"
         },
         {
-          "moduleName": "./src/components/footer/Footer.tsx"
-        },
-        {
           "moduleName": "./src/components/contact-form-large/ContactFormLarge.tsx"
         },
         {
           "moduleName": "./src/components/contact-form/ContactForm.tsx"
+        },
+        {
+          "moduleName": "./src/components/footer/Footer.tsx"
         },
         {
           "moduleName": "./src/components/link-list-item/LinkListItem.tsx"
@@ -1787,11 +1787,20 @@
       "name": "./src/components/multi-link-list/index.ts",
       "reasons": [
         {
-          "moduleName": "./src/components/footer/Footer.tsx"
+          "moduleName": "./src/components/contact-section/ContactSection.tsx"
         },
         {
           "moduleName": "./src/components/contact-form/ContactForm.tsx"
         },
+        {
+          "moduleName": "./src/components/footer/Footer.tsx"
+        }
+      ]
+    },
+    {
+      "id": "./src/components/single-link-list/index.ts",
+      "name": "./src/components/single-link-list/index.ts",
+      "reasons": [
         {
           "moduleName": "./src/components/contact-section/ContactSection.tsx"
         }
@@ -1870,15 +1879,6 @@
       ]
     },
     {
-      "id": "./src/components/single-link-list/index.ts",
-      "name": "./src/components/single-link-list/index.ts",
-      "reasons": [
-        {
-          "moduleName": "./src/components/contact-section/ContactSection.tsx"
-        }
-      ]
-    },
-    {
       "id": "./src/components/infographic-image/index.ts",
       "name": "./src/components/infographic-image/index.ts",
       "reasons": [
@@ -1948,18 +1948,6 @@
       ]
     },
     {
-      "id": "./src/components/link-list-item/index.ts",
-      "name": "./src/components/link-list-item/index.ts",
-      "reasons": [
-        {
-          "moduleName": "./src/components/multi-link-list/MultiLinkList.tsx"
-        },
-        {
-          "moduleName": "./src/components/single-link-list/SingleLinkList.tsx"
-        }
-      ]
-    },
-    {
       "id": "./src/assets/burger.svg",
       "name": "./src/assets/burger.svg",
       "reasons": [
@@ -2002,6 +1990,18 @@
       ]
     },
     {
+      "id": "./src/components/link-list-item/index.ts",
+      "name": "./src/components/link-list-item/index.ts",
+      "reasons": [
+        {
+          "moduleName": "./src/components/multi-link-list/MultiLinkList.tsx"
+        },
+        {
+          "moduleName": "./src/components/single-link-list/SingleLinkList.tsx"
+        }
+      ]
+    },
+    {
       "id": "./src/components/form-fields/checkbox/Checkbox.tsx",
       "name": "./src/components/form-fields/checkbox/Checkbox.tsx",
       "reasons": [
@@ -2020,20 +2020,20 @@
       ]
     },
     {
-      "id": "./src/components/form-fields/phone-input/PhoneInput.tsx",
-      "name": "./src/components/form-fields/phone-input/PhoneInput.tsx",
-      "reasons": [
-        {
-          "moduleName": "./src/components/form-fields/phone-input/index.ts"
-        }
-      ]
-    },
-    {
       "id": "./src/components/form-fields/text-area/TextArea.tsx",
       "name": "./src/components/form-fields/text-area/TextArea.tsx",
       "reasons": [
         {
           "moduleName": "./src/components/form-fields/text-area/index.ts"
+        }
+      ]
+    },
+    {
+      "id": "./src/components/form-fields/phone-input/PhoneInput.tsx",
+      "name": "./src/components/form-fields/phone-input/PhoneInput.tsx",
+      "reasons": [
+        {
+          "moduleName": "./src/components/form-fields/phone-input/index.ts"
         }
       ]
     },
