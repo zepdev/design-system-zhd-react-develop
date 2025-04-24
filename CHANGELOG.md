@@ -1,3 +1,10 @@
+## [1.5.12](https://github.com/zepdev/design-system-zhd-react/compare/v1.5.11...v1.5.12) (2025-04-24)
+
+
+### Bug Fixes
+
+* api client types ([5eb23e8](https://github.com/zepdev/design-system-zhd-react/commit/5eb23e8b69dec898b672a3d9d69e035bd5aaaf0a))
+
 ## [1.5.11](https://github.com/zepdev/design-system-zhd-react/compare/v1.5.10...v1.5.11) (2025-04-23)
 
 
