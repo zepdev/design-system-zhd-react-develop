@@ -1,3 +1,10 @@
+## [1.5.15](https://github.com/zepdev/design-system-zhd-react/compare/v1.5.14...v1.5.15) (2025-04-24)
+
+
+### Bug Fixes
+
+* external links ([acd962a](https://github.com/zepdev/design-system-zhd-react/commit/acd962a946432c63cb15eeaee2ccf029ab189f7d))
+
 ## [1.5.14](https://github.com/zepdev/design-system-zhd-react/compare/v1.5.13...v1.5.14) (2025-04-24)
 
 
