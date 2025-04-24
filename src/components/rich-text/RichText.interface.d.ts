@@ -7,6 +7,7 @@ export interface RichTextProps extends Partial<RichTextBaseProps> {
     className?: string;
     button?: string;
     buttonUrl?: string;
+    type?: 'primary-dark' | 'secondary-dark';
     buttonIcon?: FunctionalIconNames;
     buttonIconPosition?: 'left' | 'right' | 'none';
     buttonAction?: 'none' | 'open-external-link' | 'open-internal-link' | 'download-file';

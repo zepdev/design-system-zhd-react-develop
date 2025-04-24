@@ -9,6 +9,7 @@ export interface MediaTextComponentContentProps extends MediaTextComponentImageP
     buttonText?: string;
     headline?: string;
     tagline?: string;
+    type?: 'primary-dark' | 'secondary-dark';
     content: BlocksContent;
     imageOrientation?: 'horizontal' | 'vertical' | 'none';
     contentAlignment?: 'start' | 'center' | 'none';

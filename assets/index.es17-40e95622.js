@@ -1,0 +1,1 @@
+var l=(a=>(a.Standalone="standalone",a.Inline="inline",a))(l||{}),n=(a=>(a.Base="base",a.Small="sm",a))(n||{}),s=(a=>(a.Self="_self",a.Blank="_blank",a))(s||{}),B=(a=>(a.Zps="ZPS",a.Cat="CAT",a.ZpsBg="ZPS_BG",a.CatBg="CAT_BG",a))(B||{});export{s as a,l,n as r,B as s};

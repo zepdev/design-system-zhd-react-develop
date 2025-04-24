@@ -6,7 +6,7 @@ import { GlobalVariantExtended, GlobalVariants } from '../../interfaces/global-v
 export interface LinkComponentProps {
     linkText?: string;
     linkHref?: string;
-    type?: 'primary-button' | 'secondary-button' | 'link' | 'none';
+    type?: 'primary-dark' | 'secondary-dark' | 'link' | 'none';
     onClick?: (ev: MouseEvent<HTMLElement>) => void;
     variant?: GlobalVariants | GlobalVariantExtended;
     className?: string;

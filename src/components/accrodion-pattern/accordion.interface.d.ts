@@ -30,7 +30,7 @@ export interface AccordionPatternProps extends Partial<Omit<HeaderLongProps, 'va
     buttonText?: string;
     buttonOnClick?: (ev: MouseEvent<HTMLElement>) => void;
     buttonUrl?: string;
-    buttonVariant?: ZsdButtonVariant;
+    buttonVariant?: 'primary-dark' | 'secondary-dark';
     buttonIcon?: FunctionalIconNames;
     id?: string;
     target?: LinkTarget;
