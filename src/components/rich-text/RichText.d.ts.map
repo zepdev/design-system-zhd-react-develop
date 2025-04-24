@@ -1,1 +1,1 @@
-{"version":3,"file":"RichText.d.ts","sourceRoot":"","sources":["../../../../src/components/rich-text/RichText.tsx"],"names":[],"mappings":"AAMA,OAAO,EAAyD,aAAa,EAAE,MAAM,sBAAsB,CAAC;AA4C5G,QAAA,MAAM,QAAQ,yFAQX,aAAa,uDAsEf,CAAC;AAEF,OAAO,EAAE,QAAQ,EAAE,CAAC"}
+{"version":3,"file":"RichText.d.ts","sourceRoot":"","sources":["../../../../src/components/rich-text/RichText.tsx"],"names":[],"mappings":"AAMA,OAAO,EAAyD,aAAa,EAAE,MAAM,sBAAsB,CAAC;AA4C5G,QAAA,MAAM,QAAQ,uGASX,aAAa,uDA4Ef,CAAC;AAEF,OAAO,EAAE,QAAQ,EAAE,CAAC"}

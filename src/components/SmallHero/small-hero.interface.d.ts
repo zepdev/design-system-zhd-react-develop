@@ -15,5 +15,7 @@ export interface SmallHeroProps {
     buttonPrimaryIconPosition?: 'left' | 'right' | 'none';
     buttonSecondaryIconPosition?: 'left' | 'right' | 'none';
     isErrorPage?: boolean;
+    buttonPrimaryAction?: 'none' | 'open-external-link' | 'open-internal-link' | 'download-file';
+    buttonSecondaryAction?: 'none' | 'open-external-link' | 'open-internal-link' | 'download-file';
 }
 //# sourceMappingURL=small-hero.interface.d.ts.map

@@ -1,5 +1,5 @@
 import { BlocksContent } from '@strapi/blocks-react-renderer';
-import { FunctionalIconNames } from '@zepdev/design-system-component-library-react';
+import { FunctionalIconNames, LinkTarget } from '@zepdev/design-system-component-library-react';
 import { MouseEvent } from 'react';
 import { GlobalVariantExtended, GlobalVariants } from '../../interfaces/global-variants';
 
@@ -12,6 +12,7 @@ export interface LinkComponentProps {
     className?: string;
     headerButtonIcon?: FunctionalIconNames;
     headerButtonIconPosition?: 'left' | 'right' | 'none';
+    target?: LinkTarget;
 }
 export interface HeaderLongComponentProps extends LinkComponentProps {
     tagline?: string;
