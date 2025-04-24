@@ -13,22 +13,24 @@ const LinkComponent = ({
   onClick,
   headerButtonIconPosition,
   headerButtonIcon,
+  target,
 }: LinkComponentProps) => {
   switch (type) {
     // case 'link':
     //   return (
     //     <Link
-    //       label={linkText || ''}
-    //       href={linkHref}
-    //       iconPlacement="after"
-    //       mode={LinkMode.Standalone}
-    //       icon="arrow-long-right"
+    //     label={linkText || ''}
+      //    href={linkHref}
+        //  iconPlacement="after"
+        //  mode={LinkMode.Standalone}
+         // icon="arrow-long-right"
+        //  target={target}
     //     />
     //   );
     case 'link':
       return (
         <Link
-          target={linkHref?.startsWith('http') ? LinkTarget.Blank : LinkTarget.Self}
+          target={target}
           className={clsx(
             'zep-text-indigo-500',
             'zep-h-fit',
@@ -81,8 +83,10 @@ export const HeaderLongComponent: React.FC<HeaderLongComponentProps> = ({
   tagline,
   headline,
   description,
+  target,
   ...linkProps
 }) => {
+  console.log('🚀 ~ linkProps:', linkProps);
   return (
     <div
       className={clsx('zep-w-full', 'zep-flex', 'zep-flex-col', 'zep-gap-1.5', 'md:zep-gap-2.5', 'zep-items-start')}
@@ -126,7 +130,7 @@ export const HeaderLongComponent: React.FC<HeaderLongComponentProps> = ({
             {headline}
           </h2>
           {/* Button or Link or None */}
-          <LinkComponent {...linkProps} />
+          <LinkComponent target={target} {...linkProps} />
         </div>
       </div>
       {description && description.length > 0 && <RichText content={description} />}

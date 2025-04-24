@@ -22,7 +22,7 @@ describe('ProcessChain component', () => {
   ];
 
   test('renders list items', () => {
-    render(<ProcessChain contentItems={contentItems} linkChain={false} />);
+    render(<ProcessChain contentItems={contentItems} linkChain={false} id={undefined} headline={undefined} />);
 
     const listItemElements = screen.getAllByRole('listitem');
     expect(listItemElements.length).toBe(2);

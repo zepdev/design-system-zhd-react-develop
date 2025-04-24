@@ -1,6 +1,6 @@
 import { ZsdButtonVariant } from '@/components/zsd-button';
 import { BlocksContent } from '@strapi/blocks-react-renderer';
-import { FunctionalIconNames, TableColumn } from '@zepdev/design-system-component-library-react';
+import { FunctionalIconNames, LinkTarget, TableColumn } from '@zepdev/design-system-component-library-react';
 import { MouseEvent } from 'react';
 import { GlobalVariants } from '../../interfaces/global-variants';
 import { HeaderLongProps } from '../header-long';
@@ -28,11 +28,12 @@ export interface AccordionPatternProps extends Partial<Omit<HeaderLongProps, 'va
   bottomDescription?: BlocksContent;
   contents: AccordionContent[];
   variant?: GlobalVariants;
-  headerPosition?: 'top' | 'left';
+  headerPosition?: 'top' | 'left' | 'none';
   buttonText?: string;
   buttonOnClick?: (ev: MouseEvent<HTMLElement>) => void;
   buttonUrl?: string;
   buttonVariant?: 'primary-dark' | 'secondary-dark';
   buttonIcon?: FunctionalIconNames;
   id?: string;
+  target?: LinkTarget;
 }

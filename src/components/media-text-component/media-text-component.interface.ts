@@ -5,14 +5,14 @@ import { ReactNode } from 'react';
 export interface MediaTextComponentContentProps extends MediaTextComponentImageProps, MediaTextComponentButtonProps {
   imageAlt?: string;
   mediaUrl?: string;
-  mediaAlignment?: 'left' | 'right';
+  mediaAlignment?: 'left' | 'right' | 'none';
   buttonText?: string;
   headline?: string;
   tagline?: string;
   type?: 'primary-dark' | 'secondary-dark';
   content: BlocksContent;
-  imageOrientation?: 'horizontal' | 'vertical';
-  contentAlignment?: 'start' | 'center';
+  imageOrientation?: 'horizontal' | 'vertical' | 'none';
+  contentAlignment?: 'start' | 'center' | 'none';
 }
 
 export interface MediaTextComponentBodyProps {
@@ -22,16 +22,16 @@ export interface MediaTextComponentBodyProps {
 export interface MediaTextComponentImageProps {
   alt: string;
   mediaUrl?: string;
-  mediaType?: 'image' | 'video';
+  mediaType?: 'image' | 'video' | 'none';
   videoThumbnail?: string;
-  imageOrientation?: 'horizontal' | 'vertical';
-  mediaAlignment?: 'left' | 'right';
+  imageOrientation?: 'horizontal' | 'vertical' | 'none';
+  mediaAlignment?: 'left' | 'right' | 'none';
 }
 
 export interface MediaTextComponentButtonProps {
   labelPrimary?: string;
   iconPrimary?: FunctionalIconNames;
-  iconPrimaryPosition?: 'left' | 'right';
+  iconPrimaryPosition?: 'left' | 'right' | 'none';
   buttonUrl?: string;
-  buttonAction?: 'open-internal-link' | 'open-external-link' | 'download-file';
+  buttonAction?: 'open-internal-link' | 'open-external-link' | 'download-file' | 'none';
 }

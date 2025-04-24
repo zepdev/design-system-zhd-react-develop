@@ -1,6 +1,7 @@
-import { Link, LinkMode, LinkTarget } from '@zepdev/design-system-component-library-react';
+import { FunctionalIconNames, Link, LinkMode, LinkTarget } from '@zepdev/design-system-component-library-react';
 import clsx from 'clsx';
 import { FC } from 'react';
+import { getUrlWithTrailingSlash } from '../../utils/getUrlWithTrailingSlash';
 import { CardProps } from './card.interface';
 
 export const Card: FC<CardProps> = ({
@@ -10,12 +11,15 @@ export const Card: FC<CardProps> = ({
   title,
   description,
   linkLabel = '',
-  linkSrc,
   url,
+  icon,
+  iconPosition,
   linkType,
 }: CardProps) => {
   return (
     <button
+      data-testid="card-component"
+      type="button"
       className={clsx(
         'zep-flex',
         'zep-group',
@@ -24,14 +28,18 @@ export const Card: FC<CardProps> = ({
         'zep-zep-focus-visible:zep-zep-outline-none',
         'zep-border-greyscale-400',
         'hover:zep-border-primary-hover',
-        'zep-max-w-[600px]',
+        'zep-cursor-pointer',
+        'zep-w-full',
+        'zep-max-w-[700px]',
+        'zep-min-w-[290px]',
+        'sm:zep-min-w-[348px]',
+        'lg:zep-min-w-[330px]',
       )}
-      data-testid="card-component"
     >
       <img
         src={imageSrc}
         alt={imageAlt}
-        className={clsx('zep-aspect-16.9', 'zep-w-full', 'zep-object-cover', 'zep-h-full', 'zep-max-h-[272px]')}
+        className={clsx('zep-aspect-[16/9]', 'zep-w-full', 'zep-object-cover', 'zep-h-full')}
         data-testid="card-component-image"
       />
       <div className={clsx('zep-flex', 'zep-flex-col', 'zep-p-1', 'sm:zep-p-1.5', 'md:zep-p-2.5', 'zep-items-start')}>
@@ -53,7 +61,7 @@ export const Card: FC<CardProps> = ({
           <h4
             data-testid="card-component-title"
             className={clsx(
-              'zep-typography-headlineXS-fluid-cqi zep-hyphens-auto zep-text-left zep-text-typography-dark-100 group-hover:zep-underline zep-break-normal',
+              'zep-typography-headlineXS-fluid-cqi zep-hyphens-auto zep-text-left zep-text-typography-dark-100',
               description ? 'zep-mb-0.5' : '',
             )}
           >
@@ -72,16 +80,16 @@ export const Card: FC<CardProps> = ({
             {description}
           </p>
         )}
-        {linkSrc && (
+        {url && (
           <Link
+            target={linkType === 'external-link' ? LinkTarget.Blank : LinkTarget.Self}
             className="zep-text-primary-default zep-mt-1.5"
             data-testid="card-component-link"
-            icon={linkType === 'download' ? 'download' : 'arrow-long-right'}
-            iconPlacement="after"
+            icon={icon !== 'none' ? (icon as FunctionalIconNames) : undefined}
+            iconPlacement={iconPosition}
             label={linkLabel}
             mode={LinkMode.Standalone}
-            href={linkSrc}
-            target={linkType === 'internal-link' ? LinkTarget.Self : LinkTarget.Blank}
+            href={getUrlWithTrailingSlash(url)}
           />
         )}
       </div>

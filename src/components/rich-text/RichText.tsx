@@ -56,6 +56,7 @@ const RichText = ({
   buttonIcon,
   type,
   buttonIconPosition,
+  buttonAction,
   buttonUrl,
 }: RichTextProps) => {
   if (content.length === 1 && content[0].children[0]?.type === 'text' && content[0].children[0]?.text === '') {
@@ -108,13 +109,19 @@ const RichText = ({
           ),
         }}
         modifiers={{
-          bold: ({ children }) => <span className="zep-typography-bodyStrong">{children}</span>,
+          bold: ({ children }) => <span className="zep-typography-bodyStrong zep-font-600">{children}</span>,
           italic: ({ children }) => <span className="zep-italic">{children}</span>,
         }}
       />
       {children && <div className="zep-w-full">{children}</div>}
       {button && (
-        <a className="zep-max-w-max" href={buttonUrl}>
+        <a
+          className="zep-max-w-max"
+          href={buttonUrl}
+          target={buttonAction === 'open-external-link' ? '_blank' : '_self'}
+          rel="noreferrer"
+          download={buttonAction === 'download-file'}
+        >
           <Button
             label={button}
             title={button}

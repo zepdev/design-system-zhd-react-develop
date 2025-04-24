@@ -7,5 +7,4 @@ export interface ContactFormLargeProps {
   locale: LocaleVariants;
   loading?: boolean;
   privacyPolicyUrl: string;
-  preferencesUrl: string;
 }

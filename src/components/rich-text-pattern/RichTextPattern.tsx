@@ -12,6 +12,7 @@ export const RichTextPattern: FC<RichTextPatternProps> = ({
   buttonIcon,
   buttonIconPosition,
   buttonUrl,
+  buttonAction,
   ...headerProps
 }) => {
   return (
@@ -26,6 +27,7 @@ export const RichTextPattern: FC<RichTextPatternProps> = ({
         buttonIcon={buttonIcon}
         buttonIconPosition={buttonIconPosition}
         buttonUrl={buttonUrl}
+        buttonAction={buttonAction}
       />
     </Layout>
   );
