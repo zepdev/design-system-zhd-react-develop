@@ -10,7 +10,7 @@ interface ResponsivePlayerProps {
   description?: string;
 }
 
-type OneTrustType = {
+export type OneTrustType = {
   ToggleInfoDisplay: () => void;
   OnConsentChanged: (callback: () => void) => void;
 };

@@ -9,8 +9,10 @@ global.ResizeObserver = class {
 
 describe('Instagram Feed component', () => {
   it('should render', () => {
-    const { getByTestId } = render(<InstagramFeed feed={[]} headline="" />);
-    const instagramFeed = getByTestId('zep-instagram-feed');
+    const { getByTestId } = render(
+      <InstagramFeed feed={[]} cookiesLayerDescription="" cookiesResetLabel="" headline="" />,
+    );
+    const instagramFeed = getByTestId('video-cookie-layer');
     expect(instagramFeed).toBeInTheDocument();
   });
-})
+});
