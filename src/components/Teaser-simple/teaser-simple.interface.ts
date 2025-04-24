@@ -1,7 +1,8 @@
-import { ButtonHTMLAttributes, MouseEvent } from 'react';
+import { ButtonHTMLAttributes } from 'react';
 export interface TeaserSimpleProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   teaserText: string;
   buttonText: string;
   buttonTitle?: string;
-  onClick?: (ev: MouseEvent<HTMLElement>) => void;
+  buttonUrl?: string;
+  buttonAction?: 'none' | 'open-external-link' | 'open-internal-link' | 'download-file';
 }

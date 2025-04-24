@@ -18,7 +18,6 @@ export const Card: FC<CardProps> = ({
 }: CardProps) => {
   return (
     <button
-      onClick={() => (window.location.href = getUrlWithTrailingSlash(url) ?? '/')}
       data-testid="card-component"
       type="button"
       className={clsx(
@@ -83,10 +82,9 @@ export const Card: FC<CardProps> = ({
         )}
         {url && (
           <Link
-            target={url?.startsWith('http') ? LinkTarget.Blank : LinkTarget.Self}
+            target={linkType === 'external-link' ? LinkTarget.Blank : LinkTarget.Self}
             className="zep-text-primary-default zep-mt-1.5"
             data-testid="card-component-link"
-            type={linkType}
             icon={icon !== 'none' ? (icon as FunctionalIconNames) : undefined}
             iconPlacement={iconPosition}
             label={linkLabel}
