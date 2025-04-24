@@ -4,6 +4,9 @@ import { HeaderLongComponent } from '../header-long-component';
 import { Layout } from '../layout';
 import { Scrollbar } from '../scrollbar';
 import { InstagramFeedProps } from './InstagramFeed.interface';
+import useVideoCookieCheck from '../video/useVideoComplianceCheck';
+import { VideoCookieLayer } from '../video-cookie-layer/VideoCookieLayer';
+import { OneTrustType } from '../video/ResponsivePlayer';
 
 const Images: FC<Pick<InstagramFeedProps, 'feed'>> = ({ feed }) => {
   return feed.map(({ src, alt, url }, index) => (
@@ -34,8 +37,26 @@ const Images: FC<Pick<InstagramFeedProps, 'feed'>> = ({ feed }) => {
   ));
 };
 
-export const InstagramFeed: FC<InstagramFeedProps> = ({ feed, ...headerProps }) => {
+export const InstagramFeed: FC<InstagramFeedProps> = ({ feed, cookiesLayerDescription, cookiesResetLabel, ...headerProps }) => {
+  const { canPlay } = useVideoCookieCheck();
+  const resetCookies = () => {
+    if (
+      typeof window !== 'undefined' &&
+      typeof (window as Window & typeof globalThis & { OneTrust: OneTrustType }).OneTrust !== 'undefined'
+    ) {
+      const OneTrust = (window as Window & typeof globalThis & { OneTrust: OneTrustType }).OneTrust;
+      OneTrust?.OnConsentChanged(() => {
+        window.location.reload();
+      });
+      OneTrust?.ToggleInfoDisplay();
+    }
+  };
   return (
+    <>
+    {!canPlay ? (
+      <VideoCookieLayer label={cookiesResetLabel} description={cookiesLayerDescription} onClickCookies={resetCookies} />
+      
+    ) : (
     <Layout
       wrapperClassname="zep-bg-greyscale-200 zep-pt-1 md:zep-pt-1.5 lg:zep-pt-2.5"
       testId="zep-instagram-feed"
@@ -51,5 +72,7 @@ export const InstagramFeed: FC<InstagramFeedProps> = ({ feed, ...headerProps }) 
         </div>
       </Scrollbar>
     </Layout>
+  )}
+  </>
   );
 };
