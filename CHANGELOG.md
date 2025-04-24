@@ -1,3 +1,18 @@
+# [1.6.0](https://github.com/zepdev/design-system-zhd-react/compare/v1.5.16...v1.6.0) (2025-04-24)
+
+
+### Bug Fixes
+
+* fix linting error ([6524f2e](https://github.com/zepdev/design-system-zhd-react/commit/6524f2e4dc32bac956d84b4b3c5abd0468dd36d7))
+* header long icon ([83771ba](https://github.com/zepdev/design-system-zhd-react/commit/83771ba086c3089fefde32d8cb7c5a7ad5e1d40f))
+* header long icon ([b5dcc01](https://github.com/zepdev/design-system-zhd-react/commit/b5dcc0199ac5def555466bdd65fb753275e8aa09))
+* instagram feed cookie covered only images ([d61513c](https://github.com/zepdev/design-system-zhd-react/commit/d61513c4da2219be004bf67afa5ead0e6c64d8df))
+
+
+### Features
+
+* add zsd buttons to components ([79a7a52](https://github.com/zepdev/design-system-zhd-react/commit/79a7a529448b513b87d7b066db252aa019e36d88))
+
 ## [1.5.16](https://github.com/zepdev/design-system-zhd-react/compare/v1.5.15...v1.5.16) (2025-04-24)
 
 
