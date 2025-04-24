@@ -2,7 +2,6 @@ import { RichText } from '@/components/rich-text';
 import { Link, LinkMode } from '@zepdev/design-system-component-library-react';
 import { clsx } from 'clsx';
 import React from 'react';
-import { getUrlWithTrailingSlash } from '../../utils/getUrlWithTrailingSlash';
 import { Button, ZsdButtonVariant } from '../zsd-button';
 import { HeaderLongComponentProps, LinkComponentProps } from './HeaderLongComponent.interface';
 
@@ -30,6 +29,10 @@ const LinkComponent = ({
     case 'link':
       return (
         <Link
+          label={linkText || ''}
+          href={linkHref}
+          mode={LinkMode.Standalone}
+          icon={headerButtonIcon || 'arrow-long-right'}
           target={target}
           className={clsx(
             'zep-text-indigo-500',
@@ -41,11 +44,7 @@ const LinkComponent = ({
             'hover:zep-font-500',
             'zep-cursor-pointer',
           )}
-          label={linkText || ''}
-          href={getUrlWithTrailingSlash(linkHref)}
           iconPlacement={headerButtonIconPosition === 'left' ? 'before' : 'after'}
-          mode={LinkMode.Standalone}
-          icon={headerButtonIcon || 'arrow-long-right'}
         />
       );
     // eslint-disable-next-line no-duplicate-case
