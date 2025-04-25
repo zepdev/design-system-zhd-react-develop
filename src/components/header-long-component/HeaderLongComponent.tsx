@@ -85,7 +85,6 @@ export const HeaderLongComponent: React.FC<HeaderLongComponentProps> = ({
   target,
   ...linkProps
 }) => {
-  console.log('🚀 ~ linkProps:', linkProps);
   return (
     <div
       className={clsx('zep-w-full', 'zep-flex', 'zep-flex-col', 'zep-gap-1.5', 'md:zep-gap-2.5', 'zep-items-start')}
