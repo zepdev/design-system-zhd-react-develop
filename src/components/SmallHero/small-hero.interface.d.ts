@@ -6,6 +6,7 @@ export interface SmallHeroProps {
     headline?: string;
     subline?: string;
     description?: string;
+    variant?: 'default' | 'indigo';
     buttonPrimary?: string;
     buttonSecondary?: string;
     buttonPrimaryUrl?: string;
