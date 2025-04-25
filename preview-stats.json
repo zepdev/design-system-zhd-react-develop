@@ -571,20 +571,20 @@
       ]
     },
     {
-      "id": "./src/components/Teaser-simple/Teaser-simple.tsx",
-      "name": "./src/components/Teaser-simple/Teaser-simple.tsx",
-      "reasons": [
-        {
-          "moduleName": "./src/components/Teaser-simple/Teaser-simple.stories.tsx"
-        }
-      ]
-    },
-    {
       "id": "./src/components/SmallHero/SmallHero.tsx",
       "name": "./src/components/SmallHero/SmallHero.tsx",
       "reasons": [
         {
           "moduleName": "./src/components/SmallHero/SmallHero.stories.tsx"
+        }
+      ]
+    },
+    {
+      "id": "./src/components/Teaser-simple/Teaser-simple.tsx",
+      "name": "./src/components/Teaser-simple/Teaser-simple.tsx",
+      "reasons": [
+        {
+          "moduleName": "./src/components/Teaser-simple/Teaser-simple.stories.tsx"
         }
       ]
     },
@@ -602,10 +602,10 @@
           "moduleName": "./src/components/card-square-list/CardSquareList.stories.tsx"
         },
         {
-          "moduleName": "./src/components/gallery/Gallery.stories.tsx"
+          "moduleName": "./src/components/header-long-component/HeaderLongComponent.stories.tsx"
         },
         {
-          "moduleName": "./src/components/header-long-component/HeaderLongComponent.stories.tsx"
+          "moduleName": "./src/components/gallery/Gallery.stories.tsx"
         },
         {
           "moduleName": "./src/components/header-long/HeaderLong.stories.tsx"
@@ -659,13 +659,13 @@
           "moduleName": "./src/components/lead-text/LeadText.tsx"
         },
         {
-          "moduleName": "./src/components/news-details/NewsDetails.tsx"
-        },
-        {
           "moduleName": "./src/components/navigation/Navigation.tsx"
         },
         {
           "moduleName": "./src/components/partner-communication/PartnerCommunication.tsx"
+        },
+        {
+          "moduleName": "./src/components/news-details/NewsDetails.tsx"
         },
         {
           "moduleName": "./src/components/product-highlight/Product-highlight.tsx"
@@ -727,15 +727,6 @@
       ]
     },
     {
-      "id": "./src/components/card-event-pattern/CardEventPattern.tsx",
-      "name": "./src/components/card-event-pattern/CardEventPattern.tsx",
-      "reasons": [
-        {
-          "moduleName": "./src/components/card-event-pattern/CardEventPattern.stories.tsx"
-        }
-      ]
-    },
-    {
       "id": "./src/components/card-event-pattern/card-event/CardEvent.tsx",
       "name": "./src/components/card-event-pattern/card-event/CardEvent.tsx",
       "reasons": [
@@ -744,6 +735,15 @@
         },
         {
           "moduleName": "./src/components/card-event-pattern/card-event/index.ts"
+        }
+      ]
+    },
+    {
+      "id": "./src/components/card-event-pattern/CardEventPattern.tsx",
+      "name": "./src/components/card-event-pattern/CardEventPattern.tsx",
+      "reasons": [
+        {
+          "moduleName": "./src/components/card-event-pattern/CardEventPattern.stories.tsx"
         }
       ]
     },
@@ -770,10 +770,10 @@
           "moduleName": "./src/components/link-list-item/LinkListItem.stories.tsx"
         },
         {
-          "moduleName": "./src/components/media-text-component/MediaTextComponent.stories.tsx"
+          "moduleName": "./src/components/media-text-component-pattern/MediaTextComponentPattern.stories.tsx"
         },
         {
-          "moduleName": "./src/components/media-text-component-pattern/MediaTextComponentPattern.stories.tsx"
+          "moduleName": "./src/components/media-text-component/MediaTextComponent.stories.tsx"
         },
         {
           "moduleName": "./src/components/media-text-small-pattern/MediaTextSmallPattern.stories.tsx"
@@ -847,15 +847,6 @@
       ]
     },
     {
-      "id": "./src/components/contact-section/ContactSection.tsx",
-      "name": "./src/components/contact-section/ContactSection.tsx",
-      "reasons": [
-        {
-          "moduleName": "./src/components/contact-section/ContactSection.stories.tsx"
-        }
-      ]
-    },
-    {
       "id": "./src/components/contact-form/ContactForm.tsx",
       "name": "./src/components/contact-form/ContactForm.tsx",
       "reasons": [
@@ -868,11 +859,11 @@
       ]
     },
     {
-      "id": "./src/components/gallery/Gallery.tsx",
-      "name": "./src/components/gallery/Gallery.tsx",
+      "id": "./src/components/contact-section/ContactSection.tsx",
+      "name": "./src/components/contact-section/ContactSection.tsx",
       "reasons": [
         {
-          "moduleName": "./src/components/gallery/Gallery.stories.tsx"
+          "moduleName": "./src/components/contact-section/ContactSection.stories.tsx"
         }
       ]
     },
@@ -920,10 +911,10 @@
           "moduleName": "./src/components/multi-link-list/MultiLinkList.tsx"
         },
         {
-          "moduleName": "./src/components/process-chain/ProcessChain.tsx"
+          "moduleName": "./src/components/news-details/NewsDetails.tsx"
         },
         {
-          "moduleName": "./src/components/news-details/NewsDetails.tsx"
+          "moduleName": "./src/components/process-chain/ProcessChain.tsx"
         },
         {
           "moduleName": "./src/components/product-highlight/Product-highlight.tsx"
@@ -936,6 +927,15 @@
         },
         {
           "moduleName": "./src/components/video/Video.tsx"
+        }
+      ]
+    },
+    {
+      "id": "./src/components/gallery/Gallery.tsx",
+      "name": "./src/components/gallery/Gallery.tsx",
+      "reasons": [
+        {
+          "moduleName": "./src/components/gallery/Gallery.stories.tsx"
         }
       ]
     },
@@ -970,15 +970,6 @@
       ]
     },
     {
-      "id": "./src/components/infographic-image-pattern/InfographicImagePattern.tsx",
-      "name": "./src/components/infographic-image-pattern/InfographicImagePattern.tsx",
-      "reasons": [
-        {
-          "moduleName": "./src/components/infographic-image-pattern/InfographicImagePattern.stories.tsx"
-        }
-      ]
-    },
-    {
       "id": "./src/assets/temp-image.jpeg",
       "name": "./src/assets/temp-image.jpeg",
       "reasons": [
@@ -993,6 +984,15 @@
       "reasons": [
         {
           "moduleName": "./src/components/hero/Hero.stories.tsx"
+        }
+      ]
+    },
+    {
+      "id": "./src/components/infographic-image-pattern/InfographicImagePattern.tsx",
+      "name": "./src/components/infographic-image-pattern/InfographicImagePattern.tsx",
+      "reasons": [
+        {
+          "moduleName": "./src/components/infographic-image-pattern/InfographicImagePattern.stories.tsx"
         }
       ]
     },
@@ -1027,23 +1027,32 @@
       ]
     },
     {
-      "id": "./src/assets/horz.png",
-      "name": "./src/assets/horz.png",
+      "id": "./src/assets/verti.png",
+      "name": "./src/assets/verti.png",
       "reasons": [
+        {
+          "moduleName": "./src/components/media-text-component-pattern/MediaTextComponentPattern.stories.tsx"
+        },
         {
           "moduleName": "./src/components/media-text-component/MediaTextComponent.stories.tsx"
         }
       ]
     },
     {
-      "id": "./src/assets/verti.png",
-      "name": "./src/assets/verti.png",
+      "id": "./src/components/media-text-component-pattern/MediaTextComponentPattern.tsx",
+      "name": "./src/components/media-text-component-pattern/MediaTextComponentPattern.tsx",
+      "reasons": [
+        {
+          "moduleName": "./src/components/media-text-component-pattern/MediaTextComponentPattern.stories.tsx"
+        }
+      ]
+    },
+    {
+      "id": "./src/assets/horz.png",
+      "name": "./src/assets/horz.png",
       "reasons": [
         {
           "moduleName": "./src/components/media-text-component/MediaTextComponent.stories.tsx"
-        },
-        {
-          "moduleName": "./src/components/media-text-component-pattern/MediaTextComponentPattern.stories.tsx"
         }
       ]
     },
@@ -1056,15 +1065,6 @@
         },
         {
           "moduleName": "./src/components/media-text-component-pattern/MediaTextComponentPattern.tsx"
-        }
-      ]
-    },
-    {
-      "id": "./src/components/media-text-component-pattern/MediaTextComponentPattern.tsx",
-      "name": "./src/components/media-text-component-pattern/MediaTextComponentPattern.tsx",
-      "reasons": [
-        {
-          "moduleName": "./src/components/media-text-component-pattern/MediaTextComponentPattern.stories.tsx"
         }
       ]
     },
@@ -1120,15 +1120,6 @@
       ]
     },
     {
-      "id": "./src/components/process-chain/ProcessChain.tsx",
-      "name": "./src/components/process-chain/ProcessChain.tsx",
-      "reasons": [
-        {
-          "moduleName": "./src/components/process-chain/procesChain.stories.tsx"
-        }
-      ]
-    },
-    {
       "id": "./src/components/partner-communication/PartnerCommunication.tsx",
       "name": "./src/components/partner-communication/PartnerCommunication.tsx",
       "reasons": [
@@ -1147,6 +1138,15 @@
       ]
     },
     {
+      "id": "./src/components/process-chain/ProcessChain.tsx",
+      "name": "./src/components/process-chain/ProcessChain.tsx",
+      "reasons": [
+        {
+          "moduleName": "./src/components/process-chain/procesChain.stories.tsx"
+        }
+      ]
+    },
+    {
       "id": "./src/components/zsd-button/index.ts",
       "name": "./src/components/zsd-button/index.ts",
       "reasons": [
@@ -1154,10 +1154,10 @@
           "moduleName": "./src/components/product-highlight/Product-highlight.stories.tsx"
         },
         {
-          "moduleName": "./src/components/Teaser-simple/Teaser-simple.tsx"
+          "moduleName": "./src/components/SmallHero/SmallHero.tsx"
         },
         {
-          "moduleName": "./src/components/SmallHero/SmallHero.tsx"
+          "moduleName": "./src/components/Teaser-simple/Teaser-simple.tsx"
         },
         {
           "moduleName": "./src/components/accrodion-pattern/AccordionPattern.tsx"
@@ -1240,6 +1240,21 @@
       ]
     },
     {
+      "id": "./src/components/video-cookie-layer/VideoCookieLayer.tsx",
+      "name": "./src/components/video-cookie-layer/VideoCookieLayer.tsx",
+      "reasons": [
+        {
+          "moduleName": "./src/components/video-cookie-layer/VideoCookieLayer.stories.tsx"
+        },
+        {
+          "moduleName": "./src/components/instagram-feed/InstagramFeed.tsx"
+        },
+        {
+          "moduleName": "./src/components/video/ResponsivePlayer.tsx"
+        }
+      ]
+    },
+    {
       "id": "./src/components/usp-list/UspList.tsx",
       "name": "./src/components/usp-list/UspList.tsx",
       "reasons": [
@@ -1254,21 +1269,6 @@
       "reasons": [
         {
           "moduleName": "./src/components/video/Video.stories.tsx"
-        }
-      ]
-    },
-    {
-      "id": "./src/components/video-cookie-layer/VideoCookieLayer.tsx",
-      "name": "./src/components/video-cookie-layer/VideoCookieLayer.tsx",
-      "reasons": [
-        {
-          "moduleName": "./src/components/video-cookie-layer/VideoCookieLayer.stories.tsx"
-        },
-        {
-          "moduleName": "./src/components/instagram-feed/InstagramFeed.tsx"
-        },
-        {
-          "moduleName": "./src/components/video/ResponsivePlayer.tsx"
         }
       ]
     },
@@ -1387,11 +1387,14 @@
       ]
     },
     {
-      "id": "./src/components/card-media-pattern/CardMediaPattern.tsx",
-      "name": "./src/components/card-media-pattern/CardMediaPattern.tsx",
+      "id": "./src/components/card-square/CardSquare.tsx",
+      "name": "./src/components/card-square/CardSquare.tsx",
       "reasons": [
         {
-          "moduleName": "./src/components/card-media-pattern/CardMediaPattern.stories.tsx"
+          "moduleName": "./src/components/card-square/index.ts"
+        },
+        {
+          "moduleName": "./src/components/card-square/CardSquare.stories.tsx"
         }
       ]
     },
@@ -1400,10 +1403,10 @@
       "name": "./src/tailwind/styles/focus.ts",
       "reasons": [
         {
-          "moduleName": "./src/components/card-media-pattern/CardMediaPattern.stories.tsx"
+          "moduleName": "./src/components/card-media-component/CardMedia.stories.tsx"
         },
         {
-          "moduleName": "./src/components/card-media-component/CardMedia.stories.tsx"
+          "moduleName": "./src/components/card-media-pattern/CardMediaPattern.stories.tsx"
         },
         {
           "moduleName": "./src/components/form-fields/checkbox/Checkbox.tsx"
@@ -1414,14 +1417,11 @@
       ]
     },
     {
-      "id": "./src/components/card-square/CardSquare.tsx",
-      "name": "./src/components/card-square/CardSquare.tsx",
+      "id": "./src/components/card-media-pattern/CardMediaPattern.tsx",
+      "name": "./src/components/card-media-pattern/CardMediaPattern.tsx",
       "reasons": [
         {
-          "moduleName": "./src/components/card-square/CardSquare.stories.tsx"
-        },
-        {
-          "moduleName": "./src/components/card-square/index.ts"
+          "moduleName": "./src/components/card-media-pattern/CardMediaPattern.stories.tsx"
         }
       ]
     },
@@ -1468,6 +1468,15 @@
       ]
     },
     {
+      "id": "./src/hooks/useMaxChar150.ts",
+      "name": "./src/hooks/useMaxChar150.ts",
+      "reasons": [
+        {
+          "moduleName": "./src/components/SmallHero/SmallHero.tsx"
+        }
+      ]
+    },
+    {
       "id": "./src/components/layout/index.ts",
       "name": "./src/components/layout/index.ts",
       "reasons": [
@@ -1508,10 +1517,10 @@
           "moduleName": "./src/components/infographic-image-pattern/InfographicImagePattern.tsx"
         },
         {
-          "moduleName": "./src/components/instagram-feed/InstagramFeed.tsx"
+          "moduleName": "./src/components/lead-text/LeadText.tsx"
         },
         {
-          "moduleName": "./src/components/lead-text/LeadText.tsx"
+          "moduleName": "./src/components/instagram-feed/InstagramFeed.tsx"
         },
         {
           "moduleName": "./src/components/media-text-component-pattern/MediaTextComponentPattern.tsx"
@@ -1523,19 +1532,19 @@
           "moduleName": "./src/components/multi-link-list/MultiLinkList.tsx"
         },
         {
-          "moduleName": "./src/components/process-chain/ProcessChain.tsx"
+          "moduleName": "./src/components/partner-communication/PartnerCommunication.tsx"
         },
         {
           "moduleName": "./src/components/news-details/NewsDetails.tsx"
         },
         {
-          "moduleName": "./src/components/partner-communication/PartnerCommunication.tsx"
-        },
-        {
-          "moduleName": "./src/components/rich-text-pattern/RichTextPattern.tsx"
+          "moduleName": "./src/components/process-chain/ProcessChain.tsx"
         },
         {
           "moduleName": "./src/components/product-highlight/Product-highlight.tsx"
+        },
+        {
+          "moduleName": "./src/components/rich-text-pattern/RichTextPattern.tsx"
         },
         {
           "moduleName": "./src/components/single-link-list/SingleLinkList.tsx"
@@ -1551,15 +1560,6 @@
         },
         {
           "moduleName": "./src/components/video/Video.tsx"
-        }
-      ]
-    },
-    {
-      "id": "./src/hooks/useMaxChar150.ts",
-      "name": "./src/hooks/useMaxChar150.ts",
-      "reasons": [
-        {
-          "moduleName": "./src/components/SmallHero/SmallHero.tsx"
         }
       ]
     },
@@ -1616,10 +1616,10 @@
           "moduleName": "./src/components/news-details/NewsDetails.tsx"
         },
         {
-          "moduleName": "./src/components/rich-text-pattern/RichTextPattern.tsx"
+          "moduleName": "./src/components/product-highlight/Product-highlight.tsx"
         },
         {
-          "moduleName": "./src/components/product-highlight/Product-highlight.tsx"
+          "moduleName": "./src/components/rich-text-pattern/RichTextPattern.tsx"
         },
         {
           "moduleName": "./src/components/table-pattern/TablePattern.tsx"
@@ -1662,15 +1662,6 @@
         },
         {
           "moduleName": "./src/components/usp-list/UspList.tsx"
-        }
-      ]
-    },
-    {
-      "id": "./src/components/card-event-pattern/card-event/index.ts",
-      "name": "./src/components/card-event-pattern/card-event/index.ts",
-      "reasons": [
-        {
-          "moduleName": "./src/components/card-event-pattern/CardEventPattern.tsx"
         }
       ]
     },
@@ -1726,6 +1717,15 @@
       ]
     },
     {
+      "id": "./src/components/card-event-pattern/card-event/index.ts",
+      "name": "./src/components/card-event-pattern/card-event/index.ts",
+      "reasons": [
+        {
+          "moduleName": "./src/components/card-event-pattern/CardEventPattern.tsx"
+        }
+      ]
+    },
+    {
       "id": "./src/components/card-media-component/index.ts",
       "name": "./src/components/card-media-component/index.ts",
       "reasons": [
@@ -1757,10 +1757,10 @@
           "moduleName": "./src/components/contact-form-large/ContactFormLarge.tsx"
         },
         {
-          "moduleName": "./src/components/footer/Footer.tsx"
+          "moduleName": "./src/components/contact-form/ContactForm.tsx"
         },
         {
-          "moduleName": "./src/components/contact-form/ContactForm.tsx"
+          "moduleName": "./src/components/footer/Footer.tsx"
         },
         {
           "moduleName": "./src/components/link-list-item/LinkListItem.tsx"
@@ -1782,30 +1782,6 @@
       "reasons": [
         {
           "moduleName": "./src/components/card-square-list/CardSquareList.tsx"
-        }
-      ]
-    },
-    {
-      "id": "./src/components/multi-link-list/index.ts",
-      "name": "./src/components/multi-link-list/index.ts",
-      "reasons": [
-        {
-          "moduleName": "./src/components/contact-section/ContactSection.tsx"
-        },
-        {
-          "moduleName": "./src/components/footer/Footer.tsx"
-        },
-        {
-          "moduleName": "./src/components/contact-form/ContactForm.tsx"
-        }
-      ]
-    },
-    {
-      "id": "./src/components/single-link-list/index.ts",
-      "name": "./src/components/single-link-list/index.ts",
-      "reasons": [
-        {
-          "moduleName": "./src/components/contact-section/ContactSection.tsx"
         }
       ]
     },
@@ -1869,6 +1845,30 @@
         },
         {
           "moduleName": "./src/components/contact-form/ContactForm.tsx"
+        }
+      ]
+    },
+    {
+      "id": "./src/components/multi-link-list/index.ts",
+      "name": "./src/components/multi-link-list/index.ts",
+      "reasons": [
+        {
+          "moduleName": "./src/components/contact-section/ContactSection.tsx"
+        },
+        {
+          "moduleName": "./src/components/contact-form/ContactForm.tsx"
+        },
+        {
+          "moduleName": "./src/components/footer/Footer.tsx"
+        }
+      ]
+    },
+    {
+      "id": "./src/components/single-link-list/index.ts",
+      "name": "./src/components/single-link-list/index.ts",
+      "reasons": [
+        {
+          "moduleName": "./src/components/contact-section/ContactSection.tsx"
         }
       ]
     },
