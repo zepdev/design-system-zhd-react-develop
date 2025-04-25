@@ -26,7 +26,6 @@ export const AccordionPattern: React.FC<AccordionPatternProps> = ({
   buttonUrl,
   ...headerProps
 }) => {
-  console.log('hhhhhhh', headline, headerPosition, type);
   return (
     <Layout
       id={id}
