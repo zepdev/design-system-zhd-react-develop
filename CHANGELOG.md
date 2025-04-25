@@ -1,3 +1,10 @@
+## [1.6.1](https://github.com/zepdev/design-system-zhd-react/compare/v1.6.0...v1.6.1) (2025-04-25)
+
+
+### Bug Fixes
+
+* marked the whole card clickable and also adjsut the iamge height with content ([913ea2e](https://github.com/zepdev/design-system-zhd-react/commit/913ea2eea108cceea434d9a85f1ef546540c29c3))
+
 # [1.6.0](https://github.com/zepdev/design-system-zhd-react/compare/v1.5.16...v1.6.0) (2025-04-24)
 
 
