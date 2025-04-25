@@ -171,7 +171,8 @@ export const SmallHero: FC<SmallHeroProps> = ({
         <div
           className={clsx(
             'zep-absolute',
-            {'zep-bg-gradient-to-r zep-from-[rgba(0,0,0,0.85)]': variant === 'default'},
+            //{'zep-bg-gradient-to-r zep-from-[rgba(0,0,0,0.85)]': variant === 'default'},
+            'zep-bg-gradient-to-r zep-from-[rgba(0,0,0,0.85)]',
             'max-md:zep-hidden',
             'md:zep-block',
             'zep-absolute',
