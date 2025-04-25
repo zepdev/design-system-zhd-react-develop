@@ -1,3 +1,11 @@
+## [1.6.5](https://github.com/zepdev/design-system-zhd-react/compare/v1.6.4...v1.6.5) (2025-04-25)
+
+
+### Bug Fixes
+
+* added gradiant overlay for all variant ([ddc13f4](https://github.com/zepdev/design-system-zhd-react/commit/ddc13f407426b4124e99e2b3ccaf481205209fdd))
+* added indigo variant in SmallHero ([6c0a3e7](https://github.com/zepdev/design-system-zhd-react/commit/6c0a3e79d518dcea1e44f74f22429cf18124d358))
+
 ## [1.6.4](https://github.com/zepdev/design-system-zhd-react/compare/v1.6.3...v1.6.4) (2025-04-25)
 
 
