@@ -1,3 +1,10 @@
+## [1.6.4](https://github.com/zepdev/design-system-zhd-react/compare/v1.6.3...v1.6.4) (2025-04-25)
+
+
+### Bug Fixes
+
+* font setting ([d38ccf7](https://github.com/zepdev/design-system-zhd-react/commit/d38ccf7cd8dca6db1a8b07fb373720c176c0eb12))
+
 ## [1.6.3](https://github.com/zepdev/design-system-zhd-react/compare/v1.6.2...v1.6.3) (2025-04-25)
 
 
