@@ -45,6 +45,7 @@ const MediaTextComponent = ({
           'zep-gap-1.5',
           'md:zep-gap-2.5',
           'xl:zep-gap-5',
+
           mediaAlignment === 'left' ? 'md:zep-flex-row' : 'md:zep-flex-row-reverse',
           contentAlignment === 'center' ? 'zep-items-center' : 'zep-items-start',
         )}
@@ -62,10 +63,7 @@ const MediaTextComponent = ({
             >
               {tagline}
             </p>
-            <h3
-              data-testid="zep-MediaText-headline"
-              className={'zep-typography-headlineMD-fluid-cqi zep-mb-1 zep-break-all'}
-            >
+            <h3 data-testid="zep-MediaText-headline" className={'zep-typography-headlineMD-fluid-cqi zep-mb-1'}>
               {headline}
             </h3>
           </div>

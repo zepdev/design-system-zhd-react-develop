@@ -77,7 +77,7 @@ export const Navigation: FC<NavigationProps> = ({
               }}
               className="zep-group zep-relative zep-cursor-pointer"
             >
-              <p className="zep-typography-navigation zep-text-typography-dark-100 zep-uppercase zep-py-0.25">
+              <p className="zep-typography-navigation zep-text-typography-dark-100 zep-uppercase zep-pt-0.25">
                 {item.label}
               </p>
               <div className="zep-hidden group-hover:zep-block group-hover:zep-absolute zep-w-full">
