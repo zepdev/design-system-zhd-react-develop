@@ -21,17 +21,33 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   args: {
-    items: new Array(2).fill({
+    items: [
+      {
       imageSrc:
         'https://images.unsplash.com/photo-1615842974426-55c372fd8d8b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80',
       tagline: 'Tagline',
       title: 'Title',
       description: 'Here is a description',
       linkLabel: 'Click me',
-      icon: 'arrow-long-right',
+      icon: 'external-link',
+      linktype: 'external-link',
       iconPosition: 'after',
       url: 'https://www.google.com',
-    }),
+    },
+    {
+      imageSrc:
+        'https://images.unsplash.com/photo-1615842974426-55c372fd8d8b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80',
+      tagline: 'Tagline',
+      title: 'Title',
+      description: 'Here is a description, Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ',
+      linkLabel: 'Click me',
+      icon: 'external-link',
+      linktype: 'external-link',
+      iconPosition: 'after',
+      url: 'https://www.google.com',
+    },
+
+  ],
   } as CardPatternProps,
 };
 
@@ -75,8 +91,7 @@ export const With3Items: Story = {
 export const With4Items: Story = {
   args: {
     items: new Array(4).fill({
-      imageSrc:
-        'https://images.unsplash.com/photo-1615842974426-55c372fd8d8b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80',
+      imageSrc:'./assets/long-image.jpeg',
       tagline: 'Tagline',
       title: 'Title',
       description: 'Here is a description',
