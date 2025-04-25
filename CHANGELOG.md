@@ -1,3 +1,10 @@
+## [1.6.3](https://github.com/zepdev/design-system-zhd-react/compare/v1.6.2...v1.6.3) (2025-04-25)
+
+
+### Bug Fixes
+
+* hyphens text ([33b279d](https://github.com/zepdev/design-system-zhd-react/commit/33b279d01e56990a81bb7ed6ccdcbc3db7805333))
+
 ## [1.6.2](https://github.com/zepdev/design-system-zhd-react/compare/v1.6.1...v1.6.2) (2025-04-25)
 
 
