@@ -1,8 +1,6 @@
 'use client';
-
 import clsx from 'clsx';
 import { FC } from 'react';
-import { getFirst150Characters } from '../../hooks/useMaxChar150';
 import { Button, ZsdButtonVariant } from '../zsd-button';
 import { SmallHeroProps } from './small-hero.interface';
 
@@ -11,6 +9,7 @@ export const SmallHero: FC<SmallHeroProps> = ({
   subline,
   imageSrc,
   imageAlt,
+  variant = 'default',
   buttonPrimary,
   buttonPrimaryIcon,
   buttonPrimaryIconPosition,
@@ -23,10 +22,23 @@ export const SmallHero: FC<SmallHeroProps> = ({
   buttonPrimaryAction,
   buttonSecondaryAction,
 }) => {
+ const backgroundStyle =
+    variant === 'indigo'
+      ? { backgroundColor: '#27166F' } // Set background color to indigo
+      : {
+          backgroundImage: `url(${imageSrc})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        };
   return (
     <div data-testid="zep-SHCorporate">
-      <div className="zep-block md:zep-hidden">
-        <img src={imageSrc} alt={imageAlt} className="zep-h-[202px] sm:zep-h-[432px] zep-object-cover" />
+      {/* mobile view */}
+      <div className={clsx(
+          'zep-block',
+          'md:zep-hidden',
+          {'zep-bg-indigo-500 zep-text-typography-light-100': variant === 'indigo'},
+        )}>
+        { variant === 'default' && <img src={imageSrc} alt={imageAlt} className="zep-h-[202px] sm:zep-h-[432px] zep-object-cover" /> }
         <div className="zep-px-1 sm:zep-px-1.5 zep-py-1.5 sm:zep-py-3">
           <h2 data-testid="SHCorporate-headline" className={clsx('zep-typography-headlineXL-fluid-cqi')}>
             {headline}
@@ -37,7 +49,7 @@ export const SmallHero: FC<SmallHeroProps> = ({
           >
             {subline}
           </h3>
-          {description && <p className="zep-mb-1.5">{getFirst150Characters(description)}</p>}
+          {description && <p className="zep-mb-1.5">{description}</p>}
           {buttonPrimary && (
             <div className="zep-flex zep-flex-col sm:zep-flex-row zep-gap-1">
               <a
@@ -49,7 +61,7 @@ export const SmallHero: FC<SmallHeroProps> = ({
                 <Button
                   label={buttonPrimary}
                   title={buttonPrimary}
-                  variant={ZsdButtonVariant.PrimaryDark}
+                  variant={variant==='default' ? ZsdButtonVariant.PrimaryDark : ZsdButtonVariant.PrimaryLight}
                   className="zep-w-full sm:zep-max-w-max"
                   icon={buttonPrimaryIcon}
                   iconPosition={buttonPrimaryIconPosition}
@@ -67,7 +79,7 @@ export const SmallHero: FC<SmallHeroProps> = ({
                     title={buttonSecondary}
                     icon={buttonSecondaryIcon}
                     iconPosition={buttonSecondaryIconPosition}
-                    variant={ZsdButtonVariant.SecondaryDark}
+                    variant={variant==='default' ?  ZsdButtonVariant.SecondaryDark : ZsdButtonVariant.SecondaryLight}
                     className="zep-w-full sm:zep-max-w-max"
                   />
                 </a>
@@ -77,8 +89,9 @@ export const SmallHero: FC<SmallHeroProps> = ({
         </div>
       </div>
 
+      {/* desktop view */}
       <div
-        style={{ backgroundImage: `url(${imageSrc})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
+        style={backgroundStyle}
         className={clsx(
           'zep-w-full',
           'zep-relative',
@@ -113,7 +126,7 @@ export const SmallHero: FC<SmallHeroProps> = ({
 
             {description && (
               <p className="zep-typography-bodyText zep-text-typography-light-100 md:zep-max-w-[374px] lg:zep-max-w-[710px] zep-mb-1.5">
-                {getFirst150Characters(description)}
+                {description}
               </p>
             )}
             {buttonPrimary && (
@@ -158,6 +171,7 @@ export const SmallHero: FC<SmallHeroProps> = ({
         <div
           className={clsx(
             'zep-absolute',
+            //{'zep-bg-gradient-to-r zep-from-[rgba(0,0,0,0.85)]': variant === 'default'},
             'zep-bg-gradient-to-r zep-from-[rgba(0,0,0,0.85)]',
             'max-md:zep-hidden',
             'md:zep-block',
