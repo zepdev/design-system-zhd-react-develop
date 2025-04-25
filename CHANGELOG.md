@@ -1,3 +1,10 @@
+## [1.6.2](https://github.com/zepdev/design-system-zhd-react/compare/v1.6.1...v1.6.2) (2025-04-25)
+
+
+### Bug Fixes
+
+* remove anchor tag from headline ([5c89402](https://github.com/zepdev/design-system-zhd-react/commit/5c894022a32cc1328a496225de0f0e92bb5963f9))
+
 ## [1.6.1](https://github.com/zepdev/design-system-zhd-react/compare/v1.6.0...v1.6.1) (2025-04-25)
 
 
