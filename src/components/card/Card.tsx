@@ -17,7 +17,8 @@ export const Card: FC<CardProps> = ({
   linkType,
 }: CardProps) => {
   return (
-    <button
+    <a
+      href={getUrlWithTrailingSlash(url)}
       data-testid="card-component"
       type="button"
       className={clsx(
@@ -39,10 +40,10 @@ export const Card: FC<CardProps> = ({
       <img
         src={imageSrc}
         alt={imageAlt}
-        className={clsx('zep-aspect-[16/9]', 'zep-w-full', 'zep-object-cover', 'zep-h-full')}
+        className={clsx('zep-aspect-[16/9]', 'zep-w-full', 'zep-object-cover')}
         data-testid="card-component-image"
       />
-      <div className={clsx('zep-flex', 'zep-flex-col', 'zep-p-1', 'sm:zep-p-1.5', 'md:zep-p-2.5', 'zep-items-start')}>
+      <div className={clsx('zep-flex', 'zep-h-full', 'zep-flex-col', 'zep-p-1', 'sm:zep-p-1.5', 'md:zep-p-2.5', 'zep-items-start')}>
         {tagline && (
           <p
             className={clsx(
@@ -73,6 +74,7 @@ export const Card: FC<CardProps> = ({
             data-testid="card-component-description"
             className={clsx(
               'zep-typography-bodyText',
+              'zep-flex-grow',
               'zep-break-words',
               'zep-text-typography-dark-100, zep-text-left',
             )}
@@ -93,6 +95,6 @@ export const Card: FC<CardProps> = ({
           />
         )}
       </div>
-    </button>
+    </a>
   );
 };
