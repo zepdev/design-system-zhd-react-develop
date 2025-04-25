@@ -5,6 +5,7 @@ import { SmallHeroProps } from './small-hero.interface';
 const meta = {
   title: 'Components/SmallHero',
   component: SmallHero,
+  tags: ['autodocs'],
   argTypes: {},
 } satisfies Meta<typeof SmallHero>;
 
@@ -15,8 +16,24 @@ export const Default: Story = {
   args: {
     headline: 'Tiernahrung',
     subline: 'Herstellung auf spitzenniveau',
+    buttonPrimary: 'Button Primary',
+    buttonSecondary: 'Button Secondary',
     description:
-      'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo  ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis  dis parturient montes, nascetur ridiculus mus.',
+      'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo  ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis  dis parturient montes, nascetur ridiculus mus. ',
+    imageSrc: './public/assets/hero-small.png',
+    imageAlt: 'image alt',
+  } as SmallHeroProps,
+};
+
+export const WithIndigo: Story = {
+  args: {
+    headline: 'Tiernahrung',
+    subline: 'Herstellung auf spitzenniveau',
+    variant: 'indigo',
+    buttonPrimary: 'Button Primary',
+    buttonSecondary: 'Button Secondary',
+    description:
+      'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo  ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis  dis parturient montes, nascetur ridiculus mus. ',
     imageSrc: './public/assets/hero-small.png',
     imageAlt: 'image alt',
   } as SmallHeroProps,
