@@ -58,7 +58,6 @@ export const Card: FC<CardProps> = ({
             {tagline}
           </p>
         )}
-        <a href={url}>
           <h4
             data-testid="card-component-title"
             className={clsx(
@@ -68,7 +67,6 @@ export const Card: FC<CardProps> = ({
           >
             {title}
           </h4>
-        </a>
         {description && (
           <p
             data-testid="card-component-description"
