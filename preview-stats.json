@@ -571,20 +571,20 @@
       ]
     },
     {
-      "id": "./src/components/SmallHero/SmallHero.tsx",
-      "name": "./src/components/SmallHero/SmallHero.tsx",
-      "reasons": [
-        {
-          "moduleName": "./src/components/SmallHero/SmallHero.stories.tsx"
-        }
-      ]
-    },
-    {
       "id": "./src/components/Teaser-simple/Teaser-simple.tsx",
       "name": "./src/components/Teaser-simple/Teaser-simple.tsx",
       "reasons": [
         {
           "moduleName": "./src/components/Teaser-simple/Teaser-simple.stories.tsx"
+        }
+      ]
+    },
+    {
+      "id": "./src/components/SmallHero/SmallHero.tsx",
+      "name": "./src/components/SmallHero/SmallHero.tsx",
+      "reasons": [
+        {
+          "moduleName": "./src/components/SmallHero/SmallHero.stories.tsx"
         }
       ]
     },
@@ -602,10 +602,10 @@
           "moduleName": "./src/components/card-square-list/CardSquareList.stories.tsx"
         },
         {
-          "moduleName": "./src/components/header-long-component/HeaderLongComponent.stories.tsx"
+          "moduleName": "./src/components/gallery/Gallery.stories.tsx"
         },
         {
-          "moduleName": "./src/components/gallery/Gallery.stories.tsx"
+          "moduleName": "./src/components/header-long-component/HeaderLongComponent.stories.tsx"
         },
         {
           "moduleName": "./src/components/header-long/HeaderLong.stories.tsx"
@@ -627,6 +627,9 @@
         },
         {
           "moduleName": "./src/components/table-pattern/TablePattern.stories.tsx"
+        },
+        {
+          "moduleName": "./src/utils/commonCSS.ts"
         },
         {
           "moduleName": "./src/components/card-square/CardSquare.stories.tsx"
@@ -656,10 +659,10 @@
           "moduleName": "./src/components/lead-text/LeadText.tsx"
         },
         {
-          "moduleName": "./src/components/navigation/Navigation.tsx"
+          "moduleName": "./src/components/news-details/NewsDetails.tsx"
         },
         {
-          "moduleName": "./src/components/news-details/NewsDetails.tsx"
+          "moduleName": "./src/components/navigation/Navigation.tsx"
         },
         {
           "moduleName": "./src/components/partner-communication/PartnerCommunication.tsx"
@@ -672,9 +675,6 @@
         },
         {
           "moduleName": "./src/components/gallery/Gallery.tsx"
-        },
-        {
-          "moduleName": "./src/utils/commonCSS.ts"
         },
         {
           "moduleName": "./src/components/contact-form/contact-form-locales.ts"
@@ -767,13 +767,13 @@
           "moduleName": "./src/components/lead-text/LeadText.stories.tsx"
         },
         {
-          "moduleName": "./src/components/media-text-component-pattern/MediaTextComponentPattern.stories.tsx"
-        },
-        {
           "moduleName": "./src/components/link-list-item/LinkListItem.stories.tsx"
         },
         {
           "moduleName": "./src/components/media-text-component/MediaTextComponent.stories.tsx"
+        },
+        {
+          "moduleName": "./src/components/media-text-component-pattern/MediaTextComponentPattern.stories.tsx"
         },
         {
           "moduleName": "./src/components/media-text-small-pattern/MediaTextSmallPattern.stories.tsx"
@@ -847,6 +847,15 @@
       ]
     },
     {
+      "id": "./src/components/contact-section/ContactSection.tsx",
+      "name": "./src/components/contact-section/ContactSection.tsx",
+      "reasons": [
+        {
+          "moduleName": "./src/components/contact-section/ContactSection.stories.tsx"
+        }
+      ]
+    },
+    {
       "id": "./src/components/contact-form/ContactForm.tsx",
       "name": "./src/components/contact-form/ContactForm.tsx",
       "reasons": [
@@ -859,11 +868,11 @@
       ]
     },
     {
-      "id": "./src/components/contact-section/ContactSection.tsx",
-      "name": "./src/components/contact-section/ContactSection.tsx",
+      "id": "./src/components/gallery/Gallery.tsx",
+      "name": "./src/components/gallery/Gallery.tsx",
       "reasons": [
         {
-          "moduleName": "./src/components/contact-section/ContactSection.stories.tsx"
+          "moduleName": "./src/components/gallery/Gallery.stories.tsx"
         }
       ]
     },
@@ -911,10 +920,10 @@
           "moduleName": "./src/components/multi-link-list/MultiLinkList.tsx"
         },
         {
-          "moduleName": "./src/components/news-details/NewsDetails.tsx"
+          "moduleName": "./src/components/process-chain/ProcessChain.tsx"
         },
         {
-          "moduleName": "./src/components/process-chain/ProcessChain.tsx"
+          "moduleName": "./src/components/news-details/NewsDetails.tsx"
         },
         {
           "moduleName": "./src/components/product-highlight/Product-highlight.tsx"
@@ -927,15 +936,6 @@
         },
         {
           "moduleName": "./src/components/video/Video.tsx"
-        }
-      ]
-    },
-    {
-      "id": "./src/components/gallery/Gallery.tsx",
-      "name": "./src/components/gallery/Gallery.tsx",
-      "reasons": [
-        {
-          "moduleName": "./src/components/gallery/Gallery.stories.tsx"
         }
       ]
     },
@@ -970,6 +970,15 @@
       ]
     },
     {
+      "id": "./src/components/infographic-image-pattern/InfographicImagePattern.tsx",
+      "name": "./src/components/infographic-image-pattern/InfographicImagePattern.tsx",
+      "reasons": [
+        {
+          "moduleName": "./src/components/infographic-image-pattern/InfographicImagePattern.stories.tsx"
+        }
+      ]
+    },
+    {
       "id": "./src/assets/temp-image.jpeg",
       "name": "./src/assets/temp-image.jpeg",
       "reasons": [
@@ -988,15 +997,6 @@
       ]
     },
     {
-      "id": "./src/components/infographic-image-pattern/InfographicImagePattern.tsx",
-      "name": "./src/components/infographic-image-pattern/InfographicImagePattern.tsx",
-      "reasons": [
-        {
-          "moduleName": "./src/components/infographic-image-pattern/InfographicImagePattern.stories.tsx"
-        }
-      ]
-    },
-    {
       "id": "./src/components/instagram-feed/InstagramFeed.tsx",
       "name": "./src/components/instagram-feed/InstagramFeed.tsx",
       "reasons": [
@@ -1011,27 +1011,6 @@
       "reasons": [
         {
           "moduleName": "./src/components/lead-text/LeadText.stories.tsx"
-        }
-      ]
-    },
-    {
-      "id": "./src/assets/verti.png",
-      "name": "./src/assets/verti.png",
-      "reasons": [
-        {
-          "moduleName": "./src/components/media-text-component-pattern/MediaTextComponentPattern.stories.tsx"
-        },
-        {
-          "moduleName": "./src/components/media-text-component/MediaTextComponent.stories.tsx"
-        }
-      ]
-    },
-    {
-      "id": "./src/components/media-text-component-pattern/MediaTextComponentPattern.tsx",
-      "name": "./src/components/media-text-component-pattern/MediaTextComponentPattern.tsx",
-      "reasons": [
-        {
-          "moduleName": "./src/components/media-text-component-pattern/MediaTextComponentPattern.stories.tsx"
         }
       ]
     },
@@ -1057,6 +1036,18 @@
       ]
     },
     {
+      "id": "./src/assets/verti.png",
+      "name": "./src/assets/verti.png",
+      "reasons": [
+        {
+          "moduleName": "./src/components/media-text-component/MediaTextComponent.stories.tsx"
+        },
+        {
+          "moduleName": "./src/components/media-text-component-pattern/MediaTextComponentPattern.stories.tsx"
+        }
+      ]
+    },
+    {
       "id": "./src/components/media-text-component/MediaTextComponent.tsx",
       "name": "./src/components/media-text-component/MediaTextComponent.tsx",
       "reasons": [
@@ -1065,6 +1056,15 @@
         },
         {
           "moduleName": "./src/components/media-text-component-pattern/MediaTextComponentPattern.tsx"
+        }
+      ]
+    },
+    {
+      "id": "./src/components/media-text-component-pattern/MediaTextComponentPattern.tsx",
+      "name": "./src/components/media-text-component-pattern/MediaTextComponentPattern.tsx",
+      "reasons": [
+        {
+          "moduleName": "./src/components/media-text-component-pattern/MediaTextComponentPattern.stories.tsx"
         }
       ]
     },
@@ -1120,11 +1120,11 @@
       ]
     },
     {
-      "id": "./src/components/news-details/NewsDetails.tsx",
-      "name": "./src/components/news-details/NewsDetails.tsx",
+      "id": "./src/components/process-chain/ProcessChain.tsx",
+      "name": "./src/components/process-chain/ProcessChain.tsx",
       "reasons": [
         {
-          "moduleName": "./src/components/news-details/NewsDetails.stories.tsx"
+          "moduleName": "./src/components/process-chain/procesChain.stories.tsx"
         }
       ]
     },
@@ -1138,11 +1138,11 @@
       ]
     },
     {
-      "id": "./src/components/process-chain/ProcessChain.tsx",
-      "name": "./src/components/process-chain/ProcessChain.tsx",
+      "id": "./src/components/news-details/NewsDetails.tsx",
+      "name": "./src/components/news-details/NewsDetails.tsx",
       "reasons": [
         {
-          "moduleName": "./src/components/process-chain/procesChain.stories.tsx"
+          "moduleName": "./src/components/news-details/NewsDetails.stories.tsx"
         }
       ]
     },
@@ -1154,10 +1154,10 @@
           "moduleName": "./src/components/product-highlight/Product-highlight.stories.tsx"
         },
         {
-          "moduleName": "./src/components/SmallHero/SmallHero.tsx"
+          "moduleName": "./src/components/Teaser-simple/Teaser-simple.tsx"
         },
         {
-          "moduleName": "./src/components/Teaser-simple/Teaser-simple.tsx"
+          "moduleName": "./src/components/SmallHero/SmallHero.tsx"
         },
         {
           "moduleName": "./src/components/accrodion-pattern/AccordionPattern.tsx"
@@ -1249,6 +1249,15 @@
       ]
     },
     {
+      "id": "./src/components/video/Video.tsx",
+      "name": "./src/components/video/Video.tsx",
+      "reasons": [
+        {
+          "moduleName": "./src/components/video/Video.stories.tsx"
+        }
+      ]
+    },
+    {
       "id": "./src/components/video-cookie-layer/VideoCookieLayer.tsx",
       "name": "./src/components/video-cookie-layer/VideoCookieLayer.tsx",
       "reasons": [
@@ -1287,15 +1296,6 @@
         },
         {
           "moduleName": "./src/components/zsd-button/ZsdButton.tsx"
-        }
-      ]
-    },
-    {
-      "id": "./src/components/video/Video.tsx",
-      "name": "./src/components/video/Video.tsx",
-      "reasons": [
-        {
-          "moduleName": "./src/components/video/Video.stories.tsx"
         }
       ]
     },
@@ -1375,32 +1375,14 @@
       ]
     },
     {
-      "id": "./src/tailwind/styles/focus.ts",
-      "name": "./src/tailwind/styles/focus.ts",
-      "reasons": [
-        {
-          "moduleName": "./src/components/card-media-component/CardMedia.stories.tsx"
-        },
-        {
-          "moduleName": "./src/components/card-media-pattern/CardMediaPattern.stories.tsx"
-        },
-        {
-          "moduleName": "./src/components/form-fields/checkbox/Checkbox.tsx"
-        },
-        {
-          "moduleName": "./src/components/form-fields/input/Input.tsx"
-        }
-      ]
-    },
-    {
       "id": "./src/components/card-media-component/CardMedia.tsx",
       "name": "./src/components/card-media-component/CardMedia.tsx",
       "reasons": [
         {
-          "moduleName": "./src/components/card-media-component/CardMedia.stories.tsx"
+          "moduleName": "./src/components/card-media-component/index.ts"
         },
         {
-          "moduleName": "./src/components/card-media-component/index.ts"
+          "moduleName": "./src/components/card-media-component/CardMedia.stories.tsx"
         }
       ]
     },
@@ -1410,6 +1392,24 @@
       "reasons": [
         {
           "moduleName": "./src/components/card-media-pattern/CardMediaPattern.stories.tsx"
+        }
+      ]
+    },
+    {
+      "id": "./src/tailwind/styles/focus.ts",
+      "name": "./src/tailwind/styles/focus.ts",
+      "reasons": [
+        {
+          "moduleName": "./src/components/card-media-pattern/CardMediaPattern.stories.tsx"
+        },
+        {
+          "moduleName": "./src/components/card-media-component/CardMedia.stories.tsx"
+        },
+        {
+          "moduleName": "./src/components/form-fields/checkbox/Checkbox.tsx"
+        },
+        {
+          "moduleName": "./src/components/form-fields/input/Input.tsx"
         }
       ]
     },
@@ -1464,15 +1464,6 @@
       "reasons": [
         {
           "moduleName": "./src/components/text-highlight/TextHighlight.stories.tsx"
-        }
-      ]
-    },
-    {
-      "id": "./src/hooks/useMaxChar150.ts",
-      "name": "./src/hooks/useMaxChar150.ts",
-      "reasons": [
-        {
-          "moduleName": "./src/components/SmallHero/SmallHero.tsx"
         }
       ]
     },
@@ -1532,19 +1523,19 @@
           "moduleName": "./src/components/multi-link-list/MultiLinkList.tsx"
         },
         {
+          "moduleName": "./src/components/process-chain/ProcessChain.tsx"
+        },
+        {
           "moduleName": "./src/components/news-details/NewsDetails.tsx"
         },
         {
           "moduleName": "./src/components/partner-communication/PartnerCommunication.tsx"
         },
         {
-          "moduleName": "./src/components/process-chain/ProcessChain.tsx"
+          "moduleName": "./src/components/rich-text-pattern/RichTextPattern.tsx"
         },
         {
           "moduleName": "./src/components/product-highlight/Product-highlight.tsx"
-        },
-        {
-          "moduleName": "./src/components/rich-text-pattern/RichTextPattern.tsx"
         },
         {
           "moduleName": "./src/components/single-link-list/SingleLinkList.tsx"
@@ -1553,13 +1544,22 @@
           "moduleName": "./src/components/table-pattern/TablePattern.tsx"
         },
         {
-          "moduleName": "./src/components/usp-list/UspList.tsx"
-        },
-        {
           "moduleName": "./src/components/text-highlight/TextHighlight.tsx"
         },
         {
+          "moduleName": "./src/components/usp-list/UspList.tsx"
+        },
+        {
           "moduleName": "./src/components/video/Video.tsx"
+        }
+      ]
+    },
+    {
+      "id": "./src/hooks/useMaxChar150.ts",
+      "name": "./src/hooks/useMaxChar150.ts",
+      "reasons": [
+        {
+          "moduleName": "./src/components/SmallHero/SmallHero.tsx"
         }
       ]
     },
@@ -1616,10 +1616,10 @@
           "moduleName": "./src/components/news-details/NewsDetails.tsx"
         },
         {
-          "moduleName": "./src/components/product-highlight/Product-highlight.tsx"
+          "moduleName": "./src/components/rich-text-pattern/RichTextPattern.tsx"
         },
         {
-          "moduleName": "./src/components/rich-text-pattern/RichTextPattern.tsx"
+          "moduleName": "./src/components/product-highlight/Product-highlight.tsx"
         },
         {
           "moduleName": "./src/components/table-pattern/TablePattern.tsx"
@@ -1757,10 +1757,10 @@
           "moduleName": "./src/components/contact-form-large/ContactFormLarge.tsx"
         },
         {
-          "moduleName": "./src/components/contact-form/ContactForm.tsx"
+          "moduleName": "./src/components/footer/Footer.tsx"
         },
         {
-          "moduleName": "./src/components/footer/Footer.tsx"
+          "moduleName": "./src/components/contact-form/ContactForm.tsx"
         },
         {
           "moduleName": "./src/components/link-list-item/LinkListItem.tsx"
@@ -1793,10 +1793,10 @@
           "moduleName": "./src/components/contact-section/ContactSection.tsx"
         },
         {
-          "moduleName": "./src/components/contact-form/ContactForm.tsx"
+          "moduleName": "./src/components/footer/Footer.tsx"
         },
         {
-          "moduleName": "./src/components/footer/Footer.tsx"
+          "moduleName": "./src/components/contact-form/ContactForm.tsx"
         }
       ]
     },
@@ -1891,18 +1891,6 @@
       ]
     },
     {
-      "id": "./src/components/video/useVideoComplianceCheck.ts",
-      "name": "./src/components/video/useVideoComplianceCheck.ts",
-      "reasons": [
-        {
-          "moduleName": "./src/components/instagram-feed/InstagramFeed.tsx"
-        },
-        {
-          "moduleName": "./src/components/video/ResponsivePlayer.tsx"
-        }
-      ]
-    },
-    {
       "id": "./src/components/infographic-image/InfoPoint.tsx",
       "name": "./src/components/infographic-image/InfoPoint.tsx",
       "reasons": [
@@ -1917,6 +1905,18 @@
       "reasons": [
         {
           "moduleName": "./src/components/infographic-image/InfographicImage.tsx"
+        }
+      ]
+    },
+    {
+      "id": "./src/components/video/useVideoComplianceCheck.ts",
+      "name": "./src/components/video/useVideoComplianceCheck.ts",
+      "reasons": [
+        {
+          "moduleName": "./src/components/instagram-feed/InstagramFeed.tsx"
+        },
+        {
+          "moduleName": "./src/components/video/ResponsivePlayer.tsx"
         }
       ]
     },
