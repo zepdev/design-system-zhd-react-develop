@@ -45,13 +45,7 @@ export const Card: FC<CardProps> = ({
       <div className={clsx('zep-flex', 'zep-flex-col', 'zep-p-1', 'sm:zep-p-1.5', 'md:zep-p-2.5', 'zep-items-start')}>
         {tagline && (
           <p
-            className={clsx(
-              'zep-typography-tagline',
-              'zep-text-left',
-              'zep-mb-0.25',
-              'zep-break-all',
-              'zep-text-typography-dark-70/70',
-            )}
+            className={clsx('zep-typography-tagline', 'zep-text-left', 'zep-mb-0.25', 'zep-text-typography-dark-70/70')}
             data-testid="card-component-tagline"
           >
             {tagline}
