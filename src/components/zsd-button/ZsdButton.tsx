@@ -104,7 +104,7 @@ const Btn: FC<Omit<ZsdButtonProps, 'href' | 'buttonType'>> = ({
       )}
       <Spacing gap="0.5" className={iconPosition === 'left' ? 'zep-flex-row-reverse' : ''}>
         {label ?? children}
-        {icon && <FunctionalIcon name={icon} />}
+        {icon && icon !== 'none' && <FunctionalIcon name={icon} />}
       </Spacing>
     </button>
   );
