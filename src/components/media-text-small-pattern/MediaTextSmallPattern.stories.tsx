@@ -27,7 +27,7 @@ export const Default: Story = {
       imageAlt: 'image alt',
       imageSrc: './assets/image-4_3.png',
     }),
-    headline: 'Lösungen für Marine xxxxx',
+    headline: 'Lösungen für Marine',
     tagline: 'Zeppelin Power Systems',
     description: mockRichText,
     linkText: 'Link Text',
