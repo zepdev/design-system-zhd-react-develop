@@ -1,3 +1,10 @@
+## [1.6.12](https://github.com/zepdev/design-system-zhd-react/compare/v1.6.11...v1.6.12) (2025-04-28)
+
+
+### Bug Fixes
+
+* added animation code ([827d0fd](https://github.com/zepdev/design-system-zhd-react/commit/827d0fdd85e1ac7d855347823c9f5a1170d175e5))
+
 ## [1.6.11](https://github.com/zepdev/design-system-zhd-react/compare/v1.6.10...v1.6.11) (2025-04-28)
 
 
