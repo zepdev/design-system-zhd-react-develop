@@ -95,6 +95,7 @@ export const Video = ({ id, videos }: VideoProps) => {
                 <div
                   className={clsx(
                     'zep-pr-1 md:zep-pr-[0px] md:zep-pl-1 zep-pb-1 zep-pt-1 relative zep-max-w-[186px] sm:zep-max-w-[266px] md:zep-max-w-[unset] zep-h-full zep-max-h-[127px] sm:zep-max-h-[172px] md:zep-max-h-[unset]',
+                    selectedVideo === v && 'zep-bg-indigo-500',
                   )}
                 >
                   <div className="zep-relative">
