@@ -9,6 +9,7 @@ export const CardEventPattern: React.FC<CardEventPatternProps> = ({
   items,
   variant,
   headline,
+  locale,
   buttonLabel,
   ...headerLongComponentProps
 }: CardEventPatternProps) => {
@@ -20,8 +21,20 @@ export const CardEventPattern: React.FC<CardEventPatternProps> = ({
 
   const cardEventItems = items.slice(0, visibleItems);
 
+  const renderButtonLabel = () => {
+    switch (locale) {
+      case 'de':
+        return 'Mehr anzeigen';
+      case 'en':
+        return 'Show more';
+
+      default:
+        return 'Mehr anzeigen';
+    }
+  };
+
   return (
-    <Layout className="zep-inline-grid zep-gap-2.5 sm:zep-gap-3 md:zep-gap-4 zep-justify-center zep-bg-greyscale-100">
+    <Layout className="zep-inline-grid zep-gap-2.5 sm:zep-gap-3 md:zep-gap-4 zep-justify-center zep-bg-greyscale-100 zep-py-2">
       <HeaderLongComponent headline={headline} variant={variant} {...headerLongComponentProps} />
       <div data-testid="zep-card-event">
         {cardEventItems.map((item, index) => (
@@ -41,11 +54,14 @@ export const CardEventPattern: React.FC<CardEventPatternProps> = ({
           </div>
         ))}
       </div>
-
       {/* Show button only if items exceed 10 */}
       {visibleItems < items.length && (
         <div className="zep-justify-center zep-items-center zep-flex">
-          <Button label={buttonLabel} onClick={handleShowMore} variant={ZsdButtonVariant.SecondaryLight} />
+          <Button
+            label={buttonLabel || renderButtonLabel()}
+            onClick={handleShowMore}
+            variant={ZsdButtonVariant.PrimaryDark}
+          />
         </div>
       )}
     </Layout>
