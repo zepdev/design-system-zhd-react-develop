@@ -1,3 +1,10 @@
+## [1.6.7](https://github.com/zepdev/design-system-zhd-react/compare/v1.6.6...v1.6.7) (2025-04-28)
+
+
+### Bug Fixes
+
+* breadcrumb width ([2a415b3](https://github.com/zepdev/design-system-zhd-react/commit/2a415b37589b6bf2f47c54e9590b39e9cffd9486))
+
 ## [1.6.6](https://github.com/zepdev/design-system-zhd-react/compare/v1.6.5...v1.6.6) (2025-04-28)
 
 
