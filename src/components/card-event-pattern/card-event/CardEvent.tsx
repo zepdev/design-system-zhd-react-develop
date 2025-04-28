@@ -2,9 +2,8 @@ import { Link, LinkMode, LinkTarget } from '@zepdev/design-system-component-libr
 import { clsx } from 'clsx';
 import React from 'react';
 import { GlobalVariants } from '../../../interfaces/global-variants';
-import { textColor } from '../../../utils/commonCSS';
-import { CardEventProps } from './card-event.interface';
 import { getUrlWithTrailingSlash } from '../../../utils/getUrlWithTrailingSlash';
+import { CardEventProps } from './card-event.interface';
 
 export const CardEvent: React.FC<CardEventProps> = ({
   imageSrc,
@@ -18,9 +17,14 @@ export const CardEvent: React.FC<CardEventProps> = ({
   variant = GlobalVariants.Zps,
 }: CardEventProps) => {
   const truncatedDescription = description.length > 250 ? description.slice(0, 250) + '...' : description;
+  const onClick = () => {
+    if (window !== undefined) {
+      window.open(getUrlWithTrailingSlash(linkSrc), '_self');
+    }
+  };
 
   return (
-    <a href={getUrlWithTrailingSlash(linkSrc)} target="_self">
+    <div onClick={onClick} className="zep-cursor-pointer">
       <div
         data-testid="zep-card-event"
         className={clsx(
@@ -49,24 +53,27 @@ export const CardEvent: React.FC<CardEventProps> = ({
           />
         </div>
         <div className={clsx('zep-block', 'md:zep-flex', 'md:zep-flex-col', 'zep-max-w-[944px]', 'md:zep-w-4/5')}>
-          <h2
-            className={clsx(
-              'zep-typography-headlineSM-fluid-cqi',
-              'zep-mb-1',
-              'sm:zep-mb-1.5',
-              'xl:zep-mb-3',
-             'zep-hyphens-auto',
-            'zep-break-normal',
-              textColor[variant],
-            )}
-            data-testid="zep-card-event-headline"
-          >
-            {headline}
-          </h2>
+          <a href={getUrlWithTrailingSlash(linkSrc)} target="_self">
+            <h2
+              className={clsx(
+                'zep-typography-headlineSM-fluid-cqi',
+                'zep-mb-1',
+                'sm:zep-mb-1.5',
+                'xl:zep-mb-3',
+                'zep-hyphens-auto',
+                'zep-break-normal',
+                'hover:zep-underline',
+                'zep-text-typography-dark-100',
+              )}
+              data-testid="zep-card-event-headline"
+            >
+              {headline}
+            </h2>
+          </a>
 
           <div
             className={clsx(
-              textColor[variant],
+              'zep-text-typography-dark-100',
               'zep-inline-flex',
               'zep-mb-1',
               'zep-items-center',
@@ -77,24 +84,30 @@ export const CardEvent: React.FC<CardEventProps> = ({
             <span className="zep-ml-[6px] zep-mr-[8px] zep--mt-[4px]">|</span>
             <span>{location}</span>
           </div>
-        <p
-          className={clsx('zep-typography-bodyText', 'zep-mb-2', 'zep-hyphens-auto' ,'zep-break-normal', textColor[variant])}
-          data-testid="zep-card-event-description"
-        >
-          {truncatedDescription}
-        </p>
-        <Link
-          target={linkSrc?.startsWith('http') ? LinkTarget.Blank : LinkTarget.Self}
-          data-testid="zep-event-link"
-          label={linkLabel || ''}
-          iconPlacement="after"
-          icon="arrow-long-right"
-          href={getUrlWithTrailingSlash(linkSrc)}
-          mode={LinkMode.Standalone}
-          className={clsx(textColor[variant], 'zep-inline-block', 'zep-w-fit')}
-        />
+          <p
+            className={clsx(
+              'zep-typography-bodyText',
+              'zep-mb-2',
+              'zep-hyphens-auto',
+              'zep-break-normal',
+              'zep-text-typography-dark-100',
+            )}
+            data-testid="zep-card-event-description"
+          >
+            {truncatedDescription}
+          </p>
+          <Link
+            target={linkSrc?.startsWith('http') ? LinkTarget.Blank : LinkTarget.Self}
+            data-testid="zep-event-link"
+            label={linkLabel || ''}
+            iconPlacement="after"
+            icon="arrow-long-right"
+            href={getUrlWithTrailingSlash(linkSrc)}
+            mode={LinkMode.Standalone}
+            className={clsx('zep-text-typography-dark-100', 'zep-inline-block', 'zep-w-fit')}
+          />
+        </div>
       </div>
-      </div>
-    </a>
+    </div>
   );
 };
