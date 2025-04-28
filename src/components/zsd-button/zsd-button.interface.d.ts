@@ -12,7 +12,7 @@ export interface ZsdButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> 
     label?: string;
     variant?: ZsdButtonVariant;
     href?: string;
-    icon?: FunctionalIconNames;
+    icon?: FunctionalIconNames | 'none';
     iconPosition?: 'left' | 'right' | 'none';
     buttonType?: 'default' | 'download' | 'none';
     isLoading?: boolean;
