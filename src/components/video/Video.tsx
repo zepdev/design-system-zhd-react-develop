@@ -18,7 +18,7 @@ export const Video = ({ id, videos }: VideoProps) => {
 
   return (
     <div id={id}>
-      <Layout wrapperClassname={'!zep-mb-[0]'} className="zep-py-3 sm:zep-py-4 md:zep-py-5">
+      <Layout wrapperClassname={'!zep-mb-[0] zep-bg-background-medium'} className="zep-py-3 sm:zep-py-4 md:zep-py-5">
         <HeaderLongComponent
           tagline={selectedVideo?.tagline}
           headline={selectedVideo?.title || ''}
@@ -54,6 +54,7 @@ export const Video = ({ id, videos }: VideoProps) => {
                     onClick={() => setSelectedVideo(v)}
                     className={clsx(
                       'zep-pr-1 md:zep-pr-[0px] md:zep-pl-1 zep-pb-1 zep-pt-1 relative zep-max-w-[186px] md:zep-max-w-[unset] zep-h-full zep-max-h-[127px] md:zep-max-h-[unset] zep-w-full',
+                      selectedVideo === v && 'zep-bg-indigo-500',
                     )}
                   >
                     <div className="zep-relative">
@@ -94,6 +95,7 @@ export const Video = ({ id, videos }: VideoProps) => {
                 <div
                   className={clsx(
                     'zep-pr-1 md:zep-pr-[0px] md:zep-pl-1 zep-pb-1 zep-pt-1 relative zep-max-w-[186px] sm:zep-max-w-[266px] md:zep-max-w-[unset] zep-h-full zep-max-h-[127px] sm:zep-max-h-[172px] md:zep-max-h-[unset]',
+                    selectedVideo === v && 'zep-bg-indigo-500',
                   )}
                 >
                   <div className="zep-relative">
