@@ -1,3 +1,12 @@
+## [1.6.9](https://github.com/zepdev/design-system-zhd-react/compare/v1.6.8...v1.6.9) (2025-04-28)
+
+
+### Bug Fixes
+
+* added the 100% width for image ([761011c](https://github.com/zepdev/design-system-zhd-react/commit/761011c57b2e9e522d60038bb9dc721a5dd873db))
+* hydration ([1501d64](https://github.com/zepdev/design-system-zhd-react/commit/1501d648a4097a790c0364d5d68a754ef9e3609b))
+* width of the small hero ([cdf4e6e](https://github.com/zepdev/design-system-zhd-react/commit/cdf4e6eb6cbcefa4085b62cc820cf1b95714addb))
+
 ## [1.6.8](https://github.com/zepdev/design-system-zhd-react/compare/v1.6.7...v1.6.8) (2025-04-28)
 
 
