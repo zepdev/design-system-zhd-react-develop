@@ -1,3 +1,10 @@
+## [1.6.13](https://github.com/zepdev/design-system-zhd-react/compare/v1.6.12...v1.6.13) (2025-04-28)
+
+
+### Bug Fixes
+
+* media-text icon ([b540127](https://github.com/zepdev/design-system-zhd-react/commit/b54012789bc53502c8b7576e8336e6ac2f0b5991))
+
 ## [1.6.12](https://github.com/zepdev/design-system-zhd-react/compare/v1.6.11...v1.6.12) (2025-04-28)
 
 
