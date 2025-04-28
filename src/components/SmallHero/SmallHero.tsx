@@ -22,7 +22,7 @@ export const SmallHero: FC<SmallHeroProps> = ({
   buttonPrimaryAction,
   buttonSecondaryAction,
 }) => {
- const backgroundStyle =
+  const backgroundStyle =
     variant === 'indigo'
       ? { backgroundColor: '#27166F' } // Set background color to indigo
       : {
@@ -33,12 +33,14 @@ export const SmallHero: FC<SmallHeroProps> = ({
   return (
     <div data-testid="zep-SHCorporate">
       {/* mobile view */}
-      <div className={clsx(
-          'zep-block',
-          'md:zep-hidden',
-          {'zep-bg-indigo-500 zep-text-typography-light-100': variant === 'indigo'},
-        )}>
-        { variant === 'default' && <img src={imageSrc} alt={imageAlt} className="zep-h-[202px] sm:zep-h-[432px] zep-object-cover" /> }
+      <div
+        className={clsx('zep-block', 'md:zep-hidden', {
+          'zep-bg-indigo-500 zep-text-typography-light-100': variant === 'indigo',
+        })}
+      >
+        {variant === 'default' && (
+          <img src={imageSrc} alt={imageAlt} className="zep-w-full zep-h-[202px] sm:zep-h-[432px] zep-object-cover" />
+        )}
         <div className="zep-px-1 sm:zep-px-1.5 zep-py-1.5 sm:zep-py-3">
           <h2 data-testid="SHCorporate-headline" className={clsx('zep-typography-headlineXL-fluid-cqi')}>
             {headline}
@@ -61,7 +63,7 @@ export const SmallHero: FC<SmallHeroProps> = ({
                 <Button
                   label={buttonPrimary}
                   title={buttonPrimary}
-                  variant={variant==='default' ? ZsdButtonVariant.PrimaryDark : ZsdButtonVariant.PrimaryLight}
+                  variant={variant === 'default' ? ZsdButtonVariant.PrimaryDark : ZsdButtonVariant.PrimaryLight}
                   className="zep-w-full sm:zep-max-w-max"
                   icon={buttonPrimaryIcon}
                   iconPosition={buttonPrimaryIconPosition}
@@ -79,7 +81,7 @@ export const SmallHero: FC<SmallHeroProps> = ({
                     title={buttonSecondary}
                     icon={buttonSecondaryIcon}
                     iconPosition={buttonSecondaryIconPosition}
-                    variant={variant==='default' ?  ZsdButtonVariant.SecondaryDark : ZsdButtonVariant.SecondaryLight}
+                    variant={variant === 'default' ? ZsdButtonVariant.SecondaryDark : ZsdButtonVariant.SecondaryLight}
                     className="zep-w-full sm:zep-max-w-max"
                   />
                 </a>
