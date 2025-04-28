@@ -1,3 +1,10 @@
+## [1.6.11](https://github.com/zepdev/design-system-zhd-react/compare/v1.6.10...v1.6.11) (2025-04-28)
+
+
+### Bug Fixes
+
+* undefined document ([fed048b](https://github.com/zepdev/design-system-zhd-react/commit/fed048b830553d9037bd38100b1a734bcf24dd69))
+
 ## [1.6.10](https://github.com/zepdev/design-system-zhd-react/compare/v1.6.9...v1.6.10) (2025-04-28)
 
 
