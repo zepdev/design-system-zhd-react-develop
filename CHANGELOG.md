@@ -1,3 +1,11 @@
+## [1.6.10](https://github.com/zepdev/design-system-zhd-react/compare/v1.6.9...v1.6.10) (2025-04-28)
+
+
+### Bug Fixes
+
+* MediaTextSmall component image and link ([0eb78e7](https://github.com/zepdev/design-system-zhd-react/commit/0eb78e7764200e7568508c5ab9bd3411e0ae2371))
+* remove type ([24f948f](https://github.com/zepdev/design-system-zhd-react/commit/24f948f0f93efe309cab38b3b8c4d21b2fc6b7a9))
+
 ## [1.6.9](https://github.com/zepdev/design-system-zhd-react/compare/v1.6.8...v1.6.9) (2025-04-28)
 
 
