@@ -22,7 +22,11 @@ export const Hero: FC<HeroProps> = ({
   return (
     <div>
       <div className="zep-block md:zep-hidden">
-        <img src={image} alt={imageAlt || headline} className="zep-h-[202px] sm:zep-h-[432px] zep-object-cover" />
+        <img
+          src={image}
+          alt={imageAlt || headline}
+          className="zep-w-full zep-h-[202px] sm:zep-h-[432px] zep-object-cover"
+        />
         <div className="zep-px-1 sm:zep-px-1.5 zep-py-1.5 sm:zep-py-3">
           <h1 className="zep-typography-headlineXL-fluid-cqi zep-text-typography-dark-100 zep-mb-1">{headline}</h1>
           <p className="zep-typography-bodyText zep-text-typography-dark-100 zep-mb-1.5">{description}</p>
@@ -58,7 +62,7 @@ export const Hero: FC<HeroProps> = ({
 
       <div
         style={{ backgroundImage: `url(${image})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
-        className="zep-w-full zep-relative zep-h-[600px] lg:zep-h-[864px] zep-hidden md:zep-block "
+        className="zep-w-full zep-relative zep-h-[600px] lg:zep-h-[680px] zep-hidden md:zep-block "
       >
         <div
           className={clsx(
