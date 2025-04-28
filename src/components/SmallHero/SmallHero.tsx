@@ -22,7 +22,7 @@ export const SmallHero: FC<SmallHeroProps> = ({
   buttonPrimaryAction,
   buttonSecondaryAction,
 }) => {
- const backgroundStyle =
+  const backgroundStyle =
     variant === 'indigo'
       ? { backgroundColor: '#27166F' } // Set background color to indigo
       : {
@@ -33,12 +33,14 @@ export const SmallHero: FC<SmallHeroProps> = ({
   return (
     <div data-testid="zep-SHCorporate">
       {/* mobile view */}
-      <div className={clsx(
-          'zep-block',
-          'md:zep-hidden',
-          {'zep-bg-indigo-500 zep-text-typography-light-100': variant === 'indigo'},
-        )}>
-        { variant === 'default' && <img src={imageSrc} alt={imageAlt} className="zep-w-full zep-aspect-[16/9] zep-object-cover" /> }
+      <div
+        className={clsx('zep-block', 'md:zep-hidden', {
+          'zep-bg-indigo-500 zep-text-typography-light-100': variant === 'indigo',
+        })}
+      >
+        {variant === 'default' && (
+          <img src={imageSrc} alt={imageAlt} className="zep-w-full zep-aspect-[16/9] zep-object-cover" />
+        )}
         <div className="zep-px-1 sm:zep-px-1.5 zep-py-1.5 sm:zep-py-3">
           <h2 data-testid="SHCorporate-headline" className={clsx('zep-typography-headlineXL-fluid-cqi')}>
             {headline}
@@ -61,7 +63,7 @@ export const SmallHero: FC<SmallHeroProps> = ({
                 <Button
                   label={buttonPrimary}
                   title={buttonPrimary}
-                  variant={variant==='default' ? ZsdButtonVariant.PrimaryDark : ZsdButtonVariant.PrimaryLight}
+                  variant={variant === 'default' ? ZsdButtonVariant.PrimaryDark : ZsdButtonVariant.PrimaryLight}
                   className="zep-w-full sm:zep-max-w-max"
                   icon={buttonPrimaryIcon}
                   iconPosition={buttonPrimaryIconPosition}
@@ -79,7 +81,7 @@ export const SmallHero: FC<SmallHeroProps> = ({
                     title={buttonSecondary}
                     icon={buttonSecondaryIcon}
                     iconPosition={buttonSecondaryIconPosition}
-                    variant={variant==='default' ?  ZsdButtonVariant.SecondaryDark : ZsdButtonVariant.SecondaryLight}
+                    variant={variant === 'default' ? ZsdButtonVariant.SecondaryDark : ZsdButtonVariant.SecondaryLight}
                     className="zep-w-full sm:zep-max-w-max"
                   />
                 </a>
@@ -112,23 +114,25 @@ export const SmallHero: FC<SmallHeroProps> = ({
           )}
         >
           <div className="zep-z-10">
-            <h1 className="zep-typography-headlineXL-fluid-cqi lg:zep-typography-headline2XL-fluid-cqi zep-text-typography-light-100 zep-mb-1">
-              {headline}{' '}
-              {subline && (
-                <>
-                  <br></br>
-                  <span className="zep-typography-headlineXL-fluid-cqi lg:zep-typography-headline2XL-fluid-cqi zep-text-typography-light-100 zep-mb-1">
-                    {subline}
-                  </span>
-                </>
-              )}
-            </h1>
+            <div className='zep-max-w-[900px]'>
+              <h1 className="zep-typography-headlineXL-fluid-cqi lg:zep-typography-headline2XL-fluid-cqi zep-text-typography-light-100 zep-mb-1">
+                {headline}{' '}
+                {subline && (
+                  <>
+                    <br></br>
+                    <span className="zep-typography-headlineXL-fluid-cqi lg:zep-typography-headline2XL-fluid-cqi zep-text-typography-light-100 zep-mb-1">
+                      {subline}
+                    </span>
+                  </>
+                )}
+              </h1>
 
-            {description && (
-              <p className="zep-typography-bodyText zep-text-typography-light-100 md:zep-max-w-[374px] lg:zep-max-w-[710px] zep-mb-1.5">
-                {description}
-              </p>
-            )}
+              {description && (
+                <p className="zep-typography-bodyText zep-text-typography-light-100 md:zep-max-w-[374px] lg:zep-max-w-[710px] zep-mb-1.5">
+                  {description}
+                </p>
+              )}
+            </div>
             {buttonPrimary && (
               <div className="zep-flex zep-gap-1">
                 <a
