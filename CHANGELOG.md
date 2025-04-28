@@ -1,3 +1,16 @@
+# [1.7.0](https://github.com/zepdev/design-system-zhd-react/compare/v1.6.13...v1.7.0) (2025-04-28)
+
+
+### Bug Fixes
+
+* adjust the hero width and the height ([9deaa5f](https://github.com/zepdev/design-system-zhd-react/commit/9deaa5f6b9a7df19eb5e25282c11728848152dea))
+* adjust the highlight color of the video for mobile view ([3366d2e](https://github.com/zepdev/design-system-zhd-react/commit/3366d2e5ecf676f3ff308314b5cc3903b5c76a91))
+
+
+### Features
+
+* add blue button and indigo frame for videos ([409ec96](https://github.com/zepdev/design-system-zhd-react/commit/409ec9684c051c6c3699f3e2f43c2b6f7f1ebd2d))
+
 ## [1.6.13](https://github.com/zepdev/design-system-zhd-react/compare/v1.6.12...v1.6.13) (2025-04-28)
 
 
