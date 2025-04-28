@@ -52,7 +52,7 @@ export const Footer: React.FC<FooterProps> = ({
               </div>
             </div>
             <div className="zep-flex lg:zep-flex-row zep-flex-col lg:zep-items-center lg:zep-gap-5 zep-gap-1 zep-py-1.5 zep-border-t-1 zep-border-t-greyscale-700 zep-w-full">
-              <p className="zep-text-greyscale-900 zep-typography-bodyText">{`© ${currentYear} Zeppelin Power Systems GmbH`}</p>
+              <p className="zep-text-greyscale-900 zep-typography-bodyText">{`© ${currentYear} Zeppelin GmbH`}</p>
               <div className="zep-flex sm:zep-gap-3 zep-gap-1 sm:zep-items-center sm:zep-flex-row sm:zep-flex-wrap zep-flex-col">
                 {footerLinks.map((link) => (
                   <Link
