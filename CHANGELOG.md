@@ -1,3 +1,10 @@
+## [1.7.1](https://github.com/zepdev/design-system-zhd-react/compare/v1.7.0...v1.7.1) (2025-04-28)
+
+
+### Bug Fixes
+
+* pagination press ([a346d56](https://github.com/zepdev/design-system-zhd-react/commit/a346d561a3ca040785671cff29a0fd69ad7a978b))
+
 # [1.7.0](https://github.com/zepdev/design-system-zhd-react/compare/v1.6.13...v1.7.0) (2025-04-28)
 
 
