@@ -1,3 +1,10 @@
+## [1.6.6](https://github.com/zepdev/design-system-zhd-react/compare/v1.6.5...v1.6.6) (2025-04-28)
+
+
+### Bug Fixes
+
+* breadcrumb and nav icon ([4145fbd](https://github.com/zepdev/design-system-zhd-react/commit/4145fbd92dce7b8a867ea8e15b7d60f94c249068))
+
 ## [1.6.5](https://github.com/zepdev/design-system-zhd-react/compare/v1.6.4...v1.6.5) (2025-04-25)
 
 
