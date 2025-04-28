@@ -38,7 +38,7 @@ export const SmallHero: FC<SmallHeroProps> = ({
           'md:zep-hidden',
           {'zep-bg-indigo-500 zep-text-typography-light-100': variant === 'indigo'},
         )}>
-        { variant === 'default' && <img src={imageSrc} alt={imageAlt} className="zep-h-[202px] sm:zep-h-[432px] zep-object-cover" /> }
+        { variant === 'default' && <img src={imageSrc} alt={imageAlt} className="zep-w-full zep-aspect-[16/9] zep-object-cover" /> }
         <div className="zep-px-1 sm:zep-px-1.5 zep-py-1.5 sm:zep-py-3">
           <h2 data-testid="SHCorporate-headline" className={clsx('zep-typography-headlineXL-fluid-cqi')}>
             {headline}
