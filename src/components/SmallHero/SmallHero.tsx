@@ -39,7 +39,7 @@ export const SmallHero: FC<SmallHeroProps> = ({
         })}
       >
         {variant === 'default' && (
-          <img src={imageSrc} alt={imageAlt} className="zep-w-full zep-h-[202px] sm:zep-h-[432px] zep-object-cover" />
+          <img src={imageSrc} alt={imageAlt} className="zep-w-full zep-aspect-[16/9] zep-object-cover" />
         )}
         <div className="zep-px-1 sm:zep-px-1.5 zep-py-1.5 sm:zep-py-3">
           <h2 data-testid="SHCorporate-headline" className={clsx('zep-typography-headlineXL-fluid-cqi')}>
@@ -114,23 +114,25 @@ export const SmallHero: FC<SmallHeroProps> = ({
           )}
         >
           <div className="zep-z-10">
-            <h1 className="zep-typography-headlineXL-fluid-cqi lg:zep-typography-headline2XL-fluid-cqi zep-text-typography-light-100 zep-mb-1">
-              {headline}{' '}
-              {subline && (
-                <>
-                  <br></br>
-                  <span className="zep-typography-headlineXL-fluid-cqi lg:zep-typography-headline2XL-fluid-cqi zep-text-typography-light-100 zep-mb-1">
-                    {subline}
-                  </span>
-                </>
-              )}
-            </h1>
+            <div className='zep-max-w-[900px]'>
+              <h1 className="zep-typography-headlineXL-fluid-cqi lg:zep-typography-headline2XL-fluid-cqi zep-text-typography-light-100 zep-mb-1">
+                {headline}{' '}
+                {subline && (
+                  <>
+                    <br></br>
+                    <span className="zep-typography-headlineXL-fluid-cqi lg:zep-typography-headline2XL-fluid-cqi zep-text-typography-light-100 zep-mb-1">
+                      {subline}
+                    </span>
+                  </>
+                )}
+              </h1>
 
-            {description && (
-              <p className="zep-typography-bodyText zep-text-typography-light-100 md:zep-max-w-[374px] lg:zep-max-w-[710px] zep-mb-1.5">
-                {description}
-              </p>
-            )}
+              {description && (
+                <p className="zep-typography-bodyText zep-text-typography-light-100 md:zep-max-w-[374px] lg:zep-max-w-[710px] zep-mb-1.5">
+                  {description}
+                </p>
+              )}
+            </div>
             {buttonPrimary && (
               <div className="zep-flex zep-gap-1">
                 <a

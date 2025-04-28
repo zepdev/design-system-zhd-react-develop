@@ -30,6 +30,9 @@ export const Default: Story = {
     headline: 'Lösungen für Marine',
     tagline: 'Zeppelin Power Systems',
     description: mockRichText,
+    linkText: 'Link Text',
+    type: 'link',
+    headerButtonIcon: 'external-link',
   } as MediaTextSmallPatternProps,
 };
 
@@ -44,6 +47,9 @@ export const WithHeadline: Story = {
     headline: 'Lösungen für Marine',
     tagline: 'Zeppelin Power Systems',
     description: mockRichText,
+    linkText: 'Link Text',
+    type: 'link',
+    headerButtonIcon: 'arrow-long-right',
   } as MediaTextSmallPatternProps,
 };
 
@@ -126,6 +132,6 @@ export const With8Items: Story = {
     }),
     headline: 'Lösungen für Marine',
     tagline: 'Zeppelin Power Systems',
-    description:mockRichText,
+    description: mockRichText,
   } as MediaTextSmallPatternProps,
 };

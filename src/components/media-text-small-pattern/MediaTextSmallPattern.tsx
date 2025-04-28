@@ -15,10 +15,7 @@ export const MediaTextSmallPattern: React.FC<MediaTextSmallPatternProps> = ({
   return (
     <Layout id={id} className={clsx('zep-flex', 'zep-flex-col', 'md:zep-gap-4', 'sm:zep-gap-3', 'zep-gap-2.5')}>
       <div data-testid="media-text-pattern">
-        <div
-          data-testid="media-text-small-pattern-headline"
-          className="zep-mb-2.5 sm:zep-mb-3 md:zep-mb-4 xl:zep-mb-5 zep-max-w-[952px]"
-        >
+        <div data-testid="media-text-small-pattern-headline" className="zep-mb-2.5 sm:zep-mb-3 md:zep-mb-4 xl:zep-mb-5">
           {headline && <HeaderLongComponent headline={headline} target={target} {...headerProps} />}
         </div>
 
