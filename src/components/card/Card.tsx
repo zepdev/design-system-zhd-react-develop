@@ -16,11 +16,16 @@ export const Card: FC<CardProps> = ({
   iconPosition,
   linkType,
 }: CardProps) => {
+  const onClick = () => {
+    if (window !== undefined) {
+      window.open(getUrlWithTrailingSlash(url), '_self');
+    }
+  };
+
   return (
-    <a
-      href={getUrlWithTrailingSlash(url)}
+    <div
+      onClick={onClick}
       data-testid="card-component"
-      type="button"
       className={clsx(
         'zep-flex',
         'zep-group',
@@ -43,7 +48,17 @@ export const Card: FC<CardProps> = ({
         className={clsx('zep-aspect-[16/9]', 'zep-w-full', 'zep-object-cover')}
         data-testid="card-component-image"
       />
-      <div className={clsx('zep-flex', 'zep-h-full', 'zep-flex-col', 'zep-p-1', 'sm:zep-p-1.5', 'md:zep-p-2.5', 'zep-items-start')}>
+      <div
+        className={clsx(
+          'zep-flex',
+          'zep-h-full',
+          'zep-flex-col',
+          'zep-p-1',
+          'sm:zep-p-1.5',
+          'md:zep-p-2.5',
+          'zep-items-start',
+        )}
+      >
         {tagline && (
           <p
             className={clsx('zep-typography-tagline', 'zep-text-left', 'zep-mb-0.25', 'zep-text-typography-dark-70/70')}
@@ -52,6 +67,7 @@ export const Card: FC<CardProps> = ({
             {tagline}
           </p>
         )}
+        <a href={getUrlWithTrailingSlash(url)}>
           <h4
             data-testid="card-component-title"
             className={clsx(
@@ -61,6 +77,7 @@ export const Card: FC<CardProps> = ({
           >
             {title}
           </h4>
+        </a>
         {description && (
           <p
             data-testid="card-component-description"
@@ -74,7 +91,7 @@ export const Card: FC<CardProps> = ({
             {description}
           </p>
         )}
-        {url && (
+        {url && linkLabel && (
           <Link
             target={linkType === 'external-link' ? LinkTarget.Blank : LinkTarget.Self}
             className="zep-text-primary-default zep-mt-1.5"
@@ -87,6 +104,6 @@ export const Card: FC<CardProps> = ({
           />
         )}
       </div>
-    </a>
+    </div>
   );
 };
