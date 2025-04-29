@@ -1,3 +1,10 @@
+## [1.7.2](https://github.com/zepdev/design-system-zhd-react/compare/v1.7.1...v1.7.2) (2025-04-29)
+
+
+### Bug Fixes
+
+* footer icons adjustment ([986aae7](https://github.com/zepdev/design-system-zhd-react/commit/986aae72f6317678600edb0ed039f8c332825616))
+
 ## [1.7.1](https://github.com/zepdev/design-system-zhd-react/compare/v1.7.0...v1.7.1) (2025-04-28)
 
 
