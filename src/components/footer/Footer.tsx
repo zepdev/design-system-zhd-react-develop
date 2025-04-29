@@ -38,7 +38,7 @@ export const Footer: React.FC<FooterProps> = ({
                 {socialMediaLinks.map((link) => (
                   <div
                     key={link.socialIcon || link.icon}
-                    className="zep-rounded-full zep-bg-background-light zep-h-1.5 zep-w-1.5 zep-flex zep-items-center zep-justify-center [&>a]:zep-w-[16px] [&>a]:zep-h-[16px]"
+                    className="zep-rounded-full zep-h-1.5 zep-w-1.5 zep-flex zep-items-center zep-justify-center [&>a]:zep-w-[24px] [&>a]:zep-h-[24px]"
                   >
                     <Link
                       label=""

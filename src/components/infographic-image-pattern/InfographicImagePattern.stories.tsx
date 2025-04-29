@@ -41,5 +41,5 @@ export const Default: Story = {
         { x: 85, y: 70, description: 'Tooltip content', label: 'Label' },
       ],
     },
-  } as InfographicImagePatternProps,
+  } as unknown as InfographicImagePatternProps,
 };
