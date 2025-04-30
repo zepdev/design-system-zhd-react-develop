@@ -1,3 +1,10 @@
+## [1.7.4](https://github.com/zepdev/design-system-zhd-react/compare/v1.7.3...v1.7.4) (2025-04-30)
+
+
+### Bug Fixes
+
+* image size 16/9 ([3db676a](https://github.com/zepdev/design-system-zhd-react/commit/3db676a3bd626570ba3606d2206226c9f2042eb0))
+
 ## [1.7.3](https://github.com/zepdev/design-system-zhd-react/compare/v1.7.2...v1.7.3) (2025-04-30)
 
 
