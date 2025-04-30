@@ -35,9 +35,9 @@ const ListComponent: React.FC<ListProps> = ({ ordered, items }) => (
 );
 
 const Image: React.FC<ImageProps & { isSingle: boolean }> = ({ url, description, alt, isSingle }) => (
-  <div className={clsx(isSingle ? 'zep-aspect-[16/9] zep-w-full zep-object-cover' : 'sm:zep-max-w-[calc(50%-16px)]', 'zep-flex zep-flex-col')}>
-    <div className="zep-aspect-[4/3]">
-      <img src={url} alt={alt} className="zep-w-full zep-h-full zep-object-cover" />
+  <div className={clsx(isSingle ? 'zep-w-full zep-object-cover' : 'sm:zep-max-w-[calc(50%-16px)]', 'zep-flex zep-flex-col')}>
+    <div className="zep-aspect-[16/9]">
+      <img src={url} alt={alt} className="zep-w-full zep-aspect-[16/9] zep-object-cover" />
     </div>
     <span className="zep-hyphens-auto zep-break-normal zep-bg-greyscale-200 zep-w-full zep-text-typography-dark-70 zep-opacity-70 zep-py-0.5 zep-px-1 zep-typography-bodyText">
       {description}
