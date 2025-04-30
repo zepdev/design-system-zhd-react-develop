@@ -29,16 +29,13 @@ const Paragraph: React.FC<RichTextBaseProps> = ({ children, className }) => (
 
 //List Component
 const ListComponent: React.FC<ListProps> = ({ ordered, items }) => (
-  <List
-    className="zep-w-full zep-flex zep-flex-col zep-gap-0.25 zep-justify-start"
-    type={ordered ? 'numeric' : 'bullet'}
-  >
+  <List className="zep-w-full zep-flex zep-flex-col zep-gap-1 zep-justify-start" type={ordered ? 'numeric' : 'bullet'}>
     {items}
   </List>
 );
 
-const Image: React.FC<ImageProps> = ({ url, description, alt }) => (
-  <div className="sm:zep-max-w-[calc(50%-16px)] zep-flex zep-flex-col">
+const Image: React.FC<ImageProps & { isSingle: boolean }> = ({ url, description, alt, isSingle }) => (
+  <div className={clsx(isSingle ? 'zep-aspect-[16/9] zep-w-full zep-object-cover' : 'sm:zep-max-w-[calc(50%-16px)]', 'zep-flex zep-flex-col')}>
     <div className="zep-aspect-[4/3]">
       <img src={url} alt={alt} className="zep-w-full zep-h-full zep-object-cover" />
     </div>
@@ -63,6 +60,9 @@ const RichText = ({
     return null;
   }
 
+  const images = content.filter((block) => block.type === 'image'); // Extract image blocks
+  const isSingleImage = images.length === 1;
+
   return (
     <div
       className={clsx(
@@ -72,7 +72,7 @@ const RichText = ({
         'sm:zep-flex-row',
         'zep-flex-col',
         'sm:zep-flex-wrap',
-        'zep-gap-0.5',
+        'zep-gap-1',
         className,
       )}
       data-testid="zep-richtext"
@@ -105,7 +105,7 @@ const RichText = ({
             <ListComponent ordered={format === 'ordered'} items={children as React.ReactNode[]} />
           ),
           image: ({ image: { alternativeText, name, url, caption } }) => (
-            <Image url={url} alt={alternativeText ?? name} description={caption ?? name} />
+            <Image url={url} alt={alternativeText ?? name} description={caption ?? name} isSingle={isSingleImage} />
           ),
         }}
         modifiers={{
@@ -126,7 +126,7 @@ const RichText = ({
             label={button}
             title={button}
             variant={type === 'primary-dark' ? ZsdButtonVariant.PrimaryDark : ZsdButtonVariant.SecondaryDark}
-            className="zep-w-full sm:zep-max-w-max"
+            className="zep-w-full sm:zep-max-w-max zep-mt-0.5"
             icon={buttonIcon}
             iconPosition={buttonIconPosition}
           />
