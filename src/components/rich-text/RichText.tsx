@@ -126,7 +126,7 @@ const RichText = ({
             label={button}
             title={button}
             variant={type === 'primary-dark' ? ZsdButtonVariant.PrimaryDark : ZsdButtonVariant.SecondaryDark}
-            className="zep-w-full sm:zep-max-w-max zep-mt-1.5"
+            className="zep-w-full sm:zep-max-w-max zep-mt-0.5"
             icon={buttonIcon}
             iconPosition={buttonIconPosition}
           />

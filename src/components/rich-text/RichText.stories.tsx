@@ -192,7 +192,7 @@ const content: BlocksContent = [
 export const Default: Story = {
   args: {
     content: content,
-    children: <p className="zep-mb-1">This is Custom</p>,
+    children: <p>This is Custom</p>,
     button: 'Herunterladen (PDF, 2MB)',
     type: 'primary-dark',
   } as RichTextProps,
@@ -269,7 +269,7 @@ export const WithSingleImage: Story = {
         ],
       },
     ],
-    children: <p className="zep-mb-1">This is Custom</p>,
+    children: <p>This is Custom</p>,
     button: 'Herunterladen (PDF, 2MB)',
     type: 'primary-dark',
   } as RichTextProps,
