@@ -35,6 +35,8 @@ const MultiLinkListComponent: FC<MultiLinkListProps> = ({
             {...linkListProps}
             isMultiListItem
             isFooterList={isFooterList}
+            gtmId={headerLongProps?.id}
+            gtmHeadline={linkListProps.headline}
           />
         ))}
       </div>

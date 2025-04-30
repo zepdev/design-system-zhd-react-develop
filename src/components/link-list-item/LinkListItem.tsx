@@ -34,7 +34,7 @@ const Description = ({ description }: Partial<LinkListItemProps>) => {
   return null;
 };
 
-const Links = ({ links, type, headline, isFooterList }: LinkListItemProps) => {
+const Links = ({ links, variant, headline, isFooterList, gtmHeadline }: LinkListItemProps) => {
   const datalayer = getDataLayer();
   return (
     <div
@@ -57,11 +57,18 @@ const Links = ({ links, type, headline, isFooterList }: LinkListItemProps) => {
           href={getUrlWithTrailingSlash(link.href)}
           iconPlacement="before"
           onClickCapture={() => {
+            let event = 'interaction_linklist';
+            if (isFooterList) {
+              event = 'interaction_footer';
+            }
+            if (link.href?.startsWith('tel:') || link.href?.startsWith('mailto:')) {
+              event = 'interaction_contact';
+            }
             datalayer.push({
-              event: isFooterList ? 'interaction_footer' : 'interaction_linklist',
+              event,
               link_text: link.label,
               link_context: headline,
-              link_section: isFooterList ? 'footer' : headline,
+              link_section: isFooterList ? 'footer' : gtmHeadline,
             });
           }}
           mode={LinkMode.Inline}
@@ -78,6 +85,8 @@ export const LinkListItem: React.FC<LinkListItemProps> = ({
   isMultiListItem = false,
   className,
   isFooterList = false,
+  gtmId,
+  gtmHeadline,
 }) => {
   const widthClass = isMultiListItem
     ? 'md:zep-flex zep-hidden zep-min-w-[210px]'
@@ -103,7 +112,7 @@ export const LinkListItem: React.FC<LinkListItemProps> = ({
       >
         <Headline headline={headline} />
         <Description description={description} />
-        <Links links={links} headline={headline} isFooterList={isFooterList} />
+        <Links links={links} headline={headline} isFooterList={isFooterList} gtmId={gtmId} gtmHeadline={gtmHeadline} />
       </div>
       <Accordion
         className={clsx(
@@ -125,7 +134,7 @@ export const LinkListItem: React.FC<LinkListItemProps> = ({
             content: (
               <div className="zep-flex zep-flex-col zep-gap-1">
                 <Description description={description} />
-                <Links links={links} headline={headline} isFooterList={isFooterList} />
+                <Links links={links} headline={headline} isFooterList={isFooterList} gtmId={gtmId} gtmHeadline={gtmHeadline} />
               </div>
             ),
           },

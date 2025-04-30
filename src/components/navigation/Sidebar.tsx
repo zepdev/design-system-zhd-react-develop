@@ -102,6 +102,11 @@ export const Sidebar: React.FC<SidebarProps> = ({
               onClick={(e) => {
                 e.preventDefault();
                 setBackAnimation(true);
+                datalayer.push({
+                  event: 'interaction_nav',
+                  link_text: homeItems[Number(parent) - 1]?.label,
+                  link_type: 'nav_back_button', // main_nav, logo, sub_nav, search, language_switcher, etc.
+                });
                 setTimeout(() => {
                   setBackAnimation(false);
                   handleBack();
@@ -117,6 +122,13 @@ export const Sidebar: React.FC<SidebarProps> = ({
               <Link
                 label={homeItems[Number(parent) - 1]?.label}
                 href={homeItems[Number(parent) - 1]?.link}
+                onClickCapture={() => {
+                  datalayer.push({
+                    event: 'interaction_nav',
+                    link_text: homeItems[Number(parent) - 1]?.label,
+                    link_type: 'nav_parent_link', // main_nav, logo, sub_nav, search, language_switcher, etc.
+                  });
+                }}
                 className="zep-mb-1.5 zep-text-typography-light-100"
                 icon="home"
                 iconPlacement="before"
@@ -140,6 +152,13 @@ export const Sidebar: React.FC<SidebarProps> = ({
                       setParent(item.navId);
                       setAnimate(true);
                       handleClick(item.navId, activePath.length); // Update activePath here
+
+                      datalayer.push({
+                        event: 'interaction_nav',
+                        link_text: item.label,
+                        link_type: 'main_nav', // main_nav, logo, sub_nav, search, language_switcher, etc.
+                      });
+
                       setTimeout(() => setAnimate(false), 300);
                     }}
                   />
@@ -183,7 +202,13 @@ export const Sidebar: React.FC<SidebarProps> = ({
         >
           <div className={`${expanded ? 'zep-block' : ''} zep-h-[calc(100svh-40px)] zep-overflow-auto`}>
             <div className="zep-flex zep-justify-end zep-mb-1 zep-mr-1 sm:zep-mr-2">
-              <FunctionalIcon name="close" color="#fff" size={24} onClick={closeSidebar} />
+              <FunctionalIcon name="close" color="#fff" size={24} onClick={closeSidebar} onClickCapture={() => {
+                  datalayer.push({
+                    event: 'interaction_nav',
+                    link_text: 'close_sidebar',
+                    link_type: 'close_sidebar', // main_nav, logo, sub_nav, search, language_switcher, etc.
+                  });
+                }} />
             </div>
             <div className={`${animateMobileLanguage ? 'zep-animate-slide-in' : ''}`}>
               {languageSwitcher ? (
@@ -257,6 +282,13 @@ export const Sidebar: React.FC<SidebarProps> = ({
                 color="#fff"
                 size={24}
                 onClick={closeSidebar}
+                onClickCapture={() => {
+                  datalayer.push({
+                    event: 'interaction_nav',
+                    link_text: 'close_sidebar',
+                    link_type: 'close_sidebar', // main_nav, logo, sub_nav, search, language_switcher, etc.
+                  });
+                }}
                 className="zep-cursor-pointer"
               />
             </div>
@@ -267,6 +299,13 @@ export const Sidebar: React.FC<SidebarProps> = ({
         </div>
         <div
           onClick={closeSidebar}
+          onClickCapture={() => {
+            datalayer.push({
+              event: 'interaction_nav',
+              link_text: 'close_sidebar',
+              link_type: 'close_sidebar', // main_nav, logo, sub_nav, search, language_switcher, etc.
+            });
+          }}
           className={`zep-fixed zep-top-[0px] zep-left-[0px] zep-bg-[#000] transition-all zep-duration-500  zep-w-screen zep-h-screen zep-z-[500] ${
             expanded ? 'zep-opacity-70' : 'zep-opacity-[0]'
           }`}

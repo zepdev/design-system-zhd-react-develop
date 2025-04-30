@@ -1,6 +1,6 @@
+import { BlocksContent } from '@strapi/blocks-react-renderer';
 import { LinkProps } from '@zepdev/design-system-component-library-react';
 import { GlobalVariantExtended, GlobalVariants } from '../../interfaces/global-variants';
-import { BlocksContent } from '@strapi/blocks-react-renderer';
 
 export interface LinkListItemProps {
   headline?: string;
@@ -11,4 +11,6 @@ export interface LinkListItemProps {
   className?: string;
   isFooterList?: boolean;
   type?: 'default' | 'download';
+  gtmId?: string;
+  gtmHeadline?: string;
 }
