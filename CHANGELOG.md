@@ -1,3 +1,10 @@
+## [1.7.3](https://github.com/zepdev/design-system-zhd-react/compare/v1.7.2...v1.7.3) (2025-04-30)
+
+
+### Bug Fixes
+
+* image spacing and single image 100% in richtext ([64111e1](https://github.com/zepdev/design-system-zhd-react/commit/64111e1340293f848241a39b7560693343a17093))
+
 ## [1.7.2](https://github.com/zepdev/design-system-zhd-react/compare/v1.7.1...v1.7.2) (2025-04-29)
 
 
