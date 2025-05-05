@@ -1,3 +1,10 @@
+## [1.7.5](https://github.com/zepdev/design-system-zhd-react/compare/v1.7.4...v1.7.5) (2025-05-05)
+
+
+### Bug Fixes
+
+* add scroll id to media text pattern ([047166a](https://github.com/zepdev/design-system-zhd-react/commit/047166a76375609ae1eae3aa0499c651999a3f69))
+
 ## [1.7.4](https://github.com/zepdev/design-system-zhd-react/compare/v1.7.3...v1.7.4) (2025-04-30)
 
 
