@@ -35,7 +35,7 @@ export const Breadcrumb: FC<BreadcrumbProps> = ({ items }) => {
             ))}
           </div>
         ) : (
-          <div className="zep-flex zep-gap-0.25">
+          <div className="zep-flex zep-gap-0.25 zep-flex-wrap">
             <div className="zep-flex zep-items-center zep-gap-0.25">
               <Link
                 label={items[0]?.title}
@@ -47,7 +47,7 @@ export const Breadcrumb: FC<BreadcrumbProps> = ({ items }) => {
             </div>
 
             <div onClick={() => setExpanded(true)} className="zep-flex zep-items-center zep-gap-0.25">
-              <div className="zep-bg-[#27166f] zep-px-[10px] zep-text-typography-light-100 zep-rounded-4">...</div>
+              <div className="zep-bg-[#E5E5E5] zep-px-[10px] zep-text-typography-dark-100 zep-rounded-4">...</div>
               <FunctionalIcon color="#262626" className="zep-h-[18px] zep-w-[18px]" name="chevron-mini-right" />
             </div>
 
