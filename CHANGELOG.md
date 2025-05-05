@@ -1,3 +1,10 @@
+## [1.7.6](https://github.com/zepdev/design-system-zhd-react/compare/v1.7.5...v1.7.6) (2025-05-05)
+
+
+### Bug Fixes
+
+* breadcrumb ui ([3238017](https://github.com/zepdev/design-system-zhd-react/commit/323801730d1957bd69060cba850106c59505cda5))
+
 ## [1.7.5](https://github.com/zepdev/design-system-zhd-react/compare/v1.7.4...v1.7.5) (2025-05-05)
 
 
