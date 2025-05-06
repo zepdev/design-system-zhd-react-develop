@@ -158,6 +158,13 @@ export const Button: FC<ZsdButtonProps> = ({
       className="zep-w-full sm:zep-w-fit"
       variant={variant}
       onClick={onClick}
+      onClickCapture={() => {
+        datalayer?.push({
+          event: 'interaction_cta',
+          link_text: label ?? 'Complex Element',
+          link_context: label,
+        });
+      }}
       {...props}
     >
       {children}

@@ -2,6 +2,7 @@
 
 import clsx from 'clsx';
 import { FC } from 'react';
+import { getDataLayer } from '../../utils/getDataLayer';
 import { Button, ZsdButtonVariant } from '../zsd-button';
 import { HeroProps } from './hero.interface';
 
@@ -19,6 +20,8 @@ export const Hero: FC<HeroProps> = ({
   description,
   buttonSecondaryUrl,
 }) => {
+  const datalayer = getDataLayer();
+
   return (
     <div>
       <div className="zep-block md:zep-hidden">
@@ -32,7 +35,16 @@ export const Hero: FC<HeroProps> = ({
           <p className="zep-typography-bodyText zep-text-typography-dark-100 zep-mb-1.5">{description}</p>
           {buttonPrimary && (
             <div className="zep-flex zep-flex-col sm:zep-flex-row zep-gap-1">
-              <a href={buttonPrimaryUrl}>
+              <a 
+                onClickCapture={() => {
+                    datalayer.push({
+                      event: 'interaction_cta',
+                      link_text: buttonPrimary,
+                      link_context: headline + ' - Hero primary button',
+                    });
+                  }} 
+                href={buttonPrimaryUrl}
+              >
                 <Button
                   label={buttonPrimary}
                   title={buttonPrimary}
@@ -44,7 +56,16 @@ export const Hero: FC<HeroProps> = ({
               </a>
 
               {buttonSecondary && (
-                <a href={buttonSecondaryUrl}>
+                <a 
+                  href={buttonSecondaryUrl}
+                  onClickCapture={() => {
+                    datalayer.push({
+                      event: 'interaction_cta',
+                      link_text: buttonSecondary,
+                      link_context: headline + ' - Hero secondary button',
+                    });
+                  }}
+                >
                   <Button
                     label={buttonSecondary}
                     title={buttonSecondary}

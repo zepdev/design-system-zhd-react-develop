@@ -1,6 +1,7 @@
 import { FunctionalIcon, Link, LinkMode } from '@zepdev/design-system-component-library-react';
 import { useEffect, useState } from 'react';
 import { LanguageSwitcherProps, Locale } from './navigation.interface';
+import { getDataLayer } from '../../utils/getDataLayer';
 
 export const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({
   selectedLocale,
@@ -13,6 +14,7 @@ export const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({
 }: LanguageSwitcherProps) => {
   const [expanded, setExpanded] = useState(false);
   const [backAnimation, setBackAnimation] = useState(false);
+  const datalayer = getDataLayer();
 
   useEffect(() => {
     setExpanded(true);
@@ -58,6 +60,11 @@ export const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({
             onClick={(e) => {
               e.preventDefault();
               setBackAnimation(true);
+              datalayer.push({
+                event: 'interaction_nav',
+                link_text: `BACK_ARROW`,
+                link_type: 'language_switcher_close', // main_nav, logo, sub_nav, search, language_switcher, etc.
+              });
               setTimeout(() => {
                 setBackAnimation(false);
                 if (setLanguageSwitcher) {
@@ -77,7 +84,16 @@ export const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({
                 <div
                   key={locale.value}
                   className="zep-flex zep-gap-1 zep-mb-1.5 zep-items-center"
-                  onClick={() => setSelectedLocale && setSelectedLocale(locale)}
+                  onClick={() => {
+                    if (setSelectedLocale) {
+                      setSelectedLocale(locale);
+                      datalayer.push({
+                        event: 'interaction_nav',
+                        link_text: `${locale?.label}`,
+                        link_type: 'language_switcher_item', // main_nav, logo, sub_nav, search, language_switcher, etc.
+                      });
+                    }
+                  }}
                 >
                   <div className="zep-w-1.5 zep-h-1.5 zep-bg-typography-light-100 zep-flex zep-justify-center zep-items-center zep-rounded-full">
                     {selectedLocale?.value === locale?.value && (
@@ -106,6 +122,13 @@ export const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({
                 size={24}
                 onClick={closeSidebar}
                 className="zep-cursor-pointer"
+                onClickCapture={() => {
+                  datalayer.push({
+                    event: 'interaction_nav',
+                    link_text: `CLOSE_LANGUAGE_SWITCHER`,
+                    link_type: 'language_switcher_close', // main_nav, logo, sub_nav, search, language_switcher, etc.
+                  });
+                }}
               />
             </div>
             <h4 className="zep-text-headlineXS-fluid-cqi zep-text-typography-light-100 zep-mb-3">{header}</h4>
@@ -117,7 +140,16 @@ export const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({
                     <div
                       key={locale.value}
                       className="zep-flex zep-gap-1 zep-mb-1.5 zep-items-center zep-cursor-pointer"
-                      onClick={() => setSelectedLocale && setSelectedLocale(locale)}
+                      onClick={() => {
+                        if (setSelectedLocale) {
+                          setSelectedLocale(locale);
+                          datalayer.push({
+                            event: 'interaction_nav',
+                            link_text: `${locale?.label}`,
+                            link_type: 'language_switcher_item', // main_nav, logo, sub_nav, search, language_switcher, etc.
+                          });
+                        }
+                      }}
                     >
                       <div className="zep-w-1.5 zep-h-1.5 zep-bg-typography-light-100 zep-flex zep-justify-center zep-items-center zep-rounded-full">
                         {selectedLocale?.value === locale?.value && (
@@ -133,6 +165,13 @@ export const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({
         </div>
         <div
           onClick={closeSidebar}
+          onClickCapture={() => {
+            datalayer.push({
+              event: 'interaction_nav',
+              link_text: `CLOSE_LANGUAGE_SWITCHER`,
+              link_type: 'language_switcher_close', // main_nav, logo, sub_nav, search, language_switcher, etc.
+            });
+          }}
           className={`zep-fixed zep-top-[0px] zep-left-[0px] zep-bg-[#000] transition-all zep-duration-500  zep-w-screen zep-h-screen zep-z-[500] ${
             expanded ? 'zep-opacity-70' : 'zep-opacity-[0]'
           }`}
