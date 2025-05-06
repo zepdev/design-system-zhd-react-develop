@@ -1,3 +1,10 @@
+## [1.7.8](https://github.com/zepdev/design-system-zhd-react/compare/v1.7.7...v1.7.8) (2025-05-06)
+
+
+### Bug Fixes
+
+* datalayer push ([0a50678](https://github.com/zepdev/design-system-zhd-react/commit/0a5067860299033ebd3dc98e2141c8a82a79c41d))
+
 ## [1.7.7](https://github.com/zepdev/design-system-zhd-react/compare/v1.7.6...v1.7.7) (2025-05-06)
 
 
