@@ -64,7 +64,7 @@ const Links = ({ links, headline, isFooterList, gtmHeadline, type }: LinkListIte
             if (link.href?.startsWith('tel:') || link.href?.startsWith('mailto:')) {
               event = 'interaction_contact';
             }
-            datalayer.push({
+            datalayer?.push({
               event,
               link_text: link.label,
               link_context: headline,

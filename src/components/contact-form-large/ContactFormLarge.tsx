@@ -52,7 +52,7 @@ const ContactFormLarge: FC<ContactFormLargeProps> = ({
 
   const datalayer = getDataLayer();
   const submitFunction: SubmitHandler<FormSchemaType> = async (data: FormSchemaType) => {
-    datalayer.push({
+    datalayer?.push({
       event: 'generate_lead',
       form_context: headline,
     });

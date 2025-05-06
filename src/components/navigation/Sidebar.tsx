@@ -102,7 +102,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
               onClick={(e) => {
                 e.preventDefault();
                 setBackAnimation(true);
-                datalayer.push({
+                datalayer?.push({
                   event: 'interaction_nav',
                   link_text: homeItems[Number(parent) - 1]?.label,
                   link_type: 'nav_back_button', // main_nav, logo, sub_nav, search, language_switcher, etc.
@@ -123,7 +123,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
                 label={homeItems[Number(parent) - 1]?.label}
                 href={homeItems[Number(parent) - 1]?.link}
                 onClickCapture={() => {
-                  datalayer.push({
+                  datalayer?.push({
                     event: 'interaction_nav',
                     link_text: homeItems[Number(parent) - 1]?.label,
                     link_type: 'nav_parent_link', // main_nav, logo, sub_nav, search, language_switcher, etc.
@@ -153,7 +153,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
                       setAnimate(true);
                       handleClick(item.navId, activePath.length); // Update activePath here
 
-                      datalayer.push({
+                      datalayer?.push({
                         event: 'interaction_nav',
                         link_text: item.label,
                         link_type: 'main_nav', // main_nav, logo, sub_nav, search, language_switcher, etc.
@@ -170,7 +170,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
                   iconPlacement="before"
                   mode={LinkMode.Standalone}
                   onClickCapture={() => {
-                    datalayer.push({
+                    datalayer?.push({
                       event: 'interaction_nav',
                       link_text: item.label,
                       link_type: 'main_nav', // main_nav, logo, sub_nav, search, language_switcher, etc.
@@ -202,13 +202,19 @@ export const Sidebar: React.FC<SidebarProps> = ({
         >
           <div className={`${expanded ? 'zep-block' : ''} zep-h-[calc(100svh-40px)] zep-overflow-auto`}>
             <div className="zep-flex zep-justify-end zep-mb-1 zep-mr-1 sm:zep-mr-2">
-              <FunctionalIcon name="close" color="#fff" size={24} onClick={closeSidebar} onClickCapture={() => {
-                  datalayer.push({
+              <FunctionalIcon
+                name="close"
+                color="#fff"
+                size={24}
+                onClick={closeSidebar}
+                onClickCapture={() => {
+                  datalayer?.push({
                     event: 'interaction_nav',
                     link_text: 'close_sidebar',
                     link_type: 'close_sidebar', // main_nav, logo, sub_nav, search, language_switcher, etc.
                   });
-                }} />
+                }}
+              />
             </div>
             <div className={`${animateMobileLanguage ? 'zep-animate-slide-in' : ''}`}>
               {languageSwitcher ? (
@@ -235,7 +241,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
                             href={item.link || ''}
                             mode={LinkMode.Standalone}
                             onClickCapture={() => {
-                              datalayer.push({
+                              datalayer?.push({
                                 event: 'interaction_nav',
                                 link_text: item.label,
                                 link_type: 'top_nav', // main_nav, logo, sub_nav, search, language_switcher, etc.
@@ -283,7 +289,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
                 size={24}
                 onClick={closeSidebar}
                 onClickCapture={() => {
-                  datalayer.push({
+                  datalayer?.push({
                     event: 'interaction_nav',
                     link_text: 'close_sidebar',
                     link_type: 'close_sidebar', // main_nav, logo, sub_nav, search, language_switcher, etc.
@@ -300,7 +306,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
         <div
           onClick={closeSidebar}
           onClickCapture={() => {
-            datalayer.push({
+            datalayer?.push({
               event: 'interaction_nav',
               link_text: 'close_sidebar',
               link_type: 'close_sidebar', // main_nav, logo, sub_nav, search, language_switcher, etc.

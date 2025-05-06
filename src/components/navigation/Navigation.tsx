@@ -42,7 +42,7 @@ export const Navigation: FC<NavigationProps> = ({
               href={item.link || ''}
               mode={LinkMode.Standalone}
               onClickCapture={() => {
-                datalayer.push({
+                datalayer?.push({
                   event: 'interaction_nav',
                   link_text: item.label,
                   link_type: 'top_nav', // main_nav, logo, sub_nav, search, language_switcher, etc.
@@ -56,7 +56,7 @@ export const Navigation: FC<NavigationProps> = ({
           className="zep-flex zep-gap-0.5 zep-items-center zep-cursor-pointer zep-group"
           onClick={() => setLocaleSwitcherMenu(true)}
           onClickCapture={() => {
-            datalayer.push({
+            datalayer?.push({
               event: 'interaction_nav',
               link_text: `${selectedLocale?.country} | ${selectedLocale?.langAbbrev?.toUpperCase()}`,
               link_type: 'language_switcher', // main_nav, logo, sub_nav, search, language_switcher, etc.
@@ -72,24 +72,29 @@ export const Navigation: FC<NavigationProps> = ({
       <div className="zep-p-1 sm:zep-px-1.5 md:zep-px-[66px] lg:zep-px-[122px] md:zep-py-1.5 zep-flex zep-justify-between md:zep-justify-start zep-items-center zep-border-b-1 zep-border-greyscale-400">
         <a
           onClickCapture={() => {
-            datalayer.push({
+            datalayer?.push({
               event: 'interaction_nav',
               link_text: 'home',
               link_type: 'logo', // main_nav, logo, sub_nav, search, language_switcher, etc.
             });
-          }} 
+          }}
           href={getHome()}
         >
           <img alt="logo" src={logo} className="md:zep-mr-3 xl:zep-mr-4" />
         </a>
-        <img alt="hamburger_menu" src={burger} className="md:zep-hidden" onClick={() => {
+        <img
+          alt="hamburger_menu"
+          src={burger}
+          className="md:zep-hidden"
+          onClick={() => {
             setOpenSidebar(true);
-            datalayer.push({
+            datalayer?.push({
               event: 'interaction_nav',
               link_text: 'hamburger_menu',
               link_type: 'hamburger_menu', // main_nav, logo, sub_nav, search, language_switcher, etc.
             });
-          }} />
+          }}
+        />
         <div className="zep-hidden md:zep-flex md:zep-gap-2.5 lg:zep-gap-3.5">
           {navigationItems?.map((item, index) => (
             <div

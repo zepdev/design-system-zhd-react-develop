@@ -60,7 +60,7 @@ const CardSquare: FC<CardSquareProps> = ({
         'xl:zep-@container-normal',
       )}
       onClickCapture={() => {
-        datalayer.push({
+        datalayer?.push({
           event: 'interaction_tile',
           link_text: headline,
           link_context: gtmHeadline,
