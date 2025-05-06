@@ -1,3 +1,396 @@
+## [1.7.2](https://github.com/zepdev/design-system-zhd-react/compare/v1.7.1...v1.7.2) (2025-04-29)
+
+
+### Bug Fixes
+
+* footer icons adjustment ([986aae7](https://github.com/zepdev/design-system-zhd-react/commit/986aae72f6317678600edb0ed039f8c332825616))
+
+## [1.7.1](https://github.com/zepdev/design-system-zhd-react/compare/v1.7.0...v1.7.1) (2025-04-28)
+
+
+### Bug Fixes
+
+* pagination press ([a346d56](https://github.com/zepdev/design-system-zhd-react/commit/a346d561a3ca040785671cff29a0fd69ad7a978b))
+
+# [1.7.0](https://github.com/zepdev/design-system-zhd-react/compare/v1.6.13...v1.7.0) (2025-04-28)
+
+
+### Bug Fixes
+
+* adjust the hero width and the height ([9deaa5f](https://github.com/zepdev/design-system-zhd-react/commit/9deaa5f6b9a7df19eb5e25282c11728848152dea))
+* adjust the highlight color of the video for mobile view ([3366d2e](https://github.com/zepdev/design-system-zhd-react/commit/3366d2e5ecf676f3ff308314b5cc3903b5c76a91))
+
+
+### Features
+
+* add blue button and indigo frame for videos ([409ec96](https://github.com/zepdev/design-system-zhd-react/commit/409ec9684c051c6c3699f3e2f43c2b6f7f1ebd2d))
+
+## [1.6.13](https://github.com/zepdev/design-system-zhd-react/compare/v1.6.12...v1.6.13) (2025-04-28)
+
+
+### Bug Fixes
+
+* media-text icon ([b540127](https://github.com/zepdev/design-system-zhd-react/commit/b54012789bc53502c8b7576e8336e6ac2f0b5991))
+
+## [1.6.12](https://github.com/zepdev/design-system-zhd-react/compare/v1.6.11...v1.6.12) (2025-04-28)
+
+
+### Bug Fixes
+
+* added animation code ([827d0fd](https://github.com/zepdev/design-system-zhd-react/commit/827d0fdd85e1ac7d855347823c9f5a1170d175e5))
+
+## [1.6.11](https://github.com/zepdev/design-system-zhd-react/compare/v1.6.10...v1.6.11) (2025-04-28)
+
+
+### Bug Fixes
+
+* undefined document ([fed048b](https://github.com/zepdev/design-system-zhd-react/commit/fed048b830553d9037bd38100b1a734bcf24dd69))
+
+## [1.6.10](https://github.com/zepdev/design-system-zhd-react/compare/v1.6.9...v1.6.10) (2025-04-28)
+
+
+### Bug Fixes
+
+* MediaTextSmall component image and link ([0eb78e7](https://github.com/zepdev/design-system-zhd-react/commit/0eb78e7764200e7568508c5ab9bd3411e0ae2371))
+* remove type ([24f948f](https://github.com/zepdev/design-system-zhd-react/commit/24f948f0f93efe309cab38b3b8c4d21b2fc6b7a9))
+
+## [1.6.9](https://github.com/zepdev/design-system-zhd-react/compare/v1.6.8...v1.6.9) (2025-04-28)
+
+
+### Bug Fixes
+
+* added the 100% width for image ([761011c](https://github.com/zepdev/design-system-zhd-react/commit/761011c57b2e9e522d60038bb9dc721a5dd873db))
+* hydration ([1501d64](https://github.com/zepdev/design-system-zhd-react/commit/1501d648a4097a790c0364d5d68a754ef9e3609b))
+* width of the small hero ([cdf4e6e](https://github.com/zepdev/design-system-zhd-react/commit/cdf4e6eb6cbcefa4085b62cc820cf1b95714addb))
+
+## [1.6.8](https://github.com/zepdev/design-system-zhd-react/compare/v1.6.7...v1.6.8) (2025-04-28)
+
+
+### Bug Fixes
+
+* footer update ([11807e8](https://github.com/zepdev/design-system-zhd-react/commit/11807e8f86e3b083b43ad92a3ead8fda5bc54387))
+
+## [1.6.7](https://github.com/zepdev/design-system-zhd-react/compare/v1.6.6...v1.6.7) (2025-04-28)
+
+
+### Bug Fixes
+
+* breadcrumb width ([2a415b3](https://github.com/zepdev/design-system-zhd-react/commit/2a415b37589b6bf2f47c54e9590b39e9cffd9486))
+
+## [1.6.6](https://github.com/zepdev/design-system-zhd-react/compare/v1.6.5...v1.6.6) (2025-04-28)
+
+
+### Bug Fixes
+
+* breadcrumb and nav icon ([4145fbd](https://github.com/zepdev/design-system-zhd-react/commit/4145fbd92dce7b8a867ea8e15b7d60f94c249068))
+
+## [1.6.5](https://github.com/zepdev/design-system-zhd-react/compare/v1.6.4...v1.6.5) (2025-04-25)
+
+
+### Bug Fixes
+
+* added gradiant overlay for all variant ([ddc13f4](https://github.com/zepdev/design-system-zhd-react/commit/ddc13f407426b4124e99e2b3ccaf481205209fdd))
+* added indigo variant in SmallHero ([6c0a3e7](https://github.com/zepdev/design-system-zhd-react/commit/6c0a3e79d518dcea1e44f74f22429cf18124d358))
+
+## [1.6.4](https://github.com/zepdev/design-system-zhd-react/compare/v1.6.3...v1.6.4) (2025-04-25)
+
+
+### Bug Fixes
+
+* font setting ([d38ccf7](https://github.com/zepdev/design-system-zhd-react/commit/d38ccf7cd8dca6db1a8b07fb373720c176c0eb12))
+
+## [1.6.3](https://github.com/zepdev/design-system-zhd-react/compare/v1.6.2...v1.6.3) (2025-04-25)
+
+
+### Bug Fixes
+
+* hyphens text ([33b279d](https://github.com/zepdev/design-system-zhd-react/commit/33b279d01e56990a81bb7ed6ccdcbc3db7805333))
+
+## [1.6.2](https://github.com/zepdev/design-system-zhd-react/compare/v1.6.1...v1.6.2) (2025-04-25)
+
+
+### Bug Fixes
+
+* remove anchor tag from headline ([5c89402](https://github.com/zepdev/design-system-zhd-react/commit/5c894022a32cc1328a496225de0f0e92bb5963f9))
+
+## [1.6.1](https://github.com/zepdev/design-system-zhd-react/compare/v1.6.0...v1.6.1) (2025-04-25)
+
+
+### Bug Fixes
+
+* marked the whole card clickable and also adjsut the iamge height with content ([913ea2e](https://github.com/zepdev/design-system-zhd-react/commit/913ea2eea108cceea434d9a85f1ef546540c29c3))
+
+# [1.6.0](https://github.com/zepdev/design-system-zhd-react/compare/v1.5.16...v1.6.0) (2025-04-24)
+
+
+### Bug Fixes
+
+* fix linting error ([6524f2e](https://github.com/zepdev/design-system-zhd-react/commit/6524f2e4dc32bac956d84b4b3c5abd0468dd36d7))
+* header long icon ([83771ba](https://github.com/zepdev/design-system-zhd-react/commit/83771ba086c3089fefde32d8cb7c5a7ad5e1d40f))
+* header long icon ([b5dcc01](https://github.com/zepdev/design-system-zhd-react/commit/b5dcc0199ac5def555466bdd65fb753275e8aa09))
+* instagram feed cookie covered only images ([d61513c](https://github.com/zepdev/design-system-zhd-react/commit/d61513c4da2219be004bf67afa5ead0e6c64d8df))
+
+
+### Features
+
+* add zsd buttons to components ([79a7a52](https://github.com/zepdev/design-system-zhd-react/commit/79a7a529448b513b87d7b066db252aa019e36d88))
+
+## [1.5.16](https://github.com/zepdev/design-system-zhd-react/compare/v1.5.15...v1.5.16) (2025-04-24)
+
+
+### Bug Fixes
+
+* contact form success ([301a744](https://github.com/zepdev/design-system-zhd-react/commit/301a744dab92383749965a4b23da2ce6e3f7bb79))
+
+## [1.5.15](https://github.com/zepdev/design-system-zhd-react/compare/v1.5.14...v1.5.15) (2025-04-24)
+
+
+### Bug Fixes
+
+* external links ([acd962a](https://github.com/zepdev/design-system-zhd-react/commit/acd962a946432c63cb15eeaee2ccf029ab189f7d))
+
+## [1.5.14](https://github.com/zepdev/design-system-zhd-react/compare/v1.5.13...v1.5.14) (2025-04-24)
+
+
+### Bug Fixes
+
+* added cookie layer in the instagram feed ([15d33ce](https://github.com/zepdev/design-system-zhd-react/commit/15d33ce105fa1aae3471d9d2d6f80377bc9fe5bb))
+
+## [1.5.13](https://github.com/zepdev/design-system-zhd-react/compare/v1.5.12...v1.5.13) (2025-04-24)
+
+
+### Bug Fixes
+
+* api client types ([439460a](https://github.com/zepdev/design-system-zhd-react/commit/439460ab78dc2fba1a673f988d8e5aa1656cc729))
+
+## [1.5.12](https://github.com/zepdev/design-system-zhd-react/compare/v1.5.11...v1.5.12) (2025-04-24)
+
+
+### Bug Fixes
+
+* api client types ([5eb23e8](https://github.com/zepdev/design-system-zhd-react/commit/5eb23e8b69dec898b672a3d9d69e035bd5aaaf0a))
+
+## [1.5.11](https://github.com/zepdev/design-system-zhd-react/compare/v1.5.10...v1.5.11) (2025-04-23)
+
+
+### Bug Fixes
+
+* font bold ([e0bc66d](https://github.com/zepdev/design-system-zhd-react/commit/e0bc66d7e2f88ad74a0f27e7955d6117a2d2ae0f))
+
+## [1.5.10](https://github.com/zepdev/design-system-zhd-react/compare/v1.5.9...v1.5.10) (2025-04-22)
+
+
+### Bug Fixes
+
+* optanon consent ([9344fea](https://github.com/zepdev/design-system-zhd-react/commit/9344fea0401b3838c7f742f957342435249fbfb3))
+
+## [1.5.9](https://github.com/zepdev/design-system-zhd-react/compare/v1.5.8...v1.5.9) (2025-04-21)
+
+
+### Bug Fixes
+
+* header short ([51e0530](https://github.com/zepdev/design-system-zhd-react/commit/51e053050de89366428a05004569affc247b4146))
+
+## [1.5.8](https://github.com/zepdev/design-system-zhd-react/compare/v1.5.7...v1.5.8) (2025-04-18)
+
+
+### Bug Fixes
+
+* added extra linktype none ([1472718](https://github.com/zepdev/design-system-zhd-react/commit/14727182a6287e59e0b83ee764856ba64b986f3e))
+* added the link type none ([aa59745](https://github.com/zepdev/design-system-zhd-react/commit/aa597456640d0451f05f9dccd9789e8ea38fd2db))
+* Contact form added ([6385ca9](https://github.com/zepdev/design-system-zhd-react/commit/6385ca947ae0e359ac0f3ec634a600e173607d05))
+
+## [1.5.7](https://github.com/zepdev/design-system-zhd-react/compare/v1.5.6...v1.5.7) (2025-04-17)
+
+
+### Bug Fixes
+
+* Anchor nav ([dc00a2f](https://github.com/zepdev/design-system-zhd-react/commit/dc00a2f34a52c33f97802c340e32de186c292514))
+
+## [1.5.6](https://github.com/zepdev/design-system-zhd-react/compare/v1.5.5...v1.5.6) (2025-04-17)
+
+
+### Bug Fixes
+
+* added extra fallback fonts ([98b9d9f](https://github.com/zepdev/design-system-zhd-react/commit/98b9d9fbc4e7f2398b372a4b1c7eb4bfa17e9369))
+* added fallback font arial ([0114099](https://github.com/zepdev/design-system-zhd-react/commit/0114099085c16be06cf7d6a894d422e74246dc9c))
+* edit process chain to be like zps but with link chain ([25119f9](https://github.com/zepdev/design-system-zhd-react/commit/25119f964b6ce186906e04252ab471101a2871ea))
+* remove icons in links ([785b99e](https://github.com/zepdev/design-system-zhd-react/commit/785b99e38a013430b73763c834048a77e90e1b86))
+
+## [1.5.5](https://github.com/zepdev/design-system-zhd-react/compare/v1.5.4...v1.5.5) (2025-04-15)
+
+
+### Bug Fixes
+
+* Build ([dd9a372](https://github.com/zepdev/design-system-zhd-react/commit/dd9a37214e8f591f210bcfab94b63e18f0ad0bda))
+* Media text link ([e035353](https://github.com/zepdev/design-system-zhd-react/commit/e0353535536f4e7e6fd124b4eb092335f044008c))
+
+## [1.5.4](https://github.com/zepdev/design-system-zhd-react/compare/v1.5.3...v1.5.4) (2025-04-14)
+
+
+### Bug Fixes
+
+* Header long icon ([ea28ab2](https://github.com/zepdev/design-system-zhd-react/commit/ea28ab227e45e4ee033f64dc0ed40d0b7e151049))
+
+## [1.5.3](https://github.com/zepdev/design-system-zhd-react/compare/v1.5.2...v1.5.3) (2025-04-14)
+
+
+### Bug Fixes
+
+* Media text download ([b73a7c8](https://github.com/zepdev/design-system-zhd-react/commit/b73a7c8324d2b86d5ab4a8504a690d17111b8e48))
+
+## [1.5.2](https://github.com/zepdev/design-system-zhd-react/compare/v1.5.1...v1.5.2) (2025-04-14)
+
+
+### Bug Fixes
+
+* added new breakpoint ([da5fac6](https://github.com/zepdev/design-system-zhd-react/commit/da5fac67237357201f461070df222de2f075946a))
+* breadcrumbs color ([8910873](https://github.com/zepdev/design-system-zhd-react/commit/891087366787c77e0f9fedaa960ce33ed18f89e7))
+* Contact section, multilink list ([c72908d](https://github.com/zepdev/design-system-zhd-react/commit/c72908ddb8636651ec8d6c79cf471f7838263283))
+* design change for cardSquare ([a5fc10e](https://github.com/zepdev/design-system-zhd-react/commit/a5fc10ea6d01ad64e5e933379b9130037276e968))
+* fix color or breadcrumbs icons ([66baf6f](https://github.com/zepdev/design-system-zhd-react/commit/66baf6ff9fe1dde9f373a6f14b48e9a4fb3a40a6))
+* hover effect on card square whole ([397ac98](https://github.com/zepdev/design-system-zhd-react/commit/397ac982fc2e9ab484d7645c41e8f07d326bac50))
+* remove hover effect 700 ([9235346](https://github.com/zepdev/design-system-zhd-react/commit/9235346c3834916743f11aadab4106aca45e59c9))
+* rework on fonts and spacing ([7ddf185](https://github.com/zepdev/design-system-zhd-react/commit/7ddf185cf8ef029c60e8b309f33c6854a9c16101))
+
+## [1.5.1](https://github.com/zepdev/design-system-zhd-react/compare/v1.5.0...v1.5.1) (2025-04-09)
+
+
+### Bug Fixes
+
+* Hydration on media text small ([512bf6c](https://github.com/zepdev/design-system-zhd-react/commit/512bf6c7272abdbe4e915b482bf53fc11c30d576))
+
+# [1.5.0](https://github.com/zepdev/design-system-zhd-react/compare/v1.4.9...v1.5.0) (2025-04-09)
+
+
+### Bug Fixes
+
+* change content to descrption ([73e4373](https://github.com/zepdev/design-system-zhd-react/commit/73e4373243ab084ad389ce760014007fcff3e9aa))
+* remove small hero corp and add process chain styles as zsd ([f0a35a2](https://github.com/zepdev/design-system-zhd-react/commit/f0a35a212f0946ae0aadccce833950ca8cf336be))
+* removed unused description ([e6d7046](https://github.com/zepdev/design-system-zhd-react/commit/e6d704672e5b15a69620be7d08bec4526c01a41d))
+* removed unused variables ([18f2d45](https://github.com/zepdev/design-system-zhd-react/commit/18f2d45e695ab19308bc0afebb02f1e0f45b5a79))
+
+
+### Features
+
+* add LinkChain in process chain ([52384cb](https://github.com/zepdev/design-system-zhd-react/commit/52384cb9497787e4139369d1c6f0797738c0adef))
+
+## [1.4.9](https://github.com/zepdev/design-system-zhd-react/compare/v1.4.8...v1.4.9) (2025-04-08)
+
+
+### Bug Fixes
+
+* Card height ([c43d9e1](https://github.com/zepdev/design-system-zhd-react/commit/c43d9e1774be9eae439285249d40c53c13114b38))
+
+## [1.4.8](https://github.com/zepdev/design-system-zhd-react/compare/v1.4.7...v1.4.8) (2025-04-08)
+
+
+### Bug Fixes
+
+* General adjustments ([88883c2](https://github.com/zepdev/design-system-zhd-react/commit/88883c231df423dd1a44e06de012e1ddf0275829))
+
+## [1.4.7](https://github.com/zepdev/design-system-zhd-react/compare/v1.4.6...v1.4.7) (2025-04-08)
+
+
+### Bug Fixes
+
+* Instagram card ulr ([4e7df4f](https://github.com/zepdev/design-system-zhd-react/commit/4e7df4f8af080ebc2684e4f4fb35241896b8101a))
+
+## [1.4.6](https://github.com/zepdev/design-system-zhd-react/compare/v1.4.5...v1.4.6) (2025-04-08)
+
+
+### Bug Fixes
+
+* Update bg instagram ([6cf3f64](https://github.com/zepdev/design-system-zhd-react/commit/6cf3f64085355479fb765e0032cb7ddabd3d31fa))
+
+## [1.4.5](https://github.com/zepdev/design-system-zhd-react/compare/v1.4.4...v1.4.5) (2025-04-08)
+
+
+### Bug Fixes
+
+* add test ([d0ec7fc](https://github.com/zepdev/design-system-zhd-react/commit/d0ec7fc459b516498a16b9b6ec5e7b26669a7744))
+* fix unit test ([532d903](https://github.com/zepdev/design-system-zhd-react/commit/532d9037ea7d9e8671176836728eb1fbd9ba754c))
+* media text small blockcontent ([3589779](https://github.com/zepdev/design-system-zhd-react/commit/3589779851ff83a0333b149610daddb2749f645b))
+* Richtext ([b4a9553](https://github.com/zepdev/design-system-zhd-react/commit/b4a95535780d70f1f8abb131ef327c444bfc54f9))
+* unit test ([f2fef53](https://github.com/zepdev/design-system-zhd-react/commit/f2fef5320f2aca7334dde650f4db10c18b40129a))
+* unit test ([b64a1b4](https://github.com/zepdev/design-system-zhd-react/commit/b64a1b4b45a3544f2bd60f0e58c59e90cf506ca5))
+
+## [1.4.4](https://github.com/zepdev/design-system-zhd-react/compare/v1.4.3...v1.4.4) (2025-04-07)
+
+
+### Bug Fixes
+
+* added the heights for image ([59b4a40](https://github.com/zepdev/design-system-zhd-react/commit/59b4a405f4193e250c20abf3f2bc8e544129b364))
+* added the object top ([5877639](https://github.com/zepdev/design-system-zhd-react/commit/5877639154b39941bb1b8a648575de720e79b02c))
+* Minor improvements ([4450120](https://github.com/zepdev/design-system-zhd-react/commit/4450120485bba042c26a6a86527820696fa59c71))
+* Tests ([3eda37a](https://github.com/zepdev/design-system-zhd-react/commit/3eda37adcc3629d5cccaaf45026cdeb257838566))
+
+## [1.4.3](https://github.com/zepdev/design-system-zhd-react/compare/v1.4.2...v1.4.3) (2025-04-07)
+
+
+### Bug Fixes
+
+* Export card ([92e72b4](https://github.com/zepdev/design-system-zhd-react/commit/92e72b4d4be085de5d5b1f32d6905ec615bb27c2))
+
+## [1.4.2](https://github.com/zepdev/design-system-zhd-react/compare/v1.4.1...v1.4.2) (2025-04-07)
+
+
+### Bug Fixes
+
+* trigger release ([c9ea473](https://github.com/zepdev/design-system-zhd-react/commit/c9ea473300c195d5516c6cce0ed5b47480922a30))
+
+## [1.4.1](https://github.com/zepdev/design-system-zhd-react/compare/v1.4.0...v1.4.1) (2025-04-04)
+
+
+### Bug Fixes
+
+* Export small hero ([4db3ed1](https://github.com/zepdev/design-system-zhd-react/commit/4db3ed12143fc411f5fe0e813645d190391f1186))
+
+# [1.4.0](https://github.com/zepdev/design-system-zhd-react/compare/v1.3.0...v1.4.0) (2025-04-04)
+
+
+### Features
+
+* Small hero ([5fe0b1a](https://github.com/zepdev/design-system-zhd-react/commit/5fe0b1a4ee45ce2693094fce89810d0bb1162de6))
+
+# [1.3.0](https://github.com/zepdev/design-system-zhd-react/compare/v1.2.0...v1.3.0) (2025-04-04)
+
+
+### Bug Fixes
+
+* breadcrums colors ([df5932a](https://github.com/zepdev/design-system-zhd-react/commit/df5932aa39853049c7c5d46a97c861bbe061c300))
+* Hero adjustment ([5867177](https://github.com/zepdev/design-system-zhd-react/commit/586717779c2c2802fbea69eab4ec855fa103285b))
+* image aspect ratio and added new breakpoint to the storybook ([e688291](https://github.com/zepdev/design-system-zhd-react/commit/e688291c5875c6a742ade9d8ac3fbc465dff28ac))
+* Media text adjustments ([da3e5dc](https://github.com/zepdev/design-system-zhd-react/commit/da3e5dc5a351271600505d70aceb1016c7dcde1b))
+* Tests ([09817f1](https://github.com/zepdev/design-system-zhd-react/commit/09817f1aba15d066a706e8686d4526ba60131047))
+
+
+### Features
+
+* Navigation+Footer ([4c0be4b](https://github.com/zepdev/design-system-zhd-react/commit/4c0be4b7f9c81120f3f1ae3bb78df9a582ac595a))
+
+# [1.2.0](https://github.com/zepdev/design-system-zhd-react/compare/v1.1.0...v1.2.0) (2025-04-04)
+
+
+### Bug Fixes
+
+* add missing asset for hero ([b9c0092](https://github.com/zepdev/design-system-zhd-react/commit/b9c00927cb3d9cf5bdda09dd73397bbefa828d05))
+* headline align left ([d320648](https://github.com/zepdev/design-system-zhd-react/commit/d32064889fa8b980d6929dbc3d964583ff2174ad))
+* padding issue between two components ([b583999](https://github.com/zepdev/design-system-zhd-react/commit/b583999ddb4877e54e179cd8f52faaa1d65b6ee9))
+* Pipeline ([e31297c](https://github.com/zepdev/design-system-zhd-react/commit/e31297c46400bd3f5a3ead44e6f700ed829fbea9))
+* removed typos ([0c59b49](https://github.com/zepdev/design-system-zhd-react/commit/0c59b490830d722b34c9b79d64ba253d69f36956))
+* try to fix test error ([0f2e0d2](https://github.com/zepdev/design-system-zhd-react/commit/0f2e0d27151a0d6b9510b2e0fbdbb4aef148f66e))
+* Yarn lock ([ec58cdf](https://github.com/zepdev/design-system-zhd-react/commit/ec58cdf248dc69de96c40c270608532921e5bd30))
+
+
+### Features
+
+* add and zsd components and remove unnecessary ones and adjust components accordingly ([963c3f0](https://github.com/zepdev/design-system-zhd-react/commit/963c3f0c2422887f37deaf5d7b8ec7f60c3cc924))
+* created new card component & pattern ([1287f4c](https://github.com/zepdev/design-system-zhd-react/commit/1287f4c7aaa6ee73072f0316bcce191e95134947))
+* Refactor ([4f7ab2c](https://github.com/zepdev/design-system-zhd-react/commit/4f7ab2caacd3f2302bb1860fe4dc293bba3e158c))
+* Rich text adjustments ([3fa7801](https://github.com/zepdev/design-system-zhd-react/commit/3fa7801804aa30df6997e7c6d71f6e8c8ed946ab))
+* ZPS Refactor ([fd8612d](https://github.com/zepdev/design-system-zhd-react/commit/fd8612d879e407ac37c3849082dbfc03286ec58a))
+
 # [1.1.0](https://github.com/zepdev/design-system-zhd-react/compare/v1.0.0...v1.1.0) (2025-04-02)
 
 

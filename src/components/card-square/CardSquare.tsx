@@ -4,6 +4,7 @@ import { FC, useRef } from 'react';
 import { useContainerDimensions } from '../../hooks/useContainerDimensions';
 import { getDataLayer } from '../../utils/getDataLayer';
 import { getUrlWithTrailingSlash } from '../../utils/getUrlWithTrailingSlash';
+import { slugify } from '../../utils/slugify';
 import { CardSquareProps } from './card-square.interface';
 
 export const cardSquareCardCva = cva([
@@ -41,6 +42,7 @@ const CardSquare: FC<CardSquareProps> = ({
   };
   const datalayer = getDataLayer();
 
+  const gtm_id = gtmId || slugify(headline ?? '');
   return (
     <a
       href={getUrlWithTrailingSlash(url)}
@@ -62,7 +64,7 @@ const CardSquare: FC<CardSquareProps> = ({
           event: 'interaction_tile',
           link_text: headline,
           link_context: gtmHeadline,
-          link_section: gtmId,
+          link_section: gtm_id,
         });
       }}
       data-testid="zep-card-square"
