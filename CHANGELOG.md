@@ -1,3 +1,10 @@
+## [1.7.7](https://github.com/zepdev/design-system-zhd-react/compare/v1.7.6...v1.7.7) (2025-05-06)
+
+
+### Bug Fixes
+
+* fast forward tracking ([#145](https://github.com/zepdev/design-system-zhd-react/issues/145)) ([80c0801](https://github.com/zepdev/design-system-zhd-react/commit/80c0801fe1a97f7e376fcbda3557df5963ef982d))
+
 ## [1.7.6](https://github.com/zepdev/design-system-zhd-react/compare/v1.7.5...v1.7.6) (2025-05-05)
 
 ### Bug Fixes
