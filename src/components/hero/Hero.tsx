@@ -35,14 +35,14 @@ export const Hero: FC<HeroProps> = ({
           <p className="zep-typography-bodyText zep-text-typography-dark-100 zep-mb-1.5">{description}</p>
           {buttonPrimary && (
             <div className="zep-flex zep-flex-col sm:zep-flex-row zep-gap-1">
-              <a 
+              <a
                 onClickCapture={() => {
-                    datalayer.push({
-                      event: 'interaction_cta',
-                      link_text: buttonPrimary,
-                      link_context: headline + ' - Hero primary button',
-                    });
-                  }} 
+                  datalayer?.push({
+                    event: 'interaction_cta',
+                    link_text: buttonPrimary,
+                    link_context: headline + ' - Hero primary button',
+                  });
+                }}
                 href={buttonPrimaryUrl}
               >
                 <Button
@@ -56,10 +56,10 @@ export const Hero: FC<HeroProps> = ({
               </a>
 
               {buttonSecondary && (
-                <a 
+                <a
                   href={buttonSecondaryUrl}
                   onClickCapture={() => {
-                    datalayer.push({
+                    datalayer?.push({
                       event: 'interaction_cta',
                       link_text: buttonSecondary,
                       link_context: headline + ' - Hero secondary button',

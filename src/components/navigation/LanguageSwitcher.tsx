@@ -1,7 +1,7 @@
 import { FunctionalIcon, Link, LinkMode } from '@zepdev/design-system-component-library-react';
 import { useEffect, useState } from 'react';
-import { LanguageSwitcherProps, Locale } from './navigation.interface';
 import { getDataLayer } from '../../utils/getDataLayer';
+import { LanguageSwitcherProps, Locale } from './navigation.interface';
 
 export const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({
   selectedLocale,
@@ -60,7 +60,7 @@ export const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({
             onClick={(e) => {
               e.preventDefault();
               setBackAnimation(true);
-              datalayer.push({
+              datalayer?.push({
                 event: 'interaction_nav',
                 link_text: `BACK_ARROW`,
                 link_type: 'language_switcher_close', // main_nav, logo, sub_nav, search, language_switcher, etc.
@@ -87,7 +87,7 @@ export const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({
                   onClick={() => {
                     if (setSelectedLocale) {
                       setSelectedLocale(locale);
-                      datalayer.push({
+                      datalayer?.push({
                         event: 'interaction_nav',
                         link_text: `${locale?.label}`,
                         link_type: 'language_switcher_item', // main_nav, logo, sub_nav, search, language_switcher, etc.
@@ -123,7 +123,7 @@ export const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({
                 onClick={closeSidebar}
                 className="zep-cursor-pointer"
                 onClickCapture={() => {
-                  datalayer.push({
+                  datalayer?.push({
                     event: 'interaction_nav',
                     link_text: `CLOSE_LANGUAGE_SWITCHER`,
                     link_type: 'language_switcher_close', // main_nav, logo, sub_nav, search, language_switcher, etc.
@@ -143,7 +143,7 @@ export const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({
                       onClick={() => {
                         if (setSelectedLocale) {
                           setSelectedLocale(locale);
-                          datalayer.push({
+                          datalayer?.push({
                             event: 'interaction_nav',
                             link_text: `${locale?.label}`,
                             link_type: 'language_switcher_item', // main_nav, logo, sub_nav, search, language_switcher, etc.
@@ -166,7 +166,7 @@ export const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({
         <div
           onClick={closeSidebar}
           onClickCapture={() => {
-            datalayer.push({
+            datalayer?.push({
               event: 'interaction_nav',
               link_text: `CLOSE_LANGUAGE_SWITCHER`,
               link_type: 'language_switcher_close', // main_nav, logo, sub_nav, search, language_switcher, etc.

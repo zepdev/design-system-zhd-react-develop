@@ -62,7 +62,7 @@ export const Footer: React.FC<FooterProps> = ({
                     label={link.label}
                     mode={LinkMode.Inline}
                     onClickCapture={() => {
-                      datalayer.push({
+                      datalayer?.push({
                         event: 'interaction_footer',
                         link_text: link.label,
                         link_context: 'Under Footer links',
