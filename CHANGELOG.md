@@ -1,3 +1,11 @@
+## [1.7.9](https://github.com/zepdev/design-system-zhd-react/compare/v1.7.8...v1.7.9) (2025-05-07)
+
+
+### Bug Fixes
+
+* build errors ([23ba5e1](https://github.com/zepdev/design-system-zhd-react/commit/23ba5e1ae31de6dfa3f85f55c4387b427c88b216))
+* usp item icon ([6acb792](https://github.com/zepdev/design-system-zhd-react/commit/6acb792cd0b748e3f3419d3c2ff5dfa9dce4b239))
+
 ## [1.7.8](https://github.com/zepdev/design-system-zhd-react/compare/v1.7.7...v1.7.8) (2025-05-06)
 
 
