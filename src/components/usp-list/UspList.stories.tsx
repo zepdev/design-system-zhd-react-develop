@@ -17,12 +17,14 @@ export const Default: Story = {
     headerTitle: 'Vorteile für Ihr Unternehmen',
     uspCards: [
       {
+        icon: 'https://img.logoipsum.com/371.svg',
         headline: 'Nachhaltig managen',
         count: '1.',
         description:
           'Mit AEC können Sie den Zustand Ihrer Anlagen kontinuierlich analysieren und Optimierungspotenziale identifizieren, um eine ressourcenschonende Betriebsweise zu gewährleisten. Sie können die Lebensdauer Ihrer Motoren und Anlagen verlängern sowie die Emissionen und den Kraftstoffverbrauch senken.',
       },
       {
+        icon: 'https://img.logoipsum.com/359.svg',
         headline: 'Alle Daten auf einen Blick',
         count: '2.',
         description:

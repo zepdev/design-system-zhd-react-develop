@@ -26,7 +26,7 @@ export const USPList: React.FC<USPListProps> = ({ uspCards, headerTitle, tagline
             count={card?.count || `${index + 1}.`}
             headline={card.headline}
             description={card.description}
-            iconName={card.iconName}
+            icon={card?.icon}
           />
         ))}
       </Scrollbar>

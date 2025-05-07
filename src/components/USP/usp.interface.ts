@@ -1,13 +1,9 @@
-import { ProductIcons } from '@zepdev/design-system-component-library-react';
-
-export type ProductIconNames = keyof typeof ProductIcons;
-
 export enum HeaderShortDefault {
   default = 'default',
 }
 
 export interface USPProps {
-  iconName?: ProductIconNames;
+  icon?: string;
   count?: string;
   headline: string;
   description: string;
