@@ -1,5 +1,6 @@
 export interface AnchorNavigationCardProps {
-    linkLabel?: string;
+    headline?: string;
+    linkLabel: string;
     scrollToIdLink: string;
     className?: string;
 }
