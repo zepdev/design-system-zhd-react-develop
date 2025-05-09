@@ -30,6 +30,7 @@ export const CardMedia: React.FC<CardMediaProps> = ({
         'xl:zep-py-3',
         'zep-flex',
         'zep-flex-col',
+        'zep-content-start',
         'zep-gap-2',
         'zep-flex-grow',
         'zep-bg-greyscale-0',
@@ -78,7 +79,7 @@ export const CardMedia: React.FC<CardMediaProps> = ({
         label={linkText}
         href={getUrlWithTrailingSlash(linkSrc)}
         mode={LinkMode.Standalone}
-        className={'zep-text-typography-dark-100'}
+        className={'zep-text-typography-dark-100 zep-self-start'}
         download={linkType === 'download'}
         icon={icon}
         iconPlacement={iconPlacement}
