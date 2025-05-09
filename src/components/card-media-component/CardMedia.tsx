@@ -14,6 +14,8 @@ export const CardMedia: React.FC<CardMediaProps> = ({
   linkText,
   description,
   linkType = 'internal-link',
+  icon,
+  iconPlacement,
 }: CardMediaProps) => {
   const imageHeightClass =
     imageOrientation === 'horizontal' ? 'zep-h-[116px] md:zep-h-[132px] lg:zep-h-[148px]' : 'zep-aspect-[100/141]';
@@ -28,6 +30,7 @@ export const CardMedia: React.FC<CardMediaProps> = ({
         'xl:zep-py-3',
         'zep-flex',
         'zep-flex-col',
+        'zep-content-start',
         'zep-gap-2',
         'zep-flex-grow',
         'zep-bg-greyscale-0',
@@ -76,8 +79,10 @@ export const CardMedia: React.FC<CardMediaProps> = ({
         label={linkText}
         href={getUrlWithTrailingSlash(linkSrc)}
         mode={LinkMode.Standalone}
-        className={'zep-text-typography-dark-100'}
+        className={'zep-text-typography-dark-100 zep-self-start'}
         download={linkType === 'download'}
+        icon={icon}
+        iconPlacement={iconPlacement}
       />
     </div>
   );

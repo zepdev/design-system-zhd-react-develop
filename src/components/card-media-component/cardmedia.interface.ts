@@ -1,4 +1,5 @@
 import { GlobalVariants } from '../../interfaces/global-variants';
+import { FunctionalIconNames } from '~/@zepdev/design-system-component-library-react/dist/lib';
 
 export interface CardMediaProps {
   imageSrc: string;
@@ -11,4 +12,6 @@ export interface CardMediaProps {
   linkType?: 'internal-link' | 'external-link' | 'download' | 'none';
   variant?: GlobalVariants;
   className?: string;
+  icon?: FunctionalIconNames;
+  iconPlacement?: 'before' | 'after';
 }
