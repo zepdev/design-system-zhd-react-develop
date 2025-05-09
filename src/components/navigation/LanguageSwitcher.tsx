@@ -95,7 +95,7 @@ export const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({
                     }
                   }}
                 >
-                  <div className="zep-w-1.5 zep-h-1.5 zep-bg-typography-light-100 zep-flex zep-justify-center zep-items-center zep-rounded-full">
+                  <div className="zep-w-1.5 zep-h-1.5 zep-border-1 zep-border-b-background-dark zep-flex zep-justify-center zep-items-center zep-rounded-full">
                     {selectedLocale?.value === locale?.value && (
                       <div className="zep-w-0.75 zep-h-0.75 zep-bg-neutral-dark-default zep-rounded-full" />
                     )}
@@ -151,7 +151,7 @@ export const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({
                         }
                       }}
                     >
-                      <div className="zep-w-1.5 zep-h-1.5 zep-bg-typography-light-100 zep-flex zep-justify-center zep-items-center zep-rounded-full">
+                      <div className="zep-w-1.5 zep-h-1.5 zep-border-1 zep-border-b-background-dark zep-flex zep-justify-center zep-items-center zep-rounded-full">
                         {selectedLocale?.value === locale?.value && (
                           <div className="zep-w-0.75 zep-h-0.75 zep-bg-neutral-dark-default zep-rounded-full" />
                         )}
