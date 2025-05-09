@@ -7,7 +7,7 @@ export declare const infographicImageVariants: {
     CAT: never[];
 };
 export declare const infographicImageCva: (props?: ({
-    variant?: GlobalVariants | null | undefined;
+    variant?: GlobalVariants.Zps | GlobalVariants.Cat | null | undefined;
 } & import('class-variance-authority/dist/types').ClassProp) | undefined) => string;
 declare const InfographicImage: FC<InfographicImageProps>;
 export { InfographicImage };

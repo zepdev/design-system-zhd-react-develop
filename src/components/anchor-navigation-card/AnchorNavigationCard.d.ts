@@ -7,7 +7,7 @@ export declare const anchorCardVariants: {
     CAT: string[];
 };
 export declare const anchorNavigationCardCva: (props?: ({
-    variant?: GlobalVariants | null | undefined;
+    variant?: GlobalVariants.Zps | GlobalVariants.Cat | null | undefined;
 } & import('class-variance-authority/dist/types').ClassProp) | undefined) => string;
 export declare const AnchorNavigationCard: React.FC<AnchorNavigationCardProps>;
 //# sourceMappingURL=AnchorNavigationCard.d.ts.map
