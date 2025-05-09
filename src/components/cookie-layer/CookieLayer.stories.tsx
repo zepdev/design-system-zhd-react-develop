@@ -1,9 +1,9 @@
 import { Meta, StoryObj } from '@storybook/react';
-import { VideoCookieLayer } from './VideoCookieLayer';
+import { CookieLayer } from './CookieLayer';
 
-const meta: Meta<typeof VideoCookieLayer> = {
-  title: 'Components/VideoCookieLayer',
-  component: VideoCookieLayer,
+const meta: Meta<typeof CookieLayer> = {
+  title: 'Components/CookieLayer',
+  component: CookieLayer,
   tags: ['autodocs'],
   argTypes: {
     onClickCookies: { action: 'clicked' },
@@ -12,7 +12,7 @@ const meta: Meta<typeof VideoCookieLayer> = {
 
 export default meta;
 
-type Story = StoryObj<typeof VideoCookieLayer>;
+type Story = StoryObj<typeof CookieLayer>;
 
 export const Default: Story = {
   args: {

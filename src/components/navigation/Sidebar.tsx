@@ -93,7 +93,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
     return (
       <div className={animate ? 'zep-animate-slide-in' : backAnimation ? 'zep-animate-slide-out' : ''}>
         {activePath.length > 0 && (
-          <div className={`zep-text-typography-light-100 zep-mb-2.5 zep-flex zep-gap-0.5 zep-items-center`}>
+          <div className={`zep-text-typography-dark-100 zep-mb-2.5 zep-flex zep-gap-0.5 zep-items-center`}>
             <Link
               mode={LinkMode.Standalone}
               label={labelBack}
@@ -129,7 +129,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
                     link_type: 'nav_parent_link', // main_nav, logo, sub_nav, search, language_switcher, etc.
                   });
                 }}
-                className="zep-mb-1.5 zep-text-typography-light-100"
+                className="zep-mb-1.5 zep-text-typography-dark-100"
                 icon="home"
                 iconPlacement="before"
                 mode={LinkMode.Standalone}
@@ -142,7 +142,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
                 <div className="zep-flex zep-gap-0.5 zep-items-center zep-mb-1.5 ">
                   <Link
                     label={item.label}
-                    className="zep-text-typography-light-100"
+                    className="zep-text-typography-dark-100"
                     mode={LinkMode.Standalone}
                     href={item.link} // Navigates to the level 1 page
                     iconPlacement="before"
@@ -166,7 +166,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
               ) : (
                 <Link
                   label={item.label}
-                  className="zep-mb-1.5 zep-text-typography-light-100  zep-justify-end"
+                  className="zep-mb-1.5 zep-text-typography-dark-100  zep-justify-end"
                   iconPlacement="before"
                   mode={LinkMode.Standalone}
                   onClickCapture={() => {
@@ -194,7 +194,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
       {/* Mobile sidebar */}
       <div className={`md:zep-hidden`}>
         <div
-          className={`zep-fixed zep-top-[0px] zep-left-[0px] zep-py-1 sm:zep-py-2 zep-bg-background-dark zep-z-[1000] zep-ease-in-out zep-h-screen zep-duration-500 ${
+          className={`zep-fixed zep-top-[0px] zep-left-[0px] zep-py-1 sm:zep-py-2 zep-bg-background-light zep-z-[1000] zep-ease-in-out zep-h-screen zep-duration-500 ${
             expanded
               ? 'zep-w-full md:zep-transform zep-translate-x-0 lg:zep-transform zep-translate-x-0'
               : '-zep-translate-x-full'
@@ -204,7 +204,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
             <div className="zep-flex zep-justify-end zep-mb-1 zep-mr-1 sm:zep-mr-2">
               <FunctionalIcon
                 name="close"
-                color="#fff"
+                color="#262626"
                 size={24}
                 onClick={closeSidebar}
                 onClickCapture={() => {
@@ -247,7 +247,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
                                 link_type: 'top_nav', // main_nav, logo, sub_nav, search, language_switcher, etc.
                               });
                             }}
-                            className={'zep-text-typography-light-100 zep-mb-1.5'}
+                            className={'zep-text-typography-dark zep-mb-1.5'}
                           />
                         ))}
                       </div>
@@ -261,7 +261,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
                         }}
                       >
                         <img alt="Language switch icon" src={languageIcon} className="zep-w-1" />
-                        <p className="zep-text-typography-light-100 zep-font-500">
+                        <p className="zep-text-typography-dark-100 zep-font-500">
                           {`${selectedLocale?.country} | ${selectedLocale?.langAbbrev?.toUpperCase()}`}
                         </p>
                       </div>
@@ -277,7 +277,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
       {/* Desktop sidebar */}
       <div className="zep-hidden md:zep-block">
         <div
-          className={`zep-fixed zep-top-[0px] zep-left-[0px] md:zep-w-[440px] lg:zep-w-[500px] zep-pt-2 zep-bg-background-dark zep-ease-in-out zep-w-[0px] zep-duration-500 zep-h-screen zep-z-[1000] ${
+          className={`zep-fixed zep-top-[0px] zep-left-[0px] md:zep-w-[440px] lg:zep-w-[500px] zep-pt-2 zep-bg-background-light zep-ease-in-out zep-w-[0px] zep-duration-500 zep-h-screen zep-z-[1000] ${
             expanded ? 'md:zep-transform zep-translate-x-0 lg:zep-transform zep-translate-x-0' : '-zep-translate-x-full'
           }`}
         >
@@ -285,7 +285,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
             <div className="zep-flex zep-justify-end zep-pr-2 zep-mb-2">
               <FunctionalIcon
                 name="close"
-                color="#fff"
+                color="#262626"
                 size={24}
                 onClick={closeSidebar}
                 onClickCapture={() => {
