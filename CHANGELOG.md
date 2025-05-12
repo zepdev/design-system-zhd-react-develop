@@ -1,3 +1,11 @@
+## [1.8.1](https://github.com/zepdev/design-system-zhd-react/compare/v1.8.0...v1.8.1) (2025-05-12)
+
+
+### Bug Fixes
+
+* add radio button to language switcher ([5d1731b](https://github.com/zepdev/design-system-zhd-react/commit/5d1731b758c102053cf86112fb2833f114afc21b))
+* table pattern color ([94f16b4](https://github.com/zepdev/design-system-zhd-react/commit/94f16b4e891e9e3325cb47f7668cb8fa29f4b8af))
+
 # [1.8.0](https://github.com/zepdev/design-system-zhd-react/compare/v1.7.9...v1.8.0) (2025-05-12)
 
 
