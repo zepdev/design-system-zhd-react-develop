@@ -1,9 +1,10 @@
 import { FunctionalIcon, Link, LinkMode } from '@zepdev/design-system-component-library-react';
-import { useEffect, useState } from 'react';
+import { FC, useEffect, useState } from 'react';
 import { getDataLayer } from '../../utils/getDataLayer';
 import { LanguageSwitcherProps, Locale } from './navigation.interface';
+import { Radio, RadioVariant } from '@zepdev/design-system-component-library-react';
 
-export const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({
+export const LanguageSwitcher: FC<LanguageSwitcherProps> = ({
   selectedLocale,
   setLocaleSwitcherMenu,
   locales,
@@ -81,10 +82,11 @@ export const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({
             <div className="zep-mb-3" key={`${key}${index}`}>
               <p className="zep-mb-1.5 zep-typography-bodyText zep-text-typography-dark-100">{key}</p>
               {groupedByCountry[key]?.map((locale: Locale) => (
-                <div
-                  key={locale.value}
-                  className="zep-flex zep-gap-1 zep-mb-1.5 zep-items-center"
-                  onClick={() => {
+                <Radio
+                  id={locale.value}
+                  name={locale.label}
+                  label={locale?.label}
+                  onChange={() => {
                     if (setSelectedLocale) {
                       setSelectedLocale(locale);
                       datalayer?.push({
@@ -94,14 +96,9 @@ export const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({
                       });
                     }
                   }}
-                >
-                  <div className="zep-w-1.5 zep-h-1.5 zep-border-1 zep-border-b-background-dark zep-flex zep-justify-center zep-items-center zep-rounded-full">
-                    {selectedLocale?.value === locale?.value && (
-                      <div className="zep-w-0.75 zep-h-0.75 zep-bg-neutral-dark-default zep-rounded-full" />
-                    )}
-                  </div>
-                  <p className="zep-typography-bodyText zep-text-typography-dark-100">{locale?.label}</p>
-                </div>
+                  checked={selectedLocale?.value === locale?.value}
+                  variant={RadioVariant.Zsd}
+                />
               ))}
             </div>
           ))}
@@ -137,10 +134,11 @@ export const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({
                 <div className="zep-mb-3" key={`${key}${index}`}>
                   <p className="zep-mb-1.5 zep-typography-bodyText zep-text-typography-dark-100">{key}</p>
                   {groupedByCountry[key]?.map((locale: Locale) => (
-                    <div
-                      key={locale.value}
-                      className="zep-flex zep-gap-1 zep-mb-1.5 zep-items-center zep-cursor-pointer"
-                      onClick={() => {
+                    <Radio
+                      id={locale.value}
+                      name={locale.label}
+                      label={locale?.label}
+                      onChange={() => {
                         if (setSelectedLocale) {
                           setSelectedLocale(locale);
                           datalayer?.push({
@@ -150,14 +148,9 @@ export const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({
                           });
                         }
                       }}
-                    >
-                      <div className="zep-w-1.5 zep-h-1.5 zep-border-1 zep-border-b-background-dark zep-flex zep-justify-center zep-items-center zep-rounded-full">
-                        {selectedLocale?.value === locale?.value && (
-                          <div className="zep-w-0.75 zep-h-0.75 zep-bg-neutral-dark-default zep-rounded-full" />
-                        )}
-                      </div>
-                      <p className="zep-typography-bodyText zep-text-typography-dark-100">{locale?.label}</p>
-                    </div>
+                      checked={selectedLocale?.value === locale?.value}
+                      variant={RadioVariant.Zsd}
+                    />
                   ))}
                 </div>
               ))}

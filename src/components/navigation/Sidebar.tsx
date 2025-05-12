@@ -252,7 +252,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
                         ))}
                       </div>
                       <div
-                        className="zep-flex zep-gap-0.5 zep-items-center zep-mb-3"
+                        className="zep-flex zep-gap-0.5 zep-items-center zep-mb-3 zep-cursor-pointer"
                         onClick={(e) => {
                           e.preventDefault();
                           setLanguageSwitcher(true);
