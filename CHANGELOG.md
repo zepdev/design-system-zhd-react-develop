@@ -1,3 +1,18 @@
+# [1.8.0](https://github.com/zepdev/design-system-zhd-react/compare/v1.7.9...v1.8.0) (2025-05-12)
+
+
+### Bug Fixes
+
+* radio-language-switcher ([8061ec6](https://github.com/zepdev/design-system-zhd-react/commit/8061ec6acf0659275052e3155f27ca75dedc87f6))
+* update components to match zsd design ([0a47b89](https://github.com/zepdev/design-system-zhd-react/commit/0a47b8941abadb458c0bcb9033e28ed74e20b9a3))
+* update components to match zsd design ([6fe5a92](https://github.com/zepdev/design-system-zhd-react/commit/6fe5a9241ebc0f1de62dab3177fc697922ae3fe0))
+* update ZHD and ZSD libs ([9757fd2](https://github.com/zepdev/design-system-zhd-react/commit/9757fd284f2bb0677af0ce284525a4eb5b13d188))
+
+
+### Features
+
+* add new anchor navigation with new colors ([b51b951](https://github.com/zepdev/design-system-zhd-react/commit/b51b95145147e0808e790702c15a9ce5148a1f59))
+
 ## [1.7.9](https://github.com/zepdev/design-system-zhd-react/compare/v1.7.8...v1.7.9) (2025-05-07)
 
 
