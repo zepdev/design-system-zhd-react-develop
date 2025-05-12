@@ -1,5 +1,4 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { GlobalVariants } from '../../interfaces/global-variants';
 import { InfographicImage } from './InfographicImage';
 import { InfographicImageProps } from './infographic-image.interface';
 
@@ -7,14 +6,7 @@ const meta = {
   title: 'Components/InfographicImage',
   component: InfographicImage,
   tags: ['autodocs'],
-  argTypes: {
-    variant: {
-      control: {
-        type: 'radio',
-        options: Object.keys(GlobalVariants),
-      },
-    },
-  },
+  argTypes: {},
 } satisfies Meta<typeof InfographicImage>;
 
 export default meta;
@@ -31,7 +23,6 @@ export const Default: Story = {
   args: {
     imageUrl:
       'https://img.buzzfeed.com/buzzfeed-static/static/2017-12/22/11/asset/buzzfeed-prod-fastlane-01/sub-buzz-13082-1513961489-5.jpg?output-format=auto&output-quality=auto',
-    variant: GlobalVariants.Zps,
     imageAlt: 'Image alt',
     points: [
       { x: 20, y: 20, description: 'Tooltip content', label: 'Label' },
@@ -53,7 +44,6 @@ export const WithSteps: Story = {
   args: {
     imageUrl:
       'https://img.buzzfeed.com/buzzfeed-static/static/2017-12/22/11/asset/buzzfeed-prod-fastlane-01/sub-buzz-13082-1513961489-5.jpg?output-format=auto&output-quality=auto',
-    variant: GlobalVariants.Zps,
     imageAlt: 'Image alt',
     points: [
       { x: 20, y: 20, description: 'Tooltip content', label: 'Label', step: '1' },

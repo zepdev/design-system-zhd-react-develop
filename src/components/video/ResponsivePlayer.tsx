@@ -1,6 +1,6 @@
 import ReactPlayer from 'react-player';
 import play from '../../assets/play.svg';
-import { VideoCookieLayer } from '../video-cookie-layer/VideoCookieLayer';
+import { CookieLayer } from '@/components/cookie-layer/CookieLayer';
 import useVideoCookieCheck from './useVideoComplianceCheck';
 interface ResponsivePlayerProps {
   url: string;
@@ -40,7 +40,7 @@ const ResponsivePlayer = ({ url, thumbnail, label, description }: ResponsivePlay
       }}
     >
       {!canPlay ? (
-        <VideoCookieLayer label={label} description={description} onClickCookies={resetCookies} />
+        <CookieLayer label={label} description={description} onClickCookies={resetCookies} />
       ) : (
         <ReactPlayer
           controls

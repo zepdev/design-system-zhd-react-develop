@@ -51,7 +51,7 @@ export const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({
     <>
       {/* Mobile Navbar */}
       <div className={`${backAnimation ? 'zep-animate-slide-out' : ''} md:zep-hidden`}>
-        <div className="zep-text-typography-light-100 zep-mb-2.5 zep-flex zep-gap-0.5 zep-items-center">
+        <div className="zep-text-typography-dark-100 zep-mb-2.5 zep-flex zep-gap-0.5 zep-items-center">
           <Link
             mode={LinkMode.Standalone}
             label={labelBack}
@@ -75,11 +75,11 @@ export const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({
           />
         </div>
 
-        <h4 className="zep-text-headlineXS-fluid-cqi zep-text-typography-light-100 zep-mb-2">{header}</h4>
+        <h4 className="zep-text-headlineXS-fluid-cqi zep-text-typography-dark-100 zep-mb-2">{header}</h4>
         {groupedByCountry &&
           Object.keys(groupedByCountry)?.map((key, index) => (
             <div className="zep-mb-3" key={`${key}${index}`}>
-              <p className="zep-mb-1.5 zep-typography-bodyText zep-text-typography-light-100">{key}</p>
+              <p className="zep-mb-1.5 zep-typography-bodyText zep-text-typography-dark-100">{key}</p>
               {groupedByCountry[key]?.map((locale: Locale) => (
                 <div
                   key={locale.value}
@@ -95,12 +95,12 @@ export const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({
                     }
                   }}
                 >
-                  <div className="zep-w-1.5 zep-h-1.5 zep-bg-typography-light-100 zep-flex zep-justify-center zep-items-center zep-rounded-full">
+                  <div className="zep-w-1.5 zep-h-1.5 zep-border-1 zep-border-b-background-dark zep-flex zep-justify-center zep-items-center zep-rounded-full">
                     {selectedLocale?.value === locale?.value && (
                       <div className="zep-w-0.75 zep-h-0.75 zep-bg-neutral-dark-default zep-rounded-full" />
                     )}
                   </div>
-                  <p className="zep-typography-bodyText zep-text-typography-light-100">{locale?.label}</p>
+                  <p className="zep-typography-bodyText zep-text-typography-dark-100">{locale?.label}</p>
                 </div>
               ))}
             </div>
@@ -110,7 +110,7 @@ export const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({
       {/* Desktop Navbar */}
       <div className="zep-hidden md:zep-block">
         <div
-          className={`zep-fixed zep-top-[0px] zep-right-[0px] md:zep-w-[440px] lg:zep-w-[480px] zep-pl-3 zep-pt-2 zep-pr-2 zep-bg-background-dark zep-ease-out zep-w-[0px] zep-duration-500 zep-h-screen zep-z-[1000] ${
+          className={`zep-fixed zep-top-[0px] zep-right-[0px] md:zep-w-[440px] lg:zep-w-[480px] zep-pl-3 zep-pt-2 zep-pr-2 zep-bg-background-light zep-ease-out zep-w-[0px] zep-duration-500 zep-h-screen zep-z-[1000] ${
             expanded ? 'zep-translate-x-0 ' : 'zep-translate-x-full'
           }`}
         >
@@ -118,7 +118,7 @@ export const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({
             <div className="zep-flex zep-justify-end zep-mb-2">
               <FunctionalIcon
                 name="close"
-                color="#fff"
+                color="#262626"
                 size={24}
                 onClick={closeSidebar}
                 className="zep-cursor-pointer"
@@ -131,11 +131,11 @@ export const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({
                 }}
               />
             </div>
-            <h4 className="zep-text-headlineXS-fluid-cqi zep-text-typography-light-100 zep-mb-3">{header}</h4>
+            <h4 className="zep-text-headlineXS-fluid-cqi zep-text-typography-dark-100 zep-mb-3">{header}</h4>
             {groupedByCountry &&
               Object.keys(groupedByCountry)?.map((key, index) => (
                 <div className="zep-mb-3" key={`${key}${index}`}>
-                  <p className="zep-mb-1.5 zep-typography-bodyText zep-text-typography-light-100">{key}</p>
+                  <p className="zep-mb-1.5 zep-typography-bodyText zep-text-typography-dark-100">{key}</p>
                   {groupedByCountry[key]?.map((locale: Locale) => (
                     <div
                       key={locale.value}
@@ -151,12 +151,12 @@ export const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({
                         }
                       }}
                     >
-                      <div className="zep-w-1.5 zep-h-1.5 zep-bg-typography-light-100 zep-flex zep-justify-center zep-items-center zep-rounded-full">
+                      <div className="zep-w-1.5 zep-h-1.5 zep-border-1 zep-border-b-background-dark zep-flex zep-justify-center zep-items-center zep-rounded-full">
                         {selectedLocale?.value === locale?.value && (
                           <div className="zep-w-0.75 zep-h-0.75 zep-bg-neutral-dark-default zep-rounded-full" />
                         )}
                       </div>
-                      <p className="zep-typography-bodyText zep-text-typography-light-100">{locale?.label}</p>
+                      <p className="zep-typography-bodyText zep-text-typography-dark-100">{locale?.label}</p>
                     </div>
                   ))}
                 </div>

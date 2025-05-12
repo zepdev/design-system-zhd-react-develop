@@ -18,9 +18,9 @@ export const AnchorNavigationList: FC<AnchorNavigationListProps> = ({
         scrollOrientation="horizontal"
         dataTestId="zep-anchor-navigation-list"
         controlId="anchor-navigation-scrollbar"
-        className={`zep-flex zep-gap-1 md:zep-gap-1.5 lg:zep-gap-2 zep-w-full zep-border-b-1 zep-border-greyscale-400 zep-p-0.75 ${className}`}
+        className={`zep-flex zep-gap-1 md:zep-gap-1.5 lg:zep-gap-2 zep-w-full ${className}`}
       >
-        {navigationCards?.map((card) => <AnchorNavigationCard key={card.linkLabel} {...card} />)}
+        {navigationCards?.map((card) => <AnchorNavigationCard key={card.headline} {...card} />)}
       </Scrollbar>
     </Layout>
   );
