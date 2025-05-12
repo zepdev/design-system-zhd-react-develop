@@ -1,7 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { TablePattern } from './TablePattern';
 import { mockRichTextShort } from '../../utils/mocks';
-import { GlobalVariants } from '../../interfaces/global-variants';
 import { TableColumn } from '@zepdev/design-system-component-library-react';
 import { TablePatternProps } from './TablePattern.interface';
 
@@ -39,6 +38,5 @@ export const Default: Story = {
     tagline: 'Zeppelin Power Systems Produkte für Schiene',
     tableButtonLabel: 'Kontaktiere Sie unsere Experten',
     tableButtonOnClick: () => console.log('click'),
-    variant: GlobalVariants.Zps,
   } as TablePatternProps,
 }

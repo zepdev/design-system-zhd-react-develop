@@ -8,7 +8,7 @@ import { GlobalVariants } from '../../interfaces/global-variants';
 import { TablePatternProps } from './TablePattern.interface';
 
 export const TablePattern: FC<TablePatternProps> = ({
-  variant = GlobalVariants.Zps,
+  variant = GlobalVariants.Zsd,
   content,
   tableButtonIcon,
   tableButtonLabel,
