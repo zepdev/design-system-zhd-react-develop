@@ -72,7 +72,7 @@ export const Card: FC<CardProps> = ({
             data-testid="card-component-title"
             className={clsx(
               'zep-typography-headlineXS-fluid-cqi zep-hyphens-auto zep-text-left zep-text-typography-dark-100',
-              description ? 'zep-mb-0.5' : '',
+              { 'zep-mb-0.5': description },
             )}
           >
             {title}
@@ -94,9 +94,9 @@ export const Card: FC<CardProps> = ({
         {url && linkLabel && (
           <Link
             target={linkType === 'external-link' ? LinkTarget.Blank : LinkTarget.Self}
-            className="zep-text-primary-default zep-mt-1.5"
+            className="zep-text-primary-default zep-mt-1.5 group-hover:zep-underline"
             data-testid="card-component-link"
-            icon={icon !== 'none' ? (icon as FunctionalIconNames) : undefined}
+            icon={icon !== 'none' && iconPosition !== 'none' ? (icon as FunctionalIconNames) : undefined}
             iconPlacement={iconPosition}
             label={linkLabel}
             mode={LinkMode.Standalone}
