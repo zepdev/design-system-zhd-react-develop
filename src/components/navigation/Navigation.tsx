@@ -1,5 +1,6 @@
 import { Link, LinkMode } from '@zepdev/design-system-component-library-react';
 import { FC, useState } from 'react';
+import clsx from 'clsx';
 import burger from '../../assets/burger.svg';
 import languageIcon from '../../assets/language-icon.svg';
 import { LocaleVariants } from '../../interfaces/global-variants';
@@ -17,6 +18,7 @@ export const Navigation: FC<NavigationProps> = ({
   labelBack,
   navigationItems,
   locales,
+  activePageUrl,
 }: NavigationProps) => {
   const [openSidebar, setOpenSidebar] = useState<boolean>(false);
   const [initialPath, setInitialPath] = useState<string[]>([]);
@@ -108,7 +110,10 @@ export const Navigation: FC<NavigationProps> = ({
               <p className="zep-typography-navigation zep-text-typography-dark-100 zep-uppercase zep-pt-0.25">
                 {item.label}
               </p>
-              <div className="zep-hidden group-hover:zep-block group-hover:zep-absolute zep-w-full">
+              <div className={clsx(
+                'group-hover:zep-block zep-absolute zep-w-full',
+                activePageUrl && item.link && activePageUrl.includes(item.link) ? 'zep-block' : 'zep-hidden',
+              )}>
                 <div className="zep-w-[24px] zep-h-[2px] zep-bg-primary-default zep-mx-auto" />
               </div>
             </div>
