@@ -1,3 +1,11 @@
+## [1.8.2](https://github.com/zepdev/design-system-zhd-react/compare/v1.8.1...v1.8.2) (2025-05-15)
+
+
+### Bug Fixes
+
+* card link hover ([dfe28d6](https://github.com/zepdev/design-system-zhd-react/commit/dfe28d619c40211da9eaa66fd6d8285c9a3b8467))
+* language switcher radio buttons layout and navigation active link ([5cfec98](https://github.com/zepdev/design-system-zhd-react/commit/5cfec982c2c60333d7dfcc9fd467e53a35c65de7))
+
 ## [1.8.1](https://github.com/zepdev/design-system-zhd-react/compare/v1.8.0...v1.8.1) (2025-05-12)
 
 
