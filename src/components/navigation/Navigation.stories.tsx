@@ -14,14 +14,15 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 const locales = [
-  { label: 'Deutsch', value: 'de', country: 'Deutsch', langAbbrev: 'DE' },
-  { label: 'English', value: 'en', country: 'Germany', langAbbrev: 'EN' },
+  { label: 'Deutsch', value: 'de', country: 'Deutschland', langAbbrev: 'DE' },
+  { label: 'English', value: 'en', country: 'Deutschland', langAbbrev: 'EN' },
   { label: 'Deutsch', value: 'de-AT', country: 'Österreich', langAbbrev: 'DE' },
 ];
 
 export const Default: Story = {
   args: {
     logo: zepCatLogo,
+    activePageUrl: '/Marine',
     navigationItems: [
       {
         navId: '1',
@@ -45,7 +46,7 @@ export const Default: Story = {
           {
             navId: '2',
             label: 'Power and heat',
-            link: '/Ppower-and-heat',
+            link: '/Power-and-heat',
             children: [
               {
                 navId: '1',

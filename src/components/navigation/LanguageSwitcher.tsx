@@ -75,12 +75,11 @@ export const LanguageSwitcher: FC<LanguageSwitcherProps> = ({
             }}
           />
         </div>
-
-        <h4 className="zep-text-headlineXS-fluid-cqi zep-text-typography-dark-100 zep-mb-2">{header}</h4>
+        <h4 className="zep-text-headlineXS-fluid-cqi zep-text-typography-dark-100 zep-mb-3">{header}</h4>
         {groupedByCountry &&
           Object.keys(groupedByCountry)?.map((key, index) => (
-            <div className="zep-mb-3" key={`${key}${index}`}>
-              <p className="zep-mb-1.5 zep-typography-bodyText zep-text-typography-dark-100">{key}</p>
+            <div className="zep-mb-3 zep-flex zep-flex-col zep-gap-1.5" key={`${key}${index}`}>
+              <p className="zep-typography-bodyText zep-text-typography-dark-100">{key}</p>
               {groupedByCountry[key]?.map((locale: Locale) => (
                 <Radio
                   id={locale.value}
@@ -131,8 +130,8 @@ export const LanguageSwitcher: FC<LanguageSwitcherProps> = ({
             <h4 className="zep-text-headlineXS-fluid-cqi zep-text-typography-dark-100 zep-mb-3">{header}</h4>
             {groupedByCountry &&
               Object.keys(groupedByCountry)?.map((key, index) => (
-                <div className="zep-mb-3" key={`${key}${index}`}>
-                  <p className="zep-mb-1.5 zep-typography-bodyText zep-text-typography-dark-100">{key}</p>
+                <div className="zep-mb-3 zep-flex zep-flex-col zep-gap-1.5" key={`${key}${index}`}>
+                  <p className="zep-typography-bodyText zep-text-typography-dark-100">{key}</p>
                   {groupedByCountry[key]?.map((locale: Locale) => (
                     <Radio
                       id={locale.value}
