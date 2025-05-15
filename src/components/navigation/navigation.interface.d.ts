@@ -37,6 +37,7 @@ export interface NavigationProps {
     logo: string;
     header: string;
     labelBack: string;
+    activePageUrl?: string;
 }
 export interface LanguageSwitcherProps {
     header: string;
