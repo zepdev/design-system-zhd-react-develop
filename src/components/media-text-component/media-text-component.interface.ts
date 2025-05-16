@@ -33,5 +33,5 @@ export interface MediaTextComponentButtonProps {
   iconPrimary?: FunctionalIconNames;
   iconPrimaryPosition?: 'left' | 'right' | 'none';
   buttonUrl?: string;
-  buttonAction?: 'open-internal-link' | 'open-external-link' | 'download-file' | 'none';
+  buttonAction?: 'open-internal-link' | 'open-external-link' | 'download-file' | 'none' | 'open-contact-modal';
 }
