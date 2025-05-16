@@ -1,4 +1,5 @@
 import { FunctionalIconNames } from '@zepdev/design-system-component-library-react';
+import { MouseEvent } from 'react';
 
 export interface HeroProps {
     headline: string;
@@ -9,6 +10,7 @@ export interface HeroProps {
     buttonSecondary?: string;
     buttonPrimaryUrl?: string;
     buttonSecondaryUrl?: string;
+    buttonPrimaryOnClick?: (ev: MouseEvent<HTMLElement>) => void;
     buttonPrimaryIcon?: FunctionalIconNames;
     buttonSecondaryIcon?: FunctionalIconNames;
     buttonPrimaryIconPosition?: 'left' | 'right' | 'none';
