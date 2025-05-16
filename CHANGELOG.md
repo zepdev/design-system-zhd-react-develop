@@ -1,3 +1,10 @@
+## [1.8.3](https://github.com/zepdev/design-system-zhd-react/compare/v1.8.2...v1.8.3) (2025-05-16)
+
+
+### Bug Fixes
+
+* modal opening ([90fb58e](https://github.com/zepdev/design-system-zhd-react/commit/90fb58e6d17a695a1256c3fdd0d3138a5bdc6baf))
+
 ## [1.8.2](https://github.com/zepdev/design-system-zhd-react/compare/v1.8.1...v1.8.2) (2025-05-15)
 
 
