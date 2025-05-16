@@ -19,6 +19,7 @@ export const Hero: FC<HeroProps> = ({
   buttonSecondaryIconPosition,
   description,
   buttonSecondaryUrl,
+  buttonPrimaryOnClick,
 }) => {
   const datalayer = getDataLayer();
 
@@ -35,25 +36,37 @@ export const Hero: FC<HeroProps> = ({
           <p className="zep-typography-bodyText zep-text-typography-dark-100 zep-mb-1.5">{description}</p>
           {buttonPrimary && (
             <div className="zep-flex zep-flex-col sm:zep-flex-row zep-gap-1">
-              <a
-                onClickCapture={() => {
-                  datalayer?.push({
-                    event: 'interaction_cta',
-                    link_text: buttonPrimary,
-                    link_context: headline + ' - Hero primary button',
-                  });
-                }}
-                href={buttonPrimaryUrl}
-              >
+              {buttonPrimaryUrl ? (
+                <a
+                  onClickCapture={() => {
+                    datalayer?.push({
+                      event: 'interaction_cta',
+                      link_text: buttonPrimary,
+                      link_context: headline + ' - Hero primary button',
+                    });
+                  }}
+                  href={buttonPrimaryUrl}
+                >
+                  <Button
+                    label={buttonPrimary}
+                    title={buttonPrimary}
+                    variant={ZsdButtonVariant.PrimaryDark}
+                    className="zep-w-full sm:zep-max-w-max"
+                    icon={buttonPrimaryIcon}
+                    iconPosition={buttonPrimaryIconPosition}
+                  />
+                </a>
+              ) : (
                 <Button
                   label={buttonPrimary}
                   title={buttonPrimary}
                   variant={ZsdButtonVariant.PrimaryDark}
-                  className="zep-w-full sm:zep-max-w-max"
+                  className="sm:zep-max-w-max"
                   icon={buttonPrimaryIcon}
                   iconPosition={buttonPrimaryIconPosition}
+                  onClick={buttonPrimaryOnClick}
                 />
-              </a>
+              )}
 
               {buttonSecondary && (
                 <a
@@ -104,7 +117,18 @@ export const Hero: FC<HeroProps> = ({
             </p>
             {buttonPrimary && (
               <div className="zep-flex zep-gap-1">
-                <a href={buttonPrimaryUrl}>
+                {buttonPrimaryUrl ? (
+                  <a href={buttonPrimaryUrl}>
+                    <Button
+                      label={buttonPrimary}
+                      title={buttonPrimary}
+                      variant={ZsdButtonVariant.PrimaryLight}
+                      className="sm:zep-max-w-max"
+                      icon={buttonPrimaryIcon}
+                      iconPosition={buttonPrimaryIconPosition}
+                    />
+                  </a>
+                ) : (
                   <Button
                     label={buttonPrimary}
                     title={buttonPrimary}
@@ -112,8 +136,10 @@ export const Hero: FC<HeroProps> = ({
                     className="sm:zep-max-w-max"
                     icon={buttonPrimaryIcon}
                     iconPosition={buttonPrimaryIconPosition}
+                    onClick={buttonPrimaryOnClick}
                   />
-                </a>
+                )}
+
                 {buttonSecondary && (
                   <a href={buttonSecondaryUrl}>
                     <Button
