@@ -1,3 +1,10 @@
+## [1.8.4](https://github.com/zepdev/design-system-zhd-react/compare/v1.8.3...v1.8.4) (2025-05-16)
+
+
+### Bug Fixes
+
+* contact build ([23608fb](https://github.com/zepdev/design-system-zhd-react/commit/23608fb81d0d3bd98333c091dc257546cc2caa19))
+
 ## [1.8.3](https://github.com/zepdev/design-system-zhd-react/compare/v1.8.2...v1.8.3) (2025-05-16)
 
 
