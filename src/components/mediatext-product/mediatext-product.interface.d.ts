@@ -12,7 +12,7 @@ export interface MediaTextProductProps extends Partial<Omit<HeaderLongProps, 'va
     iconPrimary?: FunctionalIconNames;
     iconPrimaryPosition?: 'left' | 'right' | 'none';
     buttonUrl?: string;
-    buttonAction?: 'open-internal-link' | 'open-external-link' | 'download-file' | 'none';
+    buttonAction?: 'open-internal-link' | 'open-external-link' | 'download-file' | 'none' | 'open-contact-modal';
     accordionContent?: AccordionContent[];
 }
 //# sourceMappingURL=mediatext-product.interface.d.ts.map

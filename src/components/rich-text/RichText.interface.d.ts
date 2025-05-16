@@ -10,7 +10,7 @@ export interface RichTextProps extends Partial<RichTextBaseProps> {
     type?: 'primary-dark' | 'secondary-dark';
     buttonIcon?: FunctionalIconNames;
     buttonIconPosition?: 'left' | 'right' | 'none';
-    buttonAction?: 'none' | 'open-external-link' | 'open-internal-link' | 'download-file';
+    buttonAction?: 'none' | 'open-external-link' | 'open-internal-link' | 'download-file' | 'open-contact-modal';
 }
 export interface ImageProps {
     url: string;
