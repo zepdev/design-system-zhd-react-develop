@@ -20,6 +20,7 @@ export const SmallHeroZsd = ({
   buttonSecondaryIconPosition,
   buttonPrimaryAction,
   buttonSecondaryAction,
+  buttonPrimaryOnClick,
   backgroundVariant = 'gradient',
 }: SmallHeroZsdProps) => {
   const divOption = (() => {
@@ -69,9 +70,13 @@ export const SmallHeroZsd = ({
 
       <div
         className={clsx(
-          'zep-p-1.5',
-          'sm:zep-p-2',
-          'xl:zep-p-6',
+          'zep-py-1.5',
+          'zep-px-1',
+          'sm:zep-px-1.5',
+          'md:zep-px-[66px]',
+          'lg:zep-px-[122px]',
+          'sm:zep-py-2',
+          'xl:zep-py-6',
           'md:zep-w-[56%]',
           'zep-justify-center',
           'zep-flex',
@@ -84,12 +89,23 @@ export const SmallHeroZsd = ({
         {description && <p className="zep-mb-1.5">{getFirst150Characters(description)}</p>}
         {buttonPrimary && (
           <div className="zep-flex zep-flex-col sm:zep-flex-row zep-gap-1">
-            <a
-              href={buttonPrimaryUrl}
-              target={buttonPrimaryAction === 'open-external-link' ? '_blank' : '_self'}
-              download={buttonPrimaryAction === 'download-file'}
-              rel="noreferrer"
-            >
+            {buttonPrimaryUrl ? (
+              <a
+                href={buttonPrimaryUrl}
+                target={buttonPrimaryAction === 'open-external-link' ? '_blank' : '_self'}
+                download={buttonPrimaryAction === 'download-file'}
+                rel="noreferrer"
+              >
+                <Button
+                  label={buttonPrimary}
+                  title={buttonPrimary}
+                  variant={primaryButtonVariant}
+                  className="sm:zep-max-w-max"
+                  icon={buttonPrimaryIcon}
+                  iconPosition={buttonPrimaryIconPosition}
+                />
+              </a>
+            ) : (
               <Button
                 label={buttonPrimary}
                 title={buttonPrimary}
@@ -97,8 +113,10 @@ export const SmallHeroZsd = ({
                 className="sm:zep-max-w-max"
                 icon={buttonPrimaryIcon}
                 iconPosition={buttonPrimaryIconPosition}
+                onClick={buttonPrimaryOnClick}
               />
-            </a>
+            )}
+
             {buttonSecondary && (
               <a
                 href={buttonSecondaryUrl}
