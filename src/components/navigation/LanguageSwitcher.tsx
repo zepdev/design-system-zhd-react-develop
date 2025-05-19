@@ -1,8 +1,7 @@
-import { FunctionalIcon, Link, LinkMode } from '@zepdev/design-system-component-library-react';
+import { FunctionalIcon, Link, LinkMode, Radio, RadioVariant } from '@zepdev/design-system-component-library-react';
 import { FC, useEffect, useState } from 'react';
 import { getDataLayer } from '../../utils/getDataLayer';
 import { LanguageSwitcherProps, Locale } from './navigation.interface';
-import { Radio, RadioVariant } from '@zepdev/design-system-component-library-react';
 
 export const LanguageSwitcher: FC<LanguageSwitcherProps> = ({
   selectedLocale,
@@ -75,32 +74,34 @@ export const LanguageSwitcher: FC<LanguageSwitcherProps> = ({
             }}
           />
         </div>
-        <h4 className="zep-text-headlineXS-fluid-cqi zep-text-typography-dark-100 zep-mb-3">{header}</h4>
+        <h4 className="zep-text-headlineXS-fluid-cqi zep-text-typography-dark-100 zep-mb-1.5 md:zep-mb-3">{header}</h4>
         {groupedByCountry &&
-          Object.keys(groupedByCountry)?.map((key, index) => (
-            <div className="zep-mb-3 zep-flex zep-flex-col zep-gap-1.5" key={`${key}${index}`}>
-              <p className="zep-typography-bodyText zep-text-typography-dark-100">{key}</p>
-              {groupedByCountry[key]?.map((locale: Locale) => (
-                <Radio
-                  id={locale.value}
-                  name={locale.label}
-                  label={locale?.label}
-                  onChange={() => {
-                    if (setSelectedLocale) {
-                      setSelectedLocale(locale);
-                      datalayer?.push({
-                        event: 'interaction_nav',
-                        link_text: `${locale?.label}`,
-                        link_type: 'language_switcher_item', // main_nav, logo, sub_nav, search, language_switcher, etc.
-                      });
-                    }
-                  }}
-                  checked={selectedLocale?.value === locale?.value}
-                  variant={RadioVariant.Zsd}
-                />
-              ))}
-            </div>
-          ))}
+          Object.keys(groupedByCountry)
+            ?.sort()
+            ?.map((key, index) => (
+              <div className="zep-mb-2 zep-flex zep-flex-col zep-gap-1" key={`${key}${index}`}>
+                <p className="zep-typography-bodyText zep-text-typography-dark-100">{key}</p>
+                {groupedByCountry[key]?.map((locale: Locale) => (
+                  <Radio
+                    id={locale.value}
+                    name={locale.label}
+                    label={locale?.label}
+                    onChange={() => {
+                      if (setSelectedLocale) {
+                        setSelectedLocale(locale);
+                        datalayer?.push({
+                          event: 'interaction_nav',
+                          link_text: `${locale?.label}`,
+                          link_type: 'language_switcher_item', // main_nav, logo, sub_nav, search, language_switcher, etc.
+                        });
+                      }
+                    }}
+                    checked={selectedLocale?.value === locale?.value}
+                    variant={RadioVariant.Zsd}
+                  />
+                ))}
+              </div>
+            ))}
       </div>
 
       {/* Desktop Navbar */}
@@ -129,30 +130,32 @@ export const LanguageSwitcher: FC<LanguageSwitcherProps> = ({
             </div>
             <h4 className="zep-text-headlineXS-fluid-cqi zep-text-typography-dark-100 zep-mb-3">{header}</h4>
             {groupedByCountry &&
-              Object.keys(groupedByCountry)?.map((key, index) => (
-                <div className="zep-mb-3 zep-flex zep-flex-col zep-gap-1.5" key={`${key}${index}`}>
-                  <p className="zep-typography-bodyText zep-text-typography-dark-100">{key}</p>
-                  {groupedByCountry[key]?.map((locale: Locale) => (
-                    <Radio
-                      id={locale.value}
-                      name={locale.label}
-                      label={locale?.label}
-                      onChange={() => {
-                        if (setSelectedLocale) {
-                          setSelectedLocale(locale);
-                          datalayer?.push({
-                            event: 'interaction_nav',
-                            link_text: `${locale?.label}`,
-                            link_type: 'language_switcher_item', // main_nav, logo, sub_nav, search, language_switcher, etc.
-                          });
-                        }
-                      }}
-                      checked={selectedLocale?.value === locale?.value}
-                      variant={RadioVariant.Zsd}
-                    />
-                  ))}
-                </div>
-              ))}
+              Object.keys(groupedByCountry)
+                ?.sort()
+                ?.map((key, index) => (
+                  <div className="zep-mb-3 zep-flex zep-flex-col zep-gap-1" key={`${key}${index}`}>
+                    <p className="zep-typography-bodyText zep-text-typography-dark-100">{key}</p>
+                    {groupedByCountry[key]?.map((locale: Locale) => (
+                      <Radio
+                        id={locale.value}
+                        name={locale.label}
+                        label={locale?.label}
+                        onChange={() => {
+                          if (setSelectedLocale) {
+                            setSelectedLocale(locale);
+                            datalayer?.push({
+                              event: 'interaction_nav',
+                              link_text: `${locale?.label}`,
+                              link_type: 'language_switcher_item', // main_nav, logo, sub_nav, search, language_switcher, etc.
+                            });
+                          }
+                        }}
+                        checked={selectedLocale?.value === locale?.value}
+                        variant={RadioVariant.Zsd}
+                      />
+                    ))}
+                  </div>
+                ))}
           </div>
         </div>
         <div
