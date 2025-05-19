@@ -1,3 +1,10 @@
+## [1.8.6](https://github.com/zepdev/design-system-zhd-react/compare/v1.8.5...v1.8.6) (2025-05-19)
+
+
+### Bug Fixes
+
+* small hero gradient ([b1c3a1c](https://github.com/zepdev/design-system-zhd-react/commit/b1c3a1c053ec4ad0a68c280cd799fd75b4a265ff))
+
 ## [1.8.5](https://github.com/zepdev/design-system-zhd-react/compare/v1.8.4...v1.8.5) (2025-05-19)
 
 
