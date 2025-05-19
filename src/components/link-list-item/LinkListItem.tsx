@@ -34,7 +34,7 @@ const Description = ({ description }: Partial<LinkListItemProps>) => {
   return null;
 };
 
-const Links = ({ links, headline, isFooterList, gtmHeadline, type }: LinkListItemProps) => {
+const Links = ({ links, headline, isFooterList, type }: LinkListItemProps) => {
   const datalayer = getDataLayer();
   return (
     <div
@@ -56,7 +56,18 @@ const Links = ({ links, headline, isFooterList, gtmHeadline, type }: LinkListIte
           download={type === 'download'}
           href={getUrlWithTrailingSlash(link.href)}
           iconPlacement="before"
-          onClickCapture={() => {
+          onClickCapture={(ev) => {
+            let currentElement = ev.target as HTMLElement;
+            let sectionId = '';
+
+            while (currentElement && currentElement.parentElement) {
+              if (currentElement.parentElement.tagName === 'MAIN') {
+                sectionId = currentElement.id;
+                break;
+              }
+              currentElement = currentElement.parentElement;
+            }
+
             let event = 'interaction_linklist';
             if (isFooterList) {
               event = 'interaction_footer';
@@ -64,11 +75,12 @@ const Links = ({ links, headline, isFooterList, gtmHeadline, type }: LinkListIte
             if (link.href?.startsWith('tel:') || link.href?.startsWith('mailto:')) {
               event = 'interaction_contact';
             }
+            
             datalayer?.push({
               event,
               link_text: link.label,
               link_context: headline,
-              link_section: isFooterList ? 'footer' : gtmHeadline,
+              link_section: isFooterList ? 'footer' : sectionId,
             });
           }}
           mode={LinkMode.Inline}

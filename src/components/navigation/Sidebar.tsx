@@ -106,6 +106,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
                   event: 'interaction_nav',
                   link_text: homeItems[Number(parent) - 1]?.label,
                   link_type: 'nav_back_button', // main_nav, logo, sub_nav, search, language_switcher, etc.
+                  link_section: 'nav',
                 });
                 setTimeout(() => {
                   setBackAnimation(false);
@@ -127,6 +128,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
                     event: 'interaction_nav',
                     link_text: homeItems[Number(parent) - 1]?.label,
                     link_type: 'nav_parent_link', // main_nav, logo, sub_nav, search, language_switcher, etc.
+                    link_section: 'nav',
                   });
                 }}
                 className="zep-mb-1.5 zep-text-typography-dark-100"
@@ -157,6 +159,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
                         event: 'interaction_nav',
                         link_text: item.label,
                         link_type: 'main_nav', // main_nav, logo, sub_nav, search, language_switcher, etc.
+                        link_section: 'nav',
                       });
 
                       setTimeout(() => setAnimate(false), 300);
@@ -212,6 +215,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
                     event: 'interaction_nav',
                     link_text: 'close_sidebar',
                     link_type: 'close_sidebar', // main_nav, logo, sub_nav, search, language_switcher, etc.
+                    link_section: 'nav',
                   });
                 }}
               />
@@ -245,6 +249,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
                                 event: 'interaction_nav',
                                 link_text: item.label,
                                 link_type: 'top_nav', // main_nav, logo, sub_nav, search, language_switcher, etc.
+                                link_section: 'nav',
                               });
                             }}
                             className={'zep-text-typography-dark zep-mb-1.5'}
@@ -293,6 +298,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
                     event: 'interaction_nav',
                     link_text: 'close_sidebar',
                     link_type: 'close_sidebar', // main_nav, logo, sub_nav, search, language_switcher, etc.
+                    link_section: 'nav',
                   });
                 }}
                 className="zep-cursor-pointer"
@@ -310,6 +316,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
               event: 'interaction_nav',
               link_text: 'close_sidebar',
               link_type: 'close_sidebar', // main_nav, logo, sub_nav, search, language_switcher, etc.
+              link_section: 'nav',
             });
           }}
           className={`zep-fixed zep-top-[0px] zep-left-[0px] zep-bg-[#000] transition-all zep-duration-500  zep-w-screen zep-h-screen zep-z-[500] ${

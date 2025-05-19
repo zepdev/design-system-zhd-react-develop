@@ -64,6 +64,8 @@ export const LanguageSwitcher: FC<LanguageSwitcherProps> = ({
                 event: 'interaction_nav',
                 link_text: `BACK_ARROW`,
                 link_type: 'language_switcher_close', // main_nav, logo, sub_nav, search, language_switcher, etc.
+                link_section: 'language_switcher',
+
               });
               setTimeout(() => {
                 setBackAnimation(false);
@@ -91,6 +93,7 @@ export const LanguageSwitcher: FC<LanguageSwitcherProps> = ({
                         event: 'interaction_nav',
                         link_text: `${locale?.label}`,
                         link_type: 'language_switcher_item', // main_nav, logo, sub_nav, search, language_switcher, etc.
+                        link_section: 'language_switcher',
                       });
                     }
                   }}
@@ -121,7 +124,9 @@ export const LanguageSwitcher: FC<LanguageSwitcherProps> = ({
                   datalayer?.push({
                     event: 'interaction_nav',
                     link_text: `CLOSE_LANGUAGE_SWITCHER`,
-                    link_type: 'language_switcher_close', // main_nav, logo, sub_nav, search, language_switcher, etc.
+                    link_type: 'language_switcher_close', // main_nav, logo, sub_nav, search, language_switcher, etc. 
+                    link_section: 'language_switcher',
+
                   });
                 }}
               />
@@ -143,6 +148,7 @@ export const LanguageSwitcher: FC<LanguageSwitcherProps> = ({
                             event: 'interaction_nav',
                             link_text: `${locale?.label}`,
                             link_type: 'language_switcher_item', // main_nav, logo, sub_nav, search, language_switcher, etc.
+                            link_section: 'language_switcher',
                           });
                         }
                       }}
@@ -161,6 +167,7 @@ export const LanguageSwitcher: FC<LanguageSwitcherProps> = ({
               event: 'interaction_nav',
               link_text: `CLOSE_LANGUAGE_SWITCHER`,
               link_type: 'language_switcher_close', // main_nav, logo, sub_nav, search, language_switcher, etc.
+              link_section: 'language_switcher',
             });
           }}
           className={`zep-fixed zep-top-[0px] zep-left-[0px] zep-bg-[#000] transition-all zep-duration-500  zep-w-screen zep-h-screen zep-z-[500] ${

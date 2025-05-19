@@ -15,6 +15,8 @@ export const Card: FC<CardProps> = ({
   icon,
   iconPosition,
   linkType,
+  gtmHeadline,
+  gtmid,
 }: CardProps) => {
   const onClick = () => {
     if (window !== undefined) {
@@ -25,6 +27,14 @@ export const Card: FC<CardProps> = ({
   return (
     <div
       onClick={onClick}
+      onClickCapture={() => {
+        datalayer.push({
+          event: 'interaction_tile',
+          link_text: title,
+          link_context: gtmHeadline,
+          link_section: gtmid,
+        });
+      }}
       data-testid="card-component"
       className={clsx(
         'zep-flex',

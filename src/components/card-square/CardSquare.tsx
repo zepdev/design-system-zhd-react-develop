@@ -81,6 +81,13 @@ const CardSquare: FC<CardSquareProps> = ({
             <h3
               data-testid="card-square-headline"
               className="zep-text-background-light zep-text-left zep-typography-headlineMD-fluid-cqi zep-hyphens-auto zep-break-normal"
+              onClickCapture={() => {
+                datalayer.push({
+                  event: 'interaction_tile',
+                  link_text: headline,
+                  link_context: gtmHeadline,
+                  link_section: gtm_id,
+                });
             >
               {headline}
             </h3>

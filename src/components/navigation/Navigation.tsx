@@ -48,6 +48,7 @@ export const Navigation: FC<NavigationProps> = ({
                   event: 'interaction_nav',
                   link_text: item.label,
                   link_type: 'top_nav', // main_nav, logo, sub_nav, search, language_switcher, etc.
+                  link_section: 'nav',
                 });
               }}
               className={'zep-text-typography-dark-100 zep-text-0.875'}
@@ -62,6 +63,7 @@ export const Navigation: FC<NavigationProps> = ({
               event: 'interaction_nav',
               link_text: `${selectedLocale?.country} | ${selectedLocale?.langAbbrev?.toUpperCase()}`,
               link_type: 'language_switcher', // main_nav, logo, sub_nav, search, language_switcher, etc.
+              link_section: 'nav',
             });
           }}
         >
@@ -78,6 +80,7 @@ export const Navigation: FC<NavigationProps> = ({
               event: 'interaction_nav',
               link_text: 'home',
               link_type: 'logo', // main_nav, logo, sub_nav, search, language_switcher, etc.
+              link_section: 'nav',
             });
           }}
           href={getHome()}
@@ -94,6 +97,7 @@ export const Navigation: FC<NavigationProps> = ({
               event: 'interaction_nav',
               link_text: 'hamburger_menu',
               link_type: 'hamburger_menu', // main_nav, logo, sub_nav, search, language_switcher, etc.
+              link_section: 'nav',
             });
           }}
         />
