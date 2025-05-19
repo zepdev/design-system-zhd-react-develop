@@ -130,7 +130,7 @@ export const Button: FC<ZsdButtonProps> = ({
         target={href.startsWith('http') ? LinkTarget.Blank : LinkTarget.Self}
         href={getUrlWithTrailingSlash(href)}
         onClick={() => {
-          datalayer.push({
+          datalayer?.push({
             event: 'interaction_cta',
             link_text: label ?? 'Complex Element',
             link_context: getUrlWithTrailingSlash(href),

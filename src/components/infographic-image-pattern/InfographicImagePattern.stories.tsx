@@ -1,5 +1,4 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { GlobalVariants } from '../../interfaces/global-variants';
 import { InfographicImagePattern } from './InfographicImagePattern';
 import { InfographicImagePatternProps } from './infographic-image-pattern.interface';
 
@@ -7,14 +6,7 @@ const meta = {
   title: 'Patterns/InfographicImagePattern',
   component: InfographicImagePattern,
   tags: ['autodocs'],
-  argTypes: {
-    variant: {
-      control: {
-        type: 'radio',
-        options: Object.keys(GlobalVariants),
-      },
-    },
-  },
+  argTypes: {},
 } satisfies Meta<typeof InfographicImagePattern>;
 
 export default meta;
@@ -22,7 +14,6 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   args: {
-    variant: GlobalVariants.Zps,
     header: {
       headline: 'Die Funktionsweise der Unterbrechungsfreien Stromversorgung (USV) einfach erklärt',
       tagline: 'Zeppelin Power Systems Lösungen für STrom & Wärme',

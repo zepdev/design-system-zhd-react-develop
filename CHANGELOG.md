@@ -1,754 +1,772 @@
-## [1.7.2](https://github.com/zepdev/design-system-zhd-react/compare/v1.7.1...v1.7.2) (2025-04-29)
+## [1.8.4](https://github.com/zepdev/design-system-zhd-react/compare/v1.8.3...v1.8.4) (2025-05-16)
 
 
 ### Bug Fixes
 
-* footer icons adjustment ([986aae7](https://github.com/zepdev/design-system-zhd-react/commit/986aae72f6317678600edb0ed039f8c332825616))
+* contact build ([23608fb](https://github.com/zepdev/design-system-zhd-react/commit/23608fb81d0d3bd98333c091dc257546cc2caa19))
+
+## [1.8.3](https://github.com/zepdev/design-system-zhd-react/compare/v1.8.2...v1.8.3) (2025-05-16)
+
+
+### Bug Fixes
+
+* modal opening ([90fb58e](https://github.com/zepdev/design-system-zhd-react/commit/90fb58e6d17a695a1256c3fdd0d3138a5bdc6baf))
+
+## [1.8.2](https://github.com/zepdev/design-system-zhd-react/compare/v1.8.1...v1.8.2) (2025-05-15)
+
+
+### Bug Fixes
+
+* card link hover ([dfe28d6](https://github.com/zepdev/design-system-zhd-react/commit/dfe28d619c40211da9eaa66fd6d8285c9a3b8467))
+* language switcher radio buttons layout and navigation active link ([5cfec98](https://github.com/zepdev/design-system-zhd-react/commit/5cfec982c2c60333d7dfcc9fd467e53a35c65de7))
+
+## [1.8.1](https://github.com/zepdev/design-system-zhd-react/compare/v1.8.0...v1.8.1) (2025-05-12)
+
+
+### Bug Fixes
+
+* add radio button to language switcher ([5d1731b](https://github.com/zepdev/design-system-zhd-react/commit/5d1731b758c102053cf86112fb2833f114afc21b))
+* table pattern color ([94f16b4](https://github.com/zepdev/design-system-zhd-react/commit/94f16b4e891e9e3325cb47f7668cb8fa29f4b8af))
+
+# [1.8.0](https://github.com/zepdev/design-system-zhd-react/compare/v1.7.9...v1.8.0) (2025-05-12)
+
+
+### Bug Fixes
+
+* radio-language-switcher ([8061ec6](https://github.com/zepdev/design-system-zhd-react/commit/8061ec6acf0659275052e3155f27ca75dedc87f6))
+* update components to match zsd design ([0a47b89](https://github.com/zepdev/design-system-zhd-react/commit/0a47b8941abadb458c0bcb9033e28ed74e20b9a3))
+* update components to match zsd design ([6fe5a92](https://github.com/zepdev/design-system-zhd-react/commit/6fe5a9241ebc0f1de62dab3177fc697922ae3fe0))
+* update ZHD and ZSD libs ([9757fd2](https://github.com/zepdev/design-system-zhd-react/commit/9757fd284f2bb0677af0ce284525a4eb5b13d188))
+
+
+### Features
+
+* add new anchor navigation with new colors ([b51b951](https://github.com/zepdev/design-system-zhd-react/commit/b51b95145147e0808e790702c15a9ce5148a1f59))
+
+## [1.7.9](https://github.com/zepdev/design-system-zhd-react/compare/v1.7.8...v1.7.9) (2025-05-07)
+
+
+### Bug Fixes
+
+* build errors ([23ba5e1](https://github.com/zepdev/design-system-zhd-react/commit/23ba5e1ae31de6dfa3f85f55c4387b427c88b216))
+* usp item icon ([6acb792](https://github.com/zepdev/design-system-zhd-react/commit/6acb792cd0b748e3f3419d3c2ff5dfa9dce4b239))
+
+## [1.7.8](https://github.com/zepdev/design-system-zhd-react/compare/v1.7.7...v1.7.8) (2025-05-06)
+
+
+### Bug Fixes
+
+* datalayer push ([0a50678](https://github.com/zepdev/design-system-zhd-react/commit/0a5067860299033ebd3dc98e2141c8a82a79c41d))
+
+## [1.7.7](https://github.com/zepdev/design-system-zhd-react/compare/v1.7.6...v1.7.7) (2025-05-06)
+
+
+### Bug Fixes
+
+* fast forward tracking ([#145](https://github.com/zepdev/design-system-zhd-react/issues/145)) ([80c0801](https://github.com/zepdev/design-system-zhd-react/commit/80c0801fe1a97f7e376fcbda3557df5963ef982d))
+
+## [1.7.6](https://github.com/zepdev/design-system-zhd-react/compare/v1.7.5...v1.7.6) (2025-05-05)
+
+### Bug Fixes
+
+- breadcrumb ui ([3238017](https://github.com/zepdev/design-system-zhd-react/commit/323801730d1957bd69060cba850106c59505cda5))
+
+## [1.7.5](https://github.com/zepdev/design-system-zhd-react/compare/v1.7.4...v1.7.5) (2025-05-05)
+
+### Bug Fixes
+
+- add scroll id to media text pattern ([047166a](https://github.com/zepdev/design-system-zhd-react/commit/047166a76375609ae1eae3aa0499c651999a3f69))
+
+## [1.7.4](https://github.com/zepdev/design-system-zhd-react/compare/v1.7.3...v1.7.4) (2025-04-30)
+
+### Bug Fixes
+
+- image size 16/9 ([3db676a](https://github.com/zepdev/design-system-zhd-react/commit/3db676a3bd626570ba3606d2206226c9f2042eb0))
+
+## [1.7.3](https://github.com/zepdev/design-system-zhd-react/compare/v1.7.2...v1.7.3) (2025-04-30)
+
+### Bug Fixes
+
+- image spacing and single image 100% in richtext ([64111e1](https://github.com/zepdev/design-system-zhd-react/commit/64111e1340293f848241a39b7560693343a17093))
+
+## [1.7.2](https://github.com/zepdev/design-system-zhd-react/compare/v1.7.1...v1.7.2) (2025-04-29)
+
+### Bug Fixes
+
+- footer icons adjustment ([986aae7](https://github.com/zepdev/design-system-zhd-react/commit/986aae72f6317678600edb0ed039f8c332825616))
 
 ## [1.7.1](https://github.com/zepdev/design-system-zhd-react/compare/v1.7.0...v1.7.1) (2025-04-28)
 
-
 ### Bug Fixes
 
-* pagination press ([a346d56](https://github.com/zepdev/design-system-zhd-react/commit/a346d561a3ca040785671cff29a0fd69ad7a978b))
+- pagination press ([a346d56](https://github.com/zepdev/design-system-zhd-react/commit/a346d561a3ca040785671cff29a0fd69ad7a978b))
 
 # [1.7.0](https://github.com/zepdev/design-system-zhd-react/compare/v1.6.13...v1.7.0) (2025-04-28)
 
-
 ### Bug Fixes
 
-* adjust the hero width and the height ([9deaa5f](https://github.com/zepdev/design-system-zhd-react/commit/9deaa5f6b9a7df19eb5e25282c11728848152dea))
-* adjust the highlight color of the video for mobile view ([3366d2e](https://github.com/zepdev/design-system-zhd-react/commit/3366d2e5ecf676f3ff308314b5cc3903b5c76a91))
-
+- adjust the hero width and the height ([9deaa5f](https://github.com/zepdev/design-system-zhd-react/commit/9deaa5f6b9a7df19eb5e25282c11728848152dea))
+- adjust the highlight color of the video for mobile view ([3366d2e](https://github.com/zepdev/design-system-zhd-react/commit/3366d2e5ecf676f3ff308314b5cc3903b5c76a91))
 
 ### Features
 
-* add blue button and indigo frame for videos ([409ec96](https://github.com/zepdev/design-system-zhd-react/commit/409ec9684c051c6c3699f3e2f43c2b6f7f1ebd2d))
+- add blue button and indigo frame for videos ([409ec96](https://github.com/zepdev/design-system-zhd-react/commit/409ec9684c051c6c3699f3e2f43c2b6f7f1ebd2d))
 
 ## [1.6.13](https://github.com/zepdev/design-system-zhd-react/compare/v1.6.12...v1.6.13) (2025-04-28)
 
-
 ### Bug Fixes
 
-* media-text icon ([b540127](https://github.com/zepdev/design-system-zhd-react/commit/b54012789bc53502c8b7576e8336e6ac2f0b5991))
+- media-text icon ([b540127](https://github.com/zepdev/design-system-zhd-react/commit/b54012789bc53502c8b7576e8336e6ac2f0b5991))
 
 ## [1.6.12](https://github.com/zepdev/design-system-zhd-react/compare/v1.6.11...v1.6.12) (2025-04-28)
 
-
 ### Bug Fixes
 
-* added animation code ([827d0fd](https://github.com/zepdev/design-system-zhd-react/commit/827d0fdd85e1ac7d855347823c9f5a1170d175e5))
+- added animation code ([827d0fd](https://github.com/zepdev/design-system-zhd-react/commit/827d0fdd85e1ac7d855347823c9f5a1170d175e5))
 
 ## [1.6.11](https://github.com/zepdev/design-system-zhd-react/compare/v1.6.10...v1.6.11) (2025-04-28)
 
-
 ### Bug Fixes
 
-* undefined document ([fed048b](https://github.com/zepdev/design-system-zhd-react/commit/fed048b830553d9037bd38100b1a734bcf24dd69))
+- undefined document ([fed048b](https://github.com/zepdev/design-system-zhd-react/commit/fed048b830553d9037bd38100b1a734bcf24dd69))
 
 ## [1.6.10](https://github.com/zepdev/design-system-zhd-react/compare/v1.6.9...v1.6.10) (2025-04-28)
 
-
 ### Bug Fixes
 
-* MediaTextSmall component image and link ([0eb78e7](https://github.com/zepdev/design-system-zhd-react/commit/0eb78e7764200e7568508c5ab9bd3411e0ae2371))
-* remove type ([24f948f](https://github.com/zepdev/design-system-zhd-react/commit/24f948f0f93efe309cab38b3b8c4d21b2fc6b7a9))
+- MediaTextSmall component image and link ([0eb78e7](https://github.com/zepdev/design-system-zhd-react/commit/0eb78e7764200e7568508c5ab9bd3411e0ae2371))
+- remove type ([24f948f](https://github.com/zepdev/design-system-zhd-react/commit/24f948f0f93efe309cab38b3b8c4d21b2fc6b7a9))
 
 ## [1.6.9](https://github.com/zepdev/design-system-zhd-react/compare/v1.6.8...v1.6.9) (2025-04-28)
 
-
 ### Bug Fixes
 
-* added the 100% width for image ([761011c](https://github.com/zepdev/design-system-zhd-react/commit/761011c57b2e9e522d60038bb9dc721a5dd873db))
-* hydration ([1501d64](https://github.com/zepdev/design-system-zhd-react/commit/1501d648a4097a790c0364d5d68a754ef9e3609b))
-* width of the small hero ([cdf4e6e](https://github.com/zepdev/design-system-zhd-react/commit/cdf4e6eb6cbcefa4085b62cc820cf1b95714addb))
+- added the 100% width for image ([761011c](https://github.com/zepdev/design-system-zhd-react/commit/761011c57b2e9e522d60038bb9dc721a5dd873db))
+- hydration ([1501d64](https://github.com/zepdev/design-system-zhd-react/commit/1501d648a4097a790c0364d5d68a754ef9e3609b))
+- width of the small hero ([cdf4e6e](https://github.com/zepdev/design-system-zhd-react/commit/cdf4e6eb6cbcefa4085b62cc820cf1b95714addb))
 
 ## [1.6.8](https://github.com/zepdev/design-system-zhd-react/compare/v1.6.7...v1.6.8) (2025-04-28)
 
-
 ### Bug Fixes
 
-* footer update ([11807e8](https://github.com/zepdev/design-system-zhd-react/commit/11807e8f86e3b083b43ad92a3ead8fda5bc54387))
+- footer update ([11807e8](https://github.com/zepdev/design-system-zhd-react/commit/11807e8f86e3b083b43ad92a3ead8fda5bc54387))
 
 ## [1.6.7](https://github.com/zepdev/design-system-zhd-react/compare/v1.6.6...v1.6.7) (2025-04-28)
 
-
 ### Bug Fixes
 
-* breadcrumb width ([2a415b3](https://github.com/zepdev/design-system-zhd-react/commit/2a415b37589b6bf2f47c54e9590b39e9cffd9486))
+- breadcrumb width ([2a415b3](https://github.com/zepdev/design-system-zhd-react/commit/2a415b37589b6bf2f47c54e9590b39e9cffd9486))
 
 ## [1.6.6](https://github.com/zepdev/design-system-zhd-react/compare/v1.6.5...v1.6.6) (2025-04-28)
 
-
 ### Bug Fixes
 
-* breadcrumb and nav icon ([4145fbd](https://github.com/zepdev/design-system-zhd-react/commit/4145fbd92dce7b8a867ea8e15b7d60f94c249068))
+- breadcrumb and nav icon ([4145fbd](https://github.com/zepdev/design-system-zhd-react/commit/4145fbd92dce7b8a867ea8e15b7d60f94c249068))
 
 ## [1.6.5](https://github.com/zepdev/design-system-zhd-react/compare/v1.6.4...v1.6.5) (2025-04-25)
 
-
 ### Bug Fixes
 
-* added gradiant overlay for all variant ([ddc13f4](https://github.com/zepdev/design-system-zhd-react/commit/ddc13f407426b4124e99e2b3ccaf481205209fdd))
-* added indigo variant in SmallHero ([6c0a3e7](https://github.com/zepdev/design-system-zhd-react/commit/6c0a3e79d518dcea1e44f74f22429cf18124d358))
+- added gradiant overlay for all variant ([ddc13f4](https://github.com/zepdev/design-system-zhd-react/commit/ddc13f407426b4124e99e2b3ccaf481205209fdd))
+- added indigo variant in SmallHero ([6c0a3e7](https://github.com/zepdev/design-system-zhd-react/commit/6c0a3e79d518dcea1e44f74f22429cf18124d358))
 
 ## [1.6.4](https://github.com/zepdev/design-system-zhd-react/compare/v1.6.3...v1.6.4) (2025-04-25)
 
-
 ### Bug Fixes
 
-* font setting ([d38ccf7](https://github.com/zepdev/design-system-zhd-react/commit/d38ccf7cd8dca6db1a8b07fb373720c176c0eb12))
+- font setting ([d38ccf7](https://github.com/zepdev/design-system-zhd-react/commit/d38ccf7cd8dca6db1a8b07fb373720c176c0eb12))
 
 ## [1.6.3](https://github.com/zepdev/design-system-zhd-react/compare/v1.6.2...v1.6.3) (2025-04-25)
 
-
 ### Bug Fixes
 
-* hyphens text ([33b279d](https://github.com/zepdev/design-system-zhd-react/commit/33b279d01e56990a81bb7ed6ccdcbc3db7805333))
+- hyphens text ([33b279d](https://github.com/zepdev/design-system-zhd-react/commit/33b279d01e56990a81bb7ed6ccdcbc3db7805333))
 
 ## [1.6.2](https://github.com/zepdev/design-system-zhd-react/compare/v1.6.1...v1.6.2) (2025-04-25)
 
-
 ### Bug Fixes
 
-* remove anchor tag from headline ([5c89402](https://github.com/zepdev/design-system-zhd-react/commit/5c894022a32cc1328a496225de0f0e92bb5963f9))
+- remove anchor tag from headline ([5c89402](https://github.com/zepdev/design-system-zhd-react/commit/5c894022a32cc1328a496225de0f0e92bb5963f9))
 
 ## [1.6.1](https://github.com/zepdev/design-system-zhd-react/compare/v1.6.0...v1.6.1) (2025-04-25)
 
-
 ### Bug Fixes
 
-* marked the whole card clickable and also adjsut the iamge height with content ([913ea2e](https://github.com/zepdev/design-system-zhd-react/commit/913ea2eea108cceea434d9a85f1ef546540c29c3))
+- marked the whole card clickable and also adjsut the iamge height with content ([913ea2e](https://github.com/zepdev/design-system-zhd-react/commit/913ea2eea108cceea434d9a85f1ef546540c29c3))
 
 # [1.6.0](https://github.com/zepdev/design-system-zhd-react/compare/v1.5.16...v1.6.0) (2025-04-24)
 
-
 ### Bug Fixes
 
-* fix linting error ([6524f2e](https://github.com/zepdev/design-system-zhd-react/commit/6524f2e4dc32bac956d84b4b3c5abd0468dd36d7))
-* header long icon ([83771ba](https://github.com/zepdev/design-system-zhd-react/commit/83771ba086c3089fefde32d8cb7c5a7ad5e1d40f))
-* header long icon ([b5dcc01](https://github.com/zepdev/design-system-zhd-react/commit/b5dcc0199ac5def555466bdd65fb753275e8aa09))
-* instagram feed cookie covered only images ([d61513c](https://github.com/zepdev/design-system-zhd-react/commit/d61513c4da2219be004bf67afa5ead0e6c64d8df))
-
+- fix linting error ([6524f2e](https://github.com/zepdev/design-system-zhd-react/commit/6524f2e4dc32bac956d84b4b3c5abd0468dd36d7))
+- header long icon ([83771ba](https://github.com/zepdev/design-system-zhd-react/commit/83771ba086c3089fefde32d8cb7c5a7ad5e1d40f))
+- header long icon ([b5dcc01](https://github.com/zepdev/design-system-zhd-react/commit/b5dcc0199ac5def555466bdd65fb753275e8aa09))
+- instagram feed cookie covered only images ([d61513c](https://github.com/zepdev/design-system-zhd-react/commit/d61513c4da2219be004bf67afa5ead0e6c64d8df))
 
 ### Features
 
-* add zsd buttons to components ([79a7a52](https://github.com/zepdev/design-system-zhd-react/commit/79a7a529448b513b87d7b066db252aa019e36d88))
+- add zsd buttons to components ([79a7a52](https://github.com/zepdev/design-system-zhd-react/commit/79a7a529448b513b87d7b066db252aa019e36d88))
 
 ## [1.5.16](https://github.com/zepdev/design-system-zhd-react/compare/v1.5.15...v1.5.16) (2025-04-24)
 
-
 ### Bug Fixes
 
-* contact form success ([301a744](https://github.com/zepdev/design-system-zhd-react/commit/301a744dab92383749965a4b23da2ce6e3f7bb79))
+- contact form success ([301a744](https://github.com/zepdev/design-system-zhd-react/commit/301a744dab92383749965a4b23da2ce6e3f7bb79))
 
 ## [1.5.15](https://github.com/zepdev/design-system-zhd-react/compare/v1.5.14...v1.5.15) (2025-04-24)
 
-
 ### Bug Fixes
 
-* external links ([acd962a](https://github.com/zepdev/design-system-zhd-react/commit/acd962a946432c63cb15eeaee2ccf029ab189f7d))
+- external links ([acd962a](https://github.com/zepdev/design-system-zhd-react/commit/acd962a946432c63cb15eeaee2ccf029ab189f7d))
 
 ## [1.5.14](https://github.com/zepdev/design-system-zhd-react/compare/v1.5.13...v1.5.14) (2025-04-24)
 
-
 ### Bug Fixes
 
-* added cookie layer in the instagram feed ([15d33ce](https://github.com/zepdev/design-system-zhd-react/commit/15d33ce105fa1aae3471d9d2d6f80377bc9fe5bb))
+- added cookie layer in the instagram feed ([15d33ce](https://github.com/zepdev/design-system-zhd-react/commit/15d33ce105fa1aae3471d9d2d6f80377bc9fe5bb))
 
 ## [1.5.13](https://github.com/zepdev/design-system-zhd-react/compare/v1.5.12...v1.5.13) (2025-04-24)
 
-
 ### Bug Fixes
 
-* api client types ([439460a](https://github.com/zepdev/design-system-zhd-react/commit/439460ab78dc2fba1a673f988d8e5aa1656cc729))
+- api client types ([439460a](https://github.com/zepdev/design-system-zhd-react/commit/439460ab78dc2fba1a673f988d8e5aa1656cc729))
 
 ## [1.5.12](https://github.com/zepdev/design-system-zhd-react/compare/v1.5.11...v1.5.12) (2025-04-24)
 
-
 ### Bug Fixes
 
-* api client types ([5eb23e8](https://github.com/zepdev/design-system-zhd-react/commit/5eb23e8b69dec898b672a3d9d69e035bd5aaaf0a))
+- api client types ([5eb23e8](https://github.com/zepdev/design-system-zhd-react/commit/5eb23e8b69dec898b672a3d9d69e035bd5aaaf0a))
 
 ## [1.5.11](https://github.com/zepdev/design-system-zhd-react/compare/v1.5.10...v1.5.11) (2025-04-23)
 
-
 ### Bug Fixes
 
-* font bold ([e0bc66d](https://github.com/zepdev/design-system-zhd-react/commit/e0bc66d7e2f88ad74a0f27e7955d6117a2d2ae0f))
+- font bold ([e0bc66d](https://github.com/zepdev/design-system-zhd-react/commit/e0bc66d7e2f88ad74a0f27e7955d6117a2d2ae0f))
 
 ## [1.5.10](https://github.com/zepdev/design-system-zhd-react/compare/v1.5.9...v1.5.10) (2025-04-22)
 
-
 ### Bug Fixes
 
-* optanon consent ([9344fea](https://github.com/zepdev/design-system-zhd-react/commit/9344fea0401b3838c7f742f957342435249fbfb3))
+- optanon consent ([9344fea](https://github.com/zepdev/design-system-zhd-react/commit/9344fea0401b3838c7f742f957342435249fbfb3))
 
 ## [1.5.9](https://github.com/zepdev/design-system-zhd-react/compare/v1.5.8...v1.5.9) (2025-04-21)
 
-
 ### Bug Fixes
 
-* header short ([51e0530](https://github.com/zepdev/design-system-zhd-react/commit/51e053050de89366428a05004569affc247b4146))
+- header short ([51e0530](https://github.com/zepdev/design-system-zhd-react/commit/51e053050de89366428a05004569affc247b4146))
 
 ## [1.5.8](https://github.com/zepdev/design-system-zhd-react/compare/v1.5.7...v1.5.8) (2025-04-18)
 
-
 ### Bug Fixes
 
-* added extra linktype none ([1472718](https://github.com/zepdev/design-system-zhd-react/commit/14727182a6287e59e0b83ee764856ba64b986f3e))
-* added the link type none ([aa59745](https://github.com/zepdev/design-system-zhd-react/commit/aa597456640d0451f05f9dccd9789e8ea38fd2db))
-* Contact form added ([6385ca9](https://github.com/zepdev/design-system-zhd-react/commit/6385ca947ae0e359ac0f3ec634a600e173607d05))
+- added extra linktype none ([1472718](https://github.com/zepdev/design-system-zhd-react/commit/14727182a6287e59e0b83ee764856ba64b986f3e))
+- added the link type none ([aa59745](https://github.com/zepdev/design-system-zhd-react/commit/aa597456640d0451f05f9dccd9789e8ea38fd2db))
+- Contact form added ([6385ca9](https://github.com/zepdev/design-system-zhd-react/commit/6385ca947ae0e359ac0f3ec634a600e173607d05))
 
 ## [1.5.7](https://github.com/zepdev/design-system-zhd-react/compare/v1.5.6...v1.5.7) (2025-04-17)
 
-
 ### Bug Fixes
 
-* Anchor nav ([dc00a2f](https://github.com/zepdev/design-system-zhd-react/commit/dc00a2f34a52c33f97802c340e32de186c292514))
+- Anchor nav ([dc00a2f](https://github.com/zepdev/design-system-zhd-react/commit/dc00a2f34a52c33f97802c340e32de186c292514))
 
 ## [1.5.6](https://github.com/zepdev/design-system-zhd-react/compare/v1.5.5...v1.5.6) (2025-04-17)
 
-
 ### Bug Fixes
 
-* added extra fallback fonts ([98b9d9f](https://github.com/zepdev/design-system-zhd-react/commit/98b9d9fbc4e7f2398b372a4b1c7eb4bfa17e9369))
-* added fallback font arial ([0114099](https://github.com/zepdev/design-system-zhd-react/commit/0114099085c16be06cf7d6a894d422e74246dc9c))
-* edit process chain to be like zps but with link chain ([25119f9](https://github.com/zepdev/design-system-zhd-react/commit/25119f964b6ce186906e04252ab471101a2871ea))
-* remove icons in links ([785b99e](https://github.com/zepdev/design-system-zhd-react/commit/785b99e38a013430b73763c834048a77e90e1b86))
+- added extra fallback fonts ([98b9d9f](https://github.com/zepdev/design-system-zhd-react/commit/98b9d9fbc4e7f2398b372a4b1c7eb4bfa17e9369))
+- added fallback font arial ([0114099](https://github.com/zepdev/design-system-zhd-react/commit/0114099085c16be06cf7d6a894d422e74246dc9c))
+- edit process chain to be like zps but with link chain ([25119f9](https://github.com/zepdev/design-system-zhd-react/commit/25119f964b6ce186906e04252ab471101a2871ea))
+- remove icons in links ([785b99e](https://github.com/zepdev/design-system-zhd-react/commit/785b99e38a013430b73763c834048a77e90e1b86))
 
 ## [1.5.5](https://github.com/zepdev/design-system-zhd-react/compare/v1.5.4...v1.5.5) (2025-04-15)
 
-
 ### Bug Fixes
 
-* Build ([dd9a372](https://github.com/zepdev/design-system-zhd-react/commit/dd9a37214e8f591f210bcfab94b63e18f0ad0bda))
-* Media text link ([e035353](https://github.com/zepdev/design-system-zhd-react/commit/e0353535536f4e7e6fd124b4eb092335f044008c))
+- Build ([dd9a372](https://github.com/zepdev/design-system-zhd-react/commit/dd9a37214e8f591f210bcfab94b63e18f0ad0bda))
+- Media text link ([e035353](https://github.com/zepdev/design-system-zhd-react/commit/e0353535536f4e7e6fd124b4eb092335f044008c))
 
 ## [1.5.4](https://github.com/zepdev/design-system-zhd-react/compare/v1.5.3...v1.5.4) (2025-04-14)
 
-
 ### Bug Fixes
 
-* Header long icon ([ea28ab2](https://github.com/zepdev/design-system-zhd-react/commit/ea28ab227e45e4ee033f64dc0ed40d0b7e151049))
+- Header long icon ([ea28ab2](https://github.com/zepdev/design-system-zhd-react/commit/ea28ab227e45e4ee033f64dc0ed40d0b7e151049))
 
 ## [1.5.3](https://github.com/zepdev/design-system-zhd-react/compare/v1.5.2...v1.5.3) (2025-04-14)
 
-
 ### Bug Fixes
 
-* Media text download ([b73a7c8](https://github.com/zepdev/design-system-zhd-react/commit/b73a7c8324d2b86d5ab4a8504a690d17111b8e48))
+- Media text download ([b73a7c8](https://github.com/zepdev/design-system-zhd-react/commit/b73a7c8324d2b86d5ab4a8504a690d17111b8e48))
 
 ## [1.5.2](https://github.com/zepdev/design-system-zhd-react/compare/v1.5.1...v1.5.2) (2025-04-14)
 
-
 ### Bug Fixes
 
-* added new breakpoint ([da5fac6](https://github.com/zepdev/design-system-zhd-react/commit/da5fac67237357201f461070df222de2f075946a))
-* breadcrumbs color ([8910873](https://github.com/zepdev/design-system-zhd-react/commit/891087366787c77e0f9fedaa960ce33ed18f89e7))
-* Contact section, multilink list ([c72908d](https://github.com/zepdev/design-system-zhd-react/commit/c72908ddb8636651ec8d6c79cf471f7838263283))
-* design change for cardSquare ([a5fc10e](https://github.com/zepdev/design-system-zhd-react/commit/a5fc10ea6d01ad64e5e933379b9130037276e968))
-* fix color or breadcrumbs icons ([66baf6f](https://github.com/zepdev/design-system-zhd-react/commit/66baf6ff9fe1dde9f373a6f14b48e9a4fb3a40a6))
-* hover effect on card square whole ([397ac98](https://github.com/zepdev/design-system-zhd-react/commit/397ac982fc2e9ab484d7645c41e8f07d326bac50))
-* remove hover effect 700 ([9235346](https://github.com/zepdev/design-system-zhd-react/commit/9235346c3834916743f11aadab4106aca45e59c9))
-* rework on fonts and spacing ([7ddf185](https://github.com/zepdev/design-system-zhd-react/commit/7ddf185cf8ef029c60e8b309f33c6854a9c16101))
+- added new breakpoint ([da5fac6](https://github.com/zepdev/design-system-zhd-react/commit/da5fac67237357201f461070df222de2f075946a))
+- breadcrumbs color ([8910873](https://github.com/zepdev/design-system-zhd-react/commit/891087366787c77e0f9fedaa960ce33ed18f89e7))
+- Contact section, multilink list ([c72908d](https://github.com/zepdev/design-system-zhd-react/commit/c72908ddb8636651ec8d6c79cf471f7838263283))
+- design change for cardSquare ([a5fc10e](https://github.com/zepdev/design-system-zhd-react/commit/a5fc10ea6d01ad64e5e933379b9130037276e968))
+- fix color or breadcrumbs icons ([66baf6f](https://github.com/zepdev/design-system-zhd-react/commit/66baf6ff9fe1dde9f373a6f14b48e9a4fb3a40a6))
+- hover effect on card square whole ([397ac98](https://github.com/zepdev/design-system-zhd-react/commit/397ac982fc2e9ab484d7645c41e8f07d326bac50))
+- remove hover effect 700 ([9235346](https://github.com/zepdev/design-system-zhd-react/commit/9235346c3834916743f11aadab4106aca45e59c9))
+- rework on fonts and spacing ([7ddf185](https://github.com/zepdev/design-system-zhd-react/commit/7ddf185cf8ef029c60e8b309f33c6854a9c16101))
 
 ## [1.5.1](https://github.com/zepdev/design-system-zhd-react/compare/v1.5.0...v1.5.1) (2025-04-09)
 
-
 ### Bug Fixes
 
-* Hydration on media text small ([512bf6c](https://github.com/zepdev/design-system-zhd-react/commit/512bf6c7272abdbe4e915b482bf53fc11c30d576))
+- Hydration on media text small ([512bf6c](https://github.com/zepdev/design-system-zhd-react/commit/512bf6c7272abdbe4e915b482bf53fc11c30d576))
 
 # [1.5.0](https://github.com/zepdev/design-system-zhd-react/compare/v1.4.9...v1.5.0) (2025-04-09)
 
-
 ### Bug Fixes
 
-* change content to descrption ([73e4373](https://github.com/zepdev/design-system-zhd-react/commit/73e4373243ab084ad389ce760014007fcff3e9aa))
-* remove small hero corp and add process chain styles as zsd ([f0a35a2](https://github.com/zepdev/design-system-zhd-react/commit/f0a35a212f0946ae0aadccce833950ca8cf336be))
-* removed unused description ([e6d7046](https://github.com/zepdev/design-system-zhd-react/commit/e6d704672e5b15a69620be7d08bec4526c01a41d))
-* removed unused variables ([18f2d45](https://github.com/zepdev/design-system-zhd-react/commit/18f2d45e695ab19308bc0afebb02f1e0f45b5a79))
-
+- change content to descrption ([73e4373](https://github.com/zepdev/design-system-zhd-react/commit/73e4373243ab084ad389ce760014007fcff3e9aa))
+- remove small hero corp and add process chain styles as zsd ([f0a35a2](https://github.com/zepdev/design-system-zhd-react/commit/f0a35a212f0946ae0aadccce833950ca8cf336be))
+- removed unused description ([e6d7046](https://github.com/zepdev/design-system-zhd-react/commit/e6d704672e5b15a69620be7d08bec4526c01a41d))
+- removed unused variables ([18f2d45](https://github.com/zepdev/design-system-zhd-react/commit/18f2d45e695ab19308bc0afebb02f1e0f45b5a79))
 
 ### Features
 
-* add LinkChain in process chain ([52384cb](https://github.com/zepdev/design-system-zhd-react/commit/52384cb9497787e4139369d1c6f0797738c0adef))
+- add LinkChain in process chain ([52384cb](https://github.com/zepdev/design-system-zhd-react/commit/52384cb9497787e4139369d1c6f0797738c0adef))
 
 ## [1.4.9](https://github.com/zepdev/design-system-zhd-react/compare/v1.4.8...v1.4.9) (2025-04-08)
 
-
 ### Bug Fixes
 
-* Card height ([c43d9e1](https://github.com/zepdev/design-system-zhd-react/commit/c43d9e1774be9eae439285249d40c53c13114b38))
+- Card height ([c43d9e1](https://github.com/zepdev/design-system-zhd-react/commit/c43d9e1774be9eae439285249d40c53c13114b38))
 
 ## [1.4.8](https://github.com/zepdev/design-system-zhd-react/compare/v1.4.7...v1.4.8) (2025-04-08)
 
-
 ### Bug Fixes
 
-* General adjustments ([88883c2](https://github.com/zepdev/design-system-zhd-react/commit/88883c231df423dd1a44e06de012e1ddf0275829))
+- General adjustments ([88883c2](https://github.com/zepdev/design-system-zhd-react/commit/88883c231df423dd1a44e06de012e1ddf0275829))
 
 ## [1.4.7](https://github.com/zepdev/design-system-zhd-react/compare/v1.4.6...v1.4.7) (2025-04-08)
 
-
 ### Bug Fixes
 
-* Instagram card ulr ([4e7df4f](https://github.com/zepdev/design-system-zhd-react/commit/4e7df4f8af080ebc2684e4f4fb35241896b8101a))
+- Instagram card ulr ([4e7df4f](https://github.com/zepdev/design-system-zhd-react/commit/4e7df4f8af080ebc2684e4f4fb35241896b8101a))
 
 ## [1.4.6](https://github.com/zepdev/design-system-zhd-react/compare/v1.4.5...v1.4.6) (2025-04-08)
 
-
 ### Bug Fixes
 
-* Update bg instagram ([6cf3f64](https://github.com/zepdev/design-system-zhd-react/commit/6cf3f64085355479fb765e0032cb7ddabd3d31fa))
+- Update bg instagram ([6cf3f64](https://github.com/zepdev/design-system-zhd-react/commit/6cf3f64085355479fb765e0032cb7ddabd3d31fa))
 
 ## [1.4.5](https://github.com/zepdev/design-system-zhd-react/compare/v1.4.4...v1.4.5) (2025-04-08)
 
-
 ### Bug Fixes
 
-* add test ([d0ec7fc](https://github.com/zepdev/design-system-zhd-react/commit/d0ec7fc459b516498a16b9b6ec5e7b26669a7744))
-* fix unit test ([532d903](https://github.com/zepdev/design-system-zhd-react/commit/532d9037ea7d9e8671176836728eb1fbd9ba754c))
-* media text small blockcontent ([3589779](https://github.com/zepdev/design-system-zhd-react/commit/3589779851ff83a0333b149610daddb2749f645b))
-* Richtext ([b4a9553](https://github.com/zepdev/design-system-zhd-react/commit/b4a95535780d70f1f8abb131ef327c444bfc54f9))
-* unit test ([f2fef53](https://github.com/zepdev/design-system-zhd-react/commit/f2fef5320f2aca7334dde650f4db10c18b40129a))
-* unit test ([b64a1b4](https://github.com/zepdev/design-system-zhd-react/commit/b64a1b4b45a3544f2bd60f0e58c59e90cf506ca5))
+- add test ([d0ec7fc](https://github.com/zepdev/design-system-zhd-react/commit/d0ec7fc459b516498a16b9b6ec5e7b26669a7744))
+- fix unit test ([532d903](https://github.com/zepdev/design-system-zhd-react/commit/532d9037ea7d9e8671176836728eb1fbd9ba754c))
+- media text small blockcontent ([3589779](https://github.com/zepdev/design-system-zhd-react/commit/3589779851ff83a0333b149610daddb2749f645b))
+- Richtext ([b4a9553](https://github.com/zepdev/design-system-zhd-react/commit/b4a95535780d70f1f8abb131ef327c444bfc54f9))
+- unit test ([f2fef53](https://github.com/zepdev/design-system-zhd-react/commit/f2fef5320f2aca7334dde650f4db10c18b40129a))
+- unit test ([b64a1b4](https://github.com/zepdev/design-system-zhd-react/commit/b64a1b4b45a3544f2bd60f0e58c59e90cf506ca5))
 
 ## [1.4.4](https://github.com/zepdev/design-system-zhd-react/compare/v1.4.3...v1.4.4) (2025-04-07)
 
-
 ### Bug Fixes
 
-* added the heights for image ([59b4a40](https://github.com/zepdev/design-system-zhd-react/commit/59b4a405f4193e250c20abf3f2bc8e544129b364))
-* added the object top ([5877639](https://github.com/zepdev/design-system-zhd-react/commit/5877639154b39941bb1b8a648575de720e79b02c))
-* Minor improvements ([4450120](https://github.com/zepdev/design-system-zhd-react/commit/4450120485bba042c26a6a86527820696fa59c71))
-* Tests ([3eda37a](https://github.com/zepdev/design-system-zhd-react/commit/3eda37adcc3629d5cccaaf45026cdeb257838566))
+- added the heights for image ([59b4a40](https://github.com/zepdev/design-system-zhd-react/commit/59b4a405f4193e250c20abf3f2bc8e544129b364))
+- added the object top ([5877639](https://github.com/zepdev/design-system-zhd-react/commit/5877639154b39941bb1b8a648575de720e79b02c))
+- Minor improvements ([4450120](https://github.com/zepdev/design-system-zhd-react/commit/4450120485bba042c26a6a86527820696fa59c71))
+- Tests ([3eda37a](https://github.com/zepdev/design-system-zhd-react/commit/3eda37adcc3629d5cccaaf45026cdeb257838566))
 
 ## [1.4.3](https://github.com/zepdev/design-system-zhd-react/compare/v1.4.2...v1.4.3) (2025-04-07)
 
-
 ### Bug Fixes
 
-* Export card ([92e72b4](https://github.com/zepdev/design-system-zhd-react/commit/92e72b4d4be085de5d5b1f32d6905ec615bb27c2))
+- Export card ([92e72b4](https://github.com/zepdev/design-system-zhd-react/commit/92e72b4d4be085de5d5b1f32d6905ec615bb27c2))
 
 ## [1.4.2](https://github.com/zepdev/design-system-zhd-react/compare/v1.4.1...v1.4.2) (2025-04-07)
 
-
 ### Bug Fixes
 
-* trigger release ([c9ea473](https://github.com/zepdev/design-system-zhd-react/commit/c9ea473300c195d5516c6cce0ed5b47480922a30))
+- trigger release ([c9ea473](https://github.com/zepdev/design-system-zhd-react/commit/c9ea473300c195d5516c6cce0ed5b47480922a30))
 
 ## [1.4.1](https://github.com/zepdev/design-system-zhd-react/compare/v1.4.0...v1.4.1) (2025-04-04)
 
-
 ### Bug Fixes
 
-* Export small hero ([4db3ed1](https://github.com/zepdev/design-system-zhd-react/commit/4db3ed12143fc411f5fe0e813645d190391f1186))
+- Export small hero ([4db3ed1](https://github.com/zepdev/design-system-zhd-react/commit/4db3ed12143fc411f5fe0e813645d190391f1186))
 
 # [1.4.0](https://github.com/zepdev/design-system-zhd-react/compare/v1.3.0...v1.4.0) (2025-04-04)
 
-
 ### Features
 
-* Small hero ([5fe0b1a](https://github.com/zepdev/design-system-zhd-react/commit/5fe0b1a4ee45ce2693094fce89810d0bb1162de6))
+- Small hero ([5fe0b1a](https://github.com/zepdev/design-system-zhd-react/commit/5fe0b1a4ee45ce2693094fce89810d0bb1162de6))
 
 # [1.3.0](https://github.com/zepdev/design-system-zhd-react/compare/v1.2.0...v1.3.0) (2025-04-04)
 
-
 ### Bug Fixes
 
-* breadcrums colors ([df5932a](https://github.com/zepdev/design-system-zhd-react/commit/df5932aa39853049c7c5d46a97c861bbe061c300))
-* Hero adjustment ([5867177](https://github.com/zepdev/design-system-zhd-react/commit/586717779c2c2802fbea69eab4ec855fa103285b))
-* image aspect ratio and added new breakpoint to the storybook ([e688291](https://github.com/zepdev/design-system-zhd-react/commit/e688291c5875c6a742ade9d8ac3fbc465dff28ac))
-* Media text adjustments ([da3e5dc](https://github.com/zepdev/design-system-zhd-react/commit/da3e5dc5a351271600505d70aceb1016c7dcde1b))
-* Tests ([09817f1](https://github.com/zepdev/design-system-zhd-react/commit/09817f1aba15d066a706e8686d4526ba60131047))
-
+- breadcrums colors ([df5932a](https://github.com/zepdev/design-system-zhd-react/commit/df5932aa39853049c7c5d46a97c861bbe061c300))
+- Hero adjustment ([5867177](https://github.com/zepdev/design-system-zhd-react/commit/586717779c2c2802fbea69eab4ec855fa103285b))
+- image aspect ratio and added new breakpoint to the storybook ([e688291](https://github.com/zepdev/design-system-zhd-react/commit/e688291c5875c6a742ade9d8ac3fbc465dff28ac))
+- Media text adjustments ([da3e5dc](https://github.com/zepdev/design-system-zhd-react/commit/da3e5dc5a351271600505d70aceb1016c7dcde1b))
+- Tests ([09817f1](https://github.com/zepdev/design-system-zhd-react/commit/09817f1aba15d066a706e8686d4526ba60131047))
 
 ### Features
 
-* Navigation+Footer ([4c0be4b](https://github.com/zepdev/design-system-zhd-react/commit/4c0be4b7f9c81120f3f1ae3bb78df9a582ac595a))
+- Navigation+Footer ([4c0be4b](https://github.com/zepdev/design-system-zhd-react/commit/4c0be4b7f9c81120f3f1ae3bb78df9a582ac595a))
 
 # [1.2.0](https://github.com/zepdev/design-system-zhd-react/compare/v1.1.0...v1.2.0) (2025-04-04)
 
-
 ### Bug Fixes
 
-* add missing asset for hero ([b9c0092](https://github.com/zepdev/design-system-zhd-react/commit/b9c00927cb3d9cf5bdda09dd73397bbefa828d05))
-* headline align left ([d320648](https://github.com/zepdev/design-system-zhd-react/commit/d32064889fa8b980d6929dbc3d964583ff2174ad))
-* padding issue between two components ([b583999](https://github.com/zepdev/design-system-zhd-react/commit/b583999ddb4877e54e179cd8f52faaa1d65b6ee9))
-* Pipeline ([e31297c](https://github.com/zepdev/design-system-zhd-react/commit/e31297c46400bd3f5a3ead44e6f700ed829fbea9))
-* removed typos ([0c59b49](https://github.com/zepdev/design-system-zhd-react/commit/0c59b490830d722b34c9b79d64ba253d69f36956))
-* try to fix test error ([0f2e0d2](https://github.com/zepdev/design-system-zhd-react/commit/0f2e0d27151a0d6b9510b2e0fbdbb4aef148f66e))
-* Yarn lock ([ec58cdf](https://github.com/zepdev/design-system-zhd-react/commit/ec58cdf248dc69de96c40c270608532921e5bd30))
-
+- add missing asset for hero ([b9c0092](https://github.com/zepdev/design-system-zhd-react/commit/b9c00927cb3d9cf5bdda09dd73397bbefa828d05))
+- headline align left ([d320648](https://github.com/zepdev/design-system-zhd-react/commit/d32064889fa8b980d6929dbc3d964583ff2174ad))
+- padding issue between two components ([b583999](https://github.com/zepdev/design-system-zhd-react/commit/b583999ddb4877e54e179cd8f52faaa1d65b6ee9))
+- Pipeline ([e31297c](https://github.com/zepdev/design-system-zhd-react/commit/e31297c46400bd3f5a3ead44e6f700ed829fbea9))
+- removed typos ([0c59b49](https://github.com/zepdev/design-system-zhd-react/commit/0c59b490830d722b34c9b79d64ba253d69f36956))
+- try to fix test error ([0f2e0d2](https://github.com/zepdev/design-system-zhd-react/commit/0f2e0d27151a0d6b9510b2e0fbdbb4aef148f66e))
+- Yarn lock ([ec58cdf](https://github.com/zepdev/design-system-zhd-react/commit/ec58cdf248dc69de96c40c270608532921e5bd30))
 
 ### Features
 
-* add and zsd components and remove unnecessary ones and adjust components accordingly ([963c3f0](https://github.com/zepdev/design-system-zhd-react/commit/963c3f0c2422887f37deaf5d7b8ec7f60c3cc924))
-* created new card component & pattern ([1287f4c](https://github.com/zepdev/design-system-zhd-react/commit/1287f4c7aaa6ee73072f0316bcce191e95134947))
-* Refactor ([4f7ab2c](https://github.com/zepdev/design-system-zhd-react/commit/4f7ab2caacd3f2302bb1860fe4dc293bba3e158c))
-* Rich text adjustments ([3fa7801](https://github.com/zepdev/design-system-zhd-react/commit/3fa7801804aa30df6997e7c6d71f6e8c8ed946ab))
-* ZPS Refactor ([fd8612d](https://github.com/zepdev/design-system-zhd-react/commit/fd8612d879e407ac37c3849082dbfc03286ec58a))
+- add and zsd components and remove unnecessary ones and adjust components accordingly ([963c3f0](https://github.com/zepdev/design-system-zhd-react/commit/963c3f0c2422887f37deaf5d7b8ec7f60c3cc924))
+- created new card component & pattern ([1287f4c](https://github.com/zepdev/design-system-zhd-react/commit/1287f4c7aaa6ee73072f0316bcce191e95134947))
+- Refactor ([4f7ab2c](https://github.com/zepdev/design-system-zhd-react/commit/4f7ab2caacd3f2302bb1860fe4dc293bba3e158c))
+- Rich text adjustments ([3fa7801](https://github.com/zepdev/design-system-zhd-react/commit/3fa7801804aa30df6997e7c6d71f6e8c8ed946ab))
+- ZPS Refactor ([fd8612d](https://github.com/zepdev/design-system-zhd-react/commit/fd8612d879e407ac37c3849082dbfc03286ec58a))
 
 # [1.1.0](https://github.com/zepdev/design-system-zhd-react/compare/v1.0.0...v1.1.0) (2025-04-02)
 
-
 ### Bug Fixes
 
-* Added Media-text-component ([06a4359](https://github.com/zepdev/design-system-zhd-react/commit/06a4359ac93f7e74f890bb44ea94d6bde6d3cb3d))
-* fix download component error ([228b8f1](https://github.com/zepdev/design-system-zhd-react/commit/228b8f1064023ed112e43ec51308646e06e1d78e))
-
+- Added Media-text-component ([06a4359](https://github.com/zepdev/design-system-zhd-react/commit/06a4359ac93f7e74f890bb44ea94d6bde6d3cb3d))
+- fix download component error ([228b8f1](https://github.com/zepdev/design-system-zhd-react/commit/228b8f1064023ed112e43ec51308646e06e1d78e))
 
 ### Features
 
-* add cookies component and fix font ([5a6fd0e](https://github.com/zepdev/design-system-zhd-react/commit/5a6fd0e2ada78449863d29bbd9611df589f12a29))
-* cleanup library with the needed components ([41832ce](https://github.com/zepdev/design-system-zhd-react/commit/41832ce9dacec51f48067db9e4b490a21de3ce04))
+- add cookies component and fix font ([5a6fd0e](https://github.com/zepdev/design-system-zhd-react/commit/5a6fd0e2ada78449863d29bbd9611df589f12a29))
+- cleanup library with the needed components ([41832ce](https://github.com/zepdev/design-system-zhd-react/commit/41832ce9dacec51f48067db9e4b490a21de3ce04))
 
 # 1.0.0 (2025-03-04)
 
-
 ### Bug Fixes
 
-* trying to run the prod deployment ([b2e2b3f](https://github.com/zepdev/design-system-zhd-react/commit/b2e2b3f57960d55db53b7de5ed4dc73f674c5d61))
+- trying to run the prod deployment ([b2e2b3f](https://github.com/zepdev/design-system-zhd-react/commit/b2e2b3f57960d55db53b7de5ed4dc73f674c5d61))
 
 ## [1.3.6](https://github.com/zepdev/design-system-zps-react/compare/v1.3.5...v1.3.6) (2024-11-12)
 
-
 ### Bug Fixes
 
-* fix pipeline issue to deploy on the correct link for github pages ([00f4fe9](https://github.com/zepdev/design-system-zps-react/commit/00f4fe9702e1d2d577b31324ace531243dd2022f))
+- fix pipeline issue to deploy on the correct link for github pages ([00f4fe9](https://github.com/zepdev/design-system-zps-react/commit/00f4fe9702e1d2d577b31324ace531243dd2022f))
 
 ## [1.3.5](https://github.com/zepdev/design-system-zps-react/compare/v1.3.4...v1.3.5) (2024-11-12)
 
-
 ### Bug Fixes
 
-* fix wrong conventional commit messages to trigger new release ([dce0732](https://github.com/zepdev/design-system-zps-react/commit/dce0732eecf580d44889f7de8b5daa7cc3796884))
+- fix wrong conventional commit messages to trigger new release ([dce0732](https://github.com/zepdev/design-system-zps-react/commit/dce0732eecf580d44889f7de8b5daa7cc3796884))
 
 ## [1.3.4](https://github.com/zepdev/design-system-zps-react/compare/v1.3.3...v1.3.4) (2024-11-08)
 
-
 ### Bug Fixes
 
-* fixes arrow imports ([9a72473](https://github.com/zepdev/design-system-zps-react/commit/9a72473171108b61de7fe54fd12a178d6c9be6e3))
+- fixes arrow imports ([9a72473](https://github.com/zepdev/design-system-zps-react/commit/9a72473171108b61de7fe54fd12a178d6c9be6e3))
 
 ## [1.3.3](https://github.com/zepdev/design-system-zps-react/compare/v1.3.2...v1.3.3) (2024-11-07)
 
-
 ### Bug Fixes
 
-* fixes hero component ([e71829a](https://github.com/zepdev/design-system-zps-react/commit/e71829ade62cc2e5c99f1fba244a001f3f4c2902))
-* unnecessary hero imports ([c0a4c66](https://github.com/zepdev/design-system-zps-react/commit/c0a4c66c89e4c5586f9862750c68105d961fd7e0))
+- fixes hero component ([e71829a](https://github.com/zepdev/design-system-zps-react/commit/e71829ade62cc2e5c99f1fba244a001f3f4c2902))
+- unnecessary hero imports ([c0a4c66](https://github.com/zepdev/design-system-zps-react/commit/c0a4c66c89e4c5586f9862750c68105d961fd7e0))
 
 ## [1.3.2](https://github.com/zepdev/design-system-zps-react/compare/v1.3.1...v1.3.2) (2024-11-07)
 
-
 ### Bug Fixes
 
-* fixes header long styling ([140b196](https://github.com/zepdev/design-system-zps-react/commit/140b196b9dd9284935f7da2f7e64d9726f35f12f))
+- fixes header long styling ([140b196](https://github.com/zepdev/design-system-zps-react/commit/140b196b9dd9284935f7da2f7e64d9726f35f12f))
 
 ## [1.3.1](https://github.com/zepdev/design-system-zps-react/compare/v1.3.0...v1.3.1) (2024-11-05)
 
-
 ### Bug Fixes
 
-* add building command for the style css file ([8e87051](https://github.com/zepdev/design-system-zps-react/commit/8e8705104359d2ea3dde78a86818c28996827770))
-* add tailwind config file in exports in package json ([da16ced](https://github.com/zepdev/design-system-zps-react/commit/da16ced2d235c94ce4abba1d75bc3141696dc2cd))
+- add building command for the style css file ([8e87051](https://github.com/zepdev/design-system-zps-react/commit/8e8705104359d2ea3dde78a86818c28996827770))
+- add tailwind config file in exports in package json ([da16ced](https://github.com/zepdev/design-system-zps-react/commit/da16ced2d235c94ce4abba1d75bc3141696dc2cd))
 
 # [1.3.0](https://github.com/zepdev/design-system-zps-react/compare/v1.2.0...v1.3.0) (2024-11-05)
 
-
 ### Bug Fixes
 
-* bundle Figma design tokens library with design system ([6a3d10c](https://github.com/zepdev/design-system-zps-react/commit/6a3d10c0e63245c2ee7fed1afa81863317af9548))
-
+- bundle Figma design tokens library with design system ([6a3d10c](https://github.com/zepdev/design-system-zps-react/commit/6a3d10c0e63245c2ee7fed1afa81863317af9548))
 
 ### Features
 
-* footer component ([a995e12](https://github.com/zepdev/design-system-zps-react/commit/a995e124b51afdc90f44f40e9652720db7b2a3e1))
+- footer component ([a995e12](https://github.com/zepdev/design-system-zps-react/commit/a995e124b51afdc90f44f40e9652720db7b2a3e1))
 
 # [1.2.0](https://github.com/zepdev/design-system-zps-react/compare/v1.1.0...v1.2.0) (2024-11-04)
 
-
 ### Features
 
-* card media pattern ([f54ff44](https://github.com/zepdev/design-system-zps-react/commit/f54ff44e41b917ee07673200c195bd9ebc0aee36))
+- card media pattern ([f54ff44](https://github.com/zepdev/design-system-zps-react/commit/f54ff44e41b917ee07673200c195bd9ebc0aee36))
 
 # [1.1.0](https://github.com/zepdev/design-system-zps-react/compare/v1.0.0...v1.1.0) (2024-10-31)
 
-
 ### Bug Fixes
 
-* adding component library in tailwind config content to fix missing styles ([0edaeb6](https://github.com/zepdev/design-system-zps-react/commit/0edaeb6545dc13cc97d0bb2931201f8bf8b9db92))
-* className change in link list item ([053802c](https://github.com/zepdev/design-system-zps-react/commit/053802c57ecd8ef7e8d3dde0f793456a2a1cfc5f))
-* fix links gap ([5983550](https://github.com/zepdev/design-system-zps-react/commit/5983550f74c6a29f5408ca1eef6106a3068ed236))
-* fix padding and word breaking ([b020835](https://github.com/zepdev/design-system-zps-react/commit/b0208358d8934de3ebe55edda6dae45f695f3845))
-* fix word breaking ([13b48b4](https://github.com/zepdev/design-system-zps-react/commit/13b48b470996081ca43503b18ebbe7ef1655bff6))
-* remove redundant imports in mediaText component ([8512b96](https://github.com/zepdev/design-system-zps-react/commit/8512b96ad5bebcb67ca26a7479e2dbf55405942e))
-* **storybook:** Arrow position in hero ([332afbb](https://github.com/zepdev/design-system-zps-react/commit/332afbbd4a2be88336d5f9ba7291b2ba6675fd64))
-* update link list component based on design on figma - single list ([4a398ae](https://github.com/zepdev/design-system-zps-react/commit/4a398aec8ab021f6ac9d3809d542c5183a587c17))
-
+- adding component library in tailwind config content to fix missing styles ([0edaeb6](https://github.com/zepdev/design-system-zps-react/commit/0edaeb6545dc13cc97d0bb2931201f8bf8b9db92))
+- className change in link list item ([053802c](https://github.com/zepdev/design-system-zps-react/commit/053802c57ecd8ef7e8d3dde0f793456a2a1cfc5f))
+- fix links gap ([5983550](https://github.com/zepdev/design-system-zps-react/commit/5983550f74c6a29f5408ca1eef6106a3068ed236))
+- fix padding and word breaking ([b020835](https://github.com/zepdev/design-system-zps-react/commit/b0208358d8934de3ebe55edda6dae45f695f3845))
+- fix word breaking ([13b48b4](https://github.com/zepdev/design-system-zps-react/commit/13b48b470996081ca43503b18ebbe7ef1655bff6))
+- remove redundant imports in mediaText component ([8512b96](https://github.com/zepdev/design-system-zps-react/commit/8512b96ad5bebcb67ca26a7479e2dbf55405942e))
+- **storybook:** Arrow position in hero ([332afbb](https://github.com/zepdev/design-system-zps-react/commit/332afbbd4a2be88336d5f9ba7291b2ba6675fd64))
+- update link list component based on design on figma - single list ([4a398ae](https://github.com/zepdev/design-system-zps-react/commit/4a398aec8ab021f6ac9d3809d542c5183a587c17))
 
 ### Features
 
-* Anchor navigation component ([78c1a24](https://github.com/zepdev/design-system-zps-react/commit/78c1a24a5246b20d629e75f96cceab731c51be8d))
-* multi link list ([007115b](https://github.com/zepdev/design-system-zps-react/commit/007115b69b82a48f3cb666bdd454b8250f030275))
-* single link list pattern ([4fd4bcb](https://github.com/zepdev/design-system-zps-react/commit/4fd4bcb8c0185dfeb3655edec9fae4efc73cf2ed))
-* **storybook:** Added story without image in Hero component ([1eedf8a](https://github.com/zepdev/design-system-zps-react/commit/1eedf8a4407d09bea2a157d4e3afa42677894462))
-* **storybook:** CAT Tagline theme opacity added ([fdc9ce8](https://github.com/zepdev/design-system-zps-react/commit/fdc9ce8acc37671e69044d2131a0e53c8fe2419e))
-* **storybook:** Media text component layout adjusted for SM and XS screens ([b410d18](https://github.com/zepdev/design-system-zps-react/commit/b410d18151f0c1fd6478f7c71e468cbb0d72d4b7))
-* **storybook:** Media text component theme adjustment ([714fcbd](https://github.com/zepdev/design-system-zps-react/commit/714fcbd1f03d2b8a2c81c02a13ecc6dd2c42bc8f))
-* **storybook:** Media text component theme adjustment ([9496cb3](https://github.com/zepdev/design-system-zps-react/commit/9496cb3725ec487afc758254a3dad33230349aa3))
-* **storybook:** Product highlight now supports button variants ([aa71a56](https://github.com/zepdev/design-system-zps-react/commit/aa71a5625ed98c7e8457126b1c308005f87f16cb))
-* **theme:** Added CAT theme to CardSquare ([f747065](https://github.com/zepdev/design-system-zps-react/commit/f747065a193e6b7721c1f7e535021450c5693b78))
-* USP Patterns ([5cdd448](https://github.com/zepdev/design-system-zps-react/commit/5cdd448461dbc24f216fe7d979177cd55bf4fe05))
+- Anchor navigation component ([78c1a24](https://github.com/zepdev/design-system-zps-react/commit/78c1a24a5246b20d629e75f96cceab731c51be8d))
+- multi link list ([007115b](https://github.com/zepdev/design-system-zps-react/commit/007115b69b82a48f3cb666bdd454b8250f030275))
+- single link list pattern ([4fd4bcb](https://github.com/zepdev/design-system-zps-react/commit/4fd4bcb8c0185dfeb3655edec9fae4efc73cf2ed))
+- **storybook:** Added story without image in Hero component ([1eedf8a](https://github.com/zepdev/design-system-zps-react/commit/1eedf8a4407d09bea2a157d4e3afa42677894462))
+- **storybook:** CAT Tagline theme opacity added ([fdc9ce8](https://github.com/zepdev/design-system-zps-react/commit/fdc9ce8acc37671e69044d2131a0e53c8fe2419e))
+- **storybook:** Media text component layout adjusted for SM and XS screens ([b410d18](https://github.com/zepdev/design-system-zps-react/commit/b410d18151f0c1fd6478f7c71e468cbb0d72d4b7))
+- **storybook:** Media text component theme adjustment ([714fcbd](https://github.com/zepdev/design-system-zps-react/commit/714fcbd1f03d2b8a2c81c02a13ecc6dd2c42bc8f))
+- **storybook:** Media text component theme adjustment ([9496cb3](https://github.com/zepdev/design-system-zps-react/commit/9496cb3725ec487afc758254a3dad33230349aa3))
+- **storybook:** Product highlight now supports button variants ([aa71a56](https://github.com/zepdev/design-system-zps-react/commit/aa71a5625ed98c7e8457126b1c308005f87f16cb))
+- **theme:** Added CAT theme to CardSquare ([f747065](https://github.com/zepdev/design-system-zps-react/commit/f747065a193e6b7721c1f7e535021450c5693b78))
+- USP Patterns ([5cdd448](https://github.com/zepdev/design-system-zps-react/commit/5cdd448461dbc24f216fe7d979177cd55bf4fe05))
 
 # 1.0.0 (2024-10-18)
 
-
 ### Bug Fixes
 
-* fix usp and rich text components errors ([3b45ebe](https://github.com/zepdev/design-system-zps-react/commit/3b45ebe3bd974c140819a865dc2c2eb0409f9e84))
-* remove peer dependency of the original component library ([ae572df](https://github.com/zepdev/design-system-zps-react/commit/ae572df63f55f8f95588a74cfd020ad9b23586c8))
-* resolve errors in richtext test file ([56208b5](https://github.com/zepdev/design-system-zps-react/commit/56208b53e180e5d0d970e9b18a00d26e6b6bde69))
-* test if import order make difference in list component ([e5d70aa](https://github.com/zepdev/design-system-zps-react/commit/e5d70aa1de540f8fdc278f36dc99e18a4400adeb))
-
+- fix usp and rich text components errors ([3b45ebe](https://github.com/zepdev/design-system-zps-react/commit/3b45ebe3bd974c140819a865dc2c2eb0409f9e84))
+- remove peer dependency of the original component library ([ae572df](https://github.com/zepdev/design-system-zps-react/commit/ae572df63f55f8f95588a74cfd020ad9b23586c8))
+- resolve errors in richtext test file ([56208b5](https://github.com/zepdev/design-system-zps-react/commit/56208b53e180e5d0d970e9b18a00d26e6b6bde69))
+- test if import order make difference in list component ([e5d70aa](https://github.com/zepdev/design-system-zps-react/commit/e5d70aa1de540f8fdc278f36dc99e18a4400adeb))
 
 ### Features
 
-* new components with the new chromatic connected ([f6b2cbb](https://github.com/zepdev/design-system-zps-react/commit/f6b2cbbae85d7110cc1c2920626badfebc456a93))
-* remove package-lock.json to avoid conflic with yar.lock and updating component library version ([67aac2f](https://github.com/zepdev/design-system-zps-react/commit/67aac2f3673c655a70caff9b6f871b8740d67254))
+- new components with the new chromatic connected ([f6b2cbb](https://github.com/zepdev/design-system-zps-react/commit/f6b2cbbae85d7110cc1c2920626badfebc456a93))
+- remove package-lock.json to avoid conflic with yar.lock and updating component library version ([67aac2f](https://github.com/zepdev/design-system-zps-react/commit/67aac2f3673c655a70caff9b6f871b8740d67254))
 
 # [1.7.0](https://github.com/zepdev/design-system-component-library-react/compare/v1.6.0...v1.7.0) (2024-01-30)
 
-
 ### Bug Fixes
 
-* add placeholder ([90a2ab5](https://github.com/zepdev/design-system-component-library-react/commit/90a2ab5dfe24d656da9ac1eff5893b71b814b6c4))
-* **Button/Table:** add buttons in table and fix button text color ([24a6db7](https://github.com/zepdev/design-system-component-library-react/commit/24a6db764a6306f0528e24d1aebbd04d8b97e5b3))
-* **Button:** add a11y steps ([3a741fc](https://github.com/zepdev/design-system-component-library-react/commit/3a741fc421fb9ca3fcf6b3061a1afae464f46eab))
-* **Button:** move A11y story to default ([149e41c](https://github.com/zepdev/design-system-component-library-react/commit/149e41c29ece3887857113c9e628fe9f253c8456))
-* **Card:** a11y ([a01495f](https://github.com/zepdev/design-system-component-library-react/commit/a01495fbd3ea5a5e2284eea0ce613b8ebcc22318))
-* **Card:** add a11y steps ([6e6ca33](https://github.com/zepdev/design-system-component-library-react/commit/6e6ca3363d14f554c7e93d8177523fc79b202b31))
-* **Checkbox:** a11y ([bcc3da3](https://github.com/zepdev/design-system-component-library-react/commit/bcc3da360221d457cba7b20cf34f6e3e6017258f))
-* **Checkbox:** add a11y steps ([7e987d6](https://github.com/zepdev/design-system-component-library-react/commit/7e987d6dd4d66a9cb5708eca0284e73b7bef1038))
-* component exports ([e345cd2](https://github.com/zepdev/design-system-component-library-react/commit/e345cd24d7f095cb42f525798115fd4bc6df70e5))
-* display table ([d7a3725](https://github.com/zepdev/design-system-component-library-react/commit/d7a37256450f3d66d537b06be8bf8489f667ba72))
-* **DropDown:[attempt]:** value select ([5df116c](https://github.com/zepdev/design-system-component-library-react/commit/5df116c2eb730d919caad8ca6d009069b334476f))
-* **DropDownFilter:** a11y ([caf2ba8](https://github.com/zepdev/design-system-component-library-react/commit/caf2ba8a7b1cbde050c485eda2f9686776a1ebf8))
-* **DropDownFilter:** a11y ([df9fa6f](https://github.com/zepdev/design-system-component-library-react/commit/df9fa6fdcb0a1bc91a56aa992c90044a3446731f))
-* **DropDownFilter:** a11y blur ([992a1dc](https://github.com/zepdev/design-system-component-library-react/commit/992a1dcfecd529e0b6af025dc571e71c3414f370))
-* **DropDownFilter:** add a11y steps ([b3995cf](https://github.com/zepdev/design-system-component-library-react/commit/b3995cf840c26a551808d6ecad174e3cf43e155c))
-* **DropDownSelect:** add a11y steps ([4a550fd](https://github.com/zepdev/design-system-component-library-react/commit/4a550fd89ab36cc2413f27dc4a4ec2d5492c0353))
-* **DropDownSelect:** add a11y steps ([ce69d1a](https://github.com/zepdev/design-system-component-library-react/commit/ce69d1a590ae4d9e3784aaea68972272a030a82e))
-* **DropDownSelect:** add a11y steps ([165215a](https://github.com/zepdev/design-system-component-library-react/commit/165215a789a3b3e2e86906c21efa6a9978b4632c))
-* **DropDownSelect:** steps ([7002f61](https://github.com/zepdev/design-system-component-library-react/commit/7002f617bb090b22a07322c4aa2ae9e8f588bc38))
-* **DS-197:** rename cards story title ([b70a8cb](https://github.com/zepdev/design-system-component-library-react/commit/b70a8cb182288968d4631189fec3817690dfe177))
-* **DS-487:** add font variation settings ([7a8ba2b](https://github.com/zepdev/design-system-component-library-react/commit/7a8ba2bc784ad8a059c753186e8f0a16ff698d07))
-* **DS-487:** tokens ([44273f6](https://github.com/zepdev/design-system-component-library-react/commit/44273f6f1def3277fac45496024e32315bfbd53c))
-* **DS-502:** revert button and replace table button ([1a13d0d](https://github.com/zepdev/design-system-component-library-react/commit/1a13d0d5ded49ba91aeb238dad750823f721051b))
-* **DS-507:** change exports and lint ([aeb21a8](https://github.com/zepdev/design-system-component-library-react/commit/aeb21a8ac7a2da040853725adcc1839ed430b7c8))
-* **DS-507:** items per page info ([7974afa](https://github.com/zepdev/design-system-component-library-react/commit/7974afabfe5ce0fffc46c1cb053903466b6d4ce3))
-* **DS-508:** totalelements with 12 pages story ([a3f98f2](https://github.com/zepdev/design-system-component-library-react/commit/a3f98f21106172f0ede23156fe246ade041d576f))
-* **DS-543:** fix alignment ([7e139ca](https://github.com/zepdev/design-system-component-library-react/commit/7e139ca2179707b4279574fd3adf42e2b3707722))
-* **DS-545:** fixed the broken components ([9a92cb5](https://github.com/zepdev/design-system-component-library-react/commit/9a92cb545b56afaac361bbe0a89db0d539fb8648))
-* **DS-545:** resolve type any, and added export type ([9e57542](https://github.com/zepdev/design-system-component-library-react/commit/9e57542167c74c3bf63b66ae524d58f9dd19b0e7))
-* examples ([306f71e](https://github.com/zepdev/design-system-component-library-react/commit/306f71e03bb95e1a966d86db7188c9d26a3d1cbb))
-* **Font:** serve via jsdeliver ([d263e57](https://github.com/zepdev/design-system-component-library-react/commit/d263e57d1ed3b7b1f4f0fab1a239d8d4664aa6ff))
-* **Input/PhoneInput:** add a11y steps ([d24008c](https://github.com/zepdev/design-system-component-library-react/commit/d24008cf645543da3c2ea97b5006b4a43587ed8a))
-* **Input:** a11y ([e7ad7b6](https://github.com/zepdev/design-system-component-library-react/commit/e7ad7b63964dcb859e7bfc0bab27357f88940385))
-* **Link:** a11y ([935647f](https://github.com/zepdev/design-system-component-library-react/commit/935647fa8d2df5235ff1133ad20d1e0f428a0c07))
-* **Link:** add a11y steps ([fb3a6c1](https://github.com/zepdev/design-system-component-library-react/commit/fb3a6c15f0ad3bce033b72099277d839e965f9ac))
-* overflow ([7fca812](https://github.com/zepdev/design-system-component-library-react/commit/7fca81280ca829a981e67edc780be1a547253fa5))
-* **PhoneInput:** a11y ([1aaed3e](https://github.com/zepdev/design-system-component-library-react/commit/1aaed3e4fe168ee938de1e6941089dfc2d7086a1))
-* **PhoneInput:** add a11y steps ([112c5f4](https://github.com/zepdev/design-system-component-library-react/commit/112c5f4c21c40c45930624f6dbdb2a784a3d6cb5))
-* **Radio:** a11y ([854fc11](https://github.com/zepdev/design-system-component-library-react/commit/854fc11ad00348e691d07d2caeedb06fd1d23c30))
-* **Radio:** a11y consistency ([c9c11f4](https://github.com/zepdev/design-system-component-library-react/commit/c9c11f4f24f5702116d80514905f1da7cfe05a37))
-* spacing ([203a8ed](https://github.com/zepdev/design-system-component-library-react/commit/203a8ede868b388a80ca3baeba77678ec3984ea4))
-* stories ([db4932a](https://github.com/zepdev/design-system-component-library-react/commit/db4932ace53a4c5d7b7c801a2487973c20505639))
-* **Table:** a11y ([d51462f](https://github.com/zepdev/design-system-component-library-react/commit/d51462f675d49014de00441ddaabd0cbae20aaca))
-* **Table:** add a11y steps ([9d5320b](https://github.com/zepdev/design-system-component-library-react/commit/9d5320bd3ce7c91f02e34a223bc2d8c5487cbd17))
-* **Table:** add basic styles ([c3b4ca0](https://github.com/zepdev/design-system-component-library-react/commit/c3b4ca0f8fbbfbafc3a566f058a524949c3aaf4e))
-* **Table:** add cells and heads styles ([a0f2fff](https://github.com/zepdev/design-system-component-library-react/commit/a0f2fffd26e234de495f5f10551467a823460101))
-* **Table:** fix table displays ([527869c](https://github.com/zepdev/design-system-component-library-react/commit/527869c4f469a0ce5d5d2e60cde2900dd80c50fb))
-* **Table:** hide table header on mobile ([00ca23c](https://github.com/zepdev/design-system-component-library-react/commit/00ca23ca3fd61e61534510641f22d78dfa3f0a22))
-* **Table:** remove - from the example ([89e32f7](https://github.com/zepdev/design-system-component-library-react/commit/89e32f7829518a1670a95777cc5eafd41ddfe35c))
-* **Table:** remove last column from storybook example ([96d83c7](https://github.com/zepdev/design-system-component-library-react/commit/96d83c7c3ba62f2fec1dcfbdb43eb5b7a399aef4))
-* **Table:** storybook react keys ([bbe6772](https://github.com/zepdev/design-system-component-library-react/commit/bbe6772f411f857b06e8e80c95b4f485aaf21826))
-* **Table:** storybook usage example ([d3921cf](https://github.com/zepdev/design-system-component-library-react/commit/d3921cf51d30e1290128dccfd15e306e2da4c9a3))
-* **Table:** table head cell, table cell ([021f5ed](https://github.com/zepdev/design-system-component-library-react/commit/021f5edcd957d5fae891afd8e8894f646da003e9))
-* **Table:** table wrapping and mobile cells ([c3fa83f](https://github.com/zepdev/design-system-component-library-react/commit/c3fa83fbaae30114e4630dd029fbfd105558429c))
-* **Tabs:** export all the TS interfaces properly ([22d23c5](https://github.com/zepdev/design-system-component-library-react/commit/22d23c5f618eb139410971e47d6f3e3bc6b1a4e6))
-
+- add placeholder ([90a2ab5](https://github.com/zepdev/design-system-component-library-react/commit/90a2ab5dfe24d656da9ac1eff5893b71b814b6c4))
+- **Button/Table:** add buttons in table and fix button text color ([24a6db7](https://github.com/zepdev/design-system-component-library-react/commit/24a6db764a6306f0528e24d1aebbd04d8b97e5b3))
+- **Button:** add a11y steps ([3a741fc](https://github.com/zepdev/design-system-component-library-react/commit/3a741fc421fb9ca3fcf6b3061a1afae464f46eab))
+- **Button:** move A11y story to default ([149e41c](https://github.com/zepdev/design-system-component-library-react/commit/149e41c29ece3887857113c9e628fe9f253c8456))
+- **Card:** a11y ([a01495f](https://github.com/zepdev/design-system-component-library-react/commit/a01495fbd3ea5a5e2284eea0ce613b8ebcc22318))
+- **Card:** add a11y steps ([6e6ca33](https://github.com/zepdev/design-system-component-library-react/commit/6e6ca3363d14f554c7e93d8177523fc79b202b31))
+- **Checkbox:** a11y ([bcc3da3](https://github.com/zepdev/design-system-component-library-react/commit/bcc3da360221d457cba7b20cf34f6e3e6017258f))
+- **Checkbox:** add a11y steps ([7e987d6](https://github.com/zepdev/design-system-component-library-react/commit/7e987d6dd4d66a9cb5708eca0284e73b7bef1038))
+- component exports ([e345cd2](https://github.com/zepdev/design-system-component-library-react/commit/e345cd24d7f095cb42f525798115fd4bc6df70e5))
+- display table ([d7a3725](https://github.com/zepdev/design-system-component-library-react/commit/d7a37256450f3d66d537b06be8bf8489f667ba72))
+- **DropDown:[attempt]:** value select ([5df116c](https://github.com/zepdev/design-system-component-library-react/commit/5df116c2eb730d919caad8ca6d009069b334476f))
+- **DropDownFilter:** a11y ([caf2ba8](https://github.com/zepdev/design-system-component-library-react/commit/caf2ba8a7b1cbde050c485eda2f9686776a1ebf8))
+- **DropDownFilter:** a11y ([df9fa6f](https://github.com/zepdev/design-system-component-library-react/commit/df9fa6fdcb0a1bc91a56aa992c90044a3446731f))
+- **DropDownFilter:** a11y blur ([992a1dc](https://github.com/zepdev/design-system-component-library-react/commit/992a1dcfecd529e0b6af025dc571e71c3414f370))
+- **DropDownFilter:** add a11y steps ([b3995cf](https://github.com/zepdev/design-system-component-library-react/commit/b3995cf840c26a551808d6ecad174e3cf43e155c))
+- **DropDownSelect:** add a11y steps ([4a550fd](https://github.com/zepdev/design-system-component-library-react/commit/4a550fd89ab36cc2413f27dc4a4ec2d5492c0353))
+- **DropDownSelect:** add a11y steps ([ce69d1a](https://github.com/zepdev/design-system-component-library-react/commit/ce69d1a590ae4d9e3784aaea68972272a030a82e))
+- **DropDownSelect:** add a11y steps ([165215a](https://github.com/zepdev/design-system-component-library-react/commit/165215a789a3b3e2e86906c21efa6a9978b4632c))
+- **DropDownSelect:** steps ([7002f61](https://github.com/zepdev/design-system-component-library-react/commit/7002f617bb090b22a07322c4aa2ae9e8f588bc38))
+- **DS-197:** rename cards story title ([b70a8cb](https://github.com/zepdev/design-system-component-library-react/commit/b70a8cb182288968d4631189fec3817690dfe177))
+- **DS-487:** add font variation settings ([7a8ba2b](https://github.com/zepdev/design-system-component-library-react/commit/7a8ba2bc784ad8a059c753186e8f0a16ff698d07))
+- **DS-487:** tokens ([44273f6](https://github.com/zepdev/design-system-component-library-react/commit/44273f6f1def3277fac45496024e32315bfbd53c))
+- **DS-502:** revert button and replace table button ([1a13d0d](https://github.com/zepdev/design-system-component-library-react/commit/1a13d0d5ded49ba91aeb238dad750823f721051b))
+- **DS-507:** change exports and lint ([aeb21a8](https://github.com/zepdev/design-system-component-library-react/commit/aeb21a8ac7a2da040853725adcc1839ed430b7c8))
+- **DS-507:** items per page info ([7974afa](https://github.com/zepdev/design-system-component-library-react/commit/7974afabfe5ce0fffc46c1cb053903466b6d4ce3))
+- **DS-508:** totalelements with 12 pages story ([a3f98f2](https://github.com/zepdev/design-system-component-library-react/commit/a3f98f21106172f0ede23156fe246ade041d576f))
+- **DS-543:** fix alignment ([7e139ca](https://github.com/zepdev/design-system-component-library-react/commit/7e139ca2179707b4279574fd3adf42e2b3707722))
+- **DS-545:** fixed the broken components ([9a92cb5](https://github.com/zepdev/design-system-component-library-react/commit/9a92cb545b56afaac361bbe0a89db0d539fb8648))
+- **DS-545:** resolve type any, and added export type ([9e57542](https://github.com/zepdev/design-system-component-library-react/commit/9e57542167c74c3bf63b66ae524d58f9dd19b0e7))
+- examples ([306f71e](https://github.com/zepdev/design-system-component-library-react/commit/306f71e03bb95e1a966d86db7188c9d26a3d1cbb))
+- **Font:** serve via jsdeliver ([d263e57](https://github.com/zepdev/design-system-component-library-react/commit/d263e57d1ed3b7b1f4f0fab1a239d8d4664aa6ff))
+- **Input/PhoneInput:** add a11y steps ([d24008c](https://github.com/zepdev/design-system-component-library-react/commit/d24008cf645543da3c2ea97b5006b4a43587ed8a))
+- **Input:** a11y ([e7ad7b6](https://github.com/zepdev/design-system-component-library-react/commit/e7ad7b63964dcb859e7bfc0bab27357f88940385))
+- **Link:** a11y ([935647f](https://github.com/zepdev/design-system-component-library-react/commit/935647fa8d2df5235ff1133ad20d1e0f428a0c07))
+- **Link:** add a11y steps ([fb3a6c1](https://github.com/zepdev/design-system-component-library-react/commit/fb3a6c15f0ad3bce033b72099277d839e965f9ac))
+- overflow ([7fca812](https://github.com/zepdev/design-system-component-library-react/commit/7fca81280ca829a981e67edc780be1a547253fa5))
+- **PhoneInput:** a11y ([1aaed3e](https://github.com/zepdev/design-system-component-library-react/commit/1aaed3e4fe168ee938de1e6941089dfc2d7086a1))
+- **PhoneInput:** add a11y steps ([112c5f4](https://github.com/zepdev/design-system-component-library-react/commit/112c5f4c21c40c45930624f6dbdb2a784a3d6cb5))
+- **Radio:** a11y ([854fc11](https://github.com/zepdev/design-system-component-library-react/commit/854fc11ad00348e691d07d2caeedb06fd1d23c30))
+- **Radio:** a11y consistency ([c9c11f4](https://github.com/zepdev/design-system-component-library-react/commit/c9c11f4f24f5702116d80514905f1da7cfe05a37))
+- spacing ([203a8ed](https://github.com/zepdev/design-system-component-library-react/commit/203a8ede868b388a80ca3baeba77678ec3984ea4))
+- stories ([db4932a](https://github.com/zepdev/design-system-component-library-react/commit/db4932ace53a4c5d7b7c801a2487973c20505639))
+- **Table:** a11y ([d51462f](https://github.com/zepdev/design-system-component-library-react/commit/d51462f675d49014de00441ddaabd0cbae20aaca))
+- **Table:** add a11y steps ([9d5320b](https://github.com/zepdev/design-system-component-library-react/commit/9d5320bd3ce7c91f02e34a223bc2d8c5487cbd17))
+- **Table:** add basic styles ([c3b4ca0](https://github.com/zepdev/design-system-component-library-react/commit/c3b4ca0f8fbbfbafc3a566f058a524949c3aaf4e))
+- **Table:** add cells and heads styles ([a0f2fff](https://github.com/zepdev/design-system-component-library-react/commit/a0f2fffd26e234de495f5f10551467a823460101))
+- **Table:** fix table displays ([527869c](https://github.com/zepdev/design-system-component-library-react/commit/527869c4f469a0ce5d5d2e60cde2900dd80c50fb))
+- **Table:** hide table header on mobile ([00ca23c](https://github.com/zepdev/design-system-component-library-react/commit/00ca23ca3fd61e61534510641f22d78dfa3f0a22))
+- **Table:** remove - from the example ([89e32f7](https://github.com/zepdev/design-system-component-library-react/commit/89e32f7829518a1670a95777cc5eafd41ddfe35c))
+- **Table:** remove last column from storybook example ([96d83c7](https://github.com/zepdev/design-system-component-library-react/commit/96d83c7c3ba62f2fec1dcfbdb43eb5b7a399aef4))
+- **Table:** storybook react keys ([bbe6772](https://github.com/zepdev/design-system-component-library-react/commit/bbe6772f411f857b06e8e80c95b4f485aaf21826))
+- **Table:** storybook usage example ([d3921cf](https://github.com/zepdev/design-system-component-library-react/commit/d3921cf51d30e1290128dccfd15e306e2da4c9a3))
+- **Table:** table head cell, table cell ([021f5ed](https://github.com/zepdev/design-system-component-library-react/commit/021f5edcd957d5fae891afd8e8894f646da003e9))
+- **Table:** table wrapping and mobile cells ([c3fa83f](https://github.com/zepdev/design-system-component-library-react/commit/c3fa83fbaae30114e4630dd029fbfd105558429c))
+- **Tabs:** export all the TS interfaces properly ([22d23c5](https://github.com/zepdev/design-system-component-library-react/commit/22d23c5f618eb139410971e47d6f3e3bc6b1a4e6))
 
 ### Features
 
-* add a11y guidelines ([7d23df3](https://github.com/zepdev/design-system-component-library-react/commit/7d23df355cf6cf81890fd40510b8f46165881685))
-* add align support ([db44b9c](https://github.com/zepdev/design-system-component-library-react/commit/db44b9cd30ed9ffa535511d2141b26a9df6e7596))
-* add align support ([5a3f6bb](https://github.com/zepdev/design-system-component-library-react/commit/5a3f6bb8d444fd80ece0127ed6f667bccc558c08))
-* add aspect ratio support ([f4017a6](https://github.com/zepdev/design-system-component-library-react/commit/f4017a6423e82d403a0e02f8f71137b0b8c181c2))
-* add base MediaText architecture ([a083fc5](https://github.com/zepdev/design-system-component-library-react/commit/a083fc5908e18ae360f7877b0ccb4b8c4d735ff8))
-* add fixed size support ([c3ffd77](https://github.com/zepdev/design-system-component-library-react/commit/c3ffd776b5437c2cc589b4849773c0353620a693))
-* add long text story ([8c3b10d](https://github.com/zepdev/design-system-component-library-react/commit/8c3b10dd5b833b018bf393d7778ba78f7047e95d))
-* add responsive md ([da6ac31](https://github.com/zepdev/design-system-component-library-react/commit/da6ac31d319b77d196d531031ae2a23c46f1c5da))
-* add responsive typography ([9ce6e1e](https://github.com/zepdev/design-system-component-library-react/commit/9ce6e1e4d97d2ba73bc5314d956ddfa535489298))
-* add xs spacings ([a79c9d6](https://github.com/zepdev/design-system-component-library-react/commit/a79c9d68a288ff4cd3aaa43bf4f1c70c2d08893a))
-* **Button:** a11y with keyboard ([055d6a5](https://github.com/zepdev/design-system-component-library-react/commit/055d6a5eeaca1fd934a33c3acfcd734875886959))
-* **Button:** basic a11y checks ([9c41822](https://github.com/zepdev/design-system-component-library-react/commit/9c41822b7f4a854dec89ba87ae91212ebe6f0ed8))
-* **Button:** small refactoring ([5ee661c](https://github.com/zepdev/design-system-component-library-react/commit/5ee661cc5bfd6398c24d0c2c0116682660b55a69))
-* **Card:** add underline on hover ([cab826f](https://github.com/zepdev/design-system-component-library-react/commit/cab826fe6736f15595ef75393a967be4bf5a020f))
-* **DS-197:** adjust rows ([40992fd](https://github.com/zepdev/design-system-component-library-react/commit/40992fdccded07dc8f6a923c180206f8985e491a))
-* **DS-197:** rename grid to card composition ([895d2d1](https://github.com/zepdev/design-system-component-library-react/commit/895d2d1a0a9f4ed2aa8863750dc9680cbf51ef8d))
-* **DS-487:** add stories ([2f36e1d](https://github.com/zepdev/design-system-component-library-react/commit/2f36e1dc304654f78e355da032db172b86b84e05))
-* **DS-487:** update tokens ([d658940](https://github.com/zepdev/design-system-component-library-react/commit/d658940962780c953bbaf805774cace7a72a8fe0))
-* **DS-489:** create component ([4b0e59a](https://github.com/zepdev/design-system-component-library-react/commit/4b0e59aab87573d35fdaf0cf0c044948f6a6267f))
-* **DS-489:** create interface ([5f4052e](https://github.com/zepdev/design-system-component-library-react/commit/5f4052ecfe9bce8a36c733b71414ba3a9858a93a))
-* **DS-489:** create story ([579afd9](https://github.com/zepdev/design-system-component-library-react/commit/579afd92250d24cbe4c18df6dc87440a4319530c))
-* **DS-489:** export ([f83edbd](https://github.com/zepdev/design-system-component-library-react/commit/f83edbd9753fca1be296707b40b175af10ab7aff))
-* **DS-491:** add title underline ([6d08c34](https://github.com/zepdev/design-system-component-library-react/commit/6d08c34964564d54b0a2e218e5eac57a16cfae64))
-* **DS-493:** add fluid container ([aa4418f](https://github.com/zepdev/design-system-component-library-react/commit/aa4418fe48312267deecd7b09f080330323a11a0))
-* **DS-493:** add hero image ([0b5fe42](https://github.com/zepdev/design-system-component-library-react/commit/0b5fe42fdb4a4bf1f6a347bd07c97107c216f8cd))
-* **DS-493:** add tokens and responsive behavior ([dadb3f4](https://github.com/zepdev/design-system-component-library-react/commit/dadb3f4a375bc55116afc3ddab185946b6382ec8))
-* **DS-493:** create component ([648a904](https://github.com/zepdev/design-system-component-library-react/commit/648a904fe28dd431440d9ad29631cdf07e658d0e))
-* **DS-493:** create interface ([b3992c9](https://github.com/zepdev/design-system-component-library-react/commit/b3992c99f50db6d6176f0bba1da2ba609e722c9a))
-* **DS-493:** create story and export ([9456beb](https://github.com/zepdev/design-system-component-library-react/commit/9456beb8517167fd458ade038ed75a56a8cdbf5c))
-* **DS-507:** add another story and consolidate defaults ([89a6ef4](https://github.com/zepdev/design-system-component-library-react/commit/89a6ef4e05da97c89762c5e4ece7aa3195ba711c))
-* **DS-507:** add as button story ([c66da80](https://github.com/zepdev/design-system-component-library-react/commit/c66da80d34555872228d13caab83b809bf417783))
-* **DS-507:** add hover state and changed link colors in different states ([74420ce](https://github.com/zepdev/design-system-component-library-react/commit/74420ce70dc2891b46d2c7c7a6db0f5a86413ff0))
-* **DS-507:** add test for the pagination.txt ([ffac3b4](https://github.com/zepdev/design-system-component-library-react/commit/ffac3b441d0b3527a969d5b0a0cdb099dea5d355))
-* **DS-507:** add tokens ([431265c](https://github.com/zepdev/design-system-component-library-react/commit/431265c41f7674293b76a22c8b8beaa898bd915b))
-* **DS-507:** added logics for SM screen and refactor code ([e466e9d](https://github.com/zepdev/design-system-component-library-react/commit/e466e9d062663e605d8cc7843d7b9175f892a357))
-* **DS-507:** added regression test ([9989283](https://github.com/zepdev/design-system-component-library-react/commit/9989283c5ea046c9680c8110aea892cba1ac647f))
-* **DS-507:** added total elements and changed prev to next arrow ([1fac73a](https://github.com/zepdev/design-system-component-library-react/commit/1fac73a80e4da5da0a1077a65cfa58244958169a))
-* **DS-507:** added unit test ([c941721](https://github.com/zepdev/design-system-component-library-react/commit/c94172195b4a3ac50c7363b35da78d1f0206a0f0))
-* **DS-507:** changed arrow-left and arrow-right long icon ([d99e6a2](https://github.com/zepdev/design-system-component-library-react/commit/d99e6a284041a31dbd8b7e611d89c6ee21bc409f))
-* **DS-507:** create pagination component ([6584b65](https://github.com/zepdev/design-system-component-library-react/commit/6584b65ce32d1cbb9a9c2c7d8051d2464795b1af))
-* **DS-507:** extend interface with totaleelements ([5ac7f5b](https://github.com/zepdev/design-system-component-library-react/commit/5ac7f5b514709984d883e10acea11f21e6782fd2))
-* **DS-507:** fix alignments and spaces ([63d278a](https://github.com/zepdev/design-system-component-library-react/commit/63d278a80cb58fa1d2981999c2cac940046876a5))
-* **DS-507:** fix disabled arror and paddings in sm-screen ([fda201c](https://github.com/zepdev/design-system-component-library-react/commit/fda201c7c9f22e85c88817c441a900fd853a5c61))
-* **DS-507:** fix height and width 48px ([2b94b46](https://github.com/zepdev/design-system-component-library-react/commit/2b94b46fe56a2408d6a427547a63bac9a20ac300))
-* **DS-507:** fixed lint issue ([4019c38](https://github.com/zepdev/design-system-component-library-react/commit/4019c380f55e35d85eaf1b6abd847a89309995e7))
-* **DS-507:** move page counter to component and add totaleelements prop ([82631ab](https://github.com/zepdev/design-system-component-library-react/commit/82631ab15943b0475c943908c297305ca1d593da))
-* **DS-507:** removed test file ([b1151ac](https://github.com/zepdev/design-system-component-library-react/commit/b1151acfd5c3b38f82c325b8c67d7b97d9fc42be))
-* **DS-507:** revert typescript and vite versions ([9f9f89f](https://github.com/zepdev/design-system-component-library-react/commit/9f9f89f22f99bb482146a61e35062c074ae93319))
-* **DS-507:** yarn install with version revert of typescript ([1c76bdc](https://github.com/zepdev/design-system-component-library-react/commit/1c76bdc8daa800d25a6490760c75afdf44c35b3e))
-* **DS-508:** add to general area ([cae952a](https://github.com/zepdev/design-system-component-library-react/commit/cae952aaa6e29c21e7f8e5012d85726fe9b19b03))
-* **DS-508:** create general area ([e5da23b](https://github.com/zepdev/design-system-component-library-react/commit/e5da23b59cf70e458d788b8bb4edf1a67486e070))
-* **DS-508:** rename patterns ([89ce20c](https://github.com/zepdev/design-system-component-library-react/commit/89ce20cc3b6d67d4f28c2ea1298f84babf99937c))
-* **DS-508:** rename stories ([12eb9a9](https://github.com/zepdev/design-system-component-library-react/commit/12eb9a9a33c67114facc556d39eaaa3845bac756))
-* **DS-508:** rename textarea ([172c3fd](https://github.com/zepdev/design-system-component-library-react/commit/172c3fd6b33df134cf61a55f3b1450eb5cda2f92))
-* **Font:** remove static served font ([2640b01](https://github.com/zepdev/design-system-component-library-react/commit/2640b01105f6eff8cbf1f8c5baaef70fff0ead0f))
-* **gitignore:** add env ([c910e62](https://github.com/zepdev/design-system-component-library-react/commit/c910e62ca3caea0e9a732797242538055943be37))
-* **hero:** add alignment ([2164828](https://github.com/zepdev/design-system-component-library-react/commit/2164828138c47a3cb85f67911adcfbdb10c96920))
-* improve table API, add fullWidth support ([d225d39](https://github.com/zepdev/design-system-component-library-react/commit/d225d393b786f32a1088084e76cd5961b5895f6a))
-* improve table storybook data ([643a70c](https://github.com/zepdev/design-system-component-library-react/commit/643a70c78d69e99a918f4d2bafca885e6d0de166))
-* **link:** add external icon ([5a09052](https://github.com/zepdev/design-system-component-library-react/commit/5a09052cee3fb0a26bf9352b18a1599b92df0472))
-* **link:** add icon prop and fix external icon ([57a42dd](https://github.com/zepdev/design-system-component-library-react/commit/57a42dd6d649b258539aeb7f2ce52599d3f420fd))
-* **MediaText:** add a11y and tests ([0b221e7](https://github.com/zepdev/design-system-component-library-react/commit/0b221e7b9cd7bf093e414eefb93a08b9c49936b9))
-* **Table:** add dataLabel for mobile ([b10bf6e](https://github.com/zepdev/design-system-component-library-react/commit/b10bf6ef48b1ccfab3d32664f1c99d71efde2687))
-* **Table:** add header for table mobile cells ([0c54f2c](https://github.com/zepdev/design-system-component-library-react/commit/0c54f2cf3cf5baf29f6fd19540b7c5a1fdc54b49))
-* **Table:** add storybook example and types ([38b6989](https://github.com/zepdev/design-system-component-library-react/commit/38b6989fd20c597cb615f51ab6bf234ea835afb0))
-* **Table:** improve the layout ([9dd5f01](https://github.com/zepdev/design-system-component-library-react/commit/9dd5f010fc19a3a23f294ff1915b2ad082cdfdaa))
-* **Table:** make cells smaller on mobile ([d2be1bd](https://github.com/zepdev/design-system-component-library-react/commit/d2be1bd2f5e564ec6735e4bcd83a9385e226f747))
-* **Tabs:** refactor and improve the Tabs component API and architecture ([896d4fc](https://github.com/zepdev/design-system-component-library-react/commit/896d4fc51fe08ef491fbface0c9007c12cd462a9))
-* **Tooltip:** add base ([c7a147f](https://github.com/zepdev/design-system-component-library-react/commit/c7a147f3d2ea1f9be95cd7dbd3111014e7de2c49))
-* **Tooltip:** add component, storybook and tests ([93a4691](https://github.com/zepdev/design-system-component-library-react/commit/93a4691c85476fb3d3541a1bedd692764476e723))
+- add a11y guidelines ([7d23df3](https://github.com/zepdev/design-system-component-library-react/commit/7d23df355cf6cf81890fd40510b8f46165881685))
+- add align support ([db44b9c](https://github.com/zepdev/design-system-component-library-react/commit/db44b9cd30ed9ffa535511d2141b26a9df6e7596))
+- add align support ([5a3f6bb](https://github.com/zepdev/design-system-component-library-react/commit/5a3f6bb8d444fd80ece0127ed6f667bccc558c08))
+- add aspect ratio support ([f4017a6](https://github.com/zepdev/design-system-component-library-react/commit/f4017a6423e82d403a0e02f8f71137b0b8c181c2))
+- add base MediaText architecture ([a083fc5](https://github.com/zepdev/design-system-component-library-react/commit/a083fc5908e18ae360f7877b0ccb4b8c4d735ff8))
+- add fixed size support ([c3ffd77](https://github.com/zepdev/design-system-component-library-react/commit/c3ffd776b5437c2cc589b4849773c0353620a693))
+- add long text story ([8c3b10d](https://github.com/zepdev/design-system-component-library-react/commit/8c3b10dd5b833b018bf393d7778ba78f7047e95d))
+- add responsive md ([da6ac31](https://github.com/zepdev/design-system-component-library-react/commit/da6ac31d319b77d196d531031ae2a23c46f1c5da))
+- add responsive typography ([9ce6e1e](https://github.com/zepdev/design-system-component-library-react/commit/9ce6e1e4d97d2ba73bc5314d956ddfa535489298))
+- add xs spacings ([a79c9d6](https://github.com/zepdev/design-system-component-library-react/commit/a79c9d68a288ff4cd3aaa43bf4f1c70c2d08893a))
+- **Button:** a11y with keyboard ([055d6a5](https://github.com/zepdev/design-system-component-library-react/commit/055d6a5eeaca1fd934a33c3acfcd734875886959))
+- **Button:** basic a11y checks ([9c41822](https://github.com/zepdev/design-system-component-library-react/commit/9c41822b7f4a854dec89ba87ae91212ebe6f0ed8))
+- **Button:** small refactoring ([5ee661c](https://github.com/zepdev/design-system-component-library-react/commit/5ee661cc5bfd6398c24d0c2c0116682660b55a69))
+- **Card:** add underline on hover ([cab826f](https://github.com/zepdev/design-system-component-library-react/commit/cab826fe6736f15595ef75393a967be4bf5a020f))
+- **DS-197:** adjust rows ([40992fd](https://github.com/zepdev/design-system-component-library-react/commit/40992fdccded07dc8f6a923c180206f8985e491a))
+- **DS-197:** rename grid to card composition ([895d2d1](https://github.com/zepdev/design-system-component-library-react/commit/895d2d1a0a9f4ed2aa8863750dc9680cbf51ef8d))
+- **DS-487:** add stories ([2f36e1d](https://github.com/zepdev/design-system-component-library-react/commit/2f36e1dc304654f78e355da032db172b86b84e05))
+- **DS-487:** update tokens ([d658940](https://github.com/zepdev/design-system-component-library-react/commit/d658940962780c953bbaf805774cace7a72a8fe0))
+- **DS-489:** create component ([4b0e59a](https://github.com/zepdev/design-system-component-library-react/commit/4b0e59aab87573d35fdaf0cf0c044948f6a6267f))
+- **DS-489:** create interface ([5f4052e](https://github.com/zepdev/design-system-component-library-react/commit/5f4052ecfe9bce8a36c733b71414ba3a9858a93a))
+- **DS-489:** create story ([579afd9](https://github.com/zepdev/design-system-component-library-react/commit/579afd92250d24cbe4c18df6dc87440a4319530c))
+- **DS-489:** export ([f83edbd](https://github.com/zepdev/design-system-component-library-react/commit/f83edbd9753fca1be296707b40b175af10ab7aff))
+- **DS-491:** add title underline ([6d08c34](https://github.com/zepdev/design-system-component-library-react/commit/6d08c34964564d54b0a2e218e5eac57a16cfae64))
+- **DS-493:** add fluid container ([aa4418f](https://github.com/zepdev/design-system-component-library-react/commit/aa4418fe48312267deecd7b09f080330323a11a0))
+- **DS-493:** add hero image ([0b5fe42](https://github.com/zepdev/design-system-component-library-react/commit/0b5fe42fdb4a4bf1f6a347bd07c97107c216f8cd))
+- **DS-493:** add tokens and responsive behavior ([dadb3f4](https://github.com/zepdev/design-system-component-library-react/commit/dadb3f4a375bc55116afc3ddab185946b6382ec8))
+- **DS-493:** create component ([648a904](https://github.com/zepdev/design-system-component-library-react/commit/648a904fe28dd431440d9ad29631cdf07e658d0e))
+- **DS-493:** create interface ([b3992c9](https://github.com/zepdev/design-system-component-library-react/commit/b3992c99f50db6d6176f0bba1da2ba609e722c9a))
+- **DS-493:** create story and export ([9456beb](https://github.com/zepdev/design-system-component-library-react/commit/9456beb8517167fd458ade038ed75a56a8cdbf5c))
+- **DS-507:** add another story and consolidate defaults ([89a6ef4](https://github.com/zepdev/design-system-component-library-react/commit/89a6ef4e05da97c89762c5e4ece7aa3195ba711c))
+- **DS-507:** add as button story ([c66da80](https://github.com/zepdev/design-system-component-library-react/commit/c66da80d34555872228d13caab83b809bf417783))
+- **DS-507:** add hover state and changed link colors in different states ([74420ce](https://github.com/zepdev/design-system-component-library-react/commit/74420ce70dc2891b46d2c7c7a6db0f5a86413ff0))
+- **DS-507:** add test for the pagination.txt ([ffac3b4](https://github.com/zepdev/design-system-component-library-react/commit/ffac3b441d0b3527a969d5b0a0cdb099dea5d355))
+- **DS-507:** add tokens ([431265c](https://github.com/zepdev/design-system-component-library-react/commit/431265c41f7674293b76a22c8b8beaa898bd915b))
+- **DS-507:** added logics for SM screen and refactor code ([e466e9d](https://github.com/zepdev/design-system-component-library-react/commit/e466e9d062663e605d8cc7843d7b9175f892a357))
+- **DS-507:** added regression test ([9989283](https://github.com/zepdev/design-system-component-library-react/commit/9989283c5ea046c9680c8110aea892cba1ac647f))
+- **DS-507:** added total elements and changed prev to next arrow ([1fac73a](https://github.com/zepdev/design-system-component-library-react/commit/1fac73a80e4da5da0a1077a65cfa58244958169a))
+- **DS-507:** added unit test ([c941721](https://github.com/zepdev/design-system-component-library-react/commit/c94172195b4a3ac50c7363b35da78d1f0206a0f0))
+- **DS-507:** changed arrow-left and arrow-right long icon ([d99e6a2](https://github.com/zepdev/design-system-component-library-react/commit/d99e6a284041a31dbd8b7e611d89c6ee21bc409f))
+- **DS-507:** create pagination component ([6584b65](https://github.com/zepdev/design-system-component-library-react/commit/6584b65ce32d1cbb9a9c2c7d8051d2464795b1af))
+- **DS-507:** extend interface with totaleelements ([5ac7f5b](https://github.com/zepdev/design-system-component-library-react/commit/5ac7f5b514709984d883e10acea11f21e6782fd2))
+- **DS-507:** fix alignments and spaces ([63d278a](https://github.com/zepdev/design-system-component-library-react/commit/63d278a80cb58fa1d2981999c2cac940046876a5))
+- **DS-507:** fix disabled arror and paddings in sm-screen ([fda201c](https://github.com/zepdev/design-system-component-library-react/commit/fda201c7c9f22e85c88817c441a900fd853a5c61))
+- **DS-507:** fix height and width 48px ([2b94b46](https://github.com/zepdev/design-system-component-library-react/commit/2b94b46fe56a2408d6a427547a63bac9a20ac300))
+- **DS-507:** fixed lint issue ([4019c38](https://github.com/zepdev/design-system-component-library-react/commit/4019c380f55e35d85eaf1b6abd847a89309995e7))
+- **DS-507:** move page counter to component and add totaleelements prop ([82631ab](https://github.com/zepdev/design-system-component-library-react/commit/82631ab15943b0475c943908c297305ca1d593da))
+- **DS-507:** removed test file ([b1151ac](https://github.com/zepdev/design-system-component-library-react/commit/b1151acfd5c3b38f82c325b8c67d7b97d9fc42be))
+- **DS-507:** revert typescript and vite versions ([9f9f89f](https://github.com/zepdev/design-system-component-library-react/commit/9f9f89f22f99bb482146a61e35062c074ae93319))
+- **DS-507:** yarn install with version revert of typescript ([1c76bdc](https://github.com/zepdev/design-system-component-library-react/commit/1c76bdc8daa800d25a6490760c75afdf44c35b3e))
+- **DS-508:** add to general area ([cae952a](https://github.com/zepdev/design-system-component-library-react/commit/cae952aaa6e29c21e7f8e5012d85726fe9b19b03))
+- **DS-508:** create general area ([e5da23b](https://github.com/zepdev/design-system-component-library-react/commit/e5da23b59cf70e458d788b8bb4edf1a67486e070))
+- **DS-508:** rename patterns ([89ce20c](https://github.com/zepdev/design-system-component-library-react/commit/89ce20cc3b6d67d4f28c2ea1298f84babf99937c))
+- **DS-508:** rename stories ([12eb9a9](https://github.com/zepdev/design-system-component-library-react/commit/12eb9a9a33c67114facc556d39eaaa3845bac756))
+- **DS-508:** rename textarea ([172c3fd](https://github.com/zepdev/design-system-component-library-react/commit/172c3fd6b33df134cf61a55f3b1450eb5cda2f92))
+- **Font:** remove static served font ([2640b01](https://github.com/zepdev/design-system-component-library-react/commit/2640b01105f6eff8cbf1f8c5baaef70fff0ead0f))
+- **gitignore:** add env ([c910e62](https://github.com/zepdev/design-system-component-library-react/commit/c910e62ca3caea0e9a732797242538055943be37))
+- **hero:** add alignment ([2164828](https://github.com/zepdev/design-system-component-library-react/commit/2164828138c47a3cb85f67911adcfbdb10c96920))
+- improve table API, add fullWidth support ([d225d39](https://github.com/zepdev/design-system-component-library-react/commit/d225d393b786f32a1088084e76cd5961b5895f6a))
+- improve table storybook data ([643a70c](https://github.com/zepdev/design-system-component-library-react/commit/643a70c78d69e99a918f4d2bafca885e6d0de166))
+- **link:** add external icon ([5a09052](https://github.com/zepdev/design-system-component-library-react/commit/5a09052cee3fb0a26bf9352b18a1599b92df0472))
+- **link:** add icon prop and fix external icon ([57a42dd](https://github.com/zepdev/design-system-component-library-react/commit/57a42dd6d649b258539aeb7f2ce52599d3f420fd))
+- **MediaText:** add a11y and tests ([0b221e7](https://github.com/zepdev/design-system-component-library-react/commit/0b221e7b9cd7bf093e414eefb93a08b9c49936b9))
+- **Table:** add dataLabel for mobile ([b10bf6e](https://github.com/zepdev/design-system-component-library-react/commit/b10bf6ef48b1ccfab3d32664f1c99d71efde2687))
+- **Table:** add header for table mobile cells ([0c54f2c](https://github.com/zepdev/design-system-component-library-react/commit/0c54f2cf3cf5baf29f6fd19540b7c5a1fdc54b49))
+- **Table:** add storybook example and types ([38b6989](https://github.com/zepdev/design-system-component-library-react/commit/38b6989fd20c597cb615f51ab6bf234ea835afb0))
+- **Table:** improve the layout ([9dd5f01](https://github.com/zepdev/design-system-component-library-react/commit/9dd5f010fc19a3a23f294ff1915b2ad082cdfdaa))
+- **Table:** make cells smaller on mobile ([d2be1bd](https://github.com/zepdev/design-system-component-library-react/commit/d2be1bd2f5e564ec6735e4bcd83a9385e226f747))
+- **Tabs:** refactor and improve the Tabs component API and architecture ([896d4fc](https://github.com/zepdev/design-system-component-library-react/commit/896d4fc51fe08ef491fbface0c9007c12cd462a9))
+- **Tooltip:** add base ([c7a147f](https://github.com/zepdev/design-system-component-library-react/commit/c7a147f3d2ea1f9be95cd7dbd3111014e7de2c49))
+- **Tooltip:** add component, storybook and tests ([93a4691](https://github.com/zepdev/design-system-component-library-react/commit/93a4691c85476fb3d3541a1bedd692764476e723))
 
 # [1.6.0](https://github.com/zepdev/design-system-component-library-react/compare/v1.5.0...v1.6.0) (2023-11-23)
 
-
 ### Bug Fixes
 
-* **Card:** hover border ([8f584c7](https://github.com/zepdev/design-system-component-library-react/commit/8f584c7f10928d6113da63f254d06730f08acfd6))
-* **DS-478:** public path ([6c70eb7](https://github.com/zepdev/design-system-component-library-react/commit/6c70eb78feb0c627d533ea6fb61da6711302b8a7))
-* **icon:** make icon title dynamic, refactor icon. split icon stories ([9d79b03](https://github.com/zepdev/design-system-component-library-react/commit/9d79b03cad2822bf1659bcb84e6e505544fd8fcd))
-* **input:** remove obsolete message prop, add infoTitle prop ([ffe0d90](https://github.com/zepdev/design-system-component-library-react/commit/ffe0d90427dbfc40843664ffab6a9961924498ab))
-* **PhoneInput:** active hover states & add selected checkmark ([28f9b07](https://github.com/zepdev/design-system-component-library-react/commit/28f9b071d66ee614b1a5da61d03eabf194ef89e0))
-* **PhoneInput:** focus state of country selection needs to be on the separator line ([4c43382](https://github.com/zepdev/design-system-component-library-react/commit/4c433824711bf21222fe3ad84704da1c903233ce))
-* Update README.md ([c7fe0a5](https://github.com/zepdev/design-system-component-library-react/commit/c7fe0a58a9fe263a749172d7f989646c0e4ce52b))
-
+- **Card:** hover border ([8f584c7](https://github.com/zepdev/design-system-component-library-react/commit/8f584c7f10928d6113da63f254d06730f08acfd6))
+- **DS-478:** public path ([6c70eb7](https://github.com/zepdev/design-system-component-library-react/commit/6c70eb78feb0c627d533ea6fb61da6711302b8a7))
+- **icon:** make icon title dynamic, refactor icon. split icon stories ([9d79b03](https://github.com/zepdev/design-system-component-library-react/commit/9d79b03cad2822bf1659bcb84e6e505544fd8fcd))
+- **input:** remove obsolete message prop, add infoTitle prop ([ffe0d90](https://github.com/zepdev/design-system-component-library-react/commit/ffe0d90427dbfc40843664ffab6a9961924498ab))
+- **PhoneInput:** active hover states & add selected checkmark ([28f9b07](https://github.com/zepdev/design-system-component-library-react/commit/28f9b071d66ee614b1a5da61d03eabf194ef89e0))
+- **PhoneInput:** focus state of country selection needs to be on the separator line ([4c43382](https://github.com/zepdev/design-system-component-library-react/commit/4c433824711bf21222fe3ad84704da1c903233ce))
+- Update README.md ([c7fe0a5](https://github.com/zepdev/design-system-component-library-react/commit/c7fe0a58a9fe263a749172d7f989646c0e4ce52b))
 
 ### Features
 
-* **DS-452:** add message back to input and fix disabled props ([1e75066](https://github.com/zepdev/design-system-component-library-react/commit/1e7506648e903667a01c088a3e6679a3662795b1))
-* **DS-452:** rename arialive to messagearialive ([71ee3d9](https://github.com/zepdev/design-system-component-library-react/commit/71ee3d9df6d11132ddbe8c69652a3171d97c6085))
-* **DS-452:** rename to fieldset ([2a3f842](https://github.com/zepdev/design-system-component-library-react/commit/2a3f8428d8841271de4e841abf3fa106b1ad9315))
-* **DS-471:** create accordion storybook test ([6855bdd](https://github.com/zepdev/design-system-component-library-react/commit/6855bdd1979695d0f33a78af40ec47d7132ea289))
-* **DS-471:** create checkbox storybook test ([0a28d8f](https://github.com/zepdev/design-system-component-library-react/commit/0a28d8f5921bff6a9b06aca9a2854201aa2a275f))
-* **DS-471:** create input storybook test ([d0d9661](https://github.com/zepdev/design-system-component-library-react/commit/d0d96611bae60fa491aceccbd65372aa8ad5c263))
-* **DS-471:** create phoneinput storybook test ([dc4c67c](https://github.com/zepdev/design-system-component-library-react/commit/dc4c67ca7f652067642182f68caf768ea318df04))
-* **DS-471:** create radio storybook test ([ce954df](https://github.com/zepdev/design-system-component-library-react/commit/ce954df16a68b4e7e7ae3df9d818ef656f1197cc))
-* **DS-471:** create tabs storybook test ([2742a27](https://github.com/zepdev/design-system-component-library-react/commit/2742a27b4287b697d3f45b761ab869ae2c51adb7))
-* **DS-471:** create texarea storybook test ([37d4753](https://github.com/zepdev/design-system-component-library-react/commit/37d4753276a0798f0146312ea46ef2c5cfa96009))
-* **DS-478:** add font variation settings ([d8afd3c](https://github.com/zepdev/design-system-component-library-react/commit/d8afd3c3fb13745dd99235424898b728ae4dfd29))
-* **DS-478:** add font variation settings for powersystems ([23b0396](https://github.com/zepdev/design-system-component-library-react/commit/23b039675c404b8382782b9a13175a6c68fa00e1))
-* **DS-478:** serve roboto flex ([3ee3543](https://github.com/zepdev/design-system-component-library-react/commit/3ee3543fc76a910576c762b2f53492793f30a4dd))
-* **formfield:** add ariaLive prop to enhance a11y ([43002c5](https://github.com/zepdev/design-system-component-library-react/commit/43002c5189b6f9e3227abb46009fb60a49cf40e3))
-* **PhoneInput:** clean component folder ([92526e0](https://github.com/zepdev/design-system-component-library-react/commit/92526e01fc912ec4de8721288830921bfd10bb56))
+- **DS-452:** add message back to input and fix disabled props ([1e75066](https://github.com/zepdev/design-system-component-library-react/commit/1e7506648e903667a01c088a3e6679a3662795b1))
+- **DS-452:** rename arialive to messagearialive ([71ee3d9](https://github.com/zepdev/design-system-component-library-react/commit/71ee3d9df6d11132ddbe8c69652a3171d97c6085))
+- **DS-452:** rename to fieldset ([2a3f842](https://github.com/zepdev/design-system-component-library-react/commit/2a3f8428d8841271de4e841abf3fa106b1ad9315))
+- **DS-471:** create accordion storybook test ([6855bdd](https://github.com/zepdev/design-system-component-library-react/commit/6855bdd1979695d0f33a78af40ec47d7132ea289))
+- **DS-471:** create checkbox storybook test ([0a28d8f](https://github.com/zepdev/design-system-component-library-react/commit/0a28d8f5921bff6a9b06aca9a2854201aa2a275f))
+- **DS-471:** create input storybook test ([d0d9661](https://github.com/zepdev/design-system-component-library-react/commit/d0d96611bae60fa491aceccbd65372aa8ad5c263))
+- **DS-471:** create phoneinput storybook test ([dc4c67c](https://github.com/zepdev/design-system-component-library-react/commit/dc4c67ca7f652067642182f68caf768ea318df04))
+- **DS-471:** create radio storybook test ([ce954df](https://github.com/zepdev/design-system-component-library-react/commit/ce954df16a68b4e7e7ae3df9d818ef656f1197cc))
+- **DS-471:** create tabs storybook test ([2742a27](https://github.com/zepdev/design-system-component-library-react/commit/2742a27b4287b697d3f45b761ab869ae2c51adb7))
+- **DS-471:** create texarea storybook test ([37d4753](https://github.com/zepdev/design-system-component-library-react/commit/37d4753276a0798f0146312ea46ef2c5cfa96009))
+- **DS-478:** add font variation settings ([d8afd3c](https://github.com/zepdev/design-system-component-library-react/commit/d8afd3c3fb13745dd99235424898b728ae4dfd29))
+- **DS-478:** add font variation settings for powersystems ([23b0396](https://github.com/zepdev/design-system-component-library-react/commit/23b039675c404b8382782b9a13175a6c68fa00e1))
+- **DS-478:** serve roboto flex ([3ee3543](https://github.com/zepdev/design-system-component-library-react/commit/3ee3543fc76a910576c762b2f53492793f30a4dd))
+- **formfield:** add ariaLive prop to enhance a11y ([43002c5](https://github.com/zepdev/design-system-component-library-react/commit/43002c5189b6f9e3227abb46009fb60a49cf40e3))
+- **PhoneInput:** clean component folder ([92526e0](https://github.com/zepdev/design-system-component-library-react/commit/92526e01fc912ec4de8721288830921bfd10bb56))
 
 # [1.5.0](https://github.com/zepdev/design-system-component-library-react/compare/v1.4.0...v1.5.0) (2023-11-14)
 
-
 ### Bug Fixes
 
-* arrow direction ([dd58453](https://github.com/zepdev/design-system-component-library-react/commit/dd584538550f2afff76fe5f7be8a4842ae31dc17))
-* build ([ad4813a](https://github.com/zepdev/design-system-component-library-react/commit/ad4813a9ac9442ca2dcb9084717c778cb5cb24bd))
-* CountrySelect accessibility ([60cb44a](https://github.com/zepdev/design-system-component-library-react/commit/60cb44ad4d6190a796298380ef65d064e01f31fb))
-* CountrySelect arrow rotation ([32c898b](https://github.com/zepdev/design-system-component-library-react/commit/32c898bf5b573555f73f0f76243e18a708cbb58d))
-* **DS-445:** add long title ([60518b9](https://github.com/zepdev/design-system-component-library-react/commit/60518b938f68d94dbda87fbd7e191091542df76a))
-* **DS-445:** breakpoints ([f3cfdb9](https://github.com/zepdev/design-system-component-library-react/commit/f3cfdb93c84e28c3a786ab57eb68471a63e06d0a))
-* **DS-445:** increase gap ([981b396](https://github.com/zepdev/design-system-component-library-react/commit/981b3964fa65c4938cbae94d817dcea46b4b7478))
-* **DS-445:** panel animation ([0635694](https://github.com/zepdev/design-system-component-library-react/commit/0635694c3426a0c42f929ce898cf23b390fd4cbf))
-* **DS-445:** paths after merge ([9774704](https://github.com/zepdev/design-system-component-library-react/commit/977470444a11065adc2751deb3389fa81d173618))
-* make not required hint dynamic ([7db614e](https://github.com/zepdev/design-system-component-library-react/commit/7db614eb48d184b51215232584952a7b25482f16))
-* merge main ([9d37dc2](https://github.com/zepdev/design-system-component-library-react/commit/9d37dc289f732ce980cd586bf700c8751dd9fb62))
-* **PhoneInput:** component export ([72b86c4](https://github.com/zepdev/design-system-component-library-react/commit/72b86c4b56c17fd463351a837aa0901c0f4f50da))
-* **PhoneInput:** extracted props and required type ([41aaaf8](https://github.com/zepdev/design-system-component-library-react/commit/41aaaf881861d44b5f347e92578b8dd16f4a5fe5))
-* **PhoneInput:** germany nr ([1aeb868](https://github.com/zepdev/design-system-component-library-react/commit/1aeb86844437745012a9271c018fb1ad19f01160))
-* **PhoneInput:** id type ([da83d55](https://github.com/zepdev/design-system-component-library-react/commit/da83d55797b29e999cf12c6127fc1d35fceedd2c))
-* **PhoneInput:** international ([503da3a](https://github.com/zepdev/design-system-component-library-react/commit/503da3a82d57ef281a9b64b2128d5e137a5bafeb))
-* **PhoneInput:** storybook ([aa65b2d](https://github.com/zepdev/design-system-component-library-react/commit/aa65b2dfe98d00d7a3d3ebd1073eaba67c40e66a))
-* **PhoneInput:** tests ([8a1f069](https://github.com/zepdev/design-system-component-library-react/commit/8a1f069fb385df86232b4f59c37f1efe49f956d3))
-* **PhoneInput:** tests ([f4df583](https://github.com/zepdev/design-system-component-library-react/commit/f4df5832ccf2a5cf03a5a143f560c5dcbfcbfeed))
-* typography ([4501dc3](https://github.com/zepdev/design-system-component-library-react/commit/4501dc320335a8120b62b9d4bb3c89810f67ee61))
-* typography ([9baa852](https://github.com/zepdev/design-system-component-library-react/commit/9baa8524dd507d607985a8e9be7f36b8c2ad59ca))
-
+- arrow direction ([dd58453](https://github.com/zepdev/design-system-component-library-react/commit/dd584538550f2afff76fe5f7be8a4842ae31dc17))
+- build ([ad4813a](https://github.com/zepdev/design-system-component-library-react/commit/ad4813a9ac9442ca2dcb9084717c778cb5cb24bd))
+- CountrySelect accessibility ([60cb44a](https://github.com/zepdev/design-system-component-library-react/commit/60cb44ad4d6190a796298380ef65d064e01f31fb))
+- CountrySelect arrow rotation ([32c898b](https://github.com/zepdev/design-system-component-library-react/commit/32c898bf5b573555f73f0f76243e18a708cbb58d))
+- **DS-445:** add long title ([60518b9](https://github.com/zepdev/design-system-component-library-react/commit/60518b938f68d94dbda87fbd7e191091542df76a))
+- **DS-445:** breakpoints ([f3cfdb9](https://github.com/zepdev/design-system-component-library-react/commit/f3cfdb93c84e28c3a786ab57eb68471a63e06d0a))
+- **DS-445:** increase gap ([981b396](https://github.com/zepdev/design-system-component-library-react/commit/981b3964fa65c4938cbae94d817dcea46b4b7478))
+- **DS-445:** panel animation ([0635694](https://github.com/zepdev/design-system-component-library-react/commit/0635694c3426a0c42f929ce898cf23b390fd4cbf))
+- **DS-445:** paths after merge ([9774704](https://github.com/zepdev/design-system-component-library-react/commit/977470444a11065adc2751deb3389fa81d173618))
+- make not required hint dynamic ([7db614e](https://github.com/zepdev/design-system-component-library-react/commit/7db614eb48d184b51215232584952a7b25482f16))
+- merge main ([9d37dc2](https://github.com/zepdev/design-system-component-library-react/commit/9d37dc289f732ce980cd586bf700c8751dd9fb62))
+- **PhoneInput:** component export ([72b86c4](https://github.com/zepdev/design-system-component-library-react/commit/72b86c4b56c17fd463351a837aa0901c0f4f50da))
+- **PhoneInput:** extracted props and required type ([41aaaf8](https://github.com/zepdev/design-system-component-library-react/commit/41aaaf881861d44b5f347e92578b8dd16f4a5fe5))
+- **PhoneInput:** germany nr ([1aeb868](https://github.com/zepdev/design-system-component-library-react/commit/1aeb86844437745012a9271c018fb1ad19f01160))
+- **PhoneInput:** id type ([da83d55](https://github.com/zepdev/design-system-component-library-react/commit/da83d55797b29e999cf12c6127fc1d35fceedd2c))
+- **PhoneInput:** international ([503da3a](https://github.com/zepdev/design-system-component-library-react/commit/503da3a82d57ef281a9b64b2128d5e137a5bafeb))
+- **PhoneInput:** storybook ([aa65b2d](https://github.com/zepdev/design-system-component-library-react/commit/aa65b2dfe98d00d7a3d3ebd1073eaba67c40e66a))
+- **PhoneInput:** tests ([8a1f069](https://github.com/zepdev/design-system-component-library-react/commit/8a1f069fb385df86232b4f59c37f1efe49f956d3))
+- **PhoneInput:** tests ([f4df583](https://github.com/zepdev/design-system-component-library-react/commit/f4df5832ccf2a5cf03a5a143f560c5dcbfcbfeed))
+- typography ([4501dc3](https://github.com/zepdev/design-system-component-library-react/commit/4501dc320335a8120b62b9d4bb3c89810f67ee61))
+- typography ([9baa852](https://github.com/zepdev/design-system-component-library-react/commit/9baa8524dd507d607985a8e9be7f36b8c2ad59ca))
 
 ### Features
 
-* add CountrySelect component ([59cdb39](https://github.com/zepdev/design-system-component-library-react/commit/59cdb390f17675218dfdaac2bff902fd31b980b3))
-* add PhoneInput base ([7e9c918](https://github.com/zepdev/design-system-component-library-react/commit/7e9c9189e0b0e87eb47298034e708c39f79950a2))
-* add PhoneInput error ([ee0f3a2](https://github.com/zepdev/design-system-component-library-react/commit/ee0f3a22724cc612a51c155b72f282229b83232e))
-* add PhoneInput error ([2c79458](https://github.com/zepdev/design-system-component-library-react/commit/2c79458d00998b9d7744b965f40efa5a99b4c762))
-* add PhoneInput states ([c8a35f8](https://github.com/zepdev/design-system-component-library-react/commit/c8a35f86c4d77460144ccc34ac5aef7b612bc20c))
-* add tests ([a8e8044](https://github.com/zepdev/design-system-component-library-react/commit/a8e80442bc351f139da53c59b35df6ed9ac15c90))
-* **DS-197:** add fluid typography ([5c71836](https://github.com/zepdev/design-system-component-library-react/commit/5c71836b00afa70e0a190cab1dc93e97b9609541))
-* **DS-197:** add hover border ([436cf26](https://github.com/zepdev/design-system-component-library-react/commit/436cf2612c578b87a43e1938c26ec8eef6f3b4a4))
-* **DS-197:** change tokens ([6bd3f9c](https://github.com/zepdev/design-system-component-library-react/commit/6bd3f9c25df765530da9238a887556be349dae09))
-* **DS-197:** update card tokens and add fluid prop ([3c12b23](https://github.com/zepdev/design-system-component-library-react/commit/3c12b2335406838df54c037e916e14cbc8e57882))
-* **DS-197:** update column config settings ([7ff3e49](https://github.com/zepdev/design-system-component-library-react/commit/7ff3e49c4f2b15ed6936953b897415f4f8d8b8f7))
-* **DS-445:** add chevron icon animation ([db87ab4](https://github.com/zepdev/design-system-component-library-react/commit/db87ab428d64ca474385c31a506d3f1c128f4d76))
-* **DS-445:** add expand animation ([8813689](https://github.com/zepdev/design-system-component-library-react/commit/8813689d7e98f63338d8685ba185c096a0fcb442))
-* **DS-445:** add fluid token ([704649a](https://github.com/zepdev/design-system-component-library-react/commit/704649a83478c9776eb00b5a81fba916bb19c81c))
-* **DS-445:** add hover borders and states ([becf811](https://github.com/zepdev/design-system-component-library-react/commit/becf8111bf81a4a05bc4bd20dc189e7022099308))
-* **DS-445:** add more text ([6e525d5](https://github.com/zepdev/design-system-component-library-react/commit/6e525d59428e40891c13ad65aa016da7783d8e45))
-* **DS-445:** add overflow ([4800a5d](https://github.com/zepdev/design-system-component-library-react/commit/4800a5da63ff3588ffe953c41ad2a40e3f210098))
-* **DS-445:** create accordion ([65adfcc](https://github.com/zepdev/design-system-component-library-react/commit/65adfcc37aea681215c013d483877bb4e9085a88))
-* **DS-445:** create model ([6de207b](https://github.com/zepdev/design-system-component-library-react/commit/6de207b10c7c2ba4af7644516a6e6e68755d4e0f))
-* **DS-445:** create story ([ae198bf](https://github.com/zepdev/design-system-component-library-react/commit/ae198bfb42fec0e8203cc320bf6122f9f19dd875))
-* **DS-445:** remove animation ([55a9510](https://github.com/zepdev/design-system-component-library-react/commit/55a951053ecbefcc003df06793a5b2133ff44de6))
-* **DS-445:** remove bg color ([18e612c](https://github.com/zepdev/design-system-component-library-react/commit/18e612cff439886bedaf1665776ea82238ed6630))
-* **DS-458:** add hover state ([efdc939](https://github.com/zepdev/design-system-component-library-react/commit/efdc9393f87851cd3455ab9277f59719939a4c84))
-* remove old phone input and add new phone input base ([4545cc9](https://github.com/zepdev/design-system-component-library-react/commit/4545cc93cde123e0d5bf3c483dbc0bcb8fa1daba))
-* **Tabs:** add base tabs components ([0b57885](https://github.com/zepdev/design-system-component-library-react/commit/0b578850ca85011f5beb34f2ef16de0c800d5699))
-* **Tabs:** add Tab styles ([2b92bca](https://github.com/zepdev/design-system-component-library-react/commit/2b92bca59a959dcefeee87de038f51615aa98251))
-* **Tabs:** add TabPanels top padding ([915d517](https://github.com/zepdev/design-system-component-library-react/commit/915d517d559956dad166a5ff4656484780bfd7f4))
-* **Tabs:** add tests ([0370cf3](https://github.com/zepdev/design-system-component-library-react/commit/0370cf30c09aa9aa0654f07338c782de27619c01))
-* **Tabs:** improve Tab styles ([f43bc1f](https://github.com/zepdev/design-system-component-library-react/commit/f43bc1fda6c24306778a125c0ba694dc9ccca42e))
-* **Tabs:** improve TabList ([7000f61](https://github.com/zepdev/design-system-component-library-react/commit/7000f61b693c016199a38d3bebe5d432ab3f6608))
-* **Tabs:** improve types ([edcf3c1](https://github.com/zepdev/design-system-component-library-react/commit/edcf3c179ce0e3168fb89ae094701507915c7607))
-* **Tabs:** small refactor ([ec757c6](https://github.com/zepdev/design-system-component-library-react/commit/ec757c689bc9e4c110e9cc1191ff8721870cd0d3))
+- add CountrySelect component ([59cdb39](https://github.com/zepdev/design-system-component-library-react/commit/59cdb390f17675218dfdaac2bff902fd31b980b3))
+- add PhoneInput base ([7e9c918](https://github.com/zepdev/design-system-component-library-react/commit/7e9c9189e0b0e87eb47298034e708c39f79950a2))
+- add PhoneInput error ([ee0f3a2](https://github.com/zepdev/design-system-component-library-react/commit/ee0f3a22724cc612a51c155b72f282229b83232e))
+- add PhoneInput error ([2c79458](https://github.com/zepdev/design-system-component-library-react/commit/2c79458d00998b9d7744b965f40efa5a99b4c762))
+- add PhoneInput states ([c8a35f8](https://github.com/zepdev/design-system-component-library-react/commit/c8a35f86c4d77460144ccc34ac5aef7b612bc20c))
+- add tests ([a8e8044](https://github.com/zepdev/design-system-component-library-react/commit/a8e80442bc351f139da53c59b35df6ed9ac15c90))
+- **DS-197:** add fluid typography ([5c71836](https://github.com/zepdev/design-system-component-library-react/commit/5c71836b00afa70e0a190cab1dc93e97b9609541))
+- **DS-197:** add hover border ([436cf26](https://github.com/zepdev/design-system-component-library-react/commit/436cf2612c578b87a43e1938c26ec8eef6f3b4a4))
+- **DS-197:** change tokens ([6bd3f9c](https://github.com/zepdev/design-system-component-library-react/commit/6bd3f9c25df765530da9238a887556be349dae09))
+- **DS-197:** update card tokens and add fluid prop ([3c12b23](https://github.com/zepdev/design-system-component-library-react/commit/3c12b2335406838df54c037e916e14cbc8e57882))
+- **DS-197:** update column config settings ([7ff3e49](https://github.com/zepdev/design-system-component-library-react/commit/7ff3e49c4f2b15ed6936953b897415f4f8d8b8f7))
+- **DS-445:** add chevron icon animation ([db87ab4](https://github.com/zepdev/design-system-component-library-react/commit/db87ab428d64ca474385c31a506d3f1c128f4d76))
+- **DS-445:** add expand animation ([8813689](https://github.com/zepdev/design-system-component-library-react/commit/8813689d7e98f63338d8685ba185c096a0fcb442))
+- **DS-445:** add fluid token ([704649a](https://github.com/zepdev/design-system-component-library-react/commit/704649a83478c9776eb00b5a81fba916bb19c81c))
+- **DS-445:** add hover borders and states ([becf811](https://github.com/zepdev/design-system-component-library-react/commit/becf8111bf81a4a05bc4bd20dc189e7022099308))
+- **DS-445:** add more text ([6e525d5](https://github.com/zepdev/design-system-component-library-react/commit/6e525d59428e40891c13ad65aa016da7783d8e45))
+- **DS-445:** add overflow ([4800a5d](https://github.com/zepdev/design-system-component-library-react/commit/4800a5da63ff3588ffe953c41ad2a40e3f210098))
+- **DS-445:** create accordion ([65adfcc](https://github.com/zepdev/design-system-component-library-react/commit/65adfcc37aea681215c013d483877bb4e9085a88))
+- **DS-445:** create model ([6de207b](https://github.com/zepdev/design-system-component-library-react/commit/6de207b10c7c2ba4af7644516a6e6e68755d4e0f))
+- **DS-445:** create story ([ae198bf](https://github.com/zepdev/design-system-component-library-react/commit/ae198bfb42fec0e8203cc320bf6122f9f19dd875))
+- **DS-445:** remove animation ([55a9510](https://github.com/zepdev/design-system-component-library-react/commit/55a951053ecbefcc003df06793a5b2133ff44de6))
+- **DS-445:** remove bg color ([18e612c](https://github.com/zepdev/design-system-component-library-react/commit/18e612cff439886bedaf1665776ea82238ed6630))
+- **DS-458:** add hover state ([efdc939](https://github.com/zepdev/design-system-component-library-react/commit/efdc9393f87851cd3455ab9277f59719939a4c84))
+- remove old phone input and add new phone input base ([4545cc9](https://github.com/zepdev/design-system-component-library-react/commit/4545cc93cde123e0d5bf3c483dbc0bcb8fa1daba))
+- **Tabs:** add base tabs components ([0b57885](https://github.com/zepdev/design-system-component-library-react/commit/0b578850ca85011f5beb34f2ef16de0c800d5699))
+- **Tabs:** add Tab styles ([2b92bca](https://github.com/zepdev/design-system-component-library-react/commit/2b92bca59a959dcefeee87de038f51615aa98251))
+- **Tabs:** add TabPanels top padding ([915d517](https://github.com/zepdev/design-system-component-library-react/commit/915d517d559956dad166a5ff4656484780bfd7f4))
+- **Tabs:** add tests ([0370cf3](https://github.com/zepdev/design-system-component-library-react/commit/0370cf30c09aa9aa0654f07338c782de27619c01))
+- **Tabs:** improve Tab styles ([f43bc1f](https://github.com/zepdev/design-system-component-library-react/commit/f43bc1fda6c24306778a125c0ba694dc9ccca42e))
+- **Tabs:** improve TabList ([7000f61](https://github.com/zepdev/design-system-component-library-react/commit/7000f61b693c016199a38d3bebe5d432ab3f6608))
+- **Tabs:** improve types ([edcf3c1](https://github.com/zepdev/design-system-component-library-react/commit/edcf3c179ce0e3168fb89ae094701507915c7607))
+- **Tabs:** small refactor ([ec757c6](https://github.com/zepdev/design-system-component-library-react/commit/ec757c689bc9e4c110e9cc1191ff8721870cd0d3))
 
 # [1.4.0](https://github.com/zepdev/design-system-component-library-react/compare/v1.3.8...v1.4.0) (2023-10-26)
 

@@ -34,7 +34,7 @@ const Description = ({ description }: Partial<LinkListItemProps>) => {
   return null;
 };
 
-const Links = ({ links, variant, headline, isFooterList, gtmHeadline }: LinkListItemProps) => {
+const Links = ({ links, headline, isFooterList, gtmHeadline, type }: LinkListItemProps) => {
   const datalayer = getDataLayer();
   return (
     <div
@@ -64,7 +64,7 @@ const Links = ({ links, variant, headline, isFooterList, gtmHeadline }: LinkList
             if (link.href?.startsWith('tel:') || link.href?.startsWith('mailto:')) {
               event = 'interaction_contact';
             }
-            datalayer.push({
+            datalayer?.push({
               event,
               link_text: link.label,
               link_context: headline,
@@ -134,7 +134,13 @@ export const LinkListItem: React.FC<LinkListItemProps> = ({
             content: (
               <div className="zep-flex zep-flex-col zep-gap-1">
                 <Description description={description} />
-                <Links links={links} headline={headline} isFooterList={isFooterList} gtmId={gtmId} gtmHeadline={gtmHeadline} />
+                <Links
+                  links={links}
+                  headline={headline}
+                  isFooterList={isFooterList}
+                  gtmId={gtmId}
+                  gtmHeadline={gtmHeadline}
+                />
               </div>
             ),
           },

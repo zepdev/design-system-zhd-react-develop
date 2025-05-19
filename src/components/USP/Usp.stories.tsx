@@ -1,5 +1,4 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { FunctionalIcons, ProductIcons } from '@zepdev/design-system-component-library-react';
 import { USP } from './Usp';
 import { USPProps } from './usp.interface';
 
@@ -7,14 +6,7 @@ const meta = {
   title: 'Components/USP',
   component: USP,
   tags: ['autodocs'],
-  argTypes: {
-    iconName: {
-      control: {
-        type: 'select',
-        options: [...Object.keys(FunctionalIcons), ...Object.keys(ProductIcons)],
-      },
-    },
-  },
+  argTypes: {},
 } satisfies Meta<typeof USP>;
 
 export default meta;
@@ -22,7 +14,6 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   args: {
-    iconName: 'hook',
     count: '70+',
     headline: 'Test headline',
     description:

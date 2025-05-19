@@ -49,7 +49,7 @@ const ContactForm: FC<ContactFormProps> = ({
 
   const datalayer = getDataLayer();
   const submitFunction: SubmitHandler<FormSchemaType> = async (data: FormSchemaType) => {
-    datalayer.push({
+    datalayer?.push({
       event: 'generate_lead',
       form_context: headline,
     });
@@ -66,7 +66,7 @@ const ContactForm: FC<ContactFormProps> = ({
 
       <form onSubmit={handleSubmit(submitFunction)}>
         <input type="text" style={{ display: 'none' }} {...register('honeypot')} />
-        <p className="zep-typography-headlineSM-fluid-cqi zep-mb-2 zep-text-primary-default">
+        <p className="zep-typography-headlineSM-fluid-cqi zep-mb-2 zep-text-typography-dark-100">
           {contactFormLocales[locale]['Schreiben Sie uns eine Nachricht']}
         </p>
 
@@ -76,7 +76,7 @@ const ContactForm: FC<ContactFormProps> = ({
           className="zep-h-[126px]"
         />
 
-        <p className="zep-mb-0.5 zep-text-primary-default">{contactFormLocales[locale]['Anrede']}</p>
+        <p className="zep-mb-0.5 zep-text-typography-dark-100">{contactFormLocales[locale]['Anrede']}</p>
         <div className="zep-flex zep-gap-2 zep-mb-2">
           <Radio
             id={'Frau'}
@@ -114,7 +114,7 @@ const ContactForm: FC<ContactFormProps> = ({
           required
         />
 
-        <div className="zep-flex zep-items-center zep-text-primary-default">
+        <div className="zep-flex zep-items-center zep-text-typography-dark-100">
           <Checkbox {...register('privacyCheck')} error={errors['privacyCheck']?.message} />
           <p>
             {`${contactFormLocales[locale].privacy} `}

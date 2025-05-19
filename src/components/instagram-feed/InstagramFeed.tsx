@@ -5,7 +5,7 @@ import { Layout } from '../layout';
 import { Scrollbar } from '../scrollbar';
 import { InstagramFeedProps } from './InstagramFeed.interface';
 import useVideoCookieCheck from '../video/useVideoComplianceCheck';
-import { VideoCookieLayer } from '../video-cookie-layer/VideoCookieLayer';
+import { CookieLayer } from '@/components/cookie-layer/CookieLayer';
 import { OneTrustType } from '../video/ResponsivePlayer';
 
 const Images: FC<Pick<InstagramFeedProps, 'feed'>> = ({ feed }) => {
@@ -53,7 +53,7 @@ export const InstagramFeed: FC<InstagramFeedProps> = ({ feed, cookiesLayerDescri
   };
   return (
     <>
-    
+
     <Layout
       wrapperClassname="zep-bg-greyscale-200 zep-pt-1 md:zep-pt-1.5 lg:zep-pt-2.5"
       testId="zep-instagram-feed"
@@ -61,8 +61,8 @@ export const InstagramFeed: FC<InstagramFeedProps> = ({ feed, cookiesLayerDescri
     >
       <HeaderLongComponent {...headerProps} />
       {!canPlay ? (
-      <VideoCookieLayer label={cookiesResetLabel} description={cookiesLayerDescription} onClickCookies={resetCookies} />
-      
+      <CookieLayer label={cookiesResetLabel} description={cookiesLayerDescription} onClickCookies={resetCookies} />
+
     ) : (
       <div className="md:zep-flex zep-flex-row zep-flex-wrap zep-gap-1 zep-hidden">
         <Images feed={feed} />
@@ -73,7 +73,7 @@ export const InstagramFeed: FC<InstagramFeedProps> = ({ feed, cookiesLayerDescri
         </div>
       </Scrollbar>
     </Layout>
-  
+
   </>
   );
 };

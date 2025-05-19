@@ -22,8 +22,9 @@ export const Default: Story = {
   args: {
     navigationCards: [
       {
-        linkLabel: 'Training',
+        headline: 'Gasmotoren Baureihe CG132 B (400 - 1.000 kW)',
         scrollToIdLink: 'test',
+        linkLabel: 'Mehr zum Gasmotor',
       },
     ],
   } as AnchorNavigationListProps,
@@ -32,8 +33,9 @@ export const Default: Story = {
 export const With2Items: Story = {
   args: {
     navigationCards: new Array(2).fill({
-      linkLabel: 'Gasmotoren Baureihe CG132 B (400 - 1.000 kW)',
+      headline: 'Gasmotoren Baureihe CG132 B (400 - 1.000 kW)',
       scrollToIdLink: 'test',
+      linkLabel: 'Mehr zum Gasmotor',
     }),
   } as AnchorNavigationListProps,
 };
@@ -41,8 +43,9 @@ export const With2Items: Story = {
 export const With3Items: Story = {
   args: {
     navigationCards: new Array(3).fill({
-      linkLabel: 'Gasmotoren Baureihe CG132 B (400 - 1.000 kW)',
+      headline: 'Gasmotoren Baureihe CG132 B (400 - 1.000 kW)',
       scrollToIdLink: 'test',
+      linkLabel: 'Mehr zum Gasmotor',
     }),
   } as AnchorNavigationListProps,
 };
@@ -50,8 +53,9 @@ export const With3Items: Story = {
 export const With4Items: Story = {
   args: {
     navigationCards: new Array(4).fill({
-      linkLabel: 'Training',
+      headline: 'Gasmotoren Baureihe CG132 B (400 - 1.000 kW)',
       scrollToIdLink: 'test',
+      linkLabel: 'Mehr zum Gasmotor',
     }),
   } as AnchorNavigationListProps,
 };
@@ -59,8 +63,9 @@ export const With4Items: Story = {
 export const With5Items: Story = {
   args: {
     navigationCards: new Array(5).fill({
-      linkLabel: 'Dual Study Program',
+      headline: 'Gasmotoren Baureihe CG132 B (400 - 1.000 kW)',
       scrollToIdLink: 'test',
+      linkLabel: 'Mehr zum Gasmotor',
     }),
   } as AnchorNavigationListProps,
 };
@@ -68,8 +73,9 @@ export const With5Items: Story = {
 export const With6Items: Story = {
   args: {
     navigationCards: new Array(6).fill({
-      linkLabel: 'Gasmotoren Baureihe CG132 B (400 - 1.000 kW)',
+      headline: 'Gasmotoren Baureihe CG132 B (400 - 1.000 kW)',
       scrollToIdLink: 'test',
+      linkLabel: 'Mehr zum Gasmotor',
     }),
   } as AnchorNavigationListProps,
 };
@@ -77,8 +83,9 @@ export const With6Items: Story = {
 export const With7Items: Story = {
   args: {
     navigationCards: new Array(7).fill({
-      linkLabel: 'Gasmotoren Baureihe CG132 B (400 - 1.000 kW)',
+      headline: 'Gasmotoren Baureihe CG132 B (400 - 1.000 kW)',
       scrollToIdLink: 'test',
+      linkLabel: 'Mehr zum Gasmotor',
     }),
   } as AnchorNavigationListProps,
 };
@@ -86,8 +93,9 @@ export const With7Items: Story = {
 export const With8Items: Story = {
   args: {
     navigationCards: new Array(8).fill({
-      linkLabel: 'Gasmotoren Baureihe CG132 B (400 - 1.000 kW)',
+      headline: 'Gasmotoren Baureihe CG132 B (400 - 1.000 kW)',
       scrollToIdLink: 'test',
+      linkLabel: 'Mehr zum Gasmotor',
     }),
   } as AnchorNavigationListProps,
 };
