@@ -12,4 +12,9 @@ export enum GlobalVariantExtended {
 export enum LocaleVariants {
   EN = 'en',
   DE = 'de',
+  FR = 'fr',
+  GB = 'en-GB',
+  IT = 'it',
+  IN = 'en-IN',
+  US = 'en-US',
 }

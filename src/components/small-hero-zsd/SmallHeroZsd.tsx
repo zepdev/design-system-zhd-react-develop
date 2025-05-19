@@ -1,5 +1,4 @@
 import clsx from 'clsx';
-import { getFirst150Characters } from '../../hooks/useMaxChar150';
 import { Button } from '../zsd-button';
 import { ZsdButtonVariant } from '../zsd-button/zsd-button.interface';
 import { SmallHeroZsdProps } from './small-hero-zsd.interface';
@@ -86,7 +85,7 @@ export const SmallHeroZsd = ({
       >
         <h2 className={clsx('zep-typography-headlineXL-fluid-cqi', sublineColor)}>{headline}</h2>
         <h3 className={clsx('zep-typography-headlineXL-fluid-cqi', 'zep-mb-0.25', 'xl:zep-mb-0.75')}>{subline}</h3>
-        {description && <p className="zep-mb-1.5">{getFirst150Characters(description)}</p>}
+        {description && <p className="zep-mb-1.5">{description}</p>}
         {buttonPrimary && (
           <div className="zep-flex zep-flex-col sm:zep-flex-row zep-gap-1">
             {buttonPrimaryUrl ? (

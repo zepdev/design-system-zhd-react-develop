@@ -101,4 +101,9 @@ export const contactFormLocales: Record<LocaleVariants, Record<string, string>> 
     Datenschutzerklärung: 'data protection statement.',
     'Nachricht absenden': 'Send message',
   },
+  [LocaleVariants.FR]: {},
+  [LocaleVariants.GB]: {},
+  [LocaleVariants.IT]: {},
+  [LocaleVariants.IN]: {},
+  [LocaleVariants.US]: {},
 };
