@@ -1,3 +1,10 @@
+## [1.8.5](https://github.com/zepdev/design-system-zhd-react/compare/v1.8.4...v1.8.5) (2025-05-19)
+
+
+### Bug Fixes
+
+* language switcher order ([8520725](https://github.com/zepdev/design-system-zhd-react/commit/85207259777d0066c992e92dbeee8bb5f117fd54))
+
 ## [1.8.4](https://github.com/zepdev/design-system-zhd-react/compare/v1.8.3...v1.8.4) (2025-05-16)
 
 
