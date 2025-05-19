@@ -1,0 +1,1 @@
+var Z=(B=>(B.Zps="ZPS",B.Cat="CAT",B.Zsd="ZSD",B))(Z||{}),S=(B=>(B.ZpsBg="ZPS_BG",B.CatBg="CAT_BG",B))(S||{}),C=(B=>(B.EN="en",B.DE="de",B.FR="fr",B.GB="en-GB",B.IT="it",B.IN="en-IN",B.US="en-US",B))(C||{});export{Z as G,C as L,S as a};
