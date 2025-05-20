@@ -1,3 +1,10 @@
+## [1.9.2](https://github.com/zepdev/design-system-zhd-react/compare/v1.9.1...v1.9.2) (2025-05-20)
+
+
+### Bug Fixes
+
+* usp list count ([ef1604a](https://github.com/zepdev/design-system-zhd-react/commit/ef1604a115d489bd95dc25cf9313396d3076daac))
+
 ## [1.9.1](https://github.com/zepdev/design-system-zhd-react/compare/v1.9.0...v1.9.1) (2025-05-20)
 
 
