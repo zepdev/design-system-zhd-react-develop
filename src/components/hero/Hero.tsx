@@ -38,11 +38,23 @@ export const Hero: FC<HeroProps> = ({
             <div className="zep-flex zep-flex-col sm:zep-flex-row zep-gap-1">
               {buttonPrimaryUrl ? (
                 <a
-                  onClickCapture={() => {
+                  onClickCapture={(ev) => {
+                    let currentElement = ev.target as HTMLElement;
+                    let sectionId = '';
+
+                    while (currentElement && currentElement.parentElement) {
+                      if (currentElement.parentElement.tagName === 'MAIN') {
+                        sectionId = currentElement.id;
+                        break;
+                      }
+                      currentElement = currentElement.parentElement;
+                    }
+
                     datalayer?.push({
                       event: 'interaction_cta',
                       link_text: buttonPrimary,
                       link_context: headline + ' - Hero primary button',
+                      link_section: sectionId,
                     });
                   }}
                   href={buttonPrimaryUrl}
@@ -71,11 +83,23 @@ export const Hero: FC<HeroProps> = ({
               {buttonSecondary && (
                 <a
                   href={buttonSecondaryUrl}
-                  onClickCapture={() => {
+                  onClickCapture={(ev) => {
+                    let currentElement = ev.target as HTMLElement;
+                    let sectionId = '';
+
+                    while (currentElement && currentElement.parentElement) {
+                      if (currentElement.parentElement.tagName === 'MAIN') {
+                        sectionId = currentElement.id;
+                        break;
+                      }
+                      currentElement = currentElement.parentElement;
+                    }
+                    
                     datalayer?.push({
                       event: 'interaction_cta',
                       link_text: buttonSecondary,
                       link_context: headline + ' - Hero secondary button',
+                      link_section: sectionId,
                     });
                   }}
                 >
@@ -118,7 +142,25 @@ export const Hero: FC<HeroProps> = ({
             {buttonPrimary && (
               <div className="zep-flex zep-gap-1">
                 {buttonPrimaryUrl ? (
-                  <a href={buttonPrimaryUrl}>
+                  <a onClickCapture={(ev) => {
+                    let currentElement = ev.target as HTMLElement;
+                    let sectionId = '';
+
+                    while (currentElement && currentElement.parentElement) {
+                      if (currentElement.parentElement.tagName === 'MAIN') {
+                        sectionId = currentElement.id;
+                        break;
+                      }
+                      currentElement = currentElement.parentElement;
+                    }
+
+                    datalayer?.push({
+                      event: 'interaction_cta',
+                      link_text: buttonPrimary,
+                      link_context: headline + ' - Hero primary button',
+                      link_section: sectionId,
+                    });
+                  }} href={buttonPrimaryUrl}>
                     <Button
                       label={buttonPrimary}
                       title={buttonPrimary}
@@ -141,7 +183,25 @@ export const Hero: FC<HeroProps> = ({
                 )}
 
                 {buttonSecondary && (
-                  <a href={buttonSecondaryUrl}>
+                  <a  onClickCapture={(ev) => {
+                    let currentElement = ev.target as HTMLElement;
+                    let sectionId = '';
+
+                    while (currentElement && currentElement.parentElement) {
+                      if (currentElement.parentElement.tagName === 'MAIN') {
+                        sectionId = currentElement.id;
+                        break;
+                      }
+                      currentElement = currentElement.parentElement;
+                    }
+                    
+                    datalayer?.push({
+                      event: 'interaction_cta',
+                      link_text: buttonSecondary,
+                      link_context: headline + ' - Hero secondary button',
+                      link_section: sectionId,
+                    });
+                  }} href={buttonSecondaryUrl}>
                     <Button
                       label={buttonSecondary}
                       title={buttonSecondary}
