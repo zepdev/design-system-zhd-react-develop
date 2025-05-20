@@ -1,6 +1,7 @@
 import { FunctionalIconNames, Link, LinkMode, LinkTarget } from '@zepdev/design-system-component-library-react';
 import clsx from 'clsx';
 import { FC } from 'react';
+import { getDataLayer } from '../../utils/getDataLayer';
 import { getUrlWithTrailingSlash } from '../../utils/getUrlWithTrailingSlash';
 import { CardProps } from './card.interface';
 
@@ -23,12 +24,12 @@ export const Card: FC<CardProps> = ({
       window.open(getUrlWithTrailingSlash(url), '_self');
     }
   };
-
+  const datalayer = getDataLayer();
   return (
     <div
       onClick={onClick}
       onClickCapture={() => {
-        datalayer.push({
+        datalayer?.push({
           event: 'interaction_tile',
           link_text: title,
           link_context: gtmHeadline,
