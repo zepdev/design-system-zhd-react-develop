@@ -1,7 +1,7 @@
-import { HeaderShortProps } from '../header-short';
 import { MediaTextComponentContentProps } from '../media-text-component';
+import { HeaderLongProps } from '../header-long';
 
-export interface MediaTextComponentPatternProps extends HeaderShortProps {
+export interface MediaTextComponentPatternProps extends HeaderLongProps {
     cards: MediaTextComponentContentProps[];
     id?: string;
 }
