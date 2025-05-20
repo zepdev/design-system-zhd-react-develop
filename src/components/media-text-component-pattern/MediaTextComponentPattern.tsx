@@ -1,18 +1,18 @@
 import clsx from 'clsx';
 import { FC } from 'react';
-import { HeaderShortComponent } from '../header-short-component';
 import { Layout } from '../layout';
 import { MediaTextComponent } from '@/components/media-text-component';
 import { MediaTextComponentPatternProps } from './media-text-component-pattern.interface';
+import { HeaderLongComponent } from '@/components/header-long-component';
 
-export const MediaTextComponentPattern: FC<MediaTextComponentPatternProps> = ({ id, cards, ...headerShortProps }) => {
+export const MediaTextComponentPattern: FC<MediaTextComponentPatternProps> = ({ id, cards, ...headerLongProps }) => {
   return (
     <Layout
       id={id}
       className={clsx('zep-flex', 'zep-flex-col', 'md:zep-gap-4', 'sm:zep-gap-3', 'zep-gap-2.5', 'zep-overflow-hidden')}
     >
-      {headerShortProps?.headline && (
-        <HeaderShortComponent {...headerShortProps} className="md:zep-w-[35%] zep-w-full" />
+      {headerLongProps?.headline && (
+        <HeaderLongComponent {...headerLongProps} className="md:zep-w-[35%] zep-w-full" />
       )}
       <div
         className={clsx('zep-flex', 'zep-flex-col', 'zep-gap-2.5', 'sm:zep-gap-3', 'md:zep-gap-5', 'xl:zep-gap-7.5')}
