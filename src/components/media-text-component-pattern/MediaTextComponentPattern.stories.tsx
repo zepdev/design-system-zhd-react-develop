@@ -1,6 +1,6 @@
 import { Meta, StoryObj } from '@storybook/react';
-import { mockImage, mockRichText } from '../../utils/mocks';
 import vertical from '../../assets/verti.png';
+import { mockImage, mockRichText } from '../../utils/mocks';
 import { MediaTextComponentContentProps } from '../media-text-component/media-text-component.interface';
 import { MediaTextComponentPattern } from './MediaTextComponentPattern';
 
