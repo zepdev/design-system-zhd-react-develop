@@ -1,8 +1,8 @@
 import { USPProps } from '../USP';
+import { HeaderLongProps } from '../header-long';
 
-export interface USPListProps {
-    headerTitle: string;
-    tagline?: string;
+export interface USPListProps extends Omit<HeaderLongProps, 'headline'> {
+    headline: string;
     uspCards?: USPProps[];
     id?: string;
 }
