@@ -65,7 +65,6 @@ export const LanguageSwitcher: FC<LanguageSwitcherProps> = ({
                 link_text: `BACK_ARROW`,
                 link_type: 'language_switcher_close', // main_nav, logo, sub_nav, search, language_switcher, etc.
                 link_section: 'language_switcher',
-
               });
               setTimeout(() => {
                 setBackAnimation(false);
@@ -78,33 +77,31 @@ export const LanguageSwitcher: FC<LanguageSwitcherProps> = ({
         </div>
         <h4 className="zep-text-headlineXS-fluid-cqi zep-text-typography-dark-100 zep-mb-1.5 md:zep-mb-3">{header}</h4>
         {groupedByCountry &&
-          Object.keys(groupedByCountry)
-            ?.sort()
-            ?.map((key, index) => (
-              <div className="zep-mb-2 zep-flex zep-flex-col zep-gap-1" key={`${key}${index}`}>
-                <p className="zep-typography-bodyText zep-text-typography-dark-100">{key}</p>
-                {groupedByCountry[key]?.map((locale: Locale) => (
-                  <Radio
-                    id={locale.value}
-                    name={locale.label}
-                    label={locale?.label}
-                    onChange={() => {
-                      if (setSelectedLocale) {
-                        setSelectedLocale(locale);
-                        datalayer?.push({
-                          event: 'interaction_nav',
-                          link_text: `${locale?.label}`,
-                          link_type: 'language_switcher_item', // main_nav, logo, sub_nav, search, language_switcher, etc.
-                          link_section: 'language_switcher',
-                        });
-                      }
-                    }}
-                    checked={selectedLocale?.value === locale?.value}
-                    variant={RadioVariant.Zsd}
-                  />
-                ))}
-              </div>
-            ))}
+          Object.keys(groupedByCountry)?.map((key, index) => (
+            <div className="zep-mb-2 zep-flex zep-flex-col zep-gap-1" key={`${key}${index}`}>
+              <p className="zep-typography-bodyText zep-text-typography-dark-100">{key}</p>
+              {groupedByCountry[key]?.map((locale: Locale) => (
+                <Radio
+                  id={locale.value}
+                  name={locale.label}
+                  label={locale?.label}
+                  onChange={() => {
+                    if (setSelectedLocale) {
+                      setSelectedLocale(locale);
+                      datalayer?.push({
+                        event: 'interaction_nav',
+                        link_text: `${locale?.label}`,
+                        link_type: 'language_switcher_item', // main_nav, logo, sub_nav, search, language_switcher, etc.
+                        link_section: 'language_switcher',
+                      });
+                    }
+                  }}
+                  checked={selectedLocale?.value === locale?.value}
+                  variant={RadioVariant.Zsd}
+                />
+              ))}
+            </div>
+          ))}
       </div>
 
       {/* Desktop Navbar */}
@@ -126,42 +123,39 @@ export const LanguageSwitcher: FC<LanguageSwitcherProps> = ({
                   datalayer?.push({
                     event: 'interaction_nav',
                     link_text: `CLOSE_LANGUAGE_SWITCHER`,
-                    link_type: 'language_switcher_close', // main_nav, logo, sub_nav, search, language_switcher, etc. 
+                    link_type: 'language_switcher_close', // main_nav, logo, sub_nav, search, language_switcher, etc.
                     link_section: 'language_switcher',
-
                   });
                 }}
               />
             </div>
             <h4 className="zep-text-headlineXS-fluid-cqi zep-text-typography-dark-100 zep-mb-3">{header}</h4>
             {groupedByCountry &&
-              Object.keys(groupedByCountry)
-                ?.sort()
-                ?.map((key, index) => (
-                  <div className="zep-mb-3 zep-flex zep-flex-col zep-gap-1" key={`${key}${index}`}>
-                    <p className="zep-typography-bodyText zep-text-typography-dark-100">{key}</p>
-                    {groupedByCountry[key]?.map((locale: Locale) => (
-                      <Radio
-                        id={locale.value}
-                        name={locale.label}
-                        label={locale?.label}
-                        onChange={() => {
-                          if (setSelectedLocale) {
-                            setSelectedLocale(locale);
-                            datalayer?.push({
-                              event: 'interaction_nav',
-                              link_text: `${locale?.label}`,
-                              link_type: 'language_switcher_item', // main_nav, logo, sub_nav, search, language_switcher, etc.
-                              link_section: 'language_switcher',
-                            });
-                          }
-                        }}
-                        checked={selectedLocale?.value === locale?.value}
-                        variant={RadioVariant.Zsd}
-                      />
-                    ))}
-                  </div>
-                ))}
+              Object.keys(groupedByCountry)?.map((key, index) => (
+                <div className="zep-mb-3 zep-flex zep-flex-col zep-gap-1" key={`${key}${index}`}>
+                  <p className="zep-typography-bodyText zep-text-typography-dark-100">{key}</p>
+                  {groupedByCountry[key]?.map((locale: Locale) => (
+                    <Radio
+                      id={locale.value}
+                      name={locale.label}
+                      label={locale?.label}
+                      onChange={() => {
+                        if (setSelectedLocale) {
+                          setSelectedLocale(locale);
+                          datalayer?.push({
+                            event: 'interaction_nav',
+                            link_text: `${locale?.label}`,
+                            link_type: 'language_switcher_item', // main_nav, logo, sub_nav, search, language_switcher, etc.
+                            link_section: 'language_switcher',
+                          });
+                        }
+                      }}
+                      checked={selectedLocale?.value === locale?.value}
+                      variant={RadioVariant.Zsd}
+                    />
+                  ))}
+                </div>
+              ))}
           </div>
         </div>
         <div

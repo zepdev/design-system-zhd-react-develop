@@ -28,10 +28,21 @@ export const Navigation: FC<NavigationProps> = ({
     switch (selectedLocale?.value) {
       case LocaleVariants.EN:
         return '/de/en/';
+      case LocaleVariants.FR:
+        return '/fr/en/';
+      case LocaleVariants.GB:
+        return '/gb/en/';
+      case LocaleVariants.IT:
+        return '/it/en/';
+      case LocaleVariants.IN:
+        return '/in/en/';
+      case LocaleVariants.US:
+        return '/us/en/';
       default:
         return '/de/de/';
     }
   };
+
   const datalayer = getDataLayer();
   return (
     <div className="zep-bg-[#fff]">
@@ -114,10 +125,12 @@ export const Navigation: FC<NavigationProps> = ({
               <p className="zep-typography-navigation zep-text-typography-dark-100 zep-uppercase zep-pt-0.25">
                 {item.label}
               </p>
-              <div className={clsx(
-                'group-hover:zep-block zep-absolute zep-w-full',
-                activePageUrl && item.link && activePageUrl.includes(item.link) ? 'zep-block' : 'zep-hidden',
-              )}>
+              <div
+                className={clsx(
+                  'group-hover:zep-block zep-absolute zep-w-full',
+                  activePageUrl && item.link && activePageUrl.includes(item.link) ? 'zep-block' : 'zep-hidden',
+                )}
+              >
                 <div className="zep-w-[24px] zep-h-[2px] zep-bg-primary-default zep-mx-auto" />
               </div>
             </div>
