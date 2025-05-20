@@ -1,3 +1,17 @@
+# [1.9.0](https://github.com/zepdev/design-system-zhd-react/compare/v1.8.6...v1.9.0) (2025-05-20)
+
+
+### Bug Fixes
+
+* Build errors. ([858a271](https://github.com/zepdev/design-system-zhd-react/commit/858a2713b5c7875b74578c9fffc9c9c1db143ba5))
+* conflicts ([8fcd8cc](https://github.com/zepdev/design-system-zhd-react/commit/8fcd8cc7f9221d863c7e4335e056d84cef9c5386))
+* Section id lookup. ([7fe6d36](https://github.com/zepdev/design-system-zhd-react/commit/7fe6d36fd3a51f9ea9b32484725fda403d68b65b))
+
+
+### Features
+
+* **app:** Fast forward tracking. ([caac4c8](https://github.com/zepdev/design-system-zhd-react/commit/caac4c8c5f6ea9b3b55c88d59c00a3cfe871cc38))
+
 ## [1.8.6](https://github.com/zepdev/design-system-zhd-react/compare/v1.8.5...v1.8.6) (2025-05-19)
 
 
