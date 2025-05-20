@@ -14,7 +14,7 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   args: {
-    headerTitle: 'Vorteile für Ihr Unternehmen',
+    headline: 'Vorteile für Ihr Unternehmen',
     uspCards: [
       {
         icon: 'https://img.logoipsum.com/371.svg',
@@ -36,7 +36,7 @@ export const Default: Story = {
 
 export const With3Items: Story = {
   args: {
-    headerTitle: 'Vorteile für Ihr Unternehmen',
+    headline: 'Vorteile für Ihr Unternehmen',
     uspCards: [
       {
         headline: 'Nachhaltig managen',
@@ -62,7 +62,7 @@ export const With3Items: Story = {
 
 export const With4Items: Story = {
   args: {
-    headerTitle: 'Vorteile für Ihr Unternehmen',
+    headline: 'Vorteile für Ihr Unternehmen',
     uspCards: [
       {
         headline: 'Nachhaltig managen',
@@ -94,7 +94,7 @@ export const With4Items: Story = {
 
 export const With5Items: Story = {
   args: {
-    headerTitle: 'Vorteile für Ihr Unternehmen',
+    headline: 'Vorteile für Ihr Unternehmen',
     uspCards: [
       {
         headline: 'Nachhaltig managen',
@@ -132,7 +132,7 @@ export const With5Items: Story = {
 
 export const With6Items: Story = {
   args: {
-    headerTitle: 'Vorteile für Ihr Unternehmen',
+    headline: 'Vorteile für Ihr Unternehmen',
     uspCards: [
       {
         headline: 'Nachhaltig managen',
@@ -176,7 +176,7 @@ export const With6Items: Story = {
 
 export const With10Items: Story = {
   args: {
-    headerTitle: 'Vorteile für Ihr Unternehmen',
+    headline: 'Vorteile für Ihr Unternehmen',
     uspCards: [
       {
         headline: 'Nachhaltig managen',

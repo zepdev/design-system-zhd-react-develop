@@ -1,18 +1,18 @@
 import React from 'react';
 import { USP } from '../USP/Usp';
-import { HeaderShortComponent } from '../header-short-component';
+import { HeaderLongComponent } from '@/components/header-long-component';
 import { Layout } from '../layout';
 import { Scrollbar } from '../scrollbar';
 import { USPListProps } from './usp-list.interface';
 
-export const USPList: React.FC<USPListProps> = ({ uspCards, headerTitle, tagline, id }: USPListProps) => {
+export const USPList: React.FC<USPListProps> = ({ uspCards, id, ...headerLongProps }: USPListProps) => {
   return (
     <Layout
       id={id}
       wrapperClassname={'zep-bg-greyscale-200'}
       className={'zep-flex zep-flex-col zep-gap-2.5 sm:zep-gap-3 md:zep-gap-4 zep-py-3 sm:zep-py-4 md:zep-py-5'}
     >
-      <HeaderShortComponent className="zep-p-[0px] zep-w-[40%]" headline={headerTitle} tagline={tagline} />
+      <HeaderLongComponent className="zep-p-[0px] zep-w-[40%]" {...headerLongProps} />
       <Scrollbar
         scrollOrientation="horizontal"
         theme="light"
