@@ -1,3 +1,10 @@
+## [1.9.1](https://github.com/zepdev/design-system-zhd-react/compare/v1.9.0...v1.9.1) (2025-05-20)
+
+
+### Bug Fixes
+
+* change header in media text pattern to header long ([d3ca499](https://github.com/zepdev/design-system-zhd-react/commit/d3ca4993a520b81a2503f0ba9f49e3cfe473a9c4))
+
 # [1.9.0](https://github.com/zepdev/design-system-zhd-react/compare/v1.8.6...v1.9.0) (2025-05-20)
 
 
