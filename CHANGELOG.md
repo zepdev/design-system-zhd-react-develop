@@ -1,3 +1,10 @@
+## [1.9.3](https://github.com/zepdev/design-system-zhd-react/compare/v1.9.2...v1.9.3) (2025-05-20)
+
+
+### Bug Fixes
+
+* change header in usp list pattern to header long ([17a3984](https://github.com/zepdev/design-system-zhd-react/commit/17a3984a5aa77508fdd43d7b401ae55913208e4e))
+
 ## [1.9.2](https://github.com/zepdev/design-system-zhd-react/compare/v1.9.1...v1.9.2) (2025-05-20)
 
 
