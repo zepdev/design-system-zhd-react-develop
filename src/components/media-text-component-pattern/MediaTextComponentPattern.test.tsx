@@ -14,7 +14,7 @@ describe('Media Text Pattern', () => {
   };
 
   it('should render', async () => {
-    const { getByTestId, findAllByTestId } = render(<MediaTextComponentPattern cards={[card, card]} />);
+    const { getByTestId, findAllByTestId } = render(<MediaTextComponentPattern cards={[card, card]} headline={''} />);
     expect(getByTestId('zep-media-text')).toBeInTheDocument();
     const cards = await findAllByTestId('zep-mediaText');
     expect(cards).toHaveLength(2);

@@ -20,10 +20,10 @@ export const USPList: React.FC<USPListProps> = ({ uspCards, headerTitle, tagline
         dataTestId="zep-usp-list"
         className="zep-flex zep-w-full zep-gap-1 md:zep-gap-1.5 lg:zep-gap-3.5"
       >
-        {uspCards?.map((card, index) => (
+        {uspCards?.map((card) => (
           <USP
             key={card.headline}
-            count={card?.count || `${index + 1}.`}
+            count={card?.count}
             headline={card.headline}
             description={card.description}
             icon={card?.icon}
