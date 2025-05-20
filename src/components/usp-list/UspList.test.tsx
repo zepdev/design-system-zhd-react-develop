@@ -10,7 +10,7 @@ global.ResizeObserver = class {
 
 describe('USP list component', () => {
   it('should render an usp list component', () => {
-    const Child = <USPList headerTitle={'Header'} />;
+    const Child = <USPList headline={'Header'} />;
     const { getByTestId } = render(Child);
     const anchorCardElement = getByTestId('zep-usp-list');
     expect(anchorCardElement).toBeInTheDocument();
