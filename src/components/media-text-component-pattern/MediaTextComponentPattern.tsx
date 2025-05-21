@@ -5,7 +5,8 @@ import { FC } from 'react';
 import { Layout } from '../layout';
 import { MediaTextComponentPatternProps } from './media-text-component-pattern.interface';
 
-export const MediaTextComponentPattern: FC<MediaTextComponentPatternProps> = ({ id, cards, ...headerLongProps }) => {
+export const MediaTextComponentPattern: FC<MediaTextComponentPatternProps> = ({ id, cards, startingPosition = 'left', ...headerLongProps }) => {
+  const mediaAlignLeft = startingPosition === 'left';
   return (
     <Layout
       id={id}
@@ -17,7 +18,11 @@ export const MediaTextComponentPattern: FC<MediaTextComponentPatternProps> = ({ 
         data-testid="zep-media-text"
       >
         {cards.map((card, index) => (
-          <MediaTextComponent key={card.headline} {...card} mediaAlignment={index % 2 === 0 ? 'left' : 'right'} />
+          <MediaTextComponent
+            key={card.headline}
+            {...card}
+            mediaAlignment={(index % 2 === 0 && mediaAlignLeft) || (index % 2 !== 0 && !mediaAlignLeft) ? 'left' : 'right'}
+          />
         ))}
       </div>
     </Layout>
