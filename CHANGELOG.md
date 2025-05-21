@@ -1,3 +1,10 @@
+## [1.9.5](https://github.com/zepdev/design-system-zhd-react/compare/v1.9.4...v1.9.5) (2025-05-21)
+
+
+### Bug Fixes
+
+* card square linking ([be68d13](https://github.com/zepdev/design-system-zhd-react/commit/be68d13729a6af93e5e9dd9ea56a454bbf7ee02a))
+
 ## [1.9.4](https://github.com/zepdev/design-system-zhd-react/compare/v1.9.3...v1.9.4) (2025-05-21)
 
 
