@@ -36,9 +36,7 @@ export const CardSquareList: React.FC<CardSquareListProps> = ({
         )}
         controlId="zep-card-square-scrollbar"
       >
-        {items?.map((item) => (
-          <CardSquare key={item.headline} {...item} variant={variant} gtmHeadline={headline} gtmId={id} />
-        ))}
+        {items?.map((item) => <CardSquare key={item.headline} {...item} gtmHeadline={headline} gtmId={id} />)}
       </Scrollbar>
     </Layout>
   );
