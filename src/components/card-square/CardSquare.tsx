@@ -27,10 +27,10 @@ const CardSquare: FC<CardSquareProps> = ({
   description,
   headline,
   imageAlt,
-  variant,
   url,
   gtmHeadline,
   gtmId,
+  linkType,
 }) => {
   const componentRef = useRef<HTMLDivElement | null>(null);
   const { width } = useContainerDimensions(componentRef);
@@ -46,7 +46,8 @@ const CardSquare: FC<CardSquareProps> = ({
   return (
     <a
       href={getUrlWithTrailingSlash(url)}
-      target="_self"
+      target={linkType === 'external-link' ? '_blank' : '_self'}
+      download={linkType === 'download'}
       className={clsx(
         'zep-relative',
         'zep-group',
@@ -68,6 +69,7 @@ const CardSquare: FC<CardSquareProps> = ({
         });
       }}
       data-testid="zep-card-square"
+      rel="noreferrer"
     >
       <div tabIndex={0} ref={componentRef}>
         <img

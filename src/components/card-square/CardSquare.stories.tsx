@@ -1,6 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
-import { GlobalVariants } from '../../interfaces/global-variants';
 import { CardSquare } from './CardSquare';
 import { CardSquareProps } from './card-square.interface';
 
@@ -8,14 +7,7 @@ const meta = {
   title: 'Components/CardSquare',
   component: CardSquare,
   tags: ['autodocs'],
-  argTypes: {
-    variant: {
-      control: {
-        type: 'radio',
-        options: Object.keys(GlobalVariants),
-      },
-    },
-  },
+  argTypes: {},
 } satisfies Meta<typeof CardSquare>;
 
 export default meta;
@@ -35,6 +27,5 @@ export const Default: Story = {
     headline: 'my Headline',
     description: 'The description',
     url: 'https://www.google.com',
-    variant: GlobalVariants.Zps,
   } as CardSquareProps,
 };

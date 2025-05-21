@@ -1,6 +1,6 @@
+import { HeaderLongComponent } from '@/components/header-long-component';
 import React from 'react';
 import { USP } from '../USP/Usp';
-import { HeaderLongComponent } from '@/components/header-long-component';
 import { Layout } from '../layout';
 import { Scrollbar } from '../scrollbar';
 import { USPListProps } from './usp-list.interface';
