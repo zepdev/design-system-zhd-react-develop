@@ -3,5 +3,6 @@ import { HeaderLongProps } from '@/components/header-long';
 
 export interface MediaTextComponentPatternProps extends HeaderLongProps {
   cards: MediaTextComponentContentProps[];
+  startingPosition?: 'left' | 'right';
   id?: string;
 }
