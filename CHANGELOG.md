@@ -1,3 +1,10 @@
+## [1.9.6](https://github.com/zepdev/design-system-zhd-react/compare/v1.9.5...v1.9.6) (2025-05-21)
+
+
+### Bug Fixes
+
+* contact form adjustments ([0b42e8e](https://github.com/zepdev/design-system-zhd-react/commit/0b42e8e5393ea4a4f1a30ef9598022e5107039d1))
+
 ## [1.9.5](https://github.com/zepdev/design-system-zhd-react/compare/v1.9.4...v1.9.5) (2025-05-21)
 
 
