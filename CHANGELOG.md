@@ -1,3 +1,10 @@
+## [1.9.4](https://github.com/zepdev/design-system-zhd-react/compare/v1.9.3...v1.9.4) (2025-05-21)
+
+
+### Bug Fixes
+
+* add starting position to media text pattern ([c4cbdad](https://github.com/zepdev/design-system-zhd-react/commit/c4cbdad7fa3a3d3d9b28d193e35ce3dd933d3ac2))
+
 ## [1.9.3](https://github.com/zepdev/design-system-zhd-react/compare/v1.9.2...v1.9.3) (2025-05-20)
 
 
