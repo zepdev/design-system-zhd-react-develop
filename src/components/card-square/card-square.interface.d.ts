@@ -1,12 +1,11 @@
 import { HTMLAttributes } from 'react';
-import { GlobalVariants } from '../../interfaces/global-variants';
 
 export interface CardSquareProps extends HTMLAttributes<HTMLDivElement> {
     imageSrc: string;
     imageAlt: string;
     headline: string;
     description?: string;
-    variant?: GlobalVariants;
+    linkType?: 'internal-link' | 'external-link' | 'none' | 'download';
     url: string;
     gtmHeadline?: string;
     gtmId?: string;

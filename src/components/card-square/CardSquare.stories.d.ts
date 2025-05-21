@@ -5,14 +5,7 @@ declare const meta: {
     title: string;
     component: import('react').FC<CardSquareProps>;
     tags: string[];
-    argTypes: {
-        variant: {
-            control: {
-                type: string;
-                options: string[];
-            };
-        };
-    };
+    argTypes: {};
 };
 export default meta;
 type Story = StoryObj<typeof meta>;
