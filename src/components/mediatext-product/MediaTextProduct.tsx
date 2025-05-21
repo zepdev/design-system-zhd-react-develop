@@ -29,21 +29,25 @@ export const MediaTextProduct: React.FC<MediaTextProductProps> = ({
           <img className=" zep-w-full" src={imageSrc} alt={imageAlt} />
         </div>
         <div className="md:zep-w-7/12 md:zep-flex-1 zep-w-full md:zep-flex-col">
-          <div data-testid="media-text-small-description" className="zep-mb-1">
-            <RichText content={productDescription} />
-          </div>
+          {productDescription.length > 0 && (
+            <div data-testid="media-text-small-description" className="zep-mb-1">
+              <RichText content={productDescription} />
+            </div>
+          )}
           {/* Accordion */}
-          <Accordion
-            className={'zep-text-typography-dark-100'}
-            items={accordionContent.map((item) => ({
-              title: item.title,
-              content: (
-                <div className="zep-relative">
-                  <RichText className="lg:zep-mx-[0]" content={item.accordionContent} />
-                </div>
-              ),
-            }))}
-          />
+          {accordionContent.length > 0 && (
+            <Accordion
+              className={'zep-text-typography-dark-100'}
+              items={accordionContent.map((item) => ({
+                title: item.title,
+                content: (
+                  <div className="zep-relative">
+                    <RichText className="lg:zep-mx-[0]" content={item.accordionContent} />
+                  </div>
+                ),
+              }))}
+            />
+          )}
 
           {/* Button */}
           {labelPrimary && buttonUrl && (
