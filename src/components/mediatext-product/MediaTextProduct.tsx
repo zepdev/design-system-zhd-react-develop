@@ -19,6 +19,7 @@ export const MediaTextProduct: React.FC<MediaTextProductProps> = ({
   iconPrimary,
   iconPrimaryPosition,
   accordionContent = [],
+  buttonVariant,
   ...headerLongProps
 }) => {
   return (
@@ -50,7 +51,7 @@ export const MediaTextProduct: React.FC<MediaTextProductProps> = ({
           )}
 
           {/* Button */}
-          {labelPrimary && buttonUrl && (
+          {labelPrimary && (
             <a
               className="zep-max-w-max"
               href={buttonUrl}
@@ -58,7 +59,12 @@ export const MediaTextProduct: React.FC<MediaTextProductProps> = ({
               download={buttonAction === 'download-file'}
               rel="noreferrer"
             >
-              <Button icon={iconPrimary} iconPosition={iconPrimaryPosition} label={labelPrimary} />
+              <Button
+                icon={iconPrimary}
+                iconPosition={iconPrimaryPosition}
+                label={labelPrimary}
+                variant={buttonVariant}
+              />
             </a>
           )}
         </div>
