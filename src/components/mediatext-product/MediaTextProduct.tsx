@@ -50,7 +50,7 @@ export const MediaTextProduct: React.FC<MediaTextProductProps> = ({
             />
           )}
 
-          {/* Button */}
+          {/* Button  */}
           {labelPrimary && (
             <a
               className="zep-max-w-max"
