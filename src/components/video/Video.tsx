@@ -61,21 +61,29 @@ export const Video = ({ id, videos }: VideoProps) => {
                       <img
                         alt={v.title}
                         src={v.thumbnail}
-                        className="zep-max-w-[170px] md:zep-max-w-[unset] zep-max-h-[95px] md:zep-max-h-[unset] zep-w-full zep-object-cover"
+                        className="zep-max-w-[170px] md:zep-max-w-[unset] zep-max-h-[95px] md:zep-max-h-[unset] zep-w-full zep-object-cover zep-aspect-[16/9]"
                       />
                       {selectedVideo === v ? (
                         <div className="zep-absolute zep-inset-[0px] zep-bg-[#000000] zep-opacity-70"></div>
                       ) : (
                         <div className="zep-absolute zep-inset-[0px] zep-bg-[#000000] zep-opacity-40"></div>
                       )}
-                      <div className="zep-hidden zep-top-[0px] zep-absolute md:zep-flex zep-items-center zep-h-full zep-w-full zep-px-[8px]">
-                        <h3 className={clsx('zep-typography-headlineSM-fluid-cqi zep-top-[0px] zep-line-clamp-2')}>
+                      <div className="zep-hidden zep-top-[0px] zep-absolute md:zep-flex zep-items-center zep-h-full zep-w-full zep-px-[8px] md:zep-px-[24px]">
+                        <h3
+                          className={clsx(
+                            'zep-typography-headlineSM-fluid-cqi zep-top-[0px] zep-line-clamp-2 zep-text-typography-light-100',
+                          )}
+                        >
                           {v?.title}
                         </h3>
                       </div>
                     </div>
                   </div>
-                  <h3 className={clsx('md:zep-hidden zep-typography-headlineSM-fluid-cqi zep-line-clamp-2')}>
+                  <h3
+                    className={clsx(
+                      'md:zep-hidden zep-typography-headlineSM-fluid-cqi zep-line-clamp-2 zep-text-typography-light-100',
+                    )}
+                  >
                     {v?.title}
                   </h3>
                 </div>
@@ -102,7 +110,7 @@ export const Video = ({ id, videos }: VideoProps) => {
                     <img
                       alt={v?.title}
                       src={v?.thumbnail}
-                      className="zep-w-[170px] zep-h-[95px] sm:zep-w-[250px] sm:zep-h-[140px] zep-object-cover"
+                      className="zep-w-[170px] zep-h-[95px] sm:zep-w-[250px] sm:zep-h-[140px] zep-object-cover zep-aspect-[16/9]"
                     />
                     {selectedVideo === v ? (
                       <div className="zep-absolute zep-inset-[0px] zep-bg-[#000000] zep-opacity-70"></div>
