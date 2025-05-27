@@ -1,3 +1,10 @@
+## [1.9.9](https://github.com/zepdev/design-system-zhd-react/compare/v1.9.8...v1.9.9) (2025-05-27)
+
+
+### Bug Fixes
+
+* card media icon ([b244fc1](https://github.com/zepdev/design-system-zhd-react/commit/b244fc1dd6c5847abcc6c22815dceb377825ab90))
+
 ## [1.9.8](https://github.com/zepdev/design-system-zhd-react/compare/v1.9.7...v1.9.8) (2025-05-27)
 
 
