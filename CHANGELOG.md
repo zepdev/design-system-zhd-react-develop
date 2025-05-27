@@ -1,3 +1,10 @@
+## [1.9.8](https://github.com/zepdev/design-system-zhd-react/compare/v1.9.7...v1.9.8) (2025-05-27)
+
+
+### Bug Fixes
+
+* make header optional for infographic image ([de1d84e](https://github.com/zepdev/design-system-zhd-react/commit/de1d84ede90fe8a720ca40e84fc6123d37b1ad1b))
+
 ## [1.9.7](https://github.com/zepdev/design-system-zhd-react/compare/v1.9.6...v1.9.7) (2025-05-26)
 
 
