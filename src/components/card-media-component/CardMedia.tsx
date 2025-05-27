@@ -81,7 +81,7 @@ export const CardMedia: React.FC<CardMediaProps> = ({
         mode={LinkMode.Standalone}
         className={'zep-text-typography-dark-100 zep-self-start'}
         download={linkType === 'download'}
-        icon={icon}
+        icon={icon !== 'none' ? icon : undefined}
         iconPlacement={iconPlacement}
       />
     </div>
