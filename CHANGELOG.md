@@ -1,3 +1,10 @@
+## [1.9.10](https://github.com/zepdev/design-system-zhd-react/compare/v1.9.9...v1.9.10) (2025-05-27)
+
+
+### Bug Fixes
+
+* fix multivideo styles ([09349f3](https://github.com/zepdev/design-system-zhd-react/commit/09349f35db4b690b9339ebae11beedc15b0e1ecc))
+
 ## [1.9.9](https://github.com/zepdev/design-system-zhd-react/compare/v1.9.8...v1.9.9) (2025-05-27)
 
 
