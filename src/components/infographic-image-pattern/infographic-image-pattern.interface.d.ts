@@ -2,7 +2,7 @@ import { InfographicImageProps } from '../infographic-image';
 import { HeaderLongProps } from '../header-long';
 
 export interface InfographicImagePatternProps {
-    header: HeaderLongProps;
+    header?: HeaderLongProps;
     infographic: InfographicImageProps;
     id?: string;
 }
