@@ -101,9 +101,9 @@ export const Input: React.FC<InputProps> = forwardRef<HTMLInputElement, InputPro
                 'zep-px-1',
                 'zep-leading-3',
                 'zep-leading-[22px]',
-                'placeholder:zep-text-primary-default',
+                'placeholder:zep-text-typography-dark-100',
                 'focus-visible:zep-ring-offset-1',
-                { 'zep-border-primary-default': !error },
+                { 'zep-border-typography-dark-100': !error },
                 { 'zep-border-2 zep-border-error': error },
                 {
                   'zep-cursor-not-allowed zep-bg-background-medium': readOnly, // does not work at the moment
