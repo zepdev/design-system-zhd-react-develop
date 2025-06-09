@@ -1,3 +1,10 @@
+## [1.9.11](https://github.com/zepdev/design-system-zhd-react/compare/v1.9.10...v1.9.11) (2025-06-09)
+
+
+### Bug Fixes
+
+* small hero image stretch ([7f1daf8](https://github.com/zepdev/design-system-zhd-react/commit/7f1daf8a222eda950c76f69c5c202d4d96788d44))
+
 ## [1.9.10](https://github.com/zepdev/design-system-zhd-react/compare/v1.9.9...v1.9.10) (2025-05-27)
 
 
