@@ -26,7 +26,7 @@ export const MediaTextProduct: React.FC<MediaTextProductProps> = ({
     <Layout className={clsx('zep-flex', 'zep-flex-col', 'md:zep-gap-4', 'sm:zep-gap-3', 'zep-gap-2.5')}>
       {headline && <HeaderLongComponent headline={headline} description={description} {...headerLongProps} />}
       <div className="zep-grid zep-w-full md:zep-flex zep-gap-1.5 sm:zep-gap-2.5 xl:zep-gap-5">
-        <div style={{ height: 'fit-content' }} className="md:zep-w-5/12 zep-inline-grid md:zep-flex zep-aspect-16.9">
+        <div style={{ height: 'fit-content' }} className="md:zep-w-5/12 zep-inline-grid md:zep-flex zep-aspect-[16/9]">
           <img className=" zep-w-full" src={imageSrc} alt={imageAlt} />
         </div>
         <div className="md:zep-w-7/12 md:zep-flex-1 zep-w-full md:zep-flex-col">

@@ -42,12 +42,12 @@ export const TextArea: React.FC<TextAreaProps> = forwardRef<HTMLTextAreaElement,
       'zep-w-full',
       'zep-outline-none',
       'placeholder:zep-text-typography-dark-100/70',
-      'zep-text-primary-default',
+      'zep-text-typography-dark-100',
       hasError ? 'zep-border-2' : 'zep-border-1',
       'zep-pr-0.75',
       color,
       { 'zep-bg-background-medium': readOnly },
-      { 'zep-border-primary-default': !disabled && !hasError },
+      { 'zep-border-typography-dark-100': !disabled && !hasError },
       { 'zep-border-opacity-disabled': disabled },
       { 'zep-border-error': hasError },
       { 'zep-active:ring': !disabledOrReadonly },
@@ -86,7 +86,7 @@ export const TextArea: React.FC<TextAreaProps> = forwardRef<HTMLTextAreaElement,
         <div
           className={clsx(
             'zep-mt-0.25',
-            'zep-text-primary-default',
+            'zep-text-typography-dark-100',
             'zep-text-0.875',
             'zep-flex zep-h-[40px]',
             iconColor,
@@ -106,7 +106,7 @@ export const TextArea: React.FC<TextAreaProps> = forwardRef<HTMLTextAreaElement,
             </div>
           )}
           <div
-            className="zep-ml-auto zep-mt-0.125 zep-pl-0.5 zep-flex-shrink-0 zep-text-primary-default zep-mb-4"
+            className="zep-ml-auto zep-mt-0.125 zep-pl-0.5 zep-flex-shrink-0 zep-text-typography-dark-100 zep-mb-4"
             data-testid="zep-text-area-length-indicator"
           >
             {query.length} / {totalCharacters}

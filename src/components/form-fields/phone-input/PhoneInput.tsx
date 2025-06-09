@@ -53,7 +53,7 @@ export const PhoneInput = ({
         countrySelectComponent={CountrySelect}
         data-testid="zep-phone-input-field"
         className={clsx(
-          'zep-relative zep-w-full zep-box-border zep-h-3 zep-border-1 zep-border-solid zep-bg-greyscale-0 zep-border-primary-default',
+          'zep-relative zep-w-full zep-box-border zep-h-3 zep-border-1 zep-border-solid zep-bg-greyscale-0 zep-border-typography-dark-100',
           {
             'zep-border-2 !zep-border-error': error,
             '!zep-bg-greyscale-200': readOnly,

@@ -41,7 +41,7 @@ export const Checkbox = forwardRef(({ className, ...props }: CheckboxProps, ref:
           'zep-w-1.5',
           'zep-h-1.5',
           'zep-border-1',
-          'checked:zep-border-none checked:zep-bg-primary-default',
+          'checked:zep-border-none checked:zep-bg-background-dark',
           { 'checked:zep-bg-opacity-disabled': disabled },
           { 'zep-border-2 zep-border-error': error },
           {
