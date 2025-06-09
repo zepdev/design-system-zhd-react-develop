@@ -1,3 +1,10 @@
+## [1.9.12](https://github.com/zepdev/design-system-zhd-react/compare/v1.9.11...v1.9.12) (2025-06-09)
+
+
+### Bug Fixes
+
+* modal and media text product ([b1fac75](https://github.com/zepdev/design-system-zhd-react/commit/b1fac75dab66ef3f3cfd06940369a84fdaa68a43))
+
 ## [1.9.11](https://github.com/zepdev/design-system-zhd-react/compare/v1.9.10...v1.9.11) (2025-06-09)
 
 
