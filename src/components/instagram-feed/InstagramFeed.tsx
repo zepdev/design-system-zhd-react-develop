@@ -67,17 +67,18 @@ export const InstagramFeed: FC<InstagramFeedProps> = ({
         {!canPlay ? (
           <CookieLayer label={cookiesResetLabel} description={cookiesLayerDescription} onClickCookies={resetCookies} />
         ) : (
-          <div className="md:zep-flex zep-flex-row zep-flex-wrap zep-gap-1 zep-hidden">
-            <Images feed={feed} />
-          </div>
+          <>
+            <div className="md:zep-flex zep-flex-row zep-flex-wrap zep-gap-1 zep-hidden">
+              <Images feed={feed} />
+            </div>
+
+            <Scrollbar scrollOrientation="horizontal" controlId="instagram-feed-scrollbar" className="md:zep-hidden">
+              <div className="zep-flex zep-flex-row zep-gap-1">
+                <Images feed={feed} />
+              </div>
+            </Scrollbar>
+          </>
         )}
-        {canPlay && 
-          <Scrollbar scrollOrientation="horizontal" controlId="instagram-feed-scrollbar" className="md:zep-hidden">
-          <div className="zep-flex zep-flex-row zep-gap-1">
-            <Images feed={feed} />
-          </div>
-        </Scrollbar>
-        }
         
       </Layout>
     </>
