@@ -1,3 +1,10 @@
+## [1.9.15](https://github.com/zepdev/design-system-zhd-react/compare/v1.9.14...v1.9.15) (2025-06-10)
+
+
+### Bug Fixes
+
+* hide the instagram feed in smaller screen if not cookie accepted ([c2ad29d](https://github.com/zepdev/design-system-zhd-react/commit/c2ad29dfa379573346f72a45d497e08b5ade6a11))
+
 ## [1.9.14](https://github.com/zepdev/design-system-zhd-react/compare/v1.9.13...v1.9.14) (2025-06-10)
 
 
