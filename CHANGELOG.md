@@ -1,3 +1,10 @@
+## [1.9.14](https://github.com/zepdev/design-system-zhd-react/compare/v1.9.13...v1.9.14) (2025-06-10)
+
+
+### Bug Fixes
+
+* cookie contenst for instagram feed ([fd11206](https://github.com/zepdev/design-system-zhd-react/commit/fd112063345fa918e5d9c1b194ee6ba91ccdfceb))
+
 ## [1.9.13](https://github.com/zepdev/design-system-zhd-react/compare/v1.9.12...v1.9.13) (2025-06-10)
 
 
