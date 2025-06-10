@@ -1,3 +1,10 @@
+## [1.9.13](https://github.com/zepdev/design-system-zhd-react/compare/v1.9.12...v1.9.13) (2025-06-10)
+
+
+### Bug Fixes
+
+* instagram feed visible in small device when the cookie is not accepted ([c13c851](https://github.com/zepdev/design-system-zhd-react/commit/c13c851402da4cf1cde7d9b4a7bb0b1770350db5))
+
 ## [1.9.12](https://github.com/zepdev/design-system-zhd-react/compare/v1.9.11...v1.9.12) (2025-06-09)
 
 
