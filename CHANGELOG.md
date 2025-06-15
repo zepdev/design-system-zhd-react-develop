@@ -1,3 +1,10 @@
+## [1.9.16](https://github.com/zepdev/design-system-zhd-react/compare/v1.9.15...v1.9.16) (2025-06-15)
+
+
+### Bug Fixes
+
+* partner communication ([f5bda23](https://github.com/zepdev/design-system-zhd-react/commit/f5bda234cc778f8ab41fd26824953b9186b9aebc))
+
 ## [1.9.15](https://github.com/zepdev/design-system-zhd-react/compare/v1.9.14...v1.9.15) (2025-06-10)
 
 
