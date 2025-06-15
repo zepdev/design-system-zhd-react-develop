@@ -11,7 +11,7 @@ describe('Partner Communication Component', () => {
     const { getByTestId } = render(<PartnerCommunication headline="Test headline" partners={[]} />);
     const PartnerCommunicationElement = getByTestId('zep-partner-communication-wrapper');
     expect(PartnerCommunicationElement).toBeInTheDocument();
-    expect(PartnerCommunicationElement).toHaveClass('zep-bg-background-medium');
+    expect(PartnerCommunicationElement).toHaveClass('zep-bg-greyscale-200');
   });
 
   it('should render the headline', () => {
