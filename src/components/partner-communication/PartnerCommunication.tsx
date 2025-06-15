@@ -6,13 +6,13 @@ import { Layout } from '../layout';
 import { PartnerCommunicationProps } from './partner-communication.interface';
 
 export const PartnerCommunication = ({ id, headline, partners, variant }: PartnerCommunicationProps) => {
-  const partnerCommunciationVariant = {
+  const partnerCommunicationVariant = {
     [GlobalVariants.Zps]: ['zep-text-typography-primary-default'],
     [GlobalVariants.Cat]: ['zep-text-typography-dark-100'],
     [GlobalVariants.Zsd]: ['zep-text-typography-dark-100'],
   };
 
-  const partnerCommunciationCva = cva(
+  const partnerCommunicationCva = cva(
     [
       `zep-py-2
        sm:zep-py-2.5 
@@ -29,7 +29,7 @@ export const PartnerCommunication = ({ id, headline, partners, variant }: Partne
     ],
     {
       variants: {
-        variant: partnerCommunciationVariant,
+        variant: partnerCommunicationVariant,
       },
       defaultVariants: {
         variant: GlobalVariants.Zps,
@@ -41,8 +41,8 @@ export const PartnerCommunication = ({ id, headline, partners, variant }: Partne
     <Layout
       id={id}
       testId="zep-partner-communication"
-      wrapperClassname="zep-bg-background-medium"
-      className={twMerge(partnerCommunciationCva({ variant }))}
+      wrapperClassname="zep-bg-greyscale-200"
+      className={twMerge(partnerCommunicationCva({ variant }))}
     >
       <h4
         className={clsx('md:zep-w-1/3', 'zep-text-center', 'md:zep-text-left', 'zep-typography-headlineMD-fluid-cqi')}
