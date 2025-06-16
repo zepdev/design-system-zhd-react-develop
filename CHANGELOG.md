@@ -1,3 +1,10 @@
+## [1.10.5](https://github.com/zepdev/design-system-zhd-react/compare/v1.10.4...v1.10.5) (2025-06-16)
+
+
+### Bug Fixes
+
+* card events zsd link icons ([ed5cafa](https://github.com/zepdev/design-system-zhd-react/commit/ed5cafae79dc1b8d5a372ec9552ab78b48d16f2a))
+
 ## [1.10.4](https://github.com/zepdev/design-system-zhd-react/compare/v1.10.3...v1.10.4) (2025-06-16)
 
 
