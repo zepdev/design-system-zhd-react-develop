@@ -1,3 +1,10 @@
+# [1.10.0](https://github.com/zepdev/design-system-zhd-react/compare/v1.9.16...v1.10.0) (2025-06-16)
+
+
+### Features
+
+* zsd event card ([43cf0e9](https://github.com/zepdev/design-system-zhd-react/commit/43cf0e9cbddf608ba961da0f544272dc92957f44))
+
 ## [1.9.16](https://github.com/zepdev/design-system-zhd-react/compare/v1.9.15...v1.9.16) (2025-06-15)
 
 

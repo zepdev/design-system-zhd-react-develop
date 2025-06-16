@@ -1,6 +1,6 @@
 {
   "name": "@zepdev/design-system-zhd-react",
-  "version": "1.9.16",
+  "version": "1.10.0",
   "type": "module",
   "license": "MIT",
   "publishConfig": {
