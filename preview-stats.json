@@ -634,6 +634,15 @@
       ]
     },
     {
+      "id": "./src/components/Teaser-simple/Teaser-simple.tsx",
+      "name": "./src/components/Teaser-simple/Teaser-simple.tsx",
+      "reasons": [
+        {
+          "moduleName": "./src/components/Teaser-simple/Teaser-simple.stories.tsx"
+        }
+      ]
+    },
+    {
       "id": "./src/interfaces/global-variants.ts",
       "name": "./src/interfaces/global-variants.ts",
       "reasons": [
@@ -641,10 +650,10 @@
           "moduleName": "./src/components/accrodion-pattern/AccordionPattern.stories.tsx"
         },
         {
-          "moduleName": "./src/components/anchor-navigation-card/AnchorNavigationCard.stories.tsx"
+          "moduleName": "./src/components/card-event-pattern/CardEventPattern.stories.tsx"
         },
         {
-          "moduleName": "./src/components/card-event-pattern/CardEventPattern.stories.tsx"
+          "moduleName": "./src/components/anchor-navigation-card/AnchorNavigationCard.stories.tsx"
         },
         {
           "moduleName": "./src/components/card-square-list/CardSquareList.stories.tsx"
@@ -653,10 +662,10 @@
           "moduleName": "./src/components/gallery/Gallery.stories.tsx"
         },
         {
-          "moduleName": "./src/components/header-long/HeaderLong.stories.tsx"
+          "moduleName": "./src/components/header-long-component/HeaderLongComponent.stories.tsx"
         },
         {
-          "moduleName": "./src/components/header-long-component/HeaderLongComponent.stories.tsx"
+          "moduleName": "./src/components/header-long/HeaderLong.stories.tsx"
         },
         {
           "moduleName": "./src/components/header-short/HeaderShort.stories.tsx"
@@ -716,10 +725,10 @@
           "moduleName": "./src/components/contact-form-zsd/contact-form-zsd-locales.ts"
         },
         {
-          "moduleName": "./src/components/gallery/Gallery.tsx"
+          "moduleName": "./src/utils/commonCSS.ts"
         },
         {
-          "moduleName": "./src/utils/commonCSS.ts"
+          "moduleName": "./src/components/gallery/Gallery.tsx"
         }
       ]
     },
@@ -733,11 +742,11 @@
       ]
     },
     {
-      "id": "./src/components/Teaser-simple/Teaser-simple.tsx",
-      "name": "./src/components/Teaser-simple/Teaser-simple.tsx",
+      "id": "./src/components/anchor-navigation-list/AnchorNavigationList.tsx",
+      "name": "./src/components/anchor-navigation-list/AnchorNavigationList.tsx",
       "reasons": [
         {
-          "moduleName": "./src/components/Teaser-simple/Teaser-simple.stories.tsx"
+          "moduleName": "./src/components/anchor-navigation-list/AnchorNavigationList.stories.tsx"
         }
       ]
     },
@@ -750,27 +759,6 @@
         },
         {
           "moduleName": "./src/components/usp-list/UspList.tsx"
-        }
-      ]
-    },
-    {
-      "id": "./src/components/anchor-navigation-card/AnchorNavigationCard.tsx",
-      "name": "./src/components/anchor-navigation-card/AnchorNavigationCard.tsx",
-      "reasons": [
-        {
-          "moduleName": "./src/components/anchor-navigation-card/AnchorNavigationCard.stories.tsx"
-        },
-        {
-          "moduleName": "./src/components/anchor-navigation-card/index.ts"
-        }
-      ]
-    },
-    {
-      "id": "./src/components/anchor-navigation-list/AnchorNavigationList.tsx",
-      "name": "./src/components/anchor-navigation-list/AnchorNavigationList.tsx",
-      "reasons": [
-        {
-          "moduleName": "./src/components/anchor-navigation-list/AnchorNavigationList.stories.tsx"
         }
       ]
     },
@@ -789,6 +777,18 @@
       "reasons": [
         {
           "moduleName": "./src/components/card-event-pattern/CardEventPattern.stories.tsx"
+        }
+      ]
+    },
+    {
+      "id": "./src/components/anchor-navigation-card/AnchorNavigationCard.tsx",
+      "name": "./src/components/anchor-navigation-card/AnchorNavigationCard.tsx",
+      "reasons": [
+        {
+          "moduleName": "./src/components/anchor-navigation-card/AnchorNavigationCard.stories.tsx"
+        },
+        {
+          "moduleName": "./src/components/anchor-navigation-card/index.ts"
         }
       ]
     },
@@ -836,22 +836,22 @@
           "moduleName": "./src/components/contact-section/ContactSection.stories.tsx"
         },
         {
-          "moduleName": "./src/components/header-long/HeaderLong.stories.tsx"
-        },
-        {
           "moduleName": "./src/components/header-long-component/HeaderLongComponent.stories.tsx"
         },
         {
+          "moduleName": "./src/components/header-long/HeaderLong.stories.tsx"
+        },
+        {
           "moduleName": "./src/components/lead-text/LeadText.stories.tsx"
+        },
+        {
+          "moduleName": "./src/components/media-text-component-pattern/MediaTextComponentPattern.stories.tsx"
         },
         {
           "moduleName": "./src/components/link-list-item/LinkListItem.stories.tsx"
         },
         {
           "moduleName": "./src/components/media-text-component/MediaTextComponent.stories.tsx"
-        },
-        {
-          "moduleName": "./src/components/media-text-component-pattern/MediaTextComponentPattern.stories.tsx"
         },
         {
           "moduleName": "./src/components/media-text-small-pattern/MediaTextSmallPattern.stories.tsx"
@@ -991,15 +991,6 @@
       ]
     },
     {
-      "id": "./src/components/header-long/HeaderLong.tsx",
-      "name": "./src/components/header-long/HeaderLong.tsx",
-      "reasons": [
-        {
-          "moduleName": "./src/components/header-long/HeaderLong.stories.tsx"
-        }
-      ]
-    },
-    {
       "id": "./src/components/header-long-component/index.ts",
       "name": "./src/components/header-long-component/index.ts",
       "reasons": [
@@ -1078,6 +1069,15 @@
       ]
     },
     {
+      "id": "./src/components/header-long/HeaderLong.tsx",
+      "name": "./src/components/header-long/HeaderLong.tsx",
+      "reasons": [
+        {
+          "moduleName": "./src/components/header-long/HeaderLong.stories.tsx"
+        }
+      ]
+    },
+    {
       "id": "./src/components/header-short-component/HeaderShortComponent.tsx",
       "name": "./src/components/header-short-component/HeaderShortComponent.tsx",
       "reasons": [
@@ -1144,6 +1144,27 @@
       ]
     },
     {
+      "id": "./src/assets/verti.png",
+      "name": "./src/assets/verti.png",
+      "reasons": [
+        {
+          "moduleName": "./src/components/media-text-component-pattern/MediaTextComponentPattern.stories.tsx"
+        },
+        {
+          "moduleName": "./src/components/media-text-component/MediaTextComponent.stories.tsx"
+        }
+      ]
+    },
+    {
+      "id": "./src/components/media-text-component-pattern/MediaTextComponentPattern.tsx",
+      "name": "./src/components/media-text-component-pattern/MediaTextComponentPattern.tsx",
+      "reasons": [
+        {
+          "moduleName": "./src/components/media-text-component-pattern/MediaTextComponentPattern.stories.tsx"
+        }
+      ]
+    },
+    {
       "id": "./src/components/link-list-item/LinkListItem.tsx",
       "name": "./src/components/link-list-item/LinkListItem.tsx",
       "reasons": [
@@ -1165,18 +1186,6 @@
       ]
     },
     {
-      "id": "./src/assets/verti.png",
-      "name": "./src/assets/verti.png",
-      "reasons": [
-        {
-          "moduleName": "./src/components/media-text-component/MediaTextComponent.stories.tsx"
-        },
-        {
-          "moduleName": "./src/components/media-text-component-pattern/MediaTextComponentPattern.stories.tsx"
-        }
-      ]
-    },
-    {
       "id": "./src/components/media-text-component/MediaTextComponent.tsx",
       "name": "./src/components/media-text-component/MediaTextComponent.tsx",
       "reasons": [
@@ -1185,15 +1194,6 @@
         },
         {
           "moduleName": "./src/components/media-text-component/index.ts"
-        }
-      ]
-    },
-    {
-      "id": "./src/components/media-text-component-pattern/MediaTextComponentPattern.tsx",
-      "name": "./src/components/media-text-component-pattern/MediaTextComponentPattern.tsx",
-      "reasons": [
-        {
-          "moduleName": "./src/components/media-text-component-pattern/MediaTextComponentPattern.stories.tsx"
         }
       ]
     },
@@ -1366,6 +1366,15 @@
       ]
     },
     {
+      "id": "./src/components/small-hero-zhd/SmallHeroZhd.tsx",
+      "name": "./src/components/small-hero-zhd/SmallHeroZhd.tsx",
+      "reasons": [
+        {
+          "moduleName": "./src/components/small-hero-zhd/SmallHeroZhd.stories.tsx"
+        }
+      ]
+    },
+    {
       "id": "./src/components/single-link-list/SingleLinkList.tsx",
       "name": "./src/components/single-link-list/SingleLinkList.tsx",
       "reasons": [
@@ -1374,15 +1383,6 @@
         },
         {
           "moduleName": "./src/components/single-link-list/index.ts"
-        }
-      ]
-    },
-    {
-      "id": "./src/components/small-hero-zhd/SmallHeroZhd.tsx",
-      "name": "./src/components/small-hero-zhd/SmallHeroZhd.tsx",
-      "reasons": [
-        {
-          "moduleName": "./src/components/small-hero-zhd/SmallHeroZhd.stories.tsx"
         }
       ]
     },
@@ -1495,63 +1495,6 @@
       ]
     },
     {
-      "id": "./src/components/layout/Layout.tsx",
-      "name": "./src/components/layout/Layout.tsx",
-      "reasons": [
-        {
-          "moduleName": "./src/components/layout/index.ts"
-        },
-        {
-          "moduleName": "./src/components/layout/Layout.stories.tsx"
-        }
-      ]
-    },
-    {
-      "id": "./src/components/rich-text/RichText.tsx",
-      "name": "./src/components/rich-text/RichText.tsx",
-      "reasons": [
-        {
-          "moduleName": "./src/components/rich-text/index.ts"
-        },
-        {
-          "moduleName": "./src/components/rich-text/RichText.stories.tsx"
-        }
-      ]
-    },
-    {
-      "id": "./src/components/scrollbar/Scrollbar.tsx",
-      "name": "./src/components/scrollbar/Scrollbar.tsx",
-      "reasons": [
-        {
-          "moduleName": "./src/components/scrollbar/index.ts"
-        },
-        {
-          "moduleName": "./src/components/scrollbar/Scrollbar.stories.tsx"
-        }
-      ]
-    },
-    {
-      "id": "./src/components/zsd-link/ZsdLink.interface.ts",
-      "name": "./src/components/zsd-link/ZsdLink.interface.ts",
-      "reasons": [
-        {
-          "moduleName": "./src/components/zsd-link/index.ts"
-        }
-      ]
-    },
-    {
-      "id": "./src/components/card-media-component/CardMedia.tsx",
-      "name": "./src/components/card-media-component/CardMedia.tsx",
-      "reasons": [
-        {
-          "moduleName": "./src/components/card-media-component/index.ts"
-        },
-        {
-          "moduleName": "./src/components/card-media-component/CardMedia.stories.tsx"
-        }
-      ]
-    },
-    {
       "id": "./src/tailwind/styles/focus.ts",
       "name": "./src/tailwind/styles/focus.ts",
       "reasons": [
@@ -1566,6 +1509,18 @@
         },
         {
           "moduleName": "./src/components/form-fields/input/Input.tsx"
+        }
+      ]
+    },
+    {
+      "id": "./src/components/card-media-component/CardMedia.tsx",
+      "name": "./src/components/card-media-component/CardMedia.tsx",
+      "reasons": [
+        {
+          "moduleName": "./src/components/card-media-component/CardMedia.stories.tsx"
+        },
+        {
+          "moduleName": "./src/components/card-media-component/index.ts"
         }
       ]
     },
@@ -1603,6 +1558,18 @@
       ]
     },
     {
+      "id": "./src/components/layout/Layout.tsx",
+      "name": "./src/components/layout/Layout.tsx",
+      "reasons": [
+        {
+          "moduleName": "./src/components/layout/Layout.stories.tsx"
+        },
+        {
+          "moduleName": "./src/components/layout/index.ts"
+        }
+      ]
+    },
+    {
       "id": "./src/components/lightbox-contact-form-zsd/index.ts",
       "name": "./src/components/lightbox-contact-form-zsd/index.ts",
       "reasons": [
@@ -1629,6 +1596,30 @@
         },
         {
           "moduleName": "./src/components/modal-component/index.ts"
+        }
+      ]
+    },
+    {
+      "id": "./src/components/rich-text/RichText.tsx",
+      "name": "./src/components/rich-text/RichText.tsx",
+      "reasons": [
+        {
+          "moduleName": "./src/components/rich-text/RichText.stories.tsx"
+        },
+        {
+          "moduleName": "./src/components/rich-text/index.ts"
+        }
+      ]
+    },
+    {
+      "id": "./src/components/scrollbar/Scrollbar.tsx",
+      "name": "./src/components/scrollbar/Scrollbar.tsx",
+      "reasons": [
+        {
+          "moduleName": "./src/components/scrollbar/Scrollbar.stories.tsx"
+        },
+        {
+          "moduleName": "./src/components/scrollbar/index.ts"
         }
       ]
     },
@@ -1912,6 +1903,15 @@
       ]
     },
     {
+      "id": "./src/components/card-square/index.ts",
+      "name": "./src/components/card-square/index.ts",
+      "reasons": [
+        {
+          "moduleName": "./src/components/card-square-list/CardSquareList.tsx"
+        }
+      ]
+    },
+    {
       "id": "./src/hooks/useContainerDimensions.ts",
       "name": "./src/hooks/useContainerDimensions.ts",
       "reasons": [
@@ -1974,15 +1974,6 @@
       "reasons": [
         {
           "moduleName": "./src/components/card-square/CardSquare.tsx"
-        }
-      ]
-    },
-    {
-      "id": "./src/components/card-square/index.ts",
-      "name": "./src/components/card-square/index.ts",
-      "reasons": [
-        {
-          "moduleName": "./src/components/card-square-list/CardSquareList.tsx"
         }
       ]
     },
@@ -2200,6 +2191,15 @@
       ]
     },
     {
+      "id": "./src/components/media-text-component/index.ts",
+      "name": "./src/components/media-text-component/index.ts",
+      "reasons": [
+        {
+          "moduleName": "./src/components/media-text-component-pattern/MediaTextComponentPattern.tsx"
+        }
+      ]
+    },
+    {
       "id": "./src/components/video/ResponsivePlayer.tsx",
       "name": "./src/components/video/ResponsivePlayer.tsx",
       "reasons": [
@@ -2208,15 +2208,6 @@
         },
         {
           "moduleName": "./src/components/video/Video.tsx"
-        }
-      ]
-    },
-    {
-      "id": "./src/components/media-text-component/index.ts",
-      "name": "./src/components/media-text-component/index.ts",
-      "reasons": [
-        {
-          "moduleName": "./src/components/media-text-component-pattern/MediaTextComponentPattern.tsx"
         }
       ]
     },
@@ -2271,6 +2262,15 @@
       "reasons": [
         {
           "moduleName": "./src/components/navigation/Navigation.tsx"
+        }
+      ]
+    },
+    {
+      "id": "./src/components/zsd-link/ZsdLink.interface.ts",
+      "name": "./src/components/zsd-link/ZsdLink.interface.ts",
+      "reasons": [
+        {
+          "moduleName": "./src/components/zsd-link/index.ts"
         }
       ]
     },
