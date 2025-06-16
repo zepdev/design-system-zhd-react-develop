@@ -67,7 +67,7 @@ export const Navigation: FC<NavigationProps> = ({
           ))}
         </div>
         <div
-          className="zep-flex zep-gap-0.5 zep-items-center zep-cursor-pointer zep-group"
+          className="zep-flex zep-typography-bodyText zep-gap-0.5 zep-items-center zep-cursor-pointer zep-group"
           onClick={() => setLocaleSwitcherMenu(true)}
           onClickCapture={() => {
             datalayer?.push({
@@ -79,7 +79,7 @@ export const Navigation: FC<NavigationProps> = ({
           }}
         >
           <img className="zep-size-[18px]" alt="Language switch icon" src={languageIcon} />
-          <p className="zep-text-typography-dark-100 zep-font-500 zep-text-0.875 group-hover:zep-underline">
+          <p className="zep-typography-bodyText zep-text-typography-dark-100 zep-font-500 zep-text-0.875 group-hover:zep-underline">
             {`${selectedLocale?.country} | ${selectedLocale?.langAbbrev?.toUpperCase()}`}
           </p>
         </div>
