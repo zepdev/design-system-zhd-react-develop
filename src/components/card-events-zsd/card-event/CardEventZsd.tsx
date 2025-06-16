@@ -56,8 +56,8 @@ export const CardEventZsd: FC<CardEventZsdProps> = ({
           <p className="zep-typography-bodyText zep-text-typography-dark-100">{description}</p>
         </div>
         <div className="zep-flex zep-flex-col zep-gap-1">
-          <Link label={linkLabel} href={linkUrl} mode={LinkMode.Standalone} />
-          <Link label={externalLinkLabel} href={externalLinkUrl} target={LinkTarget.Blank} mode={LinkMode.Standalone} />
+          <Link iconPlacement="after" icon="arrow-right" label={linkLabel} href={linkUrl} mode={LinkMode.Standalone} />
+          <Link iconPlacement="after" icon="external-link" label={externalLinkLabel} href={externalLinkUrl} target={LinkTarget.Blank} mode={LinkMode.Standalone} />
         </div>
       </div>
     </div>
