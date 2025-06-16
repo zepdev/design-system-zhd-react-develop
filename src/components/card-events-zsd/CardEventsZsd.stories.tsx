@@ -34,12 +34,9 @@ type Story = StoryObj<typeof meta>;
 export const Default: Story = {
   args: {
     cards: Array.from({ length: 32 }).map(() => card),
-    total: 32,
     headline: 'Headline',
     tagline: 'Tagline',
     linkText: 'Standalone Link',
     type: 'link',
-    currentPage: 1,
-    setCurrentPage: (page: number) => console.log(page),
   } as CardEventsZsdProps,
 };
