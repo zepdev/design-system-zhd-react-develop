@@ -1,3 +1,12 @@
+## [1.10.2](https://github.com/zepdev/design-system-zhd-react/compare/v1.10.1...v1.10.2) (2025-06-16)
+
+
+### Bug Fixes
+
+* card events zsd ([2084eb3](https://github.com/zepdev/design-system-zhd-react/commit/2084eb3cc79379ad15cd495ba17505fc6e652800))
+* card events zsd header ([d9167de](https://github.com/zepdev/design-system-zhd-react/commit/d9167dee649ecccc6340caeaf0fa9d91cebd89c8))
+* export card events zsd ([63eac89](https://github.com/zepdev/design-system-zhd-react/commit/63eac89e086e321ab10d50295d8398d01f637335))
+
 ## [1.10.1](https://github.com/zepdev/design-system-zhd-react/compare/v1.10.0...v1.10.1) (2025-06-16)
 
 
