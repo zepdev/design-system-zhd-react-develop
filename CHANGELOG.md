@@ -1,3 +1,11 @@
+## [1.10.3](https://github.com/zepdev/design-system-zhd-react/compare/v1.10.2...v1.10.3) (2025-06-16)
+
+
+### Bug Fixes
+
+* font style wrong ([b47af16](https://github.com/zepdev/design-system-zhd-react/commit/b47af16821f80de82645d5cd238d170c97ed2055))
+* font text correctly implement ([a7e139d](https://github.com/zepdev/design-system-zhd-react/commit/a7e139da191246a83fd0dd87d3f38f5f1056d2a9))
+
 ## [1.10.2](https://github.com/zepdev/design-system-zhd-react/compare/v1.10.1...v1.10.2) (2025-06-16)
 
 
