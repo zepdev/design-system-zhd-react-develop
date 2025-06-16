@@ -15,30 +15,18 @@ Add roboto flex font face
 @tailwind components;
 @tailwind utilities;
 
-.theme_cat .zep-typography-headline2XL,
-.theme_cat .zep-typography-headlineXL,
-.theme_cat .zep-typography-headlineLG,
-.theme_cat .zep-typography-headlineMD,
-.theme_cat .zep-typography-headlineSM,
-.theme_cat .zep-typography-headlineXS,
-.theme_cat .zep-typography-headlineXS-fluid-cqi,
-.theme_cat .zep-typography-headlineSM-fluid-cqi,
-.theme_cat .zep-typography-headlineMD-fluid-cqi,
-.theme_cat .zep-typography-headlineLG-fluid-cqi,
-.theme_cat .zep-typography-headlineXL-fluid-cqi,
-.theme_cat .zep-typography-headline2XL-fluid-cqi,
-.theme_powersystems .zep-typography-headline2XL,
-.theme_powersystems .zep-typography-headlineXL,
-.theme_powersystems .zep-typography-headlineLG,
-.theme_powersystems .zep-typography-headlineMD,
-/* .theme_powersystems .zep-typography-headlineSM, */
-/* .theme_powersystems .zep-typography-headlineXS, */
-.theme_powersystems .zep-typography-headlineXS-fluid-cqi,
-.theme_powersystems .zep-typography-headlineSM-fluid-cqi,
-.theme_powersystems .zep-typography-headlineMD-fluid-cqi,
-.theme_powersystems .zep-typography-headlineLG-fluid-cqi,
-.theme_powersystems .zep-typography-headlineXL-fluid-cqi,
-.theme_powersystems .zep-typography-headline2XL-fluid-cqi {
+.zep-typography-headline2XL,
+.zep-typography-headlineXL,
+.zep-typography-headlineLG,
+.zep-typography-headlineMD,
+.zep-typography-headlineSM,
+.zep-typography-headlineXS,
+.zep-typography-headlineXS-fluid-cqi,
+.zep-typography-headlineSM-fluid-cqi,
+.zep-typography-headlineMD-fluid-cqi,
+.zep-typography-headlineLG-fluid-cqi,
+.zep-typography-headlineXL-fluid-cqi,
+.zep-typography-headline2XL-fluid-cqi {
   font-variation-settings:
     'wght' 800,
     'wdth' 55,
@@ -66,10 +54,8 @@ Add roboto flex font face
     'opsz' 17;
 }
 
-.theme_cat .zep-typography-link:hover,
-.theme_cat .zep-typography-linkSM:hover,
-.theme_powersystems .zep-typography-link:hover,
-.theme_powersystems .zep-typography-linkSM:hover {
+.zep-typography-link:hover,
+.zep-typography-linkSM:hover {
   font-variation-settings:
     'wght' 400,
     'wdth' 100,
