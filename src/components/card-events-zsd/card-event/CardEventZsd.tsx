@@ -20,13 +20,12 @@ export const CardEventZsd: FC<CardEventZsdProps> = ({
 
   return (
     <div className="zep-flex xl:zep-flex-row zep-flex-col zep-border-1 zep-w-full zep-border-greyscale-400 zep-bg-greyscale-0">
-      <div className="zep-flex zep-flex-col sm:zep-flex-row">
+      <div className="zep-flex zep-flex-col sm:zep-flex-row zep-h-[183px] sm:zep-h-[160px] md:zep-h-[210px] xl:zep-h-[263px]">
         <div
           className={clsx(
             'sm:zep-border-r-1 sm:zep-border-r-greyscale-400 zep-border-b-1 zep-border-b-greyscale-400 sm:zep-border-b-[0]',
-            'zep-flex zep-grow-0 zep-items-center',
+            'zep-flex zep-grow-0 zep-items-center zep-justify-center',
             'xl:zep-min-w-[50%] sm:zep-min-w-[40%] zep-min-w-full',
-            'zep-aspect-[16/9]',
           )}
         >
           <img className="zep-w-auto zep-h-auto zep-object-cover" src={imageSrc} alt={imageAlt} />
