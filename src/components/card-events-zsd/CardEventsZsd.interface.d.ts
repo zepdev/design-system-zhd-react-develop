@@ -1,7 +1,7 @@
-import { CardEventProps } from './card-event';
+import { CardEventZsdProps } from './card-event';
 import { HeaderLongProps } from '../header-long';
 
 export interface CardEventsZsdProps extends Partial<HeaderLongProps> {
-    cards: CardEventProps[];
+    cards: CardEventZsdProps[];
 }
 //# sourceMappingURL=CardEventsZsd.interface.d.ts.map
