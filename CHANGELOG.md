@@ -1,3 +1,10 @@
+## [1.10.6](https://github.com/zepdev/design-system-zhd-react/compare/v1.10.5...v1.10.6) (2025-06-16)
+
+
+### Bug Fixes
+
+* card events zsd width ([6826e79](https://github.com/zepdev/design-system-zhd-react/commit/6826e79fb43a72e62b73be729eae7384f07d1635))
+
 ## [1.10.5](https://github.com/zepdev/design-system-zhd-react/compare/v1.10.4...v1.10.5) (2025-06-16)
 
 
