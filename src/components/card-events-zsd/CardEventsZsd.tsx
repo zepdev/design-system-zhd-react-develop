@@ -16,7 +16,7 @@ export const CardEventsZsd: FC<CardEventsZsdProps> = ({ cards, ...headerProps })
       className="zep-flex zep-flex-col xl:zep-gap-5 md:zep-gap-4 sm:zep-gap-3 zep-gap-2.5"
       testId="zep-card-events"
     >
-      <HeaderLongComponent {...headerProps} />
+      {headerProps.headline && <HeaderLongComponent headline={headerProps.headline} {...headerProps} />}
       <div className="zep-flex zep-flex-col md:zep-gap-2 zep-gap-1.5">
         {cards.slice(startIndex, endIndex).map((card) => (
           <CardEventZsd {...card} />
