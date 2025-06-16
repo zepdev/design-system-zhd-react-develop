@@ -1,3 +1,11 @@
+## [1.10.4](https://github.com/zepdev/design-system-zhd-react/compare/v1.10.3...v1.10.4) (2025-06-16)
+
+
+### Bug Fixes
+
+* card events zsd styling ([f47abb7](https://github.com/zepdev/design-system-zhd-react/commit/f47abb7b8dbf087194d0b51ee2addcffc8eb24d6))
+* font weight ([c2c2e4e](https://github.com/zepdev/design-system-zhd-react/commit/c2c2e4e9b975995c73cd09bdaefd83f6f1f71a78))
+
 ## [1.10.3](https://github.com/zepdev/design-system-zhd-react/compare/v1.10.2...v1.10.3) (2025-06-16)
 
 
