@@ -24,17 +24,17 @@ export const CardEventZsd: FC<CardEventZsdProps> = ({
         <div
           className={clsx(
             'sm:zep-border-r-1 sm:zep-border-r-greyscale-400 zep-border-b-1 zep-border-b-greyscale-400 sm:zep-border-b-[0]',
-            'zep-flex zep-items-center',
-            'xl:zep-w-[30%] md:zep-w-[40%] sm:zep-w-[50%] zep-w-full',
+            'zep-flex zep-grow-0 zep-items-center',
+            'xl:zep-min-w-[50%] sm:zep-min-w-[40%] zep-min-w-full',
             'zep-aspect-[16/9]',
           )}
         >
           <img className="zep-w-auto zep-h-auto zep-object-cover" src={imageSrc} alt={imageAlt} />
         </div>
         <div className={clsx(
-          'xl:zep-w-[30%] md:zep-w-[60%] sm:zep-w-[50%] zep-w-full',
+          'xl:zep-min-w-[50%] sm:zep-min-w-[60%] zep-min-w-full',
           'md:zep-px-2.5 md:zep-p-2 sm:zep-p-1.5 zep-p-1',
-          'zep-flex zep-grow zep-flex-col sm:zep-justify-between zep-gap-0.5',
+          'zep-flex zep-grow-0 zep-flex-col sm:zep-justify-between zep-gap-0.5',
         )}>
           <div>
             <h3
@@ -46,8 +46,8 @@ export const CardEventZsd: FC<CardEventZsdProps> = ({
       </div>
       <div
         className={clsx(
-          'xl:zep-border-l-greyscale-400 xl:zep-border-l-1 zep-border-t-1 zep-border-t-greyscale-400',
-          'zep-grow zep-flex zep-flex-col xl:zep-justify-between md:zep-gap-2 zep-gap-1.5',
+          'xl:zep-border-l-greyscale-400 xl:zep-border-l-1 xl:zep-border-t-[0] zep-border-t-1 zep-border-t-greyscale-400',
+          'zep-grow zep-shrink-0 zep-flex zep-flex-col xl:zep-justify-between md:zep-gap-2 zep-gap-1.5',
           'md:zep-px-2.5 md:zep-py-2 sm:zep-p-1.5 zep-p-1',
         )}
       >
