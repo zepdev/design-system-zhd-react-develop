@@ -67,7 +67,7 @@ export const Navigation: FC<NavigationProps> = ({
           ))}
         </div>
         <div
-          className="zep-flex zep-gap-0.5 zep-items-center zep-cursor-pointer zep-group"
+          className="zep-flex zep-typography-bodyText zep-gap-0.5 zep-items-center zep-cursor-pointer zep-group"
           onClick={() => setLocaleSwitcherMenu(true)}
           onClickCapture={() => {
             datalayer?.push({
