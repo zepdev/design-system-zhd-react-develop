@@ -53,3 +53,4 @@ export * from './usp-list';
 export * from './video';
 export * from './zsd-button';
 export * from './zsd-link';
+export * from './card-events-zsd';
