@@ -204,10 +204,6 @@ const TextHighlight = ({
             className={clsx(
               'zep-max-w-[1728px]',
               'zep-w-full',
-              'zep-px-1',
-              'sm:zep-px-1.5',
-              'md:zep-px-[66px]',
-              'lg:zep-px-[122px]',
             )}
           >
             <HeaderLongComponent headline={headline} {...headerLongProps} />
