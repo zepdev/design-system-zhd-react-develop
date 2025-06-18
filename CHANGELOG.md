@@ -1,3 +1,10 @@
+## [1.10.9](https://github.com/zepdev/design-system-zhd-react/compare/v1.10.8...v1.10.9) (2025-06-18)
+
+
+### Bug Fixes
+
+* removed extra spacing ([06b7162](https://github.com/zepdev/design-system-zhd-react/commit/06b716292b85bf3f99f95e10b478dbd4d36b6e6b))
+
 ## [1.10.8](https://github.com/zepdev/design-system-zhd-react/compare/v1.10.7...v1.10.8) (2025-06-16)
 
 
