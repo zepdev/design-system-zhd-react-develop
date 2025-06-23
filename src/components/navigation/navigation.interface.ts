@@ -29,11 +29,6 @@ export interface SidebarProps {
   labelBack: string;
   setSelectedLocale?: (x: Locale) => void;
   navigationUtilityItems?: NavUtilityItem[];
-
-  parent1: number; 
-  homeItems1: any[]; 
-  currentItems1: any[]; 
-  activePath1: any[]; 
 }
 
 export interface NavigationProps {

@@ -84,7 +84,6 @@ export const LanguageSwitcher: FC<LanguageSwitcherProps> = ({
                 <Radio
                   id={locale.value}
                   name={locale.label}
-                  className='!zep-text-typography-dark-100'
                   label={locale?.label}
                   onChange={() => {
                     if (setSelectedLocale) {
@@ -140,7 +139,6 @@ export const LanguageSwitcher: FC<LanguageSwitcherProps> = ({
                       id={locale.value}
                       name={locale.label}
                       label={locale?.label}
-                      className='!zep-text-typography-dark-100'
                       onChange={() => {
                         if (setSelectedLocale) {
                           setSelectedLocale(locale);

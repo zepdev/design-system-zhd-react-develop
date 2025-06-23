@@ -1,10 +1,10 @@
 import { FunctionalIcon, Link, LinkMode } from '@zepdev/design-system-component-library-react';
 import { useEffect, useState } from 'react';
 import languageIcon from '../../assets/language-icon.svg';
+import { useScreenSize } from '../../hooks/useScreenSize';
 import { getDataLayer } from '../../utils/getDataLayer';
 import { LanguageSwitcher } from './LanguageSwitcher';
 import { NavigationItem, NavigationMenuProps, SidebarProps } from './navigation.interface';
-import { useScreenSize } from '../../hooks/useScreenSize';
 
 export const Sidebar: React.FC<SidebarProps> = ({
   navItems,
@@ -57,9 +57,6 @@ export const Sidebar: React.FC<SidebarProps> = ({
     // Calculate depth based on activePath
     const navigationDepth = activePath.length;
 
-    // Log the depth
-    console.log(`Current navigation depth: ${navigationDepth}`);
-
     useEffect(() => {
       if (initialPath && initialPath?.length > 0) {
         setActivePath(initialPath);
@@ -98,7 +95,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
     const homeItems = getCurrentLevelItems(items, activePath.slice(0, -1));
     const { width } = useScreenSize();
 
-    const checkBackArrow = width > 1024 ? activePath.length > 1 : activePath.length > 0;  
+    const checkBackArrow = width > 1024 ? activePath.length > 1 : activePath.length > 0;
 
     return (
       <div className={animate ? 'zep-animate-slide-in' : backAnimation ? 'zep-animate-slide-out' : ''}>
@@ -124,7 +121,6 @@ export const Sidebar: React.FC<SidebarProps> = ({
                 }, 300);
               }}
             />
-            xxxxx
           </div>
         )}
         <ul>
