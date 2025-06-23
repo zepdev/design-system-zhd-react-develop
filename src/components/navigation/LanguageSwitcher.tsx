@@ -1,4 +1,4 @@
-import { FunctionalIcon, Link, LinkMode, Radio, RadioVariant } from '@zepdev/design-system-component-library-react';
+import { FunctionalIcon, Link, LinkMode, Radio } from '@zepdev/design-system-component-library-react';
 import { FC, useEffect, useState } from 'react';
 import { getDataLayer } from '../../utils/getDataLayer';
 import { LanguageSwitcherProps, Locale } from './navigation.interface';
@@ -97,7 +97,7 @@ export const LanguageSwitcher: FC<LanguageSwitcherProps> = ({
                     }
                   }}
                   checked={selectedLocale?.value === locale?.value}
-                  variant={RadioVariant.Zsd}
+                  variant={"ZSD" as any} 
                 />
               ))}
             </div>
@@ -151,7 +151,7 @@ export const LanguageSwitcher: FC<LanguageSwitcherProps> = ({
                         }
                       }}
                       checked={selectedLocale?.value === locale?.value}
-                      variant={RadioVariant.Zsd}
+                      variant={"ZSD" as any} 
                     />
                   ))}
                 </div>
