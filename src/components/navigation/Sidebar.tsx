@@ -54,9 +54,6 @@ export const Sidebar: React.FC<SidebarProps> = ({
     const [animate, setAnimate] = useState(false);
     const [backAnimation, setBackAnimation] = useState(false);
 
-    // Calculate depth based on activePath
-    const navigationDepth = activePath.length;
-
     useEffect(() => {
       if (initialPath && initialPath?.length > 0) {
         setActivePath(initialPath);
