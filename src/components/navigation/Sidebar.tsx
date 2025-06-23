@@ -1,6 +1,7 @@
 import { FunctionalIcon, Link, LinkMode } from '@zepdev/design-system-component-library-react';
 import { useEffect, useState } from 'react';
 import languageIcon from '../../assets/language-icon.svg';
+import { useScreenSize } from '../../hooks/useScreenSize';
 import { getDataLayer } from '../../utils/getDataLayer';
 import { LanguageSwitcher } from './LanguageSwitcher';
 import { NavigationItem, NavigationMenuProps, SidebarProps } from './navigation.interface';
@@ -89,10 +90,13 @@ export const Sidebar: React.FC<SidebarProps> = ({
 
     const currentItems = getCurrentLevelItems(items, activePath);
     const homeItems = getCurrentLevelItems(items, activePath.slice(0, -1));
+    const { width } = useScreenSize();
+
+    const checkBackArrow = width > 1024 ? activePath.length > 1 : activePath.length > 0;
 
     return (
       <div className={animate ? 'zep-animate-slide-in' : backAnimation ? 'zep-animate-slide-out' : ''}>
-        {activePath.length > 0 && (
+        {checkBackArrow && (
           <div className={`zep-text-typography-dark-100 zep-mb-2.5 zep-flex zep-gap-0.5 zep-items-center`}>
             <Link
               mode={LinkMode.Standalone}
@@ -309,6 +313,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
             </div>
           </div>
         </div>
+
         <div
           onClick={closeSidebar}
           onClickCapture={() => {
