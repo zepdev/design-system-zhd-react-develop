@@ -1,4 +1,4 @@
-import { FunctionalIcon, Link, LinkMode, Radio, RadioVariant } from '@zepdev/design-system-component-library-react';
+import { FunctionalIcon, Link, LinkMode, Radio } from '@zepdev/design-system-component-library-react';
 import { FC, useEffect, useState } from 'react';
 import { getDataLayer } from '../../utils/getDataLayer';
 import { LanguageSwitcherProps, Locale } from './navigation.interface';
@@ -84,6 +84,7 @@ export const LanguageSwitcher: FC<LanguageSwitcherProps> = ({
                 <Radio
                   id={locale.value}
                   name={locale.label}
+                  className='!zep-text-typography-dark-100'
                   label={locale?.label}
                   onChange={() => {
                     if (setSelectedLocale) {
@@ -97,7 +98,7 @@ export const LanguageSwitcher: FC<LanguageSwitcherProps> = ({
                     }
                   }}
                   checked={selectedLocale?.value === locale?.value}
-                  variant={RadioVariant.Zsd}
+                  variant={"ZSD" as any} 
                 />
               ))}
             </div>
@@ -139,6 +140,7 @@ export const LanguageSwitcher: FC<LanguageSwitcherProps> = ({
                       id={locale.value}
                       name={locale.label}
                       label={locale?.label}
+                      className='!zep-text-typography-dark-100'
                       onChange={() => {
                         if (setSelectedLocale) {
                           setSelectedLocale(locale);
@@ -151,7 +153,7 @@ export const LanguageSwitcher: FC<LanguageSwitcherProps> = ({
                         }
                       }}
                       checked={selectedLocale?.value === locale?.value}
-                      variant={RadioVariant.Zsd}
+                      variant={"ZSD" as any} 
                     />
                   ))}
                 </div>
