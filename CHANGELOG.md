@@ -1,3 +1,10 @@
+## [1.10.12](https://github.com/zepdev/design-system-zhd-react/compare/v1.10.11...v1.10.12) (2025-06-24)
+
+
+### Bug Fixes
+
+* close button hover effect color ([39f2790](https://github.com/zepdev/design-system-zhd-react/commit/39f279015cb79f0ef3b2bef37b2c75b218517705))
+
 ## [1.10.11](https://github.com/zepdev/design-system-zhd-react/compare/v1.10.10...v1.10.11) (2025-06-24)
 
 
