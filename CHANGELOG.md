@@ -1,3 +1,11 @@
+## [1.10.11](https://github.com/zepdev/design-system-zhd-react/compare/v1.10.10...v1.10.11) (2025-06-24)
+
+
+### Bug Fixes
+
+* console.log ([b338957](https://github.com/zepdev/design-system-zhd-react/commit/b3389575421076a87c529b2c81cb2b03ce8a4ab1))
+* gtm id ([95e8a3f](https://github.com/zepdev/design-system-zhd-react/commit/95e8a3f772adcb956c65544520e110805f183f04))
+
 ## [1.10.10](https://github.com/zepdev/design-system-zhd-react/compare/v1.10.9...v1.10.10) (2025-06-23)
 
 
