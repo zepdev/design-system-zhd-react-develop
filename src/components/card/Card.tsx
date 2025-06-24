@@ -121,7 +121,7 @@ export const Card: FC<CardProps> = ({
                 event: 'interaction_tile',
                 link_text: title,
                 link_context: gtmHeadline,
-                link_section: gtmid,
+                link_section: gtm_id,
               });
             }}
           />
