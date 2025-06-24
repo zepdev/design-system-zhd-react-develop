@@ -23,7 +23,7 @@ export const ModalComponent: FC<ModalProps> = ({ isOpen, onClose, label, childre
           <div className="zep-flex zep-justify-end zep-mb-[4px] zep-right-[0]">
             <Button
               icon="close"
-              className="zep-max-h-3 zep-max-w-3 zep-mb-0.25 zep-cursor-pointer"
+              className="zep-max-h-3 zep-max-w-3 zep-mb-0.25 zep-cursor-pointer zep-ring-darkgrey-400 !zep-text-typography-dark-100"
               label=""
               onClick={onClose}
               title="Button title"
