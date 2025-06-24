@@ -2,6 +2,7 @@ import { Link, LinkMode, LinkTarget } from '@zepdev/design-system-component-libr
 import React from 'react';
 import { getDataLayer } from '../../utils/getDataLayer';
 import { getUrlWithTrailingSlash } from '../../utils/getUrlWithTrailingSlash';
+import { slugify } from '../../utils/slugify';
 import { Layout } from '../layout';
 import { MultiLinkList } from '../multi-link-list';
 import { FooterProps } from './Footer.interface';
@@ -46,6 +47,14 @@ export const Footer: React.FC<FooterProps> = ({
                       socialIcon={link.socialIcon}
                       icon={link.icon}
                       href={getUrlWithTrailingSlash(link.href)}
+                      onClickCapture={() => {
+                        datalayer?.push({
+                          event: 'interaction_footer',
+                          link_text: link.socialIcon,
+                          link_context: link.socialIcon,
+                          link_section: `module-footer-${slugify(link?.socialIcon || '')}`,
+                        });
+                      }}
                     />
                   </div>
                 ))}
@@ -65,8 +74,8 @@ export const Footer: React.FC<FooterProps> = ({
                       datalayer?.push({
                         event: 'interaction_footer',
                         link_text: link.label,
-                        link_context: 'Under Footer links',
-                        link_section: 'Under Footer Links',
+                        link_context: link.label,
+                        link_section: `module-footer-${slugify(link.label)}`,
                       });
                     }}
                     href={getUrlWithTrailingSlash(link.href)}
