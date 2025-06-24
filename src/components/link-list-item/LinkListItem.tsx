@@ -75,7 +75,9 @@ const Links = ({ links, headline, isFooterList, type }: LinkListItemProps) => {
             if (link.href?.startsWith('tel:') || link.href?.startsWith('mailto:')) {
               event = 'interaction_contact';
             }
-            
+
+            console.log('link.label', link.label, headline, isFooterList ? 'footer' : sectionId);
+
             datalayer?.push({
               event,
               link_text: link.label,

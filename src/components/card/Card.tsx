@@ -3,6 +3,7 @@ import clsx from 'clsx';
 import { FC } from 'react';
 import { getDataLayer } from '../../utils/getDataLayer';
 import { getUrlWithTrailingSlash } from '../../utils/getUrlWithTrailingSlash';
+import { slugify } from '../../utils/slugify';
 import { CardProps } from './card.interface';
 
 export const Card: FC<CardProps> = ({
@@ -25,6 +26,9 @@ export const Card: FC<CardProps> = ({
     }
   };
   const datalayer = getDataLayer();
+
+  const gtm_id = gtmid || slugify(`module-card-list ${gtmHeadline} ${title}` ?? '');
+
   return (
     <div
       onClick={onClick}
@@ -33,7 +37,7 @@ export const Card: FC<CardProps> = ({
           event: 'interaction_tile',
           link_text: title,
           link_context: gtmHeadline,
-          link_section: gtmid,
+          link_section: gtm_id,
         });
       }}
       data-testid="card-component"
@@ -112,6 +116,14 @@ export const Card: FC<CardProps> = ({
             label={linkLabel}
             mode={LinkMode.Standalone}
             href={getUrlWithTrailingSlash(url)}
+            onClickCapture={() => {
+              datalayer?.push({
+                event: 'interaction_tile',
+                link_text: title,
+                link_context: gtmHeadline,
+                link_section: gtmid,
+              });
+            }}
           />
         )}
       </div>
