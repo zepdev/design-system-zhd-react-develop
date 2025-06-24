@@ -76,8 +76,6 @@ const Links = ({ links, headline, isFooterList, type }: LinkListItemProps) => {
               event = 'interaction_contact';
             }
 
-            console.log('link.label', link.label, headline, isFooterList ? 'footer' : sectionId);
-
             datalayer?.push({
               event,
               link_text: link.label,
