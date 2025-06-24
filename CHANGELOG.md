@@ -1,3 +1,10 @@
+## [1.10.13](https://github.com/zepdev/design-system-zhd-react/compare/v1.10.12...v1.10.13) (2025-06-24)
+
+
+### Bug Fixes
+
+* card layer ([307166d](https://github.com/zepdev/design-system-zhd-react/commit/307166d1ea513d8437bf896060494271d5918b4a))
+
 ## [1.10.12](https://github.com/zepdev/design-system-zhd-react/compare/v1.10.11...v1.10.12) (2025-06-24)
 
 
