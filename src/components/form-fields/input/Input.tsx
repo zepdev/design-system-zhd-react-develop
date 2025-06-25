@@ -61,7 +61,7 @@ export const Input: React.FC<InputProps> = forwardRef<HTMLInputElement, InputPro
     return (
       <div
         className={clsx(
-          'zep-inline-flex zep-flex-col zep-flex-wrap zep-items-stretch zep-justify-start zep-relative zep-mb-2',
+          'zep-inline-flex zep-flex-col zep-flex-wrap zep-items-stretch zep-justify-start zep-relative zep-mb-1',
           disabled ? 'zep-cursor-not-allowed zep-opacity-disabled' : 'zep-cursor-pointer',
           props.className,
         )}

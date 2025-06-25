@@ -28,7 +28,7 @@ export const PhoneInput = ({
   return (
     <div
       className={clsx(
-        'zep-inline-flex zep-flex-col zep-flex-wrap zep-items-stretch zep-justify-start zep-relative zep-group zep-w-full zep-mb-2',
+        'zep-inline-flex zep-flex-col zep-flex-wrap zep-items-stretch zep-justify-start zep-relative zep-group zep-w-full zep-mb-1',
         [disabled ? 'zep-cursor-not-allowed zep-opacity-disabled' : 'zep-cursor-pointer'],
         className,
       )}
