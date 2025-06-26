@@ -17,6 +17,11 @@ const locales = [
   { label: 'Deutsch', value: 'de', country: 'Deutschland', langAbbrev: 'DE' },
   { label: 'English', value: 'en', country: 'Deutschland', langAbbrev: 'EN' },
   { label: 'Deutsch', value: 'de-AT', country: 'Österreich', langAbbrev: 'DE' },
+  { label: 'English', value: 'fr', country: 'Frankreich', langAbbrev: 'EN' },
+  { label: 'English', value: 'it', country: 'Italien', langAbbrev: 'EN' },
+  { label: 'English', value: 'us', country: 'VSA', langAbbrev: 'EN' },
+  { label: 'English', value: 'gb', country: 'Große Britanien', langAbbrev: 'EN' },
+  { label: 'English', value: 'in', country: 'Indien', langAbbrev: 'EN' },
 ];
 
 export const Default: Story = {

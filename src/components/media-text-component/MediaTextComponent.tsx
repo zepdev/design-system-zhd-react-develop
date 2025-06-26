@@ -45,7 +45,6 @@ const MediaTextComponent = ({
           'zep-gap-1.5',
           'md:zep-gap-2.5',
           'xl:zep-gap-5',
-
           mediaAlignment === 'left' ? 'md:zep-flex-row' : 'md:zep-flex-row-reverse',
           contentAlignment === 'center' ? 'zep-items-center' : 'zep-items-start',
         )}
@@ -128,7 +127,7 @@ const MediaTextBody = ({ children }: MediaTextComponentBodyProps) => {
         xl:zep-min-w-[700px]
         zep-flex
         zep-flex-col
-        zep-gap-1.5`,
+        zep-gap-1`,
       )}
       data-testid="zep-mediaText-body"
     >
