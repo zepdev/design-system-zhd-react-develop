@@ -66,7 +66,7 @@ const ContactFormZsd: FC<ContactFormZsdProps> = ({
 
       <form onSubmit={handleSubmit(submitFunction)}>
         <input type="text" style={{ display: 'none' }} {...register('honeypot')} />
-        <p className="zep-typography-headlineSM-fluid-cqi zep-mb-2 zep-text-typography-dark-100">
+        <p className="zep-typography-headlineSM-fluid-cqi zep-mb-1.5 zep-text-typography-dark-100">
           {contactFormZsdLocales[locale]['Schreiben Sie uns eine Nachricht']}
         </p>
 
@@ -76,12 +76,12 @@ const ContactFormZsd: FC<ContactFormZsdProps> = ({
           className="zep-h-[126px]"
         />
 
-        <p className="zep-typography-headlineSM-fluid-cqi zep-mb-2 zep-text-typography-dark-100">
+        <p className="zep-typography-headlineSM-fluid-cqi zep-mb-1 zep-text-typography-dark-100">
           {contactFormZsdLocales[locale]['Kontaktdaten']}
         </p>
 
         <p className="zep-mb-0.5 zep-text-typography-dark-100">{contactFormZsdLocales[locale]['Anrede']}</p>
-        <div className="zep-flex zep-gap-2 zep-mb-2">
+        <div className="zep-flex zep-gap-2 zep-mb-1">
           <Radio
             id={'Frau'}
             label={contactFormZsdLocales[locale]['Frau']}
