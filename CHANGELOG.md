@@ -1,3 +1,10 @@
+## [1.10.14](https://github.com/zepdev/design-system-zhd-react/compare/v1.10.13...v1.10.14) (2025-06-26)
+
+
+### Bug Fixes
+
+* media text, contact form, lang switcher ([650b9dd](https://github.com/zepdev/design-system-zhd-react/commit/650b9ddb30ca5db16c443ed3ad39fa799281af83))
+
 ## [1.10.13](https://github.com/zepdev/design-system-zhd-react/compare/v1.10.12...v1.10.13) (2025-06-24)
 
 
