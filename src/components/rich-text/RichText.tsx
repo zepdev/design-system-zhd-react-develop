@@ -107,7 +107,7 @@ const RichText = ({
             <ListComponent ordered={format === 'ordered'} items={children as React.ReactNode[]} />
           ),
           image: ({ image: { alternativeText, name, url, caption } }) => (
-            <Image url={url} alt={alternativeText ?? name} description={caption ?? name} isSingle={isSingleImage} />
+            <Image url={url} alt={alternativeText ?? name} description={caption} isSingle={isSingleImage} />
           ),
         }}
         modifiers={{
