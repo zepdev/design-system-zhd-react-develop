@@ -1,3 +1,11 @@
+## [1.10.15](https://github.com/zepdev/design-system-zhd-react/compare/v1.10.14...v1.10.15) (2025-06-27)
+
+
+### Bug Fixes
+
+* rich text ([8a8c243](https://github.com/zepdev/design-system-zhd-react/commit/8a8c2436bc1f9ed04d4efdf4171b6767293cb735))
+* rich text & contact form ([63ab9c9](https://github.com/zepdev/design-system-zhd-react/commit/63ab9c987e2dd28ca8d659da0062d73853635e8c))
+
 ## [1.10.14](https://github.com/zepdev/design-system-zhd-react/compare/v1.10.13...v1.10.14) (2025-06-26)
 
 
