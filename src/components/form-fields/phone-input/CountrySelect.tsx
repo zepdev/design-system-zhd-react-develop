@@ -76,19 +76,15 @@ export const CountrySelect = ({
             </Listbox.Button>
 
             <Listbox.Options
-              className="zep-absolute zep-outline zep-outline-1 zep-outline-greyscale-200 zep-drop-shadow-lg zep-rounded-4 zep-top-[calc(100%+8px)] zep-z-[100] zep-flex zep-max-h-[calc(4.5*48px)] zep-min-w-full zep-flex-col zep-overflow-y-scroll zep-bg-greyscale-0"
+              className="zep-absolute zep-outline zep-outline-1 zep-outline-darkgrey-500 zep-rounded-4 zep-top-[calc(100%+8px)] zep-z-[100] zep-flex zep-max-h-[calc(4.5*48px)] zep-min-w-full zep-flex-col zep-overflow-y-scroll zep-bg-greyscale-0"
               data-testid="zep-phone-input-country-select-list"
             >
               {options.map((option) => (
                 <Listbox.Option key={option.value + option.label} value={option.value} as={Fragment}>
-                  {({ active, selected }) => (
+                  {({ selected }) => (
                     <li
                       className={cx(
-                        'zep-typography-bodyText zep-flex zep-justify-between zep-py-0.75 zep-min-w-fit zep-items-center zep-whitespace-nowrap zep-gap-0.5 zep-px-1 hover:zep-bg-greyscale-200',
-                        {
-                          'zep-bg-greyscale-300': active,
-                          '!zep-bg-greyscale-300 zep-text-greyscale-900': selected,
-                        },
+                        'zep-typography-bodyText zep-flex zep-justify-between zep-py-0.75 zep-min-w-fit zep-items-center zep-whitespace-nowrap zep-gap-0.5 zep-px-1',
                       )}
                     >
                       <span className="zep-flex zep-gap-0.5 zep-items-center">
