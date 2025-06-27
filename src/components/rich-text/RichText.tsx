@@ -39,9 +39,11 @@ const Image: React.FC<ImageProps & { isSingle: boolean }> = ({ url, description,
     <div className="zep-aspect-[16/9]">
       <img src={url} alt={alt} className="zep-w-full zep-aspect-[16/9] zep-object-cover" />
     </div>
-    <span className="zep-hyphens-auto zep-break-normal zep-bg-greyscale-200 zep-w-full zep-text-typography-dark-70 zep-opacity-70 zep-py-0.5 zep-px-1 zep-typography-bodyText">
+    {description && (
+      <span className="zep-hyphens-auto zep-break-normal zep-bg-greyscale-200 zep-w-full zep-text-typography-dark-70 zep-opacity-70 zep-py-0.5 zep-px-1 zep-typography-bodyText">
       {description}
     </span>
+    )}
   </div>
 );
 
@@ -105,7 +107,7 @@ const RichText = ({
             <ListComponent ordered={format === 'ordered'} items={children as React.ReactNode[]} />
           ),
           image: ({ image: { alternativeText, name, url, caption } }) => (
-            <Image url={url} alt={alternativeText ?? name} description={caption ?? name} isSingle={isSingleImage} />
+            <Image url={url} alt={alternativeText ?? name} description={caption} isSingle={isSingleImage} />
           ),
         }}
         modifiers={{
