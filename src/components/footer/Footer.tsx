@@ -6,12 +6,14 @@ import { slugify } from '../../utils/slugify';
 import { Layout } from '../layout';
 import { MultiLinkList } from '../multi-link-list';
 import { FooterProps } from './Footer.interface';
+import { GlobalVariants } from '../../interfaces/global-variants';
 
 export const Footer: React.FC<FooterProps> = ({
   socialMediaLinks,
   socialMediaTitle,
   footerLinks,
   footerText,
+  variant = GlobalVariants.Zhd,
   ...multiLinkListProps
 }) => {
   const currentYear = new Date().getFullYear();
@@ -61,7 +63,7 @@ export const Footer: React.FC<FooterProps> = ({
               </div>
             </div>
             <div className="zep-flex lg:zep-flex-row zep-flex-col lg:zep-items-center lg:zep-gap-5 zep-gap-1 zep-py-1.5 zep-border-t-1 zep-border-t-greyscale-700 zep-w-full">
-              <p className="zep-text-greyscale-900 zep-typography-bodyText">{`© ${currentYear} Zeppelin GmbH`}</p>
+              <p className="zep-text-greyscale-900 zep-typography-bodyText">{`© ${currentYear} ${variant === GlobalVariants.Zsd ? 'Zeppelin Systems GmbH' : 'Zeppelin GmbH'}`}</p>
               <div className="zep-flex sm:zep-gap-3 zep-gap-1 sm:zep-items-center sm:zep-flex-row sm:zep-flex-wrap zep-flex-col">
                 {footerLinks.map((link) => (
                   <Link
