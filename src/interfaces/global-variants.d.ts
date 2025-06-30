@@ -1,7 +1,8 @@
 export declare enum GlobalVariants {
     Zps = "ZPS",
     Cat = "CAT",
-    Zsd = "ZSD"
+    Zsd = "ZSD",
+    Zhd = "ZHD"
 }
 export declare enum GlobalVariantExtended {
     ZpsBg = "ZPS_BG",
