@@ -1,3 +1,10 @@
+## [1.10.17](https://github.com/zepdev/design-system-zhd-react/compare/v1.10.16...v1.10.17) (2025-06-30)
+
+
+### Bug Fixes
+
+* media text contain ([6a31797](https://github.com/zepdev/design-system-zhd-react/commit/6a31797255d047cdeda85d9316a1d5bae46f1e79))
+
 ## [1.10.16](https://github.com/zepdev/design-system-zhd-react/compare/v1.10.15...v1.10.16) (2025-06-30)
 
 
