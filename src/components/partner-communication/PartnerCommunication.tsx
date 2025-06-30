@@ -10,6 +10,7 @@ export const PartnerCommunication = ({ id, headline, partners, variant }: Partne
     [GlobalVariants.Zps]: ['zep-text-typography-primary-default'],
     [GlobalVariants.Cat]: ['zep-text-typography-dark-100'],
     [GlobalVariants.Zsd]: ['zep-text-typography-dark-100'],
+    [GlobalVariants.Zhd]: ['zep-text-typography-dark-100'],
   };
 
   const partnerCommunicationCva = cva(
