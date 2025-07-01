@@ -1,3 +1,10 @@
+## [1.10.18](https://github.com/zepdev/design-system-zhd-react/compare/v1.10.17...v1.10.18) (2025-07-01)
+
+
+### Bug Fixes
+
+* update new version of react base component library ([8afd084](https://github.com/zepdev/design-system-zhd-react/commit/8afd0840ed4b972e8f293b31d2393b338a1a1c23))
+
 ## [1.10.17](https://github.com/zepdev/design-system-zhd-react/compare/v1.10.16...v1.10.17) (2025-06-30)
 
 
