@@ -1,20 +1,23 @@
+import { CookieLayer } from '@/components/cookie-layer/CookieLayer';
 import ReactPlayer from 'react-player';
 import play from '../../assets/play.svg';
-import { CookieLayer } from '@/components/cookie-layer/CookieLayer';
 import useVideoCookieCheck from './useVideoComplianceCheck';
+import { ReactNode } from 'react';
+
 interface ResponsivePlayerProps {
   url: string;
   thumbnail: string;
   thumbnailAlt: string;
   label?: string;
   description?: string;
+  children?: ReactNode;
 }
 
 export type OneTrustType = {
   ToggleInfoDisplay: () => void;
   OnConsentChanged: (callback: () => void) => void;
 };
-const ResponsivePlayer = ({ url, thumbnail, label, description }: ResponsivePlayerProps) => {
+const ResponsivePlayer = ({ url, thumbnail, label, description, children }: ResponsivePlayerProps) => {
   const { canPlay } = useVideoCookieCheck();
 
   const resetCookies = () => {
@@ -40,28 +43,32 @@ const ResponsivePlayer = ({ url, thumbnail, label, description }: ResponsivePlay
       }}
     >
       {!canPlay ? (
-        <CookieLayer label={label} description={description} onClickCookies={resetCookies} />
+          <CookieLayer label={label} description={description} onClickCookies={resetCookies} />
       ) : (
-        <ReactPlayer
-          controls
-          playIcon={
-            <img
-              alt="play"
-              className="zep-max-w-[48px] zep-max-h-[48px] md:zep-max-w-[100px] md:zep-max-h-[100px]"
-              src={play}
-            />
-          }
-          volume={0.7}
-          // light={<img src={thumbnail} alt={thumbnailAlt} />}
-          light={thumbnail}
-          url={url}
-          width="100%"
-          height="100%"
-          style={{ position: 'absolute', top: 0, left: 0 }}
-          config={{
-            file: { attributes: { style: { objectFit: 'cover', width: '100%' } } },
-          }}
-        />
+        <>
+          <ReactPlayer
+            controls
+            playIcon={
+              <img
+                alt="play"
+                className="zep-max-w-[48px] zep-max-h-[48px] md:zep-max-w-[100px] md:zep-max-h-[100px]"
+                src={play}
+              />
+            }
+            volume={0.7}
+            // light={<img src={thumbnail} alt={thumbnailAlt} />}
+            light={thumbnail}
+            url={url}
+            width="100%"
+            height="100%"
+            style={{ position: 'absolute', top: 0, left: 0 }}
+            config={{
+              file: { attributes: { style: { objectFit: 'cover', width: '100%' } } },
+            }}
+          >
+            {children}{' '}
+          </ReactPlayer>
+        </>
       )}
     </div>
   );

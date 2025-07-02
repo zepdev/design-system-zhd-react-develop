@@ -5,12 +5,15 @@ import { HeaderLongComponent } from '../header-long-component';
 import { Layout } from '../layout';
 import ResponsivePlayer from './ResponsivePlayer';
 import { SingleVideo, VideoProps } from './video.interface';
+import useVideoCookieCheck from './useVideoComplianceCheck';
+
 
 const videoComponentStyles = '!md:zep-flex !zep-px-[0] !md:zep-max-h-[600px] !lg:zep-max-h-[850px] zep-overflow-hidden';
 
 export const Video = ({ id, videos }: VideoProps) => {
   const [selectedVideo, setSelectedVideo] = useState<SingleVideo>(videos[0]);
   const [key, setKey] = useState(uuidv4() + videos[0]?.url);
+  const { canPlay } = useVideoCookieCheck();
 
   useEffect(() => {
     setKey(uuidv4() + selectedVideo?.url);
@@ -28,7 +31,7 @@ export const Video = ({ id, videos }: VideoProps) => {
         />
       </Layout>
       <Layout className={videoComponentStyles}>
-        <div className={clsx('zep-w-full zep-relative', videos?.length > 1 && 'md:zep-w-[80%]')}>
+        <div className={clsx('zep-w-full zep-relative', canPlay && videos?.length > 1 ? 'md:zep-w-[80%]' : 'md:zep-w-full')}>
           <ResponsivePlayer
             label={selectedVideo?.cookiesResetLabel}
             description={selectedVideo?.cookiesLayerDescription}
