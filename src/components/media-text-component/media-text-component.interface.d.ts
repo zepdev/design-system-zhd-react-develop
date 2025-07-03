@@ -13,6 +13,7 @@ export interface MediaTextComponentContentProps extends MediaTextComponentImageP
     content: BlocksContent;
     imageOrientation?: 'horizontal' | 'vertical' | 'none';
     contentAlignment?: 'start' | 'center' | 'none';
+    imageStretch?: 'cover' | 'contain';
 }
 export interface MediaTextComponentBodyProps {
     children: ReactNode;
@@ -24,6 +25,7 @@ export interface MediaTextComponentImageProps {
     videoThumbnail?: string;
     imageOrientation?: 'horizontal' | 'vertical' | 'none';
     mediaAlignment?: 'left' | 'right' | 'none';
+    imageStretch?: 'cover' | 'contain';
 }
 export interface MediaTextComponentButtonProps {
     labelPrimary?: string;
