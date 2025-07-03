@@ -1,3 +1,10 @@
+## [1.10.19](https://github.com/zepdev/design-system-zhd-react/compare/v1.10.18...v1.10.19) (2025-07-03)
+
+
+### Bug Fixes
+
+* media text stretch ([7eda5f0](https://github.com/zepdev/design-system-zhd-react/commit/7eda5f0256c944fdfaffaaa869f70179c41a9402))
+
 ## [1.10.18](https://github.com/zepdev/design-system-zhd-react/compare/v1.10.17...v1.10.18) (2025-07-01)
 
 
