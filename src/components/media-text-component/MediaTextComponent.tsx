@@ -31,6 +31,7 @@ const MediaTextComponent = ({
   mediaType,
   imageOrientation,
   contentAlignment,
+  imageStretch,
 }: MediaTextComponentContentProps) => {
   return (
     <MediaTextContext.Provider value={{ imageAlignment: mediaAlignment }}>
@@ -50,7 +51,13 @@ const MediaTextComponent = ({
         )}
         data-testid="zep-mediaText"
       >
-        <MediaTextImage mediaUrl={mediaUrl} alt={alt} mediaType={mediaType} imageOrientation={imageOrientation} />
+        <MediaTextImage
+          mediaUrl={mediaUrl}
+          alt={alt}
+          mediaType={mediaType}
+          imageOrientation={imageOrientation}
+          imageStretch={imageStretch}
+        />
         <MediaTextBody>
           <div className={clsx('zep-flex zep-flex-col zep-gap-0.5', { 'zep-hidden': !tagline && !headline })}>
             <p
@@ -95,6 +102,7 @@ const MediaTextImage = ({
   mediaUrl,
   videoThumbnail,
   imageOrientation,
+  imageStretch,
 }: MediaTextComponentImageProps) => {
   const imageHeightClass =
     mediaType === 'image' && imageOrientation === 'vertical'
@@ -105,7 +113,11 @@ const MediaTextImage = ({
     <div data-testid="zep-mediaText-image" className={clsx('zep-w-full')}>
       <div className={`${imageHeightClass} zep-h-full zep-mx-auto`}>
         {mediaType === 'image' ? (
-          <img src={mediaUrl} alt={alt} className={`zep-w-full zep-h-full zep-object-contain zep-object-top`} />
+          <img
+            src={mediaUrl}
+            alt={alt}
+            className={`zep-w-full zep-h-full ${imageStretch === 'contain' ? 'zep-object-contain' : 'zep-object-cover'}  zep-object-top`}
+          />
         ) : (
           <ResponsivePlayer url={mediaUrl || ''} thumbnail={videoThumbnail || ''} thumbnailAlt="alt" />
         )}
