@@ -2,7 +2,6 @@ import { CookieLayer } from '@/components/cookie-layer/CookieLayer';
 import ReactPlayer from 'react-player';
 import play from '../../assets/play.svg';
 import useVideoCookieCheck from './useVideoComplianceCheck';
-import { ReactNode } from 'react';
 
 interface ResponsivePlayerProps {
   url: string;
@@ -10,7 +9,6 @@ interface ResponsivePlayerProps {
   thumbnailAlt: string;
   label?: string;
   description?: string;
-  children?: ReactNode;
 }
 
 export type OneTrustType = {

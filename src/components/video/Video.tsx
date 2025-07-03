@@ -40,6 +40,7 @@ export const Video = ({ id, videos }: VideoProps) => {
             url={selectedVideo?.url || ''}
             thumbnail={selectedVideo?.thumbnail || ''}
           />
+          {/* In Desktop view, If there are multiple videos, show the list of videos on the right side */}
           {videos.length > 1 && (
             <div
               className={clsx(
@@ -93,8 +94,10 @@ export const Video = ({ id, videos }: VideoProps) => {
               ))}
             </div>
           )}
+
         </div>
-        {videos?.length > 1 && (
+        {/* In Mobile view, If there are multiple videos, show the list of videos below the player */}
+        {canPlay && videos?.length > 1 && (
           <div className={clsx('zep-w-full md:zep-hidden md:zep-bg-[unset] md:zep-bg-none')}>
             {videos.map((v, index) => (
               <div
