@@ -43,7 +43,6 @@ const ResponsivePlayer = ({ url, thumbnail, label, description, children }: Resp
       {!canPlay ? (
           <CookieLayer label={label} description={description} onClickCookies={resetCookies} />
       ) : (
-        <>
           <ReactPlayer
             controls
             playIcon={
@@ -64,9 +63,7 @@ const ResponsivePlayer = ({ url, thumbnail, label, description, children }: Resp
               file: { attributes: { style: { objectFit: 'cover', width: '100%' } } },
             }}
           >
-            {children}{' '}
           </ReactPlayer>
-        </>
       )}
     </div>
   );
