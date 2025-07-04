@@ -1,3 +1,10 @@
+## [1.10.20](https://github.com/zepdev/design-system-zhd-react/compare/v1.10.19...v1.10.20) (2025-07-04)
+
+
+### Bug Fixes
+
+* url multiple trailing slashes & small hero height ([d04e833](https://github.com/zepdev/design-system-zhd-react/commit/d04e8335c139b08f1fc800a4831401103cba2419))
+
 ## [1.10.19](https://github.com/zepdev/design-system-zhd-react/compare/v1.10.18...v1.10.19) (2025-07-03)
 
 
