@@ -24,3 +24,9 @@ export const Default: Story = {
     imageAlt: 'image alt',
   } as SmallHeroZsdProps,
 };
+
+export const OnlyHeadline: Story = {
+  args: {
+    headline: 'TIERNAHRUNG',
+  } as SmallHeroZsdProps,
+};
