@@ -1,3 +1,14 @@
+## [1.10.21](https://github.com/zepdev/design-system-zhd-react/compare/v1.10.20...v1.10.21) (2025-07-04)
+
+
+### Bug Fixes
+
+* added the flag to cover the videos in smaller screen with cookie consent ([e34cc30](https://github.com/zepdev/design-system-zhd-react/commit/e34cc30fc9f8d03dadd48b68d8386f2823817459))
+* remove the new unused code ([e50b626](https://github.com/zepdev/design-system-zhd-react/commit/e50b62659fb857841c2fe5885a554afd29e07c6a))
+* remove typo ([800a7be](https://github.com/zepdev/design-system-zhd-react/commit/800a7be56181494c7dc5ea5422e6c1a47888ea15))
+* removed the unused children ([c32a462](https://github.com/zepdev/design-system-zhd-react/commit/c32a46235fb459ac742921cbf3429f3f36ca24d3))
+* rich text ([dee0631](https://github.com/zepdev/design-system-zhd-react/commit/dee06314e82ad414cdf2b779644567fca731c6c7))
+
 ## [1.10.20](https://github.com/zepdev/design-system-zhd-react/compare/v1.10.19...v1.10.20) (2025-07-04)
 
 
