@@ -15,6 +15,7 @@ export const Video = ({ id, videos }: VideoProps) => {
   const [key, setKey] = useState(uuidv4() + videos[0]?.url);
   const { canPlay } = useVideoCookieCheck();
 
+
   useEffect(() => {
     setKey(uuidv4() + selectedVideo?.url);
   }, [selectedVideo]);
@@ -96,7 +97,7 @@ export const Video = ({ id, videos }: VideoProps) => {
           )}
 
         </div>
-        {/* In Mobile view, If there are multiple videos, show the list of videos below the player */}
+        {/* In Mobile view, If  multiple videos, show the list of videos below the player */}
         {canPlay && videos?.length > 1 && (
           <div className={clsx('zep-w-full md:zep-hidden md:zep-bg-[unset] md:zep-bg-none')}>
             {videos.map((v, index) => (
