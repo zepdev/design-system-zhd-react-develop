@@ -57,6 +57,8 @@ export const SmallHeroZsd = ({
         divOption,
         'md:zep-flex',
         'zep-relative',
+        'md:zep-min-h-[320px]',
+        'lg:zep-min-h-[466px]',
         'zep-flex-col', // Default to column layout
         'md:zep-flex-row', // Change to row layout on medium screens
       )}
