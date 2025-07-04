@@ -10,5 +10,6 @@ declare const meta: {
 export default meta;
 type Story = StoryObj<typeof meta>;
 export declare const Default: Story;
+export declare const NoImage: Story;
 export declare const WithIndigo: Story;
 //# sourceMappingURL=SmallHeroZhd.stories.d.ts.map

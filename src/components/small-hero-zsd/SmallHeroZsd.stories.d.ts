@@ -10,4 +10,5 @@ declare const meta: {
 export default meta;
 type Story = StoryObj<typeof meta>;
 export declare const Default: Story;
+export declare const OnlyHeadline: Story;
 //# sourceMappingURL=SmallHeroZsd.stories.d.ts.map
