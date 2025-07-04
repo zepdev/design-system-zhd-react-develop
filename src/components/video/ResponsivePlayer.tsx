@@ -15,7 +15,7 @@ export type OneTrustType = {
   ToggleInfoDisplay: () => void;
   OnConsentChanged: (callback: () => void) => void;
 };
-const ResponsivePlayer = ({ url, thumbnail, label, description, children }: ResponsivePlayerProps) => {
+const ResponsivePlayer = ({ url, thumbnail, label, description }: ResponsivePlayerProps) => {
   const { canPlay } = useVideoCookieCheck();
 
   const resetCookies = () => {
@@ -41,29 +41,28 @@ const ResponsivePlayer = ({ url, thumbnail, label, description, children }: Resp
       }}
     >
       {!canPlay ? (
-          <CookieLayer label={label} description={description} onClickCookies={resetCookies} />
+        <CookieLayer label={label} description={description} onClickCookies={resetCookies} />
       ) : (
-          <ReactPlayer
-            controls
-            playIcon={
-              <img
-                alt="play"
-                className="zep-max-w-[48px] zep-max-h-[48px] md:zep-max-w-[100px] md:zep-max-h-[100px]"
-                src={play}
-              />
-            }
-            volume={0.7}
-            // light={<img src={thumbnail} alt={thumbnailAlt} />}
-            light={thumbnail}
-            url={url}
-            width="100%"
-            height="100%"
-            style={{ position: 'absolute', top: 0, left: 0 }}
-            config={{
-              file: { attributes: { style: { objectFit: 'cover', width: '100%' } } },
-            }}
-          >
-          </ReactPlayer>
+        <ReactPlayer
+          controls
+          playIcon={
+            <img
+              alt="play"
+              className="zep-max-w-[48px] zep-max-h-[48px] md:zep-max-w-[100px] md:zep-max-h-[100px]"
+              src={play}
+            />
+          }
+          volume={0.7}
+          // light={<img src={thumbnail} alt={thumbnailAlt} />}
+          light={thumbnail}
+          url={url}
+          width="100%"
+          height="100%"
+          style={{ position: 'absolute', top: 0, left: 0 }}
+          config={{
+            file: { attributes: { style: { objectFit: 'cover', width: '100%' } } },
+          }}
+        ></ReactPlayer>
       )}
     </div>
   );
