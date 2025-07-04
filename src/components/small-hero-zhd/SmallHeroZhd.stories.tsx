@@ -25,6 +25,12 @@ export const Default: Story = {
   } as SmallHeroZhdProps,
 };
 
+export const NoImage: Story = {
+  args: {
+    headline: 'Tiernahrung',
+  } as SmallHeroZhdProps,
+};
+
 export const WithIndigo: Story = {
   args: {
     headline: 'Tiernahrung',

@@ -45,7 +45,7 @@ export const WithHeadline: Story = {
       imageSrc: './assets/worker.png',
       imageAlt: 'worker img',
       description: 'This is the description',
-      url: 'https://www.google.com',
+      url: 'https://www.google.com//////',
     }),
     variant: GlobalVariants.Zps,
     headline: 'Zukunftsweisende Antriebslösungen und mehr für die moderne Schifffahrt',
