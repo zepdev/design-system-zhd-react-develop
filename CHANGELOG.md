@@ -1,3 +1,10 @@
+## [1.10.23](https://github.com/zepdev/design-system-zhd-react/compare/v1.10.22...v1.10.23) (2025-07-07)
+
+
+### Bug Fixes
+
+* trailing slash url ([12a5c41](https://github.com/zepdev/design-system-zhd-react/commit/12a5c413a765298a2789a01dd828a52fceccab1b))
+
 ## [1.10.22](https://github.com/zepdev/design-system-zhd-react/compare/v1.10.21...v1.10.22) (2025-07-07)
 
 
