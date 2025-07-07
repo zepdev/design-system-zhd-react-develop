@@ -1,3 +1,10 @@
+## [1.10.22](https://github.com/zepdev/design-system-zhd-react/compare/v1.10.21...v1.10.22) (2025-07-07)
+
+
+### Bug Fixes
+
+* jump issue of custom scroll bar ([68ddfd5](https://github.com/zepdev/design-system-zhd-react/commit/68ddfd54be2be44c8a3520b754dcb42dfd73bfa9))
+
 ## [1.10.21](https://github.com/zepdev/design-system-zhd-react/compare/v1.10.20...v1.10.21) (2025-07-04)
 
 
