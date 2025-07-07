@@ -1,5 +1,5 @@
-import React, { FC, useEffect, useRef, useState } from 'react';
 import clsx from 'clsx';
+import React, { FC, useEffect, useRef, useState } from 'react';
 import { ScrollbarProps } from './Scrollbar.interface';
 
 export const Scrollbar: FC<ScrollbarProps> = ({
@@ -36,8 +36,8 @@ export const Scrollbar: FC<ScrollbarProps> = ({
     dark: {
       thumb: 'zep-bg-primary-default',
       track: 'zep-bg-greyscale-400',
-    }
-  }
+    },
+  };
 
   const handleResize = () => {
     if (contentRef.current) {
@@ -55,7 +55,7 @@ export const Scrollbar: FC<ScrollbarProps> = ({
 
       if (scrollYTrackRef.current) {
         const { clientHeight: verticalTrackSize } = scrollYTrackRef.current;
-        const { clientHeight: verticalContentVisible, scrollHeight: verticalContentTotalHeight} = contentRef.current;
+        const { clientHeight: verticalContentVisible, scrollHeight: verticalContentTotalHeight } = contentRef.current;
         const hideScrollbarVertical = verticalContentVisible >= verticalContentTotalHeight;
 
         if (hideScrollbarVertical) {
@@ -65,10 +65,16 @@ export const Scrollbar: FC<ScrollbarProps> = ({
         }
       }
     }
-  }
+  };
 
   const handleThumbPosition = () => {
-    if (!contentRef.current || !scrollXTrackRef.current || !scrollXThumbRef.current || !scrollYThumbRef.current || !scrollYTrackRef.current) {
+    if (
+      !contentRef.current ||
+      !scrollXTrackRef.current ||
+      !scrollXThumbRef.current ||
+      !scrollYThumbRef.current ||
+      !scrollYTrackRef.current
+    ) {
       return;
     }
 
@@ -92,7 +98,7 @@ export const Scrollbar: FC<ScrollbarProps> = ({
       thumbX.style.left = `${newLeft}px`;
       thumbY.style.top = `${newTop}px`;
     });
-  }
+  };
 
   useEffect(() => {
     if (contentRef.current) {
@@ -105,7 +111,7 @@ export const Scrollbar: FC<ScrollbarProps> = ({
       return () => {
         observer.current?.unobserve(content);
         content.removeEventListener('scroll', handleThumbPosition);
-      }
+      };
     }
   }, []);
 
@@ -117,7 +123,7 @@ export const Scrollbar: FC<ScrollbarProps> = ({
       setInitialContentScrollX(contentRef.current.scrollLeft);
     }
     setIsXDragging(true);
-  }
+  };
 
   const handleYThumbMouseDown = (e: React.MouseEvent<HTMLDivElement>) => {
     e.preventDefault();
@@ -127,7 +133,7 @@ export const Scrollbar: FC<ScrollbarProps> = ({
       setInitialContentScrollY(contentRef.current.scrollTop);
     }
     setIsYDragging(true);
-  }
+  };
 
   const handleThumbMouseUp = (e: MouseEvent) => {
     e.preventDefault();
@@ -138,59 +144,59 @@ export const Scrollbar: FC<ScrollbarProps> = ({
     if (isXDragging) {
       setIsXDragging(false);
     }
-  }
+  };
 
   const handleThumbMouseMove = (e: MouseEvent) => {
     if (contentRef.current) {
       e.preventDefault();
       e.stopPropagation();
       if (isXDragging) {
-        const {
-          scrollWidth: contentScrollWidth,
-          clientWidth: contentClientWidth,
-        } = contentRef.current;
+        const { scrollWidth: contentScrollWidth, clientWidth: contentClientWidth } = contentRef.current;
 
         const deltaX = (e.clientX - xScrollStartPosition) * (contentClientWidth / thumbWidth);
 
-        contentRef.current.scrollLeft = Math.min(initialContentScrollX + deltaX, contentScrollWidth - contentClientWidth);
+        contentRef.current.scrollLeft = Math.min(
+          initialContentScrollX + deltaX,
+          contentScrollWidth - contentClientWidth,
+        );
       }
 
       if (isYDragging) {
-        const {
-          scrollHeight: contentScrollHeight,
-          clientHeight: contentClientHeight,
-        } = contentRef.current;
+        const { scrollHeight: contentScrollHeight, clientHeight: contentClientHeight } = contentRef.current;
 
         const deltaY = (e.clientY - yScrollStartPosition) * (contentClientHeight / thumbHeight);
 
-        contentRef.current.scrollTop = Math.min(initialContentScrollY + deltaY, contentScrollHeight - contentClientHeight);
+        contentRef.current.scrollTop = Math.min(
+          initialContentScrollY + deltaY,
+          contentScrollHeight - contentClientHeight,
+        );
       }
     }
-  }
+  };
 
   const handleOnXMouseEnter = (e: React.MouseEvent<HTMLDivElement>) => {
     e.preventDefault();
     setIsXHovering(true);
-  }
+  };
 
   const handleOnXMouseLeave = (e: React.MouseEvent<HTMLDivElement>) => {
     e.preventDefault();
     if (isXHovering) {
       setIsXHovering(false);
     }
-  }
+  };
 
   const handleOnYMouseEnter = (e: React.MouseEvent<HTMLDivElement>) => {
     e.preventDefault();
     setIsYHovering(true);
-  }
+  };
 
   const handleOnYMouseLeave = (e: React.MouseEvent<HTMLDivElement>) => {
     e.preventDefault();
     if (isYHovering) {
       setIsYHovering(false);
     }
-  }
+  };
 
   useEffect(() => {
     document.addEventListener('mousemove', handleThumbMouseMove);
@@ -198,7 +204,7 @@ export const Scrollbar: FC<ScrollbarProps> = ({
     return () => {
       document.removeEventListener('mousemove', handleThumbMouseMove);
       document.removeEventListener('mouseup', handleThumbMouseUp);
-    }
+    };
   }, [handleThumbMouseMove, handleThumbMouseUp]);
 
   const handleXTrackClick = (e: React.MouseEvent<HTMLDivElement>) => {
@@ -220,7 +226,7 @@ export const Scrollbar: FC<ScrollbarProps> = ({
         behavior: 'smooth',
       });
     }
-  }
+  };
 
   const handleYTrackClick = (e: React.MouseEvent<HTMLDivElement>) => {
     e.preventDefault();
@@ -241,28 +247,38 @@ export const Scrollbar: FC<ScrollbarProps> = ({
         behavior: 'smooth',
       });
     }
-  }
+  };
 
   return (
     <div className={clsx('zep-relative', 'zep-w-full')} data-testid={dataTestId}>
       <div className="zep-flex">
         <div
-          className={clsx('zep-scrollable-content', 'zep-w-full', className, { 'zep-mb-2': scrollOrientation !== 'vertical' })}
+          className={clsx('zep-scrollable-content', 'zep-w-full', className, {
+            'zep-mb-2': scrollOrientation !== 'vertical',
+          })}
           id={controlId}
           ref={contentRef}
         >
           {children}
         </div>
-        <div className={clsx('zep-pl-2', 'zep-vertical-scrollbar', { 'zep-hidden': thumbHeight === 0 || scrollOrientation === 'horizontal' })} data-testid="vertical-scrollbar">
+        <div
+          className={clsx('zep-pl-2', 'zep-vertical-scrollbar', {
+            'zep-hidden': thumbHeight === 0 || scrollOrientation === 'horizontal',
+          })}
+          data-testid="vertical-scrollbar"
+        >
           <div
-            className={clsx('zep-block zep-relative zep-h-full', (isYDragging || isYHovering) ? '!zep-w-0.75' : '!zep-w-0.5')}
+            className={clsx(
+              'zep-block zep-relative zep-h-full',
+              isYDragging || isYHovering ? '!zep-w-0.75' : '!zep-w-0.5',
+            )}
             aria-controls={controlId}
             role="scrollbar"
           >
             <div
               className={clsx(
                 'zep-top-0 zep-absolute zep-bottom-0 zep-h-full zep-rounded-[100px]',
-                (isYDragging || isYHovering) ? '!zep-w-0.75' : '!zep-w-0.5',
+                isYDragging || isYHovering ? '!zep-w-0.75' : '!zep-w-0.5',
                 scrollbarTheme[theme].track,
               )}
               ref={scrollYTrackRef}
@@ -276,7 +292,7 @@ export const Scrollbar: FC<ScrollbarProps> = ({
             <div
               className={clsx(
                 'zep-absolute zep-rounded-[100px]',
-                (isYDragging || isYHovering) ? '!zep-w-0.75' : '!zep-w-0.5',
+                isYDragging || isYHovering ? '!zep-w-0.75' : '!zep-w-0.5',
                 scrollbarTheme[theme].thumb,
               )}
               ref={scrollYThumbRef}
@@ -299,15 +315,11 @@ export const Scrollbar: FC<ScrollbarProps> = ({
         })}
         data-testid="horizontal-scrollbar"
       >
-        <div
-          className={clsx('zep-block zep-relative zep-w-full', (isXDragging || isXHovering) ? '!zep-h-0.75' : '!zep-h-0.5')}
-          aria-controls={controlId}
-          role="scrollbar"
-        >
+        <div className={clsx('zep-block zep-relative zep-w-full zep-h-0.5')} aria-controls={controlId} role="scrollbar">
           <div
             className={clsx(
-              'zep-absolute zep-w-full zep-rounded-[100px]',
-              (isXDragging || isXHovering) ? '!zep-h-0.75' : '!zep-h-0.5',
+              'zep-absolute zep-w-full zep-rounded-[100px] zep-h-0.5',
+              isXHovering || isXDragging ? 'zep-scale-y-150 zep-transition-transform zep-duration-150' : '',
               scrollbarTheme[theme].track,
             )}
             ref={scrollXTrackRef}
@@ -320,8 +332,8 @@ export const Scrollbar: FC<ScrollbarProps> = ({
           />
           <div
             className={clsx(
-              'zep-absolute zep-rounded-[100px]',
-              (isXDragging || isXHovering) ? '!zep-h-0.75' : '!zep-h-0.5',
+              'zep-absolute zep-rounded-[100px] zep-h-0.5',
+              isXHovering || isXDragging ? 'zep-scale-y-150 zep-transition-transform zep-duration-150' : '',
               scrollbarTheme[theme].thumb,
             )}
             ref={scrollXThumbRef}
@@ -330,11 +342,11 @@ export const Scrollbar: FC<ScrollbarProps> = ({
             onMouseLeave={handleOnXMouseLeave}
             style={{
               width: `${thumbWidth}px`,
-              cursor: isXDragging ? 'grabbing' : 'grab'
+              cursor: isXDragging ? 'grabbing' : 'grab',
             }}
           />
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
