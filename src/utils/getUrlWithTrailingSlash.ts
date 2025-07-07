@@ -1,6 +1,6 @@
 export const getUrlWithTrailingSlash = (url?: string) => {
   if (!url) return url;
-  if (url.endsWith('/')) return url.replace(/\/+$/, '') + '/';
+  if (url.endsWith('/')) return url.replace(/\/+$/, '').trim();
   if (url.startsWith('tel:') || url.startsWith('mailto:') || url.startsWith('https://')) return url;
   //Check if URL ends with a common file extension
   const commonExtensions = [
