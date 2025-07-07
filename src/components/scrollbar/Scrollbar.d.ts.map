@@ -1,1 +1,1 @@
-{"version":3,"file":"Scrollbar.d.ts","sourceRoot":"","sources":["../../../../src/components/scrollbar/Scrollbar.tsx"],"names":[],"mappings":"AAAA,OAAc,EAAE,EAAE,EAA+B,MAAM,OAAO,CAAC;AAE/D,OAAO,EAAE,cAAc,EAAE,MAAM,uBAAuB,CAAC;AAEvD,eAAO,MAAM,SAAS,EAAE,EAAE,CAAC,cAAc,CA+UxC,CAAA"}
+{"version":3,"file":"Scrollbar.d.ts","sourceRoot":"","sources":["../../../../src/components/scrollbar/Scrollbar.tsx"],"names":[],"mappings":"AACA,OAAc,EAAE,EAAE,EAA+B,MAAM,OAAO,CAAC;AAC/D,OAAO,EAAE,cAAc,EAAE,MAAM,uBAAuB,CAAC;AAEvD,eAAO,MAAM,SAAS,EAAE,EAAE,CAAC,cAAc,CA2VxC,CAAC"}
