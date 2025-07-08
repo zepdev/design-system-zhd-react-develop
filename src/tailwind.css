@@ -39,8 +39,12 @@ Add roboto flex font face
     'YTAS' 750,
     'YTUC' 726,
     'slnt' 0;
+  font-family: 'Roboto Flex', 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
 }
 
+.zep-typography-bodyText {
+  font-family: 'Roboto Flex', 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
+}
 .zep-typography-bodyStrong {
   font-variation-settings: 'wght' 600;
 }
@@ -64,8 +68,13 @@ Add roboto flex font face
 }
 
 @layer base {
+  html {
+    @apply zep-font-robotoFlex;
+    font-family: 'Roboto Flex', 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
+  }
   body {
     @apply zep-font-robotoFlex;
+    font-family: 'Roboto Flex', 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
   }
   .zep-link-inline {
     font-variation-settings:
@@ -74,6 +83,7 @@ Add roboto flex font face
       'slnt' 0,
       'GRAD' 50;
   }
+
   .zep-link-standalone {
     font-variation-settings:
       'wght' 400,
