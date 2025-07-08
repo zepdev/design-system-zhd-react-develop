@@ -15,7 +15,7 @@ export const USPList: React.FC<USPListProps> = ({ uspCards, id, ...headerLongPro
       <HeaderLongComponent className="zep-p-[0px] zep-w-[40%]" {...headerLongProps} />
       <Scrollbar
         scrollOrientation="horizontal"
-        theme="light"
+        theme="dark"
         controlId="USP-list-scrollbar"
         dataTestId="zep-usp-list"
         className="zep-flex zep-w-full zep-gap-1 md:zep-gap-1.5 lg:zep-gap-3.5"
