@@ -1,3 +1,10 @@
+## [1.10.27](https://github.com/zepdev/design-system-zhd-react/compare/v1.10.26...v1.10.27) (2025-07-08)
+
+
+### Bug Fixes
+
+* add fallback fonts for headers ([a670080](https://github.com/zepdev/design-system-zhd-react/commit/a67008009c46f662b481c6e85a22101ed52acb85))
+
 ## [1.10.26](https://github.com/zepdev/design-system-zhd-react/compare/v1.10.25...v1.10.26) (2025-07-08)
 
 
