@@ -1,3 +1,11 @@
+## [1.10.24](https://github.com/zepdev/design-system-zhd-react/compare/v1.10.23...v1.10.24) (2025-07-08)
+
+
+### Bug Fixes
+
+* add fallback font list for the whole body and elements ([703b1a5](https://github.com/zepdev/design-system-zhd-react/commit/703b1a556a9a3d9fd28ed688b8c4e46f906740af))
+* new version of design-system-component-library-react ([f3ca104](https://github.com/zepdev/design-system-zhd-react/commit/f3ca104c2f7c1c3c4ae36db707b842af2996f49b))
+
 ## [1.10.23](https://github.com/zepdev/design-system-zhd-react/compare/v1.10.22...v1.10.23) (2025-07-07)
 
 
