@@ -68,6 +68,9 @@ Add roboto flex font face
 }
 
 @layer base {
+  :root {
+    --zep-font-family: 'Roboto Flex', 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  }
   html {
     @apply zep-font-robotoFlex;
     font-family: 'Roboto Flex', 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
