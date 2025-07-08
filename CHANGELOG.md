@@ -1,3 +1,10 @@
+## [1.10.26](https://github.com/zepdev/design-system-zhd-react/compare/v1.10.25...v1.10.26) (2025-07-08)
+
+
+### Bug Fixes
+
+* changed light scrollbar to dark ([42860ff](https://github.com/zepdev/design-system-zhd-react/commit/42860ff5f510a087f1546791f388ed5848c3380d))
+
 ## [1.10.25](https://github.com/zepdev/design-system-zhd-react/compare/v1.10.24...v1.10.25) (2025-07-08)
 
 
