@@ -30,8 +30,8 @@ export const Scrollbar: FC<ScrollbarProps> = ({
 
   const scrollbarTheme = {
     light: {
-      thumb: 'zep-bg-greyscale-500',
-      track: 'zep-bg-greyscale-200',
+      thumb: 'zep-bg-greyscale-700',
+      track: 'zep-bg-greyscale-400',
     },
     dark: {
       thumb: 'zep-bg-primary-default',
