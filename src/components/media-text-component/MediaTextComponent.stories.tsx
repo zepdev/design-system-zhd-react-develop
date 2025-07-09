@@ -1,6 +1,7 @@
 import { Meta, StoryObj } from '@storybook/react';
 import horizontal from '../../assets/horz.png';
-import vertical from '../../assets/verti.png';
+// import vertical from '../../assets/verti.png';
+import vertical from '../../assets/image-long.jpg';
 import { mockRichText } from '../../utils/mocks';
 import { MediaTextComponent } from './MediaTextComponent';
 
