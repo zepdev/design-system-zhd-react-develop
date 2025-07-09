@@ -1,3 +1,10 @@
+## [1.10.28](https://github.com/zepdev/design-system-zhd-react/compare/v1.10.27...v1.10.28) (2025-07-09)
+
+
+### Bug Fixes
+
+* interaction tiles ([d23f8c7](https://github.com/zepdev/design-system-zhd-react/commit/d23f8c73debde69c453957f3c9fcb0e0b9450bdd))
+
 ## [1.10.27](https://github.com/zepdev/design-system-zhd-react/compare/v1.10.26...v1.10.27) (2025-07-08)
 
 
