@@ -64,7 +64,7 @@ const CardSquare: FC<CardSquareProps> = ({
         datalayer?.push({
           event: 'interaction_tile',
           link_text: headline,
-          link_context: gtmHeadline,
+          link_context: gtmHeadline || headline,
           link_section: gtm_id,
         });
       }}
@@ -87,7 +87,7 @@ const CardSquare: FC<CardSquareProps> = ({
                 datalayer?.push({
                   event: 'interaction_tile',
                   link_text: headline,
-                  link_context: gtmHeadline,
+                  link_context: gtmHeadline || headline,
                   link_section: gtm_id,
                 });
               }}
