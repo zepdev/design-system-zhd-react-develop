@@ -36,7 +36,7 @@ export const Card: FC<CardProps> = ({
         datalayer?.push({
           event: 'interaction_tile',
           link_text: title,
-          link_context: gtmHeadline,
+          link_context: gtmHeadline || title,
           link_section: gtm_id,
         });
       }}
@@ -120,7 +120,7 @@ export const Card: FC<CardProps> = ({
               datalayer?.push({
                 event: 'interaction_tile',
                 link_text: title,
-                link_context: gtmHeadline,
+                link_context: gtmHeadline || title,
                 link_section: gtm_id,
               });
             }}
