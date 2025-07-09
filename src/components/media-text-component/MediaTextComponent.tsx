@@ -31,7 +31,6 @@ const MediaTextComponent = ({
   mediaType,
   imageOrientation,
   contentAlignment,
-  imageStretch,
 }: MediaTextComponentContentProps) => {
   return (
     <MediaTextContext.Provider value={{ imageAlignment: mediaAlignment }}>
@@ -56,7 +55,6 @@ const MediaTextComponent = ({
           alt={alt}
           mediaType={mediaType}
           imageOrientation={imageOrientation}
-          imageStretch={imageStretch}
         />
         <MediaTextBody>
           <div className={clsx('zep-flex zep-flex-col zep-gap-0.5', { 'zep-hidden': !tagline && !headline })}>
@@ -102,21 +100,20 @@ const MediaTextImage = ({
   mediaUrl,
   videoThumbnail,
   imageOrientation,
-  imageStretch,
 }: MediaTextComponentImageProps) => {
   const imageHeightClass =
     mediaType === 'image' && imageOrientation === 'vertical'
-      ? 'zep-w-full sm:zep-max-h-[500] sm:zep-max-w-[364px]  md:zep-w-[348px] lg:zep-max-h-[595px] lg:zep-w-auto lg:zep-max-w-[740px] xl:zep-max-h-[881px] xl:zep-max-w-[740px] zep-aspect-[4/5]'
+      ? 'zep-w-full sm:zep-max-h-[500] sm:zep-max-w-[364px]  md:zep-w-[348px] lg:zep-max-h-[595px] lg:zep-w-auto lg:zep-max-w-[740px] xl:zep-max-w-[740px] zep-aspect-[4/5]'
       : 'zep-aspect-[16/9]';
 
   return (
     <div data-testid="zep-mediaText-image" className={clsx('zep-w-full')}>
-      <div className={`${imageHeightClass} zep-h-full zep-mx-auto`}>
+      <div className={`${imageHeightClass} zep-h-full zep-max-w-[500px] zep-mx-auto`}>
         {mediaType === 'image' ? (
           <img
             src={mediaUrl}
             alt={alt}
-            className={`zep-w-full zep-h-full ${imageStretch === 'contain' ? 'zep-object-contain' : 'zep-object-cover'}  zep-object-top`}
+            className={`zep-w-full zep-h-full zep-object-contain zep-object-top`}
           />
         ) : (
           <ResponsivePlayer url={mediaUrl || ''} thumbnail={videoThumbnail || ''} thumbnailAlt="alt" />

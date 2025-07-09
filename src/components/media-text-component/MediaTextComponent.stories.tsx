@@ -1,6 +1,7 @@
 import { Meta, StoryObj } from '@storybook/react';
 import horizontal from '../../assets/horz.png';
-import vertical from '../../assets/verti.png';
+// import vertical from '../../assets/verti.png';
+import vertical from '../../assets/image-long.jpg';
 import { mockRichText } from '../../utils/mocks';
 import { MediaTextComponent } from './MediaTextComponent';
 
@@ -35,6 +36,7 @@ export const WithVerticalImageLeft: Story = {
     mediaUrl: vertical,
     mediaType: 'image',
     imageOrientation: 'vertical',
+    imageStretch: 'contain',
     mediaAlignment: 'left',
     headline: 'Example Headline',
     content: mockRichText,
