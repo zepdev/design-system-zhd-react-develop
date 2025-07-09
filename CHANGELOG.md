@@ -1,3 +1,11 @@
+## [1.10.29](https://github.com/zepdev/design-system-zhd-react/compare/v1.10.28...v1.10.29) (2025-07-09)
+
+
+### Bug Fixes
+
+* media text component large image issue ([dc6b93b](https://github.com/zepdev/design-system-zhd-react/commit/dc6b93b810dde03408430bcae00d3c0927dfe0d8))
+* mediatext component vertical image fix ([d68c70f](https://github.com/zepdev/design-system-zhd-react/commit/d68c70f7fdbec3283500127ba98eca312eb4b138))
+
 ## [1.10.28](https://github.com/zepdev/design-system-zhd-react/compare/v1.10.27...v1.10.28) (2025-07-09)
 
 
