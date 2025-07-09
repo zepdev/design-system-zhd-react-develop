@@ -36,7 +36,6 @@ export const WithVerticalImageLeft: Story = {
     mediaUrl: vertical,
     mediaType: 'image',
     imageOrientation: 'vertical',
-    imageStretch: 'contain',
     mediaAlignment: 'left',
     headline: 'Example Headline',
     content: mockRichText,
