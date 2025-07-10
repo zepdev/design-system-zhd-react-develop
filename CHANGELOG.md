@@ -1,3 +1,10 @@
+## [1.10.30](https://github.com/zepdev/design-system-zhd-react/compare/v1.10.29...v1.10.30) (2025-07-10)
+
+
+### Bug Fixes
+
+* git add . ([d95d44d](https://github.com/zepdev/design-system-zhd-react/commit/d95d44d252d1b4a63c8da146e3c42dd364d027e9))
+
 ## [1.10.29](https://github.com/zepdev/design-system-zhd-react/compare/v1.10.28...v1.10.29) (2025-07-09)
 
 
