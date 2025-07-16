@@ -1,3 +1,10 @@
+## [1.10.31](https://github.com/zepdev/design-system-zhd-react/compare/v1.10.30...v1.10.31) (2025-07-16)
+
+
+### Bug Fixes
+
+* added icons in the button of teaser component ([564ebfe](https://github.com/zepdev/design-system-zhd-react/commit/564ebfe2ae500896dc847979a5dd3f7c8dd1bc44))
+
 ## [1.10.30](https://github.com/zepdev/design-system-zhd-react/compare/v1.10.29...v1.10.30) (2025-07-10)
 
 
