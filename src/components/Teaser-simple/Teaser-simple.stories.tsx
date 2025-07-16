@@ -19,3 +19,13 @@ export const Default: Story = {
     buttonTitle: 'button title',
   } as TeaserSimpleProps,
 };
+
+export const WithIcon: Story = {
+  args: {
+    teaserText: 'Sie brauchen unterstützung? Wir helfen ihnen gerne!',
+    buttonText: 'Download',
+    buttonTitle: 'button title',
+    icon: 'download',
+    iconPosition: 'right',
+  } as TeaserSimpleProps,
+};

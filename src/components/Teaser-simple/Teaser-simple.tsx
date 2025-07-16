@@ -8,6 +8,8 @@ export const TeaserSimple: React.FC<TeaserSimpleProps> = ({
   teaserText,
   buttonText,
   buttonAction,
+  icon,
+  iconPosition,
   buttonUrl,
   onClick,
 }) => {
@@ -72,6 +74,8 @@ export const TeaserSimple: React.FC<TeaserSimpleProps> = ({
           title={buttonText}
           variant={ZsdButtonVariant.PrimaryLight}
           onClick={onClick}
+          icon={icon}
+          iconPosition={iconPosition}
         />
       )}
     </Layout>
