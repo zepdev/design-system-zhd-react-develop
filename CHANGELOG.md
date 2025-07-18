@@ -1,3 +1,10 @@
+## [1.10.36](https://github.com/zepdev/design-system-zhd-react/compare/v1.10.35...v1.10.36) (2025-07-18)
+
+
+### Bug Fixes
+
+* height of the RichText button ([c298214](https://github.com/zepdev/design-system-zhd-react/commit/c298214aa40e2575eac9b4c3199bad8e48b6eaa9))
+
 ## [1.10.35](https://github.com/zepdev/design-system-zhd-react/compare/v1.10.34...v1.10.35) (2025-07-18)
 
 
