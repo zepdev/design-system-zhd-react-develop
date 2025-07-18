@@ -1,3 +1,10 @@
+## [1.10.32](https://github.com/zepdev/design-system-zhd-react/compare/v1.10.31...v1.10.32) (2025-07-18)
+
+
+### Bug Fixes
+
+* form locales ([7dfba9a](https://github.com/zepdev/design-system-zhd-react/commit/7dfba9a5e2706ac0e14999c77f253d205d8a6e43))
+
 ## [1.10.31](https://github.com/zepdev/design-system-zhd-react/compare/v1.10.30...v1.10.31) (2025-07-16)
 
 
