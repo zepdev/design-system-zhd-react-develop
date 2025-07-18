@@ -102,7 +102,11 @@ const Btn: FC<Omit<ZsdButtonProps, 'href' | 'buttonType'>> = ({
           loading icon
         </i>
       )}
-      <Spacing gap="0.5" className={iconPosition === 'left' ? 'zep-flex-row-reverse' : ''}>
+      <Spacing
+        style={{ alignItems: 'inherit' }}
+        gap="0.5"
+        className={`${iconPosition === 'left' ? 'zep-flex-row-reverse' : ''} !zep-items-center`}
+      >
         {label ?? children}
         {icon && icon !== 'none' && <FunctionalIcon name={icon} />}
       </Spacing>

@@ -126,7 +126,7 @@ const RichText = ({
       {children && <div className="zep-w-full">{children}</div>}
       {button && (
         <a
-          className="zep-max-w-max"
+          className="zep-max-w-max zep-inline-block zep-h-auto zep-items-center"
           href={buttonUrl}
           target={buttonAction === 'open-external-link' ? '_blank' : '_self'}
           rel="noreferrer"
@@ -136,7 +136,7 @@ const RichText = ({
             label={button}
             title={button}
             variant={type === 'primary-dark' ? ZsdButtonVariant.PrimaryDark : ZsdButtonVariant.SecondaryDark}
-            className="zep-w-full sm:zep-max-w-max zep-mt-0.5"
+            className="zep-w-full sm:zep-max-w-max zep-mt-0.5 !zep-h-[40px] !zep-items-center"
             icon={buttonIcon}
             iconPosition={buttonIconPosition}
           />
