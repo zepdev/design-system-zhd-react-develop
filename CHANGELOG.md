@@ -1,3 +1,11 @@
+## [1.10.35](https://github.com/zepdev/design-system-zhd-react/compare/v1.10.34...v1.10.35) (2025-07-18)
+
+
+### Bug Fixes
+
+* broken button in richtext ([b0093f9](https://github.com/zepdev/design-system-zhd-react/commit/b0093f995ed67974c442d3a3c09a9d752050cd2b))
+* removed unused codes ([fb93651](https://github.com/zepdev/design-system-zhd-react/commit/fb936511ce85411c075cca41d93fd8d1009fbdd0))
+
 ## [1.10.34](https://github.com/zepdev/design-system-zhd-react/compare/v1.10.33...v1.10.34) (2025-07-18)
 
 
