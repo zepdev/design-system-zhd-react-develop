@@ -1,3 +1,10 @@
+## [1.10.37](https://github.com/zepdev/design-system-zhd-react/compare/v1.10.36...v1.10.37) (2025-07-18)
+
+
+### Bug Fixes
+
+* teaser icon ([7f84f47](https://github.com/zepdev/design-system-zhd-react/commit/7f84f478afc9dcc0c18b7ed41f9a764a1de2ad9e))
+
 ## [1.10.36](https://github.com/zepdev/design-system-zhd-react/compare/v1.10.35...v1.10.36) (2025-07-18)
 
 
