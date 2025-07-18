@@ -1,3 +1,10 @@
+## [1.10.34](https://github.com/zepdev/design-system-zhd-react/compare/v1.10.33...v1.10.34) (2025-07-18)
+
+
+### Bug Fixes
+
+* remove limitation ([b607a86](https://github.com/zepdev/design-system-zhd-react/commit/b607a86f784b000b0a5a984e8f783e2389a8b8c1))
+
 ## [1.10.33](https://github.com/zepdev/design-system-zhd-react/compare/v1.10.32...v1.10.33) (2025-07-18)
 
 
