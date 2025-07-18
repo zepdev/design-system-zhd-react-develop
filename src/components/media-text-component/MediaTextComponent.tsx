@@ -116,7 +116,7 @@ const MediaTextImage = ({
           <img
             src={mediaUrl}
             alt={alt}
-            className={`zep-w-full zep-h-full zep-object-contain zep-object-top ${imageStretch === 'cover' ? 'zep-object-cover' : 'zep-object-contain'}`}
+            className={`zep-w-full zep-h-full zep-object-top ${imageStretch === 'cover' ? 'zep-object-cover' : 'zep-object-contain'}`}
           />
         ) : (
           <ResponsivePlayer url={mediaUrl || ''} thumbnail={videoThumbnail || ''} thumbnailAlt="alt" />
