@@ -111,7 +111,7 @@ const MediaTextImage = ({
 
   return (
     <div data-testid="zep-mediaText-image" className={clsx('zep-w-full')}>
-      <div className={`${imageHeightClass} zep-h-full zep-max-w-[500px] zep-mx-auto`}>
+      <div className={`${imageHeightClass} zep-h-full zep-mx-auto`}>
         {mediaType === 'image' ? (
           <img
             src={mediaUrl}
