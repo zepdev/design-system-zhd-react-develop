@@ -103,7 +103,6 @@ const Btn: FC<Omit<ZsdButtonProps, 'href' | 'buttonType'>> = ({
         </i>
       )}
       <Spacing
-        style={{ alignItems: 'inherit' }}
         gap="0.5"
         className={`${iconPosition === 'left' ? 'zep-flex-row-reverse' : ''} !zep-items-center`}
       >
