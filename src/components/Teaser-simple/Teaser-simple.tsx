@@ -47,6 +47,8 @@ export const TeaserSimple: React.FC<TeaserSimpleProps> = ({
           download={buttonAction === 'download-file'}
         >
           <Button
+            icon={icon}
+            iconPosition={iconPosition}
             className={clsx(
               'zep-mt-1.5',
               'md:zep-ml-[80px]',
