@@ -1,3 +1,10 @@
+## [1.10.38](https://github.com/zepdev/design-system-zhd-react/compare/v1.10.37...v1.10.38) (2025-07-29)
+
+
+### Bug Fixes
+
+* zsd form ([02e1f1a](https://github.com/zepdev/design-system-zhd-react/commit/02e1f1aa94956e0beb367fa08e1d17a20282813d))
+
 ## [1.10.37](https://github.com/zepdev/design-system-zhd-react/compare/v1.10.36...v1.10.37) (2025-07-18)
 
 
