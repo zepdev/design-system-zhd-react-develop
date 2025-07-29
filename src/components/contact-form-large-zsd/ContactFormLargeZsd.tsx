@@ -46,15 +46,13 @@ const ContactFormLargeZsd: FC<ContactFormLargeZsdProps> = ({
     machineNumber: z.string().optional(),
     email: z
       .string()
-      .min(1, { message: contactFormLocales[locale]['Dieses Feld ist erforderlich'] })
+      .min(1, { message: contactFormZsdLocales[locale]['Dieses Feld ist erforderlich'] })
       .email({ message: 'Email is not in valid format' }),
-    phone: z.string().min(5, { message: contactFormLocales[locale]['Dieses Feld ist erforderlich'] }),
-
+    phone: z.string().optional(),
+    message: z.string().optional(),
     privacyCheck: z.literal(true, {
       errorMap: () => ({ message: 'You must accept Privacy.' }),
     }),
-    subject: z.string().min(1, { message: contactFormLocales[locale]['Dieses Feld ist erforderlich'] }),
-    message: z.string().min(1, { message: contactFormLocales[locale]['Dieses Feld ist erforderlich'] }),
     honeypot: z.union([z.string(), z.undefined()]),
   });
 
