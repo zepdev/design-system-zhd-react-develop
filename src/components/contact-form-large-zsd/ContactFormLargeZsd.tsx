@@ -4,11 +4,15 @@ import { FunctionalIcon } from '@zepdev/design-system-component-library-react';
 import { FC, useEffect, useRef } from 'react';
 import { SubmitHandler, useForm } from 'react-hook-form';
 import { z } from 'zod';
+import { countries } from '../../constants/countries';
 import { getDataLayer } from '../../utils/getDataLayer';
+import { contactFormZsdLocales } from '../contact-form-zsd/contact-form-zsd-locales';
 import { contactFormLocales } from '../contact-form/contact-form-locales';
 import { Checkbox } from '../form-fields/checkbox';
+import { DropdownFilter } from '../form-fields/drop-down-filter';
 import { Input } from '../form-fields/input';
 import { PhoneInput } from '../form-fields/phone-input';
+import { Radio } from '../form-fields/radio';
 import { TextArea } from '../form-fields/text-area';
 import { HeaderShortComponent } from '../header-short-component';
 import { Layout } from '../layout';
@@ -26,8 +30,20 @@ const ContactFormLargeZsd: FC<ContactFormLargeZsdProps> = ({
 }) => {
   const targetRef = useRef<HTMLDivElement | null>(null);
   const Schema = z.object({
-    vorname: z.string().min(1, { message: contactFormLocales[locale]['Dieses Feld ist erforderlich'] }),
-    name: z.string().min(1, { message: contactFormLocales[locale]['Dieses Feld ist erforderlich'] }),
+    sex: z.string().min(1, { message: 'Req' }),
+    company: z.string().optional(),
+    vorname: z.string().min(1, { message: contactFormZsdLocales[locale]['Dieses Feld ist erforderlich'] }),
+    nachname: z.string().min(1, { message: contactFormZsdLocales[locale]['Dieses Feld ist erforderlich'] }),
+    countryCode: z.string().optional(),
+    areaCode: z.string().optional(),
+    addressNumber: z.string().optional(),
+    location: z.string().optional(),
+    country: z.string().optional(),
+    technicianAssignment: z.boolean().optional(),
+    quotation: z.boolean().optional(),
+    placeOrder: z.boolean().optional(),
+    reportMalfunction: z.boolean().optional(),
+    machineNumber: z.string().optional(),
     email: z
       .string()
       .min(1, { message: contactFormLocales[locale]['Dieses Feld ist erforderlich'] })
@@ -101,69 +117,167 @@ const ContactFormLargeZsd: FC<ContactFormLargeZsdProps> = ({
 
                 <Input
                   className="zep-w-full"
-                  label={contactFormLocales[locale]['Vorname']}
-                  {...register('vorname')}
-                  error={errors['vorname']?.message}
+                  label={contactFormZsdLocales[locale]['Firma']}
+                  {...register('company')}
+                  error={errors['company']?.message}
                   required
                 />
 
-                <Input
-                  className="zep-w-full"
-                  label={contactFormLocales[locale]['Name']}
-                  {...register('name')}
-                  error={errors['name']?.message}
-                  required
-                />
+                <p className="zep-mb-0.5 zep-text-typography-dark-100">{contactFormZsdLocales[locale]['Anrede']}</p>
+                <div className="zep-flex zep-gap-2 zep-mb-1">
+                  <Radio
+                    id={'Herr'}
+                    label={contactFormZsdLocales[locale]['Herr']}
+                    {...register('sex')}
+                    error={!!errors['sex']?.message}
+                  />
+                  <Radio
+                    id={'Frau'}
+                    label={contactFormZsdLocales[locale]['Frau']}
+                    {...register('sex')}
+                    error={!!errors['sex']?.message}
+                  />
+                </div>
 
-                <PhoneInput
-                  {...register('phone')}
-                  label={contactFormLocales[locale]['Telefonnummer']}
-                  error={errors['phone']?.message && contactFormLocales[locale]['Dieses Feld ist erforderlich']}
-                  defaultCountry={locale === 'de' ? 'DE' : undefined}
-                />
+                <div className="zep-flex zep-flex-col sm:zep-flex-row sm:zep-gap-2 zep-mb-1">
+                  <Input
+                    className="zep-w-full"
+                    label={contactFormZsdLocales[locale]['Vorname']}
+                    {...register('vorname')}
+                    error={errors['vorname']?.message}
+                    required
+                  />
+                  <Input
+                    className="zep-w-full"
+                    label={contactFormZsdLocales[locale]['Nachname']}
+                    {...register('nachname')}
+                    error={errors['nachname']?.message}
+                    required
+                  />
+                </div>
 
                 <Input
                   error={errors['email']?.message}
                   className="zep-w-full"
-                  label={contactFormLocales[locale]['E-Mail-Adresse']}
+                  label={contactFormZsdLocales[locale]['E-Mail-Adresse']}
                   {...register('email')}
                   required
                 />
 
-                <p className="zep-typography-headlineSM-fluid-cqi  zep-mb-1 zep-text-typography-dark-100">
-                  {contactFormLocales[locale]['Schreiben Sie uns eine Nachricht']}
+                <div className="zep-flex zep-flex-col sm:zep-flex-row sm:zep-gap-2 zep-mb-1">
+                  <Input
+                    className="zep-w-full"
+                    label={contactFormZsdLocales[locale]['Landervorwahl']}
+                    {...register('countryCode')}
+                    error={errors['countryCode']?.message}
+                    required
+                  />
+                  <Input
+                    className="zep-w-full"
+                    label={contactFormZsdLocales[locale]['Vorwahl']}
+                    {...register('areaCode')}
+                    error={errors['areaCode']?.message}
+                    required
+                  />
+                </div>
+
+                <PhoneInput
+                  required
+                  {...register('phone')}
+                  label={contactFormZsdLocales[locale]['Telefonnummer']}
+                  error={errors['phone']?.message && contactFormZsdLocales[locale]['Dieses Feld ist erforderlich']}
+                  defaultCountry={'DE'}
+                />
+
+                <p className="zep-typography-headlineSM-fluid-cqi zep-mb-1 zep-text-typography-dark-100">
+                  {contactFormZsdLocales[locale]['Adresse']}
                 </p>
 
-                <Input
-                  className="zep-w-full"
-                  label={contactFormLocales[locale]['Betreff']}
-                  {...register('subject')}
-                  error={errors['subject']?.message}
-                  required
+                <div className="zep-flex zep-flex-col sm:zep-flex-row sm:zep-gap-2 zep-mb-1">
+                  <Input
+                    className="zep-w-full"
+                    label={contactFormZsdLocales[locale]['Nr']}
+                    {...register('addressNumber')}
+                    error={errors['addressNumber']?.message}
+                    required
+                  />
+                  <Input
+                    className="zep-w-full"
+                    label={contactFormZsdLocales[locale]['Ort']}
+                    {...register('location')}
+                    error={errors['location']?.message}
+                    required
+                  />
+                </div>
+
+                <DropdownFilter
+                  {...register('country')}
+                  options={countries}
+                  label={contactFormZsdLocales[locale]['Land']}
                 />
 
                 <TextArea
-                  label={contactFormLocales[locale]['Ihre Nachricht']}
+                  label={contactFormZsdLocales[locale]['Ihre Nachricht']}
                   {...register('message')}
                   className="zep-h-[126px]"
                 />
 
-                <div className="zep-flex zep-flex-col zep-gap-2 zep-w-full zep-mb-2">
-                  <div className="zep-flex zep-items-center zep-text-typography-dark-100">
-                    <Checkbox {...register('privacyCheck')} error={errors['privacyCheck']?.message} />
-                    <p>
-                      {`${contactFormLocales[locale]['Informationen zum Umgang mit Ihren personenbezogenen Daten finden Sie in unserer']} `}
-                      <u>
-                        <a href={privacyPolicyUrl}>{contactFormLocales[locale].Datenschutzerklärung}</a>
-                      </u>
-                    </p>
-                  </div>
+                <div className="zep-flex zep-text-typography-dark-100">
+                  <Checkbox {...register('technicianAssignment')} error={errors['technicianAssignment']?.message} />{' '}
+                  <p>{contactFormZsdLocales[locale]['Ich benötige einen Techniker-Einsatz']}</p>
+                </div>
+                <div className="zep-flex zep-text-typography-dark-100">
+                  <Checkbox {...register('quotation')} error={errors['quotation']?.message} />{' '}
+                  <p>
+                    {
+                      contactFormZsdLocales[locale][
+                        'Ich benötige ein Angebot über einen Service-Checkup bzw. über Ersatzteile'
+                      ]
+                    }
+                  </p>
+                </div>
+                <div className="zep-flex zep-text-typography-dark-100">
+                  <Checkbox {...register('placeOrder')} error={errors['placeOrder']?.message} />{' '}
+                  <p>
+                    {
+                      contactFormZsdLocales[locale][
+                        'Ich möchte eine Bestellung über einen Service-Checkup bzw. über Ersatzteile aufgeben'
+                      ]
+                    }
+                  </p>
                 </div>
 
-                <Button disabled={loading} variant={ZsdButtonVariant.PrimaryDark} className="!zep-w-full" type="submit">
+                <div className="zep-flex zep-text-typography-dark-100 zep-mb-1">
+                  <Checkbox {...register('reportMalfunction')} error={errors['reportMalfunction']?.message} />{' '}
+                  <p>{contactFormZsdLocales[locale]['Ich möchte eine Störung melden']}</p>
+                </div>
+
+                <TextArea
+                  label={contactFormZsdLocales[locale]['Machinennummer']}
+                  {...register('machineNumber')}
+                  className="zep-h-[126px]"
+                />
+
+                <div className="zep-flex  zep-text-typography-dark-100">
+                  <Checkbox {...register('privacyCheck')} error={errors['privacyCheck']?.message} />
+                  <p>
+                    {`${contactFormZsdLocales[locale].privacy} `}
+                    <u>
+                      <a href={privacyPolicyUrl}>{contactFormZsdLocales[locale].privacyPolicy}</a>
+                    </u>
+                    .
+                  </p>
+                </div>
+
+                <Button
+                  disabled={loading}
+                  variant={ZsdButtonVariant.PrimaryDark}
+                  className="!zep-w-full zep-mt-1.5 md:zep-mt-2"
+                  type="submit"
+                >
                   {loading
-                    ? contactFormLocales[locale]['Einreichung']
-                    : contactFormLocales[locale]['Nachricht absenden']}
+                    ? contactFormZsdLocales[locale]['Einreichung']
+                    : contactFormZsdLocales[locale]['Anfrage Senden']}
                 </Button>
               </form>
             </div>
