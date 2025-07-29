@@ -1,3 +1,10 @@
+## [1.10.39](https://github.com/zepdev/design-system-zhd-react/compare/v1.10.38...v1.10.39) (2025-07-29)
+
+
+### Bug Fixes
+
+* large for mzsd ([af0e067](https://github.com/zepdev/design-system-zhd-react/commit/af0e06735dcd33446f82f54a52b291c30e772972))
+
 ## [1.10.38](https://github.com/zepdev/design-system-zhd-react/compare/v1.10.37...v1.10.38) (2025-07-29)
 
 
