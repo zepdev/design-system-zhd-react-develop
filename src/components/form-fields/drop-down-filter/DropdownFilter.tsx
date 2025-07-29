@@ -45,7 +45,7 @@ export const DropdownFilter = forwardRef<HTMLInputElement, DropdownFilterProps>(
     return (
       <div className="zep-relative zep-flex zep-flex-col zep-mb-2 zep-z-30" ref={ref}>
         {label && (
-          <label htmlFor={name} className="zep-mb-0.5 zep-text-primary-default">
+          <label htmlFor={name} className="zep-block zep-mb-0.5 zep-text-typography-dark-100">
             {label}
             {!required && (
               <span data-testid="zep-input-label-hint" className="zep-ml-0.25">
