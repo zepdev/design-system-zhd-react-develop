@@ -1,3 +1,10 @@
+## [1.10.40](https://github.com/zepdev/design-system-zhd-react/compare/v1.10.39...v1.10.40) (2025-07-31)
+
+
+### Bug Fixes
+
+* duplicate interaction tile fix ([fca7407](https://github.com/zepdev/design-system-zhd-react/commit/fca74071393bcdfb885762e7159a0dec5078e1ac))
+
 ## [1.10.39](https://github.com/zepdev/design-system-zhd-react/compare/v1.10.38...v1.10.39) (2025-07-29)
 
 
