@@ -116,14 +116,6 @@ export const Card: FC<CardProps> = ({
             label={linkLabel}
             mode={LinkMode.Standalone}
             href={getUrlWithTrailingSlash(url)}
-            onClickCapture={() => {
-              datalayer?.push({
-                event: 'interaction_tile',
-                link_text: title,
-                link_context: gtmHeadline || title,
-                link_section: gtm_id,
-              });
-            }}
           />
         )}
       </div>
