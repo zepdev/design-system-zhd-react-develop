@@ -38,8 +38,17 @@ const useVideoCookieCheck = () => {
 
   const params2 = new URLSearchParams(updatedCookie || '');
 
-  // Maybe add 1:1, 3:1
-  const canPlay = !!params2.get('groups')?.includes('2:1') || !!params2.get('groups')?.includes('4:1');
+  /*
+  * OneTrust Cookie Groups IDs
+  * C0001 - Strictly Necessary Cookies
+  * C0002 - Performance Cookies
+  * C0003 - Functional Cookies
+  * C0004 - Targeting/Marketing Cookies
+  * C0005 - Social Media Cookies
+  * */
+
+  // Only C0004 (Targeting/Marketing Cookies) are needed to watch videos and see instagram posts
+  const canPlay = !!params2.get('groups')?.includes('4:1');
 
   return { canPlay };
 };
