@@ -1,3 +1,10 @@
+## [1.10.41](https://github.com/zepdev/design-system-zhd-react/compare/v1.10.40...v1.10.41) (2025-08-05)
+
+
+### Bug Fixes
+
+* youtube video module visible without accepted marketing cookies ([23fc1a5](https://github.com/zepdev/design-system-zhd-react/commit/23fc1a562f4081964dbb3d1602f913206cb59691))
+
 ## [1.10.40](https://github.com/zepdev/design-system-zhd-react/compare/v1.10.39...v1.10.40) (2025-07-31)
 
 
