@@ -1,3 +1,10 @@
+## [1.10.42](https://github.com/zepdev/design-system-zhd-react/compare/v1.10.41...v1.10.42) (2025-08-19)
+
+
+### Bug Fixes
+
+* revert old contact form for zsd and create a new one for services ([268b160](https://github.com/zepdev/design-system-zhd-react/commit/268b160fe0d73c8f991f63841d161cb56514f050))
+
 ## [1.10.41](https://github.com/zepdev/design-system-zhd-react/compare/v1.10.40...v1.10.41) (2025-08-05)
 
 
