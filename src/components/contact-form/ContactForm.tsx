@@ -26,13 +26,13 @@ const ContactForm: FC<ContactFormProps> = ({
 }) => {
   const Schema = z.object({
     sex: z.string().min(1, { message: 'Req' }),
-    name: z.string().min(1, { message: contactFormLocales[locale]['Dieses Feld ist erforderlich'] }),
+    name: z.string().min(1, { message: contactFormLocales[locale].thisFieldIsRequired }),
 
     email: z
       .string()
-      .min(1, { message: contactFormLocales[locale]['Dieses Feld ist erforderlich'] })
+      .min(1, { message: contactFormLocales[locale].thisFieldIsRequired })
       .email({ message: 'Email is not in valid format' }),
-    phone: z.string().min(5, { message: contactFormLocales[locale]['Dieses Feld ist erforderlich'] }),
+    phone: z.string().min(5, { message: contactFormLocales[locale].thisFieldIsRequired }),
     message: z.string().optional(),
     privacyCheck: z.literal(true, {
       errorMap: () => ({ message: 'You must accept Privacy.' }),
@@ -67,26 +67,26 @@ const ContactForm: FC<ContactFormProps> = ({
       <form onSubmit={handleSubmit(submitFunction)}>
         <input type="text" style={{ display: 'none' }} {...register('honeypot')} />
         <p className="zep-typography-headlineSM-fluid-cqi zep-mb-2 zep-text-typography-dark-100">
-          {contactFormLocales[locale]['Schreiben Sie uns eine Nachricht']}
+          {contactFormLocales[locale].writeUsAMessage}
         </p>
 
         <TextArea
-          label={contactFormLocales[locale]['Ihre Nachricht']}
+          label={contactFormLocales[locale].yourMessage}
           {...register('message')}
           className="zep-h-[126px]"
         />
 
-        <p className="zep-mb-0.5 zep-text-typography-dark-100">{contactFormLocales[locale]['Anrede']}</p>
+        <p className="zep-mb-0.5 zep-text-typography-dark-100">{contactFormLocales[locale].salutation}</p>
         <div className="zep-flex zep-gap-2 zep-mb-2">
           <Radio
             id={'Frau'}
-            label={contactFormLocales[locale]['Frau']}
+            label={contactFormLocales[locale].female}
             {...register('sex')}
             error={!!errors['sex']?.message}
           />
           <Radio
             id={'Herr'}
-            label={contactFormLocales[locale]['Herr']}
+            label={contactFormLocales[locale].male}
             {...register('sex')}
             error={!!errors['sex']?.message}
           />
@@ -95,13 +95,13 @@ const ContactForm: FC<ContactFormProps> = ({
         <PhoneInput
           required
           {...register('phone')}
-          label={contactFormLocales[locale]['Telefonnummer']}
-          error={errors['phone']?.message && contactFormLocales[locale]['Dieses Feld ist erforderlich']}
+          label={contactFormLocales[locale].phoneNumber}
+          error={errors['phone']?.message && contactFormLocales[locale].thisFieldIsRequired}
           defaultCountry={'DE'}
         />
         <Input
           className="zep-w-full"
-          label={contactFormLocales[locale]['Vor und Nachname']}
+          label={contactFormLocales[locale].firstAndLastName}
           {...register('name')}
           error={errors['name']?.message}
           required
@@ -109,7 +109,7 @@ const ContactForm: FC<ContactFormProps> = ({
         <Input
           error={errors['email']?.message}
           className="zep-w-full"
-          label={contactFormLocales[locale]['E-Mail-Adresse']}
+          label={contactFormLocales[locale].emailAddress}
           {...register('email')}
           required
         />
@@ -131,7 +131,7 @@ const ContactForm: FC<ContactFormProps> = ({
           className="!zep-w-full zep-mt-1.5 md:zep-mt-2"
           type="submit"
         >
-          {loading ? contactFormLocales[locale]['Einreichung'] : contactFormLocales[locale]['Anfrage Senden']}
+          {loading ? contactFormLocales[locale].submitting : contactFormLocales[locale].sendRequest}
         </Button>
       </form>
     </div>
