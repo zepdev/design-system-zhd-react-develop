@@ -1,4 +1,7 @@
 import { LocaleVariants } from '../../interfaces/global-variants';
 
-export declare const contactFormZsdLocales: Record<LocaleVariants, Record<string, string>>;
+declare const translationKeys: readonly ["address", "areaCode", "callback", "city", "close", "company", "contactFormForServiceRequests", "contactInformation", "contactPerson", "contactPersonIfAvailable", "country", "countryCode", "dataProtectionStatement", "emailAddress", "female", "firstAndLastName", "firstName", "lastName", "lightboxHeadline", "lightboxHeadlineFallback", "lightboxTagline", "linkListGermany", "linkListInternational", "machineNumber", "male", "name", "orderForServiceCheckOrSpareParts", "phoneNumber", "preferences", "preferencesLink", "preferencesLinkExtensionText", "printRequest", "privacy", "privacyPolicy", "privacyV2", "privacyV2Extended", "quotationForServiceCheckOrSpareParts", "reportMalfunction", "salutation", "sendMessage", "sendRequest", "street", "subject", "submitting", "successMessage", "technicianAssignment", "thisFieldIsRequired", "writeUsAMessage", "yourMessage", "zeppelinPNOExtended", "zeppelinPromotionsNewsOffers", "zip"];
+type Translations = typeof translationKeys[number];
+export declare const contactFormZsdLocales: Record<LocaleVariants, Record<Translations, string>>;
+export {};
 //# sourceMappingURL=contact-form-zsd-locales.d.ts.map

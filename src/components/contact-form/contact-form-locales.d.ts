@@ -1,4 +1,7 @@
 import { LocaleVariants } from '../../interfaces/global-variants';
 
-export declare const contactFormLocales: Record<LocaleVariants, Record<string, string>>;
+declare const translationKeys: string[];
+type Translations = typeof translationKeys[number];
+export declare const contactFormLocales: Record<LocaleVariants, Record<Translations, string>>;
+export {};
 //# sourceMappingURL=contact-form-locales.d.ts.map
