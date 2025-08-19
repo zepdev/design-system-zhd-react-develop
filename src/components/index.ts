@@ -16,6 +16,8 @@ export * from './card-square-list';
 export * from './contact-form';
 export * from './contact-form-large';
 export * from './contact-form-large-zsd';
+export * from './contact-form-zsd-services';
+export * from './lightbox-contact-form-zsd-services';
 export * from './contact-form-zsd';
 export * from './contact-section';
 export * from './footer';
