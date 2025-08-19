@@ -26,19 +26,19 @@ const ContactFormLarge: FC<ContactFormLargeProps> = ({
 }) => {
   const targetRef = useRef<HTMLDivElement | null>(null);
   const Schema = z.object({
-    vorname: z.string().min(1, { message: contactFormLocales[locale]['Dieses Feld ist erforderlich'] }),
-    name: z.string().min(1, { message: contactFormLocales[locale]['Dieses Feld ist erforderlich'] }),
+    vorname: z.string().min(1, { message: contactFormLocales[locale].thisFieldIsRequired }),
+    name: z.string().min(1, { message: contactFormLocales[locale].thisFieldIsRequired }),
     email: z
       .string()
-      .min(1, { message: contactFormLocales[locale]['Dieses Feld ist erforderlich'] })
+      .min(1, { message: contactFormLocales[locale].thisFieldIsRequired })
       .email({ message: 'Email is not in valid format' }),
-    phone: z.string().min(5, { message: contactFormLocales[locale]['Dieses Feld ist erforderlich'] }),
+    phone: z.string().min(5, { message: contactFormLocales[locale].thisFieldIsRequired }),
 
     privacyCheck: z.literal(true, {
       errorMap: () => ({ message: 'You must accept Privacy.' }),
     }),
-    subject: z.string().min(1, { message: contactFormLocales[locale]['Dieses Feld ist erforderlich'] }),
-    message: z.string().min(1, { message: contactFormLocales[locale]['Dieses Feld ist erforderlich'] }),
+    subject: z.string().min(1, { message: contactFormLocales[locale].thisFieldIsRequired }),
+    message: z.string().min(1, { message: contactFormLocales[locale].thisFieldIsRequired }),
     honeypot: z.union([z.string(), z.undefined()]),
   });
 
@@ -93,7 +93,7 @@ const ContactFormLarge: FC<ContactFormLargeProps> = ({
           ) : (
             <div className="md:zep-w-[70%] xl:zep-w-[50%]">
               <p className="zep-typography-headlineSM-fluid-cqi zep-mb-1.5 zep-text-typography-dark-100">
-                {contactFormLocales[locale]['Kontaktdaten']}
+                {contactFormLocales[locale].contactInformation}
               </p>
 
               <form onSubmit={handleSubmit(submitFunction)}>
@@ -101,7 +101,7 @@ const ContactFormLarge: FC<ContactFormLargeProps> = ({
 
                 <Input
                   className="zep-w-full"
-                  label={contactFormLocales[locale]['Vorname']}
+                  label={contactFormLocales[locale].firstName}
                   {...register('vorname')}
                   error={errors['vorname']?.message}
                   required
@@ -109,7 +109,7 @@ const ContactFormLarge: FC<ContactFormLargeProps> = ({
 
                 <Input
                   className="zep-w-full"
-                  label={contactFormLocales[locale]['Name']}
+                  label={contactFormLocales[locale].name}
                   {...register('name')}
                   error={errors['name']?.message}
                   required
@@ -117,33 +117,33 @@ const ContactFormLarge: FC<ContactFormLargeProps> = ({
 
                 <PhoneInput
                   {...register('phone')}
-                  label={contactFormLocales[locale]['Telefonnummer']}
-                  error={errors['phone']?.message && contactFormLocales[locale]['Dieses Feld ist erforderlich']}
+                  label={contactFormLocales[locale].phoneNumber}
+                  error={errors['phone']?.message && contactFormLocales[locale].thisFieldIsRequired}
                   defaultCountry={locale === 'de' ? 'DE' : undefined}
                 />
 
                 <Input
                   error={errors['email']?.message}
                   className="zep-w-full"
-                  label={contactFormLocales[locale]['E-Mail-Adresse']}
+                  label={contactFormLocales[locale].emailAddress}
                   {...register('email')}
                   required
                 />
 
                 <p className="zep-typography-headlineSM-fluid-cqi  zep-mb-1 zep-text-typography-dark-100">
-                  {contactFormLocales[locale]['Schreiben Sie uns eine Nachricht']}
+                  {contactFormLocales[locale].writeUsAMessage}
                 </p>
 
                 <Input
                   className="zep-w-full"
-                  label={contactFormLocales[locale]['Betreff']}
+                  label={contactFormLocales[locale].subject}
                   {...register('subject')}
                   error={errors['subject']?.message}
                   required
                 />
 
                 <TextArea
-                  label={contactFormLocales[locale]['Ihre Nachricht']}
+                  label={contactFormLocales[locale].yourMessage}
                   {...register('message')}
                   className="zep-h-[126px]"
                 />
@@ -152,9 +152,9 @@ const ContactFormLarge: FC<ContactFormLargeProps> = ({
                   <div className="zep-flex zep-items-center zep-text-typography-dark-100">
                     <Checkbox {...register('privacyCheck')} error={errors['privacyCheck']?.message} />
                     <p>
-                      {`${contactFormLocales[locale]['Informationen zum Umgang mit Ihren personenbezogenen Daten finden Sie in unserer']} `}
+                      {`${contactFormLocales[locale].privacy} `}
                       <u>
-                        <a href={privacyPolicyUrl}>{contactFormLocales[locale].Datenschutzerklärung}</a>
+                        <a href={privacyPolicyUrl}>{contactFormLocales[locale].dataProtectionStatement}</a>
                       </u>
                     </p>
                   </div>
@@ -162,8 +162,8 @@ const ContactFormLarge: FC<ContactFormLargeProps> = ({
 
                 <Button disabled={loading} variant={ZsdButtonVariant.PrimaryDark} className="!zep-w-full" type="submit">
                   {loading
-                    ? contactFormLocales[locale]['Einreichung']
-                    : contactFormLocales[locale]['Nachricht absenden']}
+                    ? contactFormLocales[locale].submitting
+                    : contactFormLocales[locale].sendMessage}
                 </Button>
               </form>
             </div>
