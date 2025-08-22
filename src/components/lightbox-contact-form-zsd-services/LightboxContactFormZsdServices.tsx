@@ -22,7 +22,7 @@ export const LightboxContactFormZsdServices: FC<LightboxContactFormZsdServicesPr
         headline={
           contactArea
             ? `${contactFormZsdLocales[locale].lightboxHeadline} ${contactArea}`
-            : contactFormZsdLocales[locale].lightboxHeadlineFallback
+            : contactFormZsdLocales[locale].lightboxServicesHeadlineFallback
         }
         tagline={contactFormZsdLocales[locale].lightboxTagline}
         loading={loading}
