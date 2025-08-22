@@ -1,3 +1,10 @@
+## [1.10.44](https://github.com/zepdev/design-system-zhd-react/compare/v1.10.43...v1.10.44) (2025-08-22)
+
+
+### Bug Fixes
+
+* locale translations contact form ligthbox ([9742725](https://github.com/zepdev/design-system-zhd-react/commit/9742725f45c061a6728112903bd156bb5b4fde8b))
+
 ## [1.10.43](https://github.com/zepdev/design-system-zhd-react/compare/v1.10.42...v1.10.43) (2025-08-22)
 
 
