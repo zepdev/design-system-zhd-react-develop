@@ -1,3 +1,10 @@
+## [1.10.45](https://github.com/zepdev/design-system-zhd-react/compare/v1.10.44...v1.10.45) (2025-08-22)
+
+
+### Bug Fixes
+
+* lightbox headline contact form zsd services ([0d84c49](https://github.com/zepdev/design-system-zhd-react/commit/0d84c494b339761b5e816d03ef0a7eac3aa97c1c))
+
 ## [1.10.44](https://github.com/zepdev/design-system-zhd-react/compare/v1.10.43...v1.10.44) (2025-08-22)
 
 
