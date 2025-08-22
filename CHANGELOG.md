@@ -1,3 +1,10 @@
+## [1.10.43](https://github.com/zepdev/design-system-zhd-react/compare/v1.10.42...v1.10.43) (2025-08-22)
+
+
+### Bug Fixes
+
+* locale translations ([503017d](https://github.com/zepdev/design-system-zhd-react/commit/503017d6297db311cf1fd66c128aad97383432f9))
+
 ## [1.10.42](https://github.com/zepdev/design-system-zhd-react/compare/v1.10.41...v1.10.42) (2025-08-19)
 
 
