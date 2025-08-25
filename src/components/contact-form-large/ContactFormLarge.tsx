@@ -69,9 +69,9 @@ const ContactFormLarge: FC<ContactFormLargeProps> = ({
     <Layout>
       <div data-testid="zep-contact-form-wrapper">
         <div
-          className={`zep-flex ${!success && 'md:zep-flex-row'} zep-flex-col md:zep-items-start xl:zep-gap-5 md:zep-gap-3 sm:zep-gap-2 zep-gap-1.5`}
+          className={`zep-flex ${!success && 'md:zep-flex-row'} zep-flex-col md:zep-items-start zep-gap-2.5 sm:zep-gap-3 lg:zep-gap-4 xl:zep-gap-5`}
         >
-          <HeaderShortComponent headline={headline} tagline={tagline} className="md:zep-w-[30%] xl:zep-w-[50%]" />
+          <HeaderShortComponent headline={headline} tagline={tagline} className="md:zep-w-[45%] zep-flex-shrink-0" />
           {success ? (
             <div
               ref={targetRef}
@@ -91,7 +91,7 @@ const ContactFormLarge: FC<ContactFormLargeProps> = ({
               )}
             </div>
           ) : (
-            <div className="md:zep-w-[70%] xl:zep-w-[50%]">
+            <div className="md:zep-w-[55%]">
               <p className="zep-typography-headlineSM-fluid-cqi zep-mb-1.5 zep-text-typography-dark-100">
                 {contactFormLocales[locale].contactInformation}
               </p>

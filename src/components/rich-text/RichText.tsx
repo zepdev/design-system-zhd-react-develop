@@ -76,7 +76,6 @@ const RichText = ({
     <div
       className={clsx(
         'zep-container',
-        'zep-max-w-[944px]',
         'zep-flex',
         'sm:zep-flex-row',
         'zep-flex-col',

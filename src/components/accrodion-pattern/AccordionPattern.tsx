@@ -30,18 +30,17 @@ export const AccordionPattern: React.FC<AccordionPatternProps> = ({
     <Layout
       id={id}
       className={clsx('zep-flex', {
-        'zep-flex-col zep-items-start zep-gap-2 sm:zep-gap-2.5 md:zep-gap-3 xl:zep-gap-4': headerPosition === 'top',
-        'md:zep-flex-row zep-flex-col zep-items-start zep-gap-2 sm:zep-gap-2.5 md:zep-gap-1.5 xl:zep-gap-5':
-          headerPosition === 'left',
+        'zep-flex-col zep-items-start zep-gap-2.5 sm:zep-gap-3 xl:zep-gap-4': headerPosition === 'top',
+        'md:zep-flex-row zep-flex-col zep-items-start zep-gap-2.5 sm:zep-gap-3 lg:zep-gap-4 xl:zep-gap-5': headerPosition === 'left',
       })}
     >
       {headline && headerPosition === 'top' && (
         <HeaderLongComponent variant={variant} headline={headline} target={target} {...headerProps} type={type} />
       )}
       {headline && headerPosition === 'left' && (
-        <HeaderShortComponent headline={headline} {...headerProps} className="zep-w-full" />
+        <HeaderShortComponent headline={headline} {...headerProps} className="zep-w-full md:zep-w-[45%] zep-flex-shrink-0" />
       )}
-      <div className="zep-relative zep-w-full" data-testid="zep-accordion-pattern">
+      <div className="zep-relative zep-w-full md:zep-w-[55%]" data-testid="zep-accordion-pattern">
         {/* Top Description */}
         {topDescription && (
           <div className="zep-block zep-pb-1.5 md:zep-pb-2" data-testid="accordion-pattern-topDescription">
