@@ -1,3 +1,10 @@
+## [1.10.48](https://github.com/zepdev/design-system-zhd-react/compare/v1.10.47...v1.10.48) (2025-08-26)
+
+
+### Bug Fixes
+
+* label ([f0a6a6f](https://github.com/zepdev/design-system-zhd-react/commit/f0a6a6f2c0b61f47c64a1eb8a3218e9148611ba7))
+
 ## [1.10.47](https://github.com/zepdev/design-system-zhd-react/compare/v1.10.46...v1.10.47) (2025-08-26)
 
 
