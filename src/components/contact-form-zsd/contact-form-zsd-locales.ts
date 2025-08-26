@@ -2,7 +2,7 @@ import { LocaleVariants } from '../../interfaces/global-variants';
 
 const translationKeys = [
   'address',
-  'areaCode',
+  'addressNumber',
   'callback',
   'city',
   'close',
@@ -56,11 +56,11 @@ const translationKeys = [
   'zip',
 ] as const;
 
-type Translations = typeof translationKeys[number];
+type Translations = (typeof translationKeys)[number];
 
 const english: Record<Translations, string> = {
   address: 'Address',
-  areaCode: 'Area code',
+  addressNumber: 'Area code',
   callback: 'I would like a callback.',
   city: 'City',
   close: 'Close',
@@ -78,7 +78,7 @@ const english: Record<Translations, string> = {
   firstName: 'First name',
   lastName: 'Last name',
   lightboxHeadline: "I'm interested in",
-  lightboxHeadlineFallback: 'We\'d love to assist you!',
+  lightboxHeadlineFallback: "We'd love to assist you!",
   lightboxServicesHeadlineFallback: "How can Zeppelin Systems' service support you today?",
   lightboxTagline: 'Contact',
   linkListGermany: 'Zeppelin Systems GmbH',
@@ -117,7 +117,7 @@ const english: Record<Translations, string> = {
 };
 const german: Record<Translations, string> = {
   address: 'Adresse',
-  areaCode: 'Postleitzahl',
+  addressNumber: 'Hausnummer',
   callback: 'Ich möchte einen Rückruf.',
   city: 'Ort',
   close: 'Abbrechen',

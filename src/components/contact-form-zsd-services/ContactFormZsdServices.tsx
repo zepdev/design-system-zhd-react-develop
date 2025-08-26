@@ -1,22 +1,22 @@
-import { FC, useEffect, useRef } from 'react';
-import { ContactFormZsdServicesProps } from './ContactFormZsdServices.interface';
-import { z } from 'zod';
-import clsx from 'clsx';
 import { contactFormZsdLocales } from '@/components/contact-form-zsd/contact-form-zsd-locales';
-import { SubmitHandler, useForm } from 'react-hook-form';
-import { zodResolver } from '@hookform/resolvers/zod';
-import { getDataLayer } from '../../utils/getDataLayer';
-import { Layout } from '@/components/layout';
-import { HeaderShortComponent } from '@/components/header-short-component';
 import { contactFormLocales } from '@/components/contact-form/contact-form-locales';
+import { Checkbox } from '@/components/form-fields/checkbox';
+import { DropdownFilter } from '@/components/form-fields/drop-down-filter';
 import { Input } from '@/components/form-fields/input';
 import { PhoneInput } from '@/components/form-fields/phone-input';
-import { DropdownFilter } from '@/components/form-fields/drop-down-filter';
-import { countries } from '../../constants/countries';
 import { TextArea } from '@/components/form-fields/text-area';
-import { Checkbox } from '@/components/form-fields/checkbox';
+import { HeaderShortComponent } from '@/components/header-short-component';
+import { Layout } from '@/components/layout';
 import { Button, ZsdButtonVariant } from '@/components/zsd-button';
+import { zodResolver } from '@hookform/resolvers/zod';
 import { FunctionalIcon } from '@zepdev/design-system-component-library-react';
+import clsx from 'clsx';
+import { FC, useEffect, useRef } from 'react';
+import { SubmitHandler, useForm } from 'react-hook-form';
+import { z } from 'zod';
+import { countries } from '../../constants/countries';
+import { getDataLayer } from '../../utils/getDataLayer';
+import { ContactFormZsdServicesProps } from './ContactFormZsdServices.interface';
 
 export const ContactFormZsdServices: FC<ContactFormZsdServicesProps> = ({
   locale,
@@ -34,8 +34,6 @@ export const ContactFormZsdServices: FC<ContactFormZsdServicesProps> = ({
     company: z.string().min(1, { message: contactFormZsdLocales[locale].thisFieldIsRequired }),
     vorname: z.string().min(1, { message: contactFormZsdLocales[locale].thisFieldIsRequired }),
     nachname: z.string().min(1, { message: contactFormZsdLocales[locale].thisFieldIsRequired }),
-    countryCode: z.string().min(1, { message: contactFormZsdLocales[locale].thisFieldIsRequired }),
-    areaCode: z.string().min(1, { message: contactFormZsdLocales[locale].thisFieldIsRequired }),
     addressNumber: z.string().min(1, { message: contactFormZsdLocales[locale].thisFieldIsRequired }),
     location: z.string().min(1, { message: contactFormZsdLocales[locale].thisFieldIsRequired }),
     country: z.string().min(1, { message: contactFormZsdLocales[locale].thisFieldIsRequired }),
@@ -65,6 +63,8 @@ export const ContactFormZsdServices: FC<ContactFormZsdServicesProps> = ({
     formState: { errors },
   } = useForm<FormSchemaType>({ resolver: zodResolver(Schema) });
 
+  console.log('AAAA', errors);
+
   const datalayer = getDataLayer();
   const submitFunction: SubmitHandler<FormSchemaType> = async (data: FormSchemaType) => {
     datalayer?.push({
@@ -82,7 +82,13 @@ export const ContactFormZsdServices: FC<ContactFormZsdServicesProps> = ({
 
   return (
     <Layout
-      className={clsx({ '!zep-px-[0] sm:!zep-px-[0] md:!zep-px-[0] lg:!zep-px-[0]': isLightbox, 'md:zep-flex-row': !success && !isLightbox }, 'zep-flex zep-flex-col md:zep-items-start zep-gap-2.5 sm:zep-gap-3 lg:zep-gap-4 xl:zep-gap-5')}
+      className={clsx(
+        {
+          '!zep-px-[0] sm:!zep-px-[0] md:!zep-px-[0] lg:!zep-px-[0]': isLightbox,
+          'md:zep-flex-row': !success && !isLightbox,
+        },
+        'zep-flex zep-flex-col md:zep-items-start zep-gap-2.5 sm:zep-gap-3 lg:zep-gap-4 xl:zep-gap-5',
+      )}
       testId="zep-contact-form-wrapper"
     >
       <HeaderShortComponent
@@ -148,7 +154,7 @@ export const ContactFormZsdServices: FC<ContactFormZsdServicesProps> = ({
             <div className="zep-flex zep-flex-col sm:zep-flex-row sm:zep-gap-2 zep-mb-1">
               <Input
                 className="zep-w-full"
-                label={contactFormZsdLocales[locale].areaCode}
+                label={contactFormZsdLocales[locale].addressNumber}
                 {...register('addressNumber')}
                 error={errors['addressNumber']?.message}
                 required
@@ -223,4 +229,4 @@ export const ContactFormZsdServices: FC<ContactFormZsdServicesProps> = ({
       )}
     </Layout>
   );
-}
+};
