@@ -1,3 +1,10 @@
+## [1.10.46](https://github.com/zepdev/design-system-zhd-react/compare/v1.10.45...v1.10.46) (2025-08-26)
+
+
+### Bug Fixes
+
+* gutters and width ([8093453](https://github.com/zepdev/design-system-zhd-react/commit/8093453dfd54e3953218b0649de40f04e7a7466a))
+
 ## [1.10.45](https://github.com/zepdev/design-system-zhd-react/compare/v1.10.44...v1.10.45) (2025-08-22)
 
 
