@@ -18,17 +18,19 @@ export const RichTextPattern: FC<RichTextPatternProps> = ({
   return (
     <Layout
       id={id}
-      className="zep-flex md:zep-flex-row zep-flex-col zep-items-start zep-gap-2 sm:zep-gap-2.5 md:zep-gap-1.5 xl:zep-gap-5"
+      className="zep-flex md:zep-flex-row zep-flex-col zep-items-start zep-gap-2.5 sm:zep-gap-3 lg:zep-gap-4 xl:zep-gap-5"
     >
-      {headline && <HeaderShortComponent headline={headline} className="zep-w-full" {...headerProps} />}
-      <RichText
-        content={content}
-        button={button}
-        buttonIcon={buttonIcon}
-        buttonIconPosition={buttonIconPosition}
-        buttonUrl={buttonUrl}
-        buttonAction={buttonAction}
-      />
+      {headline && <HeaderShortComponent headline={headline} className="zep-w-full md:zep-w-[45%] zep-flex-shrink-0" {...headerProps} />}
+      <div className="md:zep-w-[55%] zep-w-full">
+        <RichText
+          content={content}
+          button={button}
+          buttonIcon={buttonIcon}
+          buttonIconPosition={buttonIconPosition}
+          buttonUrl={buttonUrl}
+          buttonAction={buttonAction}
+        />
+      </div>
     </Layout>
   );
 };

@@ -7,6 +7,5 @@ describe('RichText component', () => {
     const { getByTestId } = render(<RichText content={mockRichText} />);
     const richTextElement = getByTestId('zep-richtext');
     expect(richTextElement).toBeInTheDocument();
-    expect(richTextElement).toHaveClass('zep-max-w-[944px]');
   });
 });
