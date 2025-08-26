@@ -117,7 +117,7 @@ const english: Record<Translations, string> = {
 };
 const german: Record<Translations, string> = {
   address: 'Adresse',
-  addressNumber: 'Hausnummer',
+  addressNumber: 'Postleitzahl',
   callback: 'Ich möchte einen Rückruf.',
   city: 'Ort',
   close: 'Abbrechen',
