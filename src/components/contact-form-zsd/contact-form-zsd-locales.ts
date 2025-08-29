@@ -161,7 +161,7 @@ const german: Record<Translations, string> = {
   sendRequest: 'Anfrage senden',
   street: 'Straße',
   subject: 'Betreff',
-  submitting: 'Einreichung',
+  submitting: 'Die Nachricht wird versendet',
   successMessage:
     'Vielen Dank, dass Sie sich an uns wenden. Ihre Nachricht wurde erfolgreich übermittelt, und unser Team wird sie umgehend prüfen. Wir werden uns so schnell wie möglich bei Ihnen melden.',
   technicianAssignment: 'Ich benötige einen Techniker-Einsatz.',

@@ -126,7 +126,7 @@ const german: Record<Translations, string> = {
   sendRequest: 'Anfrage senden',
   street: 'Straße',
   subject: 'Betreff',
-  submitting: 'Einreichung',
+  submitting: 'Die Nachricht wird versendet',
   thisFieldIsRequired: 'Dieses Feld ist erforderlich',
   writeUsAMessage: 'Schreiben Sie uns eine Nachricht',
   yourMessage: 'Ihre Nachricht',

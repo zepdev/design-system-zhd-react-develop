@@ -65,7 +65,7 @@ export const SmallHeroZsd = ({
     >
       {imageSrc && (
         <div className="md:zep-w-[44%] zep-w-full zep-h-auto zep-flex zep-order-1 md:zep-order-2">
-          <img src={imageSrc} alt={imageAlt} className="zep-aspect-[16/9] zep-h-auto zep-w-full zep-object-cover" />
+          <img src={imageSrc} alt={imageAlt} className="zep-h-auto zep-w-full zep-object-cover" />
         </div>
       )}
 
