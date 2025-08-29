@@ -1,3 +1,10 @@
+## [1.10.49](https://github.com/zepdev/design-system-zhd-react/compare/v1.10.48...v1.10.49) (2025-08-29)
+
+
+### Bug Fixes
+
+* small hero and contact form locales ([f18d548](https://github.com/zepdev/design-system-zhd-react/commit/f18d548b40705eb4d3c4a09b28cd0056d40ebc66))
+
 ## [1.10.48](https://github.com/zepdev/design-system-zhd-react/compare/v1.10.47...v1.10.48) (2025-08-26)
 
 
