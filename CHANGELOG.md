@@ -1,3 +1,10 @@
+## [1.10.50](https://github.com/zepdev/design-system-zhd-react/compare/v1.10.49...v1.10.50) (2025-09-05)
+
+
+### Bug Fixes
+
+* checkbox label and lazy load images ([eebaf1a](https://github.com/zepdev/design-system-zhd-react/commit/eebaf1a59a48bf7532464d60b255ba3e3b780c19))
+
 ## [1.10.49](https://github.com/zepdev/design-system-zhd-react/compare/v1.10.48...v1.10.49) (2025-08-29)
 
 
