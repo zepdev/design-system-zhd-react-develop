@@ -44,6 +44,7 @@ export const CardMedia: React.FC<CardMediaProps> = ({
       data-testid="card-media"
     >
       <img
+        loading="lazy"
         src={imageSrc}
         alt={imageAlt}
         className={clsx(imageHeightClass, 'zep-w-full', 'lg:zep-max-w-[377px]', 'lg:zep-mx-2', 'zep-object-cover')}

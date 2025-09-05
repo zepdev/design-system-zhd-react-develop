@@ -27,6 +27,7 @@ export const Hero: FC<HeroProps> = ({
     <div>
       <div className="zep-block md:zep-hidden">
         <img
+          loading="lazy"
           src={image}
           alt={imageAlt || headline}
           className="zep-w-full zep-h-[202px] sm:zep-h-[432px] zep-object-cover"
@@ -94,7 +95,7 @@ export const Hero: FC<HeroProps> = ({
                       }
                       currentElement = currentElement.parentElement;
                     }
-                    
+
                     datalayer?.push({
                       event: 'interaction_cta',
                       link_text: buttonSecondary,
@@ -194,7 +195,7 @@ export const Hero: FC<HeroProps> = ({
                       }
                       currentElement = currentElement.parentElement;
                     }
-                    
+
                     datalayer?.push({
                       event: 'interaction_cta',
                       link_text: buttonSecondary,

@@ -39,7 +39,7 @@ export const SmallHeroZhd: FC<SmallHeroZhdProps> = ({
         })}
       >
         {variant === 'default' && (
-          <img src={imageSrc} alt={imageAlt} className="zep-w-full zep-aspect-[16/9] zep-object-cover" />
+          <img loading="lazy" src={imageSrc} alt={imageAlt} className="zep-w-full zep-aspect-[16/9] zep-object-cover" />
         )}
         <div className="zep-px-1 sm:zep-px-1.5 zep-py-1.5 sm:zep-py-3">
           <h2 data-testid="SHCorporate-headline" className={clsx('zep-typography-headlineXL-fluid-cqi')}>

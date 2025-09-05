@@ -16,7 +16,7 @@ export const Checkbox = forwardRef(({ className, ...props }: CheckboxProps, ref:
         'zep-flex-wrap',
         'zep-items-center',
         'zep-justify-start',
-        'zep-mb-2',
+        'zep-mb-1.5',
         {
           '[&>svg]:hover:zep-bg-primary-hover': !disabled && !error,
         },

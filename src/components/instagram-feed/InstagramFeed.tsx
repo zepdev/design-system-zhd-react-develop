@@ -24,6 +24,7 @@ const Images: FC<Pick<InstagramFeedProps, 'feed'>> = ({ feed }) => {
       {url ? (
         <a href={url} target="_blank" rel="noreferrer">
           <img
+            loading="lazy"
             key={`instagram-image-${index}`}
             className="zep-w-full zep-h-full zep-object-cover"
             src={src}
@@ -31,7 +32,7 @@ const Images: FC<Pick<InstagramFeedProps, 'feed'>> = ({ feed }) => {
           />
         </a>
       ) : (
-        <img key={`instagram-image-${index}`} className="zep-w-full zep-h-full zep-object-cover" src={src} alt={alt} />
+        <img loading="lazy"  key={`instagram-image-${index}`} className="zep-w-full zep-h-full zep-object-cover" src={src} alt={alt} />
       )}
     </div>
   ));
@@ -79,7 +80,7 @@ export const InstagramFeed: FC<InstagramFeedProps> = ({
             </Scrollbar>
           </>
         )}
-        
+
       </Layout>
     </>
   );

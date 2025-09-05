@@ -30,7 +30,7 @@ export const MediaTextProduct: React.FC<MediaTextProductProps> = ({
           style={{ height: 'fit-content' }}
           className="zep-w-full zep-max-h-[70vh] sm:zep-max-w-[364px]  md:zep-w-[348px] lg:zep-max-h-[595px] lg:zep-w-auto lg:zep-max-w-[740px] xl:zep-max-w-[740px] zep-inline-grid md:zep-flex zep-aspect-[16/9]"
         >
-          <img className="zep-object-contain zep-max-h-[70vh] md:zep-h-full zep-w-full" src={imageSrc} alt={imageAlt} />
+          <img loading="lazy" className="zep-object-contain zep-max-h-[70vh] md:zep-h-full zep-w-full" src={imageSrc} alt={imageAlt} />
         </div>
 
         <div className="md:zep-w-7/12 md:zep-flex-1 zep-w-full md:zep-flex-col">

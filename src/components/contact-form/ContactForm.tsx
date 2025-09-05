@@ -116,13 +116,13 @@ const ContactForm: FC<ContactFormProps> = ({
 
         <div className="zep-flex zep-items-center zep-text-typography-dark-100">
           <Checkbox {...register('privacyCheck')} error={errors['privacyCheck']?.message} />
-          <p>
+          <label htmlFor="privacyCheck" className="zep-cursor-pointer">
             {`${contactFormLocales[locale].privacy} `}
             <u>
               <a href={privacyPolicyUrl}>{contactFormLocales[locale].privacyPolicy}</a>
             </u>
             .
-          </p>
+          </label>
         </div>
 
         <Button

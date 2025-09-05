@@ -7,7 +7,6 @@ import ResponsivePlayer from './ResponsivePlayer';
 import { SingleVideo, VideoProps } from './video.interface';
 import useVideoCookieCheck from './useVideoComplianceCheck';
 
-
 const videoComponentStyles = '!md:zep-flex !zep-px-[0] !md:zep-max-h-[600px] !lg:zep-max-h-[850px] zep-overflow-hidden';
 
 export const Video = ({ id, videos }: VideoProps) => {
@@ -64,6 +63,7 @@ export const Video = ({ id, videos }: VideoProps) => {
                   >
                     <div className="zep-relative">
                       <img
+                        loading="lazy"
                         alt={v.title}
                         src={v.thumbnail}
                         className="zep-max-w-[170px] md:zep-max-w-[unset] zep-max-h-[95px] md:zep-max-h-[unset] zep-w-full zep-object-cover zep-aspect-[16/9]"
@@ -114,7 +114,7 @@ export const Video = ({ id, videos }: VideoProps) => {
                   )}
                 >
                   <div className="zep-relative">
-                    <img
+                    <img loading="lazy"
                       alt={v?.title}
                       src={v?.thumbnail}
                       className="zep-w-[170px] zep-h-[95px] sm:zep-w-[250px] sm:zep-h-[140px] zep-object-cover zep-aspect-[16/9]"

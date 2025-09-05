@@ -45,6 +45,7 @@ export const CardEvent: React.FC<CardEventProps> = ({
           className="zep-block md:zep-flex md:zep-flex-shrink-0 md:zep-h-auto md:zep-w-1/5 zep-mb-1.5 sm:zep-mb-2 md:zep-mb-[0] zep-aspect-3.4"
         >
           <img
+            loading="lazy"
             src={imageSrc}
             alt={imageAlt}
             className={clsx('zep-w-full')}

@@ -28,7 +28,7 @@ export const CardEventZsd: FC<CardEventZsdProps> = ({
             'xl:zep-min-w-[50%] sm:zep-min-w-[40%] zep-min-w-full',
           )}
         >
-          <img className="zep-w-auto zep-h-auto zep-object-cover" src={imageSrc} alt={imageAlt} />
+          <img loading="lazy" className="zep-w-auto zep-h-auto zep-object-cover" src={imageSrc} alt={imageAlt} />
         </div>
         <div className={clsx(
           'xl:zep-min-w-[50%] sm:zep-min-w-[60%] zep-min-w-full',
