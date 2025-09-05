@@ -179,26 +179,21 @@ export const ContactFormZsdServices: FC<ContactFormZsdServicesProps> = ({
               className="zep-h-[126px]"
             />
             <div className="zep-flex zep-text-typography-dark-100">
-              <Checkbox {...register('technicianAssignment')} error={errors['technicianAssignment']?.message} />
-              <p>{` ${contactFormZsdLocales[locale].technicianAssignment}`}</p>
+              <Checkbox labelhtml={contactFormZsdLocales[locale].technicianAssignment} {...register('technicianAssignment')} error={errors['technicianAssignment']?.message} />
             </div>
             <div className="zep-flex zep-text-typography-dark-100">
-              <Checkbox {...register('quotation')} error={errors['quotation']?.message} />
-              <p>{` ${contactFormZsdLocales[locale].quotationForServiceCheckOrSpareParts}`}</p>
+              <Checkbox {...register('quotation')} labelhtml={contactFormZsdLocales[locale].quotationForServiceCheckOrSpareParts} error={errors['quotation']?.message} />
             </div>
             <div className="zep-flex zep-text-typography-dark-100">
-              <Checkbox {...register('placeOrder')} error={errors['placeOrder']?.message} />
-              <p>{` ${contactFormZsdLocales[locale].orderForServiceCheckOrSpareParts}`}</p>
+              <Checkbox {...register('placeOrder')} labelhtml={contactFormZsdLocales[locale].orderForServiceCheckOrSpareParts} error={errors['placeOrder']?.message} />
             </div>
 
             <div className="zep-flex zep-text-typography-dark-100">
-              <Checkbox {...register('reportMalfunction')} error={errors['reportMalfunction']?.message} />
-              <p>{` ${contactFormZsdLocales[locale].reportMalfunction}`}</p>
+              <Checkbox {...register('reportMalfunction')} labelhtml={contactFormZsdLocales[locale].reportMalfunction} error={errors['reportMalfunction']?.message} />
             </div>
 
-            <div className="zep-flex zep-text-typography-dark-100 zep-mb-1">
-              <Checkbox {...register('callback')} error={errors['callback']?.message} />
-              <p>{` ${contactFormZsdLocales[locale].callback}`}</p>
+            <div className="zep-flex zep-text-typography-dark-100">
+              <Checkbox {...register('callback')} labelhtml={contactFormZsdLocales[locale].callback} error={errors['callback']?.message} />
             </div>
 
             <TextArea
@@ -208,13 +203,13 @@ export const ContactFormZsdServices: FC<ContactFormZsdServicesProps> = ({
             />
             <div className="zep-flex  zep-text-typography-dark-100">
               <Checkbox {...register('privacyCheck')} error={errors['privacyCheck']?.message} />
-              <p>
+              <label htmlFor="privacyCheck" className="zep-cursor-pointer">
                 {`${contactFormZsdLocales[locale].privacy} `}
                 <u>
                   <a href={privacyPolicyUrl}>{contactFormZsdLocales[locale].privacyPolicy}</a>
                 </u>
                 .
-              </p>
+              </label>
             </div>
             <Button
               disabled={loading}

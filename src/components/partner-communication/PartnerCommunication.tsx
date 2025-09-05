@@ -55,6 +55,7 @@ export const PartnerCommunication = ({ id, headline, partners, variant }: Partne
           {partners?.map((partner, index) => (
             <div key={index} className="zep-flex zep-items-center zep-justify-center">
               <img
+                loading="lazy"
                 alt={partner?.imageAlt}
                 className="zep-h-[32px] sm:zep-h-[40px] xl:zep-h-[56px]"
                 src={partner?.image}

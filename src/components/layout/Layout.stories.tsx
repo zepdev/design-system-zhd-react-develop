@@ -18,7 +18,7 @@ export const Default: Story = {
     className: 'zep-bg-indigo-500',
     children: (
       <div className="zep-bg-red-400">
-        <img alt="partner cat" className="zep-mb-2" src="./assets/Logo_cat.svg" />
+        <img loading="lazy" alt="partner cat" className="zep-mb-2" src="./assets/Logo_cat.svg" />
         <p className="zep-text-typography-light-100">
           LEGEND: Blue background is layout wrapper, red background is children/content/component. Red background will
           never exist anyway, it&apos;s just for visual separation

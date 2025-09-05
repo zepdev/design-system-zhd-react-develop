@@ -1,5 +1,5 @@
 import { FunctionalIcon, Link, LinkMode } from '@zepdev/design-system-component-library-react';
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import languageIcon from '../../assets/language-icon.svg';
 import { useScreenSize } from '../../hooks/useScreenSize';
 import { getDataLayer } from '../../utils/getDataLayer';
@@ -269,7 +269,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
                           setTimeout(() => setAnimateMobileLanguage(false), 300);
                         }}
                       >
-                        <img alt="Language switch icon" src={languageIcon} className="zep-w-1" />
+                        <img loading="lazy" alt="Language switch icon" src={languageIcon} className="zep-w-1" />
                         <p className="zep-text-typography-dark-100 zep-font-500">
                           {`${selectedLocale?.country} | ${selectedLocale?.langAbbrev?.toUpperCase()}`}
                         </p>

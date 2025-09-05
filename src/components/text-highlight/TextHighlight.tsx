@@ -233,6 +233,7 @@ const TextHighlight = ({
               )}
             >
               <img
+                loading="lazy"
                 className={clsx(
                   'zep-w-full',
                   'zep-h-full',
