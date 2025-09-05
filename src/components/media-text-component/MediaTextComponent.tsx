@@ -114,6 +114,7 @@ const MediaTextImage = ({
       <div className={`${imageHeightClass} zep-h-full zep-mx-auto`}>
         {mediaType === 'image' ? (
           <img
+            loading="lazy"
             src={mediaUrl}
             alt={alt}
             className={`zep-w-full zep-h-full zep-object-top ${imageStretch === 'cover' ? 'zep-object-cover' : 'zep-object-contain'}`}

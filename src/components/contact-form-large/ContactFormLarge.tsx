@@ -149,14 +149,14 @@ const ContactFormLarge: FC<ContactFormLargeProps> = ({
                 />
 
                 <div className="zep-flex zep-flex-col zep-gap-2 zep-w-full zep-mb-2">
-                  <div className="zep-flex zep-items-center zep-text-typography-dark-100">
+                  <div className="zep-flex zep-text-typography-dark-100">
                     <Checkbox {...register('privacyCheck')} error={errors['privacyCheck']?.message} />
-                    <p>
+                    <label className="zep-cursor-pointer" htmlFor="privacyCheck">
                       {`${contactFormLocales[locale].privacy} `}
                       <u>
                         <a href={privacyPolicyUrl}>{contactFormLocales[locale].dataProtectionStatement}</a>
                       </u>
-                    </p>
+                    </label>
                   </div>
                 </div>
 

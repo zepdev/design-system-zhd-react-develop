@@ -44,7 +44,7 @@ const Image: React.FC<ImageProps & { isSingle: boolean }> = ({ url, description,
     )}
   >
     <div className="zep-aspect-[16/9]">
-      <img src={url} alt={alt} className="zep-w-full zep-aspect-[16/9] zep-object-cover" />
+      <img loading="lazy" src={url} alt={alt} className="zep-w-full zep-aspect-[16/9] zep-object-cover" />
     </div>
     {description && (
       <span className="zep-hyphens-auto zep-break-normal zep-bg-greyscale-200 zep-w-full zep-text-typography-dark-70 zep-opacity-70 zep-py-0.5 zep-px-1 zep-typography-bodyText">

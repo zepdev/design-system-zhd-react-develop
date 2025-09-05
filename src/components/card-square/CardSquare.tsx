@@ -73,6 +73,7 @@ const CardSquare: FC<CardSquareProps> = ({
     >
       <div tabIndex={0} ref={componentRef}>
         <img
+          loading="lazy"
           className="zep-object-cover zep-aspect-[1/1] zep-w-full zep-h-auto hover:zep-transition-opacity zep-duration-1000 hover:zep-brightness-90"
           src={imageSrc}
           alt={imageAlt}

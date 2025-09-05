@@ -20,7 +20,7 @@ const InfographicImage: FC<InfographicImageProps> = ({ imageUrl, imageAlt, point
   return (
     <div className={className}>
       <div data-testid="zep-infographic-image" className="zep-relative zep-text-left" ref={componentRef}>
-        <img src={imageUrl} alt={imageAlt} />
+        <img loading="lazy" src={imageUrl} alt={imageAlt} />
         {points?.map((point) => (
           <InfoPoint
             width={width}

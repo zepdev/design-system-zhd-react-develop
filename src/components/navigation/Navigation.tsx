@@ -78,7 +78,7 @@ export const Navigation: FC<NavigationProps> = ({
             });
           }}
         >
-          <img className="zep-size-[18px]" alt="Language switch icon" src={languageIcon} />
+          <img loading="lazy" className="zep-size-[18px]" alt="Language switch icon" src={languageIcon} />
           <p className="zep-typography-bodyText zep-text-typography-dark-100 zep-font-600 zep-text-0.875 group-hover:zep-underline">
             {`${selectedLocale?.country} | ${selectedLocale?.langAbbrev?.toUpperCase()}`}
           </p>
@@ -96,9 +96,9 @@ export const Navigation: FC<NavigationProps> = ({
           }}
           href={getHome()}
         >
-          <img alt="logo" src={logo} className="md:zep-mr-3 xl:zep-mr-4" />
+          <img loading="lazy"  alt="logo" src={logo} className="md:zep-mr-3 xl:zep-mr-4" />
         </a>
-        <img
+        <img loading="lazy"
           alt="hamburger_menu"
           src={burger}
           className="md:zep-hidden"

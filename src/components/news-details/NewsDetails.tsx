@@ -26,7 +26,7 @@ export const NewsDetails: FC<NewsDetailsProps> = ({
       <div className="zep-flex xl:zep-gap-6 md:zep-gap-2.5 md:zep-flex-row zep-flex-col sm:zep-gap-2 zep-gap-1">
         <div className="md:zep-w-[30%] zep-w-full">
           <div className="zep-aspect-[3/4]">
-            <img src={imageSrc} alt={imageAlt} className="zep-w-full zep-h-full zep-object-cover" />
+            <img loading="lazy" src={imageSrc} alt={imageAlt} className="zep-w-full zep-h-full zep-object-cover" />
           </div>
           {imageDescription && (
             <div className="zep-bg-background-medium zep-hyphens-auto zep-break-normal zep-py-0.5 zep-px-1 zep-w-full zep-text-typography-dark-70 zep-typography-bodyText">

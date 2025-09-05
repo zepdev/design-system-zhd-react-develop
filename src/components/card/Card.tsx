@@ -58,6 +58,7 @@ export const Card: FC<CardProps> = ({
       )}
     >
       <img
+        loading="lazy"
         src={imageSrc}
         alt={imageAlt}
         className={clsx('zep-aspect-[16/9]', 'zep-w-full', 'zep-object-cover')}
