@@ -16,7 +16,6 @@ export const CardMedia: React.FC<CardMediaProps> = ({
   linkType = 'internal-link',
   icon,
   iconPlacement,
-  fullWidth = false,
 }: CardMediaProps) => {
   const imageHeightClass =
     imageOrientation === 'horizontal' ? 'zep-h-[116px] md:zep-h-[132px] lg:zep-h-[148px]' : 'zep-aspect-[100/141]';
@@ -35,13 +34,11 @@ export const CardMedia: React.FC<CardMediaProps> = ({
         'zep-gap-2',
         'zep-flex-grow',
         'zep-bg-greyscale-0',
-        fullWidth ? 'zep-w-full' : [
-          'zep-min-w-[280px]',
-          'md:zep-max-w-[330px]',
-          'md:zep-min-w-[300px]',
-          'lg:zep-max-w-[538px]',
-          'lg:zep-min-w-[525px]',
-        ],
+        'zep-min-w-[280px]',
+        'md:zep-max-w-[330px]',
+        'md:zep-min-w-[300px]',
+        'lg:zep-max-w-[538px]',
+        'lg:zep-min-w-[525px]',
         className,
       )}
       data-testid="card-media"
@@ -50,12 +47,7 @@ export const CardMedia: React.FC<CardMediaProps> = ({
         loading="lazy"
         src={imageSrc}
         alt={imageAlt}
-        className={clsx(
-          imageHeightClass,
-          'zep-w-full',
-          'zep-object-cover',
-          !fullWidth && ['lg:zep-max-w-[377px]', 'lg:zep-mx-2'],
-        )}
+        className={clsx(imageHeightClass, 'zep-w-full', 'lg:zep-max-w-[377px]', 'lg:zep-mx-2', 'zep-object-cover')}
         data-testid="card-media-image"
       />
       <div className={clsx('zep-flex', 'zep-flex-col', 'zep-gap-1', 'zep-items-start')}>

@@ -5,6 +5,19 @@ import { HeaderLongComponent } from '../header-long-component';
 import { Layout } from '../layout';
 import { CardMediaGridProps } from './CardMediaGrid.interface';
 
+const gridCardStyles = `
+  .card-media-grid-item > [data-testid="card-media"] {
+    min-width: 0 !important;
+    max-width: none !important;
+    width: 100% !important;
+  }
+  .card-media-grid-item [data-testid="card-media-image"] {
+    max-width: none !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+`;
+
 export const CardMediaGrid: React.FC<CardMediaGridProps> = ({
   cards,
   imageOrientation = 'horizontal',
@@ -28,6 +41,7 @@ export const CardMediaGrid: React.FC<CardMediaGridProps> = ({
         'zep-items-start',
       )}
     >
+      <style>{gridCardStyles}</style>
       <HeaderLongComponent {...headerLongComponentProps} />
       <div
         data-testid="cards-container"
@@ -44,12 +58,9 @@ export const CardMediaGrid: React.FC<CardMediaGridProps> = ({
         )}
       >
         {cards.map((card) => (
-          <CardMedia
-            key={card.headline}
-            {...card}
-            imageOrientation={imageOrientation}
-            fullWidth
-          />
+          <div key={card.headline} className="card-media-grid-item zep-w-full">
+            <CardMedia {...card} imageOrientation={imageOrientation} />
+          </div>
         ))}
       </div>
     </Layout>

@@ -14,5 +14,4 @@ export interface CardMediaProps {
   className?: string;
   icon?: FunctionalIconNames | 'none';
   iconPlacement?: 'before' | 'after';
-  fullWidth?: boolean;
 }
