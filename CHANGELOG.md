@@ -1,3 +1,11 @@
+# [1.11.0](https://github.com/zepdev/design-system-zhd-react/compare/v1.10.50...v1.11.0) (2025-12-12)
+
+
+### Features
+
+* add CardMediaGrid component ([5c3316c](https://github.com/zepdev/design-system-zhd-react/commit/5c3316c18e8503551c20ee947fca6cfb26cf4fbd))
+* add fullWidth prop to CardMedia and update CardMediaGrid to utilize it ([3bd18ff](https://github.com/zepdev/design-system-zhd-react/commit/3bd18ff4ac38e02474e2190fbfcf7de77bec89bf))
+
 ## [1.10.50](https://github.com/zepdev/design-system-zhd-react/compare/v1.10.49...v1.10.50) (2025-09-05)
 
 
