@@ -59,4 +59,42 @@ describe('Card Media component', () => {
     expect(descriptionElement).toHaveClass('zep-text-typography-dark-100');
     expect(linkElement).toHaveClass('zep-text-typography-dark-100');
   });
+
+  it('renders with fullWidth prop', () => {
+    const { getByTestId } = render(
+      <CardMedia
+        imageSrc={imageSrc}
+        imageAlt={imageAlt}
+        headline={headline}
+        description={description}
+        linkSrc={linkSrc}
+        linkText={linkText}
+        fullWidth
+      />
+    );
+    const cardElement = getByTestId('card-media');
+    const linkElement = getByTestId('card-media-link');
+
+    expect(cardElement).toHaveClass('zep-w-full');
+    expect(cardElement).toHaveClass('zep-h-full');
+    expect(linkElement).toHaveClass('zep-mt-auto');
+  });
+
+  it('renders without fullWidth classes when fullWidth is false', () => {
+    const { getByTestId } = render(
+      <CardMedia
+        imageSrc={imageSrc}
+        imageAlt={imageAlt}
+        headline={headline}
+        description={description}
+        linkSrc={linkSrc}
+        linkText={linkText}
+        fullWidth={false}
+      />
+    );
+    const cardElement = getByTestId('card-media');
+
+    expect(cardElement).toHaveClass('zep-min-w-[280px]');
+    expect(cardElement).not.toHaveClass('zep-h-full');
+  });
 });

@@ -5,19 +5,6 @@ import { HeaderLongComponent } from '../header-long-component';
 import { Layout } from '../layout';
 import { CardMediaGridProps } from './CardMediaGrid.interface';
 
-const gridCardStyles = `
-  .card-media-grid-item > [data-testid="card-media"] {
-    min-width: 0 !important;
-    max-width: none !important;
-    width: 100% !important;
-  }
-  .card-media-grid-item [data-testid="card-media-image"] {
-    max-width: none !important;
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-  }
-`;
-
 export const CardMediaGrid: React.FC<CardMediaGridProps> = ({
   cards,
   imageOrientation = 'horizontal',
@@ -41,16 +28,15 @@ export const CardMediaGrid: React.FC<CardMediaGridProps> = ({
         'zep-items-start',
       )}
     >
-      <style>{gridCardStyles}</style>
       <HeaderLongComponent {...headerLongComponentProps} />
       <div
         data-testid="cards-container"
         className={clsx(
           'zep-grid',
           'zep-w-full',
-          'zep-gap-[16px]',
-          'sm:zep-gap-[20px]',
-          'lg:zep-gap-[24px]',
+          'zep-gap-2',
+          'sm:zep-gap-2.5',
+          'lg:zep-gap-3',
           'zep-grid-cols-1',
           'sm:zep-grid-cols-2',
           'lg:zep-grid-cols-3',
@@ -58,9 +44,7 @@ export const CardMediaGrid: React.FC<CardMediaGridProps> = ({
         )}
       >
         {cards.map((card) => (
-          <div key={card.headline} className="card-media-grid-item zep-w-full">
-            <CardMedia {...card} imageOrientation={imageOrientation} />
-          </div>
+          <CardMedia key={card.headline} {...card} imageOrientation={imageOrientation} fullWidth />
         ))}
       </div>
     </Layout>
