@@ -6,6 +6,7 @@ import languageIcon from '../../assets/language-icon.svg';
 import { LocaleVariants } from '../../interfaces/global-variants';
 import { getDataLayer } from '../../utils/getDataLayer';
 import { LanguageSwitcher } from './LanguageSwitcher';
+import { LanguageSwitcherZsd } from './LanguageSwitcherZsd';
 import { Sidebar } from './Sidebar';
 import { NavigationProps } from './navigation.interface';
 
@@ -19,10 +20,12 @@ export const Navigation: FC<NavigationProps> = ({
   navigationItems,
   locales,
   activePageUrl,
+  languageSwitcherVariant = 'default',
 }: NavigationProps) => {
   const [openSidebar, setOpenSidebar] = useState<boolean>(false);
   const [initialPath, setInitialPath] = useState<string[]>([]);
   const [localeSwitcherMenu, setLocaleSwitcherMenu] = useState<boolean>(false);
+  const isZsdVariant = languageSwitcherVariant === 'zsd';
 
   const getHome = () => {
     switch (selectedLocale?.value) {
@@ -66,23 +69,31 @@ export const Navigation: FC<NavigationProps> = ({
             />
           ))}
         </div>
-        <div
-          className="zep-flex zep-typography-bodyText zep-gap-0.5 zep-items-center zep-cursor-pointer zep-group"
-          onClick={() => setLocaleSwitcherMenu(true)}
-          onClickCapture={() => {
-            datalayer?.push({
-              event: 'interaction_nav',
-              link_text: `${selectedLocale?.country} | ${selectedLocale?.langAbbrev?.toUpperCase()}`,
-              link_type: 'language_switcher', // main_nav, logo, sub_nav, search, language_switcher, etc.
-              link_section: 'nav',
-            });
-          }}
-        >
-          <img loading="lazy" className="zep-size-[18px]" alt="Language switch icon" src={languageIcon} />
-          <p className="zep-typography-bodyText zep-text-typography-dark-100 zep-font-600 zep-text-0.875 group-hover:zep-underline">
-            {`${selectedLocale?.country} | ${selectedLocale?.langAbbrev?.toUpperCase()}`}
-          </p>
-        </div>
+        {isZsdVariant ? (
+          <LanguageSwitcherZsd
+            selectedLocale={selectedLocale}
+            locales={locales}
+            setSelectedLocale={setSelectedLocale}
+          />
+        ) : (
+          <div
+            className="zep-flex zep-typography-bodyText zep-gap-0.5 zep-items-center zep-cursor-pointer zep-group"
+            onClick={() => setLocaleSwitcherMenu(true)}
+            onClickCapture={() => {
+              datalayer?.push({
+                event: 'interaction_nav',
+                link_text: `${selectedLocale?.country} | ${selectedLocale?.langAbbrev?.toUpperCase()}`,
+                link_type: 'language_switcher', // main_nav, logo, sub_nav, search, language_switcher, etc.
+                link_section: 'nav',
+              });
+            }}
+          >
+            <img loading="lazy" className="zep-size-[18px]" alt="Language switch icon" src={languageIcon} />
+            <p className="zep-typography-bodyText zep-text-typography-dark-100 zep-font-600 zep-text-0.875 group-hover:zep-underline">
+              {`${selectedLocale?.country} | ${selectedLocale?.langAbbrev?.toUpperCase()}`}
+            </p>
+          </div>
+        )}
       </div>
       <div className="zep-p-1 sm:zep-px-1.5 md:zep-px-[66px] lg:zep-px-[122px] md:zep-py-1.5 zep-flex zep-justify-between md:zep-justify-start zep-items-center zep-border-b-1 zep-border-greyscale-400">
         <a
@@ -169,9 +180,10 @@ export const Navigation: FC<NavigationProps> = ({
           locales={locales}
           setSelectedLocale={setSelectedLocale}
           navigationUtilityItems={navigationUtilityItems}
+          languageSwitcherVariant={languageSwitcherVariant}
         />
       )}
-      {localeSwitcherMenu && (
+      {localeSwitcherMenu && !isZsdVariant && (
         <LanguageSwitcher
           setLocaleSwitcherMenu={setLocaleSwitcherMenu}
           locales={locales}

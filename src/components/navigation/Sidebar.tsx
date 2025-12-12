@@ -4,6 +4,7 @@ import languageIcon from '../../assets/language-icon.svg';
 import { useScreenSize } from '../../hooks/useScreenSize';
 import { getDataLayer } from '../../utils/getDataLayer';
 import { LanguageSwitcher } from './LanguageSwitcher';
+import { LanguageSwitcherZsd } from './LanguageSwitcherZsd';
 import { NavigationItem, NavigationMenuProps, SidebarProps } from './navigation.interface';
 
 export const Sidebar: React.FC<SidebarProps> = ({
@@ -17,7 +18,9 @@ export const Sidebar: React.FC<SidebarProps> = ({
   labelBack,
   setSelectedLocale,
   navigationUtilityItems,
+  languageSwitcherVariant = 'default',
 }: SidebarProps) => {
+  const isZsdVariant = languageSwitcherVariant === 'zsd';
   const [expanded, setExpanded] = useState(false);
   const [languageSwitcher, setLanguageSwitcher] = useState(false);
   const [animateMobileLanguage, setAnimateMobileLanguage] = useState(false);
@@ -224,8 +227,8 @@ export const Sidebar: React.FC<SidebarProps> = ({
                 }}
               />
             </div>
-            <div className={`${animateMobileLanguage ? 'zep-animate-slide-in' : ''}`}>
-              {languageSwitcher ? (
+            <div className={`${animateMobileLanguage && !isZsdVariant ? 'zep-animate-slide-in' : ''}`}>
+              {languageSwitcher && !isZsdVariant ? (
                 <div className="zep-px-1.5 sm:zep-px-3">
                   <LanguageSwitcher
                     locales={locales}
@@ -260,20 +263,30 @@ export const Sidebar: React.FC<SidebarProps> = ({
                           />
                         ))}
                       </div>
-                      <div
-                        className="zep-flex zep-gap-0.5 zep-items-center zep-mb-3 zep-cursor-pointer"
-                        onClick={(e) => {
-                          e.preventDefault();
-                          setLanguageSwitcher(true);
-                          setAnimateMobileLanguage(true);
-                          setTimeout(() => setAnimateMobileLanguage(false), 300);
-                        }}
-                      >
-                        <img loading="lazy" alt="Language switch icon" src={languageIcon} className="zep-w-1" />
-                        <p className="zep-text-typography-dark-100 zep-font-500">
-                          {`${selectedLocale?.country} | ${selectedLocale?.langAbbrev?.toUpperCase()}`}
-                        </p>
-                      </div>
+                      {isZsdVariant ? (
+                        <div className="zep-mb-3">
+                          <LanguageSwitcherZsd
+                            selectedLocale={selectedLocale}
+                            locales={locales}
+                            setSelectedLocale={setSelectedLocale}
+                          />
+                        </div>
+                      ) : (
+                        <div
+                          className="zep-flex zep-gap-0.5 zep-items-center zep-mb-3 zep-cursor-pointer"
+                          onClick={(e) => {
+                            e.preventDefault();
+                            setLanguageSwitcher(true);
+                            setAnimateMobileLanguage(true);
+                            setTimeout(() => setAnimateMobileLanguage(false), 300);
+                          }}
+                        >
+                          <img loading="lazy" alt="Language switch icon" src={languageIcon} className="zep-w-1" />
+                          <p className="zep-text-typography-dark-100 zep-font-500">
+                            {`${selectedLocale?.country} | ${selectedLocale?.langAbbrev?.toUpperCase()}`}
+                          </p>
+                        </div>
+                      )}
                     </NavigationMenu>
                   </div>
                 </div>
