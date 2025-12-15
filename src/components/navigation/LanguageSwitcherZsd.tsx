@@ -1,7 +1,7 @@
 import { Menu, Transition } from '@headlessui/react';
 import { FunctionalIcon, Radio, RadioVariant } from '@zepdev/design-system-component-library-react';
 import clsx from 'clsx';
-import * as Flags from 'country-flag-icons/react/3x2';
+import * as Flags from 'country-flag-icons/react/1x1';
 import { FC, Fragment, useMemo } from 'react';
 import { getDataLayer } from '../../utils/getDataLayer';
 import { LanguageSwitcherZsdProps, Locale } from './navigation.interface';
@@ -28,12 +28,16 @@ const COUNTRY_CODE_MAP: Record<string, CountryCode> = {
   Indien: 'IN',
   'United States': 'US',
   USA: 'US',
+  US: 'US',
+  America: 'US',
+  'Vereinigte Staaten': 'US',
+  VSA: 'US',
 };
 
 const FlagIcon: FC<{ countryCode: CountryCode; className?: string }> = ({ countryCode, className }) => {
   const FlagComponent = (Flags as any)[countryCode];
   if (!FlagComponent) return null;
-  return <FlagComponent className={clsx('zep-w-[24px] zep-h-[16px] zep-rounded-sm', className)} />;
+  return <FlagComponent className={clsx('zep-w-[20px] zep-h-[20px] zep-rounded-full', className)} />;
 };
 
 export const LanguageSwitcherZsd: FC<LanguageSwitcherZsdProps> = ({ selectedLocale, locales, setSelectedLocale }) => {
