@@ -24,6 +24,16 @@ const locales = [
   { label: 'English', value: 'in', country: 'Indien', langAbbrev: 'EN' },
 ];
 
+const zsdLocales = [
+  { label: 'Deutsch', value: 'de', country: 'Germany', langAbbrev: 'DE' },
+  { label: 'English', value: 'en', country: 'Germany', langAbbrev: 'EN' },
+  { label: 'English', value: 'fr', country: 'France', langAbbrev: 'EN' },
+  { label: 'English', value: 'it', country: 'Italy', langAbbrev: 'EN' },
+  { label: 'English', value: 'us', country: 'United States', langAbbrev: 'EN' },
+  { label: 'English', value: 'gb', country: 'Great Britain', langAbbrev: 'EN' },
+  { label: 'English', value: 'in', country: 'India', langAbbrev: 'EN' },
+];
+
 export const Default: Story = {
   args: {
     logo: zepCatLogo,
@@ -91,5 +101,36 @@ export const Default: Story = {
     labelBack: 'Back',
     selectedLocale: locales[0],
     navigationUtilityItems: [{ label: 'Services' }, { label: 'Unternehmen' }, { label: 'Kontakt & Standorte' }],
+  } as NavigationProps,
+};
+
+export const ZsdVariant: Story = {
+  args: {
+    logo: zepCatLogo,
+    activePageUrl: '/Marine',
+    languageSwitcherVariant: 'zsd',
+    navigationItems: [
+      {
+        navId: '1',
+        label: 'Marine',
+        link: '/Marine',
+        children: [
+          {
+            navId: '1',
+            label: 'Loesungen',
+            link: '/Loesungen',
+          },
+        ],
+      },
+      { navId: '2', label: 'Power & Heat' },
+      { navId: '3', label: 'Industry' },
+      { navId: '4', label: 'Oil & Gas' },
+      { navId: '5', label: 'Rail' },
+    ],
+    locales: zsdLocales,
+    header: 'Select preferred country and language',
+    labelBack: 'Back',
+    selectedLocale: zsdLocales[0],
+    navigationUtilityItems: [{ label: 'Services' }, { label: 'Company' }, { label: 'Contact & Locations' }],
   } as NavigationProps,
 };
