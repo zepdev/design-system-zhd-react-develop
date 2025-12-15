@@ -1,3 +1,15 @@
+# [1.12.0](https://github.com/zepdev/design-system-zhd-react/compare/v1.11.0...v1.12.0) (2025-12-15)
+
+
+### Bug Fixes
+
+* update flag icons to use 1x1 variant and adjust dimensions ([6216b84](https://github.com/zepdev/design-system-zhd-react/commit/6216b84777e762707480932078409173b58c2806))
+
+
+### Features
+
+* add ZSD language switcher dropdown variant ([de05fd7](https://github.com/zepdev/design-system-zhd-react/commit/de05fd7fa2db33de3b88fa73117dffb9fbe1d4ec))
+
 # [1.11.0](https://github.com/zepdev/design-system-zhd-react/compare/v1.10.50...v1.11.0) (2025-12-12)
 
 
