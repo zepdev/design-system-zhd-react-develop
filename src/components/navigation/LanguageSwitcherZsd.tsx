@@ -125,12 +125,7 @@ export const LanguageSwitcherZsd: FC<LanguageSwitcherZsdProps> = ({ selectedLoca
                       <div key={country.code} className="zep-flex zep-flex-col">
                         <div className="zep-flex zep-items-center zep-gap-0.75 zep-px-1 zep-py-0.5 zep-border-b zep-border-greyscale-300">
                           <FlagIcon countryCode={country.code} />
-                          <span
-                            className={clsx('zep-typography-bodyText zep-text-typography-dark-100', {
-                              'zep-font-600': country.locales.some((l) => l.value === selectedLocale?.value),
-                              'zep-font-400': !country.locales.some((l) => l.value === selectedLocale?.value),
-                            })}
-                          >
+                          <span className="zep-typography-bodyText zep-text-typography-dark-100 zep-font-400">
                             {country.name}
                           </span>
                         </div>
