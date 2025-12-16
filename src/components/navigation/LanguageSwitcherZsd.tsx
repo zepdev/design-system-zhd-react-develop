@@ -1,5 +1,5 @@
 import { Menu, Transition } from '@headlessui/react';
-import { FunctionalIcon, Radio, RadioVariant } from '@zepdev/design-system-component-library-react';
+import { FunctionalIcon } from '@zepdev/design-system-component-library-react';
 import clsx from 'clsx';
 import * as Flags from 'country-flag-icons/react/1x1';
 import { FC, Fragment, useMemo } from 'react';
@@ -118,10 +118,9 @@ export const LanguageSwitcherZsd: FC<LanguageSwitcherZsdProps> = ({ selectedLoca
             <Menu.Items className="zep-absolute zep-right-0 zep-mt-0.5 zep-w-[200px] zep-origin-top-right zep-bg-background-light zep-shadow-lg zep-ring-1 zep-ring-greyscale-400 zep-focus:outline-none zep-z-[1000] zep-rounded-sm zep-overflow-hidden">
               <div className="zep-py-0.5">
                 {countriesWithLocales.map((country) => {
-                  const hasMultipleLanguages = country.locales.length > 1;
                   const isGermany = country.code === 'DE';
 
-                  if (hasMultipleLanguages && isGermany) {
+                  if (isGermany) {
                     return (
                       <div key={country.code} className="zep-flex zep-flex-col">
                         <div className="zep-flex zep-items-center zep-gap-0.75 zep-px-1 zep-py-0.5 zep-border-b zep-border-greyscale-300">
@@ -133,22 +132,21 @@ export const LanguageSwitcherZsd: FC<LanguageSwitcherZsdProps> = ({ selectedLoca
                         {country.locales.map((locale) => (
                           <Menu.Item key={locale.value}>
                             {({ active }) => (
-                              <div
+                              <button
+                                type="button"
                                 onClick={() => handleLocaleSelect(locale)}
-                                className={clsx('zep-pl-[44px] zep-pr-1 zep-py-0.5 zep-cursor-pointer', {
-                                  'zep-bg-greyscale-200': active,
-                                  'zep-bg-transparent': !active,
-                                })}
+                                className={clsx(
+                                  'zep-w-full zep-text-left zep-pl-[56px] zep-pr-1 zep-py-0.5 zep-cursor-pointer zep-border-none zep-typography-bodyText',
+                                  {
+                                    'zep-bg-greyscale-200': active,
+                                    'zep-bg-transparent': !active,
+                                    'zep-font-600 zep-text-typography-dark-100': selectedLocale?.value === locale.value,
+                                    'zep-font-400 zep-text-typography-dark-100': selectedLocale?.value !== locale.value,
+                                  }
+                                )}
                               >
-                                <Radio
-                                  id={`zsd-${locale.value}`}
-                                  name="zsd-language-switcher"
-                                  label={locale.label}
-                                  onChange={() => handleLocaleSelect(locale)}
-                                  checked={selectedLocale?.value === locale.value}
-                                  variant={RadioVariant.Zsd}
-                                />
-                              </div>
+                                {locale.label}
+                              </button>
                             )}
                           </Menu.Item>
                         ))}
@@ -158,34 +156,26 @@ export const LanguageSwitcherZsd: FC<LanguageSwitcherZsdProps> = ({ selectedLoca
 
                   const locale = country.locales[0];
                   return (
-                    <div key={country.code} className="zep-flex zep-flex-col">
-                      <div className="zep-flex zep-items-center zep-gap-0.75 zep-px-1 zep-py-0.5">
-                        <FlagIcon countryCode={country.code} />
-                        <span className="zep-typography-bodyText zep-text-typography-dark-100 zep-font-600">
-                          {country.name}
-                        </span>
-                      </div>
-                      <Menu.Item>
-                        {({ active }) => (
-                          <div
-                            onClick={() => handleLocaleSelect(locale)}
-                            className={clsx('zep-pl-[44px] zep-pr-1 zep-py-0.5 zep-cursor-pointer', {
+                    <Menu.Item key={country.code}>
+                      {({ active }) => (
+                        <button
+                          type="button"
+                          onClick={() => handleLocaleSelect(locale)}
+                          className={clsx(
+                            'zep-w-full zep-flex zep-items-center zep-gap-0.75 zep-px-1 zep-py-0.5 zep-cursor-pointer zep-border-none zep-typography-bodyText zep-text-typography-dark-100',
+                            {
                               'zep-bg-greyscale-200': active,
                               'zep-bg-transparent': !active,
-                            })}
-                          >
-                            <Radio
-                              id={`zsd-${locale.value}`}
-                              name="zsd-language-switcher"
-                              label={locale.label}
-                              onChange={() => handleLocaleSelect(locale)}
-                              checked={selectedLocale?.value === locale.value}
-                              variant={RadioVariant.Zsd}
-                            />
-                          </div>
-                        )}
-                      </Menu.Item>
-                    </div>
+                              'zep-font-600': selectedLocale?.value === locale.value,
+                              'zep-font-400': selectedLocale?.value !== locale.value,
+                            }
+                          )}
+                        >
+                          <FlagIcon countryCode={country.code} />
+                          <span>{country.name}</span>
+                        </button>
+                      )}
+                    </Menu.Item>
                   );
                 })}
               </div>
