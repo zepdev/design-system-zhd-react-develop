@@ -1,3 +1,11 @@
+## [1.12.1](https://github.com/zepdev/design-system-zhd-react/compare/v1.12.0...v1.12.1) (2025-12-16)
+
+
+### Bug Fixes
+
+* simplify country name display in language switcher by removing dynamic font weight ([161f6ac](https://github.com/zepdev/design-system-zhd-react/commit/161f6acdabc61cff702d1c39b8d859d4a34039ad))
+* update font weight for selected country in language switcher ([2d7b418](https://github.com/zepdev/design-system-zhd-react/commit/2d7b418890e64a8eb496943c080a393eeefaa9ad))
+
 # [1.12.0](https://github.com/zepdev/design-system-zhd-react/compare/v1.11.0...v1.12.0) (2025-12-15)
 
 
