@@ -1,3 +1,10 @@
+## [1.12.2](https://github.com/zepdev/design-system-zhd-react/compare/v1.12.1...v1.12.2) (2025-12-22)
+
+
+### Bug Fixes
+
+* resolve SSR issues and image overflow in event cards ([608f73e](https://github.com/zepdev/design-system-zhd-react/commit/608f73e800c64ff2ea3c9871e25016e71d039a55))
+
 ## [1.12.1](https://github.com/zepdev/design-system-zhd-react/compare/v1.12.0...v1.12.1) (2025-12-16)
 
 
