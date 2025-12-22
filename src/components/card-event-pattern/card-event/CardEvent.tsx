@@ -18,7 +18,7 @@ export const CardEvent: React.FC<CardEventProps> = ({
 }: CardEventProps) => {
   const truncatedDescription = description.length > 250 ? description.slice(0, 250) + '...' : description;
   const onClick = () => {
-    if (window !== undefined) {
+    if (typeof window !== 'undefined') {
       window.open(getUrlWithTrailingSlash(linkSrc), '_self');
     }
   };
@@ -42,14 +42,13 @@ export const CardEvent: React.FC<CardEventProps> = ({
       >
         <div
           style={{ height: 'fit-content' }}
-          className="zep-block md:zep-flex md:zep-flex-shrink-0 md:zep-h-auto md:zep-w-1/5 zep-mb-1.5 sm:zep-mb-2 md:zep-mb-[0] zep-aspect-3.4"
+          className="zep-block md:zep-flex md:zep-flex-shrink-0 md:zep-h-auto md:zep-w-1/5 zep-mb-1.5 sm:zep-mb-2 md:zep-mb-[0] zep-aspect-3.4 zep-overflow-hidden"
         >
           <img
             loading="lazy"
             src={imageSrc}
             alt={imageAlt}
-            className={clsx('zep-w-full')}
-            style={{ height: 'min-intrinsic', objectFit: 'cover' }}
+            className={clsx('zep-w-full zep-h-full zep-object-cover')}
             data-testid="zep-card-event-image"
           />
         </div>

@@ -1,10 +1,17 @@
 import { useEffect, useState } from 'react';
 
-export const useScreenSize = () => {
-  const [screenSize, setScreenSize] = useState({
+const getScreenSize = () => {
+  if (typeof window === 'undefined') {
+    return { width: 0, height: 0 };
+  }
+  return {
     width: window.innerWidth,
     height: window.innerHeight,
-  });
+  };
+};
+
+export const useScreenSize = () => {
+  const [screenSize, setScreenSize] = useState(getScreenSize);
 
   useEffect(() => {
     const handleResize = () => {
@@ -12,12 +19,14 @@ export const useScreenSize = () => {
         width: window.innerWidth,
         height: window.innerHeight
       });
-    }
+    };
+    // Set initial size on mount (for SSR hydration)
+    handleResize();
     window.addEventListener('resize', handleResize);
     return () => {
       window.removeEventListener('resize', handleResize);
-    }
+    };
   }, []);
 
   return screenSize;
-}
+};

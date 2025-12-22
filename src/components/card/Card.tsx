@@ -21,13 +21,13 @@ export const Card: FC<CardProps> = ({
   gtmid,
 }: CardProps) => {
   const onClick = () => {
-    if (window !== undefined) {
+    if (typeof window !== 'undefined') {
       window.open(getUrlWithTrailingSlash(url), '_self');
     }
   };
   const datalayer = getDataLayer();
 
-  const gtm_id = gtmid || slugify(`module-card-list ${gtmHeadline} ${title}` ?? '');
+  const gtm_id = gtmid || slugify(`module-card-list ${gtmHeadline ?? ''} ${title ?? ''}`);
 
   return (
     <div
