@@ -14,6 +14,7 @@ export interface NavigationItem {
     link?: string;
     children?: NavigationItem[];
 }
+export type LanguageSwitcherVariant = 'default' | 'zsd';
 export interface SidebarProps {
     navItems: NavigationItem[];
     open: boolean;
@@ -26,6 +27,7 @@ export interface SidebarProps {
     labelBack: string;
     setSelectedLocale?: (x: Locale) => void;
     navigationUtilityItems?: NavUtilityItem[];
+    languageSwitcherVariant?: LanguageSwitcherVariant;
 }
 export interface NavigationProps {
     className?: string;
@@ -38,6 +40,7 @@ export interface NavigationProps {
     header: string;
     labelBack: string;
     activePageUrl?: string;
+    languageSwitcherVariant?: LanguageSwitcherVariant;
 }
 export interface LanguageSwitcherProps {
     header: string;
@@ -45,6 +48,11 @@ export interface LanguageSwitcherProps {
     setLocaleSwitcherMenu?: (x: boolean) => void;
     selectedLocale?: Locale;
     setLanguageSwitcher?: (x: boolean) => void;
+    locales?: Locale[];
+    setSelectedLocale?: (x: Locale) => void;
+}
+export interface LanguageSwitcherZsdProps {
+    selectedLocale?: Locale;
     locales?: Locale[];
     setSelectedLocale?: (x: Locale) => void;
 }

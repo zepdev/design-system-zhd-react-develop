@@ -1,3 +1,4 @@
 export { Navigation } from './Navigation';
-export type { Locale, NavUtilityItem, NavigationItem, NavigationProps } from './navigation.interface';
+export { LanguageSwitcherZsd } from './LanguageSwitcherZsd';
+export type { LanguageSwitcherVariant, LanguageSwitcherZsdProps, Locale, NavUtilityItem, NavigationItem, NavigationProps, } from './navigation.interface';
 //# sourceMappingURL=index.d.ts.map
