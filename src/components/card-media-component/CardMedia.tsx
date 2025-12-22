@@ -16,9 +16,20 @@ export const CardMedia: React.FC<CardMediaProps> = ({
   linkType = 'internal-link',
   icon,
   iconPlacement,
+  fullWidth = false,
 }: CardMediaProps) => {
-  const imageHeightClass =
-    imageOrientation === 'horizontal' ? 'zep-h-[116px] md:zep-h-[132px] lg:zep-h-[148px]' : 'zep-aspect-[100/141]';
+  const getImageClass = () => {
+    if (imageOrientation === 'vertical') {
+      return 'zep-aspect-[100/141]';
+    }
+    // horizontal orientation
+    if (fullWidth) {
+      // Use aspect ratio in grid for consistent scaling
+      return 'zep-aspect-[16/9]';
+    }
+    // Fixed heights for pattern use
+    return 'zep-h-[116px] md:zep-h-[132px] lg:zep-h-[148px]';
+  };
 
   return (
     <div
@@ -34,11 +45,14 @@ export const CardMedia: React.FC<CardMediaProps> = ({
         'zep-gap-2',
         'zep-flex-grow',
         'zep-bg-greyscale-0',
-        'zep-min-w-[280px]',
-        'md:zep-max-w-[330px]',
-        'md:zep-min-w-[300px]',
-        'lg:zep-max-w-[538px]',
-        'lg:zep-min-w-[525px]',
+        fullWidth ? 'zep-w-full' : [
+          'zep-min-w-[280px]',
+          'md:zep-max-w-[330px]',
+          'md:zep-min-w-[300px]',
+          'lg:zep-max-w-[538px]',
+          'lg:zep-min-w-[525px]',
+        ],
+        fullWidth && 'zep-h-full',
         className,
       )}
       data-testid="card-media"
@@ -47,10 +61,15 @@ export const CardMedia: React.FC<CardMediaProps> = ({
         loading="lazy"
         src={imageSrc}
         alt={imageAlt}
-        className={clsx(imageHeightClass, 'zep-w-full', 'lg:zep-max-w-[377px]', 'lg:zep-mx-2', 'zep-object-cover')}
+        className={clsx(
+          getImageClass(),
+          'zep-w-full',
+          'zep-object-cover',
+          !fullWidth && ['lg:zep-max-w-[377px]', 'lg:zep-mx-2'],
+        )}
         data-testid="card-media-image"
       />
-      <div className={clsx('zep-flex', 'zep-flex-col', 'zep-gap-1', 'zep-items-start')}>
+      <div className={clsx('zep-flex', 'zep-flex-col', 'zep-gap-1', 'zep-items-start', fullWidth && 'zep-flex-grow')}>
         <h4
           className={clsx(
             'zep-typography-headlineXS-fluid-cqi',
@@ -80,7 +99,7 @@ export const CardMedia: React.FC<CardMediaProps> = ({
         label={linkText}
         href={getUrlWithTrailingSlash(linkSrc)}
         mode={LinkMode.Standalone}
-        className={'zep-text-typography-dark-100 zep-self-start'}
+        className={clsx('zep-text-typography-dark-100 zep-self-start', fullWidth && 'zep-mt-auto')}
         download={linkType === 'download'}
         icon={icon !== 'none' ? icon : undefined}
         iconPlacement={iconPlacement}

@@ -1,5 +1,5 @@
 import { Pagination } from '@zepdev/design-system-component-library-react';
-import { FC, useState } from 'react';
+import { FC, useState, useEffect } from 'react';
 import { HeaderLongComponent } from '../header-long-component';
 import { Layout } from '../layout';
 import { CardEventsZsdProps } from './CardEventsZsd.interface';
@@ -7,6 +7,11 @@ import { CardEventZsd } from './card-event';
 
 export const CardEventsZsd: FC<CardEventsZsdProps> = ({ cards, ...headerProps }) => {
   const [currentPage, setCurrentPage] = useState<number>(1);
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
 
   const startIndex = (currentPage - 1) * 10;
   const endIndex = startIndex + 10;
@@ -18,16 +23,18 @@ export const CardEventsZsd: FC<CardEventsZsdProps> = ({ cards, ...headerProps })
     >
       {headerProps.headline && <HeaderLongComponent headline={headerProps.headline} {...headerProps} />}
       <div className="zep-flex zep-flex-col md:zep-gap-2 zep-gap-1.5">
-        {cards.slice(startIndex, endIndex).map((card) => (
-          <CardEventZsd {...card} />
+        {cards.slice(startIndex, endIndex).map((card, index) => (
+          <CardEventZsd key={`${card.headline}-${index}`} {...card} />
         ))}
       </div>
-      <Pagination
-        currentPage={currentPage}
-        totalElements={cards.length}
-        setCurrentPage={setCurrentPage}
-        itemsPerPage={10}
-      />
+      {isMounted && (
+        <Pagination
+          currentPage={currentPage}
+          totalElements={cards.length}
+          setCurrentPage={setCurrentPage}
+          itemsPerPage={10}
+        />
+      )}
     </Layout>
   );
 };

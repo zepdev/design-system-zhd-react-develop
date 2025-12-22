@@ -26,9 +26,10 @@ export const CardEventZsd: FC<CardEventZsdProps> = ({
             'sm:zep-border-r-1 sm:zep-border-r-greyscale-400 zep-border-b-1 zep-border-b-greyscale-400 sm:zep-border-b-[0]',
             'zep-flex zep-grow-0 zep-items-center zep-justify-center',
             'xl:zep-min-w-[50%] sm:zep-min-w-[40%] zep-min-w-full',
+            'zep-overflow-hidden zep-bg-greyscale-0',
           )}
         >
-          <img loading="lazy" className="zep-w-auto zep-h-auto zep-object-cover" src={imageSrc} alt={imageAlt} />
+          <img loading="lazy" className="zep-max-w-full zep-max-h-full zep-object-contain" src={imageSrc} alt={imageAlt} />
         </div>
         <div className={clsx(
           'xl:zep-min-w-[50%] sm:zep-min-w-[60%] zep-min-w-full',
