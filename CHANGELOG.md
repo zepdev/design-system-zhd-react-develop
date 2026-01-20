@@ -1,3 +1,10 @@
+# [1.13.0](https://github.com/zepdev/design-system-zhd-react/compare/v1.12.2...v1.13.0) (2026-01-20)
+
+
+### Features
+
+* add prominentSocialIcons prop to Footer component ([b16f89a](https://github.com/zepdev/design-system-zhd-react/commit/b16f89a9c8e0b7c71c17498389caa6c3d130e7ff))
+
 ## [1.12.2](https://github.com/zepdev/design-system-zhd-react/compare/v1.12.1...v1.12.2) (2025-12-22)
 
 
