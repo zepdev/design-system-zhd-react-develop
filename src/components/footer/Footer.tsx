@@ -1,4 +1,4 @@
-import { Link, LinkMode, LinkTarget } from '@zepdev/design-system-component-library-react';
+import { Link, LinkMode, LinkTarget, SocialMediaIconNames } from '@zepdev/design-system-component-library-react';
 import React from 'react';
 import { getDataLayer } from '../../utils/getDataLayer';
 import { getUrlWithTrailingSlash } from '../../utils/getUrlWithTrailingSlash';
@@ -8,12 +8,34 @@ import { MultiLinkList } from '../multi-link-list';
 import { FooterProps } from './Footer.interface';
 import { GlobalVariants } from '../../interfaces/global-variants';
 
+const getColoredSocialIcon = (socialIcon?: SocialMediaIconNames): SocialMediaIconNames | undefined => {
+  if (!socialIcon) return undefined;
+
+  const iconMap: Partial<Record<SocialMediaIconNames, SocialMediaIconNames>> = {
+    'youtube-circle': 'youtube-colored',
+    'instagram-circle': 'instagram-colored',
+    'linkedin-circle': 'linkedin-colored',
+    'facebook-circle': 'facebook-colored',
+    'twitter-circle': 'twitter-colored',
+    'xing-circle': 'xing-colored',
+    youtube: 'youtube-colored',
+    instagram: 'instagram-colored',
+    linkedin: 'linkedin-colored',
+    facebook: 'facebook-colored',
+    twitter: 'twitter-colored',
+    xing: 'xing-colored',
+  };
+
+  return iconMap[socialIcon] || socialIcon;
+};
+
 export const Footer: React.FC<FooterProps> = ({
   socialMediaLinks,
   socialMediaTitle,
   footerLinks,
   footerText,
   variant = GlobalVariants.Zhd,
+  prominentSocialIcons = false,
   ...multiLinkListProps
 }) => {
   const currentYear = new Date().getFullYear();
@@ -38,28 +60,38 @@ export const Footer: React.FC<FooterProps> = ({
             <div className="lg:zep-pt-5 md:zep-py-3 zep-py-1.5 sm:zep-py-2.5 md:zep-px-[0px] zep-flex zep-items-center zep-gap-2.5">
               <p className="zep-text-darkgrey-500 zep-typography-headlineXS-fluid-cqi">{socialMediaTitle}</p>
               <div className="zep-flex zep-gap-1">
-                {socialMediaLinks.map((link) => (
-                  <div
-                    key={link.socialIcon || link.icon}
-                    className="zep-rounded-full zep-h-1.5 zep-w-1.5 zep-flex zep-items-center zep-justify-center [&>a]:zep-w-[24px] [&>a]:zep-h-[24px]"
-                  >
-                    <Link
-                      label=""
-                      target={link.href?.startsWith('http') ? LinkTarget.Blank : LinkTarget.Self}
-                      socialIcon={link.socialIcon}
-                      icon={link.icon}
-                      href={getUrlWithTrailingSlash(link.href)}
-                      onClickCapture={() => {
-                        datalayer?.push({
-                          event: 'interaction_footer',
-                          link_text: link.socialIcon,
-                          link_context: link.socialIcon,
-                          link_section: `module-footer-${slugify(link?.socialIcon || '')}`,
-                        });
-                      }}
-                    />
-                  </div>
-                ))}
+                {socialMediaLinks.map((link) => {
+                  const displaySocialIcon = prominentSocialIcons
+                    ? getColoredSocialIcon(link.socialIcon)
+                    : link.socialIcon;
+
+                  return (
+                    <div
+                      key={link.socialIcon || link.icon}
+                      className={
+                        prominentSocialIcons
+                          ? 'zep-rounded-full zep-h-2 zep-w-2 zep-flex zep-items-center zep-justify-center [&>a]:zep-w-[32px] [&>a]:zep-h-[32px] [&_svg]:zep-w-[32px] [&_svg]:zep-h-[32px]'
+                          : 'zep-rounded-full zep-h-1.5 zep-w-1.5 zep-flex zep-items-center zep-justify-center [&>a]:zep-w-[24px] [&>a]:zep-h-[24px]'
+                      }
+                    >
+                      <Link
+                        label=""
+                        target={link.href?.startsWith('http') ? LinkTarget.Blank : LinkTarget.Self}
+                        socialIcon={displaySocialIcon}
+                        icon={link.icon}
+                        href={getUrlWithTrailingSlash(link.href)}
+                        onClickCapture={() => {
+                          datalayer?.push({
+                            event: 'interaction_footer',
+                            link_text: link.socialIcon,
+                            link_context: link.socialIcon,
+                            link_section: `module-footer-${slugify(link?.socialIcon || '')}`,
+                          });
+                        }}
+                      />
+                    </div>
+                  );
+                })}
               </div>
             </div>
             <div className="zep-flex lg:zep-flex-row zep-flex-col lg:zep-items-center lg:zep-gap-5 zep-gap-1 zep-py-1.5 zep-border-t-1 zep-border-t-greyscale-700 zep-w-full">
