@@ -8,4 +8,9 @@ export interface FooterProps extends Omit<MultiLinkListProps, 'variant'> {
   footerLinks: LinkProps[],
   footerText?: string,
   variant?: GlobalVariants,
+  /**
+   * When true, displays social icons larger (40x40) and uses colored variants.
+   * Default: false (maintains backward compatibility)
+   */
+  prominentSocialIcons?: boolean,
 }
