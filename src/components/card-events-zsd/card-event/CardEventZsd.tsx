@@ -1,8 +1,8 @@
-import { FC } from 'react';
 import { LinkMode, LinkTarget } from '@zepdev/design-system-component-library-react';
-import { CardEventZsdProps } from './CardEventZsd.interface';
-import { Link } from '../../zsd-link';
 import clsx from 'clsx';
+import { FC } from 'react';
+import { Link } from '../../zsd-link';
+import { CardEventZsdProps } from './CardEventZsd.interface';
 
 export const CardEventZsd: FC<CardEventZsdProps> = ({
   linkUrl,
@@ -16,7 +16,7 @@ export const CardEventZsd: FC<CardEventZsdProps> = ({
   imageAlt,
   imageSrc,
 }) => {
-  const formatDay = (day: number) => day < 10 ? `0${day}` : day;
+  const formatDay = (day: number) => (day < 10 ? `0${day}` : day);
 
   return (
     <div className="zep-flex xl:zep-flex-row zep-flex-col zep-border-1 zep-w-full zep-border-greyscale-400 zep-bg-greyscale-0">
@@ -29,16 +29,22 @@ export const CardEventZsd: FC<CardEventZsdProps> = ({
             'zep-overflow-hidden zep-bg-greyscale-0',
           )}
         >
-          <img loading="lazy" className="zep-max-w-full zep-max-h-full zep-object-contain" src={imageSrc} alt={imageAlt} />
+          <img
+            loading="lazy"
+            className="zep-max-w-full zep-max-h-full zep-object-contain"
+            src={imageSrc}
+            alt={imageAlt}
+          />
         </div>
-        <div className={clsx(
-          'xl:zep-min-w-[50%] sm:zep-min-w-[60%] zep-min-w-full',
-          'md:zep-px-2.5 md:zep-p-2 sm:zep-p-1.5 zep-p-1',
-          'zep-flex zep-grow-0 zep-flex-col sm:zep-justify-between zep-gap-0.5',
-        )}>
+        <div
+          className={clsx(
+            'xl:zep-min-w-[50%] sm:zep-min-w-[60%] zep-min-w-full',
+            'md:zep-px-2.5 md:zep-p-2 sm:zep-p-1.5 zep-p-1',
+            'zep-flex zep-grow-0 zep-flex-col sm:zep-justify-between zep-gap-0.5',
+          )}
+        >
           <div>
-            <h3
-              className="zep-text-typography-dark-100 zep-typography-headlineXL-fluid-cqi">{`${formatDay(startDay)} - ${formatDay(endDay)}`}</h3>
+            <h3 className="zep-text-typography-dark-100 zep-typography-headlineXL-fluid-cqi">{`${formatDay(startDay)} - ${formatDay(endDay)}`}</h3>
             <h4 className="zep-text-typography-dark-100 zep-typography-headlineMD-fluid-cqi">{`${month} ${year}`}</h4>
           </div>
           <p className="zep-typography-bodyText zep-text-typography-dark-70 zep-opacity-70">{`${city}, ${country}`}</p>
@@ -56,10 +62,25 @@ export const CardEventZsd: FC<CardEventZsdProps> = ({
           <p className="zep-typography-bodyText zep-text-typography-dark-100">{description}</p>
         </div>
         <div className="zep-flex zep-flex-col zep-gap-1">
-          <Link iconPlacement="after" icon="arrow-right" label={linkLabel} href={linkUrl} mode={LinkMode.Standalone} />
-          <Link iconPlacement="after" icon="external-link" label={externalLinkLabel} href={externalLinkUrl} target={LinkTarget.Blank} mode={LinkMode.Standalone} />
+          <Link
+            iconPlacement="after"
+            icon="arrow-right"
+            label={linkLabel}
+            href={linkUrl}
+            mode={LinkMode.Standalone}
+            rel="noopener noreferrer"
+          />
+          <Link
+            iconPlacement="after"
+            icon="external-link"
+            label={externalLinkLabel}
+            href={externalLinkUrl}
+            target={LinkTarget.Blank}
+            mode={LinkMode.Standalone}
+            rel="noopener noreferrer"
+          />
         </div>
       </div>
     </div>
   );
-}
+};

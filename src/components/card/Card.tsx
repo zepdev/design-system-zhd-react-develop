@@ -117,6 +117,7 @@ export const Card: FC<CardProps> = ({
             label={linkLabel}
             mode={LinkMode.Standalone}
             href={getUrlWithTrailingSlash(url)}
+            rel="noopener noreferrer"
           />
         )}
       </div>

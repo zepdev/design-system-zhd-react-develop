@@ -80,7 +80,7 @@ const MediaTextComponent = ({
               href={buttonUrl}
               target={buttonAction === 'open-internal-link' ? '_self' : '_blank'}
               download={buttonAction === 'download-file'}
-              rel="noreferrer"
+              rel="noopener noreferrer"
             >
               <Button
                 icon={iconPrimary}

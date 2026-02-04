@@ -45,6 +45,7 @@ const LinkComponent = ({
             'zep-cursor-pointer',
           )}
           iconPlacement={headerButtonIconPosition === 'left' ? 'before' : 'after'}
+          rel="noopener noreferrer"
         />
       );
     // eslint-disable-next-line no-duplicate-case

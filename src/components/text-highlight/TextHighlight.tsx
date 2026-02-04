@@ -53,6 +53,7 @@ const RichText: FC<RichTextProps> = ({ content }) => {
             iconPlacement={buttonIconPosition === 'left' ? 'before' : 'after'}
             download={buttonType === 'download'}
             href={getUrlWithTrailingSlash(buttonUrl)}
+            rel="noopener noreferrer"
           />
         )}
         {buttonText && buttonVariant !== 'link' && (
@@ -102,6 +103,7 @@ const Accordion: FC<AccordionProps> = ({ contents }) => {
             iconPlacement={buttonIconPosition === 'left' ? 'before' : 'after'}
             download={buttonType === 'download'}
             href={getUrlWithTrailingSlash(buttonUrl)}
+            rel="noopener noreferrer"
           />
         )}
         {buttonText && buttonVariant !== 'link' && (
@@ -140,6 +142,7 @@ const Table: FC<TableProps> = ({ columns, dataSource, tableMessage }) => {
             iconPlacement={buttonIconPosition === 'left' ? 'before' : 'after'}
             download={buttonType === 'download'}
             href={getUrlWithTrailingSlash(buttonUrl)}
+            rel="noopener noreferrer"
           />
         )}
         {buttonText && buttonVariant !== 'link' && (
@@ -200,12 +203,7 @@ const TextHighlight = ({
         testId="text-highlight"
       >
         {headline && (
-          <div
-            className={clsx(
-              'zep-max-w-[1728px]',
-              'zep-w-full',
-            )}
-          >
+          <div className={clsx('zep-max-w-[1728px]', 'zep-w-full')}>
             <HeaderLongComponent headline={headline} {...headerLongProps} />
           </div>
         )}

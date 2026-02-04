@@ -95,7 +95,7 @@ export const SmallHeroZsd = ({
                 href={buttonPrimaryUrl}
                 target={buttonPrimaryAction === 'open-external-link' ? '_blank' : '_self'}
                 download={buttonPrimaryAction === 'download-file'}
-                rel="noreferrer"
+                rel="noopener noreferrer"
               >
                 <Button
                   label={buttonPrimary}
@@ -123,7 +123,7 @@ export const SmallHeroZsd = ({
                 href={buttonSecondaryUrl}
                 target={buttonSecondaryAction === 'open-external-link' ? '_blank' : '_self'}
                 download={buttonSecondaryAction === 'download-file'}
-                rel="noreferrer"
+                rel="noopener noreferrer"
               >
                 <Button
                   label={buttonSecondary}
