@@ -1,3 +1,10 @@
+## [1.13.1](https://github.com/zepdev/design-system-zhd-react/compare/v1.13.0...v1.13.1) (2026-02-04)
+
+
+### Bug Fixes
+
+* add rel to all links ([1114ebe](https://github.com/zepdev/design-system-zhd-react/commit/1114ebecde6456e2c14fa271447a762af0bf74dc))
+
 # [1.13.0](https://github.com/zepdev/design-system-zhd-react/compare/v1.12.2...v1.13.0) (2026-01-20)
 
 
