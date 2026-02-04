@@ -33,6 +33,7 @@ export const ProcessChain = ({ linkChain, contentItems, id, headline, ...headerP
                           href={item.link}
                           target={LinkTarget.Blank}
                           mode={LinkMode.Inline}
+                          rel="noopener noreferrer"
                         ></Link>
                       ))}
                     </div>

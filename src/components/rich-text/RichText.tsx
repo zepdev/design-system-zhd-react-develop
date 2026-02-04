@@ -103,6 +103,7 @@ const RichText = ({
               href={getUrlWithTrailingSlash(url)}
               label={children as string}
               mode={LinkMode.Inline}
+              rel="noopener noreferrer"
             />
           ),
           'list-item': ({ children }) => (
@@ -128,7 +129,7 @@ const RichText = ({
           className="zep-max-w-max zep-inline-block zep-h-auto zep-items-center"
           href={buttonUrl}
           target={buttonAction === 'open-external-link' ? '_blank' : '_self'}
-          rel="noreferrer"
+          rel="noopener noreferrer"
           download={buttonAction === 'download-file'}
         >
           <Button

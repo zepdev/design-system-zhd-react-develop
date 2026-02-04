@@ -84,6 +84,7 @@ const Links = ({ links, headline, isFooterList, type }: LinkListItemProps) => {
             });
           }}
           mode={LinkMode.Inline}
+          rel="noopener noreferrer"
         />
       ))}
     </div>

@@ -120,6 +120,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
                   handleBack();
                 }, 300);
               }}
+              rel="noopener noreferrer"
             />
           </div>
         )}
@@ -142,6 +143,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
                 icon="home"
                 iconPlacement="before"
                 mode={LinkMode.Standalone}
+                rel="noopener noreferrer"
               />
             </li>
           )}
@@ -171,6 +173,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
 
                       setTimeout(() => setAnimate(false), 300);
                     }}
+                    rel="noopener noreferrer"
                   />
                 </div>
               ) : (
@@ -188,6 +191,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
                     });
                   }}
                   href={item.link}
+                  rel="noopener noreferrer"
                 />
               )}
             </li>
@@ -260,6 +264,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
                               });
                             }}
                             className={'zep-text-typography-dark zep-mb-1.5'}
+                            rel="noopener noreferrer"
                           />
                         ))}
                       </div>

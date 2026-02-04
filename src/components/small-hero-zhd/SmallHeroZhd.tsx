@@ -56,7 +56,7 @@ export const SmallHeroZhd: FC<SmallHeroZhdProps> = ({
             <div className="zep-flex zep-flex-col sm:zep-flex-row zep-gap-1">
               <a
                 href={buttonPrimaryUrl}
-                rel="noreferrer"
+                rel="noopener noreferrer"
                 target={buttonPrimaryAction === 'open-external-link' ? '_blank' : '_self'}
                 download={buttonPrimaryAction === 'download-file'}
               >
@@ -74,7 +74,7 @@ export const SmallHeroZhd: FC<SmallHeroZhdProps> = ({
                   href={buttonSecondaryUrl}
                   target={buttonSecondaryAction === 'open-external-link' ? '_blank' : '_self'}
                   download={buttonSecondaryAction === 'download-file'}
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                 >
                   <Button
                     label={buttonSecondary}
@@ -139,7 +139,7 @@ export const SmallHeroZhd: FC<SmallHeroZhdProps> = ({
                   href={buttonPrimaryUrl}
                   target={buttonPrimaryAction === 'open-external-link' ? '_blank' : '_self'}
                   download={buttonPrimaryAction === 'download-file'}
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                 >
                   <Button
                     label={buttonPrimary}
@@ -155,7 +155,7 @@ export const SmallHeroZhd: FC<SmallHeroZhdProps> = ({
                     href={buttonSecondaryUrl}
                     target={buttonSecondaryAction === 'open-external-link' ? '_blank' : '_self'}
                     download={buttonSecondaryAction === 'download-file'}
-                    rel="noreferrer"
+                    rel="noopener noreferrer"
                   >
                     <Button
                       label={buttonSecondary}

@@ -49,7 +49,12 @@ export const ProductHighLight: React.FC<ProductHighLightProps> = ({
           )}
         >
           <div className={clsx('zep-w-full zep-relative')}>
-            <img loading="lazy" className={clsx('zep-aspect-[4/3]', 'zep-w-full', 'zep-object-cover')} src={imageSrc} alt={imageAlt} />
+            <img
+              loading="lazy"
+              className={clsx('zep-aspect-[4/3]', 'zep-w-full', 'zep-object-cover')}
+              src={imageSrc}
+              alt={imageAlt}
+            />
           </div>
           <div className="zep-px-1 sm:zep-px-1.5 lg:zep-px-2 zep-flex zep-flex-col xl:zep-gap-3 sm:zep-gap-2 zep-gap-1 md:zep-min-w-[35%]">
             <div className="zep-flex zep-flex-col zep-gap-1 sm:zep-gap-1.5 md:zep-gap-1 xl:zep-gap-1.5">
@@ -74,6 +79,7 @@ export const ProductHighLight: React.FC<ProductHighLightProps> = ({
                 iconPlacement={buttonIconPosition === 'left' ? 'before' : 'after'}
                 download={buttonType === 'download'}
                 href={getUrlWithTrailingSlash(buttonUrl)}
+                rel="noopener noreferrer"
               />
             )}
             {buttonText && buttonVariant !== 'link' && (

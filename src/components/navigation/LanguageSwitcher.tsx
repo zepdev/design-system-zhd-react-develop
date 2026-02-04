@@ -73,6 +73,7 @@ export const LanguageSwitcher: FC<LanguageSwitcherProps> = ({
                 }
               }, 300);
             }}
+            rel="noopener noreferrer"
           />
         </div>
         <h4 className="zep-text-headlineXS-fluid-cqi zep-text-typography-dark-100 zep-mb-1.5 md:zep-mb-3">{header}</h4>
