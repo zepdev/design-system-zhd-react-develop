@@ -105,6 +105,7 @@ export const CardEvent: React.FC<CardEventProps> = ({
             href={getUrlWithTrailingSlash(linkSrc)}
             mode={LinkMode.Standalone}
             className={clsx('zep-text-typography-dark-100', 'zep-inline-block', 'zep-w-fit')}
+            rel="noopener noreferrer"
           />
         </div>
       </div>

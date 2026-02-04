@@ -45,13 +45,15 @@ export const CardMedia: React.FC<CardMediaProps> = ({
         'zep-gap-2',
         'zep-flex-grow',
         'zep-bg-greyscale-0',
-        fullWidth ? 'zep-w-full' : [
-          'zep-min-w-[280px]',
-          'md:zep-max-w-[330px]',
-          'md:zep-min-w-[300px]',
-          'lg:zep-max-w-[538px]',
-          'lg:zep-min-w-[525px]',
-        ],
+        fullWidth
+          ? 'zep-w-full'
+          : [
+              'zep-min-w-[280px]',
+              'md:zep-max-w-[330px]',
+              'md:zep-min-w-[300px]',
+              'lg:zep-max-w-[538px]',
+              'lg:zep-min-w-[525px]',
+            ],
         fullWidth && 'zep-h-full',
         className,
       )}
@@ -103,6 +105,7 @@ export const CardMedia: React.FC<CardMediaProps> = ({
         download={linkType === 'download'}
         icon={icon !== 'none' ? icon : undefined}
         iconPlacement={iconPlacement}
+        rel="noopener noreferrer"
       />
     </div>
   );

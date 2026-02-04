@@ -43,7 +43,7 @@ export const TeaserSimple: React.FC<TeaserSimpleProps> = ({
         <a
           href={buttonUrl}
           target={buttonAction === 'open-external-link' ? '_blank' : '_self'}
-          rel="noreferrer"
+          rel="noopener noreferrer"
           download={buttonAction === 'download-file'}
         >
           <Button

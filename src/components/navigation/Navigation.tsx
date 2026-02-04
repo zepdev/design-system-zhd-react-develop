@@ -66,6 +66,7 @@ export const Navigation: FC<NavigationProps> = ({
                 });
               }}
               className={'zep-text-typography-dark-100 zep-text-0.875'}
+              rel="noopener noreferrer"
             />
           ))}
         </div>
@@ -107,9 +108,10 @@ export const Navigation: FC<NavigationProps> = ({
           }}
           href={getHome()}
         >
-          <img loading="lazy"  alt="logo" src={logo} className="md:zep-mr-3 xl:zep-mr-4" />
+          <img loading="lazy" alt="logo" src={logo} className="md:zep-mr-3 xl:zep-mr-4" />
         </a>
-        <img loading="lazy"
+        <img
+          loading="lazy"
           alt="hamburger_menu"
           src={burger}
           className="md:zep-hidden"

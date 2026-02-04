@@ -25,6 +25,7 @@ export const Breadcrumb: FC<BreadcrumbProps> = ({ items }) => {
                     href={item.path}
                     mode={LinkMode.Standalone}
                     className={clsx('zep-typography-supportText zep-text-typography-dark-100 zep-max-w-max')}
+                    rel="noopener noreferrer"
                   />
                 )}
 
@@ -42,6 +43,7 @@ export const Breadcrumb: FC<BreadcrumbProps> = ({ items }) => {
                 href={items[0].path}
                 mode={LinkMode.Standalone}
                 className={clsx('zep-typography-supportText zep-text-typography-dark-100 zep-max-w-max')}
+                rel="noopener noreferrer"
               />
               <FunctionalIcon color="#262626" className="zep-h-[18px] zep-w-[18px]" name="chevron-mini-right" />
             </div>
@@ -69,6 +71,7 @@ export const Breadcrumb: FC<BreadcrumbProps> = ({ items }) => {
                   href={item.path}
                   mode={LinkMode.Standalone}
                   className={clsx('zep-typography-supportText zep-text-typography-dark-100 zep-max-w-max')}
+                  rel="noopener noreferrer"
                 />
               )}
               {index + 1 !== items.length && (

@@ -1,12 +1,12 @@
 import { Link, LinkMode, LinkTarget, SocialMediaIconNames } from '@zepdev/design-system-component-library-react';
 import React from 'react';
+import { GlobalVariants } from '../../interfaces/global-variants';
 import { getDataLayer } from '../../utils/getDataLayer';
 import { getUrlWithTrailingSlash } from '../../utils/getUrlWithTrailingSlash';
 import { slugify } from '../../utils/slugify';
 import { Layout } from '../layout';
 import { MultiLinkList } from '../multi-link-list';
 import { FooterProps } from './Footer.interface';
-import { GlobalVariants } from '../../interfaces/global-variants';
 
 const getColoredSocialIcon = (socialIcon?: SocialMediaIconNames): SocialMediaIconNames | undefined => {
   if (!socialIcon) return undefined;
@@ -88,6 +88,7 @@ export const Footer: React.FC<FooterProps> = ({
                             link_section: `module-footer-${slugify(link?.socialIcon || '')}`,
                           });
                         }}
+                        rel="noopener noreferrer"
                       />
                     </div>
                   );
@@ -113,6 +114,7 @@ export const Footer: React.FC<FooterProps> = ({
                       });
                     }}
                     href={getUrlWithTrailingSlash(link.href)}
+                    rel="noopener noreferrer"
                   />
                 ))}
               </div>

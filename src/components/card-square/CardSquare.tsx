@@ -69,7 +69,7 @@ const CardSquare: FC<CardSquareProps> = ({
         });
       }}
       data-testid="zep-card-square"
-      rel="noreferrer"
+      rel="noopener noreferrer"
     >
       <div tabIndex={0} ref={componentRef}>
         <img
