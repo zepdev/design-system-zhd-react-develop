@@ -32,6 +32,7 @@ const zsdLocales = [
   { label: 'English', value: 'us', country: 'United States', langAbbrev: 'EN' },
   { label: 'English', value: 'gb', country: 'Great Britain', langAbbrev: 'EN' },
   { label: 'English', value: 'in', country: 'India', langAbbrev: 'EN' },
+  { label: 'English', value: 'zh', country: 'China', langAbbrev: 'EN' },
 ];
 
 export const Default: Story = {
