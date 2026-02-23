@@ -1,3 +1,10 @@
+## [1.13.2](https://github.com/zepdev/design-system-zhd-react/compare/v1.13.1...v1.13.2) (2026-02-23)
+
+
+### Bug Fixes
+
+* china added ([5d72d95](https://github.com/zepdev/design-system-zhd-react/commit/5d72d95c587b9cbcad9f4418e67742db6831ba21))
+
 ## [1.13.1](https://github.com/zepdev/design-system-zhd-react/compare/v1.13.0...v1.13.1) (2026-02-04)
 
 
