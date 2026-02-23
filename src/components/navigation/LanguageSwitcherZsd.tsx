@@ -6,7 +6,7 @@ import { FC, Fragment, useMemo } from 'react';
 import { getDataLayer } from '../../utils/getDataLayer';
 import { LanguageSwitcherZsdProps, Locale } from './navigation.interface';
 
-type CountryCode = 'DE' | 'FR' | 'GB' | 'IT' | 'IN' | 'US';
+type CountryCode = 'DE' | 'FR' | 'GB' | 'IT' | 'IN' | 'US' | 'CN';
 
 interface CountryConfig {
   code: CountryCode;
@@ -32,6 +32,7 @@ const COUNTRY_CODE_MAP: Record<string, CountryCode> = {
   America: 'US',
   'Vereinigte Staaten': 'US',
   VSA: 'US',
+  China: 'CN',
 };
 
 const FlagIcon: FC<{ countryCode: CountryCode; className?: string }> = ({ countryCode, className }) => {
@@ -142,7 +143,7 @@ export const LanguageSwitcherZsd: FC<LanguageSwitcherZsdProps> = ({ selectedLoca
                                     'zep-bg-transparent': !active,
                                     'zep-font-600 zep-text-typography-dark-100': selectedLocale?.value === locale.value,
                                     'zep-font-400 zep-text-typography-dark-100': selectedLocale?.value !== locale.value,
-                                  }
+                                  },
                                 )}
                               >
                                 {locale.label}
@@ -168,7 +169,7 @@ export const LanguageSwitcherZsd: FC<LanguageSwitcherZsdProps> = ({ selectedLoca
                               'zep-bg-transparent': !active,
                               'zep-font-600': selectedLocale?.value === locale.value,
                               'zep-font-400': selectedLocale?.value !== locale.value,
-                            }
+                            },
                           )}
                         >
                           <FlagIcon countryCode={country.code} />
