@@ -44,7 +44,7 @@ const translationKeys = [
   'zip',
 ];
 
-type Translations = typeof translationKeys[number];
+type Translations = (typeof translationKeys)[number];
 
 const english: Record<Translations, string> = {
   address: 'Address',
@@ -144,4 +144,5 @@ export const contactFormLocales: Record<LocaleVariants, Record<Translations, str
   [LocaleVariants.IT]: english,
   [LocaleVariants.IN]: english,
   [LocaleVariants.US]: english,
+  [LocaleVariants.ZH]: english,
 };
