@@ -18,4 +18,5 @@ export enum LocaleVariants {
   IT = 'it',
   IN = 'en-IN',
   US = 'en-US',
+  ZH = 'zh',
 }
