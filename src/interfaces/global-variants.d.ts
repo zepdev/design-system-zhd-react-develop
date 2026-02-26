@@ -15,6 +15,7 @@ export declare enum LocaleVariants {
     GB = "en-GB",
     IT = "it",
     IN = "en-IN",
-    US = "en-US"
+    US = "en-US",
+    ZH = "zh"
 }
 //# sourceMappingURL=global-variants.d.ts.map
