@@ -3,7 +3,7 @@ export interface ContactFormZsdProps {
     onSubmit: (data: any) => void;
     headline: string;
     tagline?: string;
-    locale: 'de' | 'en' | 'fr' | 'it' | 'en-IN' | 'en-GB' | 'en-US';
+    locale: 'de' | 'en' | 'fr' | 'it' | 'en-IN' | 'en-GB' | 'en-US' | 'zh';
     loading?: boolean;
     success?: boolean;
     linkLists?: any;
