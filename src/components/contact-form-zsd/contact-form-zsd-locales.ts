@@ -182,4 +182,5 @@ export const contactFormZsdLocales: Record<LocaleVariants, Record<Translations, 
   [LocaleVariants.IT]: english,
   [LocaleVariants.IN]: english,
   [LocaleVariants.US]: english,
+  [LocaleVariants.ZH]: english,
 };
