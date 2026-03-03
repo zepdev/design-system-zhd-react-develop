@@ -1,3 +1,12 @@
+## [1.13.3](https://github.com/zepdev/design-system-zhd-react/compare/v1.13.2...v1.13.3) (2026-03-03)
+
+
+### Bug Fixes
+
+* add zh locale ([f0fc691](https://github.com/zepdev/design-system-zhd-react/commit/f0fc691d7af3c85faa0a4124b1d829b2806da35a))
+* add zh locale to contact form zsd ([fa85c3c](https://github.com/zepdev/design-system-zhd-react/commit/fa85c3cbba654b6f0105783cedb4cffc7b48a0ef))
+* update contact form checkbox labels for DE & EN ([006f1a7](https://github.com/zepdev/design-system-zhd-react/commit/006f1a762246e9f6c0b55854006d6d7d827dfd30))
+
 ## [1.13.2](https://github.com/zepdev/design-system-zhd-react/compare/v1.13.1...v1.13.2) (2026-02-23)
 
 
