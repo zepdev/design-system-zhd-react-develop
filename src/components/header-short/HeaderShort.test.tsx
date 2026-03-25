@@ -22,4 +22,28 @@ describe('HeaderShort pattern', () => {
     const taglineElement = screen.getByText(tagline);
     expect(taglineElement).toBeInTheDocument();
   });
+
+  it('should render with gray background when backgroundVariant is gray', () => {
+    const { getByTestId } = render(
+      <HeaderShort headline={headline} tagline={tagline} backgroundVariant="gray" />,
+    );
+    const wrapper = getByTestId('header-short-wrapper');
+    expect(wrapper.className).toContain('zep-bg-background-medium');
+  });
+
+  it('should not have gray background class when backgroundVariant is white', () => {
+    const { getByTestId } = render(
+      <HeaderShort headline={headline} tagline={tagline} backgroundVariant="white" />,
+    );
+    const wrapper = getByTestId('header-short-wrapper');
+    expect(wrapper.className).not.toContain('zep-bg-background-medium');
+  });
+
+  it('should default to white background when backgroundVariant is not specified', () => {
+    const { getByTestId } = render(
+      <HeaderShort headline={headline} tagline={tagline} />,
+    );
+    const wrapper = getByTestId('header-short-wrapper');
+    expect(wrapper.className).not.toContain('zep-bg-background-medium');
+  });
 });
