@@ -1,3 +1,10 @@
+## [1.14.1](https://github.com/zepdev/design-system-zhd-react/compare/v1.14.0...v1.14.1) (2026-03-25)
+
+
+### Bug Fixes
+
+* scope headlineXL to HeaderShort pattern only via headlineSize prop ([a437129](https://github.com/zepdev/design-system-zhd-react/commit/a437129a7f6581cb9c4b5c39a46e4e565fe5634e))
+
 # [1.14.0](https://github.com/zepdev/design-system-zhd-react/compare/v1.13.3...v1.14.0) (2026-03-25)
 
 
