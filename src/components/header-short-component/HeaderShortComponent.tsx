@@ -33,7 +33,7 @@ export const HeaderShortComponent = ({ tagline, headline, className }: HeaderSho
         ) : null}
         <h2
           className={
-            'zep-typography-headlineLG-fluid-cqi zep-hyphens-auto zep-break-normal zep-text-typography-dark-100'
+            'zep-typography-headlineXL-fluid-cqi zep-hyphens-auto zep-break-normal zep-text-typography-dark-100'
           }
         >
           {headline}

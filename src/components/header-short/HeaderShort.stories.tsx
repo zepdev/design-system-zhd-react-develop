@@ -1,5 +1,4 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { GlobalVariantExtended } from '../../interfaces/global-variants';
 import { HeaderShort } from './HeaderShort';
 import { HeaderShortProps } from './headershort.interface';
 
@@ -7,7 +6,12 @@ const meta = {
   title: 'Patterns/HeaderShort',
   component: HeaderShort,
   tags: ['autodocs'],
-  argTypes: {},
+  argTypes: {
+    backgroundVariant: {
+      control: 'select',
+      options: ['white', 'gray'],
+    },
+  },
 } satisfies Meta<typeof HeaderShort>;
 
 export default meta;
@@ -40,18 +44,18 @@ export const ComponentWithoutArrow: Story = {
   } as HeaderShortProps,
 };
 
-export const ComponentWithBackgroundZPS: Story = {
+export const ComponentWithGrayBackground: Story = {
   args: {
-    variant: GlobalVariantExtended.ZpsBg,
+    backgroundVariant: 'gray',
     tagline: 'Tagline',
-    headline: 'Component with background ZPS',
+    headline: 'Component with gray background',
   } as HeaderShortProps,
 };
 
-export const ComponentWithBackgroundCat: Story = {
+export const ComponentWithWhiteBackground: Story = {
   args: {
-    variant: GlobalVariantExtended.CatBg,
+    backgroundVariant: 'white',
     tagline: 'Tagline',
-    headline: 'Component with background CAT',
+    headline: 'Component with white background',
   } as HeaderShortProps,
 };
