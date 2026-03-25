@@ -15,7 +15,7 @@ export const HeaderShort: React.FC<HeaderShortProps> = ({ className, backgroundV
       wrapperClassname={wrapperBg}
       testId="header-short"
     >
-      <HeaderShortComponent {...props} className={clsx('zep-w-full', colSpanByArrow)} />
+      <HeaderShortComponent {...props} headlineSize="xl" className={clsx('zep-w-full', colSpanByArrow)} />
     </Layout>
   );
 };

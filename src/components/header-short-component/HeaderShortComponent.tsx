@@ -1,7 +1,7 @@
 import { clsx } from 'clsx';
 import { HeaderShortComponentProps } from './HeaderShortComponent.interface';
 
-export const HeaderShortComponent = ({ tagline, headline, className }: HeaderShortComponentProps) => {
+export const HeaderShortComponent = ({ tagline, headline, className, headlineSize = 'lg' }: HeaderShortComponentProps) => {
   return (
     <div
       className={clsx(
@@ -32,9 +32,10 @@ export const HeaderShortComponent = ({ tagline, headline, className }: HeaderSho
           </p>
         ) : null}
         <h2
-          className={
-            'zep-typography-headlineXL-fluid-cqi zep-hyphens-auto zep-break-normal zep-text-typography-dark-100'
-          }
+          className={clsx(
+            headlineSize === 'xl' ? 'zep-typography-headlineXL-fluid-cqi' : 'zep-typography-headlineLG-fluid-cqi',
+            'zep-hyphens-auto zep-break-normal zep-text-typography-dark-100',
+          )}
         >
           {headline}
         </h2>
