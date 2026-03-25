@@ -1,3 +1,10 @@
+# [1.14.0](https://github.com/zepdev/design-system-zhd-react/compare/v1.13.3...v1.14.0) (2026-03-25)
+
+
+### Features
+
+* add backgroundVariant prop and increase headline size for HeaderShort ([ce2291a](https://github.com/zepdev/design-system-zhd-react/commit/ce2291a1a676d8d82c4949a110d226b500a1a8e0))
+
 ## [1.13.3](https://github.com/zepdev/design-system-zhd-react/compare/v1.13.2...v1.13.3) (2026-03-03)
 
 
