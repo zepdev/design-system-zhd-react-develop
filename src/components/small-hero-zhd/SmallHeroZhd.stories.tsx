@@ -31,6 +31,20 @@ export const NoImage: Story = {
   } as SmallHeroZhdProps,
 };
 
+export const WithLightFilter: Story = {
+  args: {
+    headline: 'Tiernahrung',
+    subline: 'Herstellung auf spitzenniveau',
+    lightFilter: true,
+    buttonPrimary: 'Button Primary',
+    buttonSecondary: 'Button Secondary',
+    description:
+      'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo  ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis  dis parturient montes, nascetur ridiculus mus. ',
+    imageSrc: './public/assets/hero-small.png',
+    imageAlt: 'image alt',
+  } as SmallHeroZhdProps,
+};
+
 export const WithIndigo: Story = {
   args: {
     headline: 'Tiernahrung',
