@@ -7,6 +7,7 @@ export interface SmallHeroZhdProps {
     subline?: string;
     description?: string;
     variant?: 'default' | 'indigo';
+    lightFilter?: boolean;
     buttonPrimary?: string;
     buttonSecondary?: string;
     buttonPrimaryUrl?: string;
