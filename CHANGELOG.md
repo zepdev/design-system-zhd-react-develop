@@ -1,3 +1,10 @@
+# [1.15.0](https://github.com/zepdev/design-system-zhd-react/compare/v1.14.1...v1.15.0) (2026-04-17)
+
+
+### Features
+
+* add lightFilter prop to SmallHeroZhd ([6ab75e0](https://github.com/zepdev/design-system-zhd-react/commit/6ab75e0658f3549b14fa9f56297313b89a0703b1))
+
 ## [1.14.1](https://github.com/zepdev/design-system-zhd-react/compare/v1.14.0...v1.14.1) (2026-03-25)
 
 
