@@ -21,6 +21,7 @@ export const SmallHeroZhd: FC<SmallHeroZhdProps> = ({
   description,
   buttonPrimaryAction,
   buttonSecondaryAction,
+  lightFilter = false,
 }) => {
   const backgroundStyle =
     variant === 'indigo'
@@ -176,7 +177,9 @@ export const SmallHeroZhd: FC<SmallHeroZhdProps> = ({
           className={clsx(
             'zep-absolute',
             //{'zep-bg-gradient-to-r zep-from-[rgba(0,0,0,0.85)]': variant === 'default'},
-            'zep-bg-gradient-to-r zep-from-[rgba(0,0,0,0.85)]',
+            lightFilter
+              ? 'zep-bg-gradient-to-r zep-from-[rgba(0,0,0,0.5)]'
+              : 'zep-bg-gradient-to-r zep-from-[rgba(0,0,0,0.85)]',
             'max-md:zep-hidden',
             'md:zep-block',
             'zep-absolute',
