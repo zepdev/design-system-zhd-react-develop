@@ -1,3 +1,10 @@
+## [1.16.1](https://github.com/zepdev/design-system-zhd-react/compare/v1.16.0...v1.16.1) (2026-04-23)
+
+
+### Bug Fixes
+
+* ensure fallback for gradientColor in SmallHeroZhd component ([0fb2204](https://github.com/zepdev/design-system-zhd-react/commit/0fb22045b3298b912a73a7198ed73d3379bfefae))
+
 # [1.16.0](https://github.com/zepdev/design-system-zhd-react/compare/v1.15.0...v1.16.0) (2026-04-23)
 
 
