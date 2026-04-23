@@ -8,6 +8,7 @@ export interface SmallHeroZhdProps {
   description?: string;
   variant?: 'default' | 'indigo';
   lightFilter?: boolean;
+  gradientColor?: 'black' | 'indigo';
   buttonPrimary?: string;
   buttonSecondary?: string;
   buttonPrimaryUrl?: string;

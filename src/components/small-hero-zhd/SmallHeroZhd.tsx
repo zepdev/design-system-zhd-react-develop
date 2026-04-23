@@ -22,7 +22,13 @@ export const SmallHeroZhd: FC<SmallHeroZhdProps> = ({
   buttonPrimaryAction,
   buttonSecondaryAction,
   lightFilter = false,
+  gradientColor = 'black',
 }) => {
+  const gradientFromClasses = {
+    black: { dark: 'zep-from-[rgba(0,0,0,0.85)]', light: 'zep-from-[rgba(0,0,0,0.5)]' },
+    indigo: { dark: 'zep-from-[rgba(39,22,111,0.85)]', light: 'zep-from-[rgba(39,22,111,0.5)]' },
+  } as const;
+  const gradientFromClass = gradientFromClasses[gradientColor][lightFilter ? 'light' : 'dark'];
   const backgroundStyle =
     variant === 'indigo'
       ? { backgroundColor: '#27166F' } // Set background color to indigo
@@ -176,10 +182,8 @@ export const SmallHeroZhd: FC<SmallHeroZhdProps> = ({
         <div
           className={clsx(
             'zep-absolute',
-            //{'zep-bg-gradient-to-r zep-from-[rgba(0,0,0,0.85)]': variant === 'default'},
-            lightFilter
-              ? 'zep-bg-gradient-to-r zep-from-[rgba(0,0,0,0.5)]'
-              : 'zep-bg-gradient-to-r zep-from-[rgba(0,0,0,0.85)]',
+            'zep-bg-gradient-to-r',
+            gradientFromClass,
             'max-md:zep-hidden',
             'md:zep-block',
             'zep-absolute',
