@@ -1,3 +1,10 @@
+# [1.16.0](https://github.com/zepdev/design-system-zhd-react/compare/v1.15.0...v1.16.0) (2026-04-23)
+
+
+### Features
+
+* add gradientColor and lightFilter support to SmallHeroZhd component ([6ed4feb](https://github.com/zepdev/design-system-zhd-react/commit/6ed4feb5b68e586d030e4f894b8e8eb091489f18))
+
 # [1.15.0](https://github.com/zepdev/design-system-zhd-react/compare/v1.14.1...v1.15.0) (2026-04-17)
 
 
