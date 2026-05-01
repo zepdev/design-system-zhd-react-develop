@@ -26,7 +26,7 @@ export const SmallHeroZhd: FC<SmallHeroZhdProps> = ({
 }) => {
   const gradientFromClasses = {
     black: { dark: 'zep-from-[rgba(0,0,0,0.85)]', light: 'zep-from-[rgba(0,0,0,0.5)]' },
-    indigo: { dark: 'zep-from-[rgba(39,22,111,0.85)]', light: 'zep-from-[rgba(39,22,111,0.5)]' },
+    indigo: { dark: 'zep-from-[rgba(96,134,171,0.85)]', light: 'zep-from-[rgba(96,134,171,0.5)]' },
   } as const;
   const gradientFromClass = gradientFromClasses[gradientColor ?? 'black'][lightFilter ? 'light' : 'dark'];
   const backgroundStyle =
