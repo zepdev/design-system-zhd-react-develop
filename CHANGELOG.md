@@ -1,3 +1,10 @@
+## [1.17.1](https://github.com/zepdev/design-system-zhd-react/compare/v1.17.0...v1.17.1) (2026-05-01)
+
+
+### Bug Fixes
+
+* update indigo gradient colors in SmallHeroZhd component ([bc70321](https://github.com/zepdev/design-system-zhd-react/commit/bc703218fd253b7a43668c6ccdee084bd2437d2b))
+
 # [1.17.0](https://github.com/zepdev/design-system-zhd-react/compare/v1.16.1...v1.17.0) (2026-05-01)
 
 
