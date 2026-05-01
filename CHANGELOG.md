@@ -1,3 +1,10 @@
+# [1.17.0](https://github.com/zepdev/design-system-zhd-react/compare/v1.16.1...v1.17.0) (2026-05-01)
+
+
+### Features
+
+* add disableBottomPadding prop to HeaderShort component ([8d18371](https://github.com/zepdev/design-system-zhd-react/commit/8d1837121dd5df4c4ac47ea07ddfa143a3edcc70))
+
 ## [1.16.1](https://github.com/zepdev/design-system-zhd-react/compare/v1.16.0...v1.16.1) (2026-04-23)
 
 
