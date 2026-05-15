@@ -1,0 +1,1 @@
+import{r}from"./index-DdHSt6jH.js";const c=e=>{const[n,i]=r.useState({width:0});return r.useEffect(()=>{const s=()=>{e.current&&i({width:e.current.offsetWidth||0})},t=new ResizeObserver(s);return e.current&&(t.observe(e.current),s()),()=>{t.disconnect()}},[e]),n};export{c as u};
