@@ -1,3 +1,61 @@
+## [1.17.1](https://github.com/zepdev/design-system-zhd-react/compare/v1.17.0...v1.17.1) (2026-05-01)
+
+
+### Bug Fixes
+
+* update indigo gradient colors in SmallHeroZhd component ([bc70321](https://github.com/zepdev/design-system-zhd-react/commit/bc703218fd253b7a43668c6ccdee084bd2437d2b))
+
+# [1.17.0](https://github.com/zepdev/design-system-zhd-react/compare/v1.16.1...v1.17.0) (2026-05-01)
+
+
+### Features
+
+* add disableBottomPadding prop to HeaderShort component ([8d18371](https://github.com/zepdev/design-system-zhd-react/commit/8d1837121dd5df4c4ac47ea07ddfa143a3edcc70))
+
+## [1.16.1](https://github.com/zepdev/design-system-zhd-react/compare/v1.16.0...v1.16.1) (2026-04-23)
+
+
+### Bug Fixes
+
+* ensure fallback for gradientColor in SmallHeroZhd component ([0fb2204](https://github.com/zepdev/design-system-zhd-react/commit/0fb22045b3298b912a73a7198ed73d3379bfefae))
+
+# [1.16.0](https://github.com/zepdev/design-system-zhd-react/compare/v1.15.0...v1.16.0) (2026-04-23)
+
+
+### Features
+
+* add gradientColor and lightFilter support to SmallHeroZhd component ([6ed4feb](https://github.com/zepdev/design-system-zhd-react/commit/6ed4feb5b68e586d030e4f894b8e8eb091489f18))
+
+# [1.15.0](https://github.com/zepdev/design-system-zhd-react/compare/v1.14.1...v1.15.0) (2026-04-17)
+
+
+### Features
+
+* add lightFilter prop to SmallHeroZhd ([6ab75e0](https://github.com/zepdev/design-system-zhd-react/commit/6ab75e0658f3549b14fa9f56297313b89a0703b1))
+
+## [1.14.1](https://github.com/zepdev/design-system-zhd-react/compare/v1.14.0...v1.14.1) (2026-03-25)
+
+
+### Bug Fixes
+
+* scope headlineXL to HeaderShort pattern only via headlineSize prop ([a437129](https://github.com/zepdev/design-system-zhd-react/commit/a437129a7f6581cb9c4b5c39a46e4e565fe5634e))
+
+# [1.14.0](https://github.com/zepdev/design-system-zhd-react/compare/v1.13.3...v1.14.0) (2026-03-25)
+
+
+### Features
+
+* add backgroundVariant prop and increase headline size for HeaderShort ([ce2291a](https://github.com/zepdev/design-system-zhd-react/commit/ce2291a1a676d8d82c4949a110d226b500a1a8e0))
+
+## [1.13.3](https://github.com/zepdev/design-system-zhd-react/compare/v1.13.2...v1.13.3) (2026-03-03)
+
+
+### Bug Fixes
+
+* add zh locale ([f0fc691](https://github.com/zepdev/design-system-zhd-react/commit/f0fc691d7af3c85faa0a4124b1d829b2806da35a))
+* add zh locale to contact form zsd ([fa85c3c](https://github.com/zepdev/design-system-zhd-react/commit/fa85c3cbba654b6f0105783cedb4cffc7b48a0ef))
+* update contact form checkbox labels for DE & EN ([006f1a7](https://github.com/zepdev/design-system-zhd-react/commit/006f1a762246e9f6c0b55854006d6d7d827dfd30))
+
 ## [1.13.2](https://github.com/zepdev/design-system-zhd-react/compare/v1.13.1...v1.13.2) (2026-02-23)
 
 
