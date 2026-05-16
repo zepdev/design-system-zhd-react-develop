@@ -1,3 +1,17 @@
+## [1.17.2](https://github.com/zepdev/design-system-zhd-react/compare/v1.17.1...v1.17.2) (2026-05-16)
+
+
+### Bug Fixes
+
+* relase ([98e961e](https://github.com/zepdev/design-system-zhd-react/commit/98e961e2207fb16389467705623b1cbcbcc87588))
+* resolve Dependabot security alerts via resolutions and bumps ([109ac50](https://github.com/zepdev/design-system-zhd-react/commit/109ac500a7b587dd99b9874fff555b60e4214155))
+* update packages ([e1a75ee](https://github.com/zepdev/design-system-zhd-react/commit/e1a75ee6d2d2c5c888f24895423405805d7421c6))
+* update packages ([a892ef5](https://github.com/zepdev/design-system-zhd-react/commit/a892ef59d07dcac587e8109697442a4ea14e6c0c))
+* update packages ([883632a](https://github.com/zepdev/design-system-zhd-react/commit/883632a7b2feafadd4809740e1546467f4d58c30))
+* update packages v2 ([433e105](https://github.com/zepdev/design-system-zhd-react/commit/433e10503c032cacd2eca55b6958d73c07ebb395))
+* use @tootallnate/once 2.0.1 for jsdom CJS compatibility ([91b10a5](https://github.com/zepdev/design-system-zhd-react/commit/91b10a507e5867cb2f7966ee7ae95c4e802e4e5a))
+* use ansi-regex 5.0.1 to avoid ESM break in eslint ([3d8725b](https://github.com/zepdev/design-system-zhd-react/commit/3d8725b32bac8e30dfaa441a03a044b50a1061ac))
+
 ## [1.17.1](https://github.com/zepdev/design-system-zhd-react/compare/v1.17.0...v1.17.1) (2026-05-01)
 
 
