@@ -1,3 +1,10 @@
+## [1.17.3](https://github.com/zepdev/design-system-zhd-react/compare/v1.17.2...v1.17.3) (2026-05-19)
+
+
+### Bug Fixes
+
+* nav no children ([46bfa75](https://github.com/zepdev/design-system-zhd-react/commit/46bfa757e7bb15c5dde2ed91bbd5a41c7f71eb0e))
+
 ## [1.17.2](https://github.com/zepdev/design-system-zhd-react/compare/v1.17.1...v1.17.2) (2026-05-16)
 
 
