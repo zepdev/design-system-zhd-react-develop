@@ -93,7 +93,7 @@ export const Default: Story = {
         label: 'Industrie',
         children: [{ label: 'Industrie 1' }],
       },
-      { navId: '4', label: 'Öl & Gas' },
+      { navId: '4', label: 'Öl & Gas', link: 'aaaa', children: [] },
       { navId: '5', label: 'Schiene' },
       { navId: '6', label: 'Gebrauchtmaschinen' },
     ],

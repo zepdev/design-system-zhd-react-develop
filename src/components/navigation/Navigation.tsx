@@ -130,8 +130,12 @@ export const Navigation: FC<NavigationProps> = ({
             <div
               key={`${item.label}${index}`}
               onClick={() => {
-                setOpenSidebar(true);
-                if (item.children) setInitialPath([item.navId]);
+                if (item.children && item.children.length > 0) {
+                  setOpenSidebar(true);
+                  setInitialPath([item.navId]);
+                } else if (item.link) {
+                  window.location.href = item.link;
+                }
               }}
               className="zep-group zep-relative zep-cursor-pointer"
             >
