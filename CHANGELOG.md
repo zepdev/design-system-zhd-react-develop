@@ -1,3 +1,10 @@
+# [1.18.0](https://github.com/zepdev/design-system-zhd-react/compare/v1.17.3...v1.18.0) (2026-07-21)
+
+
+### Features
+
+* implement native country name mapping in LanguageSwitcher and Sidebar components ([f91de92](https://github.com/zepdev/design-system-zhd-react/commit/f91de925e141ec37607a189f3562bfe770c45bbb))
+
 ## [1.17.3](https://github.com/zepdev/design-system-zhd-react/compare/v1.17.2...v1.17.3) (2026-05-19)
 
 
