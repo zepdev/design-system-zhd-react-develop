@@ -5,35 +5,13 @@ import * as Flags from 'country-flag-icons/react/1x1';
 import { FC, Fragment, useMemo } from 'react';
 import { getDataLayer } from '../../utils/getDataLayer';
 import { LanguageSwitcherZsdProps, Locale } from './navigation.interface';
-
-type CountryCode = 'DE' | 'FR' | 'GB' | 'IT' | 'IN' | 'US' | 'CN';
+import { CountryCode, COUNTRY_CODE_MAP, getNativeCountryName } from './countryNames';
 
 interface CountryConfig {
   code: CountryCode;
   name: string;
   locales: Locale[];
 }
-
-const COUNTRY_CODE_MAP: Record<string, CountryCode> = {
-  Germany: 'DE',
-  Deutschland: 'DE',
-  France: 'FR',
-  Frankreich: 'FR',
-  'Great Britain': 'GB',
-  Großbritannien: 'GB',
-  'United Kingdom': 'GB',
-  Italy: 'IT',
-  Italien: 'IT',
-  India: 'IN',
-  Indien: 'IN',
-  'United States': 'US',
-  USA: 'US',
-  US: 'US',
-  America: 'US',
-  'Vereinigte Staaten': 'US',
-  VSA: 'US',
-  China: 'CN',
-};
 
 const FlagIcon: FC<{ countryCode: CountryCode; className?: string }> = ({ countryCode, className }) => {
   const FlagComponent = (Flags as any)[countryCode];
@@ -54,7 +32,7 @@ export const LanguageSwitcherZsd: FC<LanguageSwitcherZsdProps> = ({ selectedLoca
       if (!acc[locale.country]) {
         acc[locale.country] = {
           code: countryCode,
-          name: locale.country,
+          name: getNativeCountryName(locale.country),
           locales: [],
         };
       }
@@ -96,7 +74,7 @@ export const LanguageSwitcherZsd: FC<LanguageSwitcherZsdProps> = ({ selectedLoca
           >
             {selectedCountryCode && <FlagIcon countryCode={selectedCountryCode} />}
             <span className="zep-typography-bodyText zep-text-typography-dark-100 zep-font-600 zep-text-0.875 group-hover:zep-underline">
-              {`${selectedLocale?.country} | ${selectedLocale?.langAbbrev?.toUpperCase()}`}
+              {`${getNativeCountryName(selectedLocale?.country)} | ${selectedLocale?.langAbbrev?.toUpperCase()}`}
             </span>
             <FunctionalIcon
               name="chevron-down"
