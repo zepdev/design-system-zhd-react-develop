@@ -6,6 +6,7 @@ import { getDataLayer } from '../../utils/getDataLayer';
 import { LanguageSwitcher } from './LanguageSwitcher';
 import { LanguageSwitcherZsd } from './LanguageSwitcherZsd';
 import { NavigationItem, NavigationMenuProps, SidebarProps } from './navigation.interface';
+import { getNativeCountryName } from './countryNames';
 
 export const Sidebar: React.FC<SidebarProps> = ({
   navItems,
@@ -288,7 +289,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
                         >
                           <img loading="lazy" alt="Language switch icon" src={languageIcon} className="zep-w-1" />
                           <p className="zep-text-typography-dark-100 zep-font-500">
-                            {`${selectedLocale?.country} | ${selectedLocale?.langAbbrev?.toUpperCase()}`}
+                            {`${getNativeCountryName(selectedLocale?.country)} | ${selectedLocale?.langAbbrev?.toUpperCase()}`}
                           </p>
                         </div>
                       )}

@@ -9,6 +9,7 @@ import { LanguageSwitcher } from './LanguageSwitcher';
 import { LanguageSwitcherZsd } from './LanguageSwitcherZsd';
 import { Sidebar } from './Sidebar';
 import { NavigationProps } from './navigation.interface';
+import { getNativeCountryName } from './countryNames';
 
 export const Navigation: FC<NavigationProps> = ({
   navigationUtilityItems,
@@ -91,7 +92,7 @@ export const Navigation: FC<NavigationProps> = ({
           >
             <img loading="lazy" className="zep-size-[18px]" alt="Language switch icon" src={languageIcon} />
             <p className="zep-typography-bodyText zep-text-typography-dark-100 zep-font-600 zep-text-0.875 group-hover:zep-underline">
-              {`${selectedLocale?.country} | ${selectedLocale?.langAbbrev?.toUpperCase()}`}
+              {`${getNativeCountryName(selectedLocale?.country)} | ${selectedLocale?.langAbbrev?.toUpperCase()}`}
             </p>
           </div>
         )}

@@ -2,6 +2,7 @@ import { FunctionalIcon, Link, LinkMode, Radio, RadioVariant } from '@zepdev/des
 import { FC, useEffect, useState } from 'react';
 import { getDataLayer } from '../../utils/getDataLayer';
 import { LanguageSwitcherProps, Locale } from './navigation.interface';
+import { getNativeCountryName } from './countryNames';
 
 export const LanguageSwitcher: FC<LanguageSwitcherProps> = ({
   selectedLocale,
@@ -80,7 +81,7 @@ export const LanguageSwitcher: FC<LanguageSwitcherProps> = ({
         {groupedByCountry &&
           Object.keys(groupedByCountry)?.map((key, index) => (
             <div className="zep-mb-2 zep-flex zep-flex-col zep-gap-1" key={`${key}${index}`}>
-              <p className="zep-typography-bodyText zep-text-typography-dark-100">{key}</p>
+              <p className="zep-typography-bodyText zep-text-typography-dark-100">{getNativeCountryName(key)}</p>
               {groupedByCountry[key]?.map((locale: Locale) => (
                 <Radio
                   id={locale.value}
@@ -136,7 +137,7 @@ export const LanguageSwitcher: FC<LanguageSwitcherProps> = ({
                 {groupedByCountry &&
                   Object.keys(groupedByCountry)?.map((key, index) => (
                     <div className="zep-flex zep-flex-col zep-gap-1" key={`${key}${index}`}>
-                      <p className="zep-typography-bodyText zep-text-typography-dark-100">{key}</p>
+                      <p className="zep-typography-bodyText zep-text-typography-dark-100">{getNativeCountryName(key)}</p>
                       {groupedByCountry[key]?.map((locale: Locale) => (
                         <Radio
                           id={locale.value}
