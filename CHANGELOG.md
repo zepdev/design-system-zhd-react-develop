@@ -1,3 +1,10 @@
+## [1.18.1](https://github.com/zepdev/design-system-zhd-react/compare/v1.18.0...v1.18.1) (2026-07-24)
+
+
+### Bug Fixes
+
+* add rel noopener to button ([01c2537](https://github.com/zepdev/design-system-zhd-react/commit/01c2537459a02d1ef4df8430785368940b6a2460))
+
 # [1.18.0](https://github.com/zepdev/design-system-zhd-react/compare/v1.17.3...v1.18.0) (2026-07-21)
 
 
