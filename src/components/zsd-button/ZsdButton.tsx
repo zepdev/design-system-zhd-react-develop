@@ -131,6 +131,7 @@ export const Button: FC<ZsdButtonProps> = ({
         download={buttonType === 'download'}
         className="zep-w-full sm:zep-w-fit"
         target={href.startsWith('http') ? LinkTarget.Blank : LinkTarget.Self}
+        rel="noopener noreferrer"
         href={getUrlWithTrailingSlash(href)}
         onClick={() => {
           datalayer?.push({
