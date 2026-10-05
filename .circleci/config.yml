@@ -7,7 +7,7 @@ orbs:
 executors:
   node:
     docker:
-      - image: cimg/node:20.9
+      - image: cimg/node:20.20
 jobs:
   test:
     executor: node
