@@ -24,8 +24,10 @@ export declare function HeroCtas({ primaryCta, secondaryCta, linkComponent, inte
 /**
  * Fills its (relative) parent with the cover image. The horizontal focus point
  * is published as a CSS variable and read by the image's `object-position`, so
- * it works for the native `<img>` and an injected `next/image` alike. The Figma
- * teaser lays the content straight on the photo, so there is no scrim.
+ * it works for the native `<img>` and an injected `next/image` alike. A
+ * bottom-up dark scrim (black at 85% at the bottom, ~45% at the lower third,
+ * a faint 10% tint at the top) keeps the white content legible on any photo;
+ * the text block adds a soft shadow for bright patches.
  */
 export declare function HeroMedia({ image, focusX, imageComponent, }: {
     image: HeroImageProps;
