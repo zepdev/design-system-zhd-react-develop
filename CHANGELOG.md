@@ -1,3 +1,11 @@
+## [1.18.2](https://github.com/zepdev/design-system-zhd-react/compare/v1.18.1...v1.18.2) (2026-10-05)
+
+
+### Bug Fixes
+
+* dependabot issues ([14f7dce](https://github.com/zepdev/design-system-zhd-react/commit/14f7dce90c90888bbe552c242937fa0b47f9604b))
+* hero slider ([43d18e5](https://github.com/zepdev/design-system-zhd-react/commit/43d18e5b2a945eeb14d1df25984449522171f460))
+
 ## [1.18.1](https://github.com/zepdev/design-system-zhd-react/compare/v1.18.0...v1.18.1) (2026-07-24)
 
 
