@@ -153,8 +153,10 @@ export function HeroCtas({
 /**
  * Fills its (relative) parent with the cover image. The horizontal focus point
  * is published as a CSS variable and read by the image's `object-position`, so
- * it works for the native `<img>` and an injected `next/image` alike. The Figma
- * teaser lays the content straight on the photo, so there is no scrim.
+ * it works for the native `<img>` and an injected `next/image` alike. A
+ * bottom-up dark scrim (black at 85% at the bottom, ~45% at the lower third,
+ * a faint 10% tint at the top) keeps the white content legible on any photo;
+ * the text block adds a soft shadow for bright patches.
  */
 export function HeroMedia({
   image,
@@ -175,6 +177,10 @@ export function HeroMedia({
         src={image.src}
         alt={image.alt}
         className="zep-h-full zep-w-full zep-object-cover [object-position:var(--hero-focus-x)_center]"
+      />
+      <div
+        aria-hidden="true"
+        className="zep-absolute zep-inset-[0] zep-bg-gradient-to-t zep-from-[rgba(0,0,0,0.85)] zep-from-0% zep-via-[rgba(0,0,0,0.45)] zep-via-35% zep-to-[rgba(0,0,0,0.1)] zep-to-100%"
       />
     </div>
   );
@@ -213,7 +219,7 @@ export function HeroOverlayContent({
     >
       {/* Tag pinned top-left, as in the ZBM hero; the content stays bottom-left. */}
       <div>{slide.tag && <HeroTag label={slide.tag} />}</div>
-      <div className="zep-flex zep-w-full zep-max-w-[831px] zep-flex-col zep-gap-1.5">
+      <div className="zep-flex zep-w-full zep-max-w-[831px] zep-flex-col zep-gap-1.5 [text-shadow:0_2px_12px_rgba(0,0,0,0.55)]">
         <div className="zep-flex zep-flex-col zep-gap-1">
           <Heading
             className={clsx(
