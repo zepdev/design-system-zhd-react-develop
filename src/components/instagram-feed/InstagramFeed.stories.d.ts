@@ -1,6 +1,5 @@
 import { StoryObj } from '@storybook/react';
 import { InstagramFeedProps } from './InstagramFeed.interface';
-
 declare const meta: {
     title: string;
     component: import('react').FC<InstagramFeedProps>;

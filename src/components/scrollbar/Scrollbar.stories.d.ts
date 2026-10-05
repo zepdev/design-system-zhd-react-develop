@@ -1,6 +1,5 @@
 import { StoryObj } from '@storybook/react';
 import { ScrollbarProps } from './Scrollbar.interface';
-
 declare const meta: {
     title: string;
     component: import('react').FC<ScrollbarProps>;

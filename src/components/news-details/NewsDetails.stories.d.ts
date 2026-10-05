@@ -1,6 +1,5 @@
 import { StoryObj } from '@storybook/react';
 import { NewsDetailsProps } from './NewsDetails.interface';
-
 declare const meta: {
     title: string;
     component: import('react').FC<NewsDetailsProps>;

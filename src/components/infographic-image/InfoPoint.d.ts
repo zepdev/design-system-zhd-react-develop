@@ -1,5 +1,4 @@
 import { Point } from './infographic-image.interface';
-
 interface InfoPointProps {
     point: Point;
     activePoint?: Point;

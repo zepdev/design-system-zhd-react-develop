@@ -1,5 +1,4 @@
 import { InputHTMLAttributes } from 'react';
-
 export interface TextAreaProps extends InputHTMLAttributes<HTMLTextAreaElement> {
     disabled?: boolean;
     label?: string;

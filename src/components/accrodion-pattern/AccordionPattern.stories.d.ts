@@ -1,6 +1,5 @@
 import { StoryObj } from '@storybook/react';
 import { AccordionPatternProps } from './accordion.interface';
-
 declare const meta: {
     title: string;
     component: import('react').FC<AccordionPatternProps>;

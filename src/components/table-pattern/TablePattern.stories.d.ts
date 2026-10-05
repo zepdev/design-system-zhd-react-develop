@@ -1,6 +1,5 @@
 import { StoryObj } from '@storybook/react';
 import { TablePatternProps } from './TablePattern.interface';
-
 declare const meta: {
     title: string;
     component: import('react').FC<TablePatternProps>;

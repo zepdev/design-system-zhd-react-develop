@@ -1,7 +1,6 @@
 import { FunctionalIconNames } from '../../../node_modules/@zepdev/design-system-component-library-react/dist/lib';
 import { GlobalVariants } from '../../interfaces/global-variants';
 import { HeaderLongProps } from '../header-long';
-
 export interface LinkItem {
     icon: FunctionalIconNames;
     link: string;

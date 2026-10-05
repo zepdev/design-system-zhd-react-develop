@@ -4,7 +4,6 @@ import { BlocksContent } from '@strapi/blocks-react-renderer';
 import { FunctionalIconNames, TableColumn } from '@zepdev/design-system-component-library-react';
 import { MouseEvent } from 'react';
 import { GlobalVariants } from '../../interfaces/global-variants';
-
 export interface TablePatternProps extends Omit<HeaderLongComponentProps, 'variant'> {
     columns: TableColumn<object>[];
     dataSource: object[];

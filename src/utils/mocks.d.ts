@@ -1,5 +1,4 @@
 import { BlocksContent } from '@strapi/blocks-react-renderer';
-
 export declare const mockImage: {
     src: string;
     alt: string;

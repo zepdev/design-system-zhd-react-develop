@@ -1,5 +1,4 @@
 import { HTMLAttributes } from 'react';
-
 export interface CardSquareProps extends HTMLAttributes<HTMLDivElement> {
     imageSrc: string;
     imageAlt: string;

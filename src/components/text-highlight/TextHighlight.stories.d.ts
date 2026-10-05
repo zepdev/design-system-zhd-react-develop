@@ -1,5 +1,4 @@
 import { StoryObj } from '@storybook/react';
-
 declare const meta: {
     title: string;
     component: {

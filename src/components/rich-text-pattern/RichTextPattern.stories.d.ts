@@ -1,6 +1,5 @@
 import { StoryObj } from '@storybook/react';
 import { RichTextPatternProps } from './RichTextPattern.interface';
-
 declare const meta: {
     title: string;
     component: import('react').FC<RichTextPatternProps>;

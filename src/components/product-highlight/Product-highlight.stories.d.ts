@@ -1,6 +1,5 @@
 import { StoryObj } from '@storybook/react';
 import { ProductHighLightProps } from './product-highlight.interface';
-
 declare const meta: {
     title: string;
     component: import('react').FC<ProductHighLightProps>;

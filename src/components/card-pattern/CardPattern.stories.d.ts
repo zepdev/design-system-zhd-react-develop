@@ -1,6 +1,5 @@
 import { StoryObj } from '@storybook/react';
 import { CardPatternProps } from './CardPattern.interface';
-
 declare const meta: {
     title: string;
     component: import('react').FC<CardPatternProps>;

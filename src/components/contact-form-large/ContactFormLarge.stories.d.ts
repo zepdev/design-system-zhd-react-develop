@@ -1,6 +1,5 @@
 import { StoryObj } from '@storybook/react';
 import { ContactFormLargeProps } from './contact-form-large-interface';
-
 declare const meta: {
     title: string;
     component: import('react').FC<ContactFormLargeProps>;

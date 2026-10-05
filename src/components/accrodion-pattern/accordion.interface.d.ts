@@ -4,7 +4,6 @@ import { FunctionalIconNames, LinkTarget, TableColumn } from '@zepdev/design-sys
 import { MouseEvent } from 'react';
 import { GlobalVariants } from '../../interfaces/global-variants';
 import { HeaderLongProps } from '../header-long';
-
 export interface TableProps {
     columns: TableColumn<object>[];
     dataSource: object[];

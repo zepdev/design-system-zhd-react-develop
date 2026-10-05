@@ -1,6 +1,5 @@
 import { HeaderLongProps } from '../header-long';
 import { MediaTextSmallProps } from '../media-text-small/media-text-small.interface';
-
 export interface MediaTextSmallPatternProps extends Partial<HeaderLongProps> {
     items: MediaTextSmallProps[];
     id?: string;

@@ -1,5 +1,4 @@
 import { FunctionalIconNames } from '@zepdev/design-system-component-library-react';
-
 export interface CardProps {
     imageSrc: string;
     imageAlt?: string;

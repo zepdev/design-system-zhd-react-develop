@@ -1,6 +1,5 @@
 import { StoryObj } from '@storybook/react';
 import { CardEventsZsdProps } from './CardEventsZsd.interface';
-
 declare const meta: {
     title: string;
     component: import('react').FC<CardEventsZsdProps>;

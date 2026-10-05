@@ -1,6 +1,5 @@
 import { StoryObj } from '@storybook/react';
 import { AnchorNavigationListProps } from './anchor-navigation-list.interface';
-
 declare const meta: {
     title: string;
     component: import('react').FC<AnchorNavigationListProps>;

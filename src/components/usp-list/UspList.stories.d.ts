@@ -1,6 +1,5 @@
 import { StoryObj } from '@storybook/react';
 import { USPListProps } from './usp-list.interface';
-
 declare const meta: {
     title: string;
     component: import('react').FC<USPListProps>;

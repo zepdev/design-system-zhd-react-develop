@@ -4,7 +4,6 @@ import { FunctionalIconNames } from '../../../node_modules/@zepdev/design-system
 import { GlobalVariants } from '../../interfaces/global-variants';
 import { HeaderLongProps } from '../header-long';
 import { ZsdButtonVariant } from '../zsd-button';
-
 export interface ProductHighLightProps extends Partial<Omit<HeaderLongProps, 'variant'>> {
     imageAlignment?: 'left' | 'right' | 'none';
     imageSrc: string;

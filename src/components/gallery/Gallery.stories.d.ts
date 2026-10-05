@@ -1,6 +1,5 @@
 import { StoryObj } from '@storybook/react';
 import { GalleryProps } from './gallery.interface';
-
 declare const meta: {
     title: string;
     component: import('react').FC<GalleryProps>;

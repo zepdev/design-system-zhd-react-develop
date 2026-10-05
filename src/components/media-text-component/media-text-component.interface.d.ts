@@ -1,7 +1,6 @@
 import { BlocksContent } from '@strapi/blocks-react-renderer';
 import { FunctionalIconNames } from '@zepdev/design-system-component-library-react';
 import { ReactNode } from 'react';
-
 export interface MediaTextComponentContentProps extends MediaTextComponentImageProps, MediaTextComponentButtonProps {
     imageAlt?: string;
     mediaUrl?: string;

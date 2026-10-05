@@ -1,6 +1,5 @@
 import { StoryObj } from '@storybook/react';
 import { AnchorNavigationCardProps } from './anchor-navigation-card.interface';
-
 declare const meta: {
     title: string;
     component: import('react').FC<AnchorNavigationCardProps>;

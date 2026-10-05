@@ -1,5 +1,4 @@
 import { FunctionalIconNames } from '@zepdev/design-system-component-library-react';
-
 export interface SmallHeroZhdProps {
     imageSrc: string;
     imageAlt?: string;

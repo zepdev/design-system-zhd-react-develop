@@ -1,6 +1,5 @@
 import { StoryObj } from '@storybook/react';
 import { ContactFormProps } from './contact-form-interface';
-
 declare const meta: {
     title: string;
     component: import('react').FC<ContactFormProps>;

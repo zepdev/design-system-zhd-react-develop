@@ -1,6 +1,5 @@
 import { FunctionalIconNames } from '@zepdev/design-system-component-library-react';
 import { InputHTMLAttributes } from 'react';
-
 export interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
     label?: string;
     error?: string;

@@ -1,4 +1,3 @@
-
 export * from '../interfaces/global-variants';
 export * from './Teaser-simple';
 export * from './USP';
@@ -26,6 +25,7 @@ export * from './gallery';
 export * from './header-long';
 export * from './header-short';
 export * from './hero';
+export * from './hero-slider';
 export * from './infographic-image-pattern';
 export * from './instagram-feed';
 export * from './lead-text';

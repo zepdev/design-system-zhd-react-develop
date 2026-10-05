@@ -1,6 +1,5 @@
 import { HeaderShortComponentProps } from './HeaderShortComponent.interface';
 import { StoryObj } from '@storybook/react';
-
 declare const meta: {
     title: string;
     component: ({ tagline, headline, className, headlineSize }: HeaderShortComponentProps) => import("react/jsx-dev-runtime").JSX.Element;

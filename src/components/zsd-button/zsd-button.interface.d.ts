@@ -1,6 +1,5 @@
 import { FunctionalIconNames } from '@zepdev/design-system-component-library-react';
 import { ButtonHTMLAttributes, MouseEvent, ReactNode } from 'react';
-
 export declare enum ZsdButtonVariant {
     PrimaryDark = "primary-dark",
     SecondaryDark = "secondary-dark",

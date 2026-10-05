@@ -1,6 +1,5 @@
 import { StoryObj } from '@storybook/react';
 import { CardProps } from './card.interface';
-
 declare const meta: {
     title: string;
     component: import('react').FC<CardProps>;

@@ -3,7 +3,6 @@ import { FunctionalIconNames } from '@zepdev/design-system-component-library-rea
 import { AccordionContent } from '../accrodion-pattern';
 import { HeaderLongProps } from '../header-long';
 import { ZsdButtonVariant } from '../zsd-button';
-
 export interface MediaTextProductProps extends Partial<Omit<HeaderLongProps, 'variant'>> {
     className?: string;
     imageSrc: string;

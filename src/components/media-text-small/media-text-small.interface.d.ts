@@ -1,5 +1,4 @@
 import { BlocksContent } from '@strapi/blocks-react-renderer';
-
 export interface MediaTextSmallProps {
     headline: string;
     description?: BlocksContent;

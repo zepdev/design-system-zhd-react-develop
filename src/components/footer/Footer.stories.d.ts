@@ -1,7 +1,6 @@
 import { StoryObj } from '@storybook/react';
 import { FooterProps } from './Footer.interface';
 import { GlobalVariants } from '../../interfaces/global-variants';
-
 declare const meta: {
     title: string;
     component: import('react').FC<FooterProps>;

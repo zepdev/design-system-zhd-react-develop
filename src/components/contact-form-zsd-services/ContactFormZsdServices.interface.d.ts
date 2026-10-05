@@ -1,5 +1,4 @@
 import { LocaleVariants } from '../../interfaces/global-variants';
-
 export interface ContactFormZsdServicesProps {
     onSubmit: (data: unknown) => void;
     headline: string;

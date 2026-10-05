@@ -1,6 +1,5 @@
 import { StoryObj } from '@storybook/react';
 import { LightboxContactFormZsdProps } from '.';
-
 declare const meta: {
     title: string;
     component: import('react').FC<LightboxContactFormZsdProps>;

@@ -1,6 +1,5 @@
 import { LinkListItemProps } from '../link-list-item';
 import { LocaleVariants } from '../../interfaces/global-variants';
-
 export interface LightboxContactFormZsdProps {
     onSubmit: (data: unknown) => void;
     locale: LocaleVariants;

@@ -1,6 +1,5 @@
 import { StoryObj } from '@storybook/react';
 import { CardMediaProps } from './cardmedia.interface';
-
 declare const meta: {
     title: string;
     component: import('react').FC<CardMediaProps>;

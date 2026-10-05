@@ -1,5 +1,4 @@
 import { GlobalVariants } from '../../../interfaces/global-variants';
-
 export interface CardEventProps {
     imageSrc: string;
     imageAlt: string;

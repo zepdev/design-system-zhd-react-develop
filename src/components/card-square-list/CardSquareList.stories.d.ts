@@ -1,6 +1,5 @@
 import { StoryObj } from '@storybook/react';
 import { CardSquareListProps } from './card-square-list.interface';
-
 declare const meta: {
     title: string;
     component: import('react').FC<CardSquareListProps>;

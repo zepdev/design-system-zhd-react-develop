@@ -1,6 +1,5 @@
 import { StoryObj } from '@storybook/react';
 import { MediaTextProductProps } from './mediatext-product.interface';
-
 declare const meta: {
     title: string;
     component: import('react').FC<MediaTextProductProps>;

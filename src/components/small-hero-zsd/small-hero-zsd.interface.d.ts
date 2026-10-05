@@ -1,6 +1,5 @@
 import { FunctionalIconNames } from '@zepdev/design-system-component-library-react';
 import { MouseEvent } from 'react';
-
 export interface SmallHeroZsdProps {
     imageSrc: string;
     imageAlt?: string;

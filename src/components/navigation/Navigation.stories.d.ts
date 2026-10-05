@@ -1,6 +1,5 @@
 import { StoryObj } from '@storybook/react';
 import { NavigationProps } from './navigation.interface';
-
 declare const meta: {
     title: string;
     component: import('react').FC<NavigationProps>;

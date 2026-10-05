@@ -1,6 +1,5 @@
 import { StoryObj } from '@storybook/react';
 import { LeadTextProps } from './lead-text.interface';
-
 declare const meta: {
     title: string;
     component: import('react').FC<LeadTextProps>;

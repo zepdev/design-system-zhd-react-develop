@@ -4,7 +4,6 @@ import { FunctionalIconNames, TableColumn } from '@zepdev/design-system-componen
 import { MouseEvent, ReactElement } from 'react';
 import { AccordionContent } from '../accrodion-pattern';
 import { HeaderLongProps } from '../header-long';
-
 export interface AccordionProps {
     contents: AccordionContent[];
 }

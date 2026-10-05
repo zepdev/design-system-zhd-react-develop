@@ -1,7 +1,6 @@
 import { BlocksContent } from '@strapi/blocks-react-renderer';
 import { FunctionalIconNames } from '@zepdev/design-system-component-library-react';
 import { default as React } from 'react';
-
 export interface RichTextProps extends Partial<RichTextBaseProps> {
     content: BlocksContent;
     className?: string;

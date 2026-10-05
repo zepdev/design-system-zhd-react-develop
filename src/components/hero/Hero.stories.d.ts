@@ -1,6 +1,5 @@
 import { StoryObj } from '@storybook/react';
 import { HeroProps } from './hero.interface';
-
 declare const meta: {
     title: string;
     component: import('react').FC<HeroProps>;

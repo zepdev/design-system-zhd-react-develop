@@ -1,6 +1,5 @@
 import { StoryObj } from '@storybook/react';
 import { CardMediaGridProps } from './CardMediaGrid.interface';
-
 declare const meta: {
     title: string;
     component: import('react').FC<CardMediaGridProps>;

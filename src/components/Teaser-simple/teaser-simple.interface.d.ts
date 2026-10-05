@@ -1,6 +1,5 @@
 import { ButtonHTMLAttributes, MouseEvent } from 'react';
 import { FunctionalIconNames } from '@zepdev/design-system-component-library-react';
-
 export interface TeaserSimpleProps extends ButtonHTMLAttributes<HTMLButtonElement> {
     teaserText: string;
     buttonText: string;

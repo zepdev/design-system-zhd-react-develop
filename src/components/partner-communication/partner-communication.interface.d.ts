@@ -1,5 +1,4 @@
 import { GlobalVariants } from 'src/interfaces/global-variants';
-
 export interface PartnerCommunicationProps {
     headline: string;
     partners?: {

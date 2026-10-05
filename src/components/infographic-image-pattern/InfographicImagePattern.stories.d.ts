@@ -1,6 +1,5 @@
 import { StoryObj } from '@storybook/react';
 import { InfographicImagePatternProps } from './infographic-image-pattern.interface';
-
 declare const meta: {
     title: string;
     component: import('react').FC<InfographicImagePatternProps>;

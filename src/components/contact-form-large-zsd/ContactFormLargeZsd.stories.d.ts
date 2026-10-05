@@ -1,6 +1,5 @@
 import { StoryObj } from '@storybook/react';
 import { ContactFormLargeZsdProps } from './contact-form-large-zsd-interface';
-
 declare const meta: {
     title: string;
     component: import('react').FC<ContactFormLargeZsdProps>;

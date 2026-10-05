@@ -1,6 +1,5 @@
 import { StoryObj } from '@storybook/react';
 import { SmallHeroZhdProps } from './small-hero-zhd.interface';
-
 declare const meta: {
     title: string;
     component: import('react').FC<SmallHeroZhdProps>;

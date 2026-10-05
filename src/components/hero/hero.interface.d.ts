@@ -1,6 +1,5 @@
 import { FunctionalIconNames } from '@zepdev/design-system-component-library-react';
 import { MouseEvent } from 'react';
-
 export interface HeroProps {
     headline: string;
     image: string;

@@ -1,6 +1,5 @@
 import { StoryObj } from '@storybook/react';
 import { LinkProps } from './ZsdLink.interface';
-
 declare const meta: {
     title: string;
     component: import('react').FC<LinkProps>;

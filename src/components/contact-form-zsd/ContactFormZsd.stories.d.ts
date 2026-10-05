@@ -1,6 +1,5 @@
 import { Meta, StoryObj } from '@storybook/react';
 import { ContactFormZsd } from './ContactFormZsd';
-
 declare const meta: Meta<typeof ContactFormZsd>;
 export default meta;
 type Story = StoryObj<typeof ContactFormZsd>;
