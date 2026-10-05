@@ -1,3 +1,10 @@
+## [1.18.3](https://github.com/zepdev/design-system-zhd-react/compare/v1.18.2...v1.18.3) (2026-10-05)
+
+
+### Bug Fixes
+
+* shadow on letters ([2de10c8](https://github.com/zepdev/design-system-zhd-react/commit/2de10c85f856b458835009dfdd6f7e43ed57b965))
+
 ## [1.18.2](https://github.com/zepdev/design-system-zhd-react/compare/v1.18.1...v1.18.2) (2026-10-05)
 
 
