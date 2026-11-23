@@ -1,3 +1,10 @@
+## [1.18.4](https://github.com/zepdev/design-system-zhd-react/compare/v1.18.3...v1.18.4) (2026-11-23)
+
+
+### Bug Fixes
+
+* hero slider v2 ([b97cbf8](https://github.com/zepdev/design-system-zhd-react/commit/b97cbf8f343c2448b330ac401520229636011f90))
+
 ## [1.18.3](https://github.com/zepdev/design-system-zhd-react/compare/v1.18.2...v1.18.3) (2026-10-05)
 
 
