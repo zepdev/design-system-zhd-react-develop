@@ -40,6 +40,11 @@ export declare const Default: Story;
 export declare const NoAutoplay: Story;
 /** German control labels. */
 export declare const Localised: Story;
+/**
+ * Headline and subheadline are limited to 40 / 240 characters; anything longer
+ * is truncated with an ellipsis.
+ */
+export declare const TextLimits: Story;
 /** A single slide — controls hide automatically. */
 export declare const SingleSlide: Story;
 //# sourceMappingURL=HeroSlider.stories.d.ts.map
