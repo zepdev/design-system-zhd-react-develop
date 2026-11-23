@@ -38,9 +38,9 @@ export interface HeroCta {
 
 /** The content + media of a single slide. */
 export interface HeroSlideData {
-  /** Category chip shown top-left over the image (e.g. "Sofort verfügbar"). */
-  tag?: string;
+  /** Shown in full up to 40 characters; longer text is truncated with an ellipsis. */
   headline: string;
+  /** Shown in full up to 240 characters; longer text is truncated with an ellipsis. */
   subheadline?: string;
   image: HeroImageProps;
   /**

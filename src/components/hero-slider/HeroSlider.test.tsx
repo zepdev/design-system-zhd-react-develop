@@ -3,10 +3,10 @@ import { afterEach, describe, expect, it, vi } from 'vitest';
 
 import { HeroSlider } from './HeroSlider';
 import { HeroSlideData } from './hero-slider.interface';
+import { HERO_HEADLINE_MAX_LENGTH, HERO_SUBHEADLINE_MAX_LENGTH, truncateHeroText } from './HeroSliderParts';
 
 const slides: HeroSlideData[] = [
   {
-    tag: 'One',
     headline: 'Slide One',
     image: { src: '/1.webp', alt: 'First' },
     primaryCta: { label: 'CTA One', href: '#one' },
@@ -61,11 +61,22 @@ describe('HeroSlider — structure', () => {
     expect(activeDotIndex()).toBe(0);
   });
 
-  it('renders the tag and the heading at the requested level', () => {
+  it('renders the heading at the requested level', () => {
     render(<HeroSlider slides={slides} label="Featured" autoplay={false} headingLevel={1} />);
-    // The tag also renders in the inert loop clones, hence `getAll`.
-    expect(screen.getAllByText('One').length).toBeGreaterThan(0);
     expect(screen.getByRole('heading', { level: 1, name: 'Slide One' })).toBeInTheDocument();
+  });
+
+  it('dims every slide but the current one', () => {
+    render(<HeroSlider slides={slides} label="Featured" autoplay={false} />);
+    const [first, second, third] = screen.getAllByRole('listitem');
+    expect(first).toHaveAttribute('data-current', 'true');
+    expect(first).toHaveClass('zep-opacity-[1]');
+    expect(second).not.toHaveAttribute('data-current');
+    expect(second).toHaveClass('zep-opacity-[0.6]');
+
+    fireEvent.click(screen.getAllByRole('button', { name: /Go to slide/ })[2]);
+    expect(first).toHaveClass('zep-opacity-[0.6]');
+    expect(third).toHaveClass('zep-opacity-[1]');
   });
 
   it('hides the controls for a single slide', () => {
@@ -77,6 +88,38 @@ describe('HeroSlider — structure', () => {
   it('renders nothing without slides', () => {
     const { container } = render(<HeroSlider slides={[]} label="Featured" />);
     expect(container).toBeEmptyDOMElement();
+  });
+});
+
+describe('HeroSlider — text limits', () => {
+  const longHeadline = 'We create solutions for every construction site';
+  const longSubheadline = 'Lorem ipsum dolor sit amet consectetur. '.repeat(10);
+
+  it('keeps text within the limits untouched', () => {
+    expect(truncateHeroText('Slide One', HERO_HEADLINE_MAX_LENGTH)).toBe('Slide One');
+    expect(truncateHeroText('x'.repeat(40), HERO_HEADLINE_MAX_LENGTH)).toBe('x'.repeat(40));
+  });
+
+  it('truncates on a word boundary and never exceeds the limit', () => {
+    const headline = truncateHeroText(longHeadline, HERO_HEADLINE_MAX_LENGTH);
+    expect(headline).toBe('We create solutions for every…');
+    expect(headline.length).toBeLessThanOrEqual(HERO_HEADLINE_MAX_LENGTH);
+
+    const subheadline = truncateHeroText(longSubheadline, HERO_SUBHEADLINE_MAX_LENGTH);
+    expect(subheadline.endsWith('…')).toBe(true);
+    expect(subheadline.length).toBeLessThanOrEqual(HERO_SUBHEADLINE_MAX_LENGTH);
+  });
+
+  it('splits a single word that is longer than the limit', () => {
+    expect(truncateHeroText('x'.repeat(41), HERO_HEADLINE_MAX_LENGTH)).toBe(`${'x'.repeat(39)}…`);
+  });
+
+  it('renders the truncated headline and subheadline', () => {
+    render(
+      <HeroSlider slides={[{ ...slides[0], headline: longHeadline, subheadline: longSubheadline }]} label="Featured" />,
+    );
+    expect(screen.getByRole('heading', { name: 'We create solutions for every…' })).toBeInTheDocument();
+    expect(screen.queryByText(longSubheadline.trim())).not.toBeInTheDocument();
   });
 });
 
