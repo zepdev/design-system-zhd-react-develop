@@ -3,7 +3,7 @@
 import clsx from 'clsx';
 import { FocusEvent, KeyboardEvent, forwardRef, useEffect, useLayoutEffect, useRef, useState } from 'react';
 import { HeroSliderLabels, HeroSliderProps } from './hero-slider.interface';
-import { HERO_FOCUS_RING, HERO_MEDIA_BOX, HeroMedia, HeroOverlayContent } from './HeroSliderParts';
+import { HERO_FOCUS_RING, HERO_SLIDE_BOX, HeroMedia, HeroOverlayContent, HeroSlideSizer } from './HeroSliderParts';
 import { PauseCircleOutline, PlayCircleOutline } from './icons';
 import { useHeroSlider } from './useHeroSlider';
 
@@ -12,11 +12,13 @@ import { useHeroSlider } from './useHeroSlider';
  * (design-system-zbm-react `components/hero-stage/HeroSlider.tsx`), translated
  * to the ZHD design tokens.
  *
- * A full-bleed *peek* carousel: the slides are rounded hero cards laid out in a
- * horizontal scroll-snap track that spills into the page gutters, so the
- * neighbouring slides peek at the left/right edges at every width. An autoplay
- * timer advances the active slide with a visible progress indicator, gated by a
- * play/pause control, hover/focus and `prefers-reduced-motion`.
+ * A full-bleed *peek* carousel: the slides are hero cards laid out in a
+ * horizontal scroll-snap track that spans the whole viewport. The current slide
+ * fills the page's content box and its neighbours peek out of the gutters, up to
+ * the viewport edges, dimmed to 60% opacity; a slide fades to full opacity as it
+ * slides in. An autoplay timer advances the active slide with a visible progress
+ * indicator, gated by a play/pause control, hover/focus and
+ * `prefers-reduced-motion`.
  *
  * The carousel loops infinitely and *seamlessly*: the track is padded with two
  * clones on each side (the last two slides before the first, the first two after
@@ -41,11 +43,11 @@ const DEFAULT_LABELS: Required<HeroSliderLabels> = {
   slideStatus: (current, total) => `Slide ${current} of ${total}`,
 };
 
-// Gutter of the hero section. The track below cancels the same values with
-// negative margins so the slides bleed into the gutter while the first/last
-// snap points still align with the content box.
-const SECTION_GUTTER = 'zep-px-1 sm:zep-px-1.5 md:zep-px-4 lg:zep-px-7.5';
-
+// The track spans the full viewport width and is padded by the page gutter (the
+// same steps as the navigation: 16 / 24 / 66 / 122px), so the current slide
+// lines up with the page content while its neighbours show in the gutters. The
+// snap points are padded alike. Past the 1920px Figma frame the slide stops
+// growing (1676px) and stays centred; the neighbours take the extra room.
 const TRACK_CLASS = clsx(
   // `relative` makes the track the slides' offsetParent, so each slide's
   // `offsetLeft` shares the `scrollLeft` coordinate system we measure.
@@ -56,12 +58,10 @@ const TRACK_CLASS = clsx(
   'zep-py-0.5 -zep-my-0.5',
   // The native scrollbar is hidden — navigation is via the controls / swipe.
   '[-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:zep-hidden',
-  // Full-bleed: pull the track out by the section gutter, pad it back so the
-  // first slide sits at the content edge, and align the snap points to it.
-  'zep-px-1 -zep-mx-1 zep-scroll-pl-1',
-  'sm:zep-px-1.5 sm:-zep-mx-1.5 sm:zep-scroll-pl-1.5',
-  'md:zep-px-4 md:-zep-mx-4 md:zep-scroll-pl-4',
-  'lg:zep-px-7.5 lg:-zep-mx-7.5 lg:zep-scroll-pl-7.5',
+  'zep-px-1 zep-scroll-px-1',
+  'sm:zep-px-1.5 sm:zep-scroll-px-1.5',
+  'md:zep-px-[66px] md:zep-scroll-px-[66px]',
+  'lg:zep-px-[max(122px,calc((100%_-_1676px)_/_2))] lg:zep-scroll-px-[max(122px,calc((100%_-_1676px)_/_2))]',
 );
 
 // `useLayoutEffect` on the client (so the loop's initial scroll position is set
@@ -386,34 +386,40 @@ export const HeroSlider = forwardRef<HTMLElement, HeroSliderProps>(function Hero
       onBlur={onBlur}
       className={className}
     >
-      <div
-        className={clsx(
-          'zep-mx-auto zep-flex zep-w-full zep-max-w-[1728px] zep-flex-col zep-gap-2.5 zep-py-2',
-          SECTION_GUTTER,
-        )}
-      >
-        {/* Full-bleed peek track: each slide is a rounded hero card sized to the
-            content box, in a scroll-snap track that spills into the gutters so
-            the neighbours peek at the edges. The card is trimmed on phones (where
-            the gutter is narrower than the gap) so a slide still peeks; from `sm`
-            up the gutter alone gives the peek. */}
+      <div className="zep-flex zep-w-full zep-flex-col zep-gap-2.5 zep-py-2">
+        {/* Full-bleed peek track: each slide is a hero card sized to the page's
+            content box, in a scroll-snap track padded by the page gutter, so the
+            neighbours peek out of the gutters. The card is trimmed on phones
+            (where the gutter is narrower than the gap) so a slide still peeks;
+            from `sm` up the gutter alone gives the peek. */}
         <ul ref={trackRef} onScroll={onTrackScroll} className={TRACK_CLASS}>
           {displaySlides.map(({ slide, real, clone }, d) => {
+            // A loop clone of the current slide counts as current too: it is what
+            // is on screen while a wrap-around settles.
+            const isCurrent = real === active;
             // Autoplay pauses only while the pointer is over the *current* slide's
             // image — not the gutters, the controls, or a peeking neighbour.
-            const isCurrentImage = !clone && real === active;
+            const isCurrentImage = !clone && isCurrent;
             return (
               <li
                 key={clone ? `clone-${d}` : `slide-${real}`}
                 aria-hidden={clone || undefined}
-                className="zep-flex zep-w-[calc(100%-2rem)] zep-shrink-0 zep-snap-start sm:zep-w-full"
+                data-current={isCurrent || undefined}
+                className={clsx(
+                  'zep-flex zep-w-[calc(100%-2rem)] zep-shrink-0 zep-snap-start sm:zep-w-full',
+                  // Figma: slides outside the viewport's content box sit at 60%
+                  // opacity and fade to 100% as they slide in.
+                  'zep-transition-opacity zep-duration-500 zep-ease-out motion-reduce:zep-transition-none',
+                  isCurrent ? 'zep-opacity-[1]' : 'zep-opacity-[0.6]',
+                )}
               >
                 <div
-                  className={clsx(HERO_MEDIA_BOX, 'zep-w-full')}
+                  className={clsx(HERO_SLIDE_BOX, 'zep-w-full')}
                   onMouseEnter={isCurrentImage ? () => setHovered(true) : undefined}
                   onMouseLeave={isCurrentImage ? () => setHovered(false) : undefined}
                 >
                   <HeroMedia image={slide.image} focusX={slide.focusX} imageComponent={imageComponent} />
+                  <HeroSlideSizer />
                   <HeroOverlayContent
                     slide={slide}
                     headingLevel={headingLevel}

@@ -7,7 +7,6 @@ import { HeroSlideData } from './hero-slider.interface';
 
 const slides: HeroSlideData[] = [
   {
-    tag: 'Sofort verfügbar',
     headline: 'FIRST HERO SLIDE\nABOUT 2 ROWS',
     subheadline: 'Lorem ipsum dolor sit amet consectetur. Suspendisse habitasse commodo semper.',
     image: { src: tempImage, alt: 'Zeppelin machinery on site' },
@@ -16,7 +15,6 @@ const slides: HeroSlideData[] = [
     secondaryCta: { label: 'Learn more', href: '#one-b' },
   },
   {
-    tag: 'Neu',
     headline: 'SECOND HERO SLIDE\nWITH A LONGER LINE',
     subheadline: 'Another supporting sentence that can run up to two rows of copy.',
     image: { src: imageLong, alt: 'Wide landscape image' },
@@ -24,7 +22,7 @@ const slides: HeroSlideData[] = [
   },
   {
     headline: 'THIRD HERO SLIDE',
-    subheadline: 'No tag on this one.',
+    subheadline: 'A short supporting sentence.',
     image: { src: tempImage, alt: 'Zeppelin machinery on site' },
     primaryCta: { label: 'Action', href: '#three' },
     secondaryCta: { label: 'Action', href: '#three-b' },
@@ -63,6 +61,21 @@ export const Localised: Story = {
       goToSlide: 'Gehe zu Slide',
       slideStatus: (current, total) => `Slide ${current} von ${total}`,
     },
+  },
+};
+
+/**
+ * Headline and subheadline are limited to 40 / 240 characters; anything longer
+ * is truncated with an ellipsis.
+ */
+export const TextLimits: Story = {
+  args: {
+    slides: slides.map((slide) => ({
+      ...slide,
+      headline: 'We create solutions for every construction site and beyond',
+      subheadline:
+        'Lorem ipsum dolor sit amet consectetur. Sed amet feugiat egestas elementum convallis pretium pellentesque. Rutrum porta massa mauris et fames pulvinar posuere suspendisse et. In sapien lectus sit in turpis. Rutrum porta massa mauris et fames pulvinar posuere suspendisse et. In sapien lectus sit in turpis.',
+    })),
   },
 };
 

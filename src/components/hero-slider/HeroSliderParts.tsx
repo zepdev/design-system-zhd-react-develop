@@ -10,10 +10,10 @@ import {
 } from './hero-slider.interface';
 
 /**
- * Shared building blocks of the ZHD `HeroSlider` — the tag chip, the CTA row,
- * the media and the overlay content. Behaviour is ported from the ZBM
- * design-system `hero-stage/_shared.tsx`; the visuals follow the Figma
- * "ZEP-New-Teaser-Homepage" design (`Teaser/Slider-16:9`, node 4:5344).
+ * Shared building blocks of the ZHD `HeroSlider` — the CTA row, the media and
+ * the overlay content. Behaviour is ported from the ZBM design-system
+ * `hero-stage/_shared.tsx`; the visuals follow the Figma
+ * "ZEP-New-Teaser-Homepage" design (`Teaser/Slider-16:9`, node 96:5080).
  */
 
 export const HERO_FOCUS_RING = clsx(
@@ -23,23 +23,31 @@ export const HERO_FOCUS_RING = clsx(
   'focus-visible:zep-outline-focus',
 );
 
+/** Every in-flow child of the slide box shares its single grid cell. */
+const HERO_SLIDE_CELL = 'zep-col-start-1 zep-row-start-1';
+
 // ---------------------------------------------------------------------------
-// Tag
+// Text limits
 // ---------------------------------------------------------------------------
 
-/** Optional category chip pinned top-left over the image, as in the ZBM hero (renders only when set). */
-export function HeroTag({ label }: { label: string }) {
-  return (
-    <span
-      className={clsx(
-        'zep-inline-flex zep-w-fit zep-items-center zep-justify-center zep-rounded-full',
-        'zep-bg-primary-default zep-text-typography-light-100',
-        'zep-typography-supportText zep-px-0.75 zep-py-0.125',
-      )}
-    >
-      {label}
-    </span>
-  );
+/** Figma: the headline holds at most 40 characters, then it is truncated. */
+export const HERO_HEADLINE_MAX_LENGTH = 40;
+/** Figma: the subheadline holds at most 240 characters, then it is truncated. */
+export const HERO_SUBHEADLINE_MAX_LENGTH = 240;
+
+/**
+ * Cuts `text` down to `maxLength` characters, ellipsis included. The cut backs
+ * up to the last word boundary when one is close enough, so a word is only
+ * split when it is (nearly) as long as the limit itself.
+ */
+export function truncateHeroText(text: string, maxLength: number): string {
+  const chars = Array.from(text.trim());
+  if (chars.length <= maxLength) return chars.join('');
+  const kept = chars.slice(0, maxLength - 1);
+  const endsOnWord = /\s/.test(chars[maxLength - 1]);
+  const lastSpace = kept.map((char) => /\s/.test(char)).lastIndexOf(true);
+  const cut = !endsOnWord && lastSpace >= maxLength / 2 ? kept.slice(0, lastSpace) : kept;
+  return `${cut.join('').replace(/[\s.,;:!?–—-]+$/u, '')}…`;
 }
 
 // ---------------------------------------------------------------------------
@@ -153,10 +161,12 @@ export function HeroCtas({
 /**
  * Fills its (relative) parent with the cover image. The horizontal focus point
  * is published as a CSS variable and read by the image's `object-position`, so
- * it works for the native `<img>` and an injected `next/image` alike. A
- * bottom-up dark scrim (black at 85% at the bottom, ~45% at the lower third,
- * a faint 10% tint at the top) keeps the white content legible on any photo;
- * the text block adds a soft shadow for bright patches.
+ * it works for the native `<img>` and an injected `next/image` alike.
+ *
+ * Figma "teaser detail": the image sits at 70% opacity on the card's Grey500
+ * background (see `HERO_SLIDE_BOX`), under a bottom-up gradient from black at
+ * 70% (15% of the height) to a transparent #666 (75%). That treatment alone
+ * carries the legibility of the white content — the text has no shadow.
  */
 export function HeroMedia({
   image,
@@ -176,11 +186,11 @@ export function HeroMedia({
       <Img
         src={image.src}
         alt={image.alt}
-        className="zep-h-full zep-w-full zep-object-cover [object-position:var(--hero-focus-x)_center]"
+        className="zep-h-full zep-w-full zep-object-cover zep-opacity-[0.7] [object-position:var(--hero-focus-x)_center]"
       />
       <div
         aria-hidden="true"
-        className="zep-absolute zep-inset-[0] zep-bg-gradient-to-t zep-from-[rgba(0,0,0,0.85)] zep-from-0% zep-via-[rgba(0,0,0,0.45)] zep-via-35% zep-to-[rgba(0,0,0,0.1)] zep-to-100%"
+        className="zep-absolute zep-inset-[0] zep-bg-[linear-gradient(to_top,rgba(0,0,0,0.7)_15%,rgba(102,102,102,0)_75%)]"
       />
     </div>
   );
@@ -191,10 +201,11 @@ export function HeroMedia({
 // ---------------------------------------------------------------------------
 
 /**
- * The content overlaid bottom-left on a slide (Figma "content hero": 831px
+ * The content overlaid bottom-left on a slide (Figma "content hero": 960px
  * wide, 156px from the left and 80px from the bottom on desktop; headline,
- * 16px, description, 24px, buttons). Rendered absolutely over the media inside
- * a `relative` parent.
+ * 16px, description, 24px, buttons). It is laid out *in flow* inside the slide
+ * box, so the box can never be shorter than its text and CTAs. Headline and
+ * subheadline are truncated to the Figma limits.
  */
 export function HeroOverlayContent({
   slide,
@@ -213,13 +224,12 @@ export function HeroOverlayContent({
   return (
     <div
       className={clsx(
-        'zep-absolute zep-inset-[0] zep-flex zep-flex-col zep-justify-between',
+        HERO_SLIDE_CELL,
+        'zep-relative zep-w-full zep-self-end',
         'zep-px-1 zep-py-1.5 sm:zep-px-3 sm:zep-py-3 md:zep-px-5 md:zep-py-5 lg:zep-px-[156px]',
       )}
     >
-      {/* Tag pinned top-left, as in the ZBM hero; the content stays bottom-left. */}
-      <div>{slide.tag && <HeroTag label={slide.tag} />}</div>
-      <div className="zep-flex zep-w-full zep-max-w-[831px] zep-flex-col zep-gap-1.5 [text-shadow:0_2px_12px_rgba(0,0,0,0.55)]">
+      <div className="zep-flex zep-w-full zep-max-w-[960px] zep-flex-col zep-gap-1.5">
         <div className="zep-flex zep-flex-col zep-gap-1">
           <Heading
             className={clsx(
@@ -228,17 +238,12 @@ export function HeroOverlayContent({
               'zep-typography-headlineXL-fluid-cqi lg:zep-text-[48px] lg:zep-leading-[56px]',
             )}
           >
-            {slide.headline}
+            {truncateHeroText(slide.headline, HERO_HEADLINE_MAX_LENGTH)}
           </Heading>
           {slide.subheadline && (
-            <p
-              className={clsx(
-                'zep-whitespace-pre-line zep-text-typography-light-100',
-                // Figma "Body LG": 20/32 on desktop.
-                'zep-typography-bodyText md:zep-text-1.25 md:zep-leading-2',
-              )}
-            >
-              {slide.subheadline}
+            // Figma "Body MD": 16/28 at every width.
+            <p className="zep-typography-bodyText zep-whitespace-pre-line zep-text-typography-light-100">
+              {truncateHeroText(slide.subheadline, HERO_SUBHEADLINE_MAX_LENGTH)}
             </p>
           )}
         </div>
@@ -254,13 +259,35 @@ export function HeroOverlayContent({
   );
 }
 
+// ---------------------------------------------------------------------------
+// Slide box
+// ---------------------------------------------------------------------------
+
 /**
- * The `relative` aspect-ratio box every slide sits in (square corners, per
- * Figma); `overflow-hidden` clips the image to it. 16:9 from `md` up (Figma
- * 1677×943); the ratio steps down on smaller screens so the slide never gets
- * disproportionately tall.
+ * The box every slide sits in (square corners, per Figma): a one-cell grid on
+ * the card's Grey500 background that clips the absolutely positioned media.
+ * Its height is the taller of `HeroSlideSizer` and the content, so text and
+ * CTAs are never cut off. The `greyscale-500` token compiles to an 8-digit hex
+ * with alpha, hence the literal.
  */
-export const HERO_MEDIA_BOX = clsx(
-  'zep-relative zep-overflow-hidden',
-  'zep-aspect-[326/556] sm:zep-aspect-[3/2] md:zep-aspect-[16/9]',
-);
+export const HERO_SLIDE_BOX = 'zep-relative zep-grid zep-overflow-hidden zep-bg-[#a5a5a5]';
+
+/**
+ * Gives the slide box its designed height: 16:9 from `md` up (Figma 1676×943),
+ * stepping down to 3:2 on tablets, 4:3 on large phones and a portrait ratio on
+ * small phones. Below `md` the height is additionally capped to what is left
+ * of the viewport beside the page header and the slider controls, so a slide
+ * shows completely — image, text and CTAs — without scrolling.
+ */
+export function HeroSlideSizer() {
+  return (
+    <div
+      aria-hidden="true"
+      className={clsx(
+        HERO_SLIDE_CELL,
+        'zep-w-full zep-aspect-[326/556] min-[480px]:zep-aspect-[4/3] sm:zep-aspect-[3/2] md:zep-aspect-[16/9]',
+        'zep-max-h-[calc(100svh-12rem)] md:zep-max-h-none',
+      )}
+    />
+  );
+}
